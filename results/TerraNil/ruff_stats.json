@@ -1,0 +1,23 @@
+[
+  {
+    "code": "E701",
+    "name": "multiple-statements-on-one-line-colon",
+    "count": 7,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "F405",
+    "name": "undefined-local-with-import-star-usage",
+    "count": 7,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "F403",
+    "name": "undefined-local-with-import-star",
+    "count": 1,
+    "fixable": false,
+    "fixable_count": 0
+  }
+]

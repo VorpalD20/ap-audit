@@ -1,0 +1,1650 @@
+[
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 61,
+      "row": 35
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/Data.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 35
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 35,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 99,
+      "row": 72
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/Data.py",
+    "fix": null,
+    "location": {
+      "column": 98,
+      "row": 72
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 72,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 5,
+      "row": 88
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/Data.py",
+    "fix": null,
+    "location": {
+      "column": 4,
+      "row": 88
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 88,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 29,
+      "row": 89
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/Data.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 89
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 89,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 5,
+      "row": 91
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/Data.py",
+    "fix": null,
+    "location": {
+      "column": 4,
+      "row": 91
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 91,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 29,
+      "row": 92
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/Data.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 92
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 92,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 5,
+      "row": 94
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/Data.py",
+    "fix": null,
+    "location": {
+      "column": 4,
+      "row": 94
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 94,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 29,
+      "row": 95
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/Data.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 95
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 95,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 238,
+      "row": 176
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 176
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 176,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 158,
+      "row": 178
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 178
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 178,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "E722",
+    "end_location": {
+      "column": 27,
+      "row": 200
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 200
+    },
+    "message": "Do not use bare `except`",
+    "name": "bare-except",
+    "noqa_row": 200,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/bare-except"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 42,
+      "row": 351
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 41,
+      "row": 351
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 351,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 495
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 495
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 495,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 496
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 496
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 496,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E703",
+    "end_location": {
+      "column": 71,
+      "row": 499
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/DataValidation.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "",
+          "end_location": {
+            "column": 71,
+            "row": 499
+          },
+          "location": {
+            "column": 70,
+            "row": 499
+          }
+        }
+      ],
+      "message": "Remove unnecessary semicolon"
+    },
+    "location": {
+      "column": 70,
+      "row": 499
+    },
+    "message": "Statement ends with an unnecessary semicolon",
+    "name": "useless-semicolon",
+    "noqa_row": 499,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 507
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 507
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 507,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 508
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 508
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 508,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 510
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 510
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 510,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 511
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 511
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 511,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 514
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 514
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 514,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 515
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 515
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 515,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 517
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 517
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 517,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 518
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 518
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 518,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 521
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 521
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 521,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 522
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 522
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 522,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 525
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 525
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 525,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 526
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 526
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 526,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 529
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 529
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 529,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 530
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 530
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 530,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 533
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 533
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 533,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 534
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 534
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 534,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 537
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 537
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 537,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 538
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 538
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 538,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 541
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 541
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 541,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 542
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 542
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 542,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 544
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 544
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 544,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 545
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 545
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 545,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 548
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 548
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 548,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 549
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 549
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 549,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 552
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 552
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 552,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 553
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 553
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 553,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 556
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 556
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 556,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 557
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 557
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 557,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 560
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 560
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 560,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 561
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 561
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 561,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 563
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 563
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 563,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 564
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 564
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 564,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 567
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 567
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 567,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 568
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 568
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 568,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E703",
+    "end_location": {
+      "column": 56,
+      "row": 571
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/DataValidation.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "",
+          "end_location": {
+            "column": 56,
+            "row": 571
+          },
+          "location": {
+            "column": 55,
+            "row": 571
+          }
+        }
+      ],
+      "message": "Remove unnecessary semicolon"
+    },
+    "location": {
+      "column": 55,
+      "row": 571
+    },
+    "message": "Statement ends with an unnecessary semicolon",
+    "name": "useless-semicolon",
+    "noqa_row": 571,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 89,
+      "row": 11
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/Game.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 11
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 11,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "E722",
+    "end_location": {
+      "column": 11,
+      "row": 21
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/Helpers.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 21
+    },
+    "message": "Do not use bare `except`",
+    "name": "bare-except",
+    "noqa_row": 21,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/bare-except"
+  },
+  {
+    "cell": null,
+    "code": "E722",
+    "end_location": {
+      "column": 11,
+      "row": 31
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/Helpers.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 31
+    },
+    "message": "Do not use bare `except`",
+    "name": "bare-except",
+    "noqa_row": 31,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/bare-except"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 32,
+      "row": 1043
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/ManualClient.py",
+    "fix": null,
+    "location": {
+      "column": 31,
+      "row": 1043
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 1043,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E712",
+    "end_location": {
+      "column": 31,
+      "row": 1390
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/ManualClient.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "ctx.syncing",
+          "end_location": {
+            "column": 31,
+            "row": 1390
+          },
+          "location": {
+            "column": 12,
+            "row": 1390
+          }
+        }
+      ],
+      "message": "Replace with `ctx.syncing`"
+    },
+    "location": {
+      "column": 12,
+      "row": 1390
+    },
+    "message": "Avoid equality comparisons to `True`; use `ctx.syncing:` for truth checks",
+    "name": "true-false-comparison",
+    "noqa_row": 1390,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/true-false-comparison"
+  },
+  {
+    "cell": null,
+    "code": "S113",
+    "end_location": {
+      "column": 33,
+      "row": 1481
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/ManualClient.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 1481
+    },
+    "message": "Probable use of `requests` call without timeout",
+    "name": "request-without-timeout",
+    "noqa_row": 1481,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/request-without-timeout"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 40,
+      "row": 52
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/Options.py",
+    "fix": null,
+    "location": {
+      "column": 39,
+      "row": 52
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 52,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 100,
+      "row": 135
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/Options.py",
+    "fix": null,
+    "location": {
+      "column": 99,
+      "row": 135
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 135,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 66,
+      "row": 185
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/Options.py",
+    "fix": null,
+    "location": {
+      "column": 65,
+      "row": 185
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 185,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "B020",
+    "end_location": {
+      "column": 23,
+      "row": 222
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/Options.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 222
+    },
+    "message": "Loop control variable `starting_items` overrides iterable it iterates",
+    "name": "loop-variable-overrides-iterator",
+    "noqa_row": 222,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/loop-variable-overrides-iterator"
+  },
+  {
+    "cell": null,
+    "code": "F811",
+    "end_location": {
+      "column": 63,
+      "row": 3
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/Rules.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "from typing import TYPE_CHECKING, Callable, Optional, Any",
+          "end_location": {
+            "column": 63,
+            "row": 3
+          },
+          "location": {
+            "column": 1,
+            "row": 3
+          }
+        }
+      ],
+      "message": "Remove definition: `Any`"
+    },
+    "location": {
+      "column": 60,
+      "row": 3
+    },
+    "message": "Redefinition of unused `Any` from line 3: `Any` redefined here",
+    "name": "redefined-while-unused",
+    "noqa_row": 3,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/redefined-while-unused"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 88,
+      "row": 93
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 93
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 93,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 81,
+      "row": 95
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 95
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 95,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 81,
+      "row": 98
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 98
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 98,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 81,
+      "row": 124
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 124
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 124,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 80,
+      "row": 326
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 323
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 326,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 49,
+      "row": 444
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 48,
+      "row": 444
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 444,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 30,
+      "row": 539
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 12,
+      "row": 539
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 539,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 272,
+      "row": 547
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 547
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 547,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 47,
+      "row": 753
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 751
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 753,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 47,
+      "row": 758
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 756
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 758,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 38,
+      "row": 148
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 37,
+      "row": 148
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 148,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 45,
+      "row": 151
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 44,
+      "row": 151
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 151,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 45,
+      "row": 153
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 44,
+      "row": 153
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 153,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 128,
+      "row": 192
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 192
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 192,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 35,
+      "row": 200
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 34,
+      "row": 200
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 200,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 30,
+      "row": 11
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/data/csv/temp.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"Other Requests\"",
+          "end_location": {
+            "column": 30,
+            "row": 11
+          },
+          "location": {
+            "column": 13,
+            "row": 11
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 13,
+      "row": 11
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 11,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "E711",
+    "end_location": {
+      "column": 61,
+      "row": 417
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/hooks/Data.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "life is not None",
+          "end_location": {
+            "column": 61,
+            "row": 417
+          },
+          "location": {
+            "column": 49,
+            "row": 417
+          }
+        }
+      ],
+      "message": "Replace with `cond is not None`"
+    },
+    "location": {
+      "column": 57,
+      "row": 417
+    },
+    "message": "Comparison to `None` should be `cond is not None`",
+    "name": "none-comparison",
+    "noqa_row": 417,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/none-comparison"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 31,
+      "row": 161
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/hooks/Rules.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"|Bingo Complete|\"",
+          "end_location": {
+            "column": 31,
+            "row": 161
+          },
+          "location": {
+            "column": 12,
+            "row": 161
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 12,
+      "row": 161
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 161,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 52,
+      "row": 308
+    },
+    "filename": "/Archipelago/worlds/manual_fantasylife_jbtheshadow/hooks/Rules.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"Fledgling Magician\"",
+          "end_location": {
+            "column": 52,
+            "row": 308
+          },
+          "location": {
+            "column": 31,
+            "row": 308
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 31,
+      "row": 308
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 308,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  }
+]

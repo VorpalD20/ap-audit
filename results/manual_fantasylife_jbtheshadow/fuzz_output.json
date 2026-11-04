@@ -1,0 +1,1 @@
+{"stats": {"total": 50, "success": 41, "failure": 9, "timeout": 0, "ignored": 0}, "errors": {"manual_fantasylife_jbtheshadow": {"FillError": [8, 7, 31, 32, 44, 40], "Cannot choose from an empty sequence": [19, 25, 30]}}}

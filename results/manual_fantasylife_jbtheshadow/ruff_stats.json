@@ -1,0 +1,86 @@
+[
+  {
+    "code": "E701",
+    "name": "multiple-statements-on-one-line-colon",
+    "count": 47,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "B904",
+    "name": "raise-without-from-inside-except",
+    "count": 12,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "E741",
+    "name": "ambiguous-variable-name",
+    "count": 6,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "E722",
+    "name": "bare-except",
+    "count": 3,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "F541",
+    "name": "f-string-missing-placeholders",
+    "count": 3,
+    "fixable": true,
+    "fixable_count": 3
+  },
+  {
+    "code": "E721",
+    "name": "type-comparison",
+    "count": 2,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "E703",
+    "name": "useless-semicolon",
+    "count": 2,
+    "fixable": true,
+    "fixable_count": 2
+  },
+  {
+    "code": "B020",
+    "name": "loop-variable-overrides-iterator",
+    "count": 1,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "E711",
+    "name": "none-comparison",
+    "count": 1,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "F811",
+    "name": "redefined-while-unused",
+    "count": 1,
+    "fixable": true,
+    "fixable_count": 1
+  },
+  {
+    "code": "S113",
+    "name": "request-without-timeout",
+    "count": 1,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "E712",
+    "name": "true-false-comparison",
+    "count": 1,
+    "fixable": false,
+    "fixable_count": 0
+  }
+]

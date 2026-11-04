@@ -1,0 +1,15 @@
+{
+    "game": "TerraNil",
+    "stub": "TerraNil",
+    "manifest": {
+        "game": "TerraNil",
+        "minimum_ap_version": "0.6.7",
+        "world_version": "0.2.1",
+        "authors": [
+            "nepcore",
+            "Lily the Little Angel"
+        ],
+        "version": 7,
+        "compatible_version": 7
+    }
+}

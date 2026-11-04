@@ -1,4 +1,18 @@
 {
  "multiple-statements-on-one-line-colon": 0,
- "mutable-argument-default": 5
+ "mutable-argument-default": 5,
+ "true-false-comparison": -1,
+ "raise-without-from-inside-except": -1,
+ "ambiguous-variable-name": -1,
+ "forward-annotation-syntax-error": -1,
+ "bare-except": -1,
+ "type-comparison": -1,
+ "useless-semicolon": -1,
+ "loop-variable-overrides-iterator": -1,
+ "redefined-while-unused": -1,
+ "request-without-timeout": -1,
+ "f-string-missing-placeholders": -1,
+ "none-comparison": -1,
+ "undefined-local-with-import-star-usage": -1,
+ "undefined-local-with-import-star": -1
 }

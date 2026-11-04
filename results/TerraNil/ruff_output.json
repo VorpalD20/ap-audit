@@ -1,0 +1,287 @@
+[
+  {
+    "cell": null,
+    "code": "F403",
+    "end_location": {
+      "column": 33,
+      "row": 7
+    },
+    "filename": "/Archipelago/worlds/TerraNil/Data/ItemData.py",
+    "fix": null,
+    "location": {
+      "column": 1,
+      "row": 7
+    },
+    "message": "`from .ItemDataBuildings import *` used; unable to detect undefined names",
+    "name": "undefined-local-with-import-star",
+    "noqa_row": 7,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 74,
+      "row": 163
+    },
+    "filename": "/Archipelago/worlds/TerraNil/Data/ItemData.py",
+    "fix": null,
+    "location": {
+      "column": 54,
+      "row": 163
+    },
+    "message": "`RiverValleyBuildings` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 163,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 78,
+      "row": 165
+    },
+    "filename": "/Archipelago/worlds/TerraNil/Data/ItemData.py",
+    "fix": null,
+    "location": {
+      "column": 54,
+      "row": 165
+    },
+    "message": "`AbandonedQuarryBuildings` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 165,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 74,
+      "row": 167
+    },
+    "filename": "/Archipelago/worlds/TerraNil/Data/ItemData.py",
+    "fix": null,
+    "location": {
+      "column": 54,
+      "row": 167
+    },
+    "message": "`PollutedBayBuildings` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 167,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 74,
+      "row": 169
+    },
+    "filename": "/Archipelago/worlds/TerraNil/Data/ItemData.py",
+    "fix": null,
+    "location": {
+      "column": 54,
+      "row": 169
+    },
+    "message": "`HillAndDaleBuildings` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 169,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 77,
+      "row": 171
+    },
+    "filename": "/Archipelago/worlds/TerraNil/Data/ItemData.py",
+    "fix": null,
+    "location": {
+      "column": 54,
+      "row": 171
+    },
+    "message": "`DesolateIslandBuildings` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 171,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 78,
+      "row": 173
+    },
+    "filename": "/Archipelago/worlds/TerraNil/Data/ItemData.py",
+    "fix": null,
+    "location": {
+      "column": 54,
+      "row": 173
+    },
+    "message": "`ScorchedCalderaBuildings` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 173,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 78,
+      "row": 175
+    },
+    "filename": "/Archipelago/worlds/TerraNil/Data/ItemData.py",
+    "fix": null,
+    "location": {
+      "column": 54,
+      "row": 175
+    },
+    "message": "`VolcanicGlacierBuildings` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 175,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 47,
+      "row": 25
+    },
+    "filename": "/Archipelago/worlds/TerraNil/rules.py",
+    "fix": null,
+    "location": {
+      "column": 46,
+      "row": 25
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 25,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 51,
+      "row": 26
+    },
+    "filename": "/Archipelago/worlds/TerraNil/rules.py",
+    "fix": null,
+    "location": {
+      "column": 50,
+      "row": 26
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 26,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 47,
+      "row": 27
+    },
+    "filename": "/Archipelago/worlds/TerraNil/rules.py",
+    "fix": null,
+    "location": {
+      "column": 46,
+      "row": 27
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 27,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 48,
+      "row": 28
+    },
+    "filename": "/Archipelago/worlds/TerraNil/rules.py",
+    "fix": null,
+    "location": {
+      "column": 47,
+      "row": 28
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 28,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 50,
+      "row": 29
+    },
+    "filename": "/Archipelago/worlds/TerraNil/rules.py",
+    "fix": null,
+    "location": {
+      "column": 49,
+      "row": 29
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 29,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 51,
+      "row": 30
+    },
+    "filename": "/Archipelago/worlds/TerraNil/rules.py",
+    "fix": null,
+    "location": {
+      "column": 50,
+      "row": 30
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 30,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 51,
+      "row": 31
+    },
+    "filename": "/Archipelago/worlds/TerraNil/rules.py",
+    "fix": null,
+    "location": {
+      "column": 50,
+      "row": 31
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 31,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  }
+]

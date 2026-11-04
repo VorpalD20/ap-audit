@@ -1,0 +1,2079 @@
+[
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 61,
+      "row": 35
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/Data.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 35
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 35,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 99,
+      "row": 72
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/Data.py",
+    "fix": null,
+    "location": {
+      "column": 98,
+      "row": 72
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 72,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 5,
+      "row": 88
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/Data.py",
+    "fix": null,
+    "location": {
+      "column": 4,
+      "row": 88
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 88,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 29,
+      "row": 89
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/Data.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 89
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 89,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 5,
+      "row": 91
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/Data.py",
+    "fix": null,
+    "location": {
+      "column": 4,
+      "row": 91
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 91,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 29,
+      "row": 92
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/Data.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 92
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 92,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 5,
+      "row": 94
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/Data.py",
+    "fix": null,
+    "location": {
+      "column": 4,
+      "row": 94
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 94,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 29,
+      "row": 95
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/Data.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 95
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 95,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 238,
+      "row": 176
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 176
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 176,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 158,
+      "row": 178
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 178
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 178,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "E722",
+    "end_location": {
+      "column": 27,
+      "row": 200
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 200
+    },
+    "message": "Do not use bare `except`",
+    "name": "bare-except",
+    "noqa_row": 200,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/bare-except"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 42,
+      "row": 351
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 41,
+      "row": 351
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 351,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 495
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 495
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 495,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 496
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 496
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 496,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E703",
+    "end_location": {
+      "column": 71,
+      "row": 499
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/DataValidation.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "",
+          "end_location": {
+            "column": 71,
+            "row": 499
+          },
+          "location": {
+            "column": 70,
+            "row": 499
+          }
+        }
+      ],
+      "message": "Remove unnecessary semicolon"
+    },
+    "location": {
+      "column": 70,
+      "row": 499
+    },
+    "message": "Statement ends with an unnecessary semicolon",
+    "name": "useless-semicolon",
+    "noqa_row": 499,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 507
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 507
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 507,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 508
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 508
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 508,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 510
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 510
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 510,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 511
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 511
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 511,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 514
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 514
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 514,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 515
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 515
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 515,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 517
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 517
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 517,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 518
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 518
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 518,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 521
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 521
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 521,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 522
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 522
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 522,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 525
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 525
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 525,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 526
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 526
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 526,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 529
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 529
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 529,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 530
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 530
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 530,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 533
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 533
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 533,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 534
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 534
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 534,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 537
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 537
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 537,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 538
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 538
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 538,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 541
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 541
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 541,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 542
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 542
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 542,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 544
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 544
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 544,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 545
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 545
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 545,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 548
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 548
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 548,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 549
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 549
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 549,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 552
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 552
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 552,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 553
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 553
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 553,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 556
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 556
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 556,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 557
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 557
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 557,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 560
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 560
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 560,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 561
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 561
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 561,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 563
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 563
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 563,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 564
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 564
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 564,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 567
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 567
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 567,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 568
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 568
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 568,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E703",
+    "end_location": {
+      "column": 56,
+      "row": 571
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/DataValidation.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "",
+          "end_location": {
+            "column": 56,
+            "row": 571
+          },
+          "location": {
+            "column": 55,
+            "row": 571
+          }
+        }
+      ],
+      "message": "Remove unnecessary semicolon"
+    },
+    "location": {
+      "column": 55,
+      "row": 571
+    },
+    "message": "Statement ends with an unnecessary semicolon",
+    "name": "useless-semicolon",
+    "noqa_row": 571,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 89,
+      "row": 11
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/Game.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 11
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 11,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "E722",
+    "end_location": {
+      "column": 11,
+      "row": 21
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/Helpers.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 21
+    },
+    "message": "Do not use bare `except`",
+    "name": "bare-except",
+    "noqa_row": 21,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/bare-except"
+  },
+  {
+    "cell": null,
+    "code": "E722",
+    "end_location": {
+      "column": 11,
+      "row": 31
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/Helpers.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 31
+    },
+    "message": "Do not use bare `except`",
+    "name": "bare-except",
+    "noqa_row": 31,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/bare-except"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 32,
+      "row": 926
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/ManualClient.py",
+    "fix": null,
+    "location": {
+      "column": 31,
+      "row": 926
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 926,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E712",
+    "end_location": {
+      "column": 31,
+      "row": 1273
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/ManualClient.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "ctx.syncing",
+          "end_location": {
+            "column": 31,
+            "row": 1273
+          },
+          "location": {
+            "column": 12,
+            "row": 1273
+          }
+        }
+      ],
+      "message": "Replace with `ctx.syncing`"
+    },
+    "location": {
+      "column": 12,
+      "row": 1273
+    },
+    "message": "Avoid equality comparisons to `True`; use `ctx.syncing:` for truth checks",
+    "name": "true-false-comparison",
+    "noqa_row": 1273,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/true-false-comparison"
+  },
+  {
+    "cell": null,
+    "code": "S113",
+    "end_location": {
+      "column": 33,
+      "row": 1363
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/ManualClient.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 1363
+    },
+    "message": "Probable use of `requests` call without timeout",
+    "name": "request-without-timeout",
+    "noqa_row": 1363,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/request-without-timeout"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 40,
+      "row": 52
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/Options.py",
+    "fix": null,
+    "location": {
+      "column": 39,
+      "row": 52
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 52,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 100,
+      "row": 135
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/Options.py",
+    "fix": null,
+    "location": {
+      "column": 99,
+      "row": 135
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 135,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 66,
+      "row": 185
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/Options.py",
+    "fix": null,
+    "location": {
+      "column": 65,
+      "row": 185
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 185,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "B020",
+    "end_location": {
+      "column": 23,
+      "row": 222
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/Options.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 222
+    },
+    "message": "Loop control variable `starting_items` overrides iterable it iterates",
+    "name": "loop-variable-overrides-iterator",
+    "noqa_row": 222,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/loop-variable-overrides-iterator"
+  },
+  {
+    "cell": null,
+    "code": "F811",
+    "end_location": {
+      "column": 63,
+      "row": 3
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/Rules.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "from typing import TYPE_CHECKING, Callable, Optional, Any",
+          "end_location": {
+            "column": 63,
+            "row": 3
+          },
+          "location": {
+            "column": 1,
+            "row": 3
+          }
+        }
+      ],
+      "message": "Remove definition: `Any`"
+    },
+    "location": {
+      "column": 60,
+      "row": 3
+    },
+    "message": "Redefinition of unused `Any` from line 3: `Any` redefined here",
+    "name": "redefined-while-unused",
+    "noqa_row": 3,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/redefined-while-unused"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 81,
+      "row": 85
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 85
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 85,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 81,
+      "row": 111
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 111
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 111,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 80,
+      "row": 306
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 303
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 306,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 49,
+      "row": 424
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 48,
+      "row": 424
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 424,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 30,
+      "row": 515
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 12,
+      "row": 515
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 515,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 272,
+      "row": 523
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 523
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 523,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 47,
+      "row": 729
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 727
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 729,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 47,
+      "row": 734
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 732
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 734,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 38,
+      "row": 134
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 37,
+      "row": 134
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 134,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 41,
+      "row": 135
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 40,
+      "row": 135
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 135,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 128,
+      "row": 174
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 174
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 174,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 35,
+      "row": 182
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 34,
+      "row": 182
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 182,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 41,
+      "row": 352
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 40,
+      "row": 352
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 352,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 45,
+      "row": 368
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 44,
+      "row": 368
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 368,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "F722",
+    "end_location": {
+      "column": 30,
+      "row": 41
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/hooks/Options.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 41
+    },
+    "message": "Syntax error in forward annotation: Unexpected token at the end of an expression",
+    "name": "forward-annotation-syntax-error",
+    "noqa_row": 41,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/forward-annotation-syntax-error"
+  },
+  {
+    "cell": null,
+    "code": "F722",
+    "end_location": {
+      "column": 32,
+      "row": 48
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/hooks/Options.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 48
+    },
+    "message": "Syntax error in forward annotation: Unexpected token at the end of an expression",
+    "name": "forward-annotation-syntax-error",
+    "noqa_row": 48,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/forward-annotation-syntax-error"
+  },
+  {
+    "cell": null,
+    "code": "F722",
+    "end_location": {
+      "column": 36,
+      "row": 56
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/hooks/Options.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 56
+    },
+    "message": "Syntax error in forward annotation: Unexpected token at the end of an expression",
+    "name": "forward-annotation-syntax-error",
+    "noqa_row": 56,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/forward-annotation-syntax-error"
+  },
+  {
+    "cell": null,
+    "code": "F722",
+    "end_location": {
+      "column": 29,
+      "row": 75
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/hooks/Options.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 75
+    },
+    "message": "Syntax error in forward annotation: Unexpected token at the end of an expression",
+    "name": "forward-annotation-syntax-error",
+    "noqa_row": 75,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/forward-annotation-syntax-error"
+  },
+  {
+    "cell": null,
+    "code": "F722",
+    "end_location": {
+      "column": 28,
+      "row": 129
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/hooks/Options.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 129
+    },
+    "message": "Syntax error in forward annotation: Unexpected token at the end of an expression",
+    "name": "forward-annotation-syntax-error",
+    "noqa_row": 129,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/forward-annotation-syntax-error"
+  },
+  {
+    "cell": null,
+    "code": "F722",
+    "end_location": {
+      "column": 46,
+      "row": 136
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/hooks/Options.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 136
+    },
+    "message": "Syntax error in forward annotation: Unexpected token at the end of an expression",
+    "name": "forward-annotation-syntax-error",
+    "noqa_row": 136,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/forward-annotation-syntax-error"
+  },
+  {
+    "cell": null,
+    "code": "F722",
+    "end_location": {
+      "column": 30,
+      "row": 146
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/hooks/Options.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 146
+    },
+    "message": "Syntax error in forward annotation: Unexpected token at the end of an expression",
+    "name": "forward-annotation-syntax-error",
+    "noqa_row": 146,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/forward-annotation-syntax-error"
+  },
+  {
+    "cell": null,
+    "code": "E712",
+    "end_location": {
+      "column": 45,
+      "row": 51
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/hooks/World.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "world.options.solo_mode.value",
+          "end_location": {
+            "column": 45,
+            "row": 51
+          },
+          "location": {
+            "column": 8,
+            "row": 51
+          }
+        }
+      ],
+      "message": "Replace with `world.options.solo_mode.value`"
+    },
+    "location": {
+      "column": 8,
+      "row": 51
+    },
+    "message": "Avoid equality comparisons to `True`; use `world.options.solo_mode.value:` for truth checks",
+    "name": "true-false-comparison",
+    "noqa_row": 51,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/true-false-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E712",
+    "end_location": {
+      "column": 46,
+      "row": 54
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/hooks/World.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "world.options.chatsanity.value",
+          "end_location": {
+            "column": 46,
+            "row": 54
+          },
+          "location": {
+            "column": 8,
+            "row": 54
+          }
+        }
+      ],
+      "message": "Replace with `world.options.chatsanity.value`"
+    },
+    "location": {
+      "column": 8,
+      "row": 54
+    },
+    "message": "Avoid equality comparisons to `True`; use `world.options.chatsanity.value:` for truth checks",
+    "name": "true-false-comparison",
+    "noqa_row": 54,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/true-false-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E712",
+    "end_location": {
+      "column": 64,
+      "row": 67
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/hooks/World.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "world.options.disable_postgoal_content.value",
+          "end_location": {
+            "column": 64,
+            "row": 67
+          },
+          "location": {
+            "column": 12,
+            "row": 67
+          }
+        }
+      ],
+      "message": "Replace with `world.options.disable_postgoal_content.value`"
+    },
+    "location": {
+      "column": 12,
+      "row": 67
+    },
+    "message": "Avoid equality comparisons to `True`; use `world.options.disable_postgoal_content.value:` for truth checks",
+    "name": "true-false-comparison",
+    "noqa_row": 67,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/true-false-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E712",
+    "end_location": {
+      "column": 47,
+      "row": 75
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/hooks/World.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "not world.options.shopsanity.value",
+          "end_location": {
+            "column": 47,
+            "row": 75
+          },
+          "location": {
+            "column": 8,
+            "row": 75
+          }
+        }
+      ],
+      "message": "Replace with `not world.options.shopsanity.value`"
+    },
+    "location": {
+      "column": 8,
+      "row": 75
+    },
+    "message": "Avoid equality comparisons to `False`; use `not world.options.shopsanity.value:` for false checks",
+    "name": "true-false-comparison",
+    "noqa_row": 75,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/true-false-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E712",
+    "end_location": {
+      "column": 64,
+      "row": 80
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/hooks/World.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "world.options.disable_postgoal_content.value",
+          "end_location": {
+            "column": 64,
+            "row": 80
+          },
+          "location": {
+            "column": 12,
+            "row": 80
+          }
+        }
+      ],
+      "message": "Replace with `world.options.disable_postgoal_content.value`"
+    },
+    "location": {
+      "column": 12,
+      "row": 80
+    },
+    "message": "Avoid equality comparisons to `True`; use `world.options.disable_postgoal_content.value:` for truth checks",
+    "name": "true-false-comparison",
+    "noqa_row": 80,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/true-false-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E712",
+    "end_location": {
+      "column": 94,
+      "row": 89
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/hooks/World.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "world.options.disable_postgoal_content.value",
+          "end_location": {
+            "column": 94,
+            "row": 89
+          },
+          "location": {
+            "column": 42,
+            "row": 89
+          }
+        }
+      ],
+      "message": "Replace with `world.options.disable_postgoal_content.value`"
+    },
+    "location": {
+      "column": 42,
+      "row": 89
+    },
+    "message": "Avoid equality comparisons to `True`; use `world.options.disable_postgoal_content.value:` for truth checks",
+    "name": "true-false-comparison",
+    "noqa_row": 89,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/true-false-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E712",
+    "end_location": {
+      "column": 94,
+      "row": 97
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/hooks/World.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "world.options.disable_postgoal_content.value",
+          "end_location": {
+            "column": 94,
+            "row": 97
+          },
+          "location": {
+            "column": 42,
+            "row": 97
+          }
+        }
+      ],
+      "message": "Replace with `world.options.disable_postgoal_content.value`"
+    },
+    "location": {
+      "column": 42,
+      "row": 97
+    },
+    "message": "Avoid equality comparisons to `True`; use `world.options.disable_postgoal_content.value:` for truth checks",
+    "name": "true-false-comparison",
+    "noqa_row": 97,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/true-false-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E712",
+    "end_location": {
+      "column": 94,
+      "row": 104
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/hooks/World.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "world.options.disable_postgoal_content.value",
+          "end_location": {
+            "column": 94,
+            "row": 104
+          },
+          "location": {
+            "column": 42,
+            "row": 104
+          }
+        }
+      ],
+      "message": "Replace with `world.options.disable_postgoal_content.value`"
+    },
+    "location": {
+      "column": 42,
+      "row": 104
+    },
+    "message": "Avoid equality comparisons to `True`; use `world.options.disable_postgoal_content.value:` for truth checks",
+    "name": "true-false-comparison",
+    "noqa_row": 104,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/true-false-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E712",
+    "end_location": {
+      "column": 94,
+      "row": 109
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/hooks/World.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "world.options.disable_postgoal_content.value",
+          "end_location": {
+            "column": 94,
+            "row": 109
+          },
+          "location": {
+            "column": 42,
+            "row": 109
+          }
+        }
+      ],
+      "message": "Replace with `world.options.disable_postgoal_content.value`"
+    },
+    "location": {
+      "column": 42,
+      "row": 109
+    },
+    "message": "Avoid equality comparisons to `True`; use `world.options.disable_postgoal_content.value:` for truth checks",
+    "name": "true-false-comparison",
+    "noqa_row": 109,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/true-false-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E712",
+    "end_location": {
+      "column": 45,
+      "row": 112
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/hooks/World.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "not world.options.bux_shop.value",
+          "end_location": {
+            "column": 45,
+            "row": 112
+          },
+          "location": {
+            "column": 8,
+            "row": 112
+          }
+        }
+      ],
+      "message": "Replace with `not world.options.bux_shop.value`"
+    },
+    "location": {
+      "column": 8,
+      "row": 112
+    },
+    "message": "Avoid equality comparisons to `False`; use `not world.options.bux_shop.value:` for false checks",
+    "name": "true-false-comparison",
+    "noqa_row": 112,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/true-false-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E712",
+    "end_location": {
+      "column": 51,
+      "row": 172
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/hooks/World.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "not world.options.fishsanity.value",
+          "end_location": {
+            "column": 51,
+            "row": 172
+          },
+          "location": {
+            "column": 12,
+            "row": 172
+          }
+        }
+      ],
+      "message": "Replace with `not world.options.fishsanity.value`"
+    },
+    "location": {
+      "column": 12,
+      "row": 172
+    },
+    "message": "Avoid equality comparisons to `False`; use `not world.options.fishsanity.value:` for false checks",
+    "name": "true-false-comparison",
+    "noqa_row": 172,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/true-false-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E712",
+    "end_location": {
+      "column": 52,
+      "row": 176
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/hooks/World.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "not world.options.i_spy_logic.value",
+          "end_location": {
+            "column": 52,
+            "row": 176
+          },
+          "location": {
+            "column": 12,
+            "row": 176
+          }
+        }
+      ],
+      "message": "Replace with `not world.options.i_spy_logic.value`"
+    },
+    "location": {
+      "column": 12,
+      "row": 176
+    },
+    "message": "Avoid equality comparisons to `False`; use `not world.options.i_spy_logic.value:` for false checks",
+    "name": "true-false-comparison",
+    "noqa_row": 176,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/true-false-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E712",
+    "end_location": {
+      "column": 46,
+      "row": 249
+    },
+    "filename": "/Archipelago/worlds/manual_blocktales_wolfboi008/hooks/World.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "world.options.chatsanity.value",
+          "end_location": {
+            "column": 46,
+            "row": 249
+          },
+          "location": {
+            "column": 8,
+            "row": 249
+          }
+        }
+      ],
+      "message": "Replace with `world.options.chatsanity.value`"
+    },
+    "location": {
+      "column": 8,
+      "row": 249
+    },
+    "message": "Avoid equality comparisons to `True`; use `world.options.chatsanity.value:` for truth checks",
+    "name": "true-false-comparison",
+    "noqa_row": 249,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/true-false-comparison"
+  }
+]
