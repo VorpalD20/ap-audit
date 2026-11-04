@@ -1,0 +1,1171 @@
+[
+  {
+    "cell": null,
+    "code": "E722",
+    "end_location": {
+      "column": 11,
+      "row": 20
+    },
+    "filename": "/Archipelago/worlds/manual_ctcsudoku_axxroy/Data.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 20
+    },
+    "message": "Do not use bare `except`",
+    "name": "bare-except",
+    "noqa_row": 20,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/bare-except"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 5,
+      "row": 49
+    },
+    "filename": "/Archipelago/worlds/manual_ctcsudoku_axxroy/Data.py",
+    "fix": null,
+    "location": {
+      "column": 4,
+      "row": 49
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 49,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 29,
+      "row": 50
+    },
+    "filename": "/Archipelago/worlds/manual_ctcsudoku_axxroy/Data.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 50
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 50,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 5,
+      "row": 52
+    },
+    "filename": "/Archipelago/worlds/manual_ctcsudoku_axxroy/Data.py",
+    "fix": null,
+    "location": {
+      "column": 4,
+      "row": 52
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 52,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 29,
+      "row": 53
+    },
+    "filename": "/Archipelago/worlds/manual_ctcsudoku_axxroy/Data.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 53
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 53,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 5,
+      "row": 55
+    },
+    "filename": "/Archipelago/worlds/manual_ctcsudoku_axxroy/Data.py",
+    "fix": null,
+    "location": {
+      "column": 4,
+      "row": 55
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 55,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 29,
+      "row": 56
+    },
+    "filename": "/Archipelago/worlds/manual_ctcsudoku_axxroy/Data.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 56
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 56,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 38,
+      "row": 326
+    },
+    "filename": "/Archipelago/worlds/manual_ctcsudoku_axxroy/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 37,
+      "row": 326
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 326,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 454
+    },
+    "filename": "/Archipelago/worlds/manual_ctcsudoku_axxroy/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 454
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 454,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 455
+    },
+    "filename": "/Archipelago/worlds/manual_ctcsudoku_axxroy/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 455
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 455,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 465
+    },
+    "filename": "/Archipelago/worlds/manual_ctcsudoku_axxroy/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 465
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 465,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 466
+    },
+    "filename": "/Archipelago/worlds/manual_ctcsudoku_axxroy/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 466
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 466,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 468
+    },
+    "filename": "/Archipelago/worlds/manual_ctcsudoku_axxroy/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 468
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 468,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 469
+    },
+    "filename": "/Archipelago/worlds/manual_ctcsudoku_axxroy/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 469
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 469,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 472
+    },
+    "filename": "/Archipelago/worlds/manual_ctcsudoku_axxroy/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 472
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 472,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 473
+    },
+    "filename": "/Archipelago/worlds/manual_ctcsudoku_axxroy/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 473
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 473,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 476
+    },
+    "filename": "/Archipelago/worlds/manual_ctcsudoku_axxroy/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 476
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 476,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 477
+    },
+    "filename": "/Archipelago/worlds/manual_ctcsudoku_axxroy/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 477
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 477,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 480
+    },
+    "filename": "/Archipelago/worlds/manual_ctcsudoku_axxroy/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 480
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 480,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 481
+    },
+    "filename": "/Archipelago/worlds/manual_ctcsudoku_axxroy/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 481
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 481,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 484
+    },
+    "filename": "/Archipelago/worlds/manual_ctcsudoku_axxroy/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 484
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 484,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 485
+    },
+    "filename": "/Archipelago/worlds/manual_ctcsudoku_axxroy/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 485
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 485,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 488
+    },
+    "filename": "/Archipelago/worlds/manual_ctcsudoku_axxroy/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 488
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 488,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 489
+    },
+    "filename": "/Archipelago/worlds/manual_ctcsudoku_axxroy/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 489
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 489,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 491
+    },
+    "filename": "/Archipelago/worlds/manual_ctcsudoku_axxroy/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 491
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 491,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 492
+    },
+    "filename": "/Archipelago/worlds/manual_ctcsudoku_axxroy/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 492
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 492,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 494
+    },
+    "filename": "/Archipelago/worlds/manual_ctcsudoku_axxroy/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 494
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 494,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 495
+    },
+    "filename": "/Archipelago/worlds/manual_ctcsudoku_axxroy/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 495
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 495,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 498
+    },
+    "filename": "/Archipelago/worlds/manual_ctcsudoku_axxroy/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 498
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 498,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 499
+    },
+    "filename": "/Archipelago/worlds/manual_ctcsudoku_axxroy/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 499
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 499,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 502
+    },
+    "filename": "/Archipelago/worlds/manual_ctcsudoku_axxroy/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 502
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 502,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 503
+    },
+    "filename": "/Archipelago/worlds/manual_ctcsudoku_axxroy/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 503
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 503,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 506
+    },
+    "filename": "/Archipelago/worlds/manual_ctcsudoku_axxroy/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 506
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 506,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 507
+    },
+    "filename": "/Archipelago/worlds/manual_ctcsudoku_axxroy/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 507
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 507,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 510
+    },
+    "filename": "/Archipelago/worlds/manual_ctcsudoku_axxroy/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 510
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 510,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 511
+    },
+    "filename": "/Archipelago/worlds/manual_ctcsudoku_axxroy/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 511
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 511,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 513
+    },
+    "filename": "/Archipelago/worlds/manual_ctcsudoku_axxroy/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 513
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 513,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 514
+    },
+    "filename": "/Archipelago/worlds/manual_ctcsudoku_axxroy/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 514
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 514,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 517
+    },
+    "filename": "/Archipelago/worlds/manual_ctcsudoku_axxroy/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 517
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 517,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 518
+    },
+    "filename": "/Archipelago/worlds/manual_ctcsudoku_axxroy/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 518
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 518,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E401",
+    "end_location": {
+      "column": 19,
+      "row": 8
+    },
+    "filename": "/Archipelago/worlds/manual_ctcsudoku_axxroy/ManualClient.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "import asyncio\nimport re",
+          "end_location": {
+            "column": 19,
+            "row": 8
+          },
+          "location": {
+            "column": 1,
+            "row": 8
+          }
+        }
+      ],
+      "message": "Split imports"
+    },
+    "location": {
+      "column": 1,
+      "row": 8
+    },
+    "message": "Multiple imports on one line",
+    "name": "multiple-imports-on-one-line",
+    "noqa_row": 8,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-imports-on-one-line"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 38,
+      "row": 32
+    },
+    "filename": "/Archipelago/worlds/manual_ctcsudoku_axxroy/ManualClient.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"Syncing items.\"",
+          "end_location": {
+            "column": 38,
+            "row": 32
+          },
+          "location": {
+            "column": 21,
+            "row": 32
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 21,
+      "row": 32
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 32,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "E712",
+    "end_location": {
+      "column": 31,
+      "row": 629
+    },
+    "filename": "/Archipelago/worlds/manual_ctcsudoku_axxroy/ManualClient.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "ctx.syncing",
+          "end_location": {
+            "column": 31,
+            "row": 629
+          },
+          "location": {
+            "column": 12,
+            "row": 629
+          }
+        }
+      ],
+      "message": "Replace with `ctx.syncing`"
+    },
+    "location": {
+      "column": 12,
+      "row": 629
+    },
+    "message": "Avoid equality comparisons to `True`; use `ctx.syncing:` for truth checks",
+    "name": "true-false-comparison",
+    "noqa_row": 629,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/true-false-comparison"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 88,
+      "row": 37
+    },
+    "filename": "/Archipelago/worlds/manual_ctcsudoku_axxroy/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 37
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 37,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 88,
+      "row": 61
+    },
+    "filename": "/Archipelago/worlds/manual_ctcsudoku_axxroy/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 61
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 61,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "B034",
+    "end_location": {
+      "column": 87,
+      "row": 157
+    },
+    "filename": "/Archipelago/worlds/manual_ctcsudoku_axxroy/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 157
+    },
+    "message": "`re.sub` should pass `count` and `flags` as keyword arguments to avoid confusion due to unintuitive argument positions",
+    "name": "re-sub-positional-args",
+    "noqa_row": 157,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/re-sub-positional-args"
+  },
+  {
+    "cell": null,
+    "code": "B034",
+    "end_location": {
+      "column": 86,
+      "row": 158
+    },
+    "filename": "/Archipelago/worlds/manual_ctcsudoku_axxroy/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 158
+    },
+    "message": "`re.sub` should pass `count` and `flags` as keyword arguments to avoid confusion due to unintuitive argument positions",
+    "name": "re-sub-positional-args",
+    "noqa_row": 158,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/re-sub-positional-args"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 49,
+      "row": 223
+    },
+    "filename": "/Archipelago/worlds/manual_ctcsudoku_axxroy/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 48,
+      "row": 223
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 223,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 38,
+      "row": 105
+    },
+    "filename": "/Archipelago/worlds/manual_ctcsudoku_axxroy/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 37,
+      "row": 105
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 105,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 41,
+      "row": 106
+    },
+    "filename": "/Archipelago/worlds/manual_ctcsudoku_axxroy/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 40,
+      "row": 106
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 106,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 32,
+      "row": 118
+    },
+    "filename": "/Archipelago/worlds/manual_ctcsudoku_axxroy/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 31,
+      "row": 118
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 118,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 41,
+      "row": 214
+    },
+    "filename": "/Archipelago/worlds/manual_ctcsudoku_axxroy/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 40,
+      "row": 214
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 214,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 45,
+      "row": 237
+    },
+    "filename": "/Archipelago/worlds/manual_ctcsudoku_axxroy/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 44,
+      "row": 237
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 237,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 47,
+      "row": 114
+    },
+    "filename": "/Archipelago/worlds/manual_ctcsudoku_axxroy/hooks/World.py",
+    "fix": null,
+    "location": {
+      "column": 46,
+      "row": 114
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 114,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 38,
+      "row": 118
+    },
+    "filename": "/Archipelago/worlds/manual_ctcsudoku_axxroy/hooks/World.py",
+    "fix": null,
+    "location": {
+      "column": 37,
+      "row": 118
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 118,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E722",
+    "end_location": {
+      "column": 19,
+      "row": 122
+    },
+    "filename": "/Archipelago/worlds/manual_ctcsudoku_axxroy/hooks/World.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 122
+    },
+    "message": "Do not use bare `except`",
+    "name": "bare-except",
+    "noqa_row": 122,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/bare-except"
+  },
+  {
+    "cell": null,
+    "code": "S112",
+    "end_location": {
+      "column": 25,
+      "row": 123
+    },
+    "filename": "/Archipelago/worlds/manual_ctcsudoku_axxroy/hooks/World.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 122
+    },
+    "message": "`try`-`except`-`continue` detected, consider logging the exception",
+    "name": "try-except-continue",
+    "noqa_row": 122,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-continue"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 37,
+      "row": 131
+    },
+    "filename": "/Archipelago/worlds/manual_ctcsudoku_axxroy/hooks/World.py",
+    "fix": null,
+    "location": {
+      "column": 36,
+      "row": 131
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 131,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 37,
+      "row": 134
+    },
+    "filename": "/Archipelago/worlds/manual_ctcsudoku_axxroy/hooks/World.py",
+    "fix": null,
+    "location": {
+      "column": 36,
+      "row": 134
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 134,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  }
+]

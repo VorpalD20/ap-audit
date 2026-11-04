@@ -1,0 +1,15 @@
+{
+    "game": "UNBEATABLE Arcade",
+    "stub": "unbeatable_arcade",
+    "manifest": {
+        "game": "UNBEATABLE Arcade",
+        "minimum_ap_version": "0.6.4",
+        "world_version": "0.8.0",
+        "authors": [
+            "AllPoland",
+            "estradiol-valerate"
+        ],
+        "compatible_version": 7,
+        "version": 7
+    }
+}

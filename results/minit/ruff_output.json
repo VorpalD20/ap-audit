@@ -1,0 +1,129 @@
+[
+  {
+    "cell": null,
+    "code": "F601",
+    "end_location": {
+      "column": 14,
+      "row": 871
+    },
+    "filename": "/Archipelago/worlds/minit/ERData.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 871
+    },
+    "message": "Dictionary key literal `\"dun14_8\"` repeated",
+    "name": "multi-value-repeated-key-literal",
+    "noqa_row": 871,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multi-value-repeated-key-literal"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 65,
+      "row": 297
+    },
+    "filename": "/Archipelago/worlds/minit/__init__.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"Entrance Rando Location Paths:\\n\"",
+          "end_location": {
+            "column": 65,
+            "row": 297
+          },
+          "location": {
+            "column": 30,
+            "row": 297
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 30,
+      "row": 297
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 297,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 145,
+      "row": 387
+    },
+    "filename": "/Archipelago/worlds/minit/__init__.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"Tracker: ER Handling failed because of unknown entrances, confirm your AP install can support ER\"",
+          "end_location": {
+            "column": 145,
+            "row": 387
+          },
+          "location": {
+            "column": 46,
+            "row": 387
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 46,
+      "row": 387
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 387,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F821",
+    "end_location": {
+      "column": 46,
+      "row": 424
+    },
+    "filename": "/Archipelago/worlds/minit/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 31,
+      "row": 424
+    },
+    "message": "Undefined name `CollectionState`",
+    "name": "undefined-name",
+    "noqa_row": 424,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-name"
+  },
+  {
+    "cell": null,
+    "code": "F821",
+    "end_location": {
+      "column": 45,
+      "row": 430
+    },
+    "filename": "/Archipelago/worlds/minit/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 30,
+      "row": 430
+    },
+    "message": "Undefined name `CollectionState`",
+    "name": "undefined-name",
+    "noqa_row": 430,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-name"
+  }
+]

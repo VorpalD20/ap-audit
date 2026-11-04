@@ -1,0 +1,113 @@
+[
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 96,
+      "row": 42
+    },
+    "filename": "/Archipelago/worlds/unbeatable_arcade/misc/float_range_text.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 42
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 42,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 110,
+      "row": 44
+    },
+    "filename": "/Archipelago/worlds/unbeatable_arcade/misc/float_range_text.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 44
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 44,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 87,
+      "row": 78
+    },
+    "filename": "/Archipelago/worlds/unbeatable_arcade/misc/float_range_text.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 78
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 78,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 94,
+      "row": 80
+    },
+    "filename": "/Archipelago/worlds/unbeatable_arcade/misc/float_range_text.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 80
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 80,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "E703",
+    "end_location": {
+      "column": 24,
+      "row": 63
+    },
+    "filename": "/Archipelago/worlds/unbeatable_arcade/ratings/ratings_logic.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "",
+          "end_location": {
+            "column": 24,
+            "row": 63
+          },
+          "location": {
+            "column": 23,
+            "row": 63
+          }
+        }
+      ],
+      "message": "Remove unnecessary semicolon"
+    },
+    "location": {
+      "column": 23,
+      "row": 63
+    },
+    "message": "Statement ends with an unnecessary semicolon",
+    "name": "useless-semicolon",
+    "noqa_row": 63,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-semicolon"
+  }
+]

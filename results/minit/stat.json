@@ -1,0 +1,11 @@
+{
+    "game": "Minit",
+    "stub": "minit",
+    "manifest": {
+        "game": "Minit",
+        "minimum_ap_version": "0.6.7",
+        "world_version": "0.7.0",
+        "compatible_version": 7,
+        "version": 7
+    }
+}

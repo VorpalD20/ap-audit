@@ -53,6 +53,7 @@ def run() -> None:
         return
 
     history[world_id] = HistoryInfo(datetime.datetime.now(), world['metadata'].get('world_version', '0'))
+    history = dict(sorted(history.items(), key=lambda item: item[0]))
     dump = converter.unstructure(history)
     with open("history.json", "w") as f:
         json.dump(dump, f, indent=1)

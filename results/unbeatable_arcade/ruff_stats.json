@@ -1,0 +1,16 @@
+[
+  {
+    "code": "B904",
+    "name": "raise-without-from-inside-except",
+    "count": 4,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "E703",
+    "name": "useless-semicolon",
+    "count": 1,
+    "fixable": true,
+    "fixable_count": 1
+  }
+]

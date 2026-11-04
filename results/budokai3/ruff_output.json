@@ -1,0 +1,436 @@
+[
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 17,
+      "row": 283
+    },
+    "filename": "/Archipelago/worlds/budokai3/B3Client.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 282
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 282,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S112",
+    "end_location": {
+      "column": 25,
+      "row": 819
+    },
+    "filename": "/Archipelago/worlds/budokai3/B3Client.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 818
+    },
+    "message": "`try`-`except`-`continue` detected, consider logging the exception",
+    "name": "try-except-continue",
+    "noqa_row": 818,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-continue"
+  },
+  {
+    "cell": null,
+    "code": "F811",
+    "end_location": {
+      "column": 39,
+      "row": 46
+    },
+    "filename": "/Archipelago/worlds/budokai3/B3Interface.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "from .data.Constants import (\n    GAME_ID, GAME_CRC, VERSIONS, DU_BASES, FIGHT_LOCATIONS, ROSTER, STAGES, CAPSULE_SHOP_IDS,\n    ADDR_CAVE, ADDR_DEBUG, ADDR_SCRATCH, ADDR_INTERCEPT, ADDR_RETURN,\n    CAVE_JUMP, ORIG_INSTR,\n    ADDR_SCREEN, ADDR_MODE, ADDR_DU_CHAR, ADDR_ZENIE_RT,\n    ADDR_ZENIE_DU, ADDR_ZENIE_SAVED,\n    ADDR_P1_CHAR, ADDR_P1_CHAR_T4, ADDR_P1_CAPS,\n    ADDR_P2_CHAR, ADDR_P2_CHAR_T4, ADDR_P2_CAPS,\n    ADDR_STAGE_SELECT, ADDR_BATTLE_MOD, ADDR_MUSIC,\n    DU_RADAR_ADDR, DU_RADAR_OBTAINED,\n    ADDR_P1_HP, HP_KILL_VALUE, ADDR_FIGHT_END_HP,\n    ADDR_SHOP_STRUCT_BASE, SHOP_STRUCT_SIZE, SHOP_DISPLAY_BASE,\n    SHOP_OWNERSHIP_BASE, SHOP_PRICE, SHOP_MAX_SLOTS, ADDR_SHOP_COUNT,\n    SHOP_SIG0, SHOP_SIG1, SHOP_OFF_COUNT_FROM_SIG, SHOP_OFF_ITEMS_FROM_SIG,\n    SHOP_OFF_ZENIE_FROM_SIG,\n    SHOP_SCAN_START, SHOP_SCAN_END, SHOP_SCAN_MIN_INTERVAL,\n    SHOP_OFF_DISPLAY, SHOP_OFF_RECEIVED, SHOP_OFF_PRICE, SHOP_OFF_FLAGS,\n    SHOP_CAPSULE_POOL,\n    SKILL_CAPSULES, ITEM_CAPSULES, EXTRA_SKILL_CAPSULES, FIGHTER_LABELS, DU_INDEX,\n    RT_CAPS_BASE, DU_RT_CAPS_BASE,\n    NTSC_RT_CAPS_BASE, NTSC_DU_RT_CAPS_BASE,\n    SHOP_PURCHASE_BASE, SHOP_PURCHASE_BY_DISPLAY,\n    SCREEN_DA_ENTRANCE, SCREEN_DA_CHARSEL, SCREEN_DA_BATTLE,\n    SCREEN_DA_RESULTS, SCREEN_DA_SAVE,\n    DA_TICKET_DISPLAY, DA_TICKET_OWNERSHIP, DA_TICKET_DU_RT, DA_MENU_FLAG,\n    SCREEN_MAIN_MENU, ADDR_SYSTEM_TASK, ADDR_MENU_MANAGER, ADDR_MENU_CLOSED, ADDR_MENU_FADED,\n    ADDR_MENU_TARGET, ADDR_MENU_NEXT, MENU_STEP_IDLE, MENU_STEP_PICKED, MENU_STEP_LEAVE,\n    MENU_STEP_ENTER, MENU_STEP_BUILD, MENU_STEP_FINISH, MENU_TASK_IDLE, MENU_OBJECT_ARENA,\n    ADDR_DA_OPP_COUNT, ADDR_DA_CLEAR_BASE, DA_FIGHT_COUNT,\n    DRAGON_BALL_ADDRS, OFFSET_BATTLE, OFFSET_SAGA, OFFSET_BATTLE_COMP, OFFSET_LEVEL, OFFSET_EXP,\n    SCREEN_SHOP, SCREEN_WORLD_MAP, SCREEN_DU_BATTLE,\n    SCREEN_RESULTS_WIN, SCREEN_SHENRON,\n    SCREEN_DU_TITLE, SCREEN_DU_CHARSEL,\n    DU_CHAR_CAPSULES, LOCK_TABLE_CHARS,\n    ADDR_CAVE2, ADDR_LOCK_TABLE, ADDR_INTERCEPT2, ADDR_RETURN2,\n    ORIG_INSTR2, CAVE2_JUMP, CAVE2_CODE,\n)",
+          "end_location": {
+            "column": 2,
+            "row": 51
+          },
+          "location": {
+            "column": 1,
+            "row": 14
+          }
+        }
+      ],
+      "message": "Remove definition: `SCREEN_SHENRON`"
+    },
+    "location": {
+      "column": 25,
+      "row": 46
+    },
+    "message": "Redefinition of unused `SCREEN_SHENRON` from line 43: `SCREEN_SHENRON` redefined here",
+    "name": "redefined-while-unused",
+    "noqa_row": 46,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/redefined-while-unused"
+  },
+  {
+    "cell": null,
+    "code": "S108",
+    "end_location": {
+      "column": 67,
+      "row": 75
+    },
+    "filename": "/Archipelago/worlds/budokai3/B3Interface.py",
+    "fix": null,
+    "location": {
+      "column": 61,
+      "row": 75
+    },
+    "message": "Probable insecure usage of temporary file or directory: \"/tmp\"",
+    "name": "hardcoded-temp-file",
+    "noqa_row": 75,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-temp-file"
+  },
+  {
+    "cell": null,
+    "code": "S108",
+    "end_location": {
+      "column": 76,
+      "row": 79
+    },
+    "filename": "/Archipelago/worlds/budokai3/B3Interface.py",
+    "fix": null,
+    "location": {
+      "column": 70,
+      "row": 79
+    },
+    "message": "Probable insecure usage of temporary file or directory: \"/tmp\"",
+    "name": "hardcoded-temp-file",
+    "noqa_row": 79,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-temp-file"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 21,
+      "row": 90
+    },
+    "filename": "/Archipelago/worlds/budokai3/B3Interface.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 89
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 89,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 25,
+      "row": 252
+    },
+    "filename": "/Archipelago/worlds/budokai3/B3Interface.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 252
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 252,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 25,
+      "row": 256
+    },
+    "filename": "/Archipelago/worlds/budokai3/B3Interface.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 256
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 256,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 21,
+      "row": 762
+    },
+    "filename": "/Archipelago/worlds/budokai3/B3Interface.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 761
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 761,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 17,
+      "row": 810
+    },
+    "filename": "/Archipelago/worlds/budokai3/B3Interface.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 809
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 809,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 17,
+      "row": 819
+    },
+    "filename": "/Archipelago/worlds/budokai3/B3Interface.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 818
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 818,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 17,
+      "row": 834
+    },
+    "filename": "/Archipelago/worlds/budokai3/B3Interface.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 833
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 833,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 21,
+      "row": 1258
+    },
+    "filename": "/Archipelago/worlds/budokai3/B3Interface.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 1257
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 1257,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 21,
+      "row": 1278
+    },
+    "filename": "/Archipelago/worlds/budokai3/B3Interface.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 1277
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 1277,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S112",
+    "end_location": {
+      "column": 25,
+      "row": 1294
+    },
+    "filename": "/Archipelago/worlds/budokai3/B3Interface.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 1293
+    },
+    "message": "`try`-`except`-`continue` detected, consider logging the exception",
+    "name": "try-except-continue",
+    "noqa_row": 1293,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-continue"
+  },
+  {
+    "cell": null,
+    "code": "S112",
+    "end_location": {
+      "column": 33,
+      "row": 1301
+    },
+    "filename": "/Archipelago/worlds/budokai3/B3Interface.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 1300
+    },
+    "message": "`try`-`except`-`continue` detected, consider logging the exception",
+    "name": "try-except-continue",
+    "noqa_row": 1300,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-continue"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 17,
+      "row": 1326
+    },
+    "filename": "/Archipelago/worlds/budokai3/B3Interface.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 1325
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 1325,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 21,
+      "row": 1458
+    },
+    "filename": "/Archipelago/worlds/budokai3/B3Interface.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 1457
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 1457,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 17,
+      "row": 434
+    },
+    "filename": "/Archipelago/worlds/budokai3/B3MapHelper.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 433
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 433,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 13,
+      "row": 324
+    },
+    "filename": "/Archipelago/worlds/budokai3/Regions.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 323
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 323,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 13,
+      "row": 347
+    },
+    "filename": "/Archipelago/worlds/budokai3/Regions.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 346
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 346,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 13,
+      "row": 370
+    },
+    "filename": "/Archipelago/worlds/budokai3/Regions.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 369
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 369,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  }
+]

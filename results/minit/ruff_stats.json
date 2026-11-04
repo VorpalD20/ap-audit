@@ -1,0 +1,23 @@
+[
+  {
+    "code": "F541",
+    "name": "f-string-missing-placeholders",
+    "count": 2,
+    "fixable": true,
+    "fixable_count": 2
+  },
+  {
+    "code": "F821",
+    "name": "undefined-name",
+    "count": 2,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "F601",
+    "name": "multi-value-repeated-key-literal",
+    "count": 1,
+    "fixable": false,
+    "fixable_count": 0
+  }
+]
