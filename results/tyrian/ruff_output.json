@@ -1,0 +1,1356 @@
+[
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 50,
+      "row": 341
+    },
+    "filename": "/Archipelago/worlds/tyrian/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 49,
+      "row": 341
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 341,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 57,
+      "row": 342
+    },
+    "filename": "/Archipelago/worlds/tyrian/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 56,
+      "row": 342
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 342,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 56,
+      "row": 343
+    },
+    "filename": "/Archipelago/worlds/tyrian/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 55,
+      "row": 343
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 343,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 61,
+      "row": 344
+    },
+    "filename": "/Archipelago/worlds/tyrian/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 60,
+      "row": 344
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 344,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 55,
+      "row": 345
+    },
+    "filename": "/Archipelago/worlds/tyrian/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 54,
+      "row": 345
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 345,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 57,
+      "row": 346
+    },
+    "filename": "/Archipelago/worlds/tyrian/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 56,
+      "row": 346
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 346,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 43,
+      "row": 347
+    },
+    "filename": "/Archipelago/worlds/tyrian/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 42,
+      "row": 347
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 347,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 42,
+      "row": 348
+    },
+    "filename": "/Archipelago/worlds/tyrian/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 41,
+      "row": 348
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 348,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 50,
+      "row": 349
+    },
+    "filename": "/Archipelago/worlds/tyrian/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 49,
+      "row": 349
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 349,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 43,
+      "row": 350
+    },
+    "filename": "/Archipelago/worlds/tyrian/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 42,
+      "row": 350
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 350,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 55,
+      "row": 351
+    },
+    "filename": "/Archipelago/worlds/tyrian/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 54,
+      "row": 351
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 351,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 48,
+      "row": 352
+    },
+    "filename": "/Archipelago/worlds/tyrian/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 47,
+      "row": 352
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 352,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 54,
+      "row": 353
+    },
+    "filename": "/Archipelago/worlds/tyrian/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 53,
+      "row": 353
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 353,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 54,
+      "row": 354
+    },
+    "filename": "/Archipelago/worlds/tyrian/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 53,
+      "row": 354
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 354,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 54,
+      "row": 355
+    },
+    "filename": "/Archipelago/worlds/tyrian/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 53,
+      "row": 355
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 355,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 54,
+      "row": 356
+    },
+    "filename": "/Archipelago/worlds/tyrian/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 53,
+      "row": 356
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 356,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 47,
+      "row": 357
+    },
+    "filename": "/Archipelago/worlds/tyrian/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 46,
+      "row": 357
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 357,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 43,
+      "row": 358
+    },
+    "filename": "/Archipelago/worlds/tyrian/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 42,
+      "row": 358
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 358,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 49,
+      "row": 359
+    },
+    "filename": "/Archipelago/worlds/tyrian/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 48,
+      "row": 359
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 359,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 40,
+      "row": 499
+    },
+    "filename": "/Archipelago/worlds/tyrian/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 39,
+      "row": 499
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 499,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 40,
+      "row": 500
+    },
+    "filename": "/Archipelago/worlds/tyrian/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 39,
+      "row": 500
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 500,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 40,
+      "row": 501
+    },
+    "filename": "/Archipelago/worlds/tyrian/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 39,
+      "row": 501
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 501,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 40,
+      "row": 502
+    },
+    "filename": "/Archipelago/worlds/tyrian/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 39,
+      "row": 502
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 502,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 40,
+      "row": 503
+    },
+    "filename": "/Archipelago/worlds/tyrian/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 39,
+      "row": 503
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 503,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 40,
+      "row": 506
+    },
+    "filename": "/Archipelago/worlds/tyrian/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 39,
+      "row": 506
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 506,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 40,
+      "row": 507
+    },
+    "filename": "/Archipelago/worlds/tyrian/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 39,
+      "row": 507
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 507,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 40,
+      "row": 508
+    },
+    "filename": "/Archipelago/worlds/tyrian/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 39,
+      "row": 508
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 508,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 40,
+      "row": 509
+    },
+    "filename": "/Archipelago/worlds/tyrian/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 39,
+      "row": 509
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 509,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 40,
+      "row": 510
+    },
+    "filename": "/Archipelago/worlds/tyrian/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 39,
+      "row": 510
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 510,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 49,
+      "row": 525
+    },
+    "filename": "/Archipelago/worlds/tyrian/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 48,
+      "row": 525
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 525,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 54,
+      "row": 526
+    },
+    "filename": "/Archipelago/worlds/tyrian/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 53,
+      "row": 526
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 526,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 59,
+      "row": 527
+    },
+    "filename": "/Archipelago/worlds/tyrian/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 58,
+      "row": 527
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 527,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 56,
+      "row": 528
+    },
+    "filename": "/Archipelago/worlds/tyrian/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 55,
+      "row": 528
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 528,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 14,
+      "row": 529
+    },
+    "filename": "/Archipelago/worlds/tyrian/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 529
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 529,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 31,
+      "row": 361
+    },
+    "filename": "/Archipelago/worlds/tyrian/items.py",
+    "fix": null,
+    "location": {
+      "column": 30,
+      "row": 361
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 361,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 36,
+      "row": 362
+    },
+    "filename": "/Archipelago/worlds/tyrian/items.py",
+    "fix": null,
+    "location": {
+      "column": 35,
+      "row": 362
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 362,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 35,
+      "row": 363
+    },
+    "filename": "/Archipelago/worlds/tyrian/items.py",
+    "fix": null,
+    "location": {
+      "column": 34,
+      "row": 363
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 363,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 40,
+      "row": 364
+    },
+    "filename": "/Archipelago/worlds/tyrian/items.py",
+    "fix": null,
+    "location": {
+      "column": 39,
+      "row": 364
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 364,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 34,
+      "row": 365
+    },
+    "filename": "/Archipelago/worlds/tyrian/items.py",
+    "fix": null,
+    "location": {
+      "column": 33,
+      "row": 365
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 365,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 45,
+      "row": 366
+    },
+    "filename": "/Archipelago/worlds/tyrian/items.py",
+    "fix": null,
+    "location": {
+      "column": 44,
+      "row": 366
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 366,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 42,
+      "row": 367
+    },
+    "filename": "/Archipelago/worlds/tyrian/items.py",
+    "fix": null,
+    "location": {
+      "column": 41,
+      "row": 367
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 367,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 36,
+      "row": 368
+    },
+    "filename": "/Archipelago/worlds/tyrian/items.py",
+    "fix": null,
+    "location": {
+      "column": 35,
+      "row": 368
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 368,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 36,
+      "row": 369
+    },
+    "filename": "/Archipelago/worlds/tyrian/items.py",
+    "fix": null,
+    "location": {
+      "column": 35,
+      "row": 369
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 369,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "B006",
+    "end_location": {
+      "column": 114,
+      "row": 56
+    },
+    "filename": "/Archipelago/worlds/tyrian/locations.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "None",
+          "end_location": {
+            "column": 114,
+            "row": 56
+          },
+          "location": {
+            "column": 94,
+            "row": 56
+          }
+        },
+        {
+          "content": "        if shop_setups is None:\n            shop_setups = [\"F\", \"H\", \"K\", \"L\"]\n",
+          "end_location": {
+            "column": 1,
+            "row": 57
+          },
+          "location": {
+            "column": 1,
+            "row": 57
+          }
+        }
+      ],
+      "message": "Replace with `None`; initialize within function"
+    },
+    "location": {
+      "column": 94,
+      "row": 56
+    },
+    "message": "Do not use mutable data structures for argument defaults",
+    "name": "mutable-argument-default",
+    "noqa_row": 56,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/mutable-argument-default"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 64,
+      "row": 376
+    },
+    "filename": "/Archipelago/worlds/tyrian/logic.py",
+    "fix": null,
+    "location": {
+      "column": 63,
+      "row": 376
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 376,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 66,
+      "row": 377
+    },
+    "filename": "/Archipelago/worlds/tyrian/logic.py",
+    "fix": null,
+    "location": {
+      "column": 65,
+      "row": 377
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 377,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 64,
+      "row": 378
+    },
+    "filename": "/Archipelago/worlds/tyrian/logic.py",
+    "fix": null,
+    "location": {
+      "column": 63,
+      "row": 378
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 378,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 14,
+      "row": 379
+    },
+    "filename": "/Archipelago/worlds/tyrian/logic.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 379
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 379,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 50,
+      "row": 553
+    },
+    "filename": "/Archipelago/worlds/tyrian/logic.py",
+    "fix": null,
+    "location": {
+      "column": 49,
+      "row": 553
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 553,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 52,
+      "row": 554
+    },
+    "filename": "/Archipelago/worlds/tyrian/logic.py",
+    "fix": null,
+    "location": {
+      "column": 51,
+      "row": 554
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 554,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 52,
+      "row": 555
+    },
+    "filename": "/Archipelago/worlds/tyrian/logic.py",
+    "fix": null,
+    "location": {
+      "column": 51,
+      "row": 555
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 555,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 52,
+      "row": 556
+    },
+    "filename": "/Archipelago/worlds/tyrian/logic.py",
+    "fix": null,
+    "location": {
+      "column": 51,
+      "row": 556
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 556,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 46,
+      "row": 557
+    },
+    "filename": "/Archipelago/worlds/tyrian/logic.py",
+    "fix": null,
+    "location": {
+      "column": 45,
+      "row": 557
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 557,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "B006",
+    "end_location": {
+      "column": 30,
+      "row": 565
+    },
+    "filename": "/Archipelago/worlds/tyrian/logic.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "None",
+          "end_location": {
+            "column": 30,
+            "row": 565
+          },
+          "location": {
+            "column": 28,
+            "row": 565
+          }
+        },
+        {
+          "content": "    if exclude is None:\n        exclude = []\n",
+          "end_location": {
+            "column": 1,
+            "row": 566
+          },
+          "location": {
+            "column": 1,
+            "row": 566
+          }
+        }
+      ],
+      "message": "Replace with `None`; initialize within function"
+    },
+    "location": {
+      "column": 28,
+      "row": 565
+    },
+    "message": "Do not use mutable data structures for argument defaults",
+    "name": "mutable-argument-default",
+    "noqa_row": 565,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/mutable-argument-default"
+  },
+  {
+    "cell": null,
+    "code": "B006",
+    "end_location": {
+      "column": 38,
+      "row": 67
+    },
+    "filename": "/Archipelago/worlds/tyrian/twiddles.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "None",
+          "end_location": {
+            "column": 38,
+            "row": 67
+          },
+          "location": {
+            "column": 36,
+            "row": 67
+          }
+        },
+        {
+          "content": "        if command is None:\n            command = []\n",
+          "end_location": {
+            "column": 1,
+            "row": 68
+          },
+          "location": {
+            "column": 1,
+            "row": 68
+          }
+        }
+      ],
+      "message": "Replace with `None`; initialize within function"
+    },
+    "location": {
+      "column": 36,
+      "row": 67
+    },
+    "message": "Do not use mutable data structures for argument defaults",
+    "name": "mutable-argument-default",
+    "noqa_row": 67,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/mutable-argument-default"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 35,
+      "row": 72
+    },
+    "filename": "/Archipelago/worlds/tyrian/twiddles.py",
+    "fix": null,
+    "location": {
+      "column": 34,
+      "row": 72
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 72,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 36,
+      "row": 73
+    },
+    "filename": "/Archipelago/worlds/tyrian/twiddles.py",
+    "fix": null,
+    "location": {
+      "column": 35,
+      "row": 73
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 73,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 38,
+      "row": 74
+    },
+    "filename": "/Archipelago/worlds/tyrian/twiddles.py",
+    "fix": null,
+    "location": {
+      "column": 37,
+      "row": 74
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 74,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 37,
+      "row": 75
+    },
+    "filename": "/Archipelago/worlds/tyrian/twiddles.py",
+    "fix": null,
+    "location": {
+      "column": 36,
+      "row": 75
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 75,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 14,
+      "row": 76
+    },
+    "filename": "/Archipelago/worlds/tyrian/twiddles.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 76
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 76,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 30,
+      "row": 82
+    },
+    "filename": "/Archipelago/worlds/tyrian/twiddles.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 82
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 82,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 30,
+      "row": 83
+    },
+    "filename": "/Archipelago/worlds/tyrian/twiddles.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 83
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 83,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 30,
+      "row": 84
+    },
+    "filename": "/Archipelago/worlds/tyrian/twiddles.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 84
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 84,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 29,
+      "row": 85
+    },
+    "filename": "/Archipelago/worlds/tyrian/twiddles.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 85
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 85,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 28,
+      "row": 165
+    },
+    "filename": "/Archipelago/worlds/tyrian/twiddles.py",
+    "fix": null,
+    "location": {
+      "column": 27,
+      "row": 165
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 165,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 28,
+      "row": 166
+    },
+    "filename": "/Archipelago/worlds/tyrian/twiddles.py",
+    "fix": null,
+    "location": {
+      "column": 27,
+      "row": 166
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 166,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 10,
+      "row": 167
+    },
+    "filename": "/Archipelago/worlds/tyrian/twiddles.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 167
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 167,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  }
+]

@@ -15,6 +15,10 @@
   "last_checked": "2026-11-04T04:31:13.238138",
   "last_version": "14.post4"
  },
+ "katana_zero": {
+  "last_checked": "2026-11-04T16:08:32.492894",
+  "last_version": "0.1.0"
+ },
  "manual_ctcsudoku_axxroy": {
   "last_checked": "2026-11-04T15:43:09.432266",
   "last_version": "1.2.1"
@@ -38,6 +42,10 @@
  "smrpg": {
   "last_checked": "2026-11-04T15:44:15.240276",
   "last_version": "0.6.3"
+ },
+ "tyrian": {
+  "last_checked": "2026-11-04T16:12:35.193278",
+  "last_version": "1.0.5"
  },
  "unbeatable_arcade": {
   "last_checked": "2026-11-04T15:48:16.907890",

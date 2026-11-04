@@ -1,4 +1,5 @@
 import datetime
+import enum
 import json
 import os
 import subprocess
@@ -18,8 +19,15 @@ class HistoryInfo:
     last_checked: datetime.datetime
     last_version: str
 
-def run() -> None:
+class SeverityLevel(enum.Enum):
+    NONE = 0
+    LOW = 1
+    MEDIUM = 5
+    HIGH = 8
+    CRITICAL = 10
+    UNKNOWN = -1
 
+def choose_world():
     if os.path.exists("history.json"):
         with open("history.json", "r") as f:
             history = converter.structure(json.load(f), dict[str, HistoryInfo])
@@ -50,14 +58,16 @@ def run() -> None:
             break
     else:
         print("No world found with a new version.")
-        return
+        return None, None
 
     history[world_id] = HistoryInfo(datetime.datetime.now(), world['metadata'].get('world_version', '0'))
     history = dict(sorted(history.items(), key=lambda item: item[0]))
     dump = converter.unstructure(history)
     with open("history.json", "w") as f:
         json.dump(dump, f, indent=1)
+    return world, world_id
 
+def run_checks(world, world_id, results_path):
     download_url = world["world"]
     response = requests.get(download_url)
     world_path = "worlds"
@@ -77,11 +87,45 @@ def run() -> None:
         "ghcr.io/silasary/ap-lint:main",
     ]
     subprocess.run(docker_cmd, check=True)
-    results_path = os.path.join("results", world_id)
-    os.makedirs(results_path, exist_ok=True)
+
     for file_name in os.listdir(out_path):
         os.rename(os.path.join(out_path, file_name), os.path.join(results_path, file_name))
-    pass
+
+def load_severity_data(results_path) -> dict[str, int]:
+    severity: dict[str, int] = {}
+    severity_updated = False
+    if os.path.exists("severity.json"):
+        with open("severity.json", "r") as f:
+            severity = json.load(f)
+    with open(os.path.join(results_path, "ruff_stats.json"), "r") as f:
+        ruff_stats = json.load(f)
+    for issue in ruff_stats:
+        name = issue.get("name")
+        if name not in severity:
+            severity[name] = -1
+            severity_updated = True
+    if severity_updated:
+        with open("severity.json", "w") as f:
+            json.dump(severity, f, indent=1)
+    return severity
+
+
+def finalise_report(results_path) -> None:
+    severity = load_severity_data(results_path)
+
+
+def run() -> None:
+    world, world_id = choose_world()
+    if world is None or world_id is None:
+        return
+
+    results_path = os.path.join("results", world_id)
+    os.makedirs(results_path, exist_ok=True)
+
+    run_checks(world, world_id, results_path)
+
+    finalise_report(results_path)
+
 
 if __name__ == "__main__":
     run()

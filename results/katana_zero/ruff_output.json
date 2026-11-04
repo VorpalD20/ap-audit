@@ -1,0 +1,110 @@
+[
+  {
+    "cell": null,
+    "code": "F821",
+    "end_location": {
+      "column": 45,
+      "row": 38
+    },
+    "filename": "/Archipelago/worlds/katana_zero/Regions.py",
+    "fix": null,
+    "location": {
+      "column": 33,
+      "row": 38
+    },
+    "message": "Undefined name `LocationData`",
+    "name": "undefined-name",
+    "noqa_row": 38,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-name"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 87,
+      "row": 229
+    },
+    "filename": "/Archipelago/worlds/katana_zero/client/game_state.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"[GAME HOOK SUCCESS] Successfully hooked to Katana ZERO.exe!\"",
+          "end_location": {
+            "column": 87,
+            "row": 229
+          },
+          "location": {
+            "column": 25,
+            "row": 229
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 25,
+      "row": 229
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 229,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 91,
+      "row": 238
+    },
+    "filename": "/Archipelago/worlds/katana_zero/client/game_state.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"[GAME HOOK SUCCESS] Successfully hooked to Katana ZERO.exe!\"",
+          "end_location": {
+            "column": 91,
+            "row": 238
+          },
+          "location": {
+            "column": 29,
+            "row": 238
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 29,
+      "row": 238
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 238,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F821",
+    "end_location": {
+      "column": 33,
+      "row": 66
+    },
+    "filename": "/Archipelago/worlds/katana_zero/client/trap_manager.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 66
+    },
+    "message": "Undefined name `List`",
+    "name": "undefined-name",
+    "noqa_row": 66,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-name"
+  }
+]

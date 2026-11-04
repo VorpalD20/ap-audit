@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="1" failures="0" skipped="0" tests="1" time="7.304" timestamp="2026-11-04T05:07:59.360676+00:00" hostname="e1fcb13e91e0"><testcase classname="" name="worlds.katana_zero.test.test_katana_zero" time="0.000"><error message="collection failure">/usr/local/lib/python3.13/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+&lt;frozen importlib._bootstrap&gt;:1404: in _gcd_import
+    ???
+&lt;frozen importlib._bootstrap&gt;:1369: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:1312: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:488: in _call_with_frames_removed
+    ???
+&lt;frozen importlib._bootstrap&gt;:1404: in _gcd_import
+    ???
+&lt;frozen importlib._bootstrap&gt;:1369: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:1312: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:488: in _call_with_frames_removed
+    ???
+&lt;frozen importlib._bootstrap&gt;:1404: in _gcd_import
+    ???
+&lt;frozen importlib._bootstrap&gt;:1369: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:1340: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:935: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap_external&gt;:1027: in exec_module
+    ???
+&lt;frozen importlib._bootstrap&gt;:488: in _call_with_frames_removed
+    ???
+worlds/katana_zero/__init__.py:6: in &lt;module&gt;
+    from .Options import KatanaZeroOptions
+worlds/katana_zero/Options.py:20: in &lt;module&gt;
+    class StartingTape(Choice):
+Options.py:91: in __new__
+    assert "random" not in new_options, "Choice option 'random' cannot be manually assigned."
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError: Choice option 'random' cannot be manually assigned.</error></testcase></testsuite></testsuites>

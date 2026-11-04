@@ -1,0 +1,16 @@
+[
+  {
+    "code": "E701",
+    "name": "multiple-statements-on-one-line-colon",
+    "count": 64,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "B006",
+    "name": "mutable-argument-default",
+    "count": 3,
+    "fixable": false,
+    "fixable_count": 0
+  }
+]
