@@ -1,0 +1,12 @@
+{
+    "game": "Isles Of Sea And Sky",
+    "stub": "isles_of_sea_and_sky",
+    "manifest": {
+        "game": "Isles Of Sea And Sky",
+        "authors": [
+            "KimDelicious"
+        ],
+        "minimum_ap_version": "0.6.4",
+        "world_version": "0.0.13"
+    }
+}

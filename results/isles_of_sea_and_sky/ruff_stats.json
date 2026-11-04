@@ -1,0 +1,30 @@
+[
+  {
+    "code": "F541",
+    "name": "f-string-missing-placeholders",
+    "count": 6,
+    "fixable": true,
+    "fixable_count": 6
+  },
+  {
+    "code": "E741",
+    "name": "ambiguous-variable-name",
+    "count": 2,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "S603",
+    "name": "subprocess-without-shell-equals-true",
+    "count": 2,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "B028",
+    "name": "no-explicit-stacklevel",
+    "count": 1,
+    "fixable": false,
+    "fixable_count": 0
+  }
+]

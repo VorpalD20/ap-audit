@@ -1,0 +1,323 @@
+[
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 42,
+      "row": 29
+    },
+    "filename": "/Archipelago/worlds/isles_of_sea_and_sky/Client.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"Syncing items.\"",
+          "end_location": {
+            "column": 42,
+            "row": 29
+          },
+          "location": {
+            "column": 25,
+            "row": 29
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 25,
+      "row": 29
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 29,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "S603",
+    "end_location": {
+      "column": 37,
+      "row": 53
+    },
+    "filename": "/Archipelago/worlds/isles_of_sea_and_sky/Client.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 53
+    },
+    "message": "`subprocess` call: check for execution of untrusted input",
+    "name": "subprocess-without-shell-equals-true",
+    "noqa_row": 53,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/subprocess-without-shell-equals-true"
+  },
+  {
+    "cell": null,
+    "code": "S603",
+    "end_location": {
+      "column": 37,
+      "row": 102
+    },
+    "filename": "/Archipelago/worlds/isles_of_sea_and_sky/Client.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 102
+    },
+    "message": "`subprocess` call: check for execution of untrusted input",
+    "name": "subprocess-without-shell-equals-true",
+    "noqa_row": 102,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/subprocess-without-shell-equals-true"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 50,
+      "row": 154
+    },
+    "filename": "/Archipelago/worlds/isles_of_sea_and_sky/Client.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"Deathlink enabled.\"",
+          "end_location": {
+            "column": 50,
+            "row": 154
+          },
+          "location": {
+            "column": 29,
+            "row": 154
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 29,
+      "row": 154
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 154,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 51,
+      "row": 156
+    },
+    "filename": "/Archipelago/worlds/isles_of_sea_and_sky/Client.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"Deathlink disabled.\"",
+          "end_location": {
+            "column": 51,
+            "row": 156
+          },
+          "location": {
+            "column": 29,
+            "row": 156
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 29,
+      "row": 156
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 156,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 33,
+      "row": 385
+    },
+    "filename": "/Archipelago/worlds/isles_of_sea_and_sky/Client.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"sent.items\"",
+          "end_location": {
+            "column": 33,
+            "row": 385
+          },
+          "location": {
+            "column": 20,
+            "row": 385
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 20,
+      "row": 385
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 385,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 41,
+      "row": 405
+    },
+    "filename": "/Archipelago/worlds/isles_of_sea_and_sky/Client.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"received.items\"",
+          "end_location": {
+            "column": 41,
+            "row": 405
+          },
+          "location": {
+            "column": 24,
+            "row": 405
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 24,
+      "row": 405
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 405,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 37,
+      "row": 426
+    },
+    "filename": "/Archipelago/worlds/isles_of_sea_and_sky/Client.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"sent.items\"",
+          "end_location": {
+            "column": 37,
+            "row": 426
+          },
+          "location": {
+            "column": 24,
+            "row": 426
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 24,
+      "row": 426
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 426,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 30,
+      "row": 497
+    },
+    "filename": "/Archipelago/worlds/isles_of_sea_and_sky/Client.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 497
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 497,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 30,
+      "row": 522
+    },
+    "filename": "/Archipelago/worlds/isles_of_sea_and_sky/Client.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 522
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 522,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "B028",
+    "end_location": {
+      "column": 26,
+      "row": 360
+    },
+    "filename": "/Archipelago/worlds/isles_of_sea_and_sky/__init__.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": ", stacklevel=2",
+          "end_location": {
+            "column": 73,
+            "row": 360
+          },
+          "location": {
+            "column": 73,
+            "row": 360
+          }
+        }
+      ],
+      "message": "Set `stacklevel=2`"
+    },
+    "location": {
+      "column": 13,
+      "row": 360
+    },
+    "message": "No explicit `stacklevel` keyword argument found",
+    "name": "no-explicit-stacklevel",
+    "noqa_row": 360,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/no-explicit-stacklevel"
+  }
+]
