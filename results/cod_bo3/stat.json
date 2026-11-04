@@ -1,0 +1,11 @@
+{
+    "game": "Black Ops 3 - Zombies",
+    "stub": "cod_bo3",
+    "manifest": {
+        "game": "Black Ops 3 - Zombies",
+        "world_version": "0.5.12",
+        "minimum_ap_version": "0.6.7",
+        "compatible_version": 7,
+        "version": 7
+    }
+}

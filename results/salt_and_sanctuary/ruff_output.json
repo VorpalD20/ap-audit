@@ -1,0 +1,40 @@
+[
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 77,
+      "row": 842
+    },
+    "filename": "/Archipelago/worlds/salt_and_sanctuary/Regions.py",
+    "fix": null,
+    "location": {
+      "column": 76,
+      "row": 842
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 842,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "F601",
+    "end_location": {
+      "column": 42,
+      "row": 4610
+    },
+    "filename": "/Archipelago/worlds/salt_and_sanctuary/ShopLocations.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 4610
+    },
+    "message": "Dictionary key literal `\"Stone Roots Cleric Shop - buff_holy\"` repeated",
+    "name": "multi-value-repeated-key-literal",
+    "noqa_row": 4610,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multi-value-repeated-key-literal"
+  }
+]

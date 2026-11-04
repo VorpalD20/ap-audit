@@ -1,0 +1,23 @@
+[
+  {
+    "code": "B007",
+    "name": "unused-loop-control-variable",
+    "count": 13,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "B023",
+    "name": "function-uses-loop-variable",
+    "count": 2,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "E703",
+    "name": "useless-semicolon",
+    "count": 1,
+    "fixable": true,
+    "fixable_count": 1
+  }
+]

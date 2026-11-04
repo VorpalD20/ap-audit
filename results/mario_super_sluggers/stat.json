@@ -1,0 +1,14 @@
+{
+    "game": "Mario Super Sluggers",
+    "stub": "mario_super_sluggers",
+    "manifest": {
+        "game": "Mario Super Sluggers",
+        "authors": [
+            "MarioManTAW"
+        ],
+        "world_version": "1.0.0",
+        "minimum_ap_version": "0.6.7",
+        "compatible_version": 7,
+        "version": 7
+    }
+}

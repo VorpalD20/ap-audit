@@ -1,0 +1,16 @@
+[
+  {
+    "code": "E741",
+    "name": "ambiguous-variable-name",
+    "count": 1,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "F601",
+    "name": "multi-value-repeated-key-literal",
+    "count": 1,
+    "fixable": false,
+    "fixable_count": 0
+  }
+]

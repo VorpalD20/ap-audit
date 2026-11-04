@@ -1,0 +1,113 @@
+[
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 54,
+      "row": 428
+    },
+    "filename": "/Archipelago/worlds/mario_super_sluggers/client.py",
+    "fix": null,
+    "location": {
+      "column": 53,
+      "row": 428
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 428,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 55,
+      "row": 430
+    },
+    "filename": "/Archipelago/worlds/mario_super_sluggers/client.py",
+    "fix": null,
+    "location": {
+      "column": 54,
+      "row": 430
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 430,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 22,
+      "row": 624
+    },
+    "filename": "/Archipelago/worlds/mario_super_sluggers/client.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 624
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 624,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E713",
+    "end_location": {
+      "column": 45,
+      "row": 633
+    },
+    "filename": "/Archipelago/worlds/mario_super_sluggers/client.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "mission not in MISSION_CAPTAINS",
+          "end_location": {
+            "column": 45,
+            "row": 633
+          },
+          "location": {
+            "column": 14,
+            "row": 633
+          }
+        }
+      ],
+      "message": "Convert to `not in`"
+    },
+    "location": {
+      "column": 18,
+      "row": 633
+    },
+    "message": "Test for membership should be `not in`",
+    "name": "not-in-test",
+    "noqa_row": 633,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/not-in-test"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 22,
+      "row": 642
+    },
+    "filename": "/Archipelago/worlds/mario_super_sluggers/client.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 642
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 642,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  }
+]

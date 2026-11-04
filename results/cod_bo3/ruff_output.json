@@ -1,0 +1,530 @@
+[
+  {
+    "cell": null,
+    "code": "E703",
+    "end_location": {
+      "column": 89,
+      "row": 230
+    },
+    "filename": "/Archipelago/worlds/cod_bo3/Names/LocationName.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "",
+          "end_location": {
+            "column": 89,
+            "row": 230
+          },
+          "location": {
+            "column": 88,
+            "row": 230
+          }
+        }
+      ],
+      "message": "Remove unnecessary semicolon"
+    },
+    "location": {
+      "column": 88,
+      "row": 230
+    },
+    "message": "Statement ends with an unnecessary semicolon",
+    "name": "useless-semicolon",
+    "noqa_row": 230,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "B007",
+    "end_location": {
+      "column": 23,
+      "row": 898
+    },
+    "filename": "/Archipelago/worlds/cod_bo3/Weapons.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "_weapon_key",
+          "end_location": {
+            "column": 23,
+            "row": 898
+          },
+          "location": {
+            "column": 13,
+            "row": 898
+          }
+        }
+      ],
+      "message": "Rename unused `weapon_key` to `_weapon_key`"
+    },
+    "location": {
+      "column": 13,
+      "row": 898
+    },
+    "message": "Loop control variable `weapon_key` not used within loop body",
+    "name": "unused-loop-control-variable",
+    "noqa_row": 898,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/unused-loop-control-variable"
+  },
+  {
+    "cell": null,
+    "code": "B007",
+    "end_location": {
+      "column": 23,
+      "row": 912
+    },
+    "filename": "/Archipelago/worlds/cod_bo3/Weapons.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "_weapon_key",
+          "end_location": {
+            "column": 23,
+            "row": 912
+          },
+          "location": {
+            "column": 13,
+            "row": 912
+          }
+        }
+      ],
+      "message": "Rename unused `weapon_key` to `_weapon_key`"
+    },
+    "location": {
+      "column": 13,
+      "row": 912
+    },
+    "message": "Loop control variable `weapon_key` not used within loop body",
+    "name": "unused-loop-control-variable",
+    "noqa_row": 912,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/unused-loop-control-variable"
+  },
+  {
+    "cell": null,
+    "code": "B007",
+    "end_location": {
+      "column": 35,
+      "row": 170
+    },
+    "filename": "/Archipelago/worlds/cod_bo3/__init__.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "_weapon_key",
+          "end_location": {
+            "column": 35,
+            "row": 170
+          },
+          "location": {
+            "column": 25,
+            "row": 170
+          }
+        }
+      ],
+      "message": "Rename unused `weapon_key` to `_weapon_key`"
+    },
+    "location": {
+      "column": 25,
+      "row": 170
+    },
+    "message": "Loop control variable `weapon_key` not used within loop body",
+    "name": "unused-loop-control-variable",
+    "noqa_row": 170,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/unused-loop-control-variable"
+  },
+  {
+    "cell": null,
+    "code": "B007",
+    "end_location": {
+      "column": 18,
+      "row": 1228
+    },
+    "filename": "/Archipelago/worlds/cod_bo3/__init__.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "_i",
+          "end_location": {
+            "column": 18,
+            "row": 1228
+          },
+          "location": {
+            "column": 17,
+            "row": 1228
+          }
+        }
+      ],
+      "message": "Rename unused `i` to `_i`"
+    },
+    "location": {
+      "column": 17,
+      "row": 1228
+    },
+    "message": "Loop control variable `i` not used within loop body",
+    "name": "unused-loop-control-variable",
+    "noqa_row": 1228,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/unused-loop-control-variable"
+  },
+  {
+    "cell": null,
+    "code": "B007",
+    "end_location": {
+      "column": 18,
+      "row": 1236
+    },
+    "filename": "/Archipelago/worlds/cod_bo3/__init__.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "_i",
+          "end_location": {
+            "column": 18,
+            "row": 1236
+          },
+          "location": {
+            "column": 17,
+            "row": 1236
+          }
+        }
+      ],
+      "message": "Rename unused `i` to `_i`"
+    },
+    "location": {
+      "column": 17,
+      "row": 1236
+    },
+    "message": "Loop control variable `i` not used within loop body",
+    "name": "unused-loop-control-variable",
+    "noqa_row": 1236,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/unused-loop-control-variable"
+  },
+  {
+    "cell": null,
+    "code": "B007",
+    "end_location": {
+      "column": 18,
+      "row": 1241
+    },
+    "filename": "/Archipelago/worlds/cod_bo3/__init__.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "_i",
+          "end_location": {
+            "column": 18,
+            "row": 1241
+          },
+          "location": {
+            "column": 17,
+            "row": 1241
+          }
+        }
+      ],
+      "message": "Rename unused `i` to `_i`"
+    },
+    "location": {
+      "column": 17,
+      "row": 1241
+    },
+    "message": "Loop control variable `i` not used within loop body",
+    "name": "unused-loop-control-variable",
+    "noqa_row": 1241,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/unused-loop-control-variable"
+  },
+  {
+    "cell": null,
+    "code": "B007",
+    "end_location": {
+      "column": 18,
+      "row": 1244
+    },
+    "filename": "/Archipelago/worlds/cod_bo3/__init__.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "_i",
+          "end_location": {
+            "column": 18,
+            "row": 1244
+          },
+          "location": {
+            "column": 17,
+            "row": 1244
+          }
+        }
+      ],
+      "message": "Rename unused `i` to `_i`"
+    },
+    "location": {
+      "column": 17,
+      "row": 1244
+    },
+    "message": "Loop control variable `i` not used within loop body",
+    "name": "unused-loop-control-variable",
+    "noqa_row": 1244,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/unused-loop-control-variable"
+  },
+  {
+    "cell": null,
+    "code": "B007",
+    "end_location": {
+      "column": 18,
+      "row": 1247
+    },
+    "filename": "/Archipelago/worlds/cod_bo3/__init__.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "_i",
+          "end_location": {
+            "column": 18,
+            "row": 1247
+          },
+          "location": {
+            "column": 17,
+            "row": 1247
+          }
+        }
+      ],
+      "message": "Rename unused `i` to `_i`"
+    },
+    "location": {
+      "column": 17,
+      "row": 1247
+    },
+    "message": "Loop control variable `i` not used within loop body",
+    "name": "unused-loop-control-variable",
+    "noqa_row": 1247,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/unused-loop-control-variable"
+  },
+  {
+    "cell": null,
+    "code": "B007",
+    "end_location": {
+      "column": 18,
+      "row": 1250
+    },
+    "filename": "/Archipelago/worlds/cod_bo3/__init__.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "_i",
+          "end_location": {
+            "column": 18,
+            "row": 1250
+          },
+          "location": {
+            "column": 17,
+            "row": 1250
+          }
+        }
+      ],
+      "message": "Rename unused `i` to `_i`"
+    },
+    "location": {
+      "column": 17,
+      "row": 1250
+    },
+    "message": "Loop control variable `i` not used within loop body",
+    "name": "unused-loop-control-variable",
+    "noqa_row": 1250,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/unused-loop-control-variable"
+  },
+  {
+    "cell": null,
+    "code": "B007",
+    "end_location": {
+      "column": 18,
+      "row": 1253
+    },
+    "filename": "/Archipelago/worlds/cod_bo3/__init__.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "_i",
+          "end_location": {
+            "column": 18,
+            "row": 1253
+          },
+          "location": {
+            "column": 17,
+            "row": 1253
+          }
+        }
+      ],
+      "message": "Rename unused `i` to `_i`"
+    },
+    "location": {
+      "column": 17,
+      "row": 1253
+    },
+    "message": "Loop control variable `i` not used within loop body",
+    "name": "unused-loop-control-variable",
+    "noqa_row": 1253,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/unused-loop-control-variable"
+  },
+  {
+    "cell": null,
+    "code": "B007",
+    "end_location": {
+      "column": 18,
+      "row": 1257
+    },
+    "filename": "/Archipelago/worlds/cod_bo3/__init__.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "_i",
+          "end_location": {
+            "column": 18,
+            "row": 1257
+          },
+          "location": {
+            "column": 17,
+            "row": 1257
+          }
+        }
+      ],
+      "message": "Rename unused `i` to `_i`"
+    },
+    "location": {
+      "column": 17,
+      "row": 1257
+    },
+    "message": "Loop control variable `i` not used within loop body",
+    "name": "unused-loop-control-variable",
+    "noqa_row": 1257,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/unused-loop-control-variable"
+  },
+  {
+    "cell": null,
+    "code": "B007",
+    "end_location": {
+      "column": 23,
+      "row": 1419
+    },
+    "filename": "/Archipelago/worlds/cod_bo3/__init__.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "_weapon_key",
+          "end_location": {
+            "column": 23,
+            "row": 1419
+          },
+          "location": {
+            "column": 13,
+            "row": 1419
+          }
+        }
+      ],
+      "message": "Rename unused `weapon_key` to `_weapon_key`"
+    },
+    "location": {
+      "column": 13,
+      "row": 1419
+    },
+    "message": "Loop control variable `weapon_key` not used within loop body",
+    "name": "unused-loop-control-variable",
+    "noqa_row": 1419,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/unused-loop-control-variable"
+  },
+  {
+    "cell": null,
+    "code": "B007",
+    "end_location": {
+      "column": 20,
+      "row": 1549
+    },
+    "filename": "/Archipelago/worlds/cod_bo3/__init__.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "_str_map",
+          "end_location": {
+            "column": 20,
+            "row": 1549
+          },
+          "location": {
+            "column": 13,
+            "row": 1549
+          }
+        }
+      ],
+      "message": "Rename unused `str_map` to `_str_map`"
+    },
+    "location": {
+      "column": 13,
+      "row": 1549
+    },
+    "message": "Loop control variable `str_map` not used within loop body",
+    "name": "unused-loop-control-variable",
+    "noqa_row": 1549,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/unused-loop-control-variable"
+  },
+  {
+    "cell": null,
+    "code": "B023",
+    "end_location": {
+      "column": 88,
+      "row": 1669
+    },
+    "filename": "/Archipelago/worlds/cod_bo3/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 79,
+      "row": 1669
+    },
+    "message": "Function definition does not bind loop variable `round_num`",
+    "name": "function-uses-loop-variable",
+    "noqa_row": 1669,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/function-uses-loop-variable"
+  },
+  {
+    "cell": null,
+    "code": "B023",
+    "end_location": {
+      "column": 122,
+      "row": 1670
+    },
+    "filename": "/Archipelago/worlds/cod_bo3/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 113,
+      "row": 1670
+    },
+    "message": "Function definition does not bind loop variable `round_num`",
+    "name": "function-uses-loop-variable",
+    "noqa_row": 1670,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/function-uses-loop-variable"
+  }
+]

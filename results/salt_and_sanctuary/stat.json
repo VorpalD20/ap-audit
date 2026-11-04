@@ -1,0 +1,11 @@
+{
+    "game": "Salt and Sanctuary",
+    "stub": "salt_and_sanctuary",
+    "manifest": {
+        "compatible_version": 7,
+        "version": 7,
+        "game": "Salt and Sanctuary",
+        "minimum_ap_version": "0.6.6",
+        "maximum_ap_version": "0.6.6"
+    }
+}
