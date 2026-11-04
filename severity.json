@@ -14,5 +14,13 @@
  "f-string-missing-placeholders": -1,
  "none-comparison": -1,
  "undefined-local-with-import-star-usage": -1,
- "undefined-local-with-import-star": -1
+ "undefined-local-with-import-star": -1,
+ "multiple-statements-on-one-line-semicolon": -1,
+ "try-except-pass": -1,
+ "start-process-with-partial-path": -1,
+ "subprocess-without-shell-equals-true": -1,
+ "function-call-in-default-argument": -1,
+ "function-uses-loop-variable": -1,
+ "get-attr-with-constant": -1,
+ "start-process-with-no-shell": -1
 }

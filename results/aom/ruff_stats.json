@@ -1,0 +1,79 @@
+[
+  {
+    "code": "E701",
+    "name": "multiple-statements-on-one-line-colon",
+    "count": 32,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "E702",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "count": 16,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "S110",
+    "name": "try-except-pass",
+    "count": 14,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "E741",
+    "name": "ambiguous-variable-name",
+    "count": 10,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "F541",
+    "name": "f-string-missing-placeholders",
+    "count": 10,
+    "fixable": true,
+    "fixable_count": 10
+  },
+  {
+    "code": "S607",
+    "name": "start-process-with-partial-path",
+    "count": 7,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "S603",
+    "name": "subprocess-without-shell-equals-true",
+    "count": 6,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "B008",
+    "name": "function-call-in-default-argument",
+    "count": 2,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "B023",
+    "name": "function-uses-loop-variable",
+    "count": 1,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "B009",
+    "name": "get-attr-with-constant",
+    "count": 1,
+    "fixable": true,
+    "fixable_count": 1
+  },
+  {
+    "code": "S606",
+    "name": "start-process-with-no-shell",
+    "count": 1,
+    "fixable": false,
+    "fixable_count": 0
+  }
+]

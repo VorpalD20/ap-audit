@@ -3,6 +3,10 @@
   "last_checked": "2026-11-04T17:04:30.913447",
   "last_version": "0.2.1"
  },
+ "aom": {
+  "last_checked": "2026-11-04T15:11:03.647007",
+  "last_version": "1.3.7"
+ },
  "bingo": {
   "last_checked": "2026-11-04T15:22:05.544208",
   "last_version": "0.1.9.post2"

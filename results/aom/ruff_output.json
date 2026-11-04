@@ -1,0 +1,2078 @@
+[
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 27,
+      "row": 293
+    },
+    "filename": "/Archipelago/worlds/aom/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 26,
+      "row": 293
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 293,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 30,
+      "row": 294
+    },
+    "filename": "/Archipelago/worlds/aom/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 294
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 294,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 31,
+      "row": 295
+    },
+    "filename": "/Archipelago/worlds/aom/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 30,
+      "row": 295
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 295,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 29,
+      "row": 296
+    },
+    "filename": "/Archipelago/worlds/aom/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 296
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 296,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 30,
+      "row": 297
+    },
+    "filename": "/Archipelago/worlds/aom/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 297
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 297,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 27,
+      "row": 298
+    },
+    "filename": "/Archipelago/worlds/aom/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 26,
+      "row": 298
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 298,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 27,
+      "row": 305
+    },
+    "filename": "/Archipelago/worlds/aom/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 26,
+      "row": 305
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 305,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 30,
+      "row": 306
+    },
+    "filename": "/Archipelago/worlds/aom/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 306
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 306,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 31,
+      "row": 307
+    },
+    "filename": "/Archipelago/worlds/aom/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 30,
+      "row": 307
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 307,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 29,
+      "row": 308
+    },
+    "filename": "/Archipelago/worlds/aom/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 308
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 308,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 30,
+      "row": 309
+    },
+    "filename": "/Archipelago/worlds/aom/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 309
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 309,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 27,
+      "row": 310
+    },
+    "filename": "/Archipelago/worlds/aom/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 26,
+      "row": 310
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 310,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 31,
+      "row": 1117
+    },
+    "filename": "/Archipelago/worlds/aom/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 30,
+      "row": 1117
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 1117,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 29,
+      "row": 1118
+    },
+    "filename": "/Archipelago/worlds/aom/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 1118
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 1118,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 31,
+      "row": 1119
+    },
+    "filename": "/Archipelago/worlds/aom/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 30,
+      "row": 1119
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 1119,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 51,
+      "row": 1884
+    },
+    "filename": "/Archipelago/worlds/aom/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 50,
+      "row": 1884
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 1884,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 51,
+      "row": 1885
+    },
+    "filename": "/Archipelago/worlds/aom/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 50,
+      "row": 1885
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 1885,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 51,
+      "row": 1886
+    },
+    "filename": "/Archipelago/worlds/aom/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 50,
+      "row": 1886
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 1886,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 51,
+      "row": 1887
+    },
+    "filename": "/Archipelago/worlds/aom/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 50,
+      "row": 1887
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 1887,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 51,
+      "row": 1888
+    },
+    "filename": "/Archipelago/worlds/aom/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 50,
+      "row": 1888
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 1888,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 51,
+      "row": 1889
+    },
+    "filename": "/Archipelago/worlds/aom/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 50,
+      "row": 1889
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 1889,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 51,
+      "row": 1890
+    },
+    "filename": "/Archipelago/worlds/aom/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 50,
+      "row": 1890
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 1890,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 57,
+      "row": 2456
+    },
+    "filename": "/Archipelago/worlds/aom/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 56,
+      "row": 2456
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 2456,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 61,
+      "row": 2464
+    },
+    "filename": "/Archipelago/worlds/aom/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 60,
+      "row": 2464
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 2464,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 57,
+      "row": 2475
+    },
+    "filename": "/Archipelago/worlds/aom/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 56,
+      "row": 2475
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 2475,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 17,
+      "row": 2562
+    },
+    "filename": "/Archipelago/worlds/aom/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 2561
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 2561,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 13,
+      "row": 203
+    },
+    "filename": "/Archipelago/worlds/aom/client/ApClient.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 202
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 202,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S603",
+    "end_location": {
+      "column": 33,
+      "row": 265
+    },
+    "filename": "/Archipelago/worlds/aom/client/ApClient.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 265
+    },
+    "message": "`subprocess` call: check for execution of untrusted input",
+    "name": "subprocess-without-shell-equals-true",
+    "noqa_row": 265,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/subprocess-without-shell-equals-true"
+  },
+  {
+    "cell": null,
+    "code": "S607",
+    "end_location": {
+      "column": 77,
+      "row": 266
+    },
+    "filename": "/Archipelago/worlds/aom/client/ApClient.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 266
+    },
+    "message": "Starting a process with a partial executable path",
+    "name": "start-process-with-partial-path",
+    "noqa_row": 266,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/start-process-with-partial-path"
+  },
+  {
+    "cell": null,
+    "code": "S603",
+    "end_location": {
+      "column": 29,
+      "row": 271
+    },
+    "filename": "/Archipelago/worlds/aom/client/ApClient.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 271
+    },
+    "message": "`subprocess` call: check for execution of untrusted input",
+    "name": "subprocess-without-shell-equals-true",
+    "noqa_row": 271,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/subprocess-without-shell-equals-true"
+  },
+  {
+    "cell": null,
+    "code": "S607",
+    "end_location": {
+      "column": 44,
+      "row": 272
+    },
+    "filename": "/Archipelago/worlds/aom/client/ApClient.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 272
+    },
+    "message": "Starting a process with a partial executable path",
+    "name": "start-process-with-partial-path",
+    "noqa_row": 272,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/start-process-with-partial-path"
+  },
+  {
+    "cell": null,
+    "code": "S606",
+    "end_location": {
+      "column": 25,
+      "row": 287
+    },
+    "filename": "/Archipelago/worlds/aom/client/ApClient.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 287
+    },
+    "message": "Starting a process without a shell",
+    "name": "start-process-with-no-shell",
+    "noqa_row": 287,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/start-process-with-no-shell"
+  },
+  {
+    "cell": null,
+    "code": "S603",
+    "end_location": {
+      "column": 29,
+      "row": 290
+    },
+    "filename": "/Archipelago/worlds/aom/client/ApClient.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 290
+    },
+    "message": "`subprocess` call: check for execution of untrusted input",
+    "name": "subprocess-without-shell-equals-true",
+    "noqa_row": 290,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/subprocess-without-shell-equals-true"
+  },
+  {
+    "cell": null,
+    "code": "S607",
+    "end_location": {
+      "column": 34,
+      "row": 291
+    },
+    "filename": "/Archipelago/worlds/aom/client/ApClient.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 291
+    },
+    "message": "Starting a process with a partial executable path",
+    "name": "start-process-with-partial-path",
+    "noqa_row": 291,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/start-process-with-partial-path"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 13,
+      "row": 428
+    },
+    "filename": "/Archipelago/worlds/aom/client/ApClient.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 427
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 427,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 13,
+      "row": 456
+    },
+    "filename": "/Archipelago/worlds/aom/client/ApClient.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 455
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 455,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 34,
+      "row": 711
+    },
+    "filename": "/Archipelago/worlds/aom/client/ApClient.py",
+    "fix": null,
+    "location": {
+      "column": 33,
+      "row": 711
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 711,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 40,
+      "row": 714
+    },
+    "filename": "/Archipelago/worlds/aom/client/ApClient.py",
+    "fix": null,
+    "location": {
+      "column": 39,
+      "row": 714
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 714,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 53,
+      "row": 1020
+    },
+    "filename": "/Archipelago/worlds/aom/client/ApClient.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"=== Scenario Keys ===\"",
+          "end_location": {
+            "column": 53,
+            "row": 1020
+          },
+          "location": {
+            "column": 29,
+            "row": 1020
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 29,
+      "row": 1020
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 1020,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 48,
+      "row": 1031
+    },
+    "filename": "/Archipelago/worlds/aom/client/ApClient.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"  You Have Keys For:\"",
+          "end_location": {
+            "column": 48,
+            "row": 1031
+          },
+          "location": {
+            "column": 25,
+            "row": 1031
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 25,
+      "row": 1031
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 1031,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 24,
+      "row": 1590
+    },
+    "filename": "/Archipelago/worlds/aom/client/ApClient.py",
+    "fix": null,
+    "location": {
+      "column": 23,
+      "row": 1590
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 1590,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 24,
+      "row": 1591
+    },
+    "filename": "/Archipelago/worlds/aom/client/ApClient.py",
+    "fix": null,
+    "location": {
+      "column": 23,
+      "row": 1591
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 1591,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 24,
+      "row": 1592
+    },
+    "filename": "/Archipelago/worlds/aom/client/ApClient.py",
+    "fix": null,
+    "location": {
+      "column": 23,
+      "row": 1592
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 1592,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 17,
+      "row": 1731
+    },
+    "filename": "/Archipelago/worlds/aom/client/ApClient.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 1730
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 1730,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 17,
+      "row": 1811
+    },
+    "filename": "/Archipelago/worlds/aom/client/ApClient.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 1810
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 1810,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 21,
+      "row": 1832
+    },
+    "filename": "/Archipelago/worlds/aom/client/ApClient.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 1831
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 1831,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 36,
+      "row": 2341
+    },
+    "filename": "/Archipelago/worlds/aom/client/ApClient.py",
+    "fix": null,
+    "location": {
+      "column": 35,
+      "row": 2341
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 2341,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 40,
+      "row": 2350
+    },
+    "filename": "/Archipelago/worlds/aom/client/ApClient.py",
+    "fix": null,
+    "location": {
+      "column": 39,
+      "row": 2350
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 2350,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 33,
+      "row": 2386
+    },
+    "filename": "/Archipelago/worlds/aom/client/ApClient.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 2386
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 2386,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 37,
+      "row": 2422
+    },
+    "filename": "/Archipelago/worlds/aom/client/ApClient.py",
+    "fix": null,
+    "location": {
+      "column": 36,
+      "row": 2422
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 2422,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 41,
+      "row": 167
+    },
+    "filename": "/Archipelago/worlds/aom/client/ApGui.py",
+    "fix": null,
+    "location": {
+      "column": 40,
+      "row": 167
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 167,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 41,
+      "row": 169
+    },
+    "filename": "/Archipelago/worlds/aom/client/ApGui.py",
+    "fix": null,
+    "location": {
+      "column": 40,
+      "row": 169
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 169,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 41,
+      "row": 170
+    },
+    "filename": "/Archipelago/worlds/aom/client/ApGui.py",
+    "fix": null,
+    "location": {
+      "column": 40,
+      "row": 170
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 170,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 34,
+      "row": 232
+    },
+    "filename": "/Archipelago/worlds/aom/client/ApGui.py",
+    "fix": null,
+    "location": {
+      "column": 33,
+      "row": 232
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 232,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 34,
+      "row": 233
+    },
+    "filename": "/Archipelago/worlds/aom/client/ApGui.py",
+    "fix": null,
+    "location": {
+      "column": 33,
+      "row": 233
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 233,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 36,
+      "row": 796
+    },
+    "filename": "/Archipelago/worlds/aom/client/ApGui.py",
+    "fix": null,
+    "location": {
+      "column": 35,
+      "row": 796
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 796,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 36,
+      "row": 798
+    },
+    "filename": "/Archipelago/worlds/aom/client/ApGui.py",
+    "fix": null,
+    "location": {
+      "column": 35,
+      "row": 798
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 798,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 40,
+      "row": 800
+    },
+    "filename": "/Archipelago/worlds/aom/client/ApGui.py",
+    "fix": null,
+    "location": {
+      "column": 39,
+      "row": 800
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 800,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 60,
+      "row": 800
+    },
+    "filename": "/Archipelago/worlds/aom/client/ApGui.py",
+    "fix": null,
+    "location": {
+      "column": 59,
+      "row": 800
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 800,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 80,
+      "row": 800
+    },
+    "filename": "/Archipelago/worlds/aom/client/ApGui.py",
+    "fix": null,
+    "location": {
+      "column": 79,
+      "row": 800
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 800,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 38,
+      "row": 802
+    },
+    "filename": "/Archipelago/worlds/aom/client/ApGui.py",
+    "fix": null,
+    "location": {
+      "column": 37,
+      "row": 802
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 802,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "B008",
+    "end_location": {
+      "column": 45,
+      "row": 1463
+    },
+    "filename": "/Archipelago/worlds/aom/client/ApGui.py",
+    "fix": null,
+    "location": {
+      "column": 39,
+      "row": 1463
+    },
+    "message": "Do not perform function call `dp` in argument defaults; instead, perform the call within the function, or read the default from a module-level singleton variable",
+    "name": "function-call-in-default-argument",
+    "noqa_row": 1463,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/function-call-in-default-argument"
+  },
+  {
+    "cell": null,
+    "code": "B008",
+    "end_location": {
+      "column": 56,
+      "row": 1463
+    },
+    "filename": "/Archipelago/worlds/aom/client/ApGui.py",
+    "fix": null,
+    "location": {
+      "column": 50,
+      "row": 1463
+    },
+    "message": "Do not perform function call `dp` in argument defaults; instead, perform the call within the function, or read the default from a module-level singleton variable",
+    "name": "function-call-in-default-argument",
+    "noqa_row": 1463,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/function-call-in-default-argument"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 42,
+      "row": 2077
+    },
+    "filename": "/Archipelago/worlds/aom/client/ApGui.py",
+    "fix": null,
+    "location": {
+      "column": 41,
+      "row": 2077
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 2077,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 48,
+      "row": 2572
+    },
+    "filename": "/Archipelago/worlds/aom/client/ApGui.py",
+    "fix": null,
+    "location": {
+      "column": 47,
+      "row": 2572
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 2572,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 48,
+      "row": 2573
+    },
+    "filename": "/Archipelago/worlds/aom/client/ApGui.py",
+    "fix": null,
+    "location": {
+      "column": 47,
+      "row": 2573
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 2573,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 71,
+      "row": 2713
+    },
+    "filename": "/Archipelago/worlds/aom/client/ApGui.py",
+    "fix": null,
+    "location": {
+      "column": 70,
+      "row": 2713
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 2713,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "B023",
+    "end_location": {
+      "column": 30,
+      "row": 2801
+    },
+    "filename": "/Archipelago/worlds/aom/client/ApGui.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 2801
+    },
+    "message": "Function definition does not bind loop variable `_h`",
+    "name": "function-uses-loop-variable",
+    "noqa_row": 2801,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/function-uses-loop-variable"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 77,
+      "row": 583
+    },
+    "filename": "/Archipelago/worlds/aom/client/GameClient.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "'void APTrapFiredSignal() { aiEcho(\"AP_TRAP_FIRED:\"); }'",
+          "end_location": {
+            "column": 77,
+            "row": 583
+          },
+          "location": {
+            "column": 18,
+            "row": 583
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 18,
+      "row": 583
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 583,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 47,
+      "row": 836
+    },
+    "filename": "/Archipelago/worlds/aom/client/GameClient.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"        {\"",
+          "end_location": {
+            "column": 47,
+            "row": 836
+          },
+          "location": {
+            "column": 34,
+            "row": 836
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 34,
+      "row": 836
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 836,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 47,
+      "row": 839
+    },
+    "filename": "/Archipelago/worlds/aom/client/GameClient.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"        }\"",
+          "end_location": {
+            "column": 47,
+            "row": 839
+          },
+          "location": {
+            "column": 34,
+            "row": 839
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 34,
+      "row": 839
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 839,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 49,
+      "row": 840
+    },
+    "filename": "/Archipelago/worlds/aom/client/GameClient.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"        else\"",
+          "end_location": {
+            "column": 49,
+            "row": 840
+          },
+          "location": {
+            "column": 34,
+            "row": 840
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 34,
+      "row": 840
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 840,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 47,
+      "row": 841
+    },
+    "filename": "/Archipelago/worlds/aom/client/GameClient.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"        {\"",
+          "end_location": {
+            "column": 47,
+            "row": 841
+          },
+          "location": {
+            "column": 34,
+            "row": 841
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 34,
+      "row": 841
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 841,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 47,
+      "row": 844
+    },
+    "filename": "/Archipelago/worlds/aom/client/GameClient.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"        }\"",
+          "end_location": {
+            "column": 47,
+            "row": 844
+          },
+          "location": {
+            "column": 34,
+            "row": 844
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 34,
+      "row": 844
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 844,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 47,
+      "row": 1139
+    },
+    "filename": "/Archipelago/worlds/aom/client/GameClient.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"extern int   gAPSentCheckCount = 0;\"",
+          "end_location": {
+            "column": 47,
+            "row": 1139
+          },
+          "location": {
+            "column": 9,
+            "row": 1139
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 9,
+      "row": 1139
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 1139,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 53,
+      "row": 1140
+    },
+    "filename": "/Archipelago/worlds/aom/client/GameClient.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"extern int[] gAPSentChecks     = default;\"",
+          "end_location": {
+            "column": 53,
+            "row": 1140
+          },
+          "location": {
+            "column": 9,
+            "row": 1140
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 9,
+      "row": 1140
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 1140,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 17,
+      "row": 140
+    },
+    "filename": "/Archipelago/worlds/aom/client/debug_bundle.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 139
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 139,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 13,
+      "row": 155
+    },
+    "filename": "/Archipelago/worlds/aom/client/debug_bundle.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 154
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 154,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 33,
+      "row": 536
+    },
+    "filename": "/Archipelago/worlds/aom/client/debug_bundle.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 536
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 536,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 27,
+      "row": 538
+    },
+    "filename": "/Archipelago/worlds/aom/client/debug_bundle.py",
+    "fix": null,
+    "location": {
+      "column": 26,
+      "row": 538
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 538,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "S607",
+    "end_location": {
+      "column": 46,
+      "row": 674
+    },
+    "filename": "/Archipelago/worlds/aom/client/debug_bundle.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 674
+    },
+    "message": "Starting a process with a partial executable path",
+    "name": "start-process-with-partial-path",
+    "noqa_row": 674,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/start-process-with-partial-path"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 25,
+      "row": 688
+    },
+    "filename": "/Archipelago/worlds/aom/client/debug_bundle.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 687
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 687,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 17,
+      "row": 879
+    },
+    "filename": "/Archipelago/worlds/aom/client/debug_bundle.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 878
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 878,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 21,
+      "row": 948
+    },
+    "filename": "/Archipelago/worlds/aom/client/debug_bundle.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 947
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 947,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 21,
+      "row": 957
+    },
+    "filename": "/Archipelago/worlds/aom/client/debug_bundle.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 956
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 956,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 21,
+      "row": 968
+    },
+    "filename": "/Archipelago/worlds/aom/client/debug_bundle.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 967
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 967,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S603",
+    "end_location": {
+      "column": 29,
+      "row": 985
+    },
+    "filename": "/Archipelago/worlds/aom/client/debug_bundle.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 985
+    },
+    "message": "`subprocess` call: check for execution of untrusted input",
+    "name": "subprocess-without-shell-equals-true",
+    "noqa_row": 985,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/subprocess-without-shell-equals-true"
+  },
+  {
+    "cell": null,
+    "code": "S607",
+    "end_location": {
+      "column": 78,
+      "row": 985
+    },
+    "filename": "/Archipelago/worlds/aom/client/debug_bundle.py",
+    "fix": null,
+    "location": {
+      "column": 30,
+      "row": 985
+    },
+    "message": "Starting a process with a partial executable path",
+    "name": "start-process-with-partial-path",
+    "noqa_row": 985,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/start-process-with-partial-path"
+  },
+  {
+    "cell": null,
+    "code": "S603",
+    "end_location": {
+      "column": 29,
+      "row": 987
+    },
+    "filename": "/Archipelago/worlds/aom/client/debug_bundle.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 987
+    },
+    "message": "`subprocess` call: check for execution of untrusted input",
+    "name": "subprocess-without-shell-equals-true",
+    "noqa_row": 987,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/subprocess-without-shell-equals-true"
+  },
+  {
+    "cell": null,
+    "code": "S607",
+    "end_location": {
+      "column": 50,
+      "row": 987
+    },
+    "filename": "/Archipelago/worlds/aom/client/debug_bundle.py",
+    "fix": null,
+    "location": {
+      "column": 30,
+      "row": 987
+    },
+    "message": "Starting a process with a partial executable path",
+    "name": "start-process-with-partial-path",
+    "noqa_row": 987,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/start-process-with-partial-path"
+  },
+  {
+    "cell": null,
+    "code": "S603",
+    "end_location": {
+      "column": 29,
+      "row": 989
+    },
+    "filename": "/Archipelago/worlds/aom/client/debug_bundle.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 989
+    },
+    "message": "`subprocess` call: check for execution of untrusted input",
+    "name": "subprocess-without-shell-equals-true",
+    "noqa_row": 989,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/subprocess-without-shell-equals-true"
+  },
+  {
+    "cell": null,
+    "code": "S607",
+    "end_location": {
+      "column": 65,
+      "row": 989
+    },
+    "filename": "/Archipelago/worlds/aom/client/debug_bundle.py",
+    "fix": null,
+    "location": {
+      "column": 30,
+      "row": 989
+    },
+    "message": "Starting a process with a partial executable path",
+    "name": "start-process-with-partial-path",
+    "noqa_row": 989,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/start-process-with-partial-path"
+  },
+  {
+    "cell": null,
+    "code": "B009",
+    "end_location": {
+      "column": 61,
+      "row": 1445
+    },
+    "filename": "/Archipelago/worlds/aom/rules/Rules.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "world.options.trap_percentage",
+          "end_location": {
+            "column": 61,
+            "row": 1445
+          },
+          "location": {
+            "column": 20,
+            "row": 1445
+          }
+        }
+      ],
+      "message": "Replace `getattr` with attribute access"
+    },
+    "location": {
+      "column": 20,
+      "row": 1445
+    },
+    "message": "Do not call `getattr` with a constant attribute value. It is not any safer than normal property access.",
+    "name": "get-attr-with-constant",
+    "noqa_row": 1445,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/get-attr-with-constant"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 20,
+      "row": 1459
+    },
+    "filename": "/Archipelago/worlds/aom/rules/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 1459
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 1459,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 20,
+      "row": 1460
+    },
+    "filename": "/Archipelago/worlds/aom/rules/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 1460
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 1460,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 20,
+      "row": 1461
+    },
+    "filename": "/Archipelago/worlds/aom/rules/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 1461
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 1461,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 20,
+      "row": 1462
+    },
+    "filename": "/Archipelago/worlds/aom/rules/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 1462
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 1462,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 28,
+      "row": 1463
+    },
+    "filename": "/Archipelago/worlds/aom/rules/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 27,
+      "row": 1463
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 1463,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 28,
+      "row": 1464
+    },
+    "filename": "/Archipelago/worlds/aom/rules/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 27,
+      "row": 1464
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 1464,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 26,
+      "row": 1465
+    },
+    "filename": "/Archipelago/worlds/aom/rules/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 1465
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 1465,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  }
+]
