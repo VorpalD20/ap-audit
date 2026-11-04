@@ -1,0 +1,30 @@
+name: Update
+
+on:
+  schedule:
+    - cron: '0 1,7,13,19 * * *'
+  workflow_dispatch: {}
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      # Give the default GITHUB_TOKEN write permission to commit and push the
+      # added or changed files to the repository.
+      contents: write
+    steps:
+    - uses: actions/checkout@v7
+      with:
+        submodules: true
+    - name: Git Config
+      run: |
+        git config --global user.email "ci@katelyngigante.com"
+        git config --global user.name "Github Actions"
+    - name: Install Dependencies
+      run: |
+        python3 -m pip install --upgrade pip
+        pip install -r requirements.txt
+    - name: Run Audit
+      run: |
+        python3 audit_world.py
+    - uses: stefanzweifel/git-auto-commit-action@v7
