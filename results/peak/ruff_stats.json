@@ -1,0 +1,16 @@
+[
+  {
+    "code": "E741",
+    "name": "ambiguous-variable-name",
+    "count": 2,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "B010",
+    "name": "set-attr-with-constant",
+    "count": 1,
+    "fixable": true,
+    "fixable_count": 1
+  }
+]

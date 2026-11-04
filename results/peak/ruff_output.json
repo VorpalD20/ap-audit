@@ -1,0 +1,75 @@
+[
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 31,
+      "row": 449
+    },
+    "filename": "/Archipelago/worlds/peak/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 30,
+      "row": 449
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 449,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 41,
+      "row": 454
+    },
+    "filename": "/Archipelago/worlds/peak/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 40,
+      "row": 454
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 454,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "B010",
+    "end_location": {
+      "column": 63,
+      "row": 456
+    },
+    "filename": "/Archipelago/worlds/peak/__init__.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "self.multiworld._peak_sphere_index = cached",
+          "end_location": {
+            "column": 63,
+            "row": 456
+          },
+          "location": {
+            "column": 9,
+            "row": 456
+          }
+        }
+      ],
+      "message": "Replace `setattr` with assignment"
+    },
+    "location": {
+      "column": 9,
+      "row": 456
+    },
+    "message": "Do not call `setattr` with a constant attribute value. It is not any safer than normal property access.",
+    "name": "set-attr-with-constant",
+    "noqa_row": 456,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/set-attr-with-constant"
+  }
+]
