@@ -1,0 +1,44 @@
+[
+  {
+    "code": "F541",
+    "name": "f-string-missing-placeholders",
+    "count": 18,
+    "fixable": true,
+    "fixable_count": 18
+  },
+  {
+    "code": "S105",
+    "name": "hardcoded-password-string",
+    "count": 15,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "S112",
+    "name": "try-except-continue",
+    "count": 11,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "S110",
+    "name": "try-except-pass",
+    "count": 6,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "F842",
+    "name": "unused-annotation",
+    "count": 4,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "E722",
+    "name": "bare-except",
+    "count": 3,
+    "fixable": false,
+    "fixable_count": 0
+  }
+]

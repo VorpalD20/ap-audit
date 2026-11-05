@@ -1,0 +1,1304 @@
+[
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 61,
+      "row": 33
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/Data.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 33
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 33,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 5,
+      "row": 69
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/Data.py",
+    "fix": null,
+    "location": {
+      "column": 4,
+      "row": 69
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 69,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 29,
+      "row": 70
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/Data.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 70
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 70,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 5,
+      "row": 72
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/Data.py",
+    "fix": null,
+    "location": {
+      "column": 4,
+      "row": 72
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 72,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 29,
+      "row": 73
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/Data.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 73
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 73,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 5,
+      "row": 75
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/Data.py",
+    "fix": null,
+    "location": {
+      "column": 4,
+      "row": 75
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 75,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 29,
+      "row": 76
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/Data.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 76
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 76,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 38,
+      "row": 316
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 37,
+      "row": 316
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 316,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 444
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 444
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 444,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 445
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 445
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 445,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E703",
+    "end_location": {
+      "column": 71,
+      "row": 448
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/DataValidation.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "",
+          "end_location": {
+            "column": 71,
+            "row": 448
+          },
+          "location": {
+            "column": 70,
+            "row": 448
+          }
+        }
+      ],
+      "message": "Remove unnecessary semicolon"
+    },
+    "location": {
+      "column": 70,
+      "row": 448
+    },
+    "message": "Statement ends with an unnecessary semicolon",
+    "name": "useless-semicolon",
+    "noqa_row": 448,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 457
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 457
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 457,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 458
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 458
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 458,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 460
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 460
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 460,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 461
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 461
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 461,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 464
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 464
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 464,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 465
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 465
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 465,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 468
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 468
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 468,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 469
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 469
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 469,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 472
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 472
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 472,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 473
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 473
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 473,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 476
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 476
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 476,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 477
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 477
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 477,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 479
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 479
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 479,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 480
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 480
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 480,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 482
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 482
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 482,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 483
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 483
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 483,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 486
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 486
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 486,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 487
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 487
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 487,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 490
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 490
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 490,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 491
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 491
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 491,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 494
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 494
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 494,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 495
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 495
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 495,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 498
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 498
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 498,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 499
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 499
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 499,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 501
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 501
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 501,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 502
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 502
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 502,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 505
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 505
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 505,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 506
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 506
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 506,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E703",
+    "end_location": {
+      "column": 56,
+      "row": 509
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/DataValidation.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "",
+          "end_location": {
+            "column": 56,
+            "row": 509
+          },
+          "location": {
+            "column": 55,
+            "row": 509
+          }
+        }
+      ],
+      "message": "Remove unnecessary semicolon"
+    },
+    "location": {
+      "column": 55,
+      "row": 509
+    },
+    "message": "Statement ends with an unnecessary semicolon",
+    "name": "useless-semicolon",
+    "noqa_row": 509,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 89,
+      "row": 14
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/Game.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 14
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 14,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "E722",
+    "end_location": {
+      "column": 11,
+      "row": 24
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/Helpers.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 24
+    },
+    "message": "Do not use bare `except`",
+    "name": "bare-except",
+    "noqa_row": 24,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/bare-except"
+  },
+  {
+    "cell": null,
+    "code": "E722",
+    "end_location": {
+      "column": 11,
+      "row": 34
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/Helpers.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 34
+    },
+    "message": "Do not use bare `except`",
+    "name": "bare-except",
+    "noqa_row": 34,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/bare-except"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 32,
+      "row": 614
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/ManualClient.py",
+    "fix": null,
+    "location": {
+      "column": 31,
+      "row": 614
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 614,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E712",
+    "end_location": {
+      "column": 31,
+      "row": 866
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/ManualClient.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "ctx.syncing",
+          "end_location": {
+            "column": 31,
+            "row": 866
+          },
+          "location": {
+            "column": 12,
+            "row": 866
+          }
+        }
+      ],
+      "message": "Replace with `ctx.syncing`"
+    },
+    "location": {
+      "column": 12,
+      "row": 866
+    },
+    "message": "Avoid equality comparisons to `True`; use `ctx.syncing:` for truth checks",
+    "name": "true-false-comparison",
+    "noqa_row": 866,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/true-false-comparison"
+  },
+  {
+    "cell": null,
+    "code": "S113",
+    "end_location": {
+      "column": 33,
+      "row": 945
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/ManualClient.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 945
+    },
+    "message": "Probable use of `requests` call without timeout",
+    "name": "request-without-timeout",
+    "noqa_row": 945,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/request-without-timeout"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 40,
+      "row": 44
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/Options.py",
+    "fix": null,
+    "location": {
+      "column": 39,
+      "row": 44
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 44,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 100,
+      "row": 124
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/Options.py",
+    "fix": null,
+    "location": {
+      "column": 99,
+      "row": 124
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 124,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 66,
+      "row": 173
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/Options.py",
+    "fix": null,
+    "location": {
+      "column": 65,
+      "row": 173
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 173,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "B020",
+    "end_location": {
+      "column": 23,
+      "row": 208
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/Options.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 208
+    },
+    "message": "Loop control variable `starting_items` overrides iterable it iterates",
+    "name": "loop-variable-overrides-iterator",
+    "noqa_row": 208,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/loop-variable-overrides-iterator"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 81,
+      "row": 71
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 71
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 71,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 81,
+      "row": 97
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 97
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 97,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 80,
+      "row": 148
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 145
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 148,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "B034",
+    "end_location": {
+      "column": 87,
+      "row": 221
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 221
+    },
+    "message": "`re.sub` should pass `count` and `flags` as keyword arguments to avoid confusion due to unintuitive argument positions",
+    "name": "re-sub-positional-args",
+    "noqa_row": 221,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/re-sub-positional-args"
+  },
+  {
+    "cell": null,
+    "code": "B034",
+    "end_location": {
+      "column": 86,
+      "row": 222
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 222
+    },
+    "message": "`re.sub` should pass `count` and `flags` as keyword arguments to avoid confusion due to unintuitive argument positions",
+    "name": "re-sub-positional-args",
+    "noqa_row": 222,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/re-sub-positional-args"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 49,
+      "row": 287
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 48,
+      "row": 287
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 287,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 34,
+      "row": 378
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 378
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 378,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 276,
+      "row": 386
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 386
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 386,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 47,
+      "row": 575
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 573
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 575,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 47,
+      "row": 580
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 578
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 580,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 38,
+      "row": 120
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 37,
+      "row": 120
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 120,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 41,
+      "row": 121
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 40,
+      "row": 121
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 121,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 128,
+      "row": 158
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 158
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 158,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 35,
+      "row": 166
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 34,
+      "row": 166
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 166,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 41,
+      "row": 305
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 40,
+      "row": 305
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 305,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 45,
+      "row": 321
+    },
+    "filename": "/Archipelago/worlds/manual_goldeneye007_vincentssin/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 44,
+      "row": 321
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 321,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  }
+]

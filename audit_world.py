@@ -1,15 +1,14 @@
 import datetime
-import enum
 import json
 import os
 import subprocess
+from json.decoder import JSONDecodeError
 
 import attrs
 import cattrs
 import junitparser
 import packaging.version
 import requests
-from json.decoder import JSONDecodeError
 
 converter = cattrs.Converter()
 
@@ -85,31 +84,36 @@ def run_checks(world, world_id, results_path):
     for file_name in os.listdir(out_path):
         os.replace(os.path.join(out_path, file_name), os.path.join(results_path, file_name))
 
-def load_severity_data(results_path) -> dict[str, int]:
-    severity: dict[str, int] = {}
+def load_severity_data(results_path) -> dict[str, dict[str, int]]:
+    severity: dict[str, dict[str, int]] = {}
     if os.path.exists("severity.json"):
         with open("severity.json", "r") as f:
             severity = json.load(f)
     return severity
 
+def count_codes(severity: dict[str, dict[str, int]]) -> int:
+    count = 0
+    for category in severity.values():
+        count += len(category)
+    return count
 
 def finalise_report(results_path) -> None:
     severity = load_severity_data(results_path)
-    num_codes = len(severity)
+    num_codes = count_codes(severity)
     penalties = {}
 
-    score_ruff(results_path, severity, penalties)
-    score_tests(results_path, severity, penalties)
+    score_ruff(results_path, severity.setdefault("ruff", {}), penalties)
+    score_tests(results_path, severity.setdefault("tests", {}), penalties)
 
     score = 100 - sum(penalties.values())
     print(f"Final score: {score}")
     for name, penalty in sorted(penalties.items(), key=lambda item: item[1], reverse=True):
         print(f"{name}: {penalty}")
 
-    if len(severity) > num_codes:
-        severity = {k: v for k, v in sorted(severity.items(), key=lambda item: item[0])}
+    if count_codes(severity) > num_codes:
         with open("severity.json", "w") as f:
-            json.dump(severity, f, indent=1)
+            json.dump(severity, f, indent=1, sort_keys=True)
+            f.write("\n")
 
 def score_tests(results_path, severity, penalties):
     test_results = junitparser.JUnitXml.fromfile(os.path.join(results_path, "report.xml"))

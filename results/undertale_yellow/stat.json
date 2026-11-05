@@ -1,0 +1,15 @@
+{
+    "game": "Undertale Yellow",
+    "stub": "undertale_yellow",
+    "manifest": {
+        "game": "Undertale Yellow",
+        "authors": [
+            "Pugie"
+        ],
+        "world_version": "0.3.0",
+        "compatible version": "7",
+        "version": 7,
+        "minimum_ap_version": "0.6.6",
+        "compatible_version": 7
+    }
+}

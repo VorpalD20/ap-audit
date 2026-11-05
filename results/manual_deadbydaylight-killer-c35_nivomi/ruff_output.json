@@ -1,0 +1,1054 @@
+[
+  {
+    "cell": null,
+    "code": "E722",
+    "end_location": {
+      "column": 11,
+      "row": 17
+    },
+    "filename": "/Archipelago/worlds/manual_deadbydaylight-killer-c35_nivomi/Data.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 17
+    },
+    "message": "Do not use bare `except`",
+    "name": "bare-except",
+    "noqa_row": 17,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/bare-except"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 5,
+      "row": 43
+    },
+    "filename": "/Archipelago/worlds/manual_deadbydaylight-killer-c35_nivomi/Data.py",
+    "fix": null,
+    "location": {
+      "column": 4,
+      "row": 43
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 43,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 29,
+      "row": 44
+    },
+    "filename": "/Archipelago/worlds/manual_deadbydaylight-killer-c35_nivomi/Data.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 44
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 44,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 5,
+      "row": 46
+    },
+    "filename": "/Archipelago/worlds/manual_deadbydaylight-killer-c35_nivomi/Data.py",
+    "fix": null,
+    "location": {
+      "column": 4,
+      "row": 46
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 46,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 29,
+      "row": 47
+    },
+    "filename": "/Archipelago/worlds/manual_deadbydaylight-killer-c35_nivomi/Data.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 47
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 47,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 5,
+      "row": 49
+    },
+    "filename": "/Archipelago/worlds/manual_deadbydaylight-killer-c35_nivomi/Data.py",
+    "fix": null,
+    "location": {
+      "column": 4,
+      "row": 49
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 49,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 29,
+      "row": 50
+    },
+    "filename": "/Archipelago/worlds/manual_deadbydaylight-killer-c35_nivomi/Data.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 50
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 50,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 38,
+      "row": 227
+    },
+    "filename": "/Archipelago/worlds/manual_deadbydaylight-killer-c35_nivomi/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 37,
+      "row": 227
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 227,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 354
+    },
+    "filename": "/Archipelago/worlds/manual_deadbydaylight-killer-c35_nivomi/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 354
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 354,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 355
+    },
+    "filename": "/Archipelago/worlds/manual_deadbydaylight-killer-c35_nivomi/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 355
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 355,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 357
+    },
+    "filename": "/Archipelago/worlds/manual_deadbydaylight-killer-c35_nivomi/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 357
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 357,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 358
+    },
+    "filename": "/Archipelago/worlds/manual_deadbydaylight-killer-c35_nivomi/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 358
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 358,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 361
+    },
+    "filename": "/Archipelago/worlds/manual_deadbydaylight-killer-c35_nivomi/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 361
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 361,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 362
+    },
+    "filename": "/Archipelago/worlds/manual_deadbydaylight-killer-c35_nivomi/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 362
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 362,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 365
+    },
+    "filename": "/Archipelago/worlds/manual_deadbydaylight-killer-c35_nivomi/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 365
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 365,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 366
+    },
+    "filename": "/Archipelago/worlds/manual_deadbydaylight-killer-c35_nivomi/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 366
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 366,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 369
+    },
+    "filename": "/Archipelago/worlds/manual_deadbydaylight-killer-c35_nivomi/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 369
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 369,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 370
+    },
+    "filename": "/Archipelago/worlds/manual_deadbydaylight-killer-c35_nivomi/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 370
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 370,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 373
+    },
+    "filename": "/Archipelago/worlds/manual_deadbydaylight-killer-c35_nivomi/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 373
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 373,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 374
+    },
+    "filename": "/Archipelago/worlds/manual_deadbydaylight-killer-c35_nivomi/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 374
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 374,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 377
+    },
+    "filename": "/Archipelago/worlds/manual_deadbydaylight-killer-c35_nivomi/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 377
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 377,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 378
+    },
+    "filename": "/Archipelago/worlds/manual_deadbydaylight-killer-c35_nivomi/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 378
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 378,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 380
+    },
+    "filename": "/Archipelago/worlds/manual_deadbydaylight-killer-c35_nivomi/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 380
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 380,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 381
+    },
+    "filename": "/Archipelago/worlds/manual_deadbydaylight-killer-c35_nivomi/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 381
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 381,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 383
+    },
+    "filename": "/Archipelago/worlds/manual_deadbydaylight-killer-c35_nivomi/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 383
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 383,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 384
+    },
+    "filename": "/Archipelago/worlds/manual_deadbydaylight-killer-c35_nivomi/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 384
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 384,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 387
+    },
+    "filename": "/Archipelago/worlds/manual_deadbydaylight-killer-c35_nivomi/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 387
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 387,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 388
+    },
+    "filename": "/Archipelago/worlds/manual_deadbydaylight-killer-c35_nivomi/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 388
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 388,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 391
+    },
+    "filename": "/Archipelago/worlds/manual_deadbydaylight-killer-c35_nivomi/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 391
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 391,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 392
+    },
+    "filename": "/Archipelago/worlds/manual_deadbydaylight-killer-c35_nivomi/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 392
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 392,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 395
+    },
+    "filename": "/Archipelago/worlds/manual_deadbydaylight-killer-c35_nivomi/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 395
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 395,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 396
+    },
+    "filename": "/Archipelago/worlds/manual_deadbydaylight-killer-c35_nivomi/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 396
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 396,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 399
+    },
+    "filename": "/Archipelago/worlds/manual_deadbydaylight-killer-c35_nivomi/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 399
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 399,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 400
+    },
+    "filename": "/Archipelago/worlds/manual_deadbydaylight-killer-c35_nivomi/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 400
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 400,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 402
+    },
+    "filename": "/Archipelago/worlds/manual_deadbydaylight-killer-c35_nivomi/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 402
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 402,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 403
+    },
+    "filename": "/Archipelago/worlds/manual_deadbydaylight-killer-c35_nivomi/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 403
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 403,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 406
+    },
+    "filename": "/Archipelago/worlds/manual_deadbydaylight-killer-c35_nivomi/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 406
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 406,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 407
+    },
+    "filename": "/Archipelago/worlds/manual_deadbydaylight-killer-c35_nivomi/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 407
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 407,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E401",
+    "end_location": {
+      "column": 19,
+      "row": 5
+    },
+    "filename": "/Archipelago/worlds/manual_deadbydaylight-killer-c35_nivomi/ManualClient.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "import asyncio\r\nimport re",
+          "end_location": {
+            "column": 19,
+            "row": 5
+          },
+          "location": {
+            "column": 1,
+            "row": 5
+          }
+        }
+      ],
+      "message": "Split imports"
+    },
+    "location": {
+      "column": 1,
+      "row": 5
+    },
+    "message": "Multiple imports on one line",
+    "name": "multiple-imports-on-one-line",
+    "noqa_row": 5,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-imports-on-one-line"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 38,
+      "row": 28
+    },
+    "filename": "/Archipelago/worlds/manual_deadbydaylight-killer-c35_nivomi/ManualClient.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"Syncing items.\"",
+          "end_location": {
+            "column": 38,
+            "row": 28
+          },
+          "location": {
+            "column": 21,
+            "row": 28
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 21,
+      "row": 28
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 28,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "E712",
+    "end_location": {
+      "column": 31,
+      "row": 555
+    },
+    "filename": "/Archipelago/worlds/manual_deadbydaylight-killer-c35_nivomi/ManualClient.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "ctx.syncing",
+          "end_location": {
+            "column": 31,
+            "row": 555
+          },
+          "location": {
+            "column": 12,
+            "row": 555
+          }
+        }
+      ],
+      "message": "Replace with `ctx.syncing`"
+    },
+    "location": {
+      "column": 12,
+      "row": 555
+    },
+    "message": "Avoid equality comparisons to `True`; use `ctx.syncing:` for truth checks",
+    "name": "true-false-comparison",
+    "noqa_row": 555,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/true-false-comparison"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 88,
+      "row": 37
+    },
+    "filename": "/Archipelago/worlds/manual_deadbydaylight-killer-c35_nivomi/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 37
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 37,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 88,
+      "row": 61
+    },
+    "filename": "/Archipelago/worlds/manual_deadbydaylight-killer-c35_nivomi/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 61
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 61,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "B034",
+    "end_location": {
+      "column": 87,
+      "row": 152
+    },
+    "filename": "/Archipelago/worlds/manual_deadbydaylight-killer-c35_nivomi/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 152
+    },
+    "message": "`re.sub` should pass `count` and `flags` as keyword arguments to avoid confusion due to unintuitive argument positions",
+    "name": "re-sub-positional-args",
+    "noqa_row": 152,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/re-sub-positional-args"
+  },
+  {
+    "cell": null,
+    "code": "B034",
+    "end_location": {
+      "column": 86,
+      "row": 153
+    },
+    "filename": "/Archipelago/worlds/manual_deadbydaylight-killer-c35_nivomi/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 153
+    },
+    "message": "`re.sub` should pass `count` and `flags` as keyword arguments to avoid confusion due to unintuitive argument positions",
+    "name": "re-sub-positional-args",
+    "noqa_row": 153,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/re-sub-positional-args"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 49,
+      "row": 218
+    },
+    "filename": "/Archipelago/worlds/manual_deadbydaylight-killer-c35_nivomi/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 48,
+      "row": 218
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 218,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 38,
+      "row": 105
+    },
+    "filename": "/Archipelago/worlds/manual_deadbydaylight-killer-c35_nivomi/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 37,
+      "row": 105
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 105,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 41,
+      "row": 106
+    },
+    "filename": "/Archipelago/worlds/manual_deadbydaylight-killer-c35_nivomi/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 40,
+      "row": 106
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 106,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 32,
+      "row": 118
+    },
+    "filename": "/Archipelago/worlds/manual_deadbydaylight-killer-c35_nivomi/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 31,
+      "row": 118
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 118,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 41,
+      "row": 214
+    },
+    "filename": "/Archipelago/worlds/manual_deadbydaylight-killer-c35_nivomi/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 40,
+      "row": 214
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 214,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 45,
+      "row": 237
+    },
+    "filename": "/Archipelago/worlds/manual_deadbydaylight-killer-c35_nivomi/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 44,
+      "row": 237
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 237,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E711",
+    "end_location": {
+      "column": 26,
+      "row": 346
+    },
+    "filename": "/Archipelago/worlds/manual_deadbydaylight-killer-c35_nivomi/__init__.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "player is None",
+          "end_location": {
+            "column": 26,
+            "row": 346
+          },
+          "location": {
+            "column": 12,
+            "row": 346
+          }
+        }
+      ],
+      "message": "Replace with `cond is None`"
+    },
+    "location": {
+      "column": 22,
+      "row": 346
+    },
+    "message": "Comparison to `None` should be `cond is None`",
+    "name": "none-comparison",
+    "noqa_row": 346,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/none-comparison"
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "code": "F541",
+    "name": "f-string-missing-placeholders",
+    "count": 10,
+    "fixable": true,
+    "fixable_count": 10
+  },
+  {
+    "code": "E712",
+    "name": "true-false-comparison",
+    "count": 4,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "E741",
+    "name": "ambiguous-variable-name",
+    "count": 3,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "B006",
+    "name": "mutable-argument-default",
+    "count": 1,
+    "fixable": false,
+    "fixable_count": 0
+  }
+]

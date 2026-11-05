@@ -1,0 +1,595 @@
+[
+  {
+    "cell": null,
+    "code": "E712",
+    "end_location": {
+      "column": 34,
+      "row": 25
+    },
+    "filename": "/Archipelago/worlds/undertale_yellow/Rules.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "rando_love",
+          "end_location": {
+            "column": 34,
+            "row": 25
+          },
+          "location": {
+            "column": 16,
+            "row": 25
+          }
+        }
+      ],
+      "message": "Replace with `rando_love`"
+    },
+    "location": {
+      "column": 16,
+      "row": 25
+    },
+    "message": "Avoid equality comparisons to `True`; use `rando_love:` for truth checks",
+    "name": "true-false-comparison",
+    "noqa_row": 25,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/true-false-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E712",
+    "end_location": {
+      "column": 35,
+      "row": 27
+    },
+    "filename": "/Archipelago/worlds/undertale_yellow/Rules.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "not rando_love",
+          "end_location": {
+            "column": 35,
+            "row": 27
+          },
+          "location": {
+            "column": 16,
+            "row": 27
+          }
+        }
+      ],
+      "message": "Replace with `not rando_love`"
+    },
+    "location": {
+      "column": 16,
+      "row": 27
+    },
+    "message": "Avoid equality comparisons to `False`; use `not rando_love:` for false checks",
+    "name": "true-false-comparison",
+    "noqa_row": 27,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/true-false-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E712",
+    "end_location": {
+      "column": 35,
+      "row": 30
+    },
+    "filename": "/Archipelago/worlds/undertale_yellow/Rules.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "rando_stats",
+          "end_location": {
+            "column": 35,
+            "row": 30
+          },
+          "location": {
+            "column": 16,
+            "row": 30
+          }
+        }
+      ],
+      "message": "Replace with `rando_stats`"
+    },
+    "location": {
+      "column": 16,
+      "row": 30
+    },
+    "message": "Avoid equality comparisons to `True`; use `rando_stats:` for truth checks",
+    "name": "true-false-comparison",
+    "noqa_row": 30,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/true-false-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E712",
+    "end_location": {
+      "column": 36,
+      "row": 32
+    },
+    "filename": "/Archipelago/worlds/undertale_yellow/Rules.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "not rando_stats",
+          "end_location": {
+            "column": 36,
+            "row": 32
+          },
+          "location": {
+            "column": 16,
+            "row": 32
+          }
+        }
+      ],
+      "message": "Replace with `not rando_stats`"
+    },
+    "location": {
+      "column": 16,
+      "row": 32
+    },
+    "message": "Avoid equality comparisons to `False`; use `not rando_stats:` for false checks",
+    "name": "true-false-comparison",
+    "noqa_row": 32,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/true-false-comparison"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 42,
+      "row": 23
+    },
+    "filename": "/Archipelago/worlds/undertale_yellow/UndertaleYellowClient.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"Syncing items.\"",
+          "end_location": {
+            "column": 42,
+            "row": 23
+          },
+          "location": {
+            "column": 25,
+            "row": 23
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 25,
+      "row": 23
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 23,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 50,
+      "row": 46
+    },
+    "filename": "/Archipelago/worlds/undertale_yellow/UndertaleYellowClient.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"Deathlink enabled.\"",
+          "end_location": {
+            "column": 50,
+            "row": 46
+          },
+          "location": {
+            "column": 29,
+            "row": 46
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 29,
+      "row": 46
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 46,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 51,
+      "row": 48
+    },
+    "filename": "/Archipelago/worlds/undertale_yellow/UndertaleYellowClient.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"Deathlink disabled.\"",
+          "end_location": {
+            "column": 51,
+            "row": 48
+          },
+          "location": {
+            "column": 29,
+            "row": 48
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 29,
+      "row": 48
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 48,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 39,
+      "row": 148
+    },
+    "filename": "/Archipelago/worlds/undertale_yellow/UndertaleYellowClient.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"LOVErando.LV\"",
+          "end_location": {
+            "column": 39,
+            "row": 148
+          },
+          "location": {
+            "column": 24,
+            "row": 148
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 24,
+      "row": 148
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 148,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 39,
+      "row": 152
+    },
+    "filename": "/Archipelago/worlds/undertale_yellow/UndertaleYellowClient.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"STATrando.LV\"",
+          "end_location": {
+            "column": 39,
+            "row": 152
+          },
+          "location": {
+            "column": 24,
+            "row": 152
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 24,
+      "row": 152
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 152,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 44,
+      "row": 156
+    },
+    "filename": "/Archipelago/worlds/undertale_yellow/UndertaleYellowClient.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"reducegrind.grind\"",
+          "end_location": {
+            "column": 44,
+            "row": 156
+          },
+          "location": {
+            "column": 24,
+            "row": 156
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 24,
+      "row": 156
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 156,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 39,
+      "row": 160
+    },
+    "filename": "/Archipelago/worlds/undertale_yellow/UndertaleYellowClient.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"spare.sanity\"",
+          "end_location": {
+            "column": 39,
+            "row": 160
+          },
+          "location": {
+            "column": 24,
+            "row": 160
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 24,
+      "row": 160
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 160,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 38,
+      "row": 164
+    },
+    "filename": "/Archipelago/worlds/undertale_yellow/UndertaleYellowClient.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"kill.sanity\"",
+          "end_location": {
+            "column": 38,
+            "row": 164
+          },
+          "location": {
+            "column": 24,
+            "row": 164
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 24,
+      "row": 164
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 164,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 33,
+      "row": 170
+    },
+    "filename": "/Archipelago/worlds/undertale_yellow/UndertaleYellowClient.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"check.spot\"",
+          "end_location": {
+            "column": 33,
+            "row": 170
+          },
+          "location": {
+            "column": 20,
+            "row": 170
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 20,
+      "row": 170
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 170,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 14,
+      "row": 176
+    },
+    "filename": "/Archipelago/worlds/undertale_yellow/UndertaleYellowClient.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 176
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 176,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 37,
+      "row": 283
+    },
+    "filename": "/Archipelago/worlds/undertale_yellow/UndertaleYellowClient.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"check.spot\"",
+          "end_location": {
+            "column": 37,
+            "row": 283
+          },
+          "location": {
+            "column": 24,
+            "row": 283
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 24,
+      "row": 283
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 283,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 30,
+      "row": 322
+    },
+    "filename": "/Archipelago/worlds/undertale_yellow/UndertaleYellowClient.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 322
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 322,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 30,
+      "row": 334
+    },
+    "filename": "/Archipelago/worlds/undertale_yellow/UndertaleYellowClient.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 334
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 334,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "B006",
+    "end_location": {
+      "column": 61,
+      "row": 151
+    },
+    "filename": "/Archipelago/worlds/undertale_yellow/__init__.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "None",
+          "end_location": {
+            "column": 61,
+            "row": 151
+          },
+          "location": {
+            "column": 59,
+            "row": 151
+          }
+        },
+        {
+          "content": "            if exits is None:\n                exits = []\n",
+          "end_location": {
+            "column": 1,
+            "row": 152
+          },
+          "location": {
+            "column": 1,
+            "row": 152
+          }
+        }
+      ],
+      "message": "Replace with `None`; initialize within function"
+    },
+    "location": {
+      "column": 59,
+      "row": 151
+    },
+    "message": "Do not use mutable data structures for argument defaults",
+    "name": "mutable-argument-default",
+    "noqa_row": 151,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/mutable-argument-default"
+  }
+]

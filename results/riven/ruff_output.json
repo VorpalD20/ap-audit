@@ -1,0 +1,1373 @@
+[
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 17,
+      "row": 92
+    },
+    "filename": "/Archipelago/worlds/riven/client.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 91
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 91,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 55,
+      "row": 115
+    },
+    "filename": "/Archipelago/worlds/riven/client_gui/client_gui_layouts.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"[b]Randomized Puzzle Solutions[/b]\"",
+          "end_location": {
+            "column": 55,
+            "row": 115
+          },
+          "location": {
+            "column": 18,
+            "row": 115
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 18,
+      "row": 115
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 115,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 48,
+      "row": 132
+    },
+    "filename": "/Archipelago/worlds/riven/client_gui/client_gui_layouts.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"[b]Bolu Sticks Solution[/b]\"",
+          "end_location": {
+            "column": 48,
+            "row": 132
+          },
+          "location": {
+            "column": 18,
+            "row": 132
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 18,
+      "row": 132
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 132,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 81,
+      "row": 146
+    },
+    "filename": "/Archipelago/worlds/riven/client_gui/client_gui_layouts.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"Starting from the one closest to the window; clockwise order\"",
+          "end_location": {
+            "column": 81,
+            "row": 146
+          },
+          "location": {
+            "column": 18,
+            "row": 146
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 18,
+      "row": 146
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 146,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 50,
+      "row": 191
+    },
+    "filename": "/Archipelago/worlds/riven/client_gui/client_gui_layouts.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"[b]Animal Circle Solution[/b]\"",
+          "end_location": {
+            "column": 50,
+            "row": 191
+          },
+          "location": {
+            "column": 18,
+            "row": 191
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 18,
+      "row": 191
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 191,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 56,
+      "row": 237
+    },
+    "filename": "/Archipelago/worlds/riven/client_gui/client_gui_layouts.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"[b]Golden Dome Sliders Solution[/b]\"",
+          "end_location": {
+            "column": 56,
+            "row": 237
+          },
+          "location": {
+            "column": 18,
+            "row": 237
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 18,
+      "row": 237
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 237,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 56,
+      "row": 281
+    },
+    "filename": "/Archipelago/worlds/riven/client_gui/client_gui_layouts.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"[b]Prison Elevator Solution[/b]\"",
+          "end_location": {
+            "column": 56,
+            "row": 281
+          },
+          "location": {
+            "column": 22,
+            "row": 281
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 22,
+      "row": 281
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 281,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 59,
+      "row": 331
+    },
+    "filename": "/Archipelago/worlds/riven/client_gui/client_gui_layouts.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"[b]Star Fissure Telescope Solution[/b]\"",
+          "end_location": {
+            "column": 59,
+            "row": 331
+          },
+          "location": {
+            "column": 18,
+            "row": 331
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 18,
+      "row": 331
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 331,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 25,
+      "row": 391
+    },
+    "filename": "/Archipelago/worlds/riven/client_gui/client_gui_layouts.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 390
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 390,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 17,
+      "row": 396
+    },
+    "filename": "/Archipelago/worlds/riven/client_gui/client_gui_layouts.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 395
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 395,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 37,
+      "row": 582
+    },
+    "filename": "/Archipelago/worlds/riven/client_gui/client_gui_layouts.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"[b]Reference[/b]\"",
+          "end_location": {
+            "column": 37,
+            "row": 582
+          },
+          "location": {
+            "column": 18,
+            "row": 582
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 18,
+      "row": 582
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 582,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 34,
+      "row": 615
+    },
+    "filename": "/Archipelago/worlds/riven/client_gui/client_gui_layouts.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"[b]Temple[/b]\"",
+          "end_location": {
+            "column": 34,
+            "row": 615
+          },
+          "location": {
+            "column": 18,
+            "row": 615
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 18,
+      "row": 615
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 615,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 34,
+      "row": 645
+    },
+    "filename": "/Archipelago/worlds/riven/client_gui/client_gui_layouts.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"[b]Jungle[/b]\"",
+          "end_location": {
+            "column": 34,
+            "row": 645
+          },
+          "location": {
+            "column": 18,
+            "row": 645
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 18,
+      "row": 645
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 645,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 34,
+      "row": 675
+    },
+    "filename": "/Archipelago/worlds/riven/client_gui/client_gui_layouts.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"[b]Boiler[/b]\"",
+          "end_location": {
+            "column": 34,
+            "row": 675
+          },
+          "location": {
+            "column": 18,
+            "row": 675
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 18,
+      "row": 675
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 675,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 34,
+      "row": 705
+    },
+    "filename": "/Archipelago/worlds/riven/client_gui/client_gui_layouts.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"[b]Survey[/b]\"",
+          "end_location": {
+            "column": 34,
+            "row": 705
+          },
+          "location": {
+            "column": 18,
+            "row": 705
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 18,
+      "row": 705
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 705,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 34,
+      "row": 735
+    },
+    "filename": "/Archipelago/worlds/riven/client_gui/client_gui_layouts.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"[b]Prison[/b]\"",
+          "end_location": {
+            "column": 34,
+            "row": 735
+          },
+          "location": {
+            "column": 18,
+            "row": 735
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 18,
+      "row": 735
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 735,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 57,
+      "row": 755
+    },
+    "filename": "/Archipelago/worlds/riven/client_gui/client_gui_layouts.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"[b]Recall a Specific Moiety Code[/b]\"",
+          "end_location": {
+            "column": 57,
+            "row": 755
+          },
+          "location": {
+            "column": 18,
+            "row": 755
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 18,
+      "row": 755
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 755,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 58,
+      "row": 829
+    },
+    "filename": "/Archipelago/worlds/riven/client_gui/client_gui_layouts.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"[b]Survey Island Plateau Elevator[/b]\"",
+          "end_location": {
+            "column": 58,
+            "row": 829
+          },
+          "location": {
+            "column": 18,
+            "row": 829
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 18,
+      "row": 829
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 829,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 59,
+      "row": 853
+    },
+    "filename": "/Archipelago/worlds/riven/client_gui/client_gui_layouts.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"[b]Golden Dome Waffle Iron Marbles[/b]\"",
+          "end_location": {
+            "column": 59,
+            "row": 853
+          },
+          "location": {
+            "column": 18,
+            "row": 853
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 18,
+      "row": 853
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 853,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F842",
+    "end_location": {
+      "column": 9,
+      "row": 58
+    },
+    "filename": "/Archipelago/worlds/riven/data_funcs.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 58
+    },
+    "message": "Local variable `item` is annotated but never used",
+    "name": "unused-annotation",
+    "noqa_row": 58,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/unused-annotation"
+  },
+  {
+    "cell": null,
+    "code": "F842",
+    "end_location": {
+      "column": 9,
+      "row": 59
+    },
+    "filename": "/Archipelago/worlds/riven/data_funcs.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 59
+    },
+    "message": "Local variable `data` is annotated but never used",
+    "name": "unused-annotation",
+    "noqa_row": 59,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/unused-annotation"
+  },
+  {
+    "cell": null,
+    "code": "F842",
+    "end_location": {
+      "column": 13,
+      "row": 87
+    },
+    "filename": "/Archipelago/worlds/riven/data_funcs.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 87
+    },
+    "message": "Local variable `location` is annotated but never used",
+    "name": "unused-annotation",
+    "noqa_row": 87,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/unused-annotation"
+  },
+  {
+    "cell": null,
+    "code": "F842",
+    "end_location": {
+      "column": 9,
+      "row": 88
+    },
+    "filename": "/Archipelago/worlds/riven/data_funcs.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 88
+    },
+    "message": "Local variable `data` is annotated but never used",
+    "name": "unused-annotation",
+    "noqa_row": 88,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/unused-annotation"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 97,
+      "row": 76
+    },
+    "filename": "/Archipelago/worlds/riven/enums.py",
+    "fix": null,
+    "location": {
+      "column": 47,
+      "row": 76
+    },
+    "message": "Possible hardcoded password assigned to: \"JUNGLE_SECRET_MOIETY_TUNNEL_SECRET_DOOR\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 76,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 80,
+      "row": 177
+    },
+    "filename": "/Archipelago/worlds/riven/enums.py",
+    "fix": null,
+    "location": {
+      "column": 41,
+      "row": 177
+    },
+    "message": "Possible hardcoded password assigned to: \"JUNGLE_BLUE_CAVE_OPEN_SECRET_DOOR\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 177,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 108,
+      "row": 195
+    },
+    "filename": "/Archipelago/worlds/riven/enums.py",
+    "fix": null,
+    "location": {
+      "column": 55,
+      "row": 195
+    },
+    "message": "Possible hardcoded password assigned to: \"JUNGLE_WAHRK_GALLOWS_JAIL_CELL_OPEN_SECRET_DOOR\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 195,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 111,
+      "row": 196
+    },
+    "filename": "/Archipelago/worlds/riven/enums.py",
+    "fix": null,
+    "location": {
+      "column": 51,
+      "row": 196
+    },
+    "message": "Possible hardcoded password assigned to: \"JUNGLE_SECRET_MOIETY_TUNNEL_TURN_ON_LIGHT_1\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 196,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 112,
+      "row": 197
+    },
+    "filename": "/Archipelago/worlds/riven/enums.py",
+    "fix": null,
+    "location": {
+      "column": 51,
+      "row": 197
+    },
+    "message": "Possible hardcoded password assigned to: \"JUNGLE_SECRET_MOIETY_TUNNEL_TURN_ON_LIGHT_2\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 197,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 111,
+      "row": 198
+    },
+    "filename": "/Archipelago/worlds/riven/enums.py",
+    "fix": null,
+    "location": {
+      "column": 51,
+      "row": 198
+    },
+    "message": "Possible hardcoded password assigned to: \"JUNGLE_SECRET_MOIETY_TUNNEL_TURN_ON_LIGHT_3\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 198,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 112,
+      "row": 199
+    },
+    "filename": "/Archipelago/worlds/riven/enums.py",
+    "fix": null,
+    "location": {
+      "column": 51,
+      "row": 199
+    },
+    "message": "Possible hardcoded password assigned to: \"JUNGLE_SECRET_MOIETY_TUNNEL_TURN_ON_LIGHT_4\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 199,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 111,
+      "row": 200
+    },
+    "filename": "/Archipelago/worlds/riven/enums.py",
+    "fix": null,
+    "location": {
+      "column": 51,
+      "row": 200
+    },
+    "message": "Possible hardcoded password assigned to: \"JUNGLE_SECRET_MOIETY_TUNNEL_TURN_ON_LIGHT_5\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 200,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 111,
+      "row": 201
+    },
+    "filename": "/Archipelago/worlds/riven/enums.py",
+    "fix": null,
+    "location": {
+      "column": 51,
+      "row": 201
+    },
+    "message": "Possible hardcoded password assigned to: \"JUNGLE_SECRET_MOIETY_TUNNEL_TURN_ON_LIGHT_6\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 201,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 113,
+      "row": 202
+    },
+    "filename": "/Archipelago/worlds/riven/enums.py",
+    "fix": null,
+    "location": {
+      "column": 51,
+      "row": 202
+    },
+    "message": "Possible hardcoded password assigned to: \"JUNGLE_SECRET_MOIETY_TUNNEL_TURN_ON_LIGHT_7\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 202,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 112,
+      "row": 203
+    },
+    "filename": "/Archipelago/worlds/riven/enums.py",
+    "fix": null,
+    "location": {
+      "column": 51,
+      "row": 203
+    },
+    "message": "Possible hardcoded password assigned to: \"JUNGLE_SECRET_MOIETY_TUNNEL_TURN_ON_LIGHT_8\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 203,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 102,
+      "row": 204
+    },
+    "filename": "/Archipelago/worlds/riven/enums.py",
+    "fix": null,
+    "location": {
+      "column": 52,
+      "row": 204
+    },
+    "message": "Possible hardcoded password assigned to: \"JUNGLE_SECRET_MOIETY_TUNNEL_OPEN_SECRET_DOOR\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 204,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 73,
+      "row": 336
+    },
+    "filename": "/Archipelago/worlds/riven/enums.py",
+    "fix": null,
+    "location": {
+      "column": 35,
+      "row": 336
+    },
+    "message": "Possible hardcoded password assigned to: \"JUNGLE_SECRET_MOIETY_TUNNEL\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 336,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S112",
+    "end_location": {
+      "column": 25,
+      "row": 876
+    },
+    "filename": "/Archipelago/worlds/riven/game_state_manager.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 875
+    },
+    "message": "`try`-`except`-`continue` detected, consider logging the exception",
+    "name": "try-except-continue",
+    "noqa_row": 875,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-continue"
+  },
+  {
+    "cell": null,
+    "code": "S112",
+    "end_location": {
+      "column": 25,
+      "row": 894
+    },
+    "filename": "/Archipelago/worlds/riven/game_state_manager.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 893
+    },
+    "message": "`try`-`except`-`continue` detected, consider logging the exception",
+    "name": "try-except-continue",
+    "noqa_row": 893,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-continue"
+  },
+  {
+    "cell": null,
+    "code": "S112",
+    "end_location": {
+      "column": 25,
+      "row": 920
+    },
+    "filename": "/Archipelago/worlds/riven/game_state_manager.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 919
+    },
+    "message": "`try`-`except`-`continue` detected, consider logging the exception",
+    "name": "try-except-continue",
+    "noqa_row": 919,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-continue"
+  },
+  {
+    "cell": null,
+    "code": "S112",
+    "end_location": {
+      "column": 25,
+      "row": 946
+    },
+    "filename": "/Archipelago/worlds/riven/game_state_manager.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 945
+    },
+    "message": "`try`-`except`-`continue` detected, consider logging the exception",
+    "name": "try-except-continue",
+    "noqa_row": 945,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-continue"
+  },
+  {
+    "cell": null,
+    "code": "S112",
+    "end_location": {
+      "column": 25,
+      "row": 1079
+    },
+    "filename": "/Archipelago/worlds/riven/game_state_manager.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 1078
+    },
+    "message": "`try`-`except`-`continue` detected, consider logging the exception",
+    "name": "try-except-continue",
+    "noqa_row": 1078,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-continue"
+  },
+  {
+    "cell": null,
+    "code": "S112",
+    "end_location": {
+      "column": 25,
+      "row": 1099
+    },
+    "filename": "/Archipelago/worlds/riven/game_state_manager.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 1098
+    },
+    "message": "`try`-`except`-`continue` detected, consider logging the exception",
+    "name": "try-except-continue",
+    "noqa_row": 1098,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-continue"
+  },
+  {
+    "cell": null,
+    "code": "S112",
+    "end_location": {
+      "column": 25,
+      "row": 1233
+    },
+    "filename": "/Archipelago/worlds/riven/game_state_manager.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 1232
+    },
+    "message": "`try`-`except`-`continue` detected, consider logging the exception",
+    "name": "try-except-continue",
+    "noqa_row": 1232,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-continue"
+  },
+  {
+    "cell": null,
+    "code": "S112",
+    "end_location": {
+      "column": 25,
+      "row": 1263
+    },
+    "filename": "/Archipelago/worlds/riven/game_state_manager.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 1262
+    },
+    "message": "`try`-`except`-`continue` detected, consider logging the exception",
+    "name": "try-except-continue",
+    "noqa_row": 1262,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-continue"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 50,
+      "row": 1391
+    },
+    "filename": "/Archipelago/worlds/riven/game_state_manager.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 1391
+    },
+    "message": "Possible hardcoded password assigned to: \"secret_instance\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 1391,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 50,
+      "row": 1409
+    },
+    "filename": "/Archipelago/worlds/riven/game_state_manager.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 1409
+    },
+    "message": "Possible hardcoded password assigned to: \"secret_instance\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 1409,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "E722",
+    "end_location": {
+      "column": 15,
+      "row": 1929
+    },
+    "filename": "/Archipelago/worlds/riven/game_state_manager.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 1929
+    },
+    "message": "Do not use bare `except`",
+    "name": "bare-except",
+    "noqa_row": 1929,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/bare-except"
+  },
+  {
+    "cell": null,
+    "code": "E722",
+    "end_location": {
+      "column": 19,
+      "row": 1940
+    },
+    "filename": "/Archipelago/worlds/riven/game_state_manager.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 1940
+    },
+    "message": "Do not use bare `except`",
+    "name": "bare-except",
+    "noqa_row": 1940,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/bare-except"
+  },
+  {
+    "cell": null,
+    "code": "S112",
+    "end_location": {
+      "column": 25,
+      "row": 1941
+    },
+    "filename": "/Archipelago/worlds/riven/game_state_manager.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 1940
+    },
+    "message": "`try`-`except`-`continue` detected, consider logging the exception",
+    "name": "try-except-continue",
+    "noqa_row": 1940,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-continue"
+  },
+  {
+    "cell": null,
+    "code": "E722",
+    "end_location": {
+      "column": 27,
+      "row": 2055
+    },
+    "filename": "/Archipelago/worlds/riven/game_state_manager.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 2055
+    },
+    "message": "Do not use bare `except`",
+    "name": "bare-except",
+    "noqa_row": 2055,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/bare-except"
+  },
+  {
+    "cell": null,
+    "code": "S112",
+    "end_location": {
+      "column": 33,
+      "row": 2056
+    },
+    "filename": "/Archipelago/worlds/riven/game_state_manager.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 2055
+    },
+    "message": "`try`-`except`-`continue` detected, consider logging the exception",
+    "name": "try-except-continue",
+    "noqa_row": 2055,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-continue"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 81,
+      "row": 2174
+    },
+    "filename": "/Archipelago/worlds/riven/game_state_manager.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"Unknown\"",
+          "end_location": {
+            "column": 81,
+            "row": 2174
+          },
+          "location": {
+            "column": 71,
+            "row": 2174
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 71,
+      "row": 2174
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 2174,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 81,
+      "row": 2218
+    },
+    "filename": "/Archipelago/worlds/riven/game_state_manager.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"Unknown\"",
+          "end_location": {
+            "column": 81,
+            "row": 2218
+          },
+          "location": {
+            "column": 71,
+            "row": 2218
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 71,
+      "row": 2218
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 2218,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 17,
+      "row": 2289
+    },
+    "filename": "/Archipelago/worlds/riven/game_state_manager.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 2288
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 2288,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 17,
+      "row": 2331
+    },
+    "filename": "/Archipelago/worlds/riven/game_state_manager.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 2330
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 2330,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 17,
+      "row": 2372
+    },
+    "filename": "/Archipelago/worlds/riven/game_state_manager.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 2371
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 2371,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S112",
+    "end_location": {
+      "column": 25,
+      "row": 125
+    },
+    "filename": "/Archipelago/worlds/riven/world.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 124
+    },
+    "message": "`try`-`except`-`continue` detected, consider logging the exception",
+    "name": "try-except-continue",
+    "noqa_row": 124,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-continue"
+  }
+]
