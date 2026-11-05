@@ -1,0 +1,16 @@
+{
+    "game": "Pokemon Crystal Prerelease",
+    "stub": "pokemon_crystal_prerelease",
+    "manifest": {
+        "game": "Pokemon Crystal Prerelease",
+        "authors": [
+            "gerbiljames"
+        ],
+        "minimum_ap_version": "0.6.7",
+        "world_version": "1.35.0",
+        "pokemon_crystal_version": "6.0.0-rc.7",
+        "minimum_patch_version": "1.35.0",
+        "compatible_version": 7,
+        "version": 7
+    }
+}

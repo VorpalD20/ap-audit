@@ -1,0 +1,2675 @@
+[
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 75,
+      "row": 11
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/breeding.py",
+    "fix": null,
+    "location": {
+      "column": 74,
+      "row": 11
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 11,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 40,
+      "row": 16
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/breeding.py",
+    "fix": null,
+    "location": {
+      "column": 39,
+      "row": 16
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 16,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 42,
+      "row": 28
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/breeding.py",
+    "fix": null,
+    "location": {
+      "column": 41,
+      "row": 28
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 28,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 37,
+      "row": 56
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/breeding.py",
+    "fix": null,
+    "location": {
+      "column": 36,
+      "row": 56
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 56,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 72,
+      "row": 62
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/breeding.py",
+    "fix": null,
+    "location": {
+      "column": 71,
+      "row": 62
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 62,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 81,
+      "row": 154
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/client.py",
+    "fix": null,
+    "location": {
+      "column": 80,
+      "row": 154
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 154,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 38,
+      "row": 991
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/client.py",
+    "fix": null,
+    "location": {
+      "column": 37,
+      "row": 991
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 991,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 41,
+      "row": 19
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/client_commands.py",
+    "fix": null,
+    "location": {
+      "column": 40,
+      "row": 19
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 19,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 39,
+      "row": 44
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/client_trap_link.py",
+    "fix": null,
+    "location": {
+      "column": 38,
+      "row": 44
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 44,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 46,
+      "row": 78
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/data.py",
+    "fix": null,
+    "location": {
+      "column": 45,
+      "row": 78
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 78,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 45,
+      "row": 79
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/data.py",
+    "fix": null,
+    "location": {
+      "column": 44,
+      "row": 79
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 79,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 50,
+      "row": 80
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/data.py",
+    "fix": null,
+    "location": {
+      "column": 49,
+      "row": 80
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 80,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 45,
+      "row": 81
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/data.py",
+    "fix": null,
+    "location": {
+      "column": 44,
+      "row": 81
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 81,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 46,
+      "row": 82
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/data.py",
+    "fix": null,
+    "location": {
+      "column": 45,
+      "row": 82
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 82,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 40,
+      "row": 86
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/data.py",
+    "fix": null,
+    "location": {
+      "column": 39,
+      "row": 86
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 86,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 39,
+      "row": 87
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/data.py",
+    "fix": null,
+    "location": {
+      "column": 38,
+      "row": 87
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 87,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 44,
+      "row": 88
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/data.py",
+    "fix": null,
+    "location": {
+      "column": 43,
+      "row": 88
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 88,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 40,
+      "row": 89
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/data.py",
+    "fix": null,
+    "location": {
+      "column": 39,
+      "row": 89
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 89,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 40,
+      "row": 90
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/data.py",
+    "fix": null,
+    "location": {
+      "column": 39,
+      "row": 90
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 90,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 40,
+      "row": 98
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/data.py",
+    "fix": null,
+    "location": {
+      "column": 39,
+      "row": 98
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 98,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 39,
+      "row": 99
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/data.py",
+    "fix": null,
+    "location": {
+      "column": 38,
+      "row": 99
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 99,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 44,
+      "row": 100
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/data.py",
+    "fix": null,
+    "location": {
+      "column": 43,
+      "row": 100
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 100,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 40,
+      "row": 101
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/data.py",
+    "fix": null,
+    "location": {
+      "column": 39,
+      "row": 101
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 101,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 40,
+      "row": 102
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/data.py",
+    "fix": null,
+    "location": {
+      "column": 39,
+      "row": 102
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 102,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 55,
+      "row": 143
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/data.py",
+    "fix": null,
+    "location": {
+      "column": 54,
+      "row": 143
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 143,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 57,
+      "row": 144
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/data.py",
+    "fix": null,
+    "location": {
+      "column": 56,
+      "row": 144
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 144,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 57,
+      "row": 145
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/data.py",
+    "fix": null,
+    "location": {
+      "column": 56,
+      "row": 145
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 145,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 55,
+      "row": 146
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/data.py",
+    "fix": null,
+    "location": {
+      "column": 54,
+      "row": 146
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 146,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 48,
+      "row": 147
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/data.py",
+    "fix": null,
+    "location": {
+      "column": 47,
+      "row": 147
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 147,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 48,
+      "row": 148
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/data.py",
+    "fix": null,
+    "location": {
+      "column": 47,
+      "row": 148
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 148,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 47,
+      "row": 176
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/data.py",
+    "fix": null,
+    "location": {
+      "column": 46,
+      "row": 176
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 176,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 46,
+      "row": 177
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/data.py",
+    "fix": null,
+    "location": {
+      "column": 45,
+      "row": 177
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 177,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 45,
+      "row": 178
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/data.py",
+    "fix": null,
+    "location": {
+      "column": 44,
+      "row": 178
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 178,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 47,
+      "row": 203
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/data.py",
+    "fix": null,
+    "location": {
+      "column": 46,
+      "row": 203
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 203,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 56,
+      "row": 204
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/data.py",
+    "fix": null,
+    "location": {
+      "column": 55,
+      "row": 204
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 204,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 47,
+      "row": 205
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/data.py",
+    "fix": null,
+    "location": {
+      "column": 46,
+      "row": 205
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 205,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 53,
+      "row": 206
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/data.py",
+    "fix": null,
+    "location": {
+      "column": 52,
+      "row": 206
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 206,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 45,
+      "row": 749
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/data.py",
+    "fix": null,
+    "location": {
+      "column": 44,
+      "row": 749
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 749,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 44,
+      "row": 750
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/data.py",
+    "fix": null,
+    "location": {
+      "column": 43,
+      "row": 750
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 750,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 45,
+      "row": 751
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/data.py",
+    "fix": null,
+    "location": {
+      "column": 44,
+      "row": 751
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 751,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 45,
+      "row": 752
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/data.py",
+    "fix": null,
+    "location": {
+      "column": 44,
+      "row": 752
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 752,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 45,
+      "row": 753
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/data.py",
+    "fix": null,
+    "location": {
+      "column": 44,
+      "row": 753
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 753,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 37,
+      "row": 768
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/data.py",
+    "fix": null,
+    "location": {
+      "column": 36,
+      "row": 768
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 768,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 38,
+      "row": 769
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/data.py",
+    "fix": null,
+    "location": {
+      "column": 37,
+      "row": 769
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 769,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 39,
+      "row": 770
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/data.py",
+    "fix": null,
+    "location": {
+      "column": 38,
+      "row": 770
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 770,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 37,
+      "row": 771
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/data.py",
+    "fix": null,
+    "location": {
+      "column": 36,
+      "row": 771
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 771,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 49,
+      "row": 772
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/data.py",
+    "fix": null,
+    "location": {
+      "column": 48,
+      "row": 772
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 772,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 37,
+      "row": 773
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/data.py",
+    "fix": null,
+    "location": {
+      "column": 36,
+      "row": 773
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 773,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 40,
+      "row": 774
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/data.py",
+    "fix": null,
+    "location": {
+      "column": 39,
+      "row": 774
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 774,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 76,
+      "row": 887
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/data.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 887
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 887,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 29,
+      "row": 891
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/data.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 891
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 891,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 34,
+      "row": 892
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/data.py",
+    "fix": null,
+    "location": {
+      "column": 33,
+      "row": 892
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 892,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 24,
+      "row": 897
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/data.py",
+    "fix": null,
+    "location": {
+      "column": 23,
+      "row": 897
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 897,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 41,
+      "row": 1027
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/data.py",
+    "fix": null,
+    "location": {
+      "column": 40,
+      "row": 1027
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 1027,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 49,
+      "row": 1028
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/data.py",
+    "fix": null,
+    "location": {
+      "column": 48,
+      "row": 1028
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 1028,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 59,
+      "row": 1736
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/data.py",
+    "fix": null,
+    "location": {
+      "column": 58,
+      "row": 1736
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 1736,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 14,
+      "row": 112
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/fly.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 112
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 112,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "F821",
+    "end_location": {
+      "column": 64,
+      "row": 223
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/fly.py",
+    "fix": null,
+    "location": {
+      "column": 46,
+      "row": 223
+    },
+    "message": "Undefined name `PokemonCrstalWorld`",
+    "name": "undefined-name",
+    "noqa_row": 223,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-name"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 58,
+      "row": 229
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/fly.py",
+    "fix": null,
+    "location": {
+      "column": 57,
+      "row": 229
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 229,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 57,
+      "row": 236
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/fly.py",
+    "fix": null,
+    "location": {
+      "column": 56,
+      "row": 236
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 236,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 83,
+      "row": 261
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/fly.py",
+    "fix": null,
+    "location": {
+      "column": 82,
+      "row": 261
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 261,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 14,
+      "row": 277
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/fly.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 277
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 277,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 44,
+      "row": 279
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/fly.py",
+    "fix": null,
+    "location": {
+      "column": 43,
+      "row": 279
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 279,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 34,
+      "row": 288
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/fly.py",
+    "fix": null,
+    "location": {
+      "column": 33,
+      "row": 288
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 288,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 72,
+      "row": 290
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/fly.py",
+    "fix": null,
+    "location": {
+      "column": 71,
+      "row": 290
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 290,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 34,
+      "row": 44
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/items.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 44
+    },
+    "message": "Possible hardcoded password assigned to: \"TOKEN_NAME\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 44,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 77,
+      "row": 205
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/items.py",
+    "fix": null,
+    "location": {
+      "column": 76,
+      "row": 205
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 205,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 27,
+      "row": 212
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/items.py",
+    "fix": null,
+    "location": {
+      "column": 26,
+      "row": 212
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 212,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 64,
+      "row": 133
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/locations.py",
+    "fix": null,
+    "location": {
+      "column": 63,
+      "row": 133
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 133,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 90,
+      "row": 297
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/locations.py",
+    "fix": null,
+    "location": {
+      "column": 89,
+      "row": 297
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 297,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 55,
+      "row": 299
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/locations.py",
+    "fix": null,
+    "location": {
+      "column": 54,
+      "row": 299
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 299,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 89,
+      "row": 317
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/locations.py",
+    "fix": null,
+    "location": {
+      "column": 88,
+      "row": 317
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 317,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 41,
+      "row": 386
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/locations.py",
+    "fix": null,
+    "location": {
+      "column": 40,
+      "row": 386
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 386,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 42,
+      "row": 405
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/locations.py",
+    "fix": null,
+    "location": {
+      "column": 41,
+      "row": 405
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 405,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 408
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/locations.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 408
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 408,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 42,
+      "row": 23
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/misc.py",
+    "fix": null,
+    "location": {
+      "column": 41,
+      "row": 23
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 23,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 82,
+      "row": 169
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/moves.py",
+    "fix": null,
+    "location": {
+      "column": 81,
+      "row": 169
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 169,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 36,
+      "row": 241
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/moves.py",
+    "fix": null,
+    "location": {
+      "column": 35,
+      "row": 241
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 241,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 36,
+      "row": 251
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/moves.py",
+    "fix": null,
+    "location": {
+      "column": 35,
+      "row": 251
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 251,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 31,
+      "row": 257
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/moves.py",
+    "fix": null,
+    "location": {
+      "column": 30,
+      "row": 257
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 257,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 32,
+      "row": 258
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/moves.py",
+    "fix": null,
+    "location": {
+      "column": 31,
+      "row": 258
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 258,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 58,
+      "row": 288
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/moves.py",
+    "fix": null,
+    "location": {
+      "column": 57,
+      "row": 288
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 288,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 58,
+      "row": 299
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/moves.py",
+    "fix": null,
+    "location": {
+      "column": 57,
+      "row": 299
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 299,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 81,
+      "row": 307
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/moves.py",
+    "fix": null,
+    "location": {
+      "column": 80,
+      "row": 307
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 307,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 71,
+      "row": 319
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/moves.py",
+    "fix": null,
+    "location": {
+      "column": 70,
+      "row": 319
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 319,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 47,
+      "row": 334
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/moves.py",
+    "fix": null,
+    "location": {
+      "column": 46,
+      "row": 334
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 334,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 53,
+      "row": 353
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/moves.py",
+    "fix": null,
+    "location": {
+      "column": 52,
+      "row": 353
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 353,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 42,
+      "row": 31
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/music.py",
+    "fix": null,
+    "location": {
+      "column": 41,
+      "row": 31
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 31,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 27,
+      "row": 60
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/options.py",
+    "fix": null,
+    "location": {
+      "column": 26,
+      "row": 60
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 60,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 75,
+      "row": 144
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/pokemon.py",
+    "fix": null,
+    "location": {
+      "column": 74,
+      "row": 144
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 144,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 35,
+      "row": 174
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/pokemon.py",
+    "fix": null,
+    "location": {
+      "column": 34,
+      "row": 174
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 174,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 82,
+      "row": 177
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/pokemon.py",
+    "fix": null,
+    "location": {
+      "column": 81,
+      "row": 177
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 177,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 35,
+      "row": 190
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/pokemon.py",
+    "fix": null,
+    "location": {
+      "column": 34,
+      "row": 190
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 190,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 82,
+      "row": 194
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/pokemon.py",
+    "fix": null,
+    "location": {
+      "column": 81,
+      "row": 194
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 194,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 35,
+      "row": 222
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/pokemon.py",
+    "fix": null,
+    "location": {
+      "column": 34,
+      "row": 222
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 222,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 77,
+      "row": 248
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/pokemon.py",
+    "fix": null,
+    "location": {
+      "column": 76,
+      "row": 248
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 248,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 39,
+      "row": 372
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/pokemon.py",
+    "fix": null,
+    "location": {
+      "column": 38,
+      "row": 372
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 372,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 28,
+      "row": 628
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/pokemon.py",
+    "fix": null,
+    "location": {
+      "column": 27,
+      "row": 628
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 628,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 32,
+      "row": 629
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/pokemon.py",
+    "fix": null,
+    "location": {
+      "column": 31,
+      "row": 629
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 629,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 19,
+      "row": 647
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/pokemon.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 647
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 647,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 19,
+      "row": 648
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/pokemon.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 648
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 648,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 19,
+      "row": 649
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/pokemon.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 649
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 649,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 50,
+      "row": 654
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/pokemon.py",
+    "fix": null,
+    "location": {
+      "column": 49,
+      "row": 654
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 654,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 53,
+      "row": 657
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/pokemon.py",
+    "fix": null,
+    "location": {
+      "column": 52,
+      "row": 657
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 657,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 70,
+      "row": 318
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/regions.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"Excluding %s from level scaling for %s\"",
+          "end_location": {
+            "column": 70,
+            "row": 318
+          },
+          "location": {
+            "column": 29,
+            "row": 318
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 29,
+      "row": 318
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 318,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F821",
+    "end_location": {
+      "column": 80,
+      "row": 523
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/regions.py",
+    "fix": null,
+    "location": {
+      "column": 71,
+      "row": 523
+    },
+    "message": "Undefined name `FlyRegion`",
+    "name": "undefined-name",
+    "noqa_row": 523,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-name"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 34,
+      "row": 1194
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/rom.py",
+    "fix": null,
+    "location": {
+      "column": 33,
+      "row": 1194
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 1194,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 59,
+      "row": 1797
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/rules.py",
+    "fix": null,
+    "location": {
+      "column": 58,
+      "row": 1797
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 1797,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 92,
+      "row": 1798
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/rules.py",
+    "fix": null,
+    "location": {
+      "column": 91,
+      "row": 1798
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 1798,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 47,
+      "row": 1813
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/rules.py",
+    "fix": null,
+    "location": {
+      "column": 46,
+      "row": 1813
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 1813,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 94,
+      "row": 1873
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/rules.py",
+    "fix": null,
+    "location": {
+      "column": 93,
+      "row": 1873
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 1873,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 93,
+      "row": 1906
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/rules.py",
+    "fix": null,
+    "location": {
+      "column": 92,
+      "row": 1906
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 1906,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 48,
+      "row": 1963
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/rules.py",
+    "fix": null,
+    "location": {
+      "column": 47,
+      "row": 1963
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 1963,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 91,
+      "row": 41
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/test/test_base_stats.py",
+    "fix": null,
+    "location": {
+      "column": 90,
+      "row": 41
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 41,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 41,
+      "row": 145
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/trainers.py",
+    "fix": null,
+    "location": {
+      "column": 40,
+      "row": 145
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 145,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 36,
+      "row": 153
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/trainers.py",
+    "fix": null,
+    "location": {
+      "column": 35,
+      "row": 153
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 153,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 39,
+      "row": 14
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/universal_tracker.py",
+    "fix": null,
+    "location": {
+      "column": 38,
+      "row": 14
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 14,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 80,
+      "row": 603
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/utils.py",
+    "fix": null,
+    "location": {
+      "column": 79,
+      "row": 603
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 603,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 61,
+      "row": 631
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/utils.py",
+    "fix": null,
+    "location": {
+      "column": 60,
+      "row": 631
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 631,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 82,
+      "row": 632
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/utils.py",
+    "fix": null,
+    "location": {
+      "column": 81,
+      "row": 632
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 632,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 23,
+      "row": 712
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/utils.py",
+    "fix": null,
+    "location": {
+      "column": 22,
+      "row": 712
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 712,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E722",
+    "end_location": {
+      "column": 15,
+      "row": 718
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/utils.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 718
+    },
+    "message": "Do not use bare `except`",
+    "name": "bare-except",
+    "noqa_row": 718,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/bare-except"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 24,
+      "row": 723
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/utils.py",
+    "fix": null,
+    "location": {
+      "column": 23,
+      "row": 723
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 723,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E722",
+    "end_location": {
+      "column": 11,
+      "row": 727
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/utils.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 727
+    },
+    "message": "Do not use bare `except`",
+    "name": "bare-except",
+    "noqa_row": 727,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/bare-except"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 31,
+      "row": 729
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/utils.py",
+    "fix": null,
+    "location": {
+      "column": 30,
+      "row": 729
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 729,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 730
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/utils.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 730
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 730,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 24,
+      "row": 827
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/utils.py",
+    "fix": null,
+    "location": {
+      "column": 23,
+      "row": 827
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 827,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 38,
+      "row": 543
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/world.py",
+    "fix": null,
+    "location": {
+      "column": 37,
+      "row": 543
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 543,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 25,
+      "row": 934
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/world.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 934
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 934,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 48,
+      "row": 939
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/world.py",
+    "fix": null,
+    "location": {
+      "column": 47,
+      "row": 939
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 939,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 56,
+      "row": 1023
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/world.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"Fly Destinations:\\n\"",
+          "end_location": {
+            "column": 56,
+            "row": 1023
+          },
+          "location": {
+            "column": 34,
+            "row": 1023
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 34,
+      "row": 1023
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 1023,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 49,
+      "row": 1077
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/world.py",
+    "fix": null,
+    "location": {
+      "column": 48,
+      "row": 1077
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 1077,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 46,
+      "row": 1080
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/world.py",
+    "fix": null,
+    "location": {
+      "column": 45,
+      "row": 1080
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 1080,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 48,
+      "row": 1167
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/world.py",
+    "fix": null,
+    "location": {
+      "column": 47,
+      "row": 1167
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 1167,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 36,
+      "row": 1172
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/world.py",
+    "fix": null,
+    "location": {
+      "column": 35,
+      "row": 1172
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 1172,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 44,
+      "row": 1186
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/world.py",
+    "fix": null,
+    "location": {
+      "column": 43,
+      "row": 1186
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 1186,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 83,
+      "row": 1251
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/world.py",
+    "fix": null,
+    "location": {
+      "column": 82,
+      "row": 1251
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 1251,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 41,
+      "row": 1257
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/world.py",
+    "fix": null,
+    "location": {
+      "column": 40,
+      "row": 1257
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 1257,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 44,
+      "row": 1269
+    },
+    "filename": "/Archipelago/worlds/pokemon_crystal_prerelease/world.py",
+    "fix": null,
+    "location": {
+      "column": 43,
+      "row": 1269
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 1269,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  }
+]

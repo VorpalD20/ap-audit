@@ -22,5 +22,7 @@
  "function-call-in-default-argument": -1,
  "function-uses-loop-variable": -1,
  "get-attr-with-constant": -1,
- "start-process-with-no-shell": -1
+ "start-process-with-no-shell": -1,
+ "undefined-name": -1,
+ "hardcoded-password-string": -1
 }
