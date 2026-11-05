@@ -1,0 +1,72 @@
+[
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 89,
+      "row": 216
+    },
+    "filename": "/Archipelago/worlds/grappledog/Client.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"Couldn't change tag, not yet connected to Archipelago server!\"",
+          "end_location": {
+            "column": 89,
+            "row": 216
+          },
+          "location": {
+            "column": 25,
+            "row": 216
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 25,
+      "row": 216
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 216,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "E712",
+    "end_location": {
+      "column": 182,
+      "row": 26
+    },
+    "filename": "/Archipelago/worlds/grappledog/items.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "not world.options.start_with_hook.value",
+          "end_location": {
+            "column": 182,
+            "row": 26
+          },
+          "location": {
+            "column": 138,
+            "row": 26
+          }
+        }
+      ],
+      "message": "Replace with `not world.options.start_with_hook.value`"
+    },
+    "location": {
+      "column": 138,
+      "row": 26
+    },
+    "message": "Avoid equality comparisons to `False`; use `not world.options.start_with_hook.value:` for false checks",
+    "name": "true-false-comparison",
+    "noqa_row": 26,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/true-false-comparison"
+  }
+]

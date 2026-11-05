@@ -1,0 +1,550 @@
+[
+  {
+    "cell": null,
+    "code": "E101",
+    "end_location": {
+      "column": 10,
+      "row": 156
+    },
+    "filename": "/Archipelago/worlds/herocore/Data/RegData.py",
+    "fix": null,
+    "location": {
+      "column": 1,
+      "row": 156
+    },
+    "message": "Indentation contains mixed spaces and tabs",
+    "name": "mixed-spaces-and-tabs",
+    "noqa_row": 156,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/mixed-spaces-and-tabs"
+  },
+  {
+    "cell": null,
+    "code": "E101",
+    "end_location": {
+      "column": 16,
+      "row": 160
+    },
+    "filename": "/Archipelago/worlds/herocore/Data/RegData.py",
+    "fix": null,
+    "location": {
+      "column": 1,
+      "row": 160
+    },
+    "message": "Indentation contains mixed spaces and tabs",
+    "name": "mixed-spaces-and-tabs",
+    "noqa_row": 160,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/mixed-spaces-and-tabs"
+  },
+  {
+    "cell": null,
+    "code": "E101",
+    "end_location": {
+      "column": 16,
+      "row": 161
+    },
+    "filename": "/Archipelago/worlds/herocore/Data/RegData.py",
+    "fix": null,
+    "location": {
+      "column": 1,
+      "row": 161
+    },
+    "message": "Indentation contains mixed spaces and tabs",
+    "name": "mixed-spaces-and-tabs",
+    "noqa_row": 161,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/mixed-spaces-and-tabs"
+  },
+  {
+    "cell": null,
+    "code": "E101",
+    "end_location": {
+      "column": 10,
+      "row": 190
+    },
+    "filename": "/Archipelago/worlds/herocore/Data/RegData.py",
+    "fix": null,
+    "location": {
+      "column": 1,
+      "row": 190
+    },
+    "message": "Indentation contains mixed spaces and tabs",
+    "name": "mixed-spaces-and-tabs",
+    "noqa_row": 190,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/mixed-spaces-and-tabs"
+  },
+  {
+    "cell": null,
+    "code": "E101",
+    "end_location": {
+      "column": 10,
+      "row": 209
+    },
+    "filename": "/Archipelago/worlds/herocore/Data/RegData.py",
+    "fix": null,
+    "location": {
+      "column": 1,
+      "row": 209
+    },
+    "message": "Indentation contains mixed spaces and tabs",
+    "name": "mixed-spaces-and-tabs",
+    "noqa_row": 209,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/mixed-spaces-and-tabs"
+  },
+  {
+    "cell": null,
+    "code": "E101",
+    "end_location": {
+      "column": 14,
+      "row": 213
+    },
+    "filename": "/Archipelago/worlds/herocore/Data/RegData.py",
+    "fix": null,
+    "location": {
+      "column": 1,
+      "row": 213
+    },
+    "message": "Indentation contains mixed spaces and tabs",
+    "name": "mixed-spaces-and-tabs",
+    "noqa_row": 213,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/mixed-spaces-and-tabs"
+  },
+  {
+    "cell": null,
+    "code": "E101",
+    "end_location": {
+      "column": 20,
+      "row": 272
+    },
+    "filename": "/Archipelago/worlds/herocore/Data/RegData.py",
+    "fix": null,
+    "location": {
+      "column": 1,
+      "row": 272
+    },
+    "message": "Indentation contains mixed spaces and tabs",
+    "name": "mixed-spaces-and-tabs",
+    "noqa_row": 272,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/mixed-spaces-and-tabs"
+  },
+  {
+    "cell": null,
+    "code": "E101",
+    "end_location": {
+      "column": 10,
+      "row": 361
+    },
+    "filename": "/Archipelago/worlds/herocore/Data/RegData.py",
+    "fix": null,
+    "location": {
+      "column": 1,
+      "row": 361
+    },
+    "message": "Indentation contains mixed spaces and tabs",
+    "name": "mixed-spaces-and-tabs",
+    "noqa_row": 361,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/mixed-spaces-and-tabs"
+  },
+  {
+    "cell": null,
+    "code": "E101",
+    "end_location": {
+      "column": 10,
+      "row": 387
+    },
+    "filename": "/Archipelago/worlds/herocore/Data/RegData.py",
+    "fix": null,
+    "location": {
+      "column": 1,
+      "row": 387
+    },
+    "message": "Indentation contains mixed spaces and tabs",
+    "name": "mixed-spaces-and-tabs",
+    "noqa_row": 387,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/mixed-spaces-and-tabs"
+  },
+  {
+    "cell": null,
+    "code": "E101",
+    "end_location": {
+      "column": 10,
+      "row": 395
+    },
+    "filename": "/Archipelago/worlds/herocore/Data/RegData.py",
+    "fix": null,
+    "location": {
+      "column": 1,
+      "row": 395
+    },
+    "message": "Indentation contains mixed spaces and tabs",
+    "name": "mixed-spaces-and-tabs",
+    "noqa_row": 395,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/mixed-spaces-and-tabs"
+  },
+  {
+    "cell": null,
+    "code": "E101",
+    "end_location": {
+      "column": 10,
+      "row": 402
+    },
+    "filename": "/Archipelago/worlds/herocore/Data/RegData.py",
+    "fix": null,
+    "location": {
+      "column": 1,
+      "row": 402
+    },
+    "message": "Indentation contains mixed spaces and tabs",
+    "name": "mixed-spaces-and-tabs",
+    "noqa_row": 402,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/mixed-spaces-and-tabs"
+  },
+  {
+    "cell": null,
+    "code": "E101",
+    "end_location": {
+      "column": 16,
+      "row": 533
+    },
+    "filename": "/Archipelago/worlds/herocore/Data/RegData.py",
+    "fix": null,
+    "location": {
+      "column": 1,
+      "row": 533
+    },
+    "message": "Indentation contains mixed spaces and tabs",
+    "name": "mixed-spaces-and-tabs",
+    "noqa_row": 533,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/mixed-spaces-and-tabs"
+  },
+  {
+    "cell": null,
+    "code": "E101",
+    "end_location": {
+      "column": 10,
+      "row": 540
+    },
+    "filename": "/Archipelago/worlds/herocore/Data/RegData.py",
+    "fix": null,
+    "location": {
+      "column": 1,
+      "row": 540
+    },
+    "message": "Indentation contains mixed spaces and tabs",
+    "name": "mixed-spaces-and-tabs",
+    "noqa_row": 540,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/mixed-spaces-and-tabs"
+  },
+  {
+    "cell": null,
+    "code": "E101",
+    "end_location": {
+      "column": 10,
+      "row": 547
+    },
+    "filename": "/Archipelago/worlds/herocore/Data/RegData.py",
+    "fix": null,
+    "location": {
+      "column": 1,
+      "row": 547
+    },
+    "message": "Indentation contains mixed spaces and tabs",
+    "name": "mixed-spaces-and-tabs",
+    "noqa_row": 547,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/mixed-spaces-and-tabs"
+  },
+  {
+    "cell": null,
+    "code": "E101",
+    "end_location": {
+      "column": 10,
+      "row": 548
+    },
+    "filename": "/Archipelago/worlds/herocore/Data/RegData.py",
+    "fix": null,
+    "location": {
+      "column": 1,
+      "row": 548
+    },
+    "message": "Indentation contains mixed spaces and tabs",
+    "name": "mixed-spaces-and-tabs",
+    "noqa_row": 548,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/mixed-spaces-and-tabs"
+  },
+  {
+    "cell": null,
+    "code": "E101",
+    "end_location": {
+      "column": 10,
+      "row": 591
+    },
+    "filename": "/Archipelago/worlds/herocore/Data/RegData.py",
+    "fix": null,
+    "location": {
+      "column": 1,
+      "row": 591
+    },
+    "message": "Indentation contains mixed spaces and tabs",
+    "name": "mixed-spaces-and-tabs",
+    "noqa_row": 591,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/mixed-spaces-and-tabs"
+  },
+  {
+    "cell": null,
+    "code": "E101",
+    "end_location": {
+      "column": 10,
+      "row": 608
+    },
+    "filename": "/Archipelago/worlds/herocore/Data/RegData.py",
+    "fix": null,
+    "location": {
+      "column": 1,
+      "row": 608
+    },
+    "message": "Indentation contains mixed spaces and tabs",
+    "name": "mixed-spaces-and-tabs",
+    "noqa_row": 608,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/mixed-spaces-and-tabs"
+  },
+  {
+    "cell": null,
+    "code": "E101",
+    "end_location": {
+      "column": 10,
+      "row": 646
+    },
+    "filename": "/Archipelago/worlds/herocore/Data/RegData.py",
+    "fix": null,
+    "location": {
+      "column": 1,
+      "row": 646
+    },
+    "message": "Indentation contains mixed spaces and tabs",
+    "name": "mixed-spaces-and-tabs",
+    "noqa_row": 646,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/mixed-spaces-and-tabs"
+  },
+  {
+    "cell": null,
+    "code": "E101",
+    "end_location": {
+      "column": 10,
+      "row": 670
+    },
+    "filename": "/Archipelago/worlds/herocore/Data/RegData.py",
+    "fix": null,
+    "location": {
+      "column": 1,
+      "row": 670
+    },
+    "message": "Indentation contains mixed spaces and tabs",
+    "name": "mixed-spaces-and-tabs",
+    "noqa_row": 670,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/mixed-spaces-and-tabs"
+  },
+  {
+    "cell": null,
+    "code": "E101",
+    "end_location": {
+      "column": 10,
+      "row": 674
+    },
+    "filename": "/Archipelago/worlds/herocore/Data/RegData.py",
+    "fix": null,
+    "location": {
+      "column": 1,
+      "row": 674
+    },
+    "message": "Indentation contains mixed spaces and tabs",
+    "name": "mixed-spaces-and-tabs",
+    "noqa_row": 674,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/mixed-spaces-and-tabs"
+  },
+  {
+    "cell": null,
+    "code": "E101",
+    "end_location": {
+      "column": 10,
+      "row": 739
+    },
+    "filename": "/Archipelago/worlds/herocore/Data/RegData.py",
+    "fix": null,
+    "location": {
+      "column": 1,
+      "row": 739
+    },
+    "message": "Indentation contains mixed spaces and tabs",
+    "name": "mixed-spaces-and-tabs",
+    "noqa_row": 739,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/mixed-spaces-and-tabs"
+  },
+  {
+    "cell": null,
+    "code": "E101",
+    "end_location": {
+      "column": 10,
+      "row": 745
+    },
+    "filename": "/Archipelago/worlds/herocore/Data/RegData.py",
+    "fix": null,
+    "location": {
+      "column": 1,
+      "row": 745
+    },
+    "message": "Indentation contains mixed spaces and tabs",
+    "name": "mixed-spaces-and-tabs",
+    "noqa_row": 745,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/mixed-spaces-and-tabs"
+  },
+  {
+    "cell": null,
+    "code": "E101",
+    "end_location": {
+      "column": 10,
+      "row": 813
+    },
+    "filename": "/Archipelago/worlds/herocore/Data/RegData.py",
+    "fix": null,
+    "location": {
+      "column": 1,
+      "row": 813
+    },
+    "message": "Indentation contains mixed spaces and tabs",
+    "name": "mixed-spaces-and-tabs",
+    "noqa_row": 813,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/mixed-spaces-and-tabs"
+  },
+  {
+    "cell": null,
+    "code": "E101",
+    "end_location": {
+      "column": 11,
+      "row": 1001
+    },
+    "filename": "/Archipelago/worlds/herocore/Data/RegData.py",
+    "fix": null,
+    "location": {
+      "column": 1,
+      "row": 1001
+    },
+    "message": "Indentation contains mixed spaces and tabs",
+    "name": "mixed-spaces-and-tabs",
+    "noqa_row": 1001,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/mixed-spaces-and-tabs"
+  },
+  {
+    "cell": null,
+    "code": "E101",
+    "end_location": {
+      "column": 13,
+      "row": 1022
+    },
+    "filename": "/Archipelago/worlds/herocore/Data/RegData.py",
+    "fix": null,
+    "location": {
+      "column": 1,
+      "row": 1022
+    },
+    "message": "Indentation contains mixed spaces and tabs",
+    "name": "mixed-spaces-and-tabs",
+    "noqa_row": 1022,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/mixed-spaces-and-tabs"
+  },
+  {
+    "cell": null,
+    "code": "E101",
+    "end_location": {
+      "column": 10,
+      "row": 1035
+    },
+    "filename": "/Archipelago/worlds/herocore/Data/RegData.py",
+    "fix": null,
+    "location": {
+      "column": 1,
+      "row": 1035
+    },
+    "message": "Indentation contains mixed spaces and tabs",
+    "name": "mixed-spaces-and-tabs",
+    "noqa_row": 1035,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/mixed-spaces-and-tabs"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 18,
+      "row": 52
+    },
+    "filename": "/Archipelago/worlds/herocore/Regions.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 52
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 52,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E711",
+    "end_location": {
+      "column": 62,
+      "row": 70
+    },
+    "filename": "/Archipelago/worlds/herocore/__init__.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "lock_table[loc.name].locked_item(self) is not None",
+          "end_location": {
+            "column": 62,
+            "row": 70
+          },
+          "location": {
+            "column": 16,
+            "row": 70
+          }
+        }
+      ],
+      "message": "Replace with `cond is not None`"
+    },
+    "location": {
+      "column": 58,
+      "row": 70
+    },
+    "message": "Comparison to `None` should be `cond is not None`",
+    "name": "none-comparison",
+    "noqa_row": 70,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/none-comparison"
+  }
+]

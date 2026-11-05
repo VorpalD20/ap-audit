@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="2" failures="3" skipped="0" tests="1271" time="6.844" timestamp="2026-11-05T01:41:51.115252+00:00" hostname="d78ef5e66017"><testcase classname="test.general.test_entrances.TestBase" name="test_all_state_before_connect_entrances" time="0.012" /><testcase classname="test.general.test_entrances.TestBase" name="test_entrance_connection_steps" time="0.004" /><testcase classname="test.general.test_groups.TestNameGroups" name="test_item_name_groups_not_empty" time="0.001" /><testcase classname="test.general.test_groups.TestNameGroups" name="test_location_name_groups_not_empty" time="0.000" /><testcase classname="test.general.test_ids.TestIDs" name="test_duplicate_item_ids" time="0.001" /><testcase classname="test.general.test_ids.TestIDs" name="test_duplicate_location_ids" time="0.000" /><testcase classname="test.general.test_ids.TestIDs" name="test_postgen_datapackage" time="0.013" /><testcase classname="test.general.test_ids.TestIDs" name="test_range_items" time="0.000" /><testcase classname="test.general.test_ids.TestIDs" name="test_range_locations" time="0.000" /><testcase classname="test.general.test_ids.TestIDs" name="test_reserved_items" time="0.000" /><testcase classname="test.general.test_ids.TestIDs" name="test_reserved_locations" time="0.000" /><testcase classname="test.general.test_implemented.TestImplemented" name="test_completion_condition" time="0.004" /><testcase classname="test.general.test_implemented.TestImplemented" name="test_entrance_parents" time="0.004" /><testcase classname="test.general.test_implemented.TestImplemented" name="test_explicit_indirect_conditions_spheres" time="0.009" /><testcase classname="test.general.test_implemented.TestImplemented" name="test_no_failed_world_loads" time="0.000" /><testcase classname="test.general.test_implemented.TestImplemented" name="test_no_items_or_locations_or_regions_submitted_in_init" time="0.001" /><testcase classname="test.general.test_implemented.TestImplemented" name="test_prefill_items" time="0.004" /><testcase classname="test.general.test_implemented.TestImplemented" name="test_slot_data" time="0.009" /><testcase classname="test.general.test_implemented.TestImplemented" name="test_stage_methods" time="0.000" /><testcase classname="test.general.test_items.TestBase" name="test_create_item" time="0.051" /><testcase classname="test.general.test_items.TestBase" name="test_item_count_equal_locations" time="0.003" /><testcase classname="test.general.test_items.TestBase" name="test_item_links" time="0.042" /><testcase classname="test.general.test_items.TestBase" name="test_item_name_group_conflict" time="0.001" /><testcase classname="test.general.test_items.TestBase" name="test_item_name_group_has_valid_item" time="0.001" /><testcase classname="test.general.test_items.TestBase" name="test_itempool_not_modified" time="0.004" /><testcase classname="test.general.test_items.TestBase" name="test_items_in_datapackage" time="0.003" /><testcase classname="test.general.test_items.TestBase" name="test_locality_not_modified" time="0.004" /><testcase classname="test.general.test_locations.TestBase" name="test_create_duplicate_locations" time="0.003" /><testcase classname="test.general.test_locations.TestBase" name="test_location_creation_steps" time="0.003" /><testcase classname="test.general.test_locations.TestBase" name="test_location_group" time="0.001" /><testcase classname="test.general.test_locations.TestBase" name="test_locations_in_datapackage" time="0.004" /><testcase classname="test.general.test_memory.TestWorldMemory" name="test_leak" time="0.057" /><testcase classname="test.general.test_names.TestNames" name="test_item_names_format" time="0.001" /><testcase classname="test.general.test_names.TestNames" name="test_location_name_format" time="0.000" /><testcase classname="test.general.test_options.TestOptions" name="test_duplicate_options" time="0.001" /><testcase classname="test.general.test_options.TestOptions" name="test_item_links_name_groups" time="0.001" /><testcase classname="test.general.test_options.TestOptions" name="test_item_links_resolve" time="0.001" /><testcase classname="test.general.test_options.TestOptions" name="test_option_defaults" time="0.004" /><testcase classname="test.general.test_options.TestOptions" name="test_option_set_keys_random" time="0.002" /><testcase classname="test.general.test_options.TestOptions" name="test_options_are_not_set_by_world" time="0.001" /><testcase classname="test.general.test_options.TestOptions" name="test_options_have_doc_string" time="0.003" /><testcase classname="test.general.test_options.TestOptions" name="test_pickle_dumps_default" time="0.004" /><testcase classname="test.general.test_options.TestOptions" name="test_pickle_dumps_plando" time="0.001" /><testcase classname="test.general.test_packages.TestPackages" name="test_packages_have_init" time="0.102"><failure message="AssertionError: False != True">self = &lt;test.general.test_packages.TestPackages testMethod=test_packages_have_init&gt;
+
+    def test_packages_have_init(self):
+        """Test that all world folders containing .py files also have a __init__.py file,
+        to indicate full package rather than namespace package."""
+        import Utils
+    
+        # Ignore directories with these names.
+        ignore_dirs = {".github"}
+    
+        worlds_path = Utils.local_path("worlds")
+        for dirpath, dirnames, filenames in os.walk(worlds_path):
+            # Drop ignored directories from dirnames, excluding them from walking.
+            dirnames[:] = [d for d in dirnames if d not in ignore_dirs]
+            with self.subTest(directory=dirpath):
+&gt;               self.assertEqual("__init__.py" in filenames, any(file.endswith(".py") for file in filenames))
+E               AssertionError: False != True
+
+test/general/test_packages.py:21: AssertionError</failure><failure message="AssertionError: False != True">self = &lt;test.general.test_packages.TestPackages testMethod=test_packages_have_init&gt;
+
+    def test_packages_have_init(self):
+        """Test that all world folders containing .py files also have a __init__.py file,
+        to indicate full package rather than namespace package."""
+        import Utils
+    
+        # Ignore directories with these names.
+        ignore_dirs = {".github"}
+    
+        worlds_path = Utils.local_path("worlds")
+        for dirpath, dirnames, filenames in os.walk(worlds_path):
+            # Drop ignored directories from dirnames, excluding them from walking.
+            dirnames[:] = [d for d in dirnames if d not in ignore_dirs]
+            with self.subTest(directory=dirpath):
+&gt;               self.assertEqual("__init__.py" in filenames, any(file.endswith(".py") for file in filenames))
+E               AssertionError: False != True
+
+test/general/test_packages.py:21: AssertionError</failure><failure message="AssertionError: False != True">self = &lt;test.general.test_packages.TestPackages testMethod=test_packages_have_init&gt;
+
+    def test_packages_have_init(self):
+        """Test that all world folders containing .py files also have a __init__.py file,
+        to indicate full package rather than namespace package."""
+        import Utils
+    
+        # Ignore directories with these names.
+        ignore_dirs = {".github"}
+    
+        worlds_path = Utils.local_path("worlds")
+        for dirpath, dirnames, filenames in os.walk(worlds_path):
+            # Drop ignored directories from dirnames, excluding them from walking.
+            dirnames[:] = [d for d in dirnames if d not in ignore_dirs]
+            with self.subTest(directory=dirpath):
+&gt;               self.assertEqual("__init__.py" in filenames, any(file.endswith(".py") for file in filenames))
+E               AssertionError: False != True
+
+test/general/test_packages.py:21: AssertionError</failure></testcase><testcase classname="test.general.test_patches.TestPatches" name="test_patch_name_matches_game" time="0.001" /><testcase classname="test.general.test_reachability.TestBase" name="test_default_all_state_can_reach_everything" time="0.014" /><testcase classname="test.general.test_reachability.TestBase" name="test_default_empty_state_can_reach_something" time="0.004" /><testcase classname="test.general.test_requirements.TestBase" name="test_requirements_file_ends_on_newline" time="0.003" /><testcase classname="test.general.test_settings.TestSettings" name="test_settings_can_update" time="0.012" /><testcase classname="test.general.test_state.TestBase" name="test_all_state_is_available" time="0.005" /><testcase classname="test.multiworld.test_multiworlds.TestTwoPlayerMulti{game='Hero Core'}" name="test_two_player_single_game_fills" time="0.019" /><testcase classname="test.webhost.test_descriptions.TestWebDescriptions" name="test_item_descriptions_have_valid_names" time="0.001" /><testcase classname="test.webhost.test_descriptions.TestWebDescriptions" name="test_location_descriptions_have_valid_names" time="0.000" /><testcase classname="test.webhost.test_docs.TestDocs" name="test_has_game_info" time="0.004"><error message="failed on setup with &quot;FileNotFoundError: [Errno 2] No such file or directory: '/Archipelago/worlds/herocore/docs'&quot;">cls = &lt;class 'test.webhost.test_docs.TestDocs'&gt;
+
+    @classmethod
+    def setUpClass(cls) -&gt; None:
+&gt;       WebHost.copy_tutorials_files_to_static()
+
+test/webhost/test_docs.py:16: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def copy_tutorials_files_to_static() -&gt; None:
+        import shutil
+        import zipfile
+        from werkzeug.utils import secure_filename
+    
+        zfile: zipfile.ZipInfo
+    
+        from worlds.AutoWorld import AutoWorldRegister
+        worlds = {}
+        for game, world in AutoWorldRegister.world_types.items():
+            if hasattr(world.web, 'tutorials') and (not world.hidden or game == 'Archipelago'):
+                worlds[game] = world
+    
+        base_target_path = Utils.local_path("WebHostLib", "static", "generated", "docs")
+        shutil.rmtree(base_target_path, ignore_errors=True)
+        for game, world in worlds.items():
+            # copy files from world's docs folder to the generated folder
+            target_path = os.path.join(base_target_path, secure_filename(game))
+            os.makedirs(target_path, exist_ok=True)
+    
+            if world.zip_path:
+                zipfile_path = world.zip_path
+    
+                assert os.path.isfile(zipfile_path), f"{zipfile_path} is not a valid file(path)."
+                assert zipfile.is_zipfile(zipfile_path), f"{zipfile_path} is not a valid zipfile."
+    
+                with zipfile.ZipFile(zipfile_path) as zf:
+                    for zfile in zf.infolist():
+                        if not zfile.is_dir() and "/docs/" in zfile.filename:
+                            zfile.filename = os.path.basename(zfile.filename)
+                            with open(os.path.join(target_path, secure_filename(zfile.filename)), "wb") as f:
+                                f.write(zf.read(zfile))
+            else:
+                source_path = Utils.local_path(os.path.dirname(world.__file__), "docs")
+&gt;               files = os.listdir(source_path)
+                        ^^^^^^^^^^^^^^^^^^^^^^^
+E               FileNotFoundError: [Errno 2] No such file or directory: '/Archipelago/worlds/herocore/docs'
+
+WebHost.py:92: FileNotFoundError</error></testcase><testcase classname="test.webhost.test_docs.TestDocs" name="test_has_tutorial" time="0.000"><error message="failed on setup with &quot;FileNotFoundError: [Errno 2] No such file or directory: '/Archipelago/worlds/herocore/docs'&quot;">cls = &lt;class 'test.webhost.test_docs.TestDocs'&gt;
+
+    @classmethod
+    def setUpClass(cls) -&gt; None:
+&gt;       WebHost.copy_tutorials_files_to_static()
+
+test/webhost/test_docs.py:16: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def copy_tutorials_files_to_static() -&gt; None:
+        import shutil
+        import zipfile
+        from werkzeug.utils import secure_filename
+    
+        zfile: zipfile.ZipInfo
+    
+        from worlds.AutoWorld import AutoWorldRegister
+        worlds = {}
+        for game, world in AutoWorldRegister.world_types.items():
+            if hasattr(world.web, 'tutorials') and (not world.hidden or game == 'Archipelago'):
+                worlds[game] = world
+    
+        base_target_path = Utils.local_path("WebHostLib", "static", "generated", "docs")
+        shutil.rmtree(base_target_path, ignore_errors=True)
+        for game, world in worlds.items():
+            # copy files from world's docs folder to the generated folder
+            target_path = os.path.join(base_target_path, secure_filename(game))
+            os.makedirs(target_path, exist_ok=True)
+    
+            if world.zip_path:
+                zipfile_path = world.zip_path
+    
+                assert os.path.isfile(zipfile_path), f"{zipfile_path} is not a valid file(path)."
+                assert zipfile.is_zipfile(zipfile_path), f"{zipfile_path} is not a valid zipfile."
+    
+                with zipfile.ZipFile(zipfile_path) as zf:
+                    for zfile in zf.infolist():
+                        if not zfile.is_dir() and "/docs/" in zfile.filename:
+                            zfile.filename = os.path.basename(zfile.filename)
+                            with open(os.path.join(target_path, secure_filename(zfile.filename)), "wb") as f:
+                                f.write(zf.read(zfile))
+            else:
+                source_path = Utils.local_path(os.path.dirname(world.__file__), "docs")
+&gt;               files = os.listdir(source_path)
+                        ^^^^^^^^^^^^^^^^^^^^^^^
+E               FileNotFoundError: [Errno 2] No such file or directory: '/Archipelago/worlds/herocore/docs'
+
+WebHost.py:92: FileNotFoundError</error></testcase><testcase classname="test.webhost.test_file_generation.TestFileGeneration" name="test_options" time="0.060" /><testcase classname="test.webhost.test_option_presets.TestOptionPresets" name="test_option_preset_values_are_explicitly_defined" time="0.000" /><testcase classname="test.webhost.test_option_presets.TestOptionPresets" name="test_option_presets_have_valid_options" time="0.000" /></testsuite></testsuites>

@@ -1,0 +1,65 @@
+[
+  {
+    "code": "E701",
+    "name": "multiple-statements-on-one-line-colon",
+    "count": 41,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "B904",
+    "name": "raise-without-from-inside-except",
+    "count": 5,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "E741",
+    "name": "ambiguous-variable-name",
+    "count": 4,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "B034",
+    "name": "re-sub-positional-args",
+    "count": 2,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "E722",
+    "name": "bare-except",
+    "count": 1,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "B020",
+    "name": "loop-variable-overrides-iterator",
+    "count": 1,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "E401",
+    "name": "multiple-imports-on-one-line",
+    "count": 1,
+    "fixable": true,
+    "fixable_count": 1
+  },
+  {
+    "code": "E712",
+    "name": "true-false-comparison",
+    "count": 1,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "E721",
+    "name": "type-comparison",
+    "count": 1,
+    "fixable": false,
+    "fixable_count": 0
+  }
+]

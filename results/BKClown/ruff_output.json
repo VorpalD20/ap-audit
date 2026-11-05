@@ -1,0 +1,526 @@
+[
+  {
+    "cell": null,
+    "code": "F403",
+    "end_location": {
+      "column": 27,
+      "row": 11
+    },
+    "filename": "/Archipelago/worlds/BKClown/BKCLOWNCLIENT.py",
+    "fix": null,
+    "location": {
+      "column": 1,
+      "row": 11
+    },
+    "message": "`from CommonClient import *` used; unable to detect undefined names",
+    "name": "undefined-local-with-import-star",
+    "noqa_row": 11,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star"
+  },
+  {
+    "cell": null,
+    "code": "F811",
+    "end_location": {
+      "column": 15,
+      "row": 15
+    },
+    "filename": "/Archipelago/worlds/BKClown/BKCLOWNCLIENT.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "",
+          "end_location": {
+            "column": 1,
+            "row": 16
+          },
+          "location": {
+            "column": 1,
+            "row": 15
+          }
+        }
+      ],
+      "message": "Remove definition: `bsdiff4`"
+    },
+    "location": {
+      "column": 8,
+      "row": 15
+    },
+    "message": "Redefinition of unused `bsdiff4` from line 8: `bsdiff4` redefined here",
+    "name": "redefined-while-unused",
+    "noqa_row": 15,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/redefined-while-unused"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 46,
+      "row": 16
+    },
+    "filename": "/Archipelago/worlds/BKClown/BKCLOWNCLIENT.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 16
+    },
+    "message": "`ClientCommandProcessor` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 16,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 42,
+      "row": 17
+    },
+    "filename": "/Archipelago/worlds/BKClown/BKCLOWNCLIENT.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 17
+    },
+    "message": "`CommonContext` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 17,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 39,
+      "row": 26
+    },
+    "filename": "/Archipelago/worlds/BKClown/BKCLOWNCLIENT.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"Finished Patch!\"",
+          "end_location": {
+            "column": 39,
+            "row": 26
+          },
+          "location": {
+            "column": 21,
+            "row": 26
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 21,
+      "row": 26
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 26,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 35,
+      "row": 29
+    },
+    "filename": "/Archipelago/worlds/BKClown/BKCLOWNCLIENT.py",
+    "fix": null,
+    "location": {
+      "column": 22,
+      "row": 29
+    },
+    "message": "`CommonContext` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 29,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 55,
+      "row": 51
+    },
+    "filename": "/Archipelago/worlds/BKClown/BKCLOWNCLIENT.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"Archipelago BKClown Client\"",
+          "end_location": {
+            "column": 55,
+            "row": 51
+          },
+          "location": {
+            "column": 26,
+            "row": 51
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 26,
+      "row": 51
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 51,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 58,
+      "row": 139
+    },
+    "filename": "/Archipelago/worlds/BKClown/BKCLOWNCLIENT.py",
+    "fix": null,
+    "location": {
+      "column": 47,
+      "row": 139
+    },
+    "message": "`NetworkItem` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 139,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "E712",
+    "end_location": {
+      "column": 45,
+      "row": 175
+    },
+    "filename": "/Archipelago/worlds/BKClown/BKCLOWNCLIENT.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "not ctx.LemonAdded",
+          "end_location": {
+            "column": 45,
+            "row": 175
+          },
+          "location": {
+            "column": 22,
+            "row": 175
+          }
+        }
+      ],
+      "message": "Replace with `not ctx.LemonAdded`"
+    },
+    "location": {
+      "column": 22,
+      "row": 175
+    },
+    "message": "Avoid equality comparisons to `False`; use `not ctx.LemonAdded:` for false checks",
+    "name": "true-false-comparison",
+    "noqa_row": 175,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/true-false-comparison"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 34,
+      "row": 238
+    },
+    "filename": "/Archipelago/worlds/BKClown/BKCLOWNCLIENT.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"highscore=0\"",
+          "end_location": {
+            "column": 34,
+            "row": 238
+          },
+          "location": {
+            "column": 20,
+            "row": 238
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 20,
+      "row": 238
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 238,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 69,
+      "row": 238
+    },
+    "filename": "/Archipelago/worlds/BKClown/BKCLOWNCLIENT.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"previousscore=0\"",
+          "end_location": {
+            "column": 69,
+            "row": 238
+          },
+          "location": {
+            "column": 51,
+            "row": 238
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 51,
+      "row": 238
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 238,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 46,
+      "row": 249
+    },
+    "filename": "/Archipelago/worlds/BKClown/BKCLOWNCLIENT.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"lemonadehighscore=0\"",
+          "end_location": {
+            "column": 46,
+            "row": 249
+          },
+          "location": {
+            "column": 24,
+            "row": 249
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 24,
+      "row": 249
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 249,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 89,
+      "row": 249
+    },
+    "filename": "/Archipelago/worlds/BKClown/BKCLOWNCLIENT.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"previouslemonadescore=0\"",
+          "end_location": {
+            "column": 89,
+            "row": 249
+          },
+          "location": {
+            "column": 63,
+            "row": 249
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 63,
+      "row": 249
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 249,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 88,
+      "row": 279
+    },
+    "filename": "/Archipelago/worlds/BKClown/BKCLOWNCLIENT.py",
+    "fix": null,
+    "location": {
+      "column": 76,
+      "row": 279
+    },
+    "message": "`ClientStatus` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 279,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F811",
+    "end_location": {
+      "column": 9,
+      "row": 286
+    },
+    "filename": "/Archipelago/worlds/BKClown/BKCLOWNCLIENT.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 286
+    },
+    "message": "Redefinition of unused `main` from line 64: `main` redefined here",
+    "name": "redefined-while-unused",
+    "noqa_row": 286,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/redefined-while-unused"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 33,
+      "row": 289
+    },
+    "filename": "/Archipelago/worlds/BKClown/BKCLOWNCLIENT.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 289
+    },
+    "message": "`get_base_parser` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 289,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 58,
+      "row": 293
+    },
+    "filename": "/Archipelago/worlds/BKClown/BKCLOWNCLIENT.py",
+    "fix": null,
+    "location": {
+      "column": 47,
+      "row": 293
+    },
+    "message": "`server_loop` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 293,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 23,
+      "row": 294
+    },
+    "filename": "/Archipelago/worlds/BKClown/BKCLOWNCLIENT.py",
+    "fix": null,
+    "location": {
+      "column": 12,
+      "row": 294
+    },
+    "message": "`gui_enabled` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 294,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F811",
+    "end_location": {
+      "column": 39,
+      "row": 8
+    },
+    "filename": "/Archipelago/worlds/BKClown/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 8
+    },
+    "message": "Redefinition of unused `components` from line 4: `components` redefined here",
+    "name": "redefined-while-unused",
+    "noqa_row": 8,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/redefined-while-unused"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 68,
+      "row": 16
+    },
+    "filename": "/Archipelago/worlds/BKClown/__init__.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"ap:worlds.BKClown/patchfile/icon.png\"",
+          "end_location": {
+            "column": 68,
+            "row": 16
+          },
+          "location": {
+            "column": 29,
+            "row": 16
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 29,
+      "row": 16
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 16,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  }
+]

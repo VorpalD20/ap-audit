@@ -1,0 +1,23 @@
+[
+  {
+    "code": "E101",
+    "name": "mixed-spaces-and-tabs",
+    "count": 26,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "E701",
+    "name": "multiple-statements-on-one-line-colon",
+    "count": 1,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "E711",
+    "name": "none-comparison",
+    "count": 1,
+    "fixable": false,
+    "fixable_count": 0
+  }
+]

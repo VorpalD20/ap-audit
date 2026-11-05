@@ -1,4 +1,8 @@
 {
+ "BKClown": {
+  "last_checked": "2026-11-05T12:25:32.856444",
+  "last_version": "1.2.0"
+ },
  "TerraNil": {
   "last_checked": "2026-11-04T17:04:30.913447",
   "last_version": "0.2.1"
@@ -19,6 +23,14 @@
   "last_checked": "2026-11-04T15:15:26.456459",
   "last_version": "0.5.12"
  },
+ "grappledog": {
+  "last_checked": "2026-11-05T12:37:50.334549",
+  "last_version": "1.2.0.post4"
+ },
+ "herocore": {
+  "last_checked": "2026-11-05T12:41:49.425495",
+  "last_version": "1.0.4"
+ },
  "isles_of_sea_and_sky": {
   "last_checked": "2026-11-04T04:31:13.238138",
   "last_version": "14.post4"
@@ -38,6 +50,10 @@
  "manual_fantasylife_jbtheshadow": {
   "last_checked": "2026-11-04T17:02:25.113446",
   "last_version": "1.2.0"
+ },
+ "manual_frogpond_linkhs": {
+  "last_checked": "2026-11-05T12:43:59.558493",
+  "last_version": "1.0"
  },
  "mario_super_sluggers": {
   "last_checked": "2026-11-04T15:18:42.222833",
@@ -70,5 +86,9 @@
  "unbeatable_arcade": {
   "last_checked": "2026-11-04T15:48:16.907890",
   "last_version": "0.8.0a0"
+ },
+ "yakuza_gaiden": {
+  "last_checked": "2026-11-05T12:34:11.966777",
+  "last_version": "1.0.0"
  }
 }

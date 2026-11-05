@@ -1,0 +1,37 @@
+[
+  {
+    "code": "F405",
+    "name": "undefined-local-with-import-star-usage",
+    "count": 8,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "F541",
+    "name": "f-string-missing-placeholders",
+    "count": 7,
+    "fixable": true,
+    "fixable_count": 7
+  },
+  {
+    "code": "F811",
+    "name": "redefined-while-unused",
+    "count": 3,
+    "fixable": false,
+    "fixable_count": 1
+  },
+  {
+    "code": "E712",
+    "name": "true-false-comparison",
+    "count": 1,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "F403",
+    "name": "undefined-local-with-import-star",
+    "count": 1,
+    "fixable": false,
+    "fixable_count": 0
+  }
+]

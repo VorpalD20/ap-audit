@@ -1,0 +1,15 @@
+{
+    "game": "BKClown",
+    "stub": "BKClown",
+    "manifest": {
+        "game": "BKClown",
+        "minimum_ap_version": "0.6.8",
+        "world_version": "1.2.0",
+        "authors": [
+            "creative_bananaman",
+            "Fewffwa"
+        ],
+        "compatible_version": 7,
+        "version": 7
+    }
+}

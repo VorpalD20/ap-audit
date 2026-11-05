@@ -1,0 +1,16 @@
+[
+  {
+    "code": "F541",
+    "name": "f-string-missing-placeholders",
+    "count": 1,
+    "fixable": true,
+    "fixable_count": 1
+  },
+  {
+    "code": "E712",
+    "name": "true-false-comparison",
+    "count": 1,
+    "fixable": false,
+    "fixable_count": 0
+  }
+]

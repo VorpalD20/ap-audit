@@ -6,8 +6,10 @@ import subprocess
 
 import attrs
 import cattrs
+import junitparser
 import packaging.version
 import requests
+from json.decoder import JSONDecodeError
 
 converter = cattrs.Converter()
 
@@ -18,14 +20,6 @@ converter.register_unstructure_hook(datetime.datetime, lambda x, *_: x.isoformat
 class HistoryInfo:
     last_checked: datetime.datetime
     last_version: str
-
-class SeverityLevel(enum.Enum):
-    NONE = 0
-    LOW = 1
-    MEDIUM = 5
-    HIGH = 8
-    CRITICAL = 10
-    UNKNOWN = -1
 
 def choose_world():
     if os.path.exists("history.json"):
@@ -89,29 +83,64 @@ def run_checks(world, world_id, results_path):
     subprocess.run(docker_cmd, check=True)
 
     for file_name in os.listdir(out_path):
-        os.rename(os.path.join(out_path, file_name), os.path.join(results_path, file_name))
+        os.replace(os.path.join(out_path, file_name), os.path.join(results_path, file_name))
 
 def load_severity_data(results_path) -> dict[str, int]:
     severity: dict[str, int] = {}
-    severity_updated = False
     if os.path.exists("severity.json"):
         with open("severity.json", "r") as f:
             severity = json.load(f)
-    with open(os.path.join(results_path, "ruff_stats.json"), "r") as f:
-        ruff_stats = json.load(f)
-    for issue in ruff_stats:
-        name = issue.get("name")
-        if name not in severity:
-            severity[name] = -1
-            severity_updated = True
-    if severity_updated:
-        with open("severity.json", "w") as f:
-            json.dump(severity, f, indent=1)
     return severity
 
 
 def finalise_report(results_path) -> None:
     severity = load_severity_data(results_path)
+    num_codes = len(severity)
+    penalties = {}
+
+    score_ruff(results_path, severity, penalties)
+    score_tests(results_path, severity, penalties)
+
+    score = 100 - sum(penalties.values())
+    print(f"Final score: {score}")
+    for name, penalty in sorted(penalties.items(), key=lambda item: item[1], reverse=True):
+        print(f"{name}: {penalty}")
+
+    if len(severity) > num_codes:
+        severity = {k: v for k, v in sorted(severity.items(), key=lambda item: item[0])}
+        with open("severity.json", "w") as f:
+            json.dump(severity, f, indent=1)
+
+def score_tests(results_path, severity, penalties):
+    test_results = junitparser.JUnitXml.fromfile(os.path.join(results_path, "report.xml"))
+    for suite in test_results:
+        for test in suite:
+            name = test.name
+            is_failure = test.is_failure or test.is_error
+            if is_failure:
+                penalty = severity.setdefault(name, -1)
+                if penalty == -1:
+                    penalty = 1
+                if test.is_error:
+                    penalty *= 2
+                penalties[name] = penalties.get(name, 0) + penalty
+
+def score_ruff(results_path, severity, penalties):
+    try:
+        with open(os.path.join(results_path, "ruff_stats.json"), "r") as f:
+            ruff_stats = json.load(f)
+    except JSONDecodeError:
+        print("Error decoding ruff_stats.json, the world probably didn't load.")
+        ruff_stats = []
+        penalties["ruff_stats.json failed to load"] = 50
+
+    for issue in ruff_stats:
+        name = issue.get("name")
+        penalty = severity.setdefault(name, -1)
+        if penalty == -1:
+            penalty = 1
+        penalty = penalty * issue.get("count", 1)
+        penalties[name] = penalties.get(name, 0) + penalty
 
 
 def run() -> None:

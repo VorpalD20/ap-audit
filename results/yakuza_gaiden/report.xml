@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="3" failures="0" skipped="0" tests="3" time="6.643" timestamp="2026-11-05T01:33:39.365481+00:00" hostname="0b4604229ee0"><testcase classname="" name="worlds.yakuza_gaiden.test.test_extra_starting_chest" time="0.000"><error message="collection failure">ImportError while importing test module '/Archipelago/worlds/yakuza_gaiden/test/test_extra_starting_chest.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/local/lib/python3.13/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/yakuza_gaiden/test/test_extra_starting_chest.py:1: in &lt;module&gt;
+    from .bases import APQuestTestBase
+E   ImportError: cannot import name 'APQuestTestBase' from 'worlds.yakuza_gaiden.test.bases' (/Archipelago/worlds/yakuza_gaiden/test/bases.py)</error></testcase><testcase classname="" name="worlds.yakuza_gaiden.test.test_hammer" time="0.000"><error message="collection failure">ImportError while importing test module '/Archipelago/worlds/yakuza_gaiden/test/test_hammer.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/local/lib/python3.13/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/yakuza_gaiden/test/test_hammer.py:1: in &lt;module&gt;
+    from .bases import APQuestTestBase
+E   ImportError: cannot import name 'APQuestTestBase' from 'worlds.yakuza_gaiden.test.bases' (/Archipelago/worlds/yakuza_gaiden/test/bases.py)</error></testcase><testcase classname="" name="worlds.yakuza_gaiden.test.test_hard_mode" time="0.000"><error message="collection failure">ImportError while importing test module '/Archipelago/worlds/yakuza_gaiden/test/test_hard_mode.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/local/lib/python3.13/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/yakuza_gaiden/test/test_hard_mode.py:1: in &lt;module&gt;
+    from .bases import APQuestTestBase
+E   ImportError: cannot import name 'APQuestTestBase' from 'worlds.yakuza_gaiden.test.bases' (/Archipelago/worlds/yakuza_gaiden/test/bases.py)</error></testcase></testsuite></testsuites>

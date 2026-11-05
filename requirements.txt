@@ -2,3 +2,4 @@ requests
 packaging
 attrs
 cattrs
+junitparser

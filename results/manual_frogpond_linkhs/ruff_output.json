@@ -1,0 +1,1117 @@
+[
+  {
+    "cell": null,
+    "code": "E722",
+    "end_location": {
+      "column": 11,
+      "row": 21
+    },
+    "filename": "/Archipelago/worlds/manual_frogpond_linkhs/Data.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 21
+    },
+    "message": "Do not use bare `except`",
+    "name": "bare-except",
+    "noqa_row": 21,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/bare-except"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 61,
+      "row": 43
+    },
+    "filename": "/Archipelago/worlds/manual_frogpond_linkhs/Data.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 43
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 43,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 5,
+      "row": 77
+    },
+    "filename": "/Archipelago/worlds/manual_frogpond_linkhs/Data.py",
+    "fix": null,
+    "location": {
+      "column": 4,
+      "row": 77
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 77,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 29,
+      "row": 78
+    },
+    "filename": "/Archipelago/worlds/manual_frogpond_linkhs/Data.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 78
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 78,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 5,
+      "row": 80
+    },
+    "filename": "/Archipelago/worlds/manual_frogpond_linkhs/Data.py",
+    "fix": null,
+    "location": {
+      "column": 4,
+      "row": 80
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 80,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 29,
+      "row": 81
+    },
+    "filename": "/Archipelago/worlds/manual_frogpond_linkhs/Data.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 81
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 81,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 5,
+      "row": 83
+    },
+    "filename": "/Archipelago/worlds/manual_frogpond_linkhs/Data.py",
+    "fix": null,
+    "location": {
+      "column": 4,
+      "row": 83
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 83,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 29,
+      "row": 84
+    },
+    "filename": "/Archipelago/worlds/manual_frogpond_linkhs/Data.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 84
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 84,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 38,
+      "row": 325
+    },
+    "filename": "/Archipelago/worlds/manual_frogpond_linkhs/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 37,
+      "row": 325
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 325,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 453
+    },
+    "filename": "/Archipelago/worlds/manual_frogpond_linkhs/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 453
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 453,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 454
+    },
+    "filename": "/Archipelago/worlds/manual_frogpond_linkhs/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 454
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 454,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 464
+    },
+    "filename": "/Archipelago/worlds/manual_frogpond_linkhs/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 464
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 464,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 465
+    },
+    "filename": "/Archipelago/worlds/manual_frogpond_linkhs/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 465
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 465,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 467
+    },
+    "filename": "/Archipelago/worlds/manual_frogpond_linkhs/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 467
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 467,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 468
+    },
+    "filename": "/Archipelago/worlds/manual_frogpond_linkhs/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 468
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 468,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 471
+    },
+    "filename": "/Archipelago/worlds/manual_frogpond_linkhs/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 471
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 471,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 472
+    },
+    "filename": "/Archipelago/worlds/manual_frogpond_linkhs/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 472
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 472,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 475
+    },
+    "filename": "/Archipelago/worlds/manual_frogpond_linkhs/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 475
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 475,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 476
+    },
+    "filename": "/Archipelago/worlds/manual_frogpond_linkhs/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 476
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 476,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 479
+    },
+    "filename": "/Archipelago/worlds/manual_frogpond_linkhs/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 479
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 479,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 480
+    },
+    "filename": "/Archipelago/worlds/manual_frogpond_linkhs/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 480
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 480,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 483
+    },
+    "filename": "/Archipelago/worlds/manual_frogpond_linkhs/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 483
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 483,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 484
+    },
+    "filename": "/Archipelago/worlds/manual_frogpond_linkhs/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 484
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 484,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 487
+    },
+    "filename": "/Archipelago/worlds/manual_frogpond_linkhs/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 487
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 487,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 488
+    },
+    "filename": "/Archipelago/worlds/manual_frogpond_linkhs/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 488
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 488,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 490
+    },
+    "filename": "/Archipelago/worlds/manual_frogpond_linkhs/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 490
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 490,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 491
+    },
+    "filename": "/Archipelago/worlds/manual_frogpond_linkhs/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 491
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 491,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 493
+    },
+    "filename": "/Archipelago/worlds/manual_frogpond_linkhs/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 493
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 493,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 494
+    },
+    "filename": "/Archipelago/worlds/manual_frogpond_linkhs/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 494
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 494,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 497
+    },
+    "filename": "/Archipelago/worlds/manual_frogpond_linkhs/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 497
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 497,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 498
+    },
+    "filename": "/Archipelago/worlds/manual_frogpond_linkhs/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 498
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 498,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 501
+    },
+    "filename": "/Archipelago/worlds/manual_frogpond_linkhs/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 501
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 501,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 502
+    },
+    "filename": "/Archipelago/worlds/manual_frogpond_linkhs/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 502
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 502,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 505
+    },
+    "filename": "/Archipelago/worlds/manual_frogpond_linkhs/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 505
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 505,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 506
+    },
+    "filename": "/Archipelago/worlds/manual_frogpond_linkhs/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 506
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 506,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 509
+    },
+    "filename": "/Archipelago/worlds/manual_frogpond_linkhs/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 509
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 509,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 510
+    },
+    "filename": "/Archipelago/worlds/manual_frogpond_linkhs/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 510
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 510,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 512
+    },
+    "filename": "/Archipelago/worlds/manual_frogpond_linkhs/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 512
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 512,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 513
+    },
+    "filename": "/Archipelago/worlds/manual_frogpond_linkhs/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 513
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 513,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 9,
+      "row": 516
+    },
+    "filename": "/Archipelago/worlds/manual_frogpond_linkhs/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 516
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 516,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 33,
+      "row": 517
+    },
+    "filename": "/Archipelago/worlds/manual_frogpond_linkhs/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 517
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 517,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 89,
+      "row": 14
+    },
+    "filename": "/Archipelago/worlds/manual_frogpond_linkhs/Game.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 14
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 14,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "E401",
+    "end_location": {
+      "column": 19,
+      "row": 8
+    },
+    "filename": "/Archipelago/worlds/manual_frogpond_linkhs/ManualClient.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "import asyncio\nimport re",
+          "end_location": {
+            "column": 19,
+            "row": 8
+          },
+          "location": {
+            "column": 1,
+            "row": 8
+          }
+        }
+      ],
+      "message": "Split imports"
+    },
+    "location": {
+      "column": 1,
+      "row": 8
+    },
+    "message": "Multiple imports on one line",
+    "name": "multiple-imports-on-one-line",
+    "noqa_row": 8,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-imports-on-one-line"
+  },
+  {
+    "cell": null,
+    "code": "E712",
+    "end_location": {
+      "column": 31,
+      "row": 672
+    },
+    "filename": "/Archipelago/worlds/manual_frogpond_linkhs/ManualClient.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "ctx.syncing",
+          "end_location": {
+            "column": 31,
+            "row": 672
+          },
+          "location": {
+            "column": 12,
+            "row": 672
+          }
+        }
+      ],
+      "message": "Replace with `ctx.syncing`"
+    },
+    "location": {
+      "column": 12,
+      "row": 672
+    },
+    "message": "Avoid equality comparisons to `True`; use `ctx.syncing:` for truth checks",
+    "name": "true-false-comparison",
+    "noqa_row": 672,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/true-false-comparison"
+  },
+  {
+    "cell": null,
+    "code": "B020",
+    "end_location": {
+      "column": 23,
+      "row": 38
+    },
+    "filename": "/Archipelago/worlds/manual_frogpond_linkhs/Options.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 38
+    },
+    "message": "Loop control variable `starting_items` overrides iterable it iterates",
+    "name": "loop-variable-overrides-iterator",
+    "noqa_row": 38,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/loop-variable-overrides-iterator"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 88,
+      "row": 40
+    },
+    "filename": "/Archipelago/worlds/manual_frogpond_linkhs/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 40
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 40,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 88,
+      "row": 64
+    },
+    "filename": "/Archipelago/worlds/manual_frogpond_linkhs/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 64
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 64,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "B034",
+    "end_location": {
+      "column": 87,
+      "row": 165
+    },
+    "filename": "/Archipelago/worlds/manual_frogpond_linkhs/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 165
+    },
+    "message": "`re.sub` should pass `count` and `flags` as keyword arguments to avoid confusion due to unintuitive argument positions",
+    "name": "re-sub-positional-args",
+    "noqa_row": 165,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/re-sub-positional-args"
+  },
+  {
+    "cell": null,
+    "code": "B034",
+    "end_location": {
+      "column": 86,
+      "row": 166
+    },
+    "filename": "/Archipelago/worlds/manual_frogpond_linkhs/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 166
+    },
+    "message": "`re.sub` should pass `count` and `flags` as keyword arguments to avoid confusion due to unintuitive argument positions",
+    "name": "re-sub-positional-args",
+    "noqa_row": 166,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/re-sub-positional-args"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 49,
+      "row": 231
+    },
+    "filename": "/Archipelago/worlds/manual_frogpond_linkhs/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 48,
+      "row": 231
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 231,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 192,
+      "row": 304
+    },
+    "filename": "/Archipelago/worlds/manual_frogpond_linkhs/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 304
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 304,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 237,
+      "row": 338
+    },
+    "filename": "/Archipelago/worlds/manual_frogpond_linkhs/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 338
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 338,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 38,
+      "row": 112
+    },
+    "filename": "/Archipelago/worlds/manual_frogpond_linkhs/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 37,
+      "row": 112
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 112,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 41,
+      "row": 114
+    },
+    "filename": "/Archipelago/worlds/manual_frogpond_linkhs/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 40,
+      "row": 114
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 114,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E701",
+    "end_location": {
+      "column": 32,
+      "row": 126
+    },
+    "filename": "/Archipelago/worlds/manual_frogpond_linkhs/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 31,
+      "row": 126
+    },
+    "message": "Multiple statements on one line (colon)",
+    "name": "multiple-statements-on-one-line-colon",
+    "noqa_row": 126,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-colon"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 41,
+      "row": 243
+    },
+    "filename": "/Archipelago/worlds/manual_frogpond_linkhs/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 40,
+      "row": 243
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 243,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 45,
+      "row": 259
+    },
+    "filename": "/Archipelago/worlds/manual_frogpond_linkhs/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 44,
+      "row": 259
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 259,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  }
+]
