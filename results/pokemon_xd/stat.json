@@ -1,0 +1,14 @@
+{
+    "game": "Pokemon XD Gale of Darkness",
+    "stub": "pokemon_xd",
+    "manifest": {
+        "game": "Pokemon XD Gale of Darkness",
+        "world_version": "0.1.6",
+        "minimum_ap_version": "0.6.7",
+        "authors": [
+            "GiovanavoiG"
+        ],
+        "version": 7,
+        "compatible_version": 7
+    }
+}

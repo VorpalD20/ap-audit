@@ -1,0 +1,686 @@
+[
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 61,
+      "row": 41
+    },
+    "filename": "/Archipelago/worlds/dread/Locations.py",
+    "fix": null,
+    "location": {
+      "column": 60,
+      "row": 41
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 41,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 61,
+      "row": 42
+    },
+    "filename": "/Archipelago/worlds/dread/Locations.py",
+    "fix": null,
+    "location": {
+      "column": 60,
+      "row": 42
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 42,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 75,
+      "row": 43
+    },
+    "filename": "/Archipelago/worlds/dread/Locations.py",
+    "fix": null,
+    "location": {
+      "column": 74,
+      "row": 43
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 43,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 20,
+      "row": 47
+    },
+    "filename": "/Archipelago/worlds/dread/Locations.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 47
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 47,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 20,
+      "row": 576
+    },
+    "filename": "/Archipelago/worlds/dread/World.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 576
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 576,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "S603",
+    "end_location": {
+      "column": 32,
+      "row": 95
+    },
+    "filename": "/Archipelago/worlds/dread/_setup/build.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 95
+    },
+    "message": "`subprocess` call: check for execution of untrusted input",
+    "name": "subprocess-without-shell-equals-true",
+    "noqa_row": 95,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/subprocess-without-shell-equals-true"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 30,
+      "row": 134
+    },
+    "filename": "/Archipelago/worlds/dread/_setup/build.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 134
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 134,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "S112",
+    "end_location": {
+      "column": 29,
+      "row": 104
+    },
+    "filename": "/Archipelago/worlds/dread/_setup/installers.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 103
+    },
+    "message": "`try`-`except`-`continue` detected, consider logging the exception",
+    "name": "try-except-continue",
+    "noqa_row": 103,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-continue"
+  },
+  {
+    "cell": null,
+    "code": "S310",
+    "end_location": {
+      "column": 66,
+      "row": 162
+    },
+    "filename": "/Archipelago/worlds/dread/_setup/installers.py",
+    "fix": null,
+    "location": {
+      "column": 14,
+      "row": 162
+    },
+    "message": "Audit URL open for permitted schemes. Allowing use of `file:` or custom schemes is often unexpected.",
+    "name": "suspicious-url-open-usage",
+    "noqa_row": 162,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/suspicious-url-open-usage"
+  },
+  {
+    "cell": null,
+    "code": "S603",
+    "end_location": {
+      "column": 32,
+      "row": 220
+    },
+    "filename": "/Archipelago/worlds/dread/_setup/installers.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 220
+    },
+    "message": "`subprocess` call: check for execution of untrusted input",
+    "name": "subprocess-without-shell-equals-true",
+    "noqa_row": 220,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/subprocess-without-shell-equals-true"
+  },
+  {
+    "cell": null,
+    "code": "S603",
+    "end_location": {
+      "column": 30,
+      "row": 285
+    },
+    "filename": "/Archipelago/worlds/dread/_setup/installers.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 285
+    },
+    "message": "`subprocess` call: check for execution of untrusted input",
+    "name": "subprocess-without-shell-equals-true",
+    "noqa_row": 285,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/subprocess-without-shell-equals-true"
+  },
+  {
+    "cell": null,
+    "code": "S603",
+    "end_location": {
+      "column": 32,
+      "row": 367
+    },
+    "filename": "/Archipelago/worlds/dread/_setup/installers.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 367
+    },
+    "message": "`subprocess` call: check for execution of untrusted input",
+    "name": "subprocess-without-shell-equals-true",
+    "noqa_row": 367,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/subprocess-without-shell-equals-true"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 13,
+      "row": 53
+    },
+    "filename": "/Archipelago/worlds/dread/_setup/launcher_errors.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 52
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 52,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 13,
+      "row": 63
+    },
+    "filename": "/Archipelago/worlds/dread/_setup/launcher_errors.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 62
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 62,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S603",
+    "end_location": {
+      "column": 25,
+      "row": 111
+    },
+    "filename": "/Archipelago/worlds/dread/_setup/prereqs.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 111
+    },
+    "message": "`subprocess` call: check for execution of untrusted input",
+    "name": "subprocess-without-shell-equals-true",
+    "noqa_row": 111,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/subprocess-without-shell-equals-true"
+  },
+  {
+    "cell": null,
+    "code": "S603",
+    "end_location": {
+      "column": 38,
+      "row": 510
+    },
+    "filename": "/Archipelago/worlds/dread/_setup/prereqs.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 510
+    },
+    "message": "`subprocess` call: check for execution of untrusted input",
+    "name": "subprocess-without-shell-equals-true",
+    "noqa_row": 510,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/subprocess-without-shell-equals-true"
+  },
+  {
+    "cell": null,
+    "code": "S603",
+    "end_location": {
+      "column": 35,
+      "row": 178
+    },
+    "filename": "/Archipelago/worlds/dread/_setup/wizard.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 178
+    },
+    "message": "`subprocess` call: check for execution of untrusted input",
+    "name": "subprocess-without-shell-equals-true",
+    "noqa_row": 178,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/subprocess-without-shell-equals-true"
+  },
+  {
+    "cell": null,
+    "code": "S603",
+    "end_location": {
+      "column": 31,
+      "row": 193
+    },
+    "filename": "/Archipelago/worlds/dread/_setup/wizard.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 193
+    },
+    "message": "`subprocess` call: check for execution of untrusted input",
+    "name": "subprocess-without-shell-equals-true",
+    "noqa_row": 193,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/subprocess-without-shell-equals-true"
+  },
+  {
+    "cell": null,
+    "code": "S608",
+    "end_location": {
+      "column": 67,
+      "row": 440
+    },
+    "filename": "/Archipelago/worlds/dread/_setup/wizard.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 410
+    },
+    "message": "Possible SQL injection vector through string-based query construction",
+    "name": "hardcoded-sql-expression",
+    "noqa_row": 410,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-sql-expression"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 74,
+      "row": 66
+    },
+    "filename": "/Archipelago/worlds/dread/_vendored_patcher/open_dread_rando/misc_patches/elevator.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 66
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 66,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "S104",
+    "end_location": {
+      "column": 30,
+      "row": 105
+    },
+    "filename": "/Archipelago/worlds/dread/client/bridge_server.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 105
+    },
+    "message": "Possible binding to all interfaces",
+    "name": "hardcoded-bind-all-interfaces",
+    "noqa_row": 105,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-bind-all-interfaces"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 21,
+      "row": 157
+    },
+    "filename": "/Archipelago/worlds/dread/client/bridge_server.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 156
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 156,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 17,
+      "row": 272
+    },
+    "filename": "/Archipelago/worlds/dread/client/bridge_server.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 271
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 271,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 21,
+      "row": 389
+    },
+    "filename": "/Archipelago/worlds/dread/client/bridge_server.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 388
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 388,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 21,
+      "row": 438
+    },
+    "filename": "/Archipelago/worlds/dread/client/bridge_server.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 437
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 437,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 17,
+      "row": 494
+    },
+    "filename": "/Archipelago/worlds/dread/client/bridge_server.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 493
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 493,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 21,
+      "row": 536
+    },
+    "filename": "/Archipelago/worlds/dread/client/bridge_server.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 535
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 535,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 21,
+      "row": 510
+    },
+    "filename": "/Archipelago/worlds/dread/client/context.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 509
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 509,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 21,
+      "row": 517
+    },
+    "filename": "/Archipelago/worlds/dread/client/context.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 516
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 516,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S104",
+    "end_location": {
+      "column": 35,
+      "row": 148
+    },
+    "filename": "/Archipelago/worlds/dread/client/discovery.py",
+    "fix": null,
+    "location": {
+      "column": 26,
+      "row": 148
+    },
+    "message": "Possible binding to all interfaces",
+    "name": "hardcoded-bind-all-interfaces",
+    "noqa_row": 148,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-bind-all-interfaces"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 21,
+      "row": 238
+    },
+    "filename": "/Archipelago/worlds/dread/client/discovery.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 237
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 237,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 29,
+      "row": 339
+    },
+    "filename": "/Archipelago/worlds/dread/graph_logic.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 339
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 339,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 37,
+      "row": 835
+    },
+    "filename": "/Archipelago/worlds/dread/patcher_pipeline.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 835
+    },
+    "message": "Possible hardcoded password assigned to: \"_PROBE_OK_TOKEN\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 835,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S603",
+    "end_location": {
+      "column": 34,
+      "row": 866
+    },
+    "filename": "/Archipelago/worlds/dread/patcher_pipeline.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 866
+    },
+    "message": "`subprocess` call: check for execution of untrusted input",
+    "name": "subprocess-without-shell-equals-true",
+    "noqa_row": 866,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/subprocess-without-shell-equals-true"
+  },
+  {
+    "cell": null,
+    "code": "S603",
+    "end_location": {
+      "column": 38,
+      "row": 1030
+    },
+    "filename": "/Archipelago/worlds/dread/patcher_pipeline.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 1030
+    },
+    "message": "`subprocess` call: check for execution of untrusted input",
+    "name": "subprocess-without-shell-equals-true",
+    "noqa_row": 1030,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/subprocess-without-shell-equals-true"
+  },
+  {
+    "cell": null,
+    "code": "S603",
+    "end_location": {
+      "column": 30,
+      "row": 1311
+    },
+    "filename": "/Archipelago/worlds/dread/patcher_pipeline.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 1311
+    },
+    "message": "`subprocess` call: check for execution of untrusted input",
+    "name": "subprocess-without-shell-equals-true",
+    "noqa_row": 1311,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/subprocess-without-shell-equals-true"
+  }
+]

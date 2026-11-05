@@ -1,0 +1,65 @@
+[
+  {
+    "code": "S603",
+    "name": "subprocess-without-shell-equals-true",
+    "count": 11,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "S110",
+    "name": "try-except-pass",
+    "count": 11,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "E741",
+    "name": "ambiguous-variable-name",
+    "count": 7,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "S104",
+    "name": "hardcoded-bind-all-interfaces",
+    "count": 2,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "S105",
+    "name": "hardcoded-password-string",
+    "count": 1,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "S608",
+    "name": "hardcoded-sql-expression",
+    "count": 1,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "B904",
+    "name": "raise-without-from-inside-except",
+    "count": 1,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "S310",
+    "name": "suspicious-url-open-usage",
+    "count": 1,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "S112",
+    "name": "try-except-continue",
+    "count": 1,
+    "fixable": false,
+    "fixable_count": 0
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "code": "E721",
+    "name": "type-comparison",
+    "count": 16,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "E712",
+    "name": "true-false-comparison",
+    "count": 7,
+    "fixable": false,
+    "fixable_count": 0
+  }
+]

@@ -1,0 +1,8 @@
+Final score: 69
+
+type-comparison: 16
+true-false-comparison: 7
+worlds.YARGBandHero.test.test_easy_mode: 2
+worlds.YARGBandHero.test.test_extra_starting_chest: 2
+worlds.YARGBandHero.test.test_hammer: 2
+worlds.YARGBandHero.test.test_hard_mode: 2

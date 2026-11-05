@@ -104,11 +104,17 @@ def finalise_report(results_path) -> None:
 
     score_ruff(results_path, severity.setdefault("ruff", {}), penalties)
     score_tests(results_path, severity.setdefault("tests", {}), penalties)
+    score_manifest(results_path, severity.setdefault("manifest", {}), penalties)
+    score_fuzzer(results_path, severity.setdefault("fuzzer", {}), penalties)
 
     score = 100 - sum(penalties.values())
-    print(f"Final score: {score}")
+    report = f"Final score: {score}\n"
     for name, penalty in sorted(penalties.items(), key=lambda item: item[1], reverse=True):
-        print(f"{name}: {penalty}")
+        report += f"\n{name}: {penalty}"
+    print(report)
+    with open(os.path.join(results_path, "report.txt"), "w") as f:
+        f.write(report)
+        f.write("\n")
 
     if count_codes(severity) > num_codes:
         with open("severity.json", "w") as f:
@@ -143,9 +149,43 @@ def score_ruff(results_path, severity, penalties):
         penalty = severity.setdefault(name, -1)
         if penalty == -1:
             penalty = 1
-        penalty = penalty * issue.get("count", 1)
+        count = min(5, issue.get("count", 1))  # only ding them up to 5 times for the same issue
+        penalty = penalty * count
         penalties[name] = penalties.get(name, 0) + penalty
 
+def score_manifest(results_path, severity, penalties):
+    def penalise(key) -> None:
+        penalty = severity.setdefault(key, -1)
+        if penalty == -1:
+            penalty = 1
+        penalties[key] = penalties.get(key, 0) + penalty
+
+    with open(os.path.join(results_path, "stat.json"), "r") as f:
+        stat = json.load(f)
+
+    manifest = stat.get("manifest", {})
+    if not manifest:
+        penalise("archipelago.json is missing")
+        return
+
+    if manifest.get("version", 0) > 7:
+        penalise("manifest version is higher than latest defined version")
+    if manifest.get("compatible_version", 0) > 7:
+        penalise("manifest compatible_version is higher than latest defined version")
+
+def score_fuzzer(results_path, severity, penalties):
+    with open(os.path.join(results_path, "fuzz_output.json"), "r") as f:
+        fuzz_output = json.load(f)
+
+    errors = fuzz_output.get("errors", {})
+    for _world, world_errors in errors.items():
+        for error, occurrences in world_errors.items():
+            error_name = error.split("\n")[0]
+            penalty = severity.setdefault(error_name, -1)
+            if penalty == -1:
+                penalty = 1
+            penalty = penalty * len(occurrences)
+            penalties[error_name] = penalties.get(error_name, 0) + penalty
 
 def run() -> None:
     world, world_id = choose_world()

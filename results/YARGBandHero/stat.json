@@ -1,0 +1,16 @@
+{
+    "game": "YARGBandHero",
+    "stub": "YARGBandHero",
+    "manifest": {
+        "game": "YARGBandHero",
+        "authors": [
+            "Energymaster22",
+            "thedrummonger",
+            "GirlWithoutAFairy"
+        ],
+        "minimum_ap_version": "0.6.7",
+        "world_version": "26.9.17",
+        "compatible_version": 7,
+        "version": 7
+    }
+}

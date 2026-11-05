@@ -1,0 +1,22 @@
+Final score: 20
+
+At the start of distribute_items_restrictive, there are items in the multiworld itempool that are already placed on locations:
+[(The Story Begins, Progressive Game Access)]: 42
+test_pickle_dumps_default: 10
+raise-without-from-inside-except: 5
+test_itempool_not_modified: 5
+ambiguous-variable-name: 4
+re-sub-positional-args: 2
+bare-except: 1
+loop-variable-overrides-iterator: 1
+multiple-imports-on-one-line: 1
+true-false-comparison: 1
+type-comparison: 1
+test_postgen_datapackage: 1
+test_explicit_indirect_conditions_spheres: 1
+test_slot_data: 1
+test_location_name_format: 1
+test_two_player_single_game_fills: 1
+test_has_game_info: 1
+archipelago.json is missing: 1
+multiple-statements-on-one-line-colon: 0

@@ -1,0 +1,86 @@
+[
+  {
+    "code": "S110",
+    "name": "try-except-pass",
+    "count": 62,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "E741",
+    "name": "ambiguous-variable-name",
+    "count": 56,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "E702",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "count": 49,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "S112",
+    "name": "try-except-continue",
+    "count": 27,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "F541",
+    "name": "f-string-missing-placeholders",
+    "count": 3,
+    "fixable": true,
+    "fixable_count": 3
+  },
+  {
+    "code": "B008",
+    "name": "function-call-in-default-argument",
+    "count": 2,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "F402",
+    "name": "import-shadowed-by-loop-var",
+    "count": 2,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "E401",
+    "name": "multiple-imports-on-one-line",
+    "count": 2,
+    "fixable": true,
+    "fixable_count": 2
+  },
+  {
+    "code": "S603",
+    "name": "subprocess-without-shell-equals-true",
+    "count": 2,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "S102",
+    "name": "exec-builtin",
+    "count": 1,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "S108",
+    "name": "hardcoded-temp-file",
+    "count": 1,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "F811",
+    "name": "redefined-while-unused",
+    "count": 1,
+    "fixable": true,
+    "fixable_count": 1
+  }
+]

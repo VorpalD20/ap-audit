@@ -1,0 +1,13 @@
+Final score: -1658
+
+undefined-local-with-import-star-usage: 1690
+true-false-comparison: 26
+none-comparison: 24
+undefined-local-with-import-star: 10
+mutable-argument-default: 5
+multiple-imports-on-one-line: 1
+subprocess-without-shell-equals-true: 1
+archipelago.json is missing: 1
+f-string-missing-placeholders: 0
+multiple-statements-on-one-line-colon: 0
+mixed-spaces-and-tabs: 0

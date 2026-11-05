@@ -1,0 +1,17 @@
+Final score: 55
+
+test_pickle_dumps_default: 10
+test_default_all_state_can_reach_everything: 10
+subprocess-without-shell-equals-true: 5
+ambiguous-variable-name: 5
+test_itempool_not_modified: 5
+hardcoded-bind-all-interfaces: 2
+test_has_game_info: 2
+test_has_tutorial: 2
+hardcoded-sql-expression: 1
+raise-without-from-inside-except: 1
+suspicious-url-open-usage: 1
+FillError: 1
+try-except-pass: 0
+hardcoded-password-string: 0
+try-except-continue: 0

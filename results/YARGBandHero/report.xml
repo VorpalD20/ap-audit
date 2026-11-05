@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="4" failures="0" skipped="0" tests="4" time="6.860" timestamp="2026-11-05T02:32:57.249790+00:00" hostname="09ba1dcfb6e9"><testcase classname="" name="worlds.YARGBandHero.test.test_easy_mode" time="0.000"><error message="collection failure">ImportError while importing test module '/Archipelago/worlds/YARGBandHero/test/test_easy_mode.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/local/lib/python3.13/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/YARGBandHero/test/test_easy_mode.py:1: in &lt;module&gt;
+    from .bases import APQuestTestBase
+worlds/YARGBandHero/test/bases.py:3: in &lt;module&gt;
+    from ..world import APQuestWorld
+E   ImportError: cannot import name 'APQuestWorld' from 'worlds.YARGBandHero.world' (/Archipelago/worlds/YARGBandHero/world.py)</error></testcase><testcase classname="" name="worlds.YARGBandHero.test.test_extra_starting_chest" time="0.000"><error message="collection failure">ImportError while importing test module '/Archipelago/worlds/YARGBandHero/test/test_extra_starting_chest.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/local/lib/python3.13/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/YARGBandHero/test/test_extra_starting_chest.py:1: in &lt;module&gt;
+    from .bases import APQuestTestBase
+worlds/YARGBandHero/test/bases.py:3: in &lt;module&gt;
+    from ..world import APQuestWorld
+E   ImportError: cannot import name 'APQuestWorld' from 'worlds.YARGBandHero.world' (/Archipelago/worlds/YARGBandHero/world.py)</error></testcase><testcase classname="" name="worlds.YARGBandHero.test.test_hammer" time="0.000"><error message="collection failure">ImportError while importing test module '/Archipelago/worlds/YARGBandHero/test/test_hammer.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/local/lib/python3.13/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/YARGBandHero/test/test_hammer.py:1: in &lt;module&gt;
+    from .bases import APQuestTestBase
+worlds/YARGBandHero/test/bases.py:3: in &lt;module&gt;
+    from ..world import APQuestWorld
+E   ImportError: cannot import name 'APQuestWorld' from 'worlds.YARGBandHero.world' (/Archipelago/worlds/YARGBandHero/world.py)</error></testcase><testcase classname="" name="worlds.YARGBandHero.test.test_hard_mode" time="0.000"><error message="collection failure">ImportError while importing test module '/Archipelago/worlds/YARGBandHero/test/test_hard_mode.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/local/lib/python3.13/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/YARGBandHero/test/test_hard_mode.py:1: in &lt;module&gt;
+    from .bases import APQuestTestBase
+worlds/YARGBandHero/test/bases.py:3: in &lt;module&gt;
+    from ..world import APQuestWorld
+E   ImportError: cannot import name 'APQuestWorld' from 'worlds.YARGBandHero.world' (/Archipelago/worlds/YARGBandHero/world.py)</error></testcase></testsuite></testsuites>

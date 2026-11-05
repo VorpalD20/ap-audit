@@ -1,0 +1,18 @@
+Final score: -20
+
+ambiguous-variable-name: 56
+multiple-statements-on-one-line-semicolon: 49
+function-call-in-default-argument: 2
+import-shadowed-by-loop-var: 2
+multiple-imports-on-one-line: 2
+subprocess-without-shell-equals-true: 2
+exec-builtin: 1
+hardcoded-temp-file: 1
+redefined-while-unused: 1
+test_the_source_manifest_has_no_container_fields: 1
+test_gitignore: 1
+test_manifest: 1
+test_write_enhanced_difficulty_patch_grows_dpkm_section_against_a_real_shaped_iso: 1
+try-except-pass: 0
+try-except-continue: 0
+f-string-missing-placeholders: 0

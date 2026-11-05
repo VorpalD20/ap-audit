@@ -1,13 +1,24 @@
 {
+ "fuzzer": {
+  "FillError": 1
+ },
+ "manifest": {
+  "archipelago.json is missing": -1
+ },
  "ruff": {
   "ambiguous-variable-name": -1,
   "bare-except": 1,
+  "exec-builtin": 100,
   "f-string-missing-placeholders": 0,
   "forward-annotation-syntax-error": -1,
   "function-call-in-default-argument": -1,
   "function-uses-loop-variable": -1,
   "get-attr-with-constant": -1,
+  "hardcoded-bind-all-interfaces": -1,
   "hardcoded-password-string": 0,
+  "hardcoded-sql-expression": -1,
+  "hardcoded-temp-file": -1,
+  "import-shadowed-by-loop-var": -1,
   "loop-variable-overrides-iterator": -1,
   "mixed-spaces-and-tabs": 0,
   "multiple-imports-on-one-line": -1,
@@ -22,6 +33,7 @@
   "start-process-with-no-shell": -1,
   "start-process-with-partial-path": -1,
   "subprocess-without-shell-equals-true": -1,
+  "suspicious-url-open-usage": -1,
   "true-false-comparison": -1,
   "try-except-continue": 0,
   "try-except-pass": 0,
@@ -35,12 +47,25 @@
  "tests": {
   "test_create_item": 5,
   "test_default_all_state_can_reach_everything": 10,
+  "test_explicit_indirect_conditions_spheres": -1,
+  "test_gitignore": -1,
   "test_has_game_info": 1,
   "test_has_tutorial": 1,
   "test_item_links": -1,
   "test_itempool_not_modified": 5,
   "test_locality_not_modified": -1,
+  "test_location_name_format": -1,
+  "test_manifest": -1,
   "test_packages_have_init": -1,
-  "test_pickle_dumps_default": 10
+  "test_pickle_dumps_default": 10,
+  "test_postgen_datapackage": -1,
+  "test_slot_data": -1,
+  "test_the_source_manifest_has_no_container_fields": -1,
+  "test_two_player_single_game_fills": -1,
+  "test_write_enhanced_difficulty_patch_grows_dpkm_section_against_a_real_shaped_iso": -1,
+  "worlds.YARGBandHero.test.test_easy_mode": -1,
+  "worlds.YARGBandHero.test.test_extra_starting_chest": -1,
+  "worlds.YARGBandHero.test.test_hammer": -1,
+  "worlds.YARGBandHero.test.test_hard_mode": -1
  }
 }

@@ -1,0 +1,551 @@
+[
+  {
+    "cell": null,
+    "code": "E712",
+    "end_location": {
+      "column": 22,
+      "row": 46
+    },
+    "filename": "/Archipelago/worlds/YARGBandHero/items.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "not longnames",
+          "end_location": {
+            "column": 22,
+            "row": 46
+          },
+          "location": {
+            "column": 4,
+            "row": 46
+          }
+        }
+      ],
+      "message": "Replace with `not longnames`"
+    },
+    "location": {
+      "column": 4,
+      "row": 46
+    },
+    "message": "Avoid equality comparisons to `False`; use `not longnames:` for false checks",
+    "name": "true-false-comparison",
+    "noqa_row": 46,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/true-false-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E712",
+    "end_location": {
+      "column": 21,
+      "row": 51
+    },
+    "filename": "/Archipelago/worlds/YARGBandHero/items.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "longnames",
+          "end_location": {
+            "column": 21,
+            "row": 51
+          },
+          "location": {
+            "column": 4,
+            "row": 51
+          }
+        }
+      ],
+      "message": "Replace with `longnames`"
+    },
+    "location": {
+      "column": 4,
+      "row": 51
+    },
+    "message": "Avoid equality comparisons to `True`; use `longnames:` for truth checks",
+    "name": "true-false-comparison",
+    "noqa_row": 51,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/true-false-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 63,
+      "row": 94
+    },
+    "filename": "/Archipelago/worlds/YARGBandHero/world.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 94
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 94,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 61,
+      "row": 97
+    },
+    "filename": "/Archipelago/worlds/YARGBandHero/world.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 97
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 97,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 60,
+      "row": 100
+    },
+    "filename": "/Archipelago/worlds/YARGBandHero/world.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 100
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 100,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 61,
+      "row": 103
+    },
+    "filename": "/Archipelago/worlds/YARGBandHero/world.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 103
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 103,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 67,
+      "row": 120
+    },
+    "filename": "/Archipelago/worlds/YARGBandHero/world.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 120
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 120,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 65,
+      "row": 123
+    },
+    "filename": "/Archipelago/worlds/YARGBandHero/world.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 123
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 123,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 64,
+      "row": 126
+    },
+    "filename": "/Archipelago/worlds/YARGBandHero/world.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 126
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 126,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 65,
+      "row": 129
+    },
+    "filename": "/Archipelago/worlds/YARGBandHero/world.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 129
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 129,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E712",
+    "end_location": {
+      "column": 43,
+      "row": 131
+    },
+    "filename": "/Archipelago/worlds/YARGBandHero/world.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "not compatiblesong",
+          "end_location": {
+            "column": 43,
+            "row": 131
+          },
+          "location": {
+            "column": 20,
+            "row": 131
+          }
+        }
+      ],
+      "message": "Replace with `not compatiblesong`"
+    },
+    "location": {
+      "column": 20,
+      "row": 131
+    },
+    "message": "Avoid equality comparisons to `False`; use `not compatiblesong:` for false checks",
+    "name": "true-false-comparison",
+    "noqa_row": 131,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/true-false-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E712",
+    "end_location": {
+      "column": 48,
+      "row": 160
+    },
+    "filename": "/Archipelago/worlds/YARGBandHero/world.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "not combosuccess",
+          "end_location": {
+            "column": 48,
+            "row": 160
+          },
+          "location": {
+            "column": 27,
+            "row": 160
+          }
+        }
+      ],
+      "message": "Replace with `not combosuccess`"
+    },
+    "location": {
+      "column": 27,
+      "row": 160
+    },
+    "message": "Avoid equality comparisons to `False`; use `not combosuccess:` for false checks",
+    "name": "true-false-comparison",
+    "noqa_row": 160,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/true-false-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 90,
+      "row": 172
+    },
+    "filename": "/Archipelago/worlds/YARGBandHero/world.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 172
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 172,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 88,
+      "row": 177
+    },
+    "filename": "/Archipelago/worlds/YARGBandHero/world.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 177
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 177,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 87,
+      "row": 182
+    },
+    "filename": "/Archipelago/worlds/YARGBandHero/world.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 182
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 182,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 88,
+      "row": 187
+    },
+    "filename": "/Archipelago/worlds/YARGBandHero/world.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 187
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 187,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E712",
+    "end_location": {
+      "column": 44,
+      "row": 199
+    },
+    "filename": "/Archipelago/worlds/YARGBandHero/world.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "not combosuccess",
+          "end_location": {
+            "column": 44,
+            "row": 199
+          },
+          "location": {
+            "column": 23,
+            "row": 199
+          }
+        }
+      ],
+      "message": "Replace with `not combosuccess`"
+    },
+    "location": {
+      "column": 23,
+      "row": 199
+    },
+    "message": "Avoid equality comparisons to `False`; use `not combosuccess:` for false checks",
+    "name": "true-false-comparison",
+    "noqa_row": 199,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/true-false-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 67,
+      "row": 208
+    },
+    "filename": "/Archipelago/worlds/YARGBandHero/world.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 208
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 208,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 65,
+      "row": 212
+    },
+    "filename": "/Archipelago/worlds/YARGBandHero/world.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 212
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 212,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 64,
+      "row": 216
+    },
+    "filename": "/Archipelago/worlds/YARGBandHero/world.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 216
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 216,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 65,
+      "row": 220
+    },
+    "filename": "/Archipelago/worlds/YARGBandHero/world.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 220
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 220,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E712",
+    "end_location": {
+      "column": 26,
+      "row": 46
+    },
+    "filename": "/Archipelago/worlds/YARGBandHero/yarghelpers.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "not longnames",
+          "end_location": {
+            "column": 26,
+            "row": 46
+          },
+          "location": {
+            "column": 8,
+            "row": 46
+          }
+        }
+      ],
+      "message": "Replace with `not longnames`"
+    },
+    "location": {
+      "column": 8,
+      "row": 46
+    },
+    "message": "Avoid equality comparisons to `False`; use `not longnames:` for false checks",
+    "name": "true-false-comparison",
+    "noqa_row": 46,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/true-false-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E712",
+    "end_location": {
+      "column": 25,
+      "row": 49
+    },
+    "filename": "/Archipelago/worlds/YARGBandHero/yarghelpers.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "longnames",
+          "end_location": {
+            "column": 25,
+            "row": 49
+          },
+          "location": {
+            "column": 8,
+            "row": 49
+          }
+        }
+      ],
+      "message": "Replace with `longnames`"
+    },
+    "location": {
+      "column": 8,
+      "row": 49
+    },
+    "message": "Avoid equality comparisons to `True`; use `longnames:` for truth checks",
+    "name": "true-false-comparison",
+    "noqa_row": 49,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/true-false-comparison"
+  }
+]

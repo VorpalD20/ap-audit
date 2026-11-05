@@ -1,0 +1,4050 @@
+[
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 13,
+      "row": 236
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/Client.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 235
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 235,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 13,
+      "row": 247
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/Client.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 246
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 246,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 17,
+      "row": 512
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/Client.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 511
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 511,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 17,
+      "row": 613
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/Client.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 612
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 612,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 17,
+      "row": 912
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/Client.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 911
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 911,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 65,
+      "row": 1126
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/Client.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"option `robo_kyogre_parts_unlock_citadark` is on\"",
+          "end_location": {
+            "column": 65,
+            "row": 1126
+          },
+          "location": {
+            "column": 14,
+            "row": 1126
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 14,
+      "row": 1126
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 1126,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 66,
+      "row": 1128
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/Client.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"connected to a running game (save block resolved)\"",
+          "end_location": {
+            "column": 66,
+            "row": 1128
+          },
+          "location": {
+            "column": 14,
+            "row": 1128
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 14,
+      "row": 1128
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 1128,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 21,
+      "row": 1702
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/Client.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 1701
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 1701,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S112",
+    "end_location": {
+      "column": 25,
+      "row": 2271
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/Client.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 2270
+    },
+    "message": "`try`-`except`-`continue` detected, consider logging the exception",
+    "name": "try-except-continue",
+    "noqa_row": 2270,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-continue"
+  },
+  {
+    "cell": null,
+    "code": "F402",
+    "end_location": {
+      "column": 27,
+      "row": 2651
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/Client.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 2651
+    },
+    "message": "Import `species` from line 44 shadowed by loop variable",
+    "name": "import-shadowed-by-loop-var",
+    "noqa_row": 2651,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/import-shadowed-by-loop-var"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 13,
+      "row": 2774
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/Client.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 2773
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 2773,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 13,
+      "row": 2971
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/Client.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 2970
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 2970,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S112",
+    "end_location": {
+      "column": 21,
+      "row": 3012
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/Client.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 3011
+    },
+    "message": "`try`-`except`-`continue` detected, consider logging the exception",
+    "name": "try-except-continue",
+    "noqa_row": 3011,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-continue"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 13,
+      "row": 3046
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/Client.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 3045
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 3045,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 17,
+      "row": 3242
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/Client.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 3241
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 3241,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 13,
+      "row": 3302
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/Client.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 3301
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 3301,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 13,
+      "row": 3335
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/Client.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 3334
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 3334,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 13,
+      "row": 3578
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/Client.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 3577
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 3577,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 13,
+      "row": 3679
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/Client.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 3678
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 3678,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 17,
+      "row": 3783
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/Client.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 3782
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 3782,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S112",
+    "end_location": {
+      "column": 21,
+      "row": 3940
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/Client.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 3939
+    },
+    "message": "`try`-`except`-`continue` detected, consider logging the exception",
+    "name": "try-except-continue",
+    "noqa_row": 3939,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-continue"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 13,
+      "row": 3994
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/Client.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 3993
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 3993,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 13,
+      "row": 4001
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/Client.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 4000
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 4000,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 21,
+      "row": 4341
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/Client.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 4340
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 4340,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S112",
+    "end_location": {
+      "column": 21,
+      "row": 4557
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/Client.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 4556
+    },
+    "message": "`try`-`except`-`continue` detected, consider logging the exception",
+    "name": "try-except-continue",
+    "noqa_row": 4556,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-continue"
+  },
+  {
+    "cell": null,
+    "code": "S112",
+    "end_location": {
+      "column": 21,
+      "row": 4823
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/Client.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 4822
+    },
+    "message": "`try`-`except`-`continue` detected, consider logging the exception",
+    "name": "try-except-continue",
+    "noqa_row": 4822,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-continue"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 21,
+      "row": 4986
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/Client.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 4985
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 4985,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 21,
+      "row": 4997
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/Client.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 4996
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 4996,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S112",
+    "end_location": {
+      "column": 21,
+      "row": 5019
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/Client.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 5018
+    },
+    "message": "`try`-`except`-`continue` detected, consider logging the exception",
+    "name": "try-except-continue",
+    "noqa_row": 5018,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-continue"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 21,
+      "row": 5028
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/Client.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 5027
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 5027,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 21,
+      "row": 5042
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/Client.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 5041
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 5041,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 21,
+      "row": 5140
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/Client.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 5139
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 5139,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 13,
+      "row": 5178
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/Client.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 5177
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 5177,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 25,
+      "row": 5260
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/Client.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 5259
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 5259,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 25,
+      "row": 5271
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/Client.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 5270
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 5270,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 29,
+      "row": 5324
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/Client.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 5323
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 5323,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 29,
+      "row": 5336
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/Client.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 5335
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 5335,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 29,
+      "row": 5346
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/Client.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 5345
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 5345,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 29,
+      "row": 5355
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/Client.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 5354
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 5354,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 25,
+      "row": 5382
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/Client.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 5381
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 5381,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 25,
+      "row": 5415
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/Client.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 5414
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 5414,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 29,
+      "row": 5441
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/Client.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 5440
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 5440,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 33,
+      "row": 5486
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/Client.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 5485
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 5485,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 33,
+      "row": 5492
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/Client.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 5491
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 5491,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 33,
+      "row": 5502
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/Client.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 5501
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 5501,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 33,
+      "row": 5524
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/Client.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 5523
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 5523,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 17,
+      "row": 337
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 336
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 336,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "F402",
+    "end_location": {
+      "column": 27,
+      "row": 1488
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 1488
+    },
+    "message": "Import `regions` from line 26 shadowed by loop variable",
+    "name": "import-shadowed-by-loop-var",
+    "noqa_row": 1488,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/import-shadowed-by-loop-var"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 21,
+      "row": 1624
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 1623
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 1623,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 21,
+      "row": 194
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/fst_guard.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 193
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 193,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 13,
+      "row": 136
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/launcher_patch.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 135
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 135,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 13,
+      "row": 142
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/launcher_patch.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 139
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 139,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 21,
+      "row": 151
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/launcher_patch.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 150
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 150,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 13,
+      "row": 157
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/launcher_patch.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 156
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 156,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 17,
+      "row": 294
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/launcher_patch.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 293
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 293,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 13,
+      "row": 340
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/ram_client.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 339
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 339,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S112",
+    "end_location": {
+      "column": 21,
+      "row": 1551
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/ram_client.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 1550
+    },
+    "message": "`try`-`except`-`continue` detected, consider logging the exception",
+    "name": "try-except-continue",
+    "noqa_row": 1550,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-continue"
+  },
+  {
+    "cell": null,
+    "code": "S112",
+    "end_location": {
+      "column": 21,
+      "row": 1879
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/ram_client.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 1878
+    },
+    "message": "`try`-`except`-`continue` detected, consider logging the exception",
+    "name": "try-except-continue",
+    "noqa_row": 1878,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-continue"
+  },
+  {
+    "cell": null,
+    "code": "S112",
+    "end_location": {
+      "column": 21,
+      "row": 2316
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/ram_client.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 2315
+    },
+    "message": "`try`-`except`-`continue` detected, consider logging the exception",
+    "name": "try-except-continue",
+    "noqa_row": 2315,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-continue"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 17,
+      "row": 2447
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/ram_client.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 2446
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 2446,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 17,
+      "row": 2454
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/ram_client.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 2453
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 2453,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 21,
+      "row": 2462
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/ram_client.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 2461
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 2461,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 17,
+      "row": 3093
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/ram_client.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 3092
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 3092,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 21,
+      "row": 3111
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/ram_client.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 3110
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 3110,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 17,
+      "row": 3133
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/ram_client.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 3132
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 3132,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 21,
+      "row": 4372
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/ram_client.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 4371
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 4371,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S112",
+    "end_location": {
+      "column": 25,
+      "row": 4428
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/ram_client.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 4427
+    },
+    "message": "`try`-`except`-`continue` detected, consider logging the exception",
+    "name": "try-except-continue",
+    "noqa_row": 4427,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-continue"
+  },
+  {
+    "cell": null,
+    "code": "S112",
+    "end_location": {
+      "column": 25,
+      "row": 6246
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/ram_client.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 6245
+    },
+    "message": "`try`-`except`-`continue` detected, consider logging the exception",
+    "name": "try-except-continue",
+    "noqa_row": 6245,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-continue"
+  },
+  {
+    "cell": null,
+    "code": "S112",
+    "end_location": {
+      "column": 29,
+      "row": 6371
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/ram_client.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 6370
+    },
+    "message": "`try`-`except`-`continue` detected, consider logging the exception",
+    "name": "try-except-continue",
+    "noqa_row": 6370,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-continue"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 17,
+      "row": 7273
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/ram_client.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 7272
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 7272,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S112",
+    "end_location": {
+      "column": 25,
+      "row": 9006
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/ram_client.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 9005
+    },
+    "message": "`try`-`except`-`continue` detected, consider logging the exception",
+    "name": "try-except-continue",
+    "noqa_row": 9005,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-continue"
+  },
+  {
+    "cell": null,
+    "code": "S112",
+    "end_location": {
+      "column": 25,
+      "row": 9061
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/ram_client.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 9060
+    },
+    "message": "`try`-`except`-`continue` detected, consider logging the exception",
+    "name": "try-except-continue",
+    "noqa_row": 9060,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-continue"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 13,
+      "row": 10052
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/ram_client.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 10051
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 10051,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 13,
+      "row": 10060
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/ram_client.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 10059
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 10059,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S112",
+    "end_location": {
+      "column": 21,
+      "row": 10073
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/ram_client.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 10072
+    },
+    "message": "`try`-`except`-`continue` detected, consider logging the exception",
+    "name": "try-except-continue",
+    "noqa_row": 10072,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-continue"
+  },
+  {
+    "cell": null,
+    "code": "S112",
+    "end_location": {
+      "column": 25,
+      "row": 10584
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/ram_client.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 10583
+    },
+    "message": "`try`-`except`-`continue` detected, consider logging the exception",
+    "name": "try-except-continue",
+    "noqa_row": 10583,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-continue"
+  },
+  {
+    "cell": null,
+    "code": "S112",
+    "end_location": {
+      "column": 21,
+      "row": 10686
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/ram_client.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 10685
+    },
+    "message": "`try`-`except`-`continue` detected, consider logging the exception",
+    "name": "try-except-continue",
+    "noqa_row": 10685,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-continue"
+  },
+  {
+    "cell": null,
+    "code": "S112",
+    "end_location": {
+      "column": 21,
+      "row": 10766
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/ram_client.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 10765
+    },
+    "message": "`try`-`except`-`continue` detected, consider logging the exception",
+    "name": "try-except-continue",
+    "noqa_row": 10765,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-continue"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 17,
+      "row": 11340
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/ram_client.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 11339
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 11339,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S112",
+    "end_location": {
+      "column": 29,
+      "row": 11504
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/ram_client.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 11503
+    },
+    "message": "`try`-`except`-`continue` detected, consider logging the exception",
+    "name": "try-except-continue",
+    "noqa_row": 11503,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-continue"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 21,
+      "row": 12316
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/ram_client.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 12315
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 12315,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 17,
+      "row": 12332
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/ram_client.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 12331
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 12331,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 27,
+      "row": 174
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addenda_401_402_missable_trainers.py",
+    "fix": null,
+    "location": {
+      "column": 26,
+      "row": 174
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 174,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "B008",
+    "end_location": {
+      "column": 92,
+      "row": 139
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_111_shop_randomization.py",
+    "fix": null,
+    "location": {
+      "column": 67,
+      "row": 139
+    },
+    "message": "Do not perform function call `iter` in argument defaults; instead, perform the call within the function, or read the default from a module-level singleton variable",
+    "name": "function-call-in-default-argument",
+    "noqa_row": 139,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/function-call-in-default-argument"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 39,
+      "row": 30
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_128_rel_validation_and_mart_bounds.py",
+    "fix": null,
+    "location": {
+      "column": 38,
+      "row": 30
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 30,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 39,
+      "row": 31
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_128_rel_validation_and_mart_bounds.py",
+    "fix": null,
+    "location": {
+      "column": 38,
+      "row": 31
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 31,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 36,
+      "row": 43
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_128_rel_validation_and_mart_bounds.py",
+    "fix": null,
+    "location": {
+      "column": 35,
+      "row": 43
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 43,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 34,
+      "row": 185
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_148_block_stability_gate.py",
+    "fix": null,
+    "location": {
+      "column": 33,
+      "row": 185
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 185,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 44,
+      "row": 189
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_148_block_stability_gate.py",
+    "fix": null,
+    "location": {
+      "column": 43,
+      "row": 189
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 189,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 29,
+      "row": 321
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_238c_berries_per_shop_line.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 321
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 321,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 45,
+      "row": 72
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_240_pyrite_opens_before_the_data_rom.py",
+    "fix": null,
+    "location": {
+      "column": 44,
+      "row": 72
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 72,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 32,
+      "row": 85
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_240_pyrite_opens_before_the_data_rom.py",
+    "fix": null,
+    "location": {
+      "column": 31,
+      "row": 85
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 85,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 31,
+      "row": 86
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_240_pyrite_opens_before_the_data_rom.py",
+    "fix": null,
+    "location": {
+      "column": 30,
+      "row": 86
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 86,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 24,
+      "row": 102
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_246_onbs_chests.py",
+    "fix": null,
+    "location": {
+      "column": 23,
+      "row": 102
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 102,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 33,
+      "row": 251
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_246_onbs_chests.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 251
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 251,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "S102",
+    "end_location": {
+      "column": 13,
+      "row": 105
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_251_seed_build_mismatch.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 105
+    },
+    "message": "Use of `exec` detected",
+    "name": "exec-builtin",
+    "noqa_row": 105,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/exec-builtin"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 29,
+      "row": 158
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_252_any_defeat_locations.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 158
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 158,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 29,
+      "row": 171
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_252_any_defeat_locations.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 171
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 171,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 32,
+      "row": 187
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_252_any_defeat_locations.py",
+    "fix": null,
+    "location": {
+      "column": 31,
+      "row": 187
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 187,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 31,
+      "row": 207
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_252_any_defeat_locations.py",
+    "fix": null,
+    "location": {
+      "column": 30,
+      "row": 207
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 207,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 28,
+      "row": 237
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_252_any_defeat_locations.py",
+    "fix": null,
+    "location": {
+      "column": 27,
+      "row": 237
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 237,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "B008",
+    "end_location": {
+      "column": 77,
+      "row": 72
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_259_shop_fast_poll.py",
+    "fix": null,
+    "location": {
+      "column": 61,
+      "row": 72
+    },
+    "message": "Do not perform function call `iter` in argument defaults; instead, perform the call within the function, or read the default from a module-level singleton variable",
+    "name": "function-call-in-default-argument",
+    "noqa_row": 72,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/function-call-in-default-argument"
+  },
+  {
+    "cell": null,
+    "code": "F811",
+    "end_location": {
+      "column": 44,
+      "row": 120
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_266_path_level_scaling.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "",
+          "end_location": {
+            "column": 1,
+            "row": 121
+          },
+          "location": {
+            "column": 1,
+            "row": 120
+          }
+        }
+      ],
+      "message": "Remove definition: `story_bytes`"
+    },
+    "location": {
+      "column": 33,
+      "row": 120
+    },
+    "message": "Redefinition of unused `story_bytes` from line 40: `story_bytes` redefined here",
+    "name": "redefined-while-unused",
+    "noqa_row": 120,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/redefined-while-unused"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 24,
+      "row": 70
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_266_travel_gating_audit.py",
+    "fix": null,
+    "location": {
+      "column": 23,
+      "row": 70
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 70,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 36,
+      "row": 88
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_266_travel_gating_audit.py",
+    "fix": null,
+    "location": {
+      "column": 35,
+      "row": 88
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 88,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 57,
+      "row": 108
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_266_travel_gating_audit.py",
+    "fix": null,
+    "location": {
+      "column": 56,
+      "row": 108
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 108,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 59,
+      "row": 121
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_266_travel_gating_audit.py",
+    "fix": null,
+    "location": {
+      "column": 58,
+      "row": 121
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 121,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 76,
+      "row": 138
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_266_travel_gating_audit.py",
+    "fix": null,
+    "location": {
+      "column": 75,
+      "row": 138
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 138,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 33,
+      "row": 158
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_266_travel_gating_audit.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 158
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 158,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 55,
+      "row": 162
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_266_travel_gating_audit.py",
+    "fix": null,
+    "location": {
+      "column": 54,
+      "row": 162
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 162,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 26,
+      "row": 177
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_266_travel_gating_audit.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 177
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 177,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 61,
+      "row": 193
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_266_travel_gating_audit.py",
+    "fix": null,
+    "location": {
+      "column": 60,
+      "row": 193
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 193,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 32,
+      "row": 197
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_266_travel_gating_audit.py",
+    "fix": null,
+    "location": {
+      "column": 31,
+      "row": 197
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 197,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 22,
+      "row": 145
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_267_shop_shelf_holds.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 145
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 145,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 36,
+      "row": 146
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_267_shop_shelf_holds.py",
+    "fix": null,
+    "location": {
+      "column": 35,
+      "row": 146
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 146,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 54,
+      "row": 178
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_269_evolution_uses_the_final_level.py",
+    "fix": null,
+    "location": {
+      "column": 53,
+      "row": 178
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 178,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 24,
+      "row": 112
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_270_travel_audit_fixes.py",
+    "fix": null,
+    "location": {
+      "column": 23,
+      "row": 112
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 112,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 47,
+      "row": 125
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_270_travel_audit_fixes.py",
+    "fix": null,
+    "location": {
+      "column": 46,
+      "row": 125
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 125,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 36,
+      "row": 140
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_270_travel_audit_fixes.py",
+    "fix": null,
+    "location": {
+      "column": 35,
+      "row": 140
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 140,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 30,
+      "row": 358
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_270_travel_audit_fixes.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 358
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 358,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 26,
+      "row": 181
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_285_experience_rate.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 181
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 181,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 40,
+      "row": 182
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_285_experience_rate.py",
+    "fix": null,
+    "location": {
+      "column": 39,
+      "row": 182
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 182,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 23,
+      "row": 75
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_289_the_chest_second_witness.py",
+    "fix": null,
+    "location": {
+      "column": 22,
+      "row": 75
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 75,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 20,
+      "row": 78
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_291_disable_move_animations.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 78
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 78,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 34,
+      "row": 79
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_291_disable_move_animations.py",
+    "fix": null,
+    "location": {
+      "column": 33,
+      "row": 79
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 79,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 25,
+      "row": 131
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_291_disable_move_animations.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 131
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 131,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 24,
+      "row": 135
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_291_disable_move_animations.py",
+    "fix": null,
+    "location": {
+      "column": 23,
+      "row": 135
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 135,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 26,
+      "row": 111
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_300_max_catch_rate.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 111
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 111,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 40,
+      "row": 112
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_300_max_catch_rate.py",
+    "fix": null,
+    "location": {
+      "column": 39,
+      "row": 112
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 112,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 47,
+      "row": 376
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_300_max_catch_rate.py",
+    "fix": null,
+    "location": {
+      "column": 46,
+      "row": 376
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 376,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 29,
+      "row": 121
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_301_aferd_any_is_filler_only.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 121
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 121,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 25,
+      "row": 36
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_310_catch_sources_and_phenac_colosseum.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 36
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 36,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 32,
+      "row": 87
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_310_catch_sources_and_phenac_colosseum.py",
+    "fix": null,
+    "location": {
+      "column": 31,
+      "row": 87
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 87,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 30,
+      "row": 104
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_310_catch_sources_and_phenac_colosseum.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 104
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 104,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 30,
+      "row": 118
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_311_pit_stop_and_filler_categories.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 118
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 118,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 30,
+      "row": 130
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_311_pit_stop_and_filler_categories.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 130
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 130,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 23,
+      "row": 29
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_312_phenac_colosseum_fights.py",
+    "fix": null,
+    "location": {
+      "column": 22,
+      "row": 29
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 29,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 43,
+      "row": 55
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_312_phenac_colosseum_fights.py",
+    "fix": null,
+    "location": {
+      "column": 42,
+      "row": 55
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 55,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 28,
+      "row": 64
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_327_biden_anchor.py",
+    "fix": null,
+    "location": {
+      "column": 27,
+      "row": 64
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 64,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 38,
+      "row": 206
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_341_the_snagem_script_patch.py",
+    "fix": null,
+    "location": {
+      "column": 37,
+      "row": 206
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 206,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 38,
+      "row": 214
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_341_the_snagem_script_patch.py",
+    "fix": null,
+    "location": {
+      "column": 37,
+      "row": 214
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 214,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 38,
+      "row": 222
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_341_the_snagem_script_patch.py",
+    "fix": null,
+    "location": {
+      "column": 37,
+      "row": 222
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 222,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 46,
+      "row": 231
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_341_the_snagem_script_patch.py",
+    "fix": null,
+    "location": {
+      "column": 45,
+      "row": 231
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 231,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 46,
+      "row": 238
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_341_the_snagem_script_patch.py",
+    "fix": null,
+    "location": {
+      "column": 45,
+      "row": 238
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 238,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 26,
+      "row": 248
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_341_the_snagem_script_patch.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 248
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 248,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 38,
+      "row": 255
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_341_the_snagem_script_patch.py",
+    "fix": null,
+    "location": {
+      "column": 37,
+      "row": 255
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 255,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 38,
+      "row": 268
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_341_the_snagem_script_patch.py",
+    "fix": null,
+    "location": {
+      "column": 37,
+      "row": 268
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 268,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 60,
+      "row": 106
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_342_the_record_repair_and_the_staging_selector.py",
+    "fix": null,
+    "location": {
+      "column": 59,
+      "row": 106
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 106,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 60,
+      "row": 113
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_342_the_record_repair_and_the_staging_selector.py",
+    "fix": null,
+    "location": {
+      "column": 59,
+      "row": 113
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 113,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 60,
+      "row": 151
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_342_the_record_repair_and_the_staging_selector.py",
+    "fix": null,
+    "location": {
+      "column": 59,
+      "row": 151
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 151,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 60,
+      "row": 157
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_342_the_record_repair_and_the_staging_selector.py",
+    "fix": null,
+    "location": {
+      "column": 59,
+      "row": 157
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 157,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 62,
+      "row": 165
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_342_the_record_repair_and_the_staging_selector.py",
+    "fix": null,
+    "location": {
+      "column": 61,
+      "row": 165
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 165,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 42,
+      "row": 178
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_342_the_record_repair_and_the_staging_selector.py",
+    "fix": null,
+    "location": {
+      "column": 41,
+      "row": 178
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 178,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 60,
+      "row": 184
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_342_the_record_repair_and_the_staging_selector.py",
+    "fix": null,
+    "location": {
+      "column": 59,
+      "row": 184
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 184,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 60,
+      "row": 210
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_342_the_record_repair_and_the_staging_selector.py",
+    "fix": null,
+    "location": {
+      "column": 59,
+      "row": 210
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 210,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 60,
+      "row": 218
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_342_the_record_repair_and_the_staging_selector.py",
+    "fix": null,
+    "location": {
+      "column": 59,
+      "row": 218
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 218,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 60,
+      "row": 231
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_342_the_record_repair_and_the_staging_selector.py",
+    "fix": null,
+    "location": {
+      "column": 59,
+      "row": 231
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 231,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 34,
+      "row": 61
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_359_mirorforce.py",
+    "fix": null,
+    "location": {
+      "column": 33,
+      "row": 61
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 61,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 35,
+      "row": 64
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_359_mirorforce.py",
+    "fix": null,
+    "location": {
+      "column": 34,
+      "row": 64
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 64,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 26,
+      "row": 93
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_397_world_checks_cannot_name_an_empty_set.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 93
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 93,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 20,
+      "row": 99
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_397_world_checks_cannot_name_an_empty_set.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 99
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 99,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 44,
+      "row": 118
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_397_world_checks_cannot_name_an_empty_set.py",
+    "fix": null,
+    "location": {
+      "column": 43,
+      "row": 118
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 118,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 59,
+      "row": 71
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_403_universal_tracker.py",
+    "fix": null,
+    "location": {
+      "column": 58,
+      "row": 71
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 71,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 31,
+      "row": 89
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_403_universal_tracker.py",
+    "fix": null,
+    "location": {
+      "column": 30,
+      "row": 89
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 89,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 40,
+      "row": 90
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_403_universal_tracker.py",
+    "fix": null,
+    "location": {
+      "column": 39,
+      "row": 90
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 90,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 32,
+      "row": 194
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_403_universal_tracker.py",
+    "fix": null,
+    "location": {
+      "column": 31,
+      "row": 194
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 194,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 32,
+      "row": 154
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_406_battlus_rom_rematches_adjustments.py",
+    "fix": null,
+    "location": {
+      "column": 31,
+      "row": 154
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 154,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 94,
+      "row": 160
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_406_battlus_rom_rematches_adjustments.py",
+    "fix": null,
+    "location": {
+      "column": 93,
+      "row": 160
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 160,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 38,
+      "row": 162
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_406_battlus_rom_rematches_adjustments.py",
+    "fix": null,
+    "location": {
+      "column": 37,
+      "row": 162
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 162,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 32,
+      "row": 37
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_414_cumulative_is_only_a_tally.py",
+    "fix": null,
+    "location": {
+      "column": 31,
+      "row": 37
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 37,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 32,
+      "row": 47
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_414_cumulative_is_only_a_tally.py",
+    "fix": null,
+    "location": {
+      "column": 31,
+      "row": 47
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 47,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 65,
+      "row": 22
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_415_purifications_and_greevil.py",
+    "fix": null,
+    "location": {
+      "column": 64,
+      "row": 22
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 22,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 26,
+      "row": 377
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_435_legendaries_text_speed_and_the_story_weight.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 377
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 377,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 43,
+      "row": 378
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_435_legendaries_text_speed_and_the_story_weight.py",
+    "fix": null,
+    "location": {
+      "column": 42,
+      "row": 378
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 378,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 42,
+      "row": 379
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_435_legendaries_text_speed_and_the_story_weight.py",
+    "fix": null,
+    "location": {
+      "column": 41,
+      "row": 379
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 379,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 34,
+      "row": 40
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_437_grind_without_randomized_shops.py",
+    "fix": null,
+    "location": {
+      "column": 33,
+      "row": 40
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 40,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 46,
+      "row": 174
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_440_phenac_invasion_and_purification_rate.py",
+    "fix": null,
+    "location": {
+      "column": 45,
+      "row": 174
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 174,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E401",
+    "end_location": {
+      "column": 44,
+      "row": 136
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_441_the_music_disc_room.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "import json\nimport os\nimport pathlib\nimport tempfile\nimport zipfile",
+          "end_location": {
+            "column": 44,
+            "row": 136
+          },
+          "location": {
+            "column": 1,
+            "row": 136
+          }
+        }
+      ],
+      "message": "Split imports"
+    },
+    "location": {
+      "column": 1,
+      "row": 136
+    },
+    "message": "Multiple imports on one line",
+    "name": "multiple-imports-on-one-line",
+    "noqa_row": 136,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-imports-on-one-line"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 50,
+      "row": 61
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_443_hint_groups_and_randomize_starter.py",
+    "fix": null,
+    "location": {
+      "column": 49,
+      "row": 61
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 61,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 56,
+      "row": 43
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_449_no_progression_scope_and_laken.py",
+    "fix": null,
+    "location": {
+      "column": 55,
+      "row": 43
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 43,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 30,
+      "row": 79
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_449_no_progression_scope_and_laken.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 79
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 79,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 46,
+      "row": 24
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_463_infinite_tms.py",
+    "fix": null,
+    "location": {
+      "column": 45,
+      "row": 24
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 24,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 46,
+      "row": 24
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_465_shadow_engine.py",
+    "fix": null,
+    "location": {
+      "column": 45,
+      "row": 24
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 24,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 55,
+      "row": 121
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_addendum_468_fled_shadows_stay_with_miror_b.py",
+    "fix": null,
+    "location": {
+      "column": 54,
+      "row": 121
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 121,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "S603",
+    "end_location": {
+      "column": 36,
+      "row": 167
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_loads_from_a_zipped_apworld.py",
+    "fix": null,
+    "location": {
+      "column": 22,
+      "row": 167
+    },
+    "message": "`subprocess` call: check for execution of untrusted input",
+    "name": "subprocess-without-shell-equals-true",
+    "noqa_row": 167,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/subprocess-without-shell-equals-true"
+  },
+  {
+    "cell": null,
+    "code": "S603",
+    "end_location": {
+      "column": 36,
+      "row": 248
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_loads_from_a_zipped_apworld.py",
+    "fix": null,
+    "location": {
+      "column": 22,
+      "row": 248
+    },
+    "message": "`subprocess` call: check for execution of untrusted input",
+    "name": "subprocess-without-shell-equals-true",
+    "noqa_row": 248,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/subprocess-without-shell-equals-true"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 37,
+      "row": 82
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_progression.py",
+    "fix": null,
+    "location": {
+      "column": 36,
+      "row": 82
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 82,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 46,
+      "row": 15
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_room_music_fallback.py",
+    "fix": null,
+    "location": {
+      "column": 45,
+      "row": 15
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 15,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "S108",
+    "end_location": {
+      "column": 67,
+      "row": 245
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/test/test_wonder_trade.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 244
+    },
+    "message": "Probable insecure usage of temporary file or directory: \"/tmp/claude-0/-home-claude/ed964a6f-a62c-5162-8c9c-af104820d6b4/scratchpad/wt/cr/worlds/pokemon_crystal/util_wonder_trade.py\"",
+    "name": "hardcoded-temp-file",
+    "noqa_row": 244,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-temp-file"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 13,
+      "row": 75
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/tools/fst_live_check.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 74
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 74,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S112",
+    "end_location": {
+      "column": 21,
+      "row": 213
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/tools/fst_live_check.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 212
+    },
+    "message": "`try`-`except`-`continue` detected, consider logging the exception",
+    "name": "try-except-continue",
+    "noqa_row": 212,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-continue"
+  },
+  {
+    "cell": null,
+    "code": "S112",
+    "end_location": {
+      "column": 29,
+      "row": 1578
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/tools/iso_patcher.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 1577
+    },
+    "message": "`try`-`except`-`continue` detected, consider logging the exception",
+    "name": "try-except-continue",
+    "noqa_row": 1577,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-continue"
+  },
+  {
+    "cell": null,
+    "code": "S112",
+    "end_location": {
+      "column": 25,
+      "row": 1590
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/tools/iso_patcher.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 1589
+    },
+    "message": "`try`-`except`-`continue` detected, consider logging the exception",
+    "name": "try-except-continue",
+    "noqa_row": 1589,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-continue"
+  },
+  {
+    "cell": null,
+    "code": "S112",
+    "end_location": {
+      "column": 29,
+      "row": 1599
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/tools/iso_patcher.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 1598
+    },
+    "message": "`try`-`except`-`continue` detected, consider logging the exception",
+    "name": "try-except-continue",
+    "noqa_row": 1598,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-continue"
+  },
+  {
+    "cell": null,
+    "code": "S112",
+    "end_location": {
+      "column": 21,
+      "row": 2188
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/tools/iso_patcher.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 2187
+    },
+    "message": "`try`-`except`-`continue` detected, consider logging the exception",
+    "name": "try-except-continue",
+    "noqa_row": 2187,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-continue"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 17,
+      "row": 4266
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/tools/iso_patcher.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 4265
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 4265,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 17,
+      "row": 4273
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/tools/iso_patcher.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 4272
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 4272,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 84,
+      "row": 5204
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/tools/iso_patcher.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"Reduce Citadark Grind: Gateon Port's last shelf now sells \"",
+          "end_location": {
+            "column": 84,
+            "row": 5204
+          },
+          "location": {
+            "column": 23,
+            "row": 5204
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 23,
+      "row": 5204
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 5204,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "S112",
+    "end_location": {
+      "column": 53,
+      "row": 5425
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/tools/iso_patcher.py",
+    "fix": null,
+    "location": {
+      "column": 41,
+      "row": 5424
+    },
+    "message": "`try`-`except`-`continue` detected, consider logging the exception",
+    "name": "try-except-continue",
+    "noqa_row": 5424,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-continue"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 32,
+      "row": 36
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/tools/xd_deck_format.py",
+    "fix": null,
+    "location": {
+      "column": 31,
+      "row": 36
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 36,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 28,
+      "row": 44
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/tools/xd_deck_format.py",
+    "fix": null,
+    "location": {
+      "column": 27,
+      "row": 44
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 44,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 25,
+      "row": 46
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/tools/xd_deck_format.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 46
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 46,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 29,
+      "row": 50
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/tools/xd_deck_format.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 50
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 50,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 50,
+      "row": 50
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/tools/xd_deck_format.py",
+    "fix": null,
+    "location": {
+      "column": 49,
+      "row": 50
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 50,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 29,
+      "row": 57
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/tools/xd_deck_format.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 57
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 57,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E401",
+    "end_location": {
+      "column": 21,
+      "row": 404
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/tools/xd_deck_format.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "    import sys\n    import json",
+          "end_location": {
+            "column": 21,
+            "row": 404
+          },
+          "location": {
+            "column": 1,
+            "row": 404
+          }
+        }
+      ],
+      "message": "Split imports"
+    },
+    "location": {
+      "column": 5,
+      "row": 404
+    },
+    "message": "Multiple imports on one line",
+    "name": "multiple-imports-on-one-line",
+    "noqa_row": 404,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-imports-on-one-line"
+  },
+  {
+    "cell": null,
+    "code": "S112",
+    "end_location": {
+      "column": 25,
+      "row": 266
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/tools/xd_rel_format.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 265
+    },
+    "message": "`try`-`except`-`continue` detected, consider logging the exception",
+    "name": "try-except-continue",
+    "noqa_row": 265,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-continue"
+  },
+  {
+    "cell": null,
+    "code": "S112",
+    "end_location": {
+      "column": 21,
+      "row": 1512
+    },
+    "filename": "/Archipelago/worlds/pokemon_xd/tools/xd_rel_format.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 1511
+    },
+    "message": "`try`-`except`-`continue` detected, consider logging the exception",
+    "name": "try-except-continue",
+    "noqa_row": 1511,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-continue"
+  }
+]
