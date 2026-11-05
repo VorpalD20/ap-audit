@@ -79,12 +79,12 @@ def run_checks(world, world_id, results_path):
         "-v", f"{os.path.abspath(out_path)}:/out",
         "ghcr.io/silasary/ap-lint:main",
     ]
-    subprocess.run(docker_cmd, check=True)
+    subprocess.run(docker_cmd, check=False)
 
     for file_name in os.listdir(out_path):
         os.replace(os.path.join(out_path, file_name), os.path.join(results_path, file_name))
 
-def load_severity_data(results_path) -> dict[str, dict[str, int]]:
+def load_severity_data() -> dict[str, dict[str, int]]:
     severity: dict[str, dict[str, int]] = {}
     if os.path.exists("severity.json"):
         with open("severity.json", "r") as f:
@@ -98,7 +98,7 @@ def count_codes(severity: dict[str, dict[str, int]]) -> int:
     return count
 
 def finalise_report(results_path) -> None:
-    severity = load_severity_data(results_path)
+    severity = load_severity_data()
     num_codes = count_codes(severity)
     penalties = {}
 
