@@ -1,0 +1,48 @@
+[
+  {
+    "cell": null,
+    "code": "B006",
+    "end_location": {
+      "column": 107,
+      "row": 127
+    },
+    "filename": "/Archipelago/worlds/ror1/regions.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "None",
+          "end_location": {
+            "column": 107,
+            "row": 127
+          },
+          "location": {
+            "column": 105,
+            "row": 127
+          }
+        },
+        {
+          "content": "    if locations is None:\n        locations = {}\n",
+          "end_location": {
+            "column": 1,
+            "row": 128
+          },
+          "location": {
+            "column": 1,
+            "row": 128
+          }
+        }
+      ],
+      "message": "Replace with `None`; initialize within function"
+    },
+    "location": {
+      "column": 105,
+      "row": 127
+    },
+    "message": "Do not use mutable data structures for argument defaults",
+    "name": "mutable-argument-default",
+    "noqa_row": 127,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/mutable-argument-default"
+  }
+]

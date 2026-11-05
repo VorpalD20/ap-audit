@@ -1,0 +1,9 @@
+[
+  {
+    "code": "B006",
+    "name": "mutable-argument-default",
+    "count": 1,
+    "fixable": false,
+    "fixable_count": 0
+  }
+]

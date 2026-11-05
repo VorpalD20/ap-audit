@@ -1,0 +1,9 @@
+Final score: 77
+
+FillError: 7
+<class 'TimeoutError'>: 7
+mutable-argument-default: 5
+test_item_name_groups_not_empty: 1
+test_has_game_info: 1
+test_has_tutorial: 1
+archipelago.json is missing: 1

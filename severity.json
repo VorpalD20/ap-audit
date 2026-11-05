@@ -1,5 +1,6 @@
 {
  "fuzzer": {
+  "<class 'TimeoutError'>": -1,
   "FillError": 1
  },
  "manifest": {
@@ -52,6 +53,7 @@
   "test_has_game_info": 1,
   "test_has_tutorial": 1,
   "test_item_links": -1,
+  "test_item_name_groups_not_empty": -1,
   "test_itempool_not_modified": 5,
   "test_locality_not_modified": -1,
   "test_location_name_format": -1,
