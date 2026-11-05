@@ -1,0 +1,4 @@
+Final score: 48
+
+ruff_stats.json failed to load: 50
+worlds.ccs.test.test_basic: 2

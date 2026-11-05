@@ -1,0 +1,11 @@
+{
+    "game": "Cash cleaner simulator",
+    "stub": "ccs",
+    "manifest": {
+        "game": "Cash cleaner simulator",
+        "author": "TODO: add author",
+        "description": "TODO: short description of Cash cleaner simulator",
+        "compatible_version": 7,
+        "version": 7
+    }
+}

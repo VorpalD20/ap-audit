@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="1" failures="0" skipped="0" tests="1" time="6.663" timestamp="2026-11-05T07:45:37.915942+00:00" hostname="1ebb3d47b257"><testcase classname="" name="worlds.ccs.test.test_basic" time="0.000"><error message="collection failure">ImportError while importing test module '/Archipelago/worlds/ccs/test/test_basic.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/local/lib/python3.13/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/ccs/test/test_basic.py:2: in &lt;module&gt;
+    from worlds.ccs.items import ITEM_TABLE
+E   ImportError: cannot import name 'ITEM_TABLE' from 'worlds.ccs.items' (/Archipelago/worlds/ccs/items.py)</error></testcase></testsuite></testsuites>
