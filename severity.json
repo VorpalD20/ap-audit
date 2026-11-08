@@ -1,6 +1,7 @@
 {
  "fuzzer": {
   "<class 'TimeoutError'>": -1,
+  "EOF when reading a line": -1,
   "FillError": 1
  },
  "manifest": {
@@ -27,6 +28,7 @@
   "multiple-statements-on-one-line-semicolon": -1,
   "mutable-argument-default": 5,
   "none-comparison": -1,
+  "raise-literal": -1,
   "raise-without-from-inside-except": -1,
   "re-sub-positional-args": -1,
   "redefined-while-unused": -1,
@@ -43,6 +45,7 @@
   "undefined-local-with-import-star-usage": 2,
   "undefined-name": 5,
   "unused-annotation": 0,
+  "useless-expression": -1,
   "useless-semicolon": 0
  },
  "tests": {
@@ -58,6 +61,7 @@
   "test_locality_not_modified": -1,
   "test_location_name_format": -1,
   "test_manifest": -1,
+  "test_option_defaults": -1,
   "test_packages_have_init": -1,
   "test_pickle_dumps_default": 10,
   "test_postgen_datapackage": -1,

@@ -1,0 +1,5639 @@
+[
+  {
+    "cell": null,
+    "code": "F403",
+    "end_location": {
+      "column": 23,
+      "row": 6
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/FunkinUtils.py",
+    "fix": null,
+    "location": {
+      "column": 1,
+      "row": 6
+    },
+    "message": "`from .Options import *` used; unable to detect undefined names",
+    "name": "undefined-local-with-import-star",
+    "noqa_row": 6,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star"
+  },
+  {
+    "cell": null,
+    "code": "F842",
+    "end_location": {
+      "column": 14,
+      "row": 119
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/FunkinUtils.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 119
+    },
+    "message": "Local variable `YUtil` is annotated but never used",
+    "name": "unused-annotation",
+    "noqa_row": 119,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/unused-annotation"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 25,
+      "row": 120
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Options.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 119
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 119,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 21,
+      "row": 132
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Options.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 131
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 131,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 95,
+      "row": 151
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/TrackerWorld.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"[FunkinWorldTracker] Restoring complete generation state from passthrough\"",
+          "end_location": {
+            "column": 95,
+            "row": 151
+          },
+          "location": {
+            "column": 19,
+            "row": 151
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 19,
+      "row": 151
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 151,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 81,
+      "row": 155
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/TrackerWorld.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"[FunkinWorldTracker WARNING] No _ut_slot_data available\"",
+          "end_location": {
+            "column": 81,
+            "row": 155
+          },
+          "location": {
+            "column": 23,
+            "row": 155
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 23,
+      "row": 155
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 155,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 104,
+      "row": 166
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/TrackerWorld.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"[FunkinWorldTracker WARNING] No generation_data in passthrough, using defaults\"",
+          "end_location": {
+            "column": 104,
+            "row": 166
+          },
+          "location": {
+            "column": 23,
+            "row": 166
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 23,
+      "row": 166
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 166,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 97,
+      "row": 177
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/TrackerWorld.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"[FunkinWorldTracker WARNING] No stored options found in generation_data\"",
+          "end_location": {
+            "column": 97,
+            "row": 177
+          },
+          "location": {
+            "column": 23,
+            "row": 177
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 23,
+      "row": 177
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 177,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 71,
+      "row": 260
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/TrackerWorld.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"[FunkinWorldTracker] ✓ Restored generation state:\"",
+          "end_location": {
+            "column": 71,
+            "row": 260
+          },
+          "location": {
+            "column": 19,
+            "row": 260
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 19,
+      "row": 260
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 260,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 81,
+      "row": 289
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/TrackerWorld.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"[FunkinWorldTracker] Creating regions from passthrough data\"",
+          "end_location": {
+            "column": 81,
+            "row": 289
+          },
+          "location": {
+            "column": 19,
+            "row": 289
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 19,
+      "row": 289
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 289,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 79,
+      "row": 299
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/TrackerWorld.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"[FunkinWorldTracker] Creating items from passthrough data\"",
+          "end_location": {
+            "column": 79,
+            "row": 299
+          },
+          "location": {
+            "column": 19,
+            "row": 299
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 19,
+      "row": 299
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 299,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 81,
+      "row": 309
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/TrackerWorld.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"[FunkinWorldTracker] Setting access rules from tracker data\"",
+          "end_location": {
+            "column": 81,
+            "row": 309
+          },
+          "location": {
+            "column": 19,
+            "row": 309
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 19,
+      "row": 309
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 309,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 61,
+      "row": 314
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/TrackerWorld.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"[FunkinWorldTracker] ✓ Access rules set\"",
+          "end_location": {
+            "column": 61,
+            "row": 314
+          },
+          "location": {
+            "column": 19,
+            "row": 314
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 19,
+      "row": 314
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 314,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 63,
+      "row": 316
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/TrackerWorld.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"[TrackerWorld] ✓ Created FunkinWorldTracker with:\"",
+          "end_location": {
+            "column": 63,
+            "row": 316
+          },
+          "location": {
+            "column": 11,
+            "row": 316
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 11,
+      "row": 316
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 316,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 17,
+      "row": 118
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 118
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 118,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 29,
+      "row": 312
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 14,
+      "row": 312
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 312,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 30,
+      "row": 315
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 315
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 315,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 54,
+      "row": 317
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 39,
+      "row": 317
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 317,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 96,
+      "row": 317
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 81,
+      "row": 317
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 317,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 62,
+      "row": 322
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 47,
+      "row": 322
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 322,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 21,
+      "row": 332
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 332
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 332,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 48,
+      "row": 339
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 33,
+      "row": 339
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 339,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 29,
+      "row": 341
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 14,
+      "row": 341
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 341,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 44,
+      "row": 341
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 36,
+      "row": 341
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 341,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 39,
+      "row": 343
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 343
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 343,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 40,
+      "row": 348
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 348
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 348,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 17,
+      "row": 357
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 357
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 357,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 30,
+      "row": 374
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 374
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 374,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 17,
+      "row": 468
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 468
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 468,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 10,
+      "row": 530
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 530
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 530,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 10,
+      "row": 541
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 541
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 541,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 19,
+      "row": 555
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 555
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 555,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 10,
+      "row": 559
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 559
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 559,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 17,
+      "row": 663
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 663
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 663,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 17,
+      "row": 670
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 670
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 670,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 25,
+      "row": 730
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 730
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 730,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 25,
+      "row": 798
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 798
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 798,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 17,
+      "row": 951
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 951
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 951,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 17,
+      "row": 958
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 958
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 958,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 26,
+      "row": 1291
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 1291
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 1291,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 25,
+      "row": 1295
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 1295
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 1295,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 21,
+      "row": 1300
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 1300
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 1300,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 17,
+      "row": 1405
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 1405
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 1405,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 21,
+      "row": 1867
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 1867
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 1867,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 14,
+      "row": 1871
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 1871
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 1871,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 17,
+      "row": 1889
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 1889
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 1889,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 25,
+      "row": 1905
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 1905
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 1905,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 18,
+      "row": 1913
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 1913
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 1913,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 33,
+      "row": 1954
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 1954
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 1954,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 48,
+      "row": 1954
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 40,
+      "row": 1954
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 1954,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 33,
+      "row": 1956
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 1956
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 1956,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 49,
+      "row": 1956
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 40,
+      "row": 1956
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 1956,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 21,
+      "row": 1964
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 1964
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 1964,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 17,
+      "row": 2185
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 2185
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 2185,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 24,
+      "row": 2641
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 2641
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 2641,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 24,
+      "row": 2691
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 2691
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 2691,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 29,
+      "row": 2697
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 2697
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 2697,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 21,
+      "row": 2706
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 2706
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 2706,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 28,
+      "row": 2712
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 2712
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 2712,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 28,
+      "row": 2938
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 2938
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 2938,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 33,
+      "row": 2944
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 2944
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 2944,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "B023",
+    "end_location": {
+      "column": 57,
+      "row": 2945
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 55,
+      "row": 2945
+    },
+    "message": "Function definition does not bind loop variable `_g`",
+    "name": "function-uses-loop-variable",
+    "noqa_row": 2945,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/function-uses-loop-variable"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 25,
+      "row": 2953
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 2953
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 2953,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 32,
+      "row": 2959
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 2959
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 2959,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 21,
+      "row": 3170
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 3170
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 3170,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 14,
+      "row": 3281
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 3281
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 3281,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 17,
+      "row": 3414
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 3414
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 3414,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 47,
+      "row": 3844
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 3844
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 3844,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 17,
+      "row": 4246
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 4246
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 4246,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 23,
+      "row": 4331
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 22,
+      "row": 4331
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 4331,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 24,
+      "row": 4366
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 23,
+      "row": 4366
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 4366,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 20,
+      "row": 4529
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 4529
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 4529,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 25,
+      "row": 4645
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 4645
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 4645,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 28,
+      "row": 4647
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 4647
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 4647,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 36,
+      "row": 4667
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 4667
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 4667,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 36,
+      "row": 4682
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 4682
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 4682,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 28,
+      "row": 4744
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 4744
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 4744,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 24,
+      "row": 4772
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 4772
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 4772,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 37,
+      "row": 5874
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 5874
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 5874,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 33,
+      "row": 5914
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 5914
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 5914,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "E712",
+    "end_location": {
+      "column": 36,
+      "row": 6365
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "not me.expr(e1)",
+          "end_location": {
+            "column": 36,
+            "row": 6365
+          },
+          "location": {
+            "column": 17,
+            "row": 6365
+          }
+        }
+      ],
+      "message": "Replace with `not me.expr(e1)`"
+    },
+    "location": {
+      "column": 17,
+      "row": 6365
+    },
+    "message": "Avoid inequality comparisons to `True`; use `not me.expr(e1):` for false checks",
+    "name": "true-false-comparison",
+    "noqa_row": 6365,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/true-false-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E712",
+    "end_location": {
+      "column": 44,
+      "row": 6366
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "me.expr(e2)",
+          "end_location": {
+            "column": 44,
+            "row": 6366
+          },
+          "location": {
+            "column": 25,
+            "row": 6366
+          }
+        }
+      ],
+      "message": "Replace with `me.expr(e2)`"
+    },
+    "location": {
+      "column": 25,
+      "row": 6366
+    },
+    "message": "Avoid equality comparisons to `True`; use `me.expr(e2):` for truth checks",
+    "name": "true-false-comparison",
+    "noqa_row": 6366,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/true-false-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E712",
+    "end_location": {
+      "column": 36,
+      "row": 6371
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "me.expr(e1)",
+          "end_location": {
+            "column": 36,
+            "row": 6371
+          },
+          "location": {
+            "column": 17,
+            "row": 6371
+          }
+        }
+      ],
+      "message": "Replace with `me.expr(e1)`"
+    },
+    "location": {
+      "column": 17,
+      "row": 6371
+    },
+    "message": "Avoid equality comparisons to `True`; use `me.expr(e1):` for truth checks",
+    "name": "true-false-comparison",
+    "noqa_row": 6371,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/true-false-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E712",
+    "end_location": {
+      "column": 44,
+      "row": 6372
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "me.expr(e2)",
+          "end_location": {
+            "column": 44,
+            "row": 6372
+          },
+          "location": {
+            "column": 25,
+            "row": 6372
+          }
+        }
+      ],
+      "message": "Replace with `me.expr(e2)`"
+    },
+    "location": {
+      "column": 25,
+      "row": 6372
+    },
+    "message": "Avoid equality comparisons to `True`; use `me.expr(e2):` for truth checks",
+    "name": "true-false-comparison",
+    "noqa_row": 6372,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/true-false-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 14,
+      "row": 6422
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 6422
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 6422,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 36,
+      "row": 6440
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 6440
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 6440,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "B016",
+    "end_location": {
+      "column": 49,
+      "row": 6442
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 31,
+      "row": 6442
+    },
+    "message": "Cannot raise a literal. Did you intend to return it or raise an Exception?",
+    "name": "raise-literal",
+    "noqa_row": 6442,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-literal"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 14,
+      "row": 6463
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 6463
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 6463,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 36,
+      "row": 6484
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 6484
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 6484,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "B016",
+    "end_location": {
+      "column": 49,
+      "row": 6486
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 31,
+      "row": 6486
+    },
+    "message": "Cannot raise a literal. Did you intend to return it or raise an Exception?",
+    "name": "raise-literal",
+    "noqa_row": 6486,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-literal"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 36,
+      "row": 6492
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 6492
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 6492,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "B016",
+    "end_location": {
+      "column": 49,
+      "row": 6494
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 31,
+      "row": 6494
+    },
+    "message": "Cannot raise a literal. Did you intend to return it or raise an Exception?",
+    "name": "raise-literal",
+    "noqa_row": 6494,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-literal"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 14,
+      "row": 6509
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 6509
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 6509,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 36,
+      "row": 6542
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 6542
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 6542,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "B016",
+    "end_location": {
+      "column": 49,
+      "row": 6544
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 31,
+      "row": 6544
+    },
+    "message": "Cannot raise a literal. Did you intend to return it or raise an Exception?",
+    "name": "raise-literal",
+    "noqa_row": 6544,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-literal"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 40,
+      "row": 6552
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 6552
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 6552,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "B016",
+    "end_location": {
+      "column": 53,
+      "row": 6554
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 35,
+      "row": 6554
+    },
+    "message": "Cannot raise a literal. Did you intend to return it or raise an Exception?",
+    "name": "raise-literal",
+    "noqa_row": 6554,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-literal"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 40,
+      "row": 6561
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 6561
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 6561,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "B016",
+    "end_location": {
+      "column": 53,
+      "row": 6563
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 35,
+      "row": 6563
+    },
+    "message": "Cannot raise a literal. Did you intend to return it or raise an Exception?",
+    "name": "raise-literal",
+    "noqa_row": 6563,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-literal"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 17,
+      "row": 6589
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 6589
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 6589,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 65,
+      "row": 6595
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 6595
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 6595,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 68,
+      "row": 6597
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 6597
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 6597,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 10,
+      "row": 6634
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 6634
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 6634,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E712",
+    "end_location": {
+      "column": 50,
+      "row": 6709
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "not self.expr(e1)",
+          "end_location": {
+            "column": 50,
+            "row": 6709
+          },
+          "location": {
+            "column": 29,
+            "row": 6709
+          }
+        }
+      ],
+      "message": "Replace with `not self.expr(e1)`"
+    },
+    "location": {
+      "column": 29,
+      "row": 6709
+    },
+    "message": "Avoid inequality comparisons to `True`; use `not self.expr(e1):` for false checks",
+    "name": "true-false-comparison",
+    "noqa_row": 6709,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/true-false-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E712",
+    "end_location": {
+      "column": 41,
+      "row": 6752
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "self.expr(econd)",
+          "end_location": {
+            "column": 41,
+            "row": 6752
+          },
+          "location": {
+            "column": 17,
+            "row": 6752
+          }
+        }
+      ],
+      "message": "Replace with `self.expr(econd)`"
+    },
+    "location": {
+      "column": 17,
+      "row": 6752
+    },
+    "message": "Avoid equality comparisons to `True`; use `self.expr(econd):` for truth checks",
+    "name": "true-false-comparison",
+    "noqa_row": 6752,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/true-false-comparison"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 29,
+      "row": 6836
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 6836
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 6836,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 55,
+      "row": 6840
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 6840
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 6840,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 41,
+      "row": 6874
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 6874
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 6874,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "B016",
+    "end_location": {
+      "column": 53,
+      "row": 6876
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 35,
+      "row": 6876
+    },
+    "message": "Cannot raise a literal. Did you intend to return it or raise an Exception?",
+    "name": "raise-literal",
+    "noqa_row": 6876,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-literal"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 41,
+      "row": 6941
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 6941
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 6941,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "B016",
+    "end_location": {
+      "column": 53,
+      "row": 6943
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 35,
+      "row": 6943
+    },
+    "message": "Cannot raise a literal. Did you intend to return it or raise an Exception?",
+    "name": "raise-literal",
+    "noqa_row": 6943,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-literal"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 21,
+      "row": 6984
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 6984
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 6984,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 53,
+      "row": 6989
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 6989
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 6989,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "E712",
+    "end_location": {
+      "column": 41,
+      "row": 7014
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "self.expr(econd)",
+          "end_location": {
+            "column": 41,
+            "row": 7014
+          },
+          "location": {
+            "column": 17,
+            "row": 7014
+          }
+        }
+      ],
+      "message": "Replace with `self.expr(econd)`"
+    },
+    "location": {
+      "column": 17,
+      "row": 7014
+    },
+    "message": "Avoid equality comparisons to `True`; use `self.expr(econd):` for truth checks",
+    "name": "true-false-comparison",
+    "noqa_row": 7014,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/true-false-comparison"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 21,
+      "row": 7065
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 7065
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 7065,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 57,
+      "row": 7075
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 7075
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 7075,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "E712",
+    "end_location": {
+      "column": 47,
+      "row": 7080
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "self.expr(econd)",
+          "end_location": {
+            "column": 47,
+            "row": 7080
+          },
+          "location": {
+            "column": 23,
+            "row": 7080
+          }
+        }
+      ],
+      "message": "Replace with `self.expr(econd)`"
+    },
+    "location": {
+      "column": 23,
+      "row": 7080
+    },
+    "message": "Avoid equality comparisons to `True`; use `self.expr(econd):` for truth checks",
+    "name": "true-false-comparison",
+    "noqa_row": 7080,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/true-false-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E712",
+    "end_location": {
+      "column": 40,
+      "row": 7086
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "self.expr(econd)",
+          "end_location": {
+            "column": 40,
+            "row": 7086
+          },
+          "location": {
+            "column": 16,
+            "row": 7086
+          }
+        }
+      ],
+      "message": "Replace with `self.expr(econd)`"
+    },
+    "location": {
+      "column": 16,
+      "row": 7086
+    },
+    "message": "Avoid equality comparisons to `True`; use `self.expr(econd):` for truth checks",
+    "name": "true-false-comparison",
+    "noqa_row": 7086,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/true-false-comparison"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 21,
+      "row": 7090
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 7090
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 7090,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 57,
+      "row": 7100
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 7100
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 7100,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 17,
+      "row": 7111
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 7111
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 7111,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 21,
+      "row": 7130
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 7130
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 7130,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 57,
+      "row": 7140
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 7140
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 7140,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 32,
+      "row": 7155
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 7155
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 7155,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "B016",
+    "end_location": {
+      "column": 45,
+      "row": 7157
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 27,
+      "row": 7157
+    },
+    "message": "Cannot raise a literal. Did you intend to return it or raise an Exception?",
+    "name": "raise-literal",
+    "noqa_row": 7157,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-literal"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 28,
+      "row": 7166
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 7166
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 7166,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "B016",
+    "end_location": {
+      "column": 41,
+      "row": 7168
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 23,
+      "row": 7168
+    },
+    "message": "Cannot raise a literal. Did you intend to return it or raise an Exception?",
+    "name": "raise-literal",
+    "noqa_row": 7168,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-literal"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 32,
+      "row": 8970
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 8970
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 8970,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 28,
+      "row": 9003
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 9003
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 9003,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 41,
+      "row": 9090
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 37,
+      "row": 9090
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 9090,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 33,
+      "row": 9165
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 9165
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 9165,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 36,
+      "row": 9432
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 9432
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 9432,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 21,
+      "row": 9920
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 9920
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 9920,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 10,
+      "row": 9967
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 9967
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 9967,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 14,
+      "row": 9969
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 9969
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 9969,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 10,
+      "row": 9982
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 9982
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 9982,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 14,
+      "row": 9984
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 9984
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 9984,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 14,
+      "row": 9986
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 9986
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 9986,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 17,
+      "row": 10024
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 10024
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 10024,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 10,
+      "row": 10080
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 10080
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 10080,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 14,
+      "row": 10083
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 10083
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 10083,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 14,
+      "row": 10177
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 10177
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 10177,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 18,
+      "row": 10180
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 10180
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 10180,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 15,
+      "row": 10646
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 14,
+      "row": 10646
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 10646,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 14,
+      "row": 10680
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 10680
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 10680,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 17,
+      "row": 11760
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 11760
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 11760,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 17,
+      "row": 11779
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 11779
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 11779,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "E722",
+    "end_location": {
+      "column": 15,
+      "row": 12157
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 12157
+    },
+    "message": "Do not use bare `except`",
+    "name": "bare-except",
+    "noqa_row": 12157,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/bare-except"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 17,
+      "row": 12159
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 12157
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 12157,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "B023",
+    "end_location": {
+      "column": 63,
+      "row": 12385
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 58,
+      "row": 12385
+    },
+    "message": "Function definition does not bind loop variable `value`",
+    "name": "function-uses-loop-variable",
+    "noqa_row": 12385,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/function-uses-loop-variable"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 44,
+      "row": 12387
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 33,
+      "row": 12387
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 12387,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "B016",
+    "end_location": {
+      "column": 57,
+      "row": 12389
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 39,
+      "row": 12389
+    },
+    "message": "Cannot raise a literal. Did you intend to return it or raise an Exception?",
+    "name": "raise-literal",
+    "noqa_row": 12389,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-literal"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 36,
+      "row": 12753
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 12753
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 12753,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 29,
+      "row": 12765
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 12765
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 12765,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "E712",
+    "end_location": {
+      "column": 43,
+      "row": 12789
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "not comma",
+          "end_location": {
+            "column": 43,
+            "row": 12789
+          },
+          "location": {
+            "column": 29,
+            "row": 12789
+          }
+        }
+      ],
+      "message": "Replace with `not comma`"
+    },
+    "location": {
+      "column": 29,
+      "row": 12789
+    },
+    "message": "Avoid equality comparisons to `False`; use `not comma:` for false checks",
+    "name": "true-false-comparison",
+    "noqa_row": 12789,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/true-false-comparison"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 36,
+      "row": 12798
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 12798
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 12798,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "E712",
+    "end_location": {
+      "column": 69,
+      "row": 12914
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "not comma1",
+          "end_location": {
+            "column": 69,
+            "row": 12914
+          },
+          "location": {
+            "column": 54,
+            "row": 12914
+          }
+        }
+      ],
+      "message": "Replace with `not comma1`"
+    },
+    "location": {
+      "column": 54,
+      "row": 12914
+    },
+    "message": "Avoid equality comparisons to `False`; use `not comma1:` for false checks",
+    "name": "true-false-comparison",
+    "noqa_row": 12914,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/true-false-comparison"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 36,
+      "row": 12972
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 12972
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 12972,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 20,
+      "row": 13009
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 13009
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 13009,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 25,
+      "row": 13066
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 13066
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 13066,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 28,
+      "row": 13068
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 13068
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 13068,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 36,
+      "row": 13088
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 13088
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 13088,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 36,
+      "row": 13103
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 13103
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 13103,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 28,
+      "row": 13165
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 13165
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 13165,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "B018",
+    "end_location": {
+      "column": 24,
+      "row": 13193
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/Yutautil.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 13193
+    },
+    "message": "Found useless expression. Either assign it to a variable or remove it.",
+    "name": "useless-expression",
+    "noqa_row": 13193,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-expression"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 25,
+      "row": 32
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 31
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 31,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 21,
+      "row": 44
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 43
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 43,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 21,
+      "row": 66
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 65
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 65,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 13,
+      "row": 76
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 75
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 75,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "F403",
+    "end_location": {
+      "column": 23,
+      "row": 82
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 1,
+      "row": 82
+    },
+    "message": "`from .Options import *` used; unable to detect undefined names",
+    "name": "undefined-local-with-import-star",
+    "noqa_row": 82,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 21,
+      "row": 173
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 172
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 172,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "S102",
+    "end_location": {
+      "column": 21,
+      "row": 238
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 238
+    },
+    "message": "Use of `exec` detected",
+    "name": "exec-builtin",
+    "noqa_row": 238,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/exec-builtin"
+  },
+  {
+    "cell": null,
+    "code": "S112",
+    "end_location": {
+      "column": 25,
+      "row": 299
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 298
+    },
+    "message": "`try`-`except`-`continue` detected, consider logging the exception",
+    "name": "try-except-continue",
+    "noqa_row": 298,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-continue"
+  },
+  {
+    "cell": null,
+    "code": "S112",
+    "end_location": {
+      "column": 25,
+      "row": 367
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 366
+    },
+    "message": "`try`-`except`-`continue` detected, consider logging the exception",
+    "name": "try-except-continue",
+    "noqa_row": 366,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-continue"
+  },
+  {
+    "cell": null,
+    "code": "S102",
+    "end_location": {
+      "column": 25,
+      "row": 393
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 393
+    },
+    "message": "Use of `exec` detected",
+    "name": "exec-builtin",
+    "noqa_row": 393,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/exec-builtin"
+  },
+  {
+    "cell": null,
+    "code": "S112",
+    "end_location": {
+      "column": 29,
+      "row": 449
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 448
+    },
+    "message": "`try`-`except`-`continue` detected, consider logging the exception",
+    "name": "try-except-continue",
+    "noqa_row": 448,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-continue"
+  },
+  {
+    "cell": null,
+    "code": "E722",
+    "end_location": {
+      "column": 23,
+      "row": 476
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 476
+    },
+    "message": "Do not use bare `except`",
+    "name": "bare-except",
+    "noqa_row": 476,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/bare-except"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 38,
+      "row": 996
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 996
+    },
+    "message": "`fnf_option_groups` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 996,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 27,
+      "row": 1016
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 14,
+      "row": 1016
+    },
+    "message": "`FunkinOptions` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 1016,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 58,
+      "row": 1017
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 38,
+      "row": 1017
+    },
+    "message": "`PerGameCommonOptions` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 1017,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 76,
+      "row": 1017
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 63,
+      "row": 1017
+    },
+    "message": "`FunkinOptions` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 1017,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "S102",
+    "end_location": {
+      "column": 29,
+      "row": 1143
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 1143
+    },
+    "message": "Use of `exec` detected",
+    "name": "exec-builtin",
+    "noqa_row": 1143,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/exec-builtin"
+  },
+  {
+    "cell": null,
+    "code": "S102",
+    "end_location": {
+      "column": 33,
+      "row": 1305
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 1305
+    },
+    "message": "Use of `exec` detected",
+    "name": "exec-builtin",
+    "noqa_row": 1305,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/exec-builtin"
+  },
+  {
+    "cell": null,
+    "code": "E722",
+    "end_location": {
+      "column": 31,
+      "row": 1395
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 1395
+    },
+    "message": "Do not use bare `except`",
+    "name": "bare-except",
+    "noqa_row": 1395,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/bare-except"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 67,
+      "row": 1530
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"Skipping invalid location: empty name\"",
+          "end_location": {
+            "column": 67,
+            "row": 1530
+          },
+          "location": {
+            "column": 27,
+            "row": 1530
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 27,
+      "row": 1530
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 1530,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 75,
+      "row": 1799
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"ERROR: Still found duplicates after auto-fix!\"",
+          "end_location": {
+            "column": 75,
+            "row": 1799
+          },
+          "location": {
+            "column": 27,
+            "row": 1799
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 27,
+      "row": 1799
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 1799,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 75,
+      "row": 1853
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"ERROR: Still found duplicates after auto-fix!\"",
+          "end_location": {
+            "column": 75,
+            "row": 1853
+          },
+          "location": {
+            "column": 27,
+            "row": 1853
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 27,
+      "row": 1853
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 1853,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 105,
+      "row": 1925
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"\\nContact Yutamon or Z11Gaming on Discord with the above error details for support.\"",
+          "end_location": {
+            "column": 105,
+            "row": 1925
+          },
+          "location": {
+            "column": 19,
+            "row": 1925
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 19,
+      "row": 1925
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 1925,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "S112",
+    "end_location": {
+      "column": 25,
+      "row": 2015
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 2014
+    },
+    "message": "`try`-`except`-`continue` detected, consider logging the exception",
+    "name": "try-except-continue",
+    "noqa_row": 2014,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-continue"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 21,
+      "row": 2024
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 2023
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 2023,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 91,
+      "row": 2137
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"[__new__] Detected tracker mode, creating FunkinWorldTracker instance\"",
+          "end_location": {
+            "column": 91,
+            "row": 2137
+          },
+          "location": {
+            "column": 19,
+            "row": 2137
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 19,
+      "row": 2137
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 2137,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 52,
+      "row": 2172
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"[__new__ DEBUG] Context detection:\"",
+          "end_location": {
+            "column": 52,
+            "row": 2172
+          },
+          "location": {
+            "column": 15,
+            "row": 2172
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 15,
+      "row": 2172
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 2172,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 106,
+      "row": 2206
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"[__new__ WARNING] No item_name_to_id found in passthrough UTSlotData\"",
+          "end_location": {
+            "column": 106,
+            "row": 2206
+          },
+          "location": {
+            "column": 35,
+            "row": 2206
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 35,
+      "row": 2206
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 2206,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 110,
+      "row": 2214
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"[__new__ WARNING] No location_name_to_id found in passthrough UTSlotData\"",
+          "end_location": {
+            "column": 110,
+            "row": 2214
+          },
+          "location": {
+            "column": 35,
+            "row": 2214
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 35,
+      "row": 2214
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 2214,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 103,
+      "row": 2222
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"[__new__ WARNING] No song_bundles found in passthrough UTSlotData\"",
+          "end_location": {
+            "column": 103,
+            "row": 2222
+          },
+          "location": {
+            "column": 35,
+            "row": 2222
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 35,
+      "row": 2222
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 2222,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 101,
+      "row": 2240
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"[__new__ WARNING] No song_items found in passthrough UTSlotData\"",
+          "end_location": {
+            "column": 101,
+            "row": 2240
+          },
+          "location": {
+            "column": 35,
+            "row": 2240
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 35,
+      "row": 2240
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 2240,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 107,
+      "row": 2244
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"[__new__ WARNING] No UTSlotData found in passthrough for Friday Night Funkin'\"",
+          "end_location": {
+            "column": 107,
+            "row": 2244
+          },
+          "location": {
+            "column": 27,
+            "row": 2244
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 27,
+      "row": 2244
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 2244,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 90,
+      "row": 2246
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"[__new__ WARNING] Friday Night Funkin' not in re_gen_passthrough\"",
+          "end_location": {
+            "column": 90,
+            "row": 2246
+          },
+          "location": {
+            "column": 23,
+            "row": 2246
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 23,
+      "row": 2246
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 2246,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 105,
+      "row": 2248
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"[__new__ WARNING] Tracker context detected but no re_gen_passthrough data available\"",
+          "end_location": {
+            "column": 105,
+            "row": 2248
+          },
+          "location": {
+            "column": 19,
+            "row": 2248
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 19,
+      "row": 2248
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 2248,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "E722",
+    "end_location": {
+      "column": 19,
+      "row": 2298
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 2298
+    },
+    "message": "Do not use bare `except`",
+    "name": "bare-except",
+    "noqa_row": 2298,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/bare-except"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 38,
+      "row": 2353
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 2353
+    },
+    "message": "`AllowMods` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 2353,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 41,
+      "row": 2354
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 30,
+      "row": 2354
+    },
+    "message": "`SongStarter` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 2354,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 38,
+      "row": 2355
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 2355
+    },
+    "message": "`UnlockType` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 2355,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 42,
+      "row": 2356
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 30,
+      "row": 2356
+    },
+    "message": "`UnlockMethod` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 2356,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 37,
+      "row": 2357
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 27,
+      "row": 2357
+    },
+    "message": "`trapAmount` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 2357,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 36,
+      "row": 2358
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 27,
+      "row": 2358
+    },
+    "message": "`bbcWeight` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 2358,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 49,
+      "row": 2359
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 34,
+      "row": 2359
+    },
+    "message": "`ghostChatWeight` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 2359,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 43,
+      "row": 2360
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 34,
+      "row": 2360
+    },
+    "message": "`svcWeight` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 2360,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 51,
+      "row": 2361
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 37,
+      "row": 2361
+    },
+    "message": "`tutorialWeight` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 2361,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 54,
+      "row": 2362
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 39,
+      "row": 2362
+    },
+    "message": "`fakeTransWeight` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 2362,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 59,
+      "row": 2363
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 45,
+      "row": 2363
+    },
+    "message": "`chartModWeight` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 2363,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 50,
+      "row": 2364
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 34,
+      "row": 2364
+    },
+    "message": "`TicketPercentage` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 2364,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 57,
+      "row": 2365
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 38,
+      "row": 2365
+    },
+    "message": "`TicketWinPercentage` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 2365,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 44,
+      "row": 2366
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 33,
+      "row": 2366
+    },
+    "message": "`gradeNeeded` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 2366,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 45,
+      "row": 2367
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 31,
+      "row": 2367
+    },
+    "message": "`accuracyNeeded` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 2367,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 40,
+      "row": 2368
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 30,
+      "row": 2368
+    },
+    "message": "`CheckCount` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 2368,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 79,
+      "row": 2438
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"\\n⚠️  WARNING: Template/Weighted YAML Detected ⚠️\"",
+          "end_location": {
+            "column": 79,
+            "row": 2438
+          },
+          "location": {
+            "column": 27,
+            "row": 2438
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 27,
+      "row": 2438
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 2438,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 135,
+      "row": 2439
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"It is not recommended to use a Template or Weighted YAML when generating a game for Friday Night Funkin'.\"",
+          "end_location": {
+            "column": 135,
+            "row": 2439
+          },
+          "location": {
+            "column": 27,
+            "row": 2439
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 27,
+      "row": 2439
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 2439,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 93,
+      "row": 2441
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"\\nIt is recommended to use Mixtape Engine to generate settings.\"",
+          "end_location": {
+            "column": 93,
+            "row": 2441
+          },
+          "location": {
+            "column": 27,
+            "row": 2441
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 27,
+      "row": 2441
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 2441,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 40,
+      "row": 2442
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"\\nOptions:\"",
+          "end_location": {
+            "column": 40,
+            "row": 2442
+          },
+          "location": {
+            "column": 27,
+            "row": 2442
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 27,
+      "row": 2442
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 2442,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 77,
+      "row": 2443
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"1. Continue generation anyway (not recommended)\"",
+          "end_location": {
+            "column": 77,
+            "row": 2443
+          },
+          "location": {
+            "column": 27,
+            "row": 2443
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 27,
+      "row": 2443
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 2443,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 81,
+      "row": 2444
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"2. Cancel generation and create proper player YAMLs\"",
+          "end_location": {
+            "column": 81,
+            "row": 2444
+          },
+          "location": {
+            "column": 27,
+            "row": 2444
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 27,
+      "row": 2444
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 2444,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 88,
+      "row": 2448
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"Would you like to continue? (1/2): \"",
+          "end_location": {
+            "column": 88,
+            "row": 2448
+          },
+          "location": {
+            "column": 50,
+            "row": 2448
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 50,
+      "row": 2448
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 2448,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "E722",
+    "end_location": {
+      "column": 31,
+      "row": 2453
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 2453
+    },
+    "message": "Do not use bare `except`",
+    "name": "bare-except",
+    "noqa_row": 2453,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/bare-except"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 215,
+      "row": 2461
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"Generation cancelled due to weighted/template YAML usage. Please create proper player YAML files using Mixtape Engine or convert your weighted YAMLs to simple format.\"",
+          "end_location": {
+            "column": 215,
+            "row": 2461
+          },
+          "location": {
+            "column": 46,
+            "row": 2461
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 46,
+      "row": 2461
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 2461,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 71,
+      "row": 2506
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"[UT Re-gen] Falling back to normal generation\"",
+          "end_location": {
+            "column": 71,
+            "row": 2506
+          },
+          "location": {
+            "column": 23,
+            "row": 2506
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 23,
+      "row": 2506
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 2506,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 77,
+      "row": 2807
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"[UT Re-gen] ===============================================\"",
+          "end_location": {
+            "column": 77,
+            "row": 2807
+          },
+          "location": {
+            "column": 15,
+            "row": 2807
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 15,
+      "row": 2807
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 2807,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 77,
+      "row": 2809
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"[UT Re-gen] ===============================================\"",
+          "end_location": {
+            "column": 77,
+            "row": 2809
+          },
+          "location": {
+            "column": 15,
+            "row": 2809
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 15,
+      "row": 2809
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 2809,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 79,
+      "row": 2821
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"[UT Re-gen WARNING] No item ID mappings in UTSlotData\"",
+          "end_location": {
+            "column": 79,
+            "row": 2821
+          },
+          "location": {
+            "column": 23,
+            "row": 2821
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 23,
+      "row": 2821
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 2821,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 83,
+      "row": 2830
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"[UT Re-gen WARNING] No location ID mappings in UTSlotData\"",
+          "end_location": {
+            "column": 83,
+            "row": 2830
+          },
+          "location": {
+            "column": 23,
+            "row": 2830
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 23,
+      "row": 2830
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 2830,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 89,
+      "row": 2967
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 2967
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 2967,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 77,
+      "row": 2969
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"[UT Re-gen] ===============================================\"",
+          "end_location": {
+            "column": 77,
+            "row": 2969
+          },
+          "location": {
+            "column": 15,
+            "row": 2969
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 15,
+      "row": 2969
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 2969,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 77,
+      "row": 2971
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"[UT Re-gen] ===============================================\"",
+          "end_location": {
+            "column": 77,
+            "row": 2971
+          },
+          "location": {
+            "column": 15,
+            "row": 2971
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 15,
+      "row": 2971
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 2971,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 75,
+      "row": 2975
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"[UT Re-gen WARNING] No generation_data in passthrough\"",
+          "end_location": {
+            "column": 75,
+            "row": 2975
+          },
+          "location": {
+            "column": 19,
+            "row": 2975
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 19,
+      "row": 2975
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 2975,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 78,
+      "row": 3002
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 69,
+      "row": 3002
+    },
+    "message": "`AllowMods` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 3002,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 77,
+      "row": 3004
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 67,
+      "row": 3004
+    },
+    "message": "`UnlockType` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 3004,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 83,
+      "row": 3005
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 71,
+      "row": 3005
+    },
+    "message": "`UnlockMethod` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 3005,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 77,
+      "row": 3100
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"[UT Re-gen] ===============================================\"",
+          "end_location": {
+            "column": 77,
+            "row": 3100
+          },
+          "location": {
+            "column": 15,
+            "row": 3100
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 15,
+      "row": 3100
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 3100,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 91,
+      "row": 3102
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"[UT Re-gen] All item/location IDs guaranteed to match original generation\"",
+          "end_location": {
+            "column": 91,
+            "row": 3102
+          },
+          "location": {
+            "column": 15,
+            "row": 3102
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 15,
+      "row": 3102
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 3102,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 77,
+      "row": 3103
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"[UT Re-gen] ===============================================\"",
+          "end_location": {
+            "column": 77,
+            "row": 3103
+          },
+          "location": {
+            "column": 15,
+            "row": 3103
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 15,
+      "row": 3103
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 3103,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 130,
+      "row": 3504
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"Sanity completion type is 'on_beating' - checking additional song requirements for starting song\"",
+          "end_location": {
+            "column": 130,
+            "row": 3504
+          },
+          "location": {
+            "column": 31,
+            "row": 3504
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 31,
+      "row": 3504
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 3504,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 70,
+      "row": 4520
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "'UNO Color Filler'",
+          "end_location": {
+            "column": 70,
+            "row": 4520
+          },
+          "location": {
+            "column": 51,
+            "row": 4520
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 51,
+      "row": 4520
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 4520,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 44,
+      "row": 4526
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"Adding 1 PONG item\"",
+          "end_location": {
+            "column": 44,
+            "row": 4526
+          },
+          "location": {
+            "column": 23,
+            "row": 4526
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 23,
+      "row": 4526
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 4526,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 55,
+      "row": 4736
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"=== END ITEM CREATION DEBUG ===\\n\"",
+          "end_location": {
+            "column": 55,
+            "row": 4736
+          },
+          "location": {
+            "column": 19,
+            "row": 4736
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 19,
+      "row": 4736
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 4736,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 52,
+      "row": 4761
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"=== END COMPLETION CONDITION ===\\n\"",
+          "end_location": {
+            "column": 52,
+            "row": 4761
+          },
+          "location": {
+            "column": 15,
+            "row": 4761
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 15,
+      "row": 4761
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 4761,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 17,
+      "row": 4799
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 4798
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 4798,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 96,
+      "row": 5464
+    },
+    "filename": "/Archipelago/worlds/fridaynightfunkin/__init__.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"[fill_slot_data] Called in early tracker mode with empty victory_song_name\"",
+          "end_location": {
+            "column": 96,
+            "row": 5464
+          },
+          "location": {
+            "column": 19,
+            "row": 5464
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 19,
+      "row": 5464
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 5464,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  }
+]

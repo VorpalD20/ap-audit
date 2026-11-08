@@ -1,0 +1,969 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="8" skipped="0" tests="1167" time="5.890" timestamp="2026-11-08T06:58:01.012123+00:00" hostname="16f2472f34f4"><testcase classname="test.general.test_entrances.TestBase" name="test_all_state_before_connect_entrances" time="0.010" /><testcase classname="test.general.test_entrances.TestBase" name="test_entrance_connection_steps" time="0.003" /><testcase classname="test.general.test_groups.TestNameGroups" name="test_item_name_groups_not_empty" time="0.001" /><testcase classname="test.general.test_groups.TestNameGroups" name="test_location_name_groups_not_empty" time="0.000" /><testcase classname="test.general.test_ids.TestIDs" name="test_duplicate_item_ids" time="0.000" /><testcase classname="test.general.test_ids.TestIDs" name="test_duplicate_location_ids" time="0.000" /><testcase classname="test.general.test_ids.TestIDs" name="test_postgen_datapackage" time="0.006" /><testcase classname="test.general.test_ids.TestIDs" name="test_range_items" time="0.000" /><testcase classname="test.general.test_ids.TestIDs" name="test_range_locations" time="0.000" /><testcase classname="test.general.test_ids.TestIDs" name="test_reserved_items" time="0.000" /><testcase classname="test.general.test_ids.TestIDs" name="test_reserved_locations" time="0.000" /><testcase classname="test.general.test_implemented.TestImplemented" name="test_completion_condition" time="0.003" /><testcase classname="test.general.test_implemented.TestImplemented" name="test_entrance_parents" time="0.003" /><testcase classname="test.general.test_implemented.TestImplemented" name="test_explicit_indirect_conditions_spheres" time="0.005" /><testcase classname="test.general.test_implemented.TestImplemented" name="test_no_failed_world_loads" time="0.000" /><testcase classname="test.general.test_implemented.TestImplemented" name="test_no_items_or_locations_or_regions_submitted_in_init" time="0.002" /><testcase classname="test.general.test_implemented.TestImplemented" name="test_prefill_items" time="0.003" /><testcase classname="test.general.test_implemented.TestImplemented" name="test_slot_data" time="0.007" /><testcase classname="test.general.test_implemented.TestImplemented" name="test_stage_methods" time="0.000" /><testcase classname="test.general.test_items.TestBase" name="test_create_item" time="0.122"><failure message="AttributeError: 'NoneType' object has no attribute 'code'">self = &lt;test.general.test_items.TestBase testMethod=test_create_item&gt;
+
+    def test_create_item(self):
+        """Test that a world can successfully create all items in its datapackage"""
+        for game_name, world_type in AutoWorldRegister.testable_worlds.items():
+            multiworld = setup_solo_multiworld(world_type, steps=("generate_early", "create_regions", "create_items"))
+            proxy_world = multiworld.worlds[1]
+            for item_name in world_type.item_name_to_id:
+                test_state = CollectionState(multiworld)
+                with self.subTest("Create Item", item_name=item_name, game_name=game_name):
+&gt;                   item = proxy_world.create_item(item_name)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test/general/test_items.py:24: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+worlds/fridaynightfunkin/__init__.py:3214: in create_item
+    return FunkinItem(name, self.player, song)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;[AttributeError("'worlds.fridaynightfunkin.Items.FunkinItem' object has no attribute 'location'") raised in repr()] FunkinItem object at 0x7fd860862f90&gt;
+name = "Girlfriend's Love", player = 1, data = None
+
+    def __init__(self, name: str, player: int, data: Union[SongData]) -&gt; None:
+&gt;       super().__init__(name, ItemClassification.progression, data.code, player)
+                                                               ^^^^^^^^^
+E       AttributeError: 'NoneType' object has no attribute 'code'
+
+worlds/fridaynightfunkin/Items.py:98: AttributeError</failure><failure message="AssertionError: 'Lonely Friday Night' != &quot;Girlfriend's Love&quot;&#10;- Lonely Friday Night&#10;+ Girlfriend's Love">self = &lt;test.general.test_items.TestBase testMethod=test_create_item&gt;
+
+    def test_create_item(self):
+        """Test that a world can successfully create all items in its datapackage"""
+        for game_name, world_type in AutoWorldRegister.testable_worlds.items():
+            multiworld = setup_solo_multiworld(world_type, steps=("generate_early", "create_regions", "create_items"))
+            proxy_world = multiworld.worlds[1]
+            for item_name in world_type.item_name_to_id:
+                test_state = CollectionState(multiworld)
+                with self.subTest("Create Item", item_name=item_name, game_name=game_name):
+                    item = proxy_world.create_item(item_name)
+    
+                with self.subTest("Item Name", item_name=item_name, game_name=game_name):
+&gt;                   self.assertEqual(item.name, item_name)
+E                   AssertionError: 'Lonely Friday Night' != "Girlfriend's Love"
+E                   - Lonely Friday Night
+E                   + Girlfriend's Love
+
+test/general/test_items.py:27: AssertionError</failure></testcase><testcase classname="test.general.test_items.TestBase" name="test_item_count_equal_locations" time="0.003" /><testcase classname="test.general.test_items.TestBase" name="test_item_links" time="0.208"><failure message="IndexError: list index out of range">cls = &lt;class 'worlds.fridaynightfunkin.FunkinWorld'&gt;
+multiworld = &lt;BaseClasses.MultiWorld object at 0x7fd86142c410&gt;, player = 3
+
+    def __new__(cls, multiworld: MultiWorld, player: int):
+        # TRACKER MODE: Detect early and return FunkinWorldTracker instance instead
+        # This must happen before any other instance creation
+        is_tracker_mode = (
+            getattr(multiworld, 'generation_is_fake', False) and
+            hasattr(multiworld, 're_gen_passthrough') and
+            multiworld.re_gen_passthrough and
+            'Friday Night Funkin' in multiworld.re_gen_passthrough
+        )
+    
+        if is_tracker_mode and not getattr(cls, '_is_tracker_world', False):
+            # Create dynamic tracker world class with pre-populated IDs
+            print(f"[__new__] Detected tracker mode, creating FunkinWorldTracker instance")
+            try:
+                passthrough = multiworld.re_gen_passthrough['Friday Night Funkin']
+                FunkinWorldTracker = create_tracker_world_class(passthrough)
+    
+                # Update multiworld's world registry to use the tracker class
+                # This ensures Archipelago uses the correct class-level data
+                if hasattr(multiworld, 'worlds') and player in multiworld.worlds:
+                    # Update the class in the multiworld to ensure consistent ID resolution
+                    print(f"[__new__] Updating multiworld.worlds[{player}] to use FunkinWorldTracker")
+    
+                # Create instance of tracker world
+                instance = object.__new__(FunkinWorldTracker)
+                return instance
+            except Exception as e:
+                print(f"[__new__ ERROR] Failed to create tracker world: {e}")
+                import traceback
+                traceback.print_exc()
+                # Fall back to normal FunkinWorld
+                class TrackingError(Exception):
+                    pass
+                raise TrackingError(f"Failed to create tracker world: {e}") from e
+    
+        # Normal path for real generation
+        instance = super(FunkinWorld, cls).__new__(cls)
+    
+        # CRITICAL: Validate that this is a valid generation context
+        # The class-level stuff() data was populated at module load time based on YAMLs
+        # If this world is being initialized outside of generation, the YAML data will be wrong
+        is_tracker = (getattr(multiworld, 'generation_is_fake', False) or
+                      (hasattr(multiworld, 're_gen_passthrough') and multiworld.re_gen_passthrough))
+    
+        is_real_generation = (hasattr(multiworld, 'seed') and multiworld.seed is not None and not is_tracker)
+    
+        # Debug: Print condition evaluation
+        print(f"[__new__ DEBUG] Context detection:")
+        print(f"  generation_is_fake: {getattr(multiworld, 'generation_is_fake', False)}")
+        print(f"  has re_gen_passthrough: {hasattr(multiworld, 're_gen_passthrough')}")
+        if hasattr(multiworld, 're_gen_passthrough'):
+            print(f"  re_gen_passthrough content: {bool(multiworld.re_gen_passthrough)}")
+        print(f"  has seed: {hasattr(multiworld, 'seed')}, seed is not None: {multiworld.seed is not None if hasattr(multiworld, 'seed') else 'N/A'}")
+        print(f"  has worlds: {hasattr(multiworld, 'worlds')}, worlds populated: {bool(multiworld.worlds) if hasattr(multiworld, 'worlds') else 'N/A'}")
+        print(f"  → is_tracker: {is_tracker}")
+        print(f"  → is_real_generation: {is_real_generation}")
+    
+        if not is_tracker and not is_real_generation:
+            raise RuntimeError(
+                "FunkinWorld cannot be initialized outside of generation context. "
+                "This typically happens when the world is loaded by a client or in an invalid state. "
+                "Ensure you are running actual generation or the tracker is properly set up."
+            )
+    
+        print(f"[__new__] Valid generation context detected - {'Tracker' if is_tracker else 'Real Generation'}")
+    
+        # Restore from passthrough before world initialization (Tracker only)
+        if is_tracker and hasattr(multiworld, "re_gen_passthrough") and multiworld.re_gen_passthrough:
+            if "Friday Night Funkin" in multiworld.re_gen_passthrough:
+                passthrough = multiworld.re_gen_passthrough["Friday Night Funkin"]
+                ut_slot_data = passthrough.get("UTSlotData", {})
+    
+                if ut_slot_data:
+                    print("[__new__] Re-generation passthrough detected, restoring ID mappings from UTSlotData.")
+                    try:
+                        # Restore class-level item ID mappings
+                        restored_item_mappings = ut_slot_data.get('item_name_to_id', {})
+                        if restored_item_mappings:
+                            cls.item_name_to_id = restored_item_mappings.copy()
+                            print(f"[__new__] ✓ Restored {len(restored_item_mappings)} item ID mappings from passthrough")
+                        else:
+                            print(f"[__new__ WARNING] No item_name_to_id found in passthrough UTSlotData")
+    
+                        # Restore class-level location ID mappings
+                        restored_location_mappings = ut_slot_data.get('location_name_to_id', {})
+                        if restored_location_mappings:
+                            cls.location_name_to_id = restored_location_mappings.copy()
+                            print(f"[__new__] ✓ Restored {len(restored_location_mappings)} location ID mappings from passthrough")
+                        else:
+                            print(f"[__new__ WARNING] No location_name_to_id found in passthrough UTSlotData")
+    
+                        # Restore song_bundles from passthrough
+                        restored_bundles = ut_slot_data.get('song_bundles', {})
+                        if restored_bundles:
+                            cls.song_bundles = restored_bundles.copy()
+                            print(f"[__new__] ✓ Restored {len(restored_bundles)} song bundles from passthrough")
+                        else:
+                            print(f"[__new__ WARNING] No song_bundles found in passthrough UTSlotData")
+    
+                        # Restore song_items from passthrough - CRITICAL for item creation in tracker mode
+                        restored_song_items_data = ut_slot_data.get('song_items', {})
+                        if restored_song_items_data:
+                            # Reconstruct SongData objects from the simplified passthrough format
+                            reconstructed_song_items = {}
+                            for song_name, item_data in restored_song_items_data.items():
+                                reconstructed_song_items[song_name] = SongData(
+                                    code=item_data.get('code'),
+                                    modded=item_data.get('modded', True),
+                                    songName=item_data.get('songName', song_name),
+                                    playerSongBelongsTo=item_data.get('playerSongBelongsTo', ''),
+                                    playerList=item_data.get('playerList', [])
+                                )
+                            cls.song_items = reconstructed_song_items
+                            print(f"[__new__] ✓ Restored {len(reconstructed_song_items)} song items from passthrough")
+                        else:
+                            print(f"[__new__ WARNING] No song_items found in passthrough UTSlotData")
+                    except Exception as e:
+                        print(f"[__new__ WARNING] Failed to restore ID mappings from passthrough: {e}")
+                else:
+                    print(f"[__new__ WARNING] No UTSlotData found in passthrough for Friday Night Funkin'")
+            else:
+                print(f"[__new__ WARNING] Friday Night Funkin' not in re_gen_passthrough")
+        elif is_tracker:
+            print(f"[__new__ WARNING] Tracker context detected but no re_gen_passthrough data available")
+    
+        player_name = ''
+        player_yaml = None
+        original_song_list = []
+    
+        # For tracker mode, restore player_yaml and original_song_list from passthrough
+        if is_tracker and hasattr(multiworld, "re_gen_passthrough") and multiworld.re_gen_passthrough:
+            if "Friday Night Funkin" in multiworld.re_gen_passthrough:
+                passthrough = multiworld.re_gen_passthrough["Friday Night Funkin"]
+                ut_slot_data = passthrough.get("UTSlotData", {})
+    
+                # Restore player name and song list from passthrough
+                player_name = ut_slot_data.get("player_name", "")
+                original_song_list = ut_slot_data.get("original_song_list", []).copy()
+                player_yaml_data = ut_slot_data.get("player_yaml_data", {})
+    
+                if player_name and player_yaml_data:
+                    # Create a minimal player_yaml object from passthrough data
+                    class RestoredYAML:
+                        def __init__(self, data):
+                            self.name = data.get('name', 'Unknown')
+                            self._song_list = data.get('song_list', [])
+                            self.settings = type('Settings', (), {
+                                'song_limit': data.get('song_limit', 5),
+                                'victory_song': data.get('victory_song', ''),
+                                'starting_song': data.get('starting_song', ''),
+                                'mods_enabled': data.get('mods_enabled', []),
+                                'enable_sanity_locations': data.get('enable_sanity_locations', True),
+                                'sanity_completion_type': data.get('sanity_completion_type', 'on_getting'),
+                            })()
+    
+                        def getSongList(self):
+                            return self._song_list
+    
+                    player_yaml = RestoredYAML(player_yaml_data)
+                    print(f"[__new__] Restored player_yaml for {player_name} from passthrough")
+    
+                    # Also restore all_yamls from passthrough for consistency
+                    restored_yaml_data = ut_slot_data.get('yaml_data_compact', [])
+                    if restored_yaml_data:
+                        restored_all_yamls = [RestoredYAML(yaml_data) for yaml_data in restored_yaml_data]
+                        cls.all_yamls = restored_all_yamls
+                        print(f"[__new__] Restored {len(restored_all_yamls)} all_yamls from passthrough")
+    
+        # If not in tracker mode or restoration failed, find player_yaml from all_yamls
+        if not player_yaml:
+            # Find this player's YAML
+            try:
+&gt;               player_name = multiworld.player_name[player]
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E               KeyError: 3
+
+worlds/fridaynightfunkin/__init__.py:2297: KeyError
+
+During handling of the above exception, another exception occurred:
+
+self = &lt;test.general.test_items.TestBase testMethod=test_item_links&gt;
+
+    def test_item_links(self) -&gt; None:
+        """
+        Tests item link creation by creating a multiworld of 2 worlds for every game and linking their items together.
+        """
+        def setup_link_multiworld(world: Type[World], link_replace: bool) -&gt; None:
+            multiworld = MultiWorld(2)
+            multiworld.game = {1: world.game, 2: world.game}
+            multiworld.player_name = {1: "Linker 1", 2: "Linker 2"}
+            multiworld.set_seed()
+            item_link_group = [{
+                "name": "ItemLinkTest",
+                "item_pool": ["Everything"],
+                "link_replacement": link_replace,
+                "replacement_item": None,
+            }]
+            args = Namespace()
+            for name, option in world.options_dataclass.type_hints.items():
+                setattr(args, name, {1: option.from_any(option.default), 2: option.from_any(option.default)})
+            setattr(args, "item_links",
+                    {1: ItemLinks.from_any(item_link_group), 2: ItemLinks.from_any(item_link_group)})
+            multiworld.set_options(args)
+            multiworld.set_item_links()
+            # groups get added to state during its constructor so this has to be after item links are set
+            multiworld.state = CollectionState(multiworld)
+            gen_steps = ("generate_early", "create_regions", "create_items", "set_rules", "connect_entrances", "generate_basic")
+            for step in gen_steps:
+                call_all(multiworld, step)
+            # link the items together and attempt to fill
+            multiworld.link_items()
+            multiworld._all_state = None
+            call_all(multiworld, "pre_fill")
+            distribute_items_restrictive(multiworld)
+            call_all(multiworld, "post_fill")
+            call_all(multiworld, "finalize_multiworld")
+            self.assertTrue(multiworld.can_beat_game(CollectionState(multiworld)), f"seed = {multiworld.seed}")
+    
+        for game_name, world_type in AutoWorldRegister.testable_worlds.items():
+            with self.subTest("Can generate with link replacement", game=game_name):
+&gt;               setup_link_multiworld(world_type, True)
+
+test/general/test_items.py:133: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/general/test_items.py:116: in setup_link_multiworld
+    multiworld.set_item_links()
+BaseClasses.py:287: in set_item_links
+    group_id, group = self.add_group(group_name, game, set(item_link["players"]))
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+BaseClasses.py:198: in add_group
+    self.worlds[new_id] = world_type.create_group(self, new_id, players)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/AutoWorld.py:536: in create_group
+    group = cls(multiworld, new_player_id)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+cls = &lt;class 'worlds.fridaynightfunkin.FunkinWorld'&gt;
+multiworld = &lt;BaseClasses.MultiWorld object at 0x7fd86142c410&gt;, player = 3
+
+    def __new__(cls, multiworld: MultiWorld, player: int):
+        # TRACKER MODE: Detect early and return FunkinWorldTracker instance instead
+        # This must happen before any other instance creation
+        is_tracker_mode = (
+            getattr(multiworld, 'generation_is_fake', False) and
+            hasattr(multiworld, 're_gen_passthrough') and
+            multiworld.re_gen_passthrough and
+            'Friday Night Funkin' in multiworld.re_gen_passthrough
+        )
+    
+        if is_tracker_mode and not getattr(cls, '_is_tracker_world', False):
+            # Create dynamic tracker world class with pre-populated IDs
+            print(f"[__new__] Detected tracker mode, creating FunkinWorldTracker instance")
+            try:
+                passthrough = multiworld.re_gen_passthrough['Friday Night Funkin']
+                FunkinWorldTracker = create_tracker_world_class(passthrough)
+    
+                # Update multiworld's world registry to use the tracker class
+                # This ensures Archipelago uses the correct class-level data
+                if hasattr(multiworld, 'worlds') and player in multiworld.worlds:
+                    # Update the class in the multiworld to ensure consistent ID resolution
+                    print(f"[__new__] Updating multiworld.worlds[{player}] to use FunkinWorldTracker")
+    
+                # Create instance of tracker world
+                instance = object.__new__(FunkinWorldTracker)
+                return instance
+            except Exception as e:
+                print(f"[__new__ ERROR] Failed to create tracker world: {e}")
+                import traceback
+                traceback.print_exc()
+                # Fall back to normal FunkinWorld
+                class TrackingError(Exception):
+                    pass
+                raise TrackingError(f"Failed to create tracker world: {e}") from e
+    
+        # Normal path for real generation
+        instance = super(FunkinWorld, cls).__new__(cls)
+    
+        # CRITICAL: Validate that this is a valid generation context
+        # The class-level stuff() data was populated at module load time based on YAMLs
+        # If this world is being initialized outside of generation, the YAML data will be wrong
+        is_tracker = (getattr(multiworld, 'generation_is_fake', False) or
+                      (hasattr(multiworld, 're_gen_passthrough') and multiworld.re_gen_passthrough))
+    
+        is_real_generation = (hasattr(multiworld, 'seed') and multiworld.seed is not None and not is_tracker)
+    
+        # Debug: Print condition evaluation
+        print(f"[__new__ DEBUG] Context detection:")
+        print(f"  generation_is_fake: {getattr(multiworld, 'generation_is_fake', False)}")
+        print(f"  has re_gen_passthrough: {hasattr(multiworld, 're_gen_passthrough')}")
+        if hasattr(multiworld, 're_gen_passthrough'):
+            print(f"  re_gen_passthrough content: {bool(multiworld.re_gen_passthrough)}")
+        print(f"  has seed: {hasattr(multiworld, 'seed')}, seed is not None: {multiworld.seed is not None if hasattr(multiworld, 'seed') else 'N/A'}")
+        print(f"  has worlds: {hasattr(multiworld, 'worlds')}, worlds populated: {bool(multiworld.worlds) if hasattr(multiworld, 'worlds') else 'N/A'}")
+        print(f"  → is_tracker: {is_tracker}")
+        print(f"  → is_real_generation: {is_real_generation}")
+    
+        if not is_tracker and not is_real_generation:
+            raise RuntimeError(
+                "FunkinWorld cannot be initialized outside of generation context. "
+                "This typically happens when the world is loaded by a client or in an invalid state. "
+                "Ensure you are running actual generation or the tracker is properly set up."
+            )
+    
+        print(f"[__new__] Valid generation context detected - {'Tracker' if is_tracker else 'Real Generation'}")
+    
+        # Restore from passthrough before world initialization (Tracker only)
+        if is_tracker and hasattr(multiworld, "re_gen_passthrough") and multiworld.re_gen_passthrough:
+            if "Friday Night Funkin" in multiworld.re_gen_passthrough:
+                passthrough = multiworld.re_gen_passthrough["Friday Night Funkin"]
+                ut_slot_data = passthrough.get("UTSlotData", {})
+    
+                if ut_slot_data:
+                    print("[__new__] Re-generation passthrough detected, restoring ID mappings from UTSlotData.")
+                    try:
+                        # Restore class-level item ID mappings
+                        restored_item_mappings = ut_slot_data.get('item_name_to_id', {})
+                        if restored_item_mappings:
+                            cls.item_name_to_id = restored_item_mappings.copy()
+                            print(f"[__new__] ✓ Restored {len(restored_item_mappings)} item ID mappings from passthrough")
+                        else:
+                            print(f"[__new__ WARNING] No item_name_to_id found in passthrough UTSlotData")
+    
+                        # Restore class-level location ID mappings
+                        restored_location_mappings = ut_slot_data.get('location_name_to_id', {})
+                        if restored_location_mappings:
+                            cls.location_name_to_id = restored_location_mappings.copy()
+                            print(f"[__new__] ✓ Restored {len(restored_location_mappings)} location ID mappings from passthrough")
+                        else:
+                            print(f"[__new__ WARNING] No location_name_to_id found in passthrough UTSlotData")
+    
+                        # Restore song_bundles from passthrough
+                        restored_bundles = ut_slot_data.get('song_bundles', {})
+                        if restored_bundles:
+                            cls.song_bundles = restored_bundles.copy()
+                            print(f"[__new__] ✓ Restored {len(restored_bundles)} song bundles from passthrough")
+                        else:
+                            print(f"[__new__ WARNING] No song_bundles found in passthrough UTSlotData")
+    
+                        # Restore song_items from passthrough - CRITICAL for item creation in tracker mode
+                        restored_song_items_data = ut_slot_data.get('song_items', {})
+                        if restored_song_items_data:
+                            # Reconstruct SongData objects from the simplified passthrough format
+                            reconstructed_song_items = {}
+                            for song_name, item_data in restored_song_items_data.items():
+                                reconstructed_song_items[song_name] = SongData(
+                                    code=item_data.get('code'),
+                                    modded=item_data.get('modded', True),
+                                    songName=item_data.get('songName', song_name),
+                                    playerSongBelongsTo=item_data.get('playerSongBelongsTo', ''),
+                                    playerList=item_data.get('playerList', [])
+                                )
+                            cls.song_items = reconstructed_song_items
+                            print(f"[__new__] ✓ Restored {len(reconstructed_song_items)} song items from passthrough")
+                        else:
+                            print(f"[__new__ WARNING] No song_items found in passthrough UTSlotData")
+                    except Exception as e:
+                        print(f"[__new__ WARNING] Failed to restore ID mappings from passthrough: {e}")
+                else:
+                    print(f"[__new__ WARNING] No UTSlotData found in passthrough for Friday Night Funkin'")
+            else:
+                print(f"[__new__ WARNING] Friday Night Funkin' not in re_gen_passthrough")
+        elif is_tracker:
+            print(f"[__new__ WARNING] Tracker context detected but no re_gen_passthrough data available")
+    
+        player_name = ''
+        player_yaml = None
+        original_song_list = []
+    
+        # For tracker mode, restore player_yaml and original_song_list from passthrough
+        if is_tracker and hasattr(multiworld, "re_gen_passthrough") and multiworld.re_gen_passthrough:
+            if "Friday Night Funkin" in multiworld.re_gen_passthrough:
+                passthrough = multiworld.re_gen_passthrough["Friday Night Funkin"]
+                ut_slot_data = passthrough.get("UTSlotData", {})
+    
+                # Restore player name and song list from passthrough
+                player_name = ut_slot_data.get("player_name", "")
+                original_song_list = ut_slot_data.get("original_song_list", []).copy()
+                player_yaml_data = ut_slot_data.get("player_yaml_data", {})
+    
+                if player_name and player_yaml_data:
+                    # Create a minimal player_yaml object from passthrough data
+                    class RestoredYAML:
+                        def __init__(self, data):
+                            self.name = data.get('name', 'Unknown')
+                            self._song_list = data.get('song_list', [])
+                            self.settings = type('Settings', (), {
+                                'song_limit': data.get('song_limit', 5),
+                                'victory_song': data.get('victory_song', ''),
+                                'starting_song': data.get('starting_song', ''),
+                                'mods_enabled': data.get('mods_enabled', []),
+                                'enable_sanity_locations': data.get('enable_sanity_locations', True),
+                                'sanity_completion_type': data.get('sanity_completion_type', 'on_getting'),
+                            })()
+    
+                        def getSongList(self):
+                            return self._song_list
+    
+                    player_yaml = RestoredYAML(player_yaml_data)
+                    print(f"[__new__] Restored player_yaml for {player_name} from passthrough")
+    
+                    # Also restore all_yamls from passthrough for consistency
+                    restored_yaml_data = ut_slot_data.get('yaml_data_compact', [])
+                    if restored_yaml_data:
+                        restored_all_yamls = [RestoredYAML(yaml_data) for yaml_data in restored_yaml_data]
+                        cls.all_yamls = restored_all_yamls
+                        print(f"[__new__] Restored {len(restored_all_yamls)} all_yamls from passthrough")
+    
+        # If not in tracker mode or restoration failed, find player_yaml from all_yamls
+        if not player_yaml:
+            # Find this player's YAML
+            try:
+                player_name = multiworld.player_name[player]
+            except:
+                # Get the name from YAML (already processed with placeholders)
+&gt;               player_name = cls.all_yamls[player].name
+                              ^^^^^^^^^^^^^^^^^^^^^
+E               IndexError: list index out of range
+
+worlds/fridaynightfunkin/__init__.py:2300: IndexError</failure><failure message="IndexError: list index out of range">cls = &lt;class 'worlds.fridaynightfunkin.FunkinWorld'&gt;
+multiworld = &lt;BaseClasses.MultiWorld object at 0x7fd8613a3390&gt;, player = 3
+
+    def __new__(cls, multiworld: MultiWorld, player: int):
+        # TRACKER MODE: Detect early and return FunkinWorldTracker instance instead
+        # This must happen before any other instance creation
+        is_tracker_mode = (
+            getattr(multiworld, 'generation_is_fake', False) and
+            hasattr(multiworld, 're_gen_passthrough') and
+            multiworld.re_gen_passthrough and
+            'Friday Night Funkin' in multiworld.re_gen_passthrough
+        )
+    
+        if is_tracker_mode and not getattr(cls, '_is_tracker_world', False):
+            # Create dynamic tracker world class with pre-populated IDs
+            print(f"[__new__] Detected tracker mode, creating FunkinWorldTracker instance")
+            try:
+                passthrough = multiworld.re_gen_passthrough['Friday Night Funkin']
+                FunkinWorldTracker = create_tracker_world_class(passthrough)
+    
+                # Update multiworld's world registry to use the tracker class
+                # This ensures Archipelago uses the correct class-level data
+                if hasattr(multiworld, 'worlds') and player in multiworld.worlds:
+                    # Update the class in the multiworld to ensure consistent ID resolution
+                    print(f"[__new__] Updating multiworld.worlds[{player}] to use FunkinWorldTracker")
+    
+                # Create instance of tracker world
+                instance = object.__new__(FunkinWorldTracker)
+                return instance
+            except Exception as e:
+                print(f"[__new__ ERROR] Failed to create tracker world: {e}")
+                import traceback
+                traceback.print_exc()
+                # Fall back to normal FunkinWorld
+                class TrackingError(Exception):
+                    pass
+                raise TrackingError(f"Failed to create tracker world: {e}") from e
+    
+        # Normal path for real generation
+        instance = super(FunkinWorld, cls).__new__(cls)
+    
+        # CRITICAL: Validate that this is a valid generation context
+        # The class-level stuff() data was populated at module load time based on YAMLs
+        # If this world is being initialized outside of generation, the YAML data will be wrong
+        is_tracker = (getattr(multiworld, 'generation_is_fake', False) or
+                      (hasattr(multiworld, 're_gen_passthrough') and multiworld.re_gen_passthrough))
+    
+        is_real_generation = (hasattr(multiworld, 'seed') and multiworld.seed is not None and not is_tracker)
+    
+        # Debug: Print condition evaluation
+        print(f"[__new__ DEBUG] Context detection:")
+        print(f"  generation_is_fake: {getattr(multiworld, 'generation_is_fake', False)}")
+        print(f"  has re_gen_passthrough: {hasattr(multiworld, 're_gen_passthrough')}")
+        if hasattr(multiworld, 're_gen_passthrough'):
+            print(f"  re_gen_passthrough content: {bool(multiworld.re_gen_passthrough)}")
+        print(f"  has seed: {hasattr(multiworld, 'seed')}, seed is not None: {multiworld.seed is not None if hasattr(multiworld, 'seed') else 'N/A'}")
+        print(f"  has worlds: {hasattr(multiworld, 'worlds')}, worlds populated: {bool(multiworld.worlds) if hasattr(multiworld, 'worlds') else 'N/A'}")
+        print(f"  → is_tracker: {is_tracker}")
+        print(f"  → is_real_generation: {is_real_generation}")
+    
+        if not is_tracker and not is_real_generation:
+            raise RuntimeError(
+                "FunkinWorld cannot be initialized outside of generation context. "
+                "This typically happens when the world is loaded by a client or in an invalid state. "
+                "Ensure you are running actual generation or the tracker is properly set up."
+            )
+    
+        print(f"[__new__] Valid generation context detected - {'Tracker' if is_tracker else 'Real Generation'}")
+    
+        # Restore from passthrough before world initialization (Tracker only)
+        if is_tracker and hasattr(multiworld, "re_gen_passthrough") and multiworld.re_gen_passthrough:
+            if "Friday Night Funkin" in multiworld.re_gen_passthrough:
+                passthrough = multiworld.re_gen_passthrough["Friday Night Funkin"]
+                ut_slot_data = passthrough.get("UTSlotData", {})
+    
+                if ut_slot_data:
+                    print("[__new__] Re-generation passthrough detected, restoring ID mappings from UTSlotData.")
+                    try:
+                        # Restore class-level item ID mappings
+                        restored_item_mappings = ut_slot_data.get('item_name_to_id', {})
+                        if restored_item_mappings:
+                            cls.item_name_to_id = restored_item_mappings.copy()
+                            print(f"[__new__] ✓ Restored {len(restored_item_mappings)} item ID mappings from passthrough")
+                        else:
+                            print(f"[__new__ WARNING] No item_name_to_id found in passthrough UTSlotData")
+    
+                        # Restore class-level location ID mappings
+                        restored_location_mappings = ut_slot_data.get('location_name_to_id', {})
+                        if restored_location_mappings:
+                            cls.location_name_to_id = restored_location_mappings.copy()
+                            print(f"[__new__] ✓ Restored {len(restored_location_mappings)} location ID mappings from passthrough")
+                        else:
+                            print(f"[__new__ WARNING] No location_name_to_id found in passthrough UTSlotData")
+    
+                        # Restore song_bundles from passthrough
+                        restored_bundles = ut_slot_data.get('song_bundles', {})
+                        if restored_bundles:
+                            cls.song_bundles = restored_bundles.copy()
+                            print(f"[__new__] ✓ Restored {len(restored_bundles)} song bundles from passthrough")
+                        else:
+                            print(f"[__new__ WARNING] No song_bundles found in passthrough UTSlotData")
+    
+                        # Restore song_items from passthrough - CRITICAL for item creation in tracker mode
+                        restored_song_items_data = ut_slot_data.get('song_items', {})
+                        if restored_song_items_data:
+                            # Reconstruct SongData objects from the simplified passthrough format
+                            reconstructed_song_items = {}
+                            for song_name, item_data in restored_song_items_data.items():
+                                reconstructed_song_items[song_name] = SongData(
+                                    code=item_data.get('code'),
+                                    modded=item_data.get('modded', True),
+                                    songName=item_data.get('songName', song_name),
+                                    playerSongBelongsTo=item_data.get('playerSongBelongsTo', ''),
+                                    playerList=item_data.get('playerList', [])
+                                )
+                            cls.song_items = reconstructed_song_items
+                            print(f"[__new__] ✓ Restored {len(reconstructed_song_items)} song items from passthrough")
+                        else:
+                            print(f"[__new__ WARNING] No song_items found in passthrough UTSlotData")
+                    except Exception as e:
+                        print(f"[__new__ WARNING] Failed to restore ID mappings from passthrough: {e}")
+                else:
+                    print(f"[__new__ WARNING] No UTSlotData found in passthrough for Friday Night Funkin'")
+            else:
+                print(f"[__new__ WARNING] Friday Night Funkin' not in re_gen_passthrough")
+        elif is_tracker:
+            print(f"[__new__ WARNING] Tracker context detected but no re_gen_passthrough data available")
+    
+        player_name = ''
+        player_yaml = None
+        original_song_list = []
+    
+        # For tracker mode, restore player_yaml and original_song_list from passthrough
+        if is_tracker and hasattr(multiworld, "re_gen_passthrough") and multiworld.re_gen_passthrough:
+            if "Friday Night Funkin" in multiworld.re_gen_passthrough:
+                passthrough = multiworld.re_gen_passthrough["Friday Night Funkin"]
+                ut_slot_data = passthrough.get("UTSlotData", {})
+    
+                # Restore player name and song list from passthrough
+                player_name = ut_slot_data.get("player_name", "")
+                original_song_list = ut_slot_data.get("original_song_list", []).copy()
+                player_yaml_data = ut_slot_data.get("player_yaml_data", {})
+    
+                if player_name and player_yaml_data:
+                    # Create a minimal player_yaml object from passthrough data
+                    class RestoredYAML:
+                        def __init__(self, data):
+                            self.name = data.get('name', 'Unknown')
+                            self._song_list = data.get('song_list', [])
+                            self.settings = type('Settings', (), {
+                                'song_limit': data.get('song_limit', 5),
+                                'victory_song': data.get('victory_song', ''),
+                                'starting_song': data.get('starting_song', ''),
+                                'mods_enabled': data.get('mods_enabled', []),
+                                'enable_sanity_locations': data.get('enable_sanity_locations', True),
+                                'sanity_completion_type': data.get('sanity_completion_type', 'on_getting'),
+                            })()
+    
+                        def getSongList(self):
+                            return self._song_list
+    
+                    player_yaml = RestoredYAML(player_yaml_data)
+                    print(f"[__new__] Restored player_yaml for {player_name} from passthrough")
+    
+                    # Also restore all_yamls from passthrough for consistency
+                    restored_yaml_data = ut_slot_data.get('yaml_data_compact', [])
+                    if restored_yaml_data:
+                        restored_all_yamls = [RestoredYAML(yaml_data) for yaml_data in restored_yaml_data]
+                        cls.all_yamls = restored_all_yamls
+                        print(f"[__new__] Restored {len(restored_all_yamls)} all_yamls from passthrough")
+    
+        # If not in tracker mode or restoration failed, find player_yaml from all_yamls
+        if not player_yaml:
+            # Find this player's YAML
+            try:
+&gt;               player_name = multiworld.player_name[player]
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E               KeyError: 3
+
+worlds/fridaynightfunkin/__init__.py:2297: KeyError
+
+During handling of the above exception, another exception occurred:
+
+self = &lt;test.general.test_items.TestBase testMethod=test_item_links&gt;
+
+    def test_item_links(self) -&gt; None:
+        """
+        Tests item link creation by creating a multiworld of 2 worlds for every game and linking their items together.
+        """
+        def setup_link_multiworld(world: Type[World], link_replace: bool) -&gt; None:
+            multiworld = MultiWorld(2)
+            multiworld.game = {1: world.game, 2: world.game}
+            multiworld.player_name = {1: "Linker 1", 2: "Linker 2"}
+            multiworld.set_seed()
+            item_link_group = [{
+                "name": "ItemLinkTest",
+                "item_pool": ["Everything"],
+                "link_replacement": link_replace,
+                "replacement_item": None,
+            }]
+            args = Namespace()
+            for name, option in world.options_dataclass.type_hints.items():
+                setattr(args, name, {1: option.from_any(option.default), 2: option.from_any(option.default)})
+            setattr(args, "item_links",
+                    {1: ItemLinks.from_any(item_link_group), 2: ItemLinks.from_any(item_link_group)})
+            multiworld.set_options(args)
+            multiworld.set_item_links()
+            # groups get added to state during its constructor so this has to be after item links are set
+            multiworld.state = CollectionState(multiworld)
+            gen_steps = ("generate_early", "create_regions", "create_items", "set_rules", "connect_entrances", "generate_basic")
+            for step in gen_steps:
+                call_all(multiworld, step)
+            # link the items together and attempt to fill
+            multiworld.link_items()
+            multiworld._all_state = None
+            call_all(multiworld, "pre_fill")
+            distribute_items_restrictive(multiworld)
+            call_all(multiworld, "post_fill")
+            call_all(multiworld, "finalize_multiworld")
+            self.assertTrue(multiworld.can_beat_game(CollectionState(multiworld)), f"seed = {multiworld.seed}")
+    
+        for game_name, world_type in AutoWorldRegister.testable_worlds.items():
+            with self.subTest("Can generate with link replacement", game=game_name):
+                setup_link_multiworld(world_type, True)
+            with self.subTest("Can generate without link replacement", game=game_name):
+&gt;               setup_link_multiworld(world_type, False)
+
+test/general/test_items.py:135: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/general/test_items.py:116: in setup_link_multiworld
+    multiworld.set_item_links()
+BaseClasses.py:287: in set_item_links
+    group_id, group = self.add_group(group_name, game, set(item_link["players"]))
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+BaseClasses.py:198: in add_group
+    self.worlds[new_id] = world_type.create_group(self, new_id, players)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/AutoWorld.py:536: in create_group
+    group = cls(multiworld, new_player_id)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+cls = &lt;class 'worlds.fridaynightfunkin.FunkinWorld'&gt;
+multiworld = &lt;BaseClasses.MultiWorld object at 0x7fd8613a3390&gt;, player = 3
+
+    def __new__(cls, multiworld: MultiWorld, player: int):
+        # TRACKER MODE: Detect early and return FunkinWorldTracker instance instead
+        # This must happen before any other instance creation
+        is_tracker_mode = (
+            getattr(multiworld, 'generation_is_fake', False) and
+            hasattr(multiworld, 're_gen_passthrough') and
+            multiworld.re_gen_passthrough and
+            'Friday Night Funkin' in multiworld.re_gen_passthrough
+        )
+    
+        if is_tracker_mode and not getattr(cls, '_is_tracker_world', False):
+            # Create dynamic tracker world class with pre-populated IDs
+            print(f"[__new__] Detected tracker mode, creating FunkinWorldTracker instance")
+            try:
+                passthrough = multiworld.re_gen_passthrough['Friday Night Funkin']
+                FunkinWorldTracker = create_tracker_world_class(passthrough)
+    
+                # Update multiworld's world registry to use the tracker class
+                # This ensures Archipelago uses the correct class-level data
+                if hasattr(multiworld, 'worlds') and player in multiworld.worlds:
+                    # Update the class in the multiworld to ensure consistent ID resolution
+                    print(f"[__new__] Updating multiworld.worlds[{player}] to use FunkinWorldTracker")
+    
+                # Create instance of tracker world
+                instance = object.__new__(FunkinWorldTracker)
+                return instance
+            except Exception as e:
+                print(f"[__new__ ERROR] Failed to create tracker world: {e}")
+                import traceback
+                traceback.print_exc()
+                # Fall back to normal FunkinWorld
+                class TrackingError(Exception):
+                    pass
+                raise TrackingError(f"Failed to create tracker world: {e}") from e
+    
+        # Normal path for real generation
+        instance = super(FunkinWorld, cls).__new__(cls)
+    
+        # CRITICAL: Validate that this is a valid generation context
+        # The class-level stuff() data was populated at module load time based on YAMLs
+        # If this world is being initialized outside of generation, the YAML data will be wrong
+        is_tracker = (getattr(multiworld, 'generation_is_fake', False) or
+                      (hasattr(multiworld, 're_gen_passthrough') and multiworld.re_gen_passthrough))
+    
+        is_real_generation = (hasattr(multiworld, 'seed') and multiworld.seed is not None and not is_tracker)
+    
+        # Debug: Print condition evaluation
+        print(f"[__new__ DEBUG] Context detection:")
+        print(f"  generation_is_fake: {getattr(multiworld, 'generation_is_fake', False)}")
+        print(f"  has re_gen_passthrough: {hasattr(multiworld, 're_gen_passthrough')}")
+        if hasattr(multiworld, 're_gen_passthrough'):
+            print(f"  re_gen_passthrough content: {bool(multiworld.re_gen_passthrough)}")
+        print(f"  has seed: {hasattr(multiworld, 'seed')}, seed is not None: {multiworld.seed is not None if hasattr(multiworld, 'seed') else 'N/A'}")
+        print(f"  has worlds: {hasattr(multiworld, 'worlds')}, worlds populated: {bool(multiworld.worlds) if hasattr(multiworld, 'worlds') else 'N/A'}")
+        print(f"  → is_tracker: {is_tracker}")
+        print(f"  → is_real_generation: {is_real_generation}")
+    
+        if not is_tracker and not is_real_generation:
+            raise RuntimeError(
+                "FunkinWorld cannot be initialized outside of generation context. "
+                "This typically happens when the world is loaded by a client or in an invalid state. "
+                "Ensure you are running actual generation or the tracker is properly set up."
+            )
+    
+        print(f"[__new__] Valid generation context detected - {'Tracker' if is_tracker else 'Real Generation'}")
+    
+        # Restore from passthrough before world initialization (Tracker only)
+        if is_tracker and hasattr(multiworld, "re_gen_passthrough") and multiworld.re_gen_passthrough:
+            if "Friday Night Funkin" in multiworld.re_gen_passthrough:
+                passthrough = multiworld.re_gen_passthrough["Friday Night Funkin"]
+                ut_slot_data = passthrough.get("UTSlotData", {})
+    
+                if ut_slot_data:
+                    print("[__new__] Re-generation passthrough detected, restoring ID mappings from UTSlotData.")
+                    try:
+                        # Restore class-level item ID mappings
+                        restored_item_mappings = ut_slot_data.get('item_name_to_id', {})
+                        if restored_item_mappings:
+                            cls.item_name_to_id = restored_item_mappings.copy()
+                            print(f"[__new__] ✓ Restored {len(restored_item_mappings)} item ID mappings from passthrough")
+                        else:
+                            print(f"[__new__ WARNING] No item_name_to_id found in passthrough UTSlotData")
+    
+                        # Restore class-level location ID mappings
+                        restored_location_mappings = ut_slot_data.get('location_name_to_id', {})
+                        if restored_location_mappings:
+                            cls.location_name_to_id = restored_location_mappings.copy()
+                            print(f"[__new__] ✓ Restored {len(restored_location_mappings)} location ID mappings from passthrough")
+                        else:
+                            print(f"[__new__ WARNING] No location_name_to_id found in passthrough UTSlotData")
+    
+                        # Restore song_bundles from passthrough
+                        restored_bundles = ut_slot_data.get('song_bundles', {})
+                        if restored_bundles:
+                            cls.song_bundles = restored_bundles.copy()
+                            print(f"[__new__] ✓ Restored {len(restored_bundles)} song bundles from passthrough")
+                        else:
+                            print(f"[__new__ WARNING] No song_bundles found in passthrough UTSlotData")
+    
+                        # Restore song_items from passthrough - CRITICAL for item creation in tracker mode
+                        restored_song_items_data = ut_slot_data.get('song_items', {})
+                        if restored_song_items_data:
+                            # Reconstruct SongData objects from the simplified passthrough format
+                            reconstructed_song_items = {}
+                            for song_name, item_data in restored_song_items_data.items():
+                                reconstructed_song_items[song_name] = SongData(
+                                    code=item_data.get('code'),
+                                    modded=item_data.get('modded', True),
+                                    songName=item_data.get('songName', song_name),
+                                    playerSongBelongsTo=item_data.get('playerSongBelongsTo', ''),
+                                    playerList=item_data.get('playerList', [])
+                                )
+                            cls.song_items = reconstructed_song_items
+                            print(f"[__new__] ✓ Restored {len(reconstructed_song_items)} song items from passthrough")
+                        else:
+                            print(f"[__new__ WARNING] No song_items found in passthrough UTSlotData")
+                    except Exception as e:
+                        print(f"[__new__ WARNING] Failed to restore ID mappings from passthrough: {e}")
+                else:
+                    print(f"[__new__ WARNING] No UTSlotData found in passthrough for Friday Night Funkin'")
+            else:
+                print(f"[__new__ WARNING] Friday Night Funkin' not in re_gen_passthrough")
+        elif is_tracker:
+            print(f"[__new__ WARNING] Tracker context detected but no re_gen_passthrough data available")
+    
+        player_name = ''
+        player_yaml = None
+        original_song_list = []
+    
+        # For tracker mode, restore player_yaml and original_song_list from passthrough
+        if is_tracker and hasattr(multiworld, "re_gen_passthrough") and multiworld.re_gen_passthrough:
+            if "Friday Night Funkin" in multiworld.re_gen_passthrough:
+                passthrough = multiworld.re_gen_passthrough["Friday Night Funkin"]
+                ut_slot_data = passthrough.get("UTSlotData", {})
+    
+                # Restore player name and song list from passthrough
+                player_name = ut_slot_data.get("player_name", "")
+                original_song_list = ut_slot_data.get("original_song_list", []).copy()
+                player_yaml_data = ut_slot_data.get("player_yaml_data", {})
+    
+                if player_name and player_yaml_data:
+                    # Create a minimal player_yaml object from passthrough data
+                    class RestoredYAML:
+                        def __init__(self, data):
+                            self.name = data.get('name', 'Unknown')
+                            self._song_list = data.get('song_list', [])
+                            self.settings = type('Settings', (), {
+                                'song_limit': data.get('song_limit', 5),
+                                'victory_song': data.get('victory_song', ''),
+                                'starting_song': data.get('starting_song', ''),
+                                'mods_enabled': data.get('mods_enabled', []),
+                                'enable_sanity_locations': data.get('enable_sanity_locations', True),
+                                'sanity_completion_type': data.get('sanity_completion_type', 'on_getting'),
+                            })()
+    
+                        def getSongList(self):
+                            return self._song_list
+    
+                    player_yaml = RestoredYAML(player_yaml_data)
+                    print(f"[__new__] Restored player_yaml for {player_name} from passthrough")
+    
+                    # Also restore all_yamls from passthrough for consistency
+                    restored_yaml_data = ut_slot_data.get('yaml_data_compact', [])
+                    if restored_yaml_data:
+                        restored_all_yamls = [RestoredYAML(yaml_data) for yaml_data in restored_yaml_data]
+                        cls.all_yamls = restored_all_yamls
+                        print(f"[__new__] Restored {len(restored_all_yamls)} all_yamls from passthrough")
+    
+        # If not in tracker mode or restoration failed, find player_yaml from all_yamls
+        if not player_yaml:
+            # Find this player's YAML
+            try:
+                player_name = multiworld.player_name[player]
+            except:
+                # Get the name from YAML (already processed with placeholders)
+&gt;               player_name = cls.all_yamls[player].name
+                              ^^^^^^^^^^^^^^^^^^^^^
+E               IndexError: list index out of range
+
+worlds/fridaynightfunkin/__init__.py:2300: IndexError</failure></testcase><testcase classname="test.general.test_items.TestBase" name="test_item_name_group_conflict" time="0.000" /><testcase classname="test.general.test_items.TestBase" name="test_item_name_group_has_valid_item" time="0.000" /><testcase classname="test.general.test_items.TestBase" name="test_itempool_not_modified" time="0.003" /><testcase classname="test.general.test_items.TestBase" name="test_items_in_datapackage" time="0.003" /><testcase classname="test.general.test_items.TestBase" name="test_locality_not_modified" time="0.003" /><testcase classname="test.general.test_locations.TestBase" name="test_create_duplicate_locations" time="0.003" /><testcase classname="test.general.test_locations.TestBase" name="test_location_creation_steps" time="0.003" /><testcase classname="test.general.test_locations.TestBase" name="test_location_group" time="0.000" /><testcase classname="test.general.test_locations.TestBase" name="test_locations_in_datapackage" time="0.003" /><testcase classname="test.general.test_memory.TestWorldMemory" name="test_leak" time="0.053" /><testcase classname="test.general.test_names.TestNames" name="test_item_names_format" time="0.001" /><testcase classname="test.general.test_names.TestNames" name="test_location_name_format" time="0.000" /><testcase classname="test.general.test_options.TestOptions" name="test_duplicate_options" time="0.000" /><testcase classname="test.general.test_options.TestOptions" name="test_item_links_name_groups" time="0.001" /><testcase classname="test.general.test_options.TestOptions" name="test_item_links_resolve" time="0.001" /><testcase classname="test.general.test_options.TestOptions" name="test_option_defaults" time="0.014"><failure message="AssertionError: False is not true : TextChoice option UnlockType in Friday Night Funkin does not define 'validate_text' while default value Per Song does not resolve to a listed value!">self = &lt;test.general.test_options.TestOptions testMethod=test_option_defaults&gt;
+
+    def test_option_defaults(self):
+        """Test that defaults for submitted options are valid."""
+        for gamename, world_type in AutoWorldRegister.testable_worlds.items():
+            if not world_type.hidden:
+                for option_key, option in world_type.options_dataclass.type_hints.items():
+                    with self.subTest(game=gamename, option=option_key):
+                        # Standard "can default generate" test
+                        if (issubclass(option, TextChoice)
+                            and option.validate_text.__code__ is TextChoice.validate_text.__code__
+                        ):
+&gt;                           self.assertTrue(option.default in option.name_lookup,
+                                f"TextChoice option {option.__name__} in {gamename} does not define "
+                                f"'validate_text' while default value {option.default} does not resolve "
+                                f"to a listed value!"
+                            )
+E                           AssertionError: False is not true : TextChoice option UnlockType in Friday Night Funkin does not define 'validate_text' while default value Per Song does not resolve to a listed value!
+
+test/general/test_options.py:31: AssertionError</failure><failure message="AssertionError: False is not true : TextChoice option UnlockMethod in Friday Night Funkin does not define 'validate_text' while default value Song Completion does not resolve to a listed value!">self = &lt;test.general.test_options.TestOptions testMethod=test_option_defaults&gt;
+
+    def test_option_defaults(self):
+        """Test that defaults for submitted options are valid."""
+        for gamename, world_type in AutoWorldRegister.testable_worlds.items():
+            if not world_type.hidden:
+                for option_key, option in world_type.options_dataclass.type_hints.items():
+                    with self.subTest(game=gamename, option=option_key):
+                        # Standard "can default generate" test
+                        if (issubclass(option, TextChoice)
+                            and option.validate_text.__code__ is TextChoice.validate_text.__code__
+                        ):
+&gt;                           self.assertTrue(option.default in option.name_lookup,
+                                f"TextChoice option {option.__name__} in {gamename} does not define "
+                                f"'validate_text' while default value {option.default} does not resolve "
+                                f"to a listed value!"
+                            )
+E                           AssertionError: False is not true : TextChoice option UnlockMethod in Friday Night Funkin does not define 'validate_text' while default value Song Completion does not resolve to a listed value!
+
+test/general/test_options.py:31: AssertionError</failure><failure message="AssertionError: False is not true : TextChoice option gradeNeeded in Friday Night Funkin does not define 'validate_text' while default value Any does not resolve to a listed value!">self = &lt;test.general.test_options.TestOptions testMethod=test_option_defaults&gt;
+
+    def test_option_defaults(self):
+        """Test that defaults for submitted options are valid."""
+        for gamename, world_type in AutoWorldRegister.testable_worlds.items():
+            if not world_type.hidden:
+                for option_key, option in world_type.options_dataclass.type_hints.items():
+                    with self.subTest(game=gamename, option=option_key):
+                        # Standard "can default generate" test
+                        if (issubclass(option, TextChoice)
+                            and option.validate_text.__code__ is TextChoice.validate_text.__code__
+                        ):
+&gt;                           self.assertTrue(option.default in option.name_lookup,
+                                f"TextChoice option {option.__name__} in {gamename} does not define "
+                                f"'validate_text' while default value {option.default} does not resolve "
+                                f"to a listed value!"
+                            )
+E                           AssertionError: False is not true : TextChoice option gradeNeeded in Friday Night Funkin does not define 'validate_text' while default value Any does not resolve to a listed value!
+
+test/general/test_options.py:31: AssertionError</failure><failure message="AssertionError: False is not true : TextChoice option accuracyNeeded in Friday Night Funkin does not define 'validate_text' while default value Any does not resolve to a listed value!">self = &lt;test.general.test_options.TestOptions testMethod=test_option_defaults&gt;
+
+    def test_option_defaults(self):
+        """Test that defaults for submitted options are valid."""
+        for gamename, world_type in AutoWorldRegister.testable_worlds.items():
+            if not world_type.hidden:
+                for option_key, option in world_type.options_dataclass.type_hints.items():
+                    with self.subTest(game=gamename, option=option_key):
+                        # Standard "can default generate" test
+                        if (issubclass(option, TextChoice)
+                            and option.validate_text.__code__ is TextChoice.validate_text.__code__
+                        ):
+&gt;                           self.assertTrue(option.default in option.name_lookup,
+                                f"TextChoice option {option.__name__} in {gamename} does not define "
+                                f"'validate_text' while default value {option.default} does not resolve "
+                                f"to a listed value!"
+                            )
+E                           AssertionError: False is not true : TextChoice option accuracyNeeded in Friday Night Funkin does not define 'validate_text' while default value Any does not resolve to a listed value!
+
+test/general/test_options.py:31: AssertionError</failure></testcase><testcase classname="test.general.test_options.TestOptions" name="test_option_set_keys_random" time="0.001" /><testcase classname="test.general.test_options.TestOptions" name="test_options_are_not_set_by_world" time="0.000" /><testcase classname="test.general.test_options.TestOptions" name="test_options_have_doc_string" time="0.003" /><testcase classname="test.general.test_options.TestOptions" name="test_pickle_dumps_default" time="0.004" /><testcase classname="test.general.test_options.TestOptions" name="test_pickle_dumps_plando" time="0.001" /><testcase classname="test.general.test_packages.TestPackages" name="test_packages_have_init" time="0.037" /><testcase classname="test.general.test_patches.TestPatches" name="test_patch_name_matches_game" time="0.000" /><testcase classname="test.general.test_reachability.TestBase" name="test_default_all_state_can_reach_everything" time="0.005" /><testcase classname="test.general.test_reachability.TestBase" name="test_default_empty_state_can_reach_something" time="0.003" /><testcase classname="test.general.test_requirements.TestBase" name="test_requirements_file_ends_on_newline" time="0.002" /><testcase classname="test.general.test_settings.TestSettings" name="test_settings_can_update" time="0.000" /><testcase classname="test.general.test_state.TestBase" name="test_all_state_is_available" time="0.003" /><testcase classname="test.general.test_world_manifest.TestWorldManifest{game='Friday Night Funkin'}" name="test_game" time="0.000" /><testcase classname="test.general.test_world_manifest.TestWorldManifest{game='Friday Night Funkin'}" name="test_world_version" time="0.000" /><testcase classname="test.multiworld.test_multiworlds.TestTwoPlayerMulti{game='Friday Night Funkin'}" name="test_two_player_single_game_fills" time="0.011" /><testcase classname="test.webhost.test_descriptions.TestWebDescriptions" name="test_item_descriptions_have_valid_names" time="0.000" /><testcase classname="test.webhost.test_descriptions.TestWebDescriptions" name="test_location_descriptions_have_valid_names" time="0.000" /><testcase classname="test.webhost.test_docs.TestDocs" name="test_has_game_info" time="0.002" /><testcase classname="test.webhost.test_docs.TestDocs" name="test_has_tutorial" time="0.000" /><testcase classname="test.webhost.test_file_generation.TestFileGeneration" name="test_options" time="0.044" /><testcase classname="test.webhost.test_option_presets.TestOptionPresets" name="test_option_preset_values_are_explicitly_defined" time="0.000" /><testcase classname="test.webhost.test_option_presets.TestOptionPresets" name="test_option_presets_have_valid_options" time="0.000" /></testsuite></testsuites>

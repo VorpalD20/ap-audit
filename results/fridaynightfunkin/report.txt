@@ -1,0 +1,21 @@
+Final score: -408
+
+exec-builtin: 400
+EOF when reading a line: 50
+undefined-local-with-import-star-usage: 10
+useless-expression: 5
+ambiguous-variable-name: 5
+type-comparison: 5
+raise-literal: 5
+true-false-comparison: 5
+raise-without-from-inside-except: 5
+bare-except: 5
+test_create_item: 5
+undefined-local-with-import-star: 4
+function-uses-loop-variable: 2
+test_item_links: 1
+test_option_defaults: 1
+f-string-missing-placeholders: 0
+try-except-pass: 0
+try-except-continue: 0
+unused-annotation: 0

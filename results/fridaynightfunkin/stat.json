@@ -1,0 +1,11 @@
+{
+    "game": "Friday Night Funkin",
+    "stub": "fridaynightfunkin",
+    "manifest": {
+        "version": 6,
+        "compatible_version": 4,
+        "game": "Friday Night Funkin",
+        "minimum_ap_version": "0.5.1",
+        "world_version": "2.3.1"
+    }
+}

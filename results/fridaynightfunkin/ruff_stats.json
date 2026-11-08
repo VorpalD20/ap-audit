@@ -1,0 +1,107 @@
+[
+  {
+    "code": "B018",
+    "name": "useless-expression",
+    "count": 72,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "F541",
+    "name": "f-string-missing-placeholders",
+    "count": 48,
+    "fixable": true,
+    "fixable_count": 48
+  },
+  {
+    "code": "E741",
+    "name": "ambiguous-variable-name",
+    "count": 25,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "F405",
+    "name": "undefined-local-with-import-star-usage",
+    "count": 23,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "E721",
+    "name": "type-comparison",
+    "count": 20,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "B016",
+    "name": "raise-literal",
+    "count": 11,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "E712",
+    "name": "true-false-comparison",
+    "count": 11,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "S110",
+    "name": "try-except-pass",
+    "count": 10,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "B904",
+    "name": "raise-without-from-inside-except",
+    "count": 9,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "E722",
+    "name": "bare-except",
+    "count": 5,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "S102",
+    "name": "exec-builtin",
+    "count": 4,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "S112",
+    "name": "try-except-continue",
+    "count": 4,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "B023",
+    "name": "function-uses-loop-variable",
+    "count": 2,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "F403",
+    "name": "undefined-local-with-import-star",
+    "count": 2,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "F842",
+    "name": "unused-annotation",
+    "count": 1,
+    "fixable": false,
+    "fixable_count": 0
+  }
+]
