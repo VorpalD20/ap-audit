@@ -174,6 +174,9 @@ def score_manifest(results_path, severity, penalties):
         penalise("manifest compatible_version is higher than latest defined version")
 
 def score_fuzzer(results_path, severity, penalties):
+    if not os.path.exists(os.path.join(results_path, "fuzz_output.json")):
+        penalties["fuzzer failed to run"] = 50
+        return
     with open(os.path.join(results_path, "fuzz_output.json"), "r") as f:
         fuzz_output = json.load(f)
 

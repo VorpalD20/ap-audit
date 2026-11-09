@@ -19,7 +19,7 @@
   "hardcoded-bind-all-interfaces": -1,
   "hardcoded-password-string": 0,
   "hardcoded-sql-expression": -1,
-  "hardcoded-temp-file": -1,
+  "hardcoded-temp-file": 0,
   "import-shadowed-by-loop-var": -1,
   "loop-variable-overrides-iterator": -1,
   "mixed-spaces-and-tabs": 0,
