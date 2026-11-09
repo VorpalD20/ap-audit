@@ -61,6 +61,7 @@
   "test_locality_not_modified": -1,
   "test_location_name_format": -1,
   "test_manifest": -1,
+  "test_no_failed_world_loads": -1,
   "test_option_defaults": -1,
   "test_packages_have_init": -1,
   "test_pickle_dumps_default": 10,

@@ -1,0 +1,14 @@
+Final score: 28
+
+fuzzer failed to run: 50
+raise-without-from-inside-except: 5
+ambiguous-variable-name: 5
+bare-except: 3
+re-sub-positional-args: 2
+type-comparison: 2
+loop-variable-overrides-iterator: 1
+request-without-timeout: 1
+true-false-comparison: 1
+test_no_failed_world_loads: 1
+archipelago.json is missing: 1
+useless-semicolon: 0

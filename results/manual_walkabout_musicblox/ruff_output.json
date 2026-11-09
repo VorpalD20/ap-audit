@@ -1,0 +1,563 @@
+[
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 61,
+      "row": 33
+    },
+    "filename": "/Archipelago/worlds/manual_walkabout_musicblox/Data.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 33
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 33,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 38,
+      "row": 316
+    },
+    "filename": "/Archipelago/worlds/manual_walkabout_musicblox/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 37,
+      "row": 316
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 316,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E703",
+    "end_location": {
+      "column": 71,
+      "row": 448
+    },
+    "filename": "/Archipelago/worlds/manual_walkabout_musicblox/DataValidation.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "",
+          "end_location": {
+            "column": 71,
+            "row": 448
+          },
+          "location": {
+            "column": 70,
+            "row": 448
+          }
+        }
+      ],
+      "message": "Remove unnecessary semicolon"
+    },
+    "location": {
+      "column": 70,
+      "row": 448
+    },
+    "message": "Statement ends with an unnecessary semicolon",
+    "name": "useless-semicolon",
+    "noqa_row": 448,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E703",
+    "end_location": {
+      "column": 56,
+      "row": 509
+    },
+    "filename": "/Archipelago/worlds/manual_walkabout_musicblox/DataValidation.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "",
+          "end_location": {
+            "column": 56,
+            "row": 509
+          },
+          "location": {
+            "column": 55,
+            "row": 509
+          }
+        }
+      ],
+      "message": "Remove unnecessary semicolon"
+    },
+    "location": {
+      "column": 55,
+      "row": 509
+    },
+    "message": "Statement ends with an unnecessary semicolon",
+    "name": "useless-semicolon",
+    "noqa_row": 509,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/useless-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 89,
+      "row": 14
+    },
+    "filename": "/Archipelago/worlds/manual_walkabout_musicblox/Game.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 14
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 14,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "E722",
+    "end_location": {
+      "column": 11,
+      "row": 24
+    },
+    "filename": "/Archipelago/worlds/manual_walkabout_musicblox/Helpers.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 24
+    },
+    "message": "Do not use bare `except`",
+    "name": "bare-except",
+    "noqa_row": 24,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/bare-except"
+  },
+  {
+    "cell": null,
+    "code": "E722",
+    "end_location": {
+      "column": 11,
+      "row": 34
+    },
+    "filename": "/Archipelago/worlds/manual_walkabout_musicblox/Helpers.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 34
+    },
+    "message": "Do not use bare `except`",
+    "name": "bare-except",
+    "noqa_row": 34,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/bare-except"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 32,
+      "row": 614
+    },
+    "filename": "/Archipelago/worlds/manual_walkabout_musicblox/ManualClient.py",
+    "fix": null,
+    "location": {
+      "column": 31,
+      "row": 614
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 614,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E712",
+    "end_location": {
+      "column": 31,
+      "row": 866
+    },
+    "filename": "/Archipelago/worlds/manual_walkabout_musicblox/ManualClient.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "ctx.syncing",
+          "end_location": {
+            "column": 31,
+            "row": 866
+          },
+          "location": {
+            "column": 12,
+            "row": 866
+          }
+        }
+      ],
+      "message": "Replace with `ctx.syncing`"
+    },
+    "location": {
+      "column": 12,
+      "row": 866
+    },
+    "message": "Avoid equality comparisons to `True`; use `ctx.syncing:` for truth checks",
+    "name": "true-false-comparison",
+    "noqa_row": 866,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/true-false-comparison"
+  },
+  {
+    "cell": null,
+    "code": "S113",
+    "end_location": {
+      "column": 33,
+      "row": 945
+    },
+    "filename": "/Archipelago/worlds/manual_walkabout_musicblox/ManualClient.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 945
+    },
+    "message": "Probable use of `requests` call without timeout",
+    "name": "request-without-timeout",
+    "noqa_row": 945,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/request-without-timeout"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 100,
+      "row": 124
+    },
+    "filename": "/Archipelago/worlds/manual_walkabout_musicblox/Options.py",
+    "fix": null,
+    "location": {
+      "column": 99,
+      "row": 124
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 124,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 66,
+      "row": 173
+    },
+    "filename": "/Archipelago/worlds/manual_walkabout_musicblox/Options.py",
+    "fix": null,
+    "location": {
+      "column": 65,
+      "row": 173
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 173,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "B020",
+    "end_location": {
+      "column": 23,
+      "row": 208
+    },
+    "filename": "/Archipelago/worlds/manual_walkabout_musicblox/Options.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 208
+    },
+    "message": "Loop control variable `starting_items` overrides iterable it iterates",
+    "name": "loop-variable-overrides-iterator",
+    "noqa_row": 208,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/loop-variable-overrides-iterator"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 81,
+      "row": 71
+    },
+    "filename": "/Archipelago/worlds/manual_walkabout_musicblox/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 71
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 71,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 81,
+      "row": 97
+    },
+    "filename": "/Archipelago/worlds/manual_walkabout_musicblox/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 97
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 97,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 80,
+      "row": 148
+    },
+    "filename": "/Archipelago/worlds/manual_walkabout_musicblox/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 145
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 148,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "B034",
+    "end_location": {
+      "column": 87,
+      "row": 221
+    },
+    "filename": "/Archipelago/worlds/manual_walkabout_musicblox/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 221
+    },
+    "message": "`re.sub` should pass `count` and `flags` as keyword arguments to avoid confusion due to unintuitive argument positions",
+    "name": "re-sub-positional-args",
+    "noqa_row": 221,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/re-sub-positional-args"
+  },
+  {
+    "cell": null,
+    "code": "B034",
+    "end_location": {
+      "column": 86,
+      "row": 222
+    },
+    "filename": "/Archipelago/worlds/manual_walkabout_musicblox/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 222
+    },
+    "message": "`re.sub` should pass `count` and `flags` as keyword arguments to avoid confusion due to unintuitive argument positions",
+    "name": "re-sub-positional-args",
+    "noqa_row": 222,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/re-sub-positional-args"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 49,
+      "row": 287
+    },
+    "filename": "/Archipelago/worlds/manual_walkabout_musicblox/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 48,
+      "row": 287
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 287,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 34,
+      "row": 378
+    },
+    "filename": "/Archipelago/worlds/manual_walkabout_musicblox/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 378
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 378,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 276,
+      "row": 386
+    },
+    "filename": "/Archipelago/worlds/manual_walkabout_musicblox/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 386
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 386,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 47,
+      "row": 575
+    },
+    "filename": "/Archipelago/worlds/manual_walkabout_musicblox/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 573
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 575,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 47,
+      "row": 580
+    },
+    "filename": "/Archipelago/worlds/manual_walkabout_musicblox/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 578
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 580,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 128,
+      "row": 158
+    },
+    "filename": "/Archipelago/worlds/manual_walkabout_musicblox/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 158
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 158,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 41,
+      "row": 305
+    },
+    "filename": "/Archipelago/worlds/manual_walkabout_musicblox/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 40,
+      "row": 305
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 305,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 45,
+      "row": 321
+    },
+    "filename": "/Archipelago/worlds/manual_walkabout_musicblox/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 44,
+      "row": 321
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 321,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E722",
+    "end_location": {
+      "column": 23,
+      "row": 91
+    },
+    "filename": "/Archipelago/worlds/manual_walkabout_musicblox/hooks/World.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 91
+    },
+    "message": "Do not use bare `except`",
+    "name": "bare-except",
+    "noqa_row": 91,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/bare-except"
+  }
+]
