@@ -1,0 +1,12 @@
+{
+    "game": "Operation Octo",
+    "stub": "operationocto",
+    "manifest": {
+        "game": "Operation Octo",
+        "authors": [
+            "GraymonDgt"
+        ],
+        "minimum_ap_version": "0.6.4",
+        "world_version": "1.0.0"
+    }
+}
