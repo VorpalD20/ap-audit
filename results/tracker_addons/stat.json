@@ -1,0 +1,10 @@
+{
+    "game": "Universal Tracker Addons",
+    "stub": "tracker_addons",
+    "manifest": {
+        "version": 7,
+        "compatible_version": 7,
+        "game": "Universal Tracker Addons",
+        "minimum_ap_version": "0.6.2"
+    }
+}

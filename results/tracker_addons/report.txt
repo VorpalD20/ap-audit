@@ -1,0 +1,4 @@
+Final score: 0
+
+ruff_stats.json failed to load: 50
+fuzzer failed to run: 50
