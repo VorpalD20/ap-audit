@@ -49,6 +49,7 @@
   "useless-semicolon": 0
  },
  "tests": {
+  "test_completion_condition": -1,
   "test_create_item": 5,
   "test_default_all_state_can_reach_everything": 10,
   "test_explicit_indirect_conditions_spheres": -1,

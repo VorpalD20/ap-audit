@@ -1,0 +1,14 @@
+{
+    "game": "TFT Archipelago",
+    "stub": "tft_archipelago",
+    "manifest": {
+        "game": "TFT Archipelago",
+        "world_version": "0.6.0",
+        "authors": [
+            "Novy"
+        ],
+        "minimum_ap_version": "0.6.5",
+        "version": 7,
+        "compatible_version": 7
+    }
+}
