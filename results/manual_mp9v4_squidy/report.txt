@@ -1,0 +1,12 @@
+Final score: 78
+
+undefined-name: 5
+test_itempool_not_modified: 5
+none-comparison: 2
+raise-without-from-inside-except: 2
+test_has_game_info: 2
+test_has_tutorial: 2
+ambiguous-variable-name: 1
+bare-except: 1
+test_slot_data: 1
+archipelago.json is missing: 1

@@ -1,0 +1,37 @@
+[
+  {
+    "code": "E711",
+    "name": "none-comparison",
+    "count": 2,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "B904",
+    "name": "raise-without-from-inside-except",
+    "count": 2,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "E741",
+    "name": "ambiguous-variable-name",
+    "count": 1,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "E722",
+    "name": "bare-except",
+    "count": 1,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "F821",
+    "name": "undefined-name",
+    "count": 1,
+    "fixable": false,
+    "fixable_count": 0
+  }
+]

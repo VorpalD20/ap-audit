@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="2" failures="3" skipped="0" tests="960" time="6.837" timestamp="2026-11-11T07:32:38.447725+00:00" hostname="2901ab380ed3"><testcase classname="test.general.test_entrances.TestBase" name="test_all_state_before_connect_entrances" time="0.008" /><testcase classname="test.general.test_entrances.TestBase" name="test_entrance_connection_steps" time="0.002" /><testcase classname="test.general.test_groups.TestNameGroups" name="test_item_name_groups_not_empty" time="0.001" /><testcase classname="test.general.test_groups.TestNameGroups" name="test_location_name_groups_not_empty" time="0.000" /><testcase classname="test.general.test_ids.TestIDs" name="test_duplicate_item_ids" time="0.001" /><testcase classname="test.general.test_ids.TestIDs" name="test_duplicate_location_ids" time="0.000" /><testcase classname="test.general.test_ids.TestIDs" name="test_postgen_datapackage" time="0.006" /><testcase classname="test.general.test_ids.TestIDs" name="test_range_items" time="0.000" /><testcase classname="test.general.test_ids.TestIDs" name="test_range_locations" time="0.000" /><testcase classname="test.general.test_ids.TestIDs" name="test_reserved_items" time="0.000" /><testcase classname="test.general.test_ids.TestIDs" name="test_reserved_locations" time="0.000" /><testcase classname="test.general.test_implemented.TestImplemented" name="test_completion_condition" time="0.002" /><testcase classname="test.general.test_implemented.TestImplemented" name="test_entrance_parents" time="0.001" /><testcase classname="test.general.test_implemented.TestImplemented" name="test_explicit_indirect_conditions_spheres" time="0.007" /><testcase classname="test.general.test_implemented.TestImplemented" name="test_no_failed_world_loads" time="0.000" /><testcase classname="test.general.test_implemented.TestImplemented" name="test_no_items_or_locations_or_regions_submitted_in_init" time="0.001" /><testcase classname="test.general.test_implemented.TestImplemented" name="test_prefill_items" time="0.004" /><testcase classname="test.general.test_implemented.TestImplemented" name="test_slot_data" time="0.031"><failure message="AttributeError: 'NoneType' object has no attribute 'items'">self = &lt;test.general.test_implemented.TestImplemented testMethod=test_slot_data&gt;
+
+    def test_slot_data(self):
+        """Tests that if a world creates slot data, it's json serializable."""
+        # has an await for generate_output which isn't being called
+        excluded_games = ("Ocarina of Time",)
+        worlds_to_test = {game: world
+                          for game, world in AutoWorldRegister.testable_worlds.items() if game not in excluded_games}
+        for game_name, world_type in worlds_to_test.items():
+            multiworld = setup_solo_multiworld(world_type)
+            with self.subTest(game=game_name, seed=multiworld.seed):
+                distribute_items_restrictive(multiworld)
+                call_all(multiworld, "post_fill")
+                call_all(multiworld, "finalize_multiworld")
+                call_all(multiworld, "pre_output")
+&gt;               for key, data in multiworld.worlds[1].fill_slot_data().items():
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E               AttributeError: 'NoneType' object has no attribute 'items'
+
+test/general/test_implemented.py:53: AttributeError</failure></testcase><testcase classname="test.general.test_implemented.TestImplemented" name="test_stage_methods" time="0.001" /><testcase classname="test.general.test_items.TestBase" name="test_create_item" time="0.011" /><testcase classname="test.general.test_items.TestBase" name="test_item_count_equal_locations" time="0.002" /><testcase classname="test.general.test_items.TestBase" name="test_item_links" time="0.081" /><testcase classname="test.general.test_items.TestBase" name="test_item_name_group_conflict" time="0.001" /><testcase classname="test.general.test_items.TestBase" name="test_item_name_group_has_valid_item" time="0.001" /><testcase classname="test.general.test_items.TestBase" name="test_itempool_not_modified" time="0.015"><failure message="AssertionError: Lists differ: [] != [Bomb-omb Factory (Player 1), Boos Horror [6992 chars]r 1)]&#10;&#10;Second list contains 169 additional elements.&#10;First extra element 0:&#10;Bomb-omb Factory (Player 1)&#10;&#10;Diff is 7551 characters long. Set self.maxDiff to None to see it. : Manual_mp9v4_squidy modified the itempool during generate_basic">self = &lt;test.general.test_items.TestBase testMethod=test_itempool_not_modified&gt;
+
+    def test_itempool_not_modified(self):
+        """Test that worlds don't modify the itempool after `create_items`"""
+        gen_steps = ("generate_early", "create_regions", "create_items")
+        additional_steps = ("set_rules", "connect_entrances", "generate_basic", "pre_fill")
+        excluded_games = ("SMZ3",)
+        worlds_to_test = {game: world
+                          for game, world in AutoWorldRegister.testable_worlds.items() if game not in excluded_games}
+        for game_name, world_type in worlds_to_test.items():
+            with self.subTest("Game", game=game_name):
+                multiworld = setup_solo_multiworld(world_type, gen_steps)
+                created_items = multiworld.itempool.copy()
+                for step in additional_steps:
+                    with self.subTest("step", step=step):
+                        call_all(multiworld, step)
+&gt;                       self.assertEqual(created_items, multiworld.itempool,
+                                         f"{game_name} modified the itempool during {step}")
+E                       AssertionError: Lists differ: [] != [Bomb-omb Factory (Player 1), Boos Horror [6992 chars]r 1)]
+E                       
+E                       Second list contains 169 additional elements.
+E                       First extra element 0:
+E                       Bomb-omb Factory (Player 1)
+E                       
+E                       Diff is 7551 characters long. Set self.maxDiff to None to see it. : Manual_mp9v4_squidy modified the itempool during generate_basic
+
+test/general/test_items.py:151: AssertionError</failure><failure message="AssertionError: Lists differ: [] != [Bomb-omb Factory (Player 1), Boos Horror [6992 chars]r 1)]&#10;&#10;Second list contains 169 additional elements.&#10;First extra element 0:&#10;Bomb-omb Factory (Player 1)&#10;&#10;Diff is 7551 characters long. Set self.maxDiff to None to see it. : Manual_mp9v4_squidy modified the itempool during pre_fill">self = &lt;test.general.test_items.TestBase testMethod=test_itempool_not_modified&gt;
+
+    def test_itempool_not_modified(self):
+        """Test that worlds don't modify the itempool after `create_items`"""
+        gen_steps = ("generate_early", "create_regions", "create_items")
+        additional_steps = ("set_rules", "connect_entrances", "generate_basic", "pre_fill")
+        excluded_games = ("SMZ3",)
+        worlds_to_test = {game: world
+                          for game, world in AutoWorldRegister.testable_worlds.items() if game not in excluded_games}
+        for game_name, world_type in worlds_to_test.items():
+            with self.subTest("Game", game=game_name):
+                multiworld = setup_solo_multiworld(world_type, gen_steps)
+                created_items = multiworld.itempool.copy()
+                for step in additional_steps:
+                    with self.subTest("step", step=step):
+                        call_all(multiworld, step)
+&gt;                       self.assertEqual(created_items, multiworld.itempool,
+                                         f"{game_name} modified the itempool during {step}")
+E                       AssertionError: Lists differ: [] != [Bomb-omb Factory (Player 1), Boos Horror [6992 chars]r 1)]
+E                       
+E                       Second list contains 169 additional elements.
+E                       First extra element 0:
+E                       Bomb-omb Factory (Player 1)
+E                       
+E                       Diff is 7551 characters long. Set self.maxDiff to None to see it. : Manual_mp9v4_squidy modified the itempool during pre_fill
+
+test/general/test_items.py:151: AssertionError</failure></testcase><testcase classname="test.general.test_items.TestBase" name="test_items_in_datapackage" time="0.002" /><testcase classname="test.general.test_items.TestBase" name="test_locality_not_modified" time="0.002" /><testcase classname="test.general.test_locations.TestBase" name="test_create_duplicate_locations" time="0.002" /><testcase classname="test.general.test_locations.TestBase" name="test_location_creation_steps" time="0.001" /><testcase classname="test.general.test_locations.TestBase" name="test_location_group" time="0.001" /><testcase classname="test.general.test_locations.TestBase" name="test_locations_in_datapackage" time="0.001" /><testcase classname="test.general.test_memory.TestWorldMemory" name="test_leak" time="0.066" /><testcase classname="test.general.test_names.TestNames" name="test_item_names_format" time="0.001" /><testcase classname="test.general.test_names.TestNames" name="test_location_name_format" time="0.000" /><testcase classname="test.general.test_options.TestOptions" name="test_duplicate_options" time="0.001" /><testcase classname="test.general.test_options.TestOptions" name="test_item_links_name_groups" time="0.001" /><testcase classname="test.general.test_options.TestOptions" name="test_item_links_resolve" time="0.001" /><testcase classname="test.general.test_options.TestOptions" name="test_option_defaults" time="0.002" /><testcase classname="test.general.test_options.TestOptions" name="test_option_set_keys_random" time="0.001" /><testcase classname="test.general.test_options.TestOptions" name="test_options_are_not_set_by_world" time="0.000" /><testcase classname="test.general.test_options.TestOptions" name="test_options_have_doc_string" time="0.001" /><testcase classname="test.general.test_options.TestOptions" name="test_pickle_dumps_default" time="0.002" /><testcase classname="test.general.test_options.TestOptions" name="test_pickle_dumps_plando" time="0.001" /><testcase classname="test.general.test_packages.TestPackages" name="test_packages_have_init" time="0.045" /><testcase classname="test.general.test_patches.TestPatches" name="test_patch_name_matches_game" time="0.001" /><testcase classname="test.general.test_reachability.TestBase" name="test_default_all_state_can_reach_everything" time="0.018" /><testcase classname="test.general.test_reachability.TestBase" name="test_default_empty_state_can_reach_something" time="0.002" /><testcase classname="test.general.test_requirements.TestBase" name="test_requirements_file_ends_on_newline" time="0.002" /><testcase classname="test.general.test_settings.TestSettings" name="test_settings_can_update" time="0.005" /><testcase classname="test.general.test_state.TestBase" name="test_all_state_is_available" time="0.003" /><testcase classname="test.multiworld.test_multiworlds.TestTwoPlayerMulti{game='Manual_mp9v4_squidy'}" name="test_two_player_single_game_fills" time="0.016" /><testcase classname="test.webhost.test_descriptions.TestWebDescriptions" name="test_item_descriptions_have_valid_names" time="0.001" /><testcase classname="test.webhost.test_descriptions.TestWebDescriptions" name="test_location_descriptions_have_valid_names" time="0.000" /><testcase classname="test.webhost.test_docs.TestDocs" name="test_has_game_info" time="0.002"><error message="failed on setup with &quot;FileNotFoundError: [Errno 2] No such file or directory: '/Archipelago/worlds/manual_mp9v4_squidy/docs'&quot;">cls = &lt;class 'test.webhost.test_docs.TestDocs'&gt;
+
+    @classmethod
+    def setUpClass(cls) -&gt; None:
+&gt;       WebHost.copy_tutorials_files_to_static()
+
+test/webhost/test_docs.py:16: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def copy_tutorials_files_to_static() -&gt; None:
+        import shutil
+        import zipfile
+        from werkzeug.utils import secure_filename
+    
+        zfile: zipfile.ZipInfo
+    
+        from worlds.AutoWorld import AutoWorldRegister
+        worlds = {}
+        for game, world in AutoWorldRegister.world_types.items():
+            if hasattr(world.web, 'tutorials') and (not world.hidden or game == 'Archipelago'):
+                worlds[game] = world
+    
+        base_target_path = Utils.local_path("WebHostLib", "static", "generated", "docs")
+        shutil.rmtree(base_target_path, ignore_errors=True)
+        for game, world in worlds.items():
+            # copy files from world's docs folder to the generated folder
+            target_path = os.path.join(base_target_path, secure_filename(game))
+            os.makedirs(target_path, exist_ok=True)
+    
+            if world.zip_path:
+                zipfile_path = world.zip_path
+    
+                assert os.path.isfile(zipfile_path), f"{zipfile_path} is not a valid file(path)."
+                assert zipfile.is_zipfile(zipfile_path), f"{zipfile_path} is not a valid zipfile."
+    
+                with zipfile.ZipFile(zipfile_path) as zf:
+                    for zfile in zf.infolist():
+                        if not zfile.is_dir() and "/docs/" in zfile.filename:
+                            zfile.filename = os.path.basename(zfile.filename)
+                            with open(os.path.join(target_path, secure_filename(zfile.filename)), "wb") as f:
+                                f.write(zf.read(zfile))
+            else:
+                source_path = Utils.local_path(os.path.dirname(world.__file__), "docs")
+&gt;               files = os.listdir(source_path)
+                        ^^^^^^^^^^^^^^^^^^^^^^^
+E               FileNotFoundError: [Errno 2] No such file or directory: '/Archipelago/worlds/manual_mp9v4_squidy/docs'
+
+WebHost.py:92: FileNotFoundError</error></testcase><testcase classname="test.webhost.test_docs.TestDocs" name="test_has_tutorial" time="0.000"><error message="failed on setup with &quot;FileNotFoundError: [Errno 2] No such file or directory: '/Archipelago/worlds/manual_mp9v4_squidy/docs'&quot;">cls = &lt;class 'test.webhost.test_docs.TestDocs'&gt;
+
+    @classmethod
+    def setUpClass(cls) -&gt; None:
+&gt;       WebHost.copy_tutorials_files_to_static()
+
+test/webhost/test_docs.py:16: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def copy_tutorials_files_to_static() -&gt; None:
+        import shutil
+        import zipfile
+        from werkzeug.utils import secure_filename
+    
+        zfile: zipfile.ZipInfo
+    
+        from worlds.AutoWorld import AutoWorldRegister
+        worlds = {}
+        for game, world in AutoWorldRegister.world_types.items():
+            if hasattr(world.web, 'tutorials') and (not world.hidden or game == 'Archipelago'):
+                worlds[game] = world
+    
+        base_target_path = Utils.local_path("WebHostLib", "static", "generated", "docs")
+        shutil.rmtree(base_target_path, ignore_errors=True)
+        for game, world in worlds.items():
+            # copy files from world's docs folder to the generated folder
+            target_path = os.path.join(base_target_path, secure_filename(game))
+            os.makedirs(target_path, exist_ok=True)
+    
+            if world.zip_path:
+                zipfile_path = world.zip_path
+    
+                assert os.path.isfile(zipfile_path), f"{zipfile_path} is not a valid file(path)."
+                assert zipfile.is_zipfile(zipfile_path), f"{zipfile_path} is not a valid zipfile."
+    
+                with zipfile.ZipFile(zipfile_path) as zf:
+                    for zfile in zf.infolist():
+                        if not zfile.is_dir() and "/docs/" in zfile.filename:
+                            zfile.filename = os.path.basename(zfile.filename)
+                            with open(os.path.join(target_path, secure_filename(zfile.filename)), "wb") as f:
+                                f.write(zf.read(zfile))
+            else:
+                source_path = Utils.local_path(os.path.dirname(world.__file__), "docs")
+&gt;               files = os.listdir(source_path)
+                        ^^^^^^^^^^^^^^^^^^^^^^^
+E               FileNotFoundError: [Errno 2] No such file or directory: '/Archipelago/worlds/manual_mp9v4_squidy/docs'
+
+WebHost.py:92: FileNotFoundError</error></testcase><testcase classname="test.webhost.test_file_generation.TestFileGeneration" name="test_options" time="0.052" /><testcase classname="test.webhost.test_option_presets.TestOptionPresets" name="test_option_preset_values_are_explicitly_defined" time="0.001" /><testcase classname="test.webhost.test_option_presets.TestOptionPresets" name="test_option_presets_have_valid_options" time="0.000" /></testsuite></testsuites>

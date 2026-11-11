@@ -1,0 +1,167 @@
+[
+  {
+    "cell": null,
+    "code": "E722",
+    "end_location": {
+      "column": 11,
+      "row": 14
+    },
+    "filename": "/Archipelago/worlds/manual_mp9v4_squidy/Data.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 14
+    },
+    "message": "Do not use bare `except`",
+    "name": "bare-except",
+    "noqa_row": 14,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/bare-except"
+  },
+  {
+    "cell": null,
+    "code": "F821",
+    "end_location": {
+      "column": 142,
+      "row": 184
+    },
+    "filename": "/Archipelago/worlds/manual_mp9v4_squidy/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 139,
+      "row": 184
+    },
+    "message": "Undefined name `key`",
+    "name": "undefined-name",
+    "noqa_row": 184,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-name"
+  },
+  {
+    "cell": null,
+    "code": "E711",
+    "end_location": {
+      "column": 26,
+      "row": 34
+    },
+    "filename": "/Archipelago/worlds/manual_mp9v4_squidy/Items.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "item[\"id\"] is not None",
+          "end_location": {
+            "column": 26,
+            "row": 34
+          },
+          "location": {
+            "column": 8,
+            "row": 34
+          }
+        }
+      ],
+      "message": "Replace with `cond is not None`"
+    },
+    "location": {
+      "column": 22,
+      "row": 34
+    },
+    "message": "Comparison to `None` should be `cond is not None`",
+    "name": "none-comparison",
+    "noqa_row": 34,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/none-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E711",
+    "end_location": {
+      "column": 22,
+      "row": 12
+    },
+    "filename": "/Archipelago/worlds/manual_mp9v4_squidy/Options.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "option is None",
+          "end_location": {
+            "column": 22,
+            "row": 12
+          },
+          "location": {
+            "column": 8,
+            "row": 12
+          }
+        }
+      ],
+      "message": "Replace with `cond is None`"
+    },
+    "location": {
+      "column": 18,
+      "row": 12
+    },
+    "message": "Comparison to `None` should be `cond is None`",
+    "name": "none-comparison",
+    "noqa_row": 12,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/none-comparison"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 88,
+      "row": 31
+    },
+    "filename": "/Archipelago/worlds/manual_mp9v4_squidy/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 31
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 31,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 88,
+      "row": 55
+    },
+    "filename": "/Archipelago/worlds/manual_mp9v4_squidy/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 55
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 55,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 58,
+      "row": 135
+    },
+    "filename": "/Archipelago/worlds/manual_mp9v4_squidy/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 57,
+      "row": 135
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 135,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  }
+]
