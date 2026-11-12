@@ -2,7 +2,10 @@
  "fuzzer": {
   "<class 'TimeoutError'>": -1,
   "EOF when reading a line": -1,
-  "FillError": 1
+  "FillError": 1,
+  "Logic techniques must be known and may not be both enabled and disabled": -1,
+  "Suit shuffle requires at least one palette pool": -1,
+  "hud_color must be original or a six-digit RGB color": -1
  },
  "manifest": {
   "archipelago.json is missing": -1
@@ -64,6 +67,7 @@
   "test_manifest": -1,
   "test_no_failed_world_loads": -1,
   "test_option_defaults": -1,
+  "test_options_have_doc_string": -1,
   "test_packages_have_init": -1,
   "test_pickle_dumps_default": 10,
   "test_postgen_datapackage": -1,

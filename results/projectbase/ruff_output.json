@@ -1,0 +1,21 @@
+[
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 24,
+      "row": 55
+    },
+    "filename": "/Archipelago/worlds/projectbase/rules.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 55
+    },
+    "message": "Possible hardcoded password assigned to: \"token\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 55,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  }
+]

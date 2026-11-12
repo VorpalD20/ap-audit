@@ -1,0 +1,9 @@
+[
+  {
+    "code": "S105",
+    "name": "hardcoded-password-string",
+    "count": 1,
+    "fixable": false,
+    "fixable_count": 0
+  }
+]

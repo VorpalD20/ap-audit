@@ -1,0 +1,11 @@
+{
+    "game": "Project Base",
+    "stub": "projectbase",
+    "manifest": {
+        "game": "Project Base",
+        "world_version": "1.0.1",
+        "minimum_ap_version": "0.6.7",
+        "compatible_version": 7,
+        "version": 7
+    }
+}
