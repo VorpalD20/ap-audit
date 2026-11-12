@@ -1,0 +1,6 @@
+Final score: 27
+
+ruff_stats.json failed to load: 50
+FillError: 21
+test_has_game_info: 1
+test_has_tutorial: 1
