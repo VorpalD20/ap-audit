@@ -8,7 +8,9 @@
   "hud_color must be original or a six-digit RGB color": -1
  },
  "manifest": {
-  "archipelago.json is missing": -1
+  "archipelago.json is missing": -1,
+  "manifest compatible_version is higher than latest defined version": -1,
+  "manifest version is higher than latest defined version": -1
  },
  "ruff": {
   "ambiguous-variable-name": -1,

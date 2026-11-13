@@ -1,0 +1,15 @@
+{
+    "game": "Super Smash Bros. 64",
+    "stub": "smash64",
+    "manifest": {
+        "game": "Super Smash Bros. 64",
+        "world_version": "0.1.0",
+        "authors": [
+            "IncidiousJacob",
+            "ChatGPT"
+        ],
+        "minimum_ap_version": "0.6.7",
+        "compatible_version": 8,
+        "version": 8
+    }
+}

@@ -1,0 +1,7 @@
+Final score: -3
+
+ruff_stats.json failed to load: 50
+fuzzer failed to run: 50
+test_no_failed_world_loads: 1
+manifest version is higher than latest defined version: 1
+manifest compatible_version is higher than latest defined version: 1
