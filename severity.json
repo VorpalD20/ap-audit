@@ -81,6 +81,7 @@
   "worlds.YARGBandHero.test.test_extra_starting_chest": -1,
   "worlds.YARGBandHero.test.test_hammer": -1,
   "worlds.YARGBandHero.test.test_hard_mode": -1,
-  "worlds.ccs.test.test_basic": -1
+  "worlds.ccs.test.test_basic": -1,
+  "worlds.cuphead.test.test_b_code": -1
  }
 }

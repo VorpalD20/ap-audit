@@ -1,0 +1,21 @@
+{
+    "game": "Cuphead",
+    "stub": "cuphead",
+    "manifest": {
+        "version": 7,
+        "compatible_version": 7,
+        "game": "Cuphead",
+        "authors": [
+            "JKLeckr"
+        ],
+        "license": "MPL-2.0",
+        "repo_url": "https://github.com/JKLeckr/Archipelago-cuphead",
+        "flags": [
+            "supports_deathlink"
+        ],
+        "igdb_id": 9061,
+        "minimum_ap_version": "0.6.7",
+        "world_version": "0.2.20021210",
+        "world_friendly_version": "alpha03m"
+    }
+}

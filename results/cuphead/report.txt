@@ -1,0 +1,4 @@
+Final score: 48
+
+ruff_stats.json failed to load: 50
+worlds.cuphead.test.test_b_code: 2

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="1" failures="0" skipped="0" tests="1" time="5.454" timestamp="2026-11-13T20:22:27.562900+00:00" hostname="c59b3f7c6b91"><testcase classname="" name="worlds.cuphead.test.test_b_code" time="0.000"><error message="collection failure">ImportError while importing test module '/Archipelago/worlds/cuphead/test/test_b_code.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/local/lib/python3.13/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/cuphead/test/test_b_code.py:11: in &lt;module&gt;
+    from ..tools import gentemplateyaml
+E   ModuleNotFoundError: No module named 'worlds.cuphead.tools'</error></testcase></testsuite></testsuites>
