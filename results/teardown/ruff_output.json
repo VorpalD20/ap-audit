@@ -1,0 +1,167 @@
+[
+  {
+    "cell": null,
+    "code": "S608",
+    "end_location": {
+      "column": 52,
+      "row": 1459
+    },
+    "filename": "/Archipelago/worlds/teardown/client/teardownclient.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 1459
+    },
+    "message": "Possible SQL injection vector through string-based query construction",
+    "name": "hardcoded-sql-expression",
+    "noqa_row": 1459,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-sql-expression"
+  },
+  {
+    "cell": null,
+    "code": "S314",
+    "end_location": {
+      "column": 48,
+      "row": 1489
+    },
+    "filename": "/Archipelago/worlds/teardown/client/teardownclient.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 1489
+    },
+    "message": "Using `xml` to parse untrusted data is known to be vulnerable to XML attacks; use `defusedxml` equivalents",
+    "name": "suspicious-xml-element-tree-usage",
+    "noqa_row": 1489,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/suspicious-xml-element-tree-usage"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 37,
+      "row": 1765
+    },
+    "filename": "/Archipelago/worlds/teardown/client/teardownclient.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"Sync: Starting Sync\"",
+          "end_location": {
+            "column": 37,
+            "row": 1765
+          },
+          "location": {
+            "column": 15,
+            "row": 1765
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 15,
+      "row": 1765
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 1765,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "S314",
+    "end_location": {
+      "column": 48,
+      "row": 1768
+    },
+    "filename": "/Archipelago/worlds/teardown/client/teardownclient.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 1768
+    },
+    "message": "Using `xml` to parse untrusted data is known to be vulnerable to XML attacks; use `defusedxml` equivalents",
+    "name": "suspicious-xml-element-tree-usage",
+    "noqa_row": 1768,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/suspicious-xml-element-tree-usage"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 58,
+      "row": 1903
+    },
+    "filename": "/Archipelago/worlds/teardown/client/teardownclient.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"Sync Valuables: No Valuable Base\"",
+          "end_location": {
+            "column": 58,
+            "row": 1903
+          },
+          "location": {
+            "column": 23,
+            "row": 1903
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 23,
+      "row": 1903
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 1903,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "S314",
+    "end_location": {
+      "column": 48,
+      "row": 2007
+    },
+    "filename": "/Archipelago/worlds/teardown/client/teardownclient.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 2007
+    },
+    "message": "Using `xml` to parse untrusted data is known to be vulnerable to XML attacks; use `defusedxml` equivalents",
+    "name": "suspicious-xml-element-tree-usage",
+    "noqa_row": 2007,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/suspicious-xml-element-tree-usage"
+  },
+  {
+    "cell": null,
+    "code": "S603",
+    "end_location": {
+      "column": 29,
+      "row": 2029
+    },
+    "filename": "/Archipelago/worlds/teardown/client/teardownclient.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 2029
+    },
+    "message": "`subprocess` call: check for execution of untrusted input",
+    "name": "subprocess-without-shell-equals-true",
+    "noqa_row": 2029,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/subprocess-without-shell-equals-true"
+  }
+]

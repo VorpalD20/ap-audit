@@ -42,6 +42,7 @@
   "start-process-with-partial-path": -1,
   "subprocess-without-shell-equals-true": -1,
   "suspicious-url-open-usage": -1,
+  "suspicious-xml-element-tree-usage": -1,
   "true-false-comparison": -1,
   "try-except-continue": 0,
   "try-except-pass": 0,

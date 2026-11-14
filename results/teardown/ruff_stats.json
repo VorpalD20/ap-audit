@@ -1,0 +1,30 @@
+[
+  {
+    "code": "S314",
+    "name": "suspicious-xml-element-tree-usage",
+    "count": 3,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "F541",
+    "name": "f-string-missing-placeholders",
+    "count": 2,
+    "fixable": true,
+    "fixable_count": 2
+  },
+  {
+    "code": "S608",
+    "name": "hardcoded-sql-expression",
+    "count": 1,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "S603",
+    "name": "subprocess-without-shell-equals-true",
+    "count": 1,
+    "fixable": false,
+    "fixable_count": 0
+  }
+]

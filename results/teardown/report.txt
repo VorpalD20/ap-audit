@@ -1,0 +1,9 @@
+Final score: 86
+
+test_create_item: 5
+suspicious-xml-element-tree-usage: 3
+test_has_game_info: 2
+test_has_tutorial: 2
+hardcoded-sql-expression: 1
+subprocess-without-shell-equals-true: 1
+f-string-missing-placeholders: 0
