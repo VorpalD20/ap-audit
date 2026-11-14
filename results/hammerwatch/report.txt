@@ -1,0 +1,5 @@
+Final score: 97
+
+FillError: 3
+hardcoded-password-string: 0
+unused-annotation: 0

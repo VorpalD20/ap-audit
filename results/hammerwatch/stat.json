@@ -1,0 +1,14 @@
+{
+    "game": "Hammerwatch",
+    "stub": "hammerwatch",
+    "manifest": {
+        "game": "Hammerwatch",
+        "minimum_ap_version": "0.6.4",
+        "world_version": "4.1.4",
+        "authors": [
+            "Parcosmic"
+        ],
+        "compatible_version": 7,
+        "version": 7
+    }
+}

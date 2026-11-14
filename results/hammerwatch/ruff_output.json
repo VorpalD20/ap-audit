@@ -1,0 +1,1579 @@
+[
+  {
+    "cell": null,
+    "code": "F842",
+    "end_location": {
+      "column": 16,
+      "row": 2802
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/locations.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 2802
+    },
+    "message": "Local variable `pickup_locs` is annotated but never used",
+    "name": "unused-annotation",
+    "noqa_row": 2802,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/unused-annotation"
+  },
+  {
+    "cell": null,
+    "code": "F842",
+    "end_location": {
+      "column": 20,
+      "row": 2803
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/locations.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 2803
+    },
+    "message": "Local variable `enemy_loot_locs` is annotated but never used",
+    "name": "unused-annotation",
+    "noqa_row": 2803,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/unused-annotation"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 57,
+      "row": 8
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/castle_location_names.py",
+    "fix": null,
+    "location": {
+      "column": 22,
+      "row": 8
+    },
+    "message": "Possible hardcoded password assigned to: \"p1_entrance_secret\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 8,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 34,
+      "row": 46
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/castle_location_names.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 46
+    },
+    "message": "Possible hardcoded password assigned to: \"p1_e_secret\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 46,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 40,
+      "row": 47
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/castle_location_names.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 47
+    },
+    "message": "Possible hardcoded password assigned to: \"p1_s_secret_1\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 47,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 40,
+      "row": 48
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/castle_location_names.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 48
+    },
+    "message": "Possible hardcoded password assigned to: \"p1_s_secret_2\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 48,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 46,
+      "row": 191
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/castle_location_names.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 191
+    },
+    "message": "Possible hardcoded password assigned to: \"p3_secret_secret\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 191,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 54,
+      "row": 241
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/castle_location_names.py",
+    "fix": null,
+    "location": {
+      "column": 26,
+      "row": 241
+    },
+    "message": "Possible hardcoded password assigned to: \"p3_secret_arrow_hall_1\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 241,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 54,
+      "row": 242
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/castle_location_names.py",
+    "fix": null,
+    "location": {
+      "column": 26,
+      "row": 242
+    },
+    "message": "Possible hardcoded password assigned to: \"p3_secret_arrow_hall_2\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 242,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 54,
+      "row": 277
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/castle_location_names.py",
+    "fix": null,
+    "location": {
+      "column": 26,
+      "row": 277
+    },
+    "message": "Possible hardcoded password assigned to: \"n1_room2_n_secret_room\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 277,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 52,
+      "row": 319
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/castle_location_names.py",
+    "fix": null,
+    "location": {
+      "column": 23,
+      "row": 319
+    },
+    "message": "Possible hardcoded password assigned to: \"a1_m_trellis_secret\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 319,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 49,
+      "row": 383
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/castle_location_names.py",
+    "fix": null,
+    "location": {
+      "column": 26,
+      "row": 383
+    },
+    "message": "Possible hardcoded password assigned to: \"a1_ne_ice_tower_secret\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 383,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 49,
+      "row": 549
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/castle_location_names.py",
+    "fix": null,
+    "location": {
+      "column": 22,
+      "row": 549
+    },
+    "message": "Possible hardcoded password assigned to: \"a3_s_banner_secret\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 549,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 42,
+      "row": 596
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/castle_location_names.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 596
+    },
+    "message": "Possible hardcoded password assigned to: \"a3_secret_shop\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 596,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 51,
+      "row": 761
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/castle_location_names.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 761
+    },
+    "message": "Possible hardcoded password assigned to: \"r3_e_secret_tp\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 761,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 56,
+      "row": 816
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/castle_location_names.py",
+    "fix": null,
+    "location": {
+      "column": 26,
+      "row": 816
+    },
+    "message": "Possible hardcoded password assigned to: \"r3_e_fire_floor_secret\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 816,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 55,
+      "row": 817
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/castle_location_names.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 817
+    },
+    "message": "Possible hardcoded password assigned to: \"r3_shops_room_secret\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 817,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 75,
+      "row": 1387
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/castle_location_names.py",
+    "fix": null,
+    "location": {
+      "column": 33,
+      "row": 1387
+    },
+    "message": "Possible hardcoded password assigned to: \"btn_p3_wall_secret_arrow_hall\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 1387,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 65,
+      "row": 1431
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/castle_location_names.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 1431
+    },
+    "message": "Possible hardcoded password assigned to: \"btn_a2_floor_secret_e\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 1431,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 33,
+      "row": 6
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/castle_region_names.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 6
+    },
+    "message": "Possible hardcoded password assigned to: \"p1_secret\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 6,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 40,
+      "row": 8
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/castle_region_names.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 8
+    },
+    "message": "Possible hardcoded password assigned to: \"p1_nw_secret\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 8,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 33,
+      "row": 10
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/castle_region_names.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 10
+    },
+    "message": "Possible hardcoded password assigned to: \"p1_sw_secret\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 10,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 33,
+      "row": 22
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/castle_region_names.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 22
+    },
+    "message": "Possible hardcoded password assigned to: \"p2_ne_secret\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 22,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 39,
+      "row": 44
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/castle_region_names.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 44
+    },
+    "message": "Possible hardcoded password assigned to: \"p3_start_secret\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 44,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 33,
+      "row": 55
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/castle_region_names.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 55
+    },
+    "message": "Possible hardcoded password assigned to: \"p3_se_secret\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 55,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 36,
+      "row": 58
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/castle_region_names.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 58
+    },
+    "message": "Possible hardcoded password assigned to: \"p3_m_secret\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 58,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 57,
+      "row": 63
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/castle_region_names.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 63
+    },
+    "message": "Possible hardcoded password assigned to: \"p3_arrow_hall_secret\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 63,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 59,
+      "row": 65
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/castle_region_names.py",
+    "fix": null,
+    "location": {
+      "column": 27,
+      "row": 65
+    },
+    "message": "Possible hardcoded password assigned to: \"p3_hidden_s_hall_secret\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 65,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 52,
+      "row": 71
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/castle_region_names.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 71
+    },
+    "message": "Possible hardcoded password assigned to: \"n1_room2_secret\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 71,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 35,
+      "row": 103
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/castle_region_names.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 103
+    },
+    "message": "Possible hardcoded password assigned to: \"a1_n_secret\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 103,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 35,
+      "row": 123
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/castle_region_names.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 123
+    },
+    "message": "Possible hardcoded password assigned to: \"a2_s_secret\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 123,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 33,
+      "row": 131
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/castle_region_names.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 131
+    },
+    "message": "Possible hardcoded password assigned to: \"a2_ne_secret\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 131,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 33,
+      "row": 157
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/castle_region_names.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 157
+    },
+    "message": "Possible hardcoded password assigned to: \"a3_secret\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 157,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 33,
+      "row": 205
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/castle_region_names.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 205
+    },
+    "message": "Possible hardcoded password assigned to: \"r2_sw_secret\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 205,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 33,
+      "row": 222
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/castle_region_names.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 222
+    },
+    "message": "Possible hardcoded password assigned to: \"r3_se_secret\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 222,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 59,
+      "row": 228
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/castle_region_names.py",
+    "fix": null,
+    "location": {
+      "column": 22,
+      "row": 228
+    },
+    "message": "Possible hardcoded password assigned to: \"r3_sw_bgate_secret\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 228,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 18,
+      "row": 147
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/item_name.py",
+    "fix": null,
+    "location": {
+      "column": 10,
+      "row": 147
+    },
+    "message": "Possible hardcoded password assigned to: \"secret\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 147,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 37,
+      "row": 27
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/temple_location_names.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 27
+    },
+    "message": "Possible hardcoded password assigned to: \"cave3_secret_n\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 27,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 35,
+      "row": 28
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/temple_location_names.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 28
+    },
+    "message": "Possible hardcoded password assigned to: \"cave3_secret_nw\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 28,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 37,
+      "row": 29
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/temple_location_names.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 29
+    },
+    "message": "Possible hardcoded password assigned to: \"cave3_secret_s\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 29,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 39,
+      "row": 43
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/temple_location_names.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 43
+    },
+    "message": "Possible hardcoded password assigned to: \"cave3_secret_1\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 43,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 39,
+      "row": 44
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/temple_location_names.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 44
+    },
+    "message": "Possible hardcoded password assigned to: \"cave3_secret_2\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 44,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 39,
+      "row": 45
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/temple_location_names.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 45
+    },
+    "message": "Possible hardcoded password assigned to: \"cave3_secret_3\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 45,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 39,
+      "row": 46
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/temple_location_names.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 46
+    },
+    "message": "Possible hardcoded password assigned to: \"cave3_secret_4\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 46,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 39,
+      "row": 47
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/temple_location_names.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 47
+    },
+    "message": "Possible hardcoded password assigned to: \"cave3_secret_5\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 47,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 39,
+      "row": 48
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/temple_location_names.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 48
+    },
+    "message": "Possible hardcoded password assigned to: \"cave3_secret_6\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 48,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 39,
+      "row": 49
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/temple_location_names.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 49
+    },
+    "message": "Possible hardcoded password assigned to: \"cave3_secret_7\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 49,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 39,
+      "row": 50
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/temple_location_names.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 50
+    },
+    "message": "Possible hardcoded password assigned to: \"cave3_secret_8\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 50,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 39,
+      "row": 51
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/temple_location_names.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 51
+    },
+    "message": "Possible hardcoded password assigned to: \"cave3_secret_9\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 51,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 41,
+      "row": 52
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/temple_location_names.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 52
+    },
+    "message": "Possible hardcoded password assigned to: \"cave3_secret_10\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 52,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 41,
+      "row": 53
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/temple_location_names.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 53
+    },
+    "message": "Possible hardcoded password assigned to: \"cave3_secret_11\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 53,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 41,
+      "row": 54
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/temple_location_names.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 54
+    },
+    "message": "Possible hardcoded password assigned to: \"cave3_secret_12\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 54,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 62,
+      "row": 73
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/temple_location_names.py",
+    "fix": null,
+    "location": {
+      "column": 30,
+      "row": 73
+    },
+    "message": "Possible hardcoded password assigned to: \"cave2_double_bridge_secret\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 73,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 35,
+      "row": 99
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/temple_location_names.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 99
+    },
+    "message": "Possible hardcoded password assigned to: \"cave2_secret_ne\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 99,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 38,
+      "row": 100
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/temple_location_names.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 100
+    },
+    "message": "Possible hardcoded password assigned to: \"cave2_secret_m\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 100,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 36,
+      "row": 101
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/temple_location_names.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 101
+    },
+    "message": "Possible hardcoded password assigned to: \"cave2_secret_w\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 101,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 35,
+      "row": 133
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/temple_location_names.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 133
+    },
+    "message": "Possible hardcoded password assigned to: \"cave1_secret_nw\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 133,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 36,
+      "row": 134
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/temple_location_names.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 134
+    },
+    "message": "Possible hardcoded password assigned to: \"cave1_secret_w\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 134,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 38,
+      "row": 135
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/temple_location_names.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 135
+    },
+    "message": "Possible hardcoded password assigned to: \"cave1_secret_m\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 135,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 48,
+      "row": 150
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/temple_location_names.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 150
+    },
+    "message": "Possible hardcoded password assigned to: \"cave1_secret_tunnel_1\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 150,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 48,
+      "row": 151
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/temple_location_names.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 151
+    },
+    "message": "Possible hardcoded password assigned to: \"cave1_secret_tunnel_2\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 151,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 48,
+      "row": 152
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/temple_location_names.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 152
+    },
+    "message": "Possible hardcoded password assigned to: \"cave1_secret_tunnel_3\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 152,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 35,
+      "row": 158
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/temple_location_names.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 158
+    },
+    "message": "Possible hardcoded password assigned to: \"cave1_secret_ne\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 158,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 55,
+      "row": 159
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/temple_location_names.py",
+    "fix": null,
+    "location": {
+      "column": 30,
+      "row": 159
+    },
+    "message": "Possible hardcoded password assigned to: \"cave1_secret_n_hidden_room\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 159,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 36,
+      "row": 164
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/temple_location_names.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 164
+    },
+    "message": "Possible hardcoded password assigned to: \"cave1_secret_e\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 164,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 35,
+      "row": 206
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/temple_location_names.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 206
+    },
+    "message": "Possible hardcoded password assigned to: \"boss1_secret\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 206,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 38,
+      "row": 209
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/temple_location_names.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 209
+    },
+    "message": "Possible hardcoded password assigned to: \"p_ent2_secret\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 209,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 43,
+      "row": 216
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/temple_location_names.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 216
+    },
+    "message": "Possible hardcoded password assigned to: \"p_mid3_secret_1\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 216,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 45,
+      "row": 217
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/temple_location_names.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 217
+    },
+    "message": "Possible hardcoded password assigned to: \"p_mid3_secret_2\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 217,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 44,
+      "row": 218
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/temple_location_names.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 218
+    },
+    "message": "Possible hardcoded password assigned to: \"p_mid3_secret_3\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 218,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 48,
+      "row": 219
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/temple_location_names.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 219
+    },
+    "message": "Possible hardcoded password assigned to: \"p_mid3_secret_4\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 219,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 46,
+      "row": 226
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/temple_location_names.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 226
+    },
+    "message": "Possible hardcoded password assigned to: \"p_mid5_secret\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 226,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 33,
+      "row": 227
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/temple_location_names.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 227
+    },
+    "message": "Possible hardcoded password assigned to: \"p_end1_secret\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 227,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 45,
+      "row": 36
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/temple_region_names.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 36
+    },
+    "message": "Possible hardcoded password assigned to: \"c3_e_guard_secret\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 36,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 41,
+      "row": 41
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/temple_region_names.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 41
+    },
+    "message": "Possible hardcoded password assigned to: \"cave_3_secret\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 41,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 38,
+      "row": 63
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/temple_region_names.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 63
+    },
+    "message": "Possible hardcoded password assigned to: \"c1_secret_hall\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 63,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 32,
+      "row": 71
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/temple_region_names.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 71
+    },
+    "message": "Possible hardcoded password assigned to: \"b1_back_secret\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 71,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 48,
+      "row": 76
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/temple_region_names.py",
+    "fix": null,
+    "location": {
+      "column": 27,
+      "row": 76
+    },
+    "message": "Possible hardcoded password assigned to: \"passage_entrance_secret\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 76,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 38,
+      "row": 80
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/temple_region_names.py",
+    "fix": null,
+    "location": {
+      "column": 22,
+      "row": 80
+    },
+    "message": "Possible hardcoded password assigned to: \"passage_end_secret\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 80,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 36,
+      "row": 87
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/temple_region_names.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 87
+    },
+    "message": "Possible hardcoded password assigned to: \"t1_main_secret\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 87,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 33,
+      "row": 98
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/temple_region_names.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 98
+    },
+    "message": "Possible hardcoded password assigned to: \"t1_e_secret\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 98,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 51,
+      "row": 116
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/temple_region_names.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 116
+    },
+    "message": "Possible hardcoded password assigned to: \"t2_n_gate_secret\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 116,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 51,
+      "row": 118
+    },
+    "filename": "/Archipelago/worlds/hammerwatch/names/temple_region_names.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 118
+    },
+    "message": "Possible hardcoded password assigned to: \"t2_s_gate_secret\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 118,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  }
+]
