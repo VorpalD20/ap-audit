@@ -1,0 +1,550 @@
+[
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 36,
+      "row": 83
+    },
+    "filename": "/Archipelago/worlds/hk/Extractor.py",
+    "fix": null,
+    "location": {
+      "column": 12,
+      "row": 83
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 83,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 37,
+      "row": 90
+    },
+    "filename": "/Archipelago/worlds/hk/Extractor.py",
+    "fix": null,
+    "location": {
+      "column": 14,
+      "row": 90
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 90,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 35,
+      "row": 123
+    },
+    "filename": "/Archipelago/worlds/hk/Extractor.py",
+    "fix": null,
+    "location": {
+      "column": 12,
+      "row": 123
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 123,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "B033",
+    "end_location": {
+      "column": 96,
+      "row": 325
+    },
+    "filename": "/Archipelago/worlds/hk/Extractor.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "",
+          "end_location": {
+            "column": 79,
+            "row": 326
+          },
+          "location": {
+            "column": 79,
+            "row": 325
+          }
+        }
+      ],
+      "message": "Remove duplicate item"
+    },
+    "location": {
+      "column": 79,
+      "row": 325
+    },
+    "message": "Sets should not contain duplicate items, but `\"HALLOWNESTSEALS\"` and `'HALLOWNESTSEALS'` has the same value",
+    "name": "duplicate-value",
+    "noqa_row": 325,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/duplicate-value"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 28,
+      "row": 449
+    },
+    "filename": "/Archipelago/worlds/hk/Extractor.py",
+    "fix": null,
+    "location": {
+      "column": 12,
+      "row": 449
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 449,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "S701",
+    "end_location": {
+      "column": 23,
+      "row": 457
+    },
+    "filename": "/Archipelago/worlds/hk/Extractor.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 457
+    },
+    "message": "By default, jinja2 sets `autoescape` to `False`. Consider using `autoescape=True` or the `select_autoescape` function to mitigate XSS vulnerabilities.",
+    "name": "jinja2-autoescape-false",
+    "noqa_row": 457,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/jinja2-autoescape-false"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 70,
+      "row": 255
+    },
+    "filename": "/Archipelago/worlds/hk/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 47,
+      "row": 255
+    },
+    "message": "Possible hardcoded password assigned to: \"Elevator_Pass\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 255,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 68,
+      "row": 97
+    },
+    "filename": "/Archipelago/worlds/hk/data/constants/event_names.py",
+    "fix": null,
+    "location": {
+      "column": 37,
+      "row": 97
+    },
+    "message": "Possible hardcoded password assigned to: \"BROKE_WEAVERS_DEN_SECRET_WALL\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 97,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 28,
+      "row": 78
+    },
+    "filename": "/Archipelago/worlds/hk/data/constants/item_names.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 78
+    },
+    "message": "Possible hardcoded password assigned to: \"TRAM_PASS\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 78,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 36,
+      "row": 134
+    },
+    "filename": "/Archipelago/worlds/hk/data/constants/item_names.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 134
+    },
+    "message": "Possible hardcoded password assigned to: \"ELEVATOR_PASS\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 134,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 67,
+      "row": 245
+    },
+    "filename": "/Archipelago/worlds/hk/data/constants/item_names.py",
+    "fix": null,
+    "location": {
+      "column": 36,
+      "row": 245
+    },
+    "message": "Possible hardcoded password assigned to: \"LORE_TABLET_KINGS_PASS_FOCUS\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 245,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 65,
+      "row": 246
+    },
+    "filename": "/Archipelago/worlds/hk/data/constants/item_names.py",
+    "fix": null,
+    "location": {
+      "column": 35,
+      "row": 246
+    },
+    "message": "Possible hardcoded password assigned to: \"LORE_TABLET_KINGS_PASS_FURY\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 246,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 65,
+      "row": 247
+    },
+    "filename": "/Archipelago/worlds/hk/data/constants/item_names.py",
+    "fix": null,
+    "location": {
+      "column": 35,
+      "row": 247
+    },
+    "message": "Possible hardcoded password assigned to: \"LORE_TABLET_KINGS_PASS_EXIT\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 247,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 28,
+      "row": 66
+    },
+    "filename": "/Archipelago/worlds/hk/data/constants/location_names.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 66
+    },
+    "message": "Possible hardcoded password assigned to: \"TRAM_PASS\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 66,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 65,
+      "row": 272
+    },
+    "filename": "/Archipelago/worlds/hk/data/constants/location_names.py",
+    "fix": null,
+    "location": {
+      "column": 35,
+      "row": 272
+    },
+    "message": "Possible hardcoded password assigned to: \"LIFEBLOOD_COCOON_KINGS_PASS\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 272,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 61,
+      "row": 283
+    },
+    "filename": "/Archipelago/worlds/hk/data/constants/location_names.py",
+    "fix": null,
+    "location": {
+      "column": 33,
+      "row": 283
+    },
+    "message": "Possible hardcoded password assigned to: \"GRIMMKIN_FLAME_KINGS_PASS\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 283,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 36,
+      "row": 296
+    },
+    "filename": "/Archipelago/worlds/hk/data/constants/location_names.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 296
+    },
+    "message": "Possible hardcoded password assigned to: \"ELEVATOR_PASS\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 296,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 59,
+      "row": 502
+    },
+    "filename": "/Archipelago/worlds/hk/data/constants/location_names.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 502
+    },
+    "message": "Possible hardcoded password assigned to: \"GEO_ROCK_KINGS_PASS_LEFT\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 502,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 71,
+      "row": 503
+    },
+    "filename": "/Archipelago/worlds/hk/data/constants/location_names.py",
+    "fix": null,
+    "location": {
+      "column": 38,
+      "row": 503
+    },
+    "message": "Possible hardcoded password assigned to: \"GEO_ROCK_KINGS_PASS_BELOW_FURY\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 503,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 63,
+      "row": 504
+    },
+    "filename": "/Archipelago/worlds/hk/data/constants/location_names.py",
+    "fix": null,
+    "location": {
+      "column": 34,
+      "row": 504
+    },
+    "message": "Possible hardcoded password assigned to: \"GEO_ROCK_KINGS_PASS_HIDDEN\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 504,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 67,
+      "row": 505
+    },
+    "filename": "/Archipelago/worlds/hk/data/constants/location_names.py",
+    "fix": null,
+    "location": {
+      "column": 36,
+      "row": 505
+    },
+    "message": "Possible hardcoded password assigned to: \"GEO_ROCK_KINGS_PASS_COLLAPSE\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 505,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 71,
+      "row": 506
+    },
+    "filename": "/Archipelago/worlds/hk/data/constants/location_names.py",
+    "fix": null,
+    "location": {
+      "column": 38,
+      "row": 506
+    },
+    "message": "Possible hardcoded password assigned to: \"GEO_ROCK_KINGS_PASS_ABOVE_FURY\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 506,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 67,
+      "row": 603
+    },
+    "filename": "/Archipelago/worlds/hk/data/constants/location_names.py",
+    "fix": null,
+    "location": {
+      "column": 36,
+      "row": 603
+    },
+    "message": "Possible hardcoded password assigned to: \"LORE_TABLET_KINGS_PASS_FOCUS\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 603,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 65,
+      "row": 604
+    },
+    "filename": "/Archipelago/worlds/hk/data/constants/location_names.py",
+    "fix": null,
+    "location": {
+      "column": 35,
+      "row": 604
+    },
+    "message": "Possible hardcoded password assigned to: \"LORE_TABLET_KINGS_PASS_FURY\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 604,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 65,
+      "row": 605
+    },
+    "filename": "/Archipelago/worlds/hk/data/constants/location_names.py",
+    "fix": null,
+    "location": {
+      "column": 35,
+      "row": 605
+    },
+    "message": "Possible hardcoded password assigned to: \"LORE_TABLET_KINGS_PASS_EXIT\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 605,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 36,
+      "row": 134
+    },
+    "filename": "/Archipelago/worlds/hk/data/constants/terms.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 134
+    },
+    "message": "Possible hardcoded password assigned to: \"ELEVATOR_PASS\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 134,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 68,
+      "row": 1150
+    },
+    "filename": "/Archipelago/worlds/hk/data/constants/terms.py",
+    "fix": null,
+    "location": {
+      "column": 37,
+      "row": 1150
+    },
+    "message": "Possible hardcoded password assigned to: \"BROKE_WEAVERS_DEN_SECRET_WALL\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 1150,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 31,
+      "row": 26
+    },
+    "filename": "/Archipelago/worlds/hk/data/constants/titled_area_names.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 26
+    },
+    "message": "Possible hardcoded password assigned to: \"KINGS_PASS\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 26,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  }
+]

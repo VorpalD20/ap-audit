@@ -1,0 +1,8 @@
+Final score: 71
+
+<class 'TimeoutError'>: 20
+type-comparison: 4
+None of the available entrances are valid targets for the available exits.: 3
+duplicate-value: 1
+jinja2-autoescape-false: 1
+hardcoded-password-string: 0
