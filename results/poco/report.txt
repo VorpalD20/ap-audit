@@ -1,0 +1,7 @@
+Final score: 78
+
+undefined-local-with-import-star-usage: 10
+undefined-local-with-import-star: 10
+test_has_game_info: 1
+test_has_tutorial: 1
+mixed-spaces-and-tabs: 0

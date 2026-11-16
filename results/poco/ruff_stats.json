@@ -1,0 +1,23 @@
+[
+  {
+    "code": "F405",
+    "name": "undefined-local-with-import-star-usage",
+    "count": 42,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "F403",
+    "name": "undefined-local-with-import-star",
+    "count": 17,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "E101",
+    "name": "mixed-spaces-and-tabs",
+    "count": 14,
+    "fixable": false,
+    "fixable_count": 0
+  }
+]
