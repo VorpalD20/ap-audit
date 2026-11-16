@@ -1,0 +1,7 @@
+Final score: 46
+
+ruff_stats.json failed to load: 50
+test_postgen_datapackage: 1
+test_explicit_indirect_conditions_spheres: 1
+archipelago.json is missing: 1
+FillError: 1

@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="889" time="7.205" timestamp="2026-11-16T22:45:56.631734+00:00" hostname="a7aedbd48874"><testcase classname="test.general.test_entrances.TestBase" name="test_all_state_before_connect_entrances" time="0.010" /><testcase classname="test.general.test_entrances.TestBase" name="test_entrance_connection_steps" time="0.002" /><testcase classname="test.general.test_groups.TestNameGroups" name="test_item_name_groups_not_empty" time="0.001" /><testcase classname="test.general.test_groups.TestNameGroups" name="test_location_name_groups_not_empty" time="0.001" /><testcase classname="test.general.test_ids.TestIDs" name="test_duplicate_item_ids" time="0.001" /><testcase classname="test.general.test_ids.TestIDs" name="test_duplicate_location_ids" time="0.001" /><testcase classname="test.general.test_ids.TestIDs" name="test_postgen_datapackage" time="0.140"><failure message="Fill.FillError: Not enough locations for progression items. There are 5 more progression items than there are available locations.&#10;Unfilled locations:&#10;[+3 more lines; full report in element text]">self = &lt;test.general.test_ids.TestIDs testMethod=test_postgen_datapackage&gt;
+
+    def test_postgen_datapackage(self):
+        """Generates a solo multiworld and checks that the datapackage is still valid"""
+        for gamename, world_type in AutoWorldRegister.testable_worlds.items():
+            with self.subTest(game=gamename):
+                multiworld = setup_solo_multiworld(world_type)
+&gt;               distribute_items_restrictive(multiworld)
+
+test/general/test_ids.py:91: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+multiworld = &lt;BaseClasses.MultiWorld object at 0x7f6ee12351d0&gt;
+panic_method = 'swap'
+
+    def distribute_items_restrictive(multiworld: MultiWorld,
+                                     panic_method: Literal["swap", "raise", "start_inventory"] = "swap") -&gt; None:
+        assert all(item.location is None for item in multiworld.itempool), (
+            "At the start of distribute_items_restrictive, "
+            "there are items in the multiworld itempool that are already placed on locations:\n"
+            f"{[(item.location, item) for item in multiworld.itempool if item.location is not None]}"
+        )
+    
+        fill_locations = sorted(multiworld.get_unfilled_locations())
+        multiworld.random.shuffle(fill_locations)
+        # get items to distribute
+        itempool = sorted(multiworld.itempool)
+        multiworld.random.shuffle(itempool)
+    
+        fill_locations, itempool = distribute_early_items(multiworld, fill_locations, itempool)
+    
+        progitempool: list[Item] = []
+        usefulitempool: list[Item] = []
+        filleritempool: list[Item] = []
+    
+        for item in itempool:
+            if item.advancement:
+                progitempool.append(item)
+            elif item.useful:
+                usefulitempool.append(item)
+            else:
+                filleritempool.append(item)
+    
+        call_all(multiworld, "fill_hook", progitempool, usefulitempool, filleritempool, fill_locations)
+    
+        locations: dict[LocationProgressType, list[Location]] = {
+            loc_type: [] for loc_type in LocationProgressType}
+    
+        for loc in fill_locations:
+            locations[loc.progress_type].append(loc)
+    
+        prioritylocations = locations[LocationProgressType.PRIORITY]
+        defaultlocations = locations[LocationProgressType.DEFAULT]
+        excludedlocations = locations[LocationProgressType.EXCLUDED]
+    
+        # can't lock due to accessibility corrections touching things, so we remember which ones got placed and lock later
+        lock_later: list[Location] = []
+    
+        def mark_for_locking(location: Location) -&gt; None:
+            nonlocal lock_later
+            lock_later.append(location)
+    
+        single_player = multiworld.players == 1 and not multiworld.groups
+    
+        if prioritylocations:
+            regular_progression: list[Item] = []
+            deprioritized_progression: list[Item] = []
+            for item in progitempool:
+                if item.deprioritized:
+                    deprioritized_progression.append(item)
+                else:
+                    regular_progression.append(item)
+    
+            # "priority fill"
+            # try without deprioritized items in the mix at all. This means they need to be collected into state first.
+            priority_fill_state = sweep_from_pool(multiworld.state, deprioritized_progression)
+            fill_restrictive(multiworld, priority_fill_state, prioritylocations, regular_progression,
+                             single_player_placement=single_player, swap=False, on_place=mark_for_locking,
+                             name="Priority", one_item_per_player=True, allow_partial=True)
+    
+            if prioritylocations and regular_progression:
+                # retry with one_item_per_player off because some priority fills can fail to fill with that optimization
+                # deprioritized items are still not in the mix, so they need to be collected into state first.
+                # allow_partial should only be set if there is deprioritized progression to fall back on.
+                priority_retry_state = sweep_from_pool(multiworld.state, deprioritized_progression)
+                fill_restrictive(multiworld, priority_retry_state, prioritylocations, regular_progression,
+                                 single_player_placement=single_player, swap=False, on_place=mark_for_locking,
+                                 name="Priority Retry", one_item_per_player=False,
+                                 allow_partial=bool(deprioritized_progression))
+    
+            if prioritylocations and deprioritized_progression:
+                # There are no more regular progression items that can be placed on any priority locations.
+                # We'd still prefer to place deprioritized progression items on priority locations over filler items.
+                # Since we're leaving out the remaining regular progression now, we need to collect it into state first.
+                priority_retry_2_state = sweep_from_pool(multiworld.state, regular_progression)
+                fill_restrictive(multiworld, priority_retry_2_state, prioritylocations, deprioritized_progression,
+                                 single_player_placement=single_player, swap=False, on_place=mark_for_locking,
+                                 name="Priority Retry 2", one_item_per_player=True, allow_partial=True)
+    
+            if prioritylocations and deprioritized_progression:
+                # retry with deprioritized items AND without one_item_per_player optimisation
+                # Since we're leaving out the remaining regular progression now, we need to collect it into state first.
+                priority_retry_3_state = sweep_from_pool(multiworld.state, regular_progression)
+                fill_restrictive(multiworld, priority_retry_3_state, prioritylocations, deprioritized_progression,
+                                 single_player_placement=single_player, swap=False, on_place=mark_for_locking,
+                                 name="Priority Retry 3", one_item_per_player=False)
+    
+            # restore original order of progitempool
+            progitempool[:] = [item for item in progitempool if not item.location]
+            accessibility_corrections(multiworld, multiworld.state, prioritylocations, progitempool)
+            defaultlocations = prioritylocations + defaultlocations
+    
+        if progitempool:
+            # "advancement/progression fill"
+            maximum_exploration_state = sweep_from_pool(multiworld.state)
+            if panic_method == "swap":
+                fill_restrictive(multiworld, maximum_exploration_state, defaultlocations, progitempool, swap=True,
+                                 name="Progression", single_player_placement=single_player)
+            elif panic_method == "raise":
+                fill_restrictive(multiworld, maximum_exploration_state, defaultlocations, progitempool, swap=False,
+                                 name="Progression", single_player_placement=single_player)
+            elif panic_method == "start_inventory":
+                fill_restrictive(multiworld, maximum_exploration_state, defaultlocations, progitempool, swap=False,
+                                 allow_partial=True, name="Progression", single_player_placement=single_player)
+                if progitempool:
+                    for item in progitempool:
+                        logging.debug(f"Moved {item} to start_inventory to prevent fill failure.")
+                        multiworld.push_precollected(item)
+                        filleritempool.append(multiworld.worlds[item.player].create_filler())
+                    logging.warning(f"{len(progitempool)} items moved to start inventory,"
+                                    f" due to failure in Progression fill step.")
+                    progitempool[:] = []
+    
+            else:
+                raise ValueError(f"Generator Panic Method {panic_method} not recognized.")
+            if progitempool:
+&gt;               raise FillError(
+                    f"Not enough locations for progression items. "
+                    f"There are {len(progitempool)} more progression items than there are available locations.\n"
+                    f"Unfilled locations:\n{multiworld.get_unfilled_locations()}.",
+                    multiworld=multiworld,
+                )
+E               Fill.FillError: Not enough locations for progression items. There are 5 more progression items than there are available locations.
+E               Unfilled locations:
+E               [Western - Apple #092, Farm - Apple #047, Farm - Apple #048, City - Apple #022, City - Apple #023, City - Apple #024, Glue Factory - Cage 0, Glue Factory - Cage 1, Glue Factory - Cage 2, Glue Factory - Cage 3, Glue Factory - Cage 4, Glue Factory - Cage 5, Glue Factory - Cage 6, Glue Factory - Cage 7, Glue Factory - Cage 8, Glue Factory - Cage 9, Glue Factory - Cage 10, Glue Factory - Cage 11, Glue Factory - Cage 12, Glue Factory - Cage 13, Glue Factory - Cage 14, Glue Factory - Cage 15, Glue Factory - Cage 16, Glue Factory - Cage 17, Glue Factory - Cage 18].
+E               All Placements:
+E               [(Intro - Apple #075, Apple), (Forest - Apple #052, Apple), (Forest - Apple #059, Apple), (Forest - Apple #062, Crystals), (Forest - Apple #064, Wizard), (Forest - Apple #061, Bear Spray), (Forest - Apple #050, Apple), (Forest - Apple #057, Apple), (Forest - Apple #055, Apple), (Forest - Apple #056, Apple), (Forest - Apple #060, Apple), (Forest - Apple #058, Apple), (Forest - Apple #063, Apple), (Forest - Apple #053, Apple), (Forest - Apple #066, Free Horse), (Forest - Apple #069, Apple), (Forest - Apple #068, Apple), (Forest - Apple #067, Apple), (Forest - Apple #051, Apple), (Forest - Apple #073, Apple), (Forest - Apple #072, Apple), (Forest - Apple #071, Apple), (Forest - Apple #054, Apple), (Forest - Apple #065, Apple), (Forest - Apple #070, Apple), (Western - Apple #079, Apple), (Western - Apple #078, Apple), (Western - Apple #082, Apple), (Western - Apple #080, Roulette), (Western - Apple #091, Apple), (Western - Apple #081, Apple), (Western - Apple #083, Apple), (Western - Apple #084, Apple), (Western - Apple #090, Apple), (Western - Apple #077, Apple), (Western - Apple #085, Apple), (Western - Apple #088, Apple), (Western - Apple #097, Gorge Race), (Western - Apple #096, Mole Miner), (Western - Apple #098, Apple), (Western - Apple #093, Apple), (Western - Apple #087, Apple), (Western - Apple #089, Apple), (Western - Apple #095, Apple), (Western - Apple #076, Apple), (Western - Apple #086, Apple), (Western - Apple #094, Apple), (Western - Apple #100, Apple), (Western - Apple #099, Apple), (Farm - Apple #049, Apple), (Farm - Apple #025, Apple), (Farm - Apple #037, Apple), (Farm - Apple #041, Apple), (Farm - Apple #033, Horseboy), (Farm - Apple #032, Construction Horse), (Farm - Apple #042, Apple), (Farm - Apple #038, Apple), (Farm - Apple #030, Apple), (Farm - Apple #035, Apple), (Farm - Apple #029, Apple), (Farm - Apple #031, Apple), (Farm - Apple #036, Apple), (Farm - Apple #039, Apple), (Farm - Apple #044, Apple), (Farm - Apple #045, Apple), (Farm - Apple #026, Doctor Evil), (Farm - Apple #028, Apple), (Farm - Apple #034, Apple), (Farm - Apple #040, Apple), (Farm - Apple #043, Apple), (Farm - Apple #046, Apple), (Farm - Apple #027, Apple), (City - Apple #001, Apple), (City - Apple #004, Apple), (City - Apple #002, Apple), (City - Apple #011, Apple), (City - Apple #014, Apple), (City - Apple #015, Apple), (City - Apple #016, Apple), (City - Apple #017, Dentist), (City - Apple #018, Apple), (City - Apple #019, Apple), (City - Apple #020, Jailor), (City - Apple #007, Sacrifice), (City - Apple #008, Apple), (City - Apple #003, Apple), (City - Apple #005, Apple), (City - Apple #013, Apple), (City - Apple #009, Apple), (City - Apple #010, Apple), (City - Apple #006, Apple), (City - Apple #012, Apple), (City - Apple #021, Apple)]
+
+Fill.py:1349: FillError</failure></testcase><testcase classname="test.general.test_ids.TestIDs" name="test_range_items" time="0.001" /><testcase classname="test.general.test_ids.TestIDs" name="test_range_locations" time="0.001" /><testcase classname="test.general.test_ids.TestIDs" name="test_reserved_items" time="0.000" /><testcase classname="test.general.test_ids.TestIDs" name="test_reserved_locations" time="0.000" /><testcase classname="test.general.test_implemented.TestImplemented" name="test_completion_condition" time="0.001" /><testcase classname="test.general.test_implemented.TestImplemented" name="test_entrance_parents" time="0.001" /><testcase classname="test.general.test_implemented.TestImplemented" name="test_explicit_indirect_conditions_spheres" time="0.065"><failure message="Fill.FillError: No more spots to place 56 items. Remaining locations are invalid.&#10;Unplaced items:&#10;[+7 more lines; full report in element text]">self = &lt;test.general.test_implemented.TestImplemented testMethod=test_explicit_indirect_conditions_spheres&gt;
+
+    def test_explicit_indirect_conditions_spheres(self):
+        """Tests that worlds using explicit indirect conditions produce identical spheres as when using implicit
+        indirect conditions"""
+        # Because the iteration order of blocked_connections in CollectionState.update_reachable_regions() is
+        # nondeterministic, this test may sometimes pass with the same seed even when there are missing indirect
+        # conditions.
+        for game_name, world_type in AutoWorldRegister.testable_worlds.items():
+            multiworld = setup_solo_multiworld(world_type)
+            world = multiworld.get_game_worlds(game_name)[0]
+            if not world.explicit_indirect_conditions:
+                # The world does not use explicit indirect conditions, so it can be skipped.
+                continue
+            # The world may override explicit_indirect_conditions as a property that cannot be set, so try modifying it.
+            try:
+                world.explicit_indirect_conditions = False
+                world.explicit_indirect_conditions = True
+            except Exception:
+                # Could not modify the attribute, so skip this world.
+                with self.subTest(game=game_name, skipped="world.explicit_indirect_conditions could not be set"):
+                    continue
+            with self.subTest(game=game_name, seed=multiworld.seed):
+&gt;               distribute_items_restrictive(multiworld)
+
+test/general/test_implemented.py:98: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+Fill.py:1329: in distribute_items_restrictive
+    fill_restrictive(multiworld, maximum_exploration_state, defaultlocations, progitempool, swap=True,
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+multiworld = &lt;BaseClasses.MultiWorld object at 0x7f6ee1235bd0&gt;
+base_state = &lt;BaseClasses.CollectionState object at 0x7f6ee082f4d0&gt;
+locations = [Western - Apple #095, Glue Factory - Cage 5, Glue Factory - Cage 12, City - Apple #005, Glue Factory - Cage 18, Glue Factory - Cage 8, ...]
+single_player_placement = True, lock = False, swap = True, on_place = None
+allow_partial = False, allow_excluded = False, one_item_per_player = True
+name = 'Progression'
+
+    def fill_restrictive(multiworld: MultiWorld, base_state: CollectionState, locations: list[Location],
+                         item_pool: list[Item], single_player_placement: bool = False, lock: bool = False,
+                         swap: bool = True, on_place: Callable[[Location], None] | None = None,
+                         allow_partial: bool = False, allow_excluded: bool = False, one_item_per_player: bool = True,
+                         name: str = "Unknown") -&gt; None:
+        """
+        :param multiworld: Multiworld to be filled.
+        :param base_state: State assumed before fill.
+        :param locations: Locations to be filled with item_pool, gets mutated by removing locations that get filled.
+        :param item_pool: Items to fill into the locations, gets mutated by removing items that get placed.
+        :param single_player_placement: if true, can speed up placement if everything belongs to a single player
+        :param lock: locations are set to locked as they are filled
+        :param swap: if true, swaps of already place items are done in the event of a dead end
+        :param on_place: callback that is called when a placement happens
+        :param allow_partial: only place what is possible. Remaining items will be in the item_pool list.
+        :param allow_excluded: if true and placement fails, it is re-attempted while ignoring excluded on Locations
+        :param name: name of this fill step for progress logging purposes
+        """
+        unplaced_items: list[Item] = []
+        placements: list[Location] = []
+        cleanup_required = False
+        swapped_items: Counter[tuple[int, str, bool]] = Counter()
+        reachable_items: dict[int, deque[Item]] = {}
+        for item in item_pool:
+            reachable_items.setdefault(item.player, deque()).append(item)
+    
+        # for progress logging
+        total = min(len(item_pool), len(locations))
+        placed = 0
+    
+        # Fill is performed in batches so that sweeping to produce a maximum exploration state can begin from the state at
+        # the start of each batch, rather than having to sweep from `base_state`.
+        # The batcher manages all the batches internally, creating new batches automatically when the current batch runs out
+        # of items to place.
+        batcher = _RestrictiveFillBatcher(base_state, reachable_items, item_pool, one_item_per_player)
+        # The batcher is responsible for modifying these from this point onwards.
+        del item_pool
+        del reachable_items
+    
+        while locations:
+            # Pop items to place from the ends of deques in `reachable_items` and pop those same items from `item_pool`.
+            items_to_place = batcher.pop_items_to_place()
+            if not items_to_place:
+                # There are no more items to place.
+                break
+    
+            explore_locations = multiworld.get_filled_locations(item.player) if single_player_placement else None
+    
+            maximum_exploration_state = batcher.get_maximum_exploration_state(explore_locations, unplaced_items)
+    
+            has_beaten_game = multiworld.has_beaten_game(maximum_exploration_state)
+    
+            while items_to_place:
+                # if we have run out of locations to fill,break out of this loop
+                if not locations:
+                    unplaced_items += items_to_place
+                    break
+                item_to_place = items_to_place.pop(0)
+    
+                spot_to_fill: Location | None = None
+    
+                # if minimal accessibility, only check whether location is reachable if game not beatable
+                if multiworld.worlds[item_to_place.player].options.accessibility == Accessibility.option_minimal:
+                    perform_access_check = (
+                        (not multiworld.has_beaten_game(maximum_exploration_state, item_to_place.player))
+                        if single_player_placement
+                        else not has_beaten_game
+                    )
+                else:
+                    perform_access_check = True
+    
+                for i, location in enumerate(locations):
+                    if (not single_player_placement or location.player == item_to_place.player) \
+                            and location.can_fill(maximum_exploration_state, item_to_place, perform_access_check):
+                        # popping by index is faster than removing by content,
+                        spot_to_fill = locations.pop(i)
+                        # skipping a scan for the element
+                        break
+    
+                else:
+                    # we filled all reachable spots.
+                    if swap:
+                        # Keep a cache of previous safe swap states that might be usable to sweep from to produce the next
+                        # swap state, instead of sweeping from `base_state` each time.
+                        previous_safe_swap_state_cache: deque[CollectionState] = deque()
+                        # Almost never are more than 2 states needed. The rare cases that do are usually highly restrictive
+                        # single_player_placement=True pre-fills which can go through more than 10 states in some seeds.
+                        max_swap_base_state_cache_length = 3
+    
+                        # try swapping this item with previously placed items in a safe way then in an unsafe way
+                        swap_attempts = ((i, location, unsafe)
+                                         for unsafe in (False, True)
+                                         for i, location in enumerate(placements))
+                        for (i, location, unsafe) in swap_attempts:
+                            placed_item = location.item
+                            if item_to_place == placed_item:
+                                # The number of allowed swaps is limited, so do not allow a swap of an item with a copy of
+                                # itself.
+                                continue
+                            # Unplaceable items can sometimes be swapped infinitely. Limit the
+                            # number of times we will swap an individual item to prevent this
+                            swap_count = swapped_items[placed_item.player, placed_item.name, unsafe]
+                            if swap_count &gt; 1:
+                                continue
+    
+                            location.item = None
+                            placed_item.location = None
+    
+                            for previous_safe_swap_state in previous_safe_swap_state_cache:
+                                # If a state has already checked the location of the swap, then it cannot be used.
+                                if location not in previous_safe_swap_state.advancements:
+                                    # Previous swap states will have collected all items in `item_pool`, so the new
+                                    # `swap_state` can skip having to collect them again.
+                                    # Previous swap states will also have already checked many locations, making the sweep
+                                    # faster.
+                                    swap_state = sweep_from_pool(previous_safe_swap_state, (placed_item,) if unsafe else (),
+                                                                 multiworld.get_filled_locations(item.player)
+                                                                 if single_player_placement else None)
+                                    break
+                            else:
+                                # No previous swap_state was usable as a base state to sweep from, so create a new one.
+                                explore_locations = (multiworld.get_filled_locations(item.player)
+                                                     if single_player_placement else None)
+                                swap_state = batcher.get_swap_state(placed_item, location, explore_locations, unsafe)
+                                # Unsafe states should not be added to the cache because they have collected `placed_item`.
+                                if not unsafe:
+                                    if len(previous_safe_swap_state_cache) &gt;= max_swap_base_state_cache_length:
+                                        # Remove the oldest cached state.
+                                        previous_safe_swap_state_cache.pop()
+                                    # Add the new state to the start of the cache.
+                                    previous_safe_swap_state_cache.appendleft(swap_state)
+                            # unsafe means swap_state assumes we can somehow collect placed_item before item_to_place
+                            # by continuing to swap, which is not guaranteed. This is unsafe because there is no mechanic
+                            # to clean that up later, so there is a chance generation fails.
+                            if (not single_player_placement or location.player == item_to_place.player) \
+                                    and location.can_fill(swap_state, item_to_place, perform_access_check):
+                                # Add this item to the existing placement, and
+                                # add the old item to the back of the queue
+                                spot_to_fill = placements.pop(i)
+    
+                                swap_count += 1
+                                swapped_items[placed_item.player, placed_item.name, unsafe] = swap_count
+    
+                                # cleanup at the end to hopefully get better errors
+                                cleanup_required = True
+    
+                                batcher.update_for_swap(placed_item, item_to_place, spot_to_fill)
+                                break
+    
+                            # Item can't be placed here, restore original item
+                            location.item = placed_item
+                            placed_item.location = location
+    
+                        if spot_to_fill is None:
+                            # Can't place this item, move on to the next
+                            unplaced_items.append(item_to_place)
+                            continue
+                    else:
+                        unplaced_items.append(item_to_place)
+                        continue
+                multiworld.push_item(spot_to_fill, item_to_place, False)
+                spot_to_fill.locked = lock
+                placements.append(spot_to_fill)
+                placed += 1
+                if not placed % 1000:
+                    _log_fill_progress(name, placed, total)
+                if on_place:
+                    on_place(spot_to_fill)
+    
+        if total &gt; 1000:
+            _log_fill_progress(name, placed, total)
+    
+        if cleanup_required:
+            # validate all placements and remove invalid ones
+            state = sweep_from_pool(
+                base_state, [], multiworld.get_filled_locations(item.player)
+                if single_player_placement else None)
+            for placement in placements:
+                if (
+                    multiworld.worlds[placement.item.player].options.accessibility != "minimal" and
+                    not placement.can_reach(state)
+                ):
+                    placement.item.location = None
+                    unplaced_items.append(placement.item)
+                    placement.item = None
+                    locations.append(placement)
+    
+        if allow_excluded:
+            # check if partial fill is the result of excluded locations, in which case retry
+            excluded_locations = [
+                location for location in locations
+                if location.progress_type == location.progress_type.EXCLUDED and not location.item
+            ]
+            if excluded_locations:
+                for location in excluded_locations:
+                    location.progress_type = location.progress_type.DEFAULT
+                fill_restrictive(multiworld, base_state, excluded_locations, unplaced_items, single_player_placement, lock,
+                                 swap, on_place, allow_partial, False)
+                for location in excluded_locations:
+                    if not location.item:
+                        location.progress_type = location.progress_type.EXCLUDED
+    
+        if not allow_partial and len(unplaced_items) &gt; 0 and len(locations) &gt; 0:
+            # There are leftover unplaceable items and locations that won't accept them
+            if multiworld.can_beat_game():
+                logging.warning(
+                    f"Not all items placed. Game beatable anyway.\nCould not place:\n"
+                    f"{', '.join(str(item) for item in unplaced_items)}")
+            else:
+&gt;               raise FillError(f"No more spots to place {len(unplaced_items)} items. Remaining locations are invalid.\n"
+                                f"Unplaced items:\n"
+                                f"{', '.join(str(item) for item in unplaced_items)}\n"
+                                f"Unfilled locations:\n"
+                                f"{', '.join(str(location) for location in locations)}\n"
+                                f"Already placed {len(placements)}:\n"
+                                f"{', '.join(str(place) for place in placements)}", multiworld=multiworld)
+E               Fill.FillError: No more spots to place 56 items. Remaining locations are invalid.
+E               Unplaced items:
+E               Roulette (Player 1), Apple (Player 1), Apple (Player 1), Apple (Player 1), Dentist (Player 1), Jailor (Player 1), Doctor Evil (Player 1), Apple (Player 1), Apple (Player 1), Apple (Player 1), Apple (Player 1), Apple (Player 1), Apple (Player 1), Apple (Player 1), Apple (Player 1), Apple (Player 1), Apple (Player 1), Apple (Player 1), Apple (Player 1), City Race (Player 1), ??? (Player 1), Apple (Player 1), Apple (Player 1), Apple (Player 1), Gorge Race (Player 1), Apple (Player 1), Apple (Player 1), Apple (Player 1), Apple (Player 1), Apple (Player 1), Apple (Player 1), Apple (Player 1), Apple (Player 1), Apple (Player 1), Sacrifice (Player 1), Apple (Player 1), Apple (Player 1), Apple (Player 1), Apple (Player 1), Apple (Player 1), Construction Horse (Player 1), Apple (Player 1), Apple (Player 1), Apple (Player 1), Apple (Player 1), Apple (Player 1), Apple (Player 1), Apple (Player 1), Metal Horse Race (Player 1), Tooth Sharpener (Player 1), Apple (Player 1), Mole Miner (Player 1), Horseboy (Player 1), Apple (Player 1), Apple (Player 1), Dare Devil (Player 1)
+E               Unfilled locations:
+E               Western - Apple #095, Glue Factory - Cage 5, Glue Factory - Cage 12, City - Apple #005, Glue Factory - Cage 18, Glue Factory - Cage 8, Glue Factory - Cage 0, Glue Factory - Cage 13, Glue Factory - Cage 3, Glue Factory - Cage 11, Farm - Apple #047, Glue Factory - Cage 1, Farm - Apple #026, Glue Factory - Cage 15, Glue Factory - Cage 9, Glue Factory - Cage 16, Western - Apple #093, Glue Factory - Cage 2, City - Apple #009, Glue Factory - Cage 10, City - Apple #024, Farm - Apple #038, Farm - Apple #041, City - Apple #006, Glue Factory - Cage 6, Glue Factory - Cage 7, Glue Factory - Cage 14, City - Apple #014, Farm - Apple #034, Farm - Apple #033, City - Apple #023, City - Apple #007, Farm - Apple #049, Farm - Apple #045, Farm - Apple #044, Farm - Apple #046, Western - Apple #092, City - Apple #011, City - Apple #017, Western - Apple #096, Glue Factory - Cage 4, City - Apple #010, Farm - Apple #035, City - Apple #012, Glue Factory - Cage 17, Western - Apple #094, Farm - Apple #025, Western - Apple #098, City - Apple #022, City - Apple #015, Farm - Apple #036, Farm - Apple #030, City - Apple #019, City - Apple #021, City - Apple #016, Farm - Apple #037, City - Apple #020, Farm - Apple #028, Western - Apple #097, Farm - Apple #042, City - Apple #004, Farm - Apple #048, Farm - Apple #032, City - Apple #008, Farm - Apple #031, Farm - Apple #039, City - Apple #013, Farm - Apple #029, Farm - Apple #040, City - Apple #018, Western - Apple #086, City - Apple #003, City - Apple #001, Farm - Apple #027, Farm - Apple #043, City - Apple #002
+E               Already placed 93:
+E               Farm - Apple #038, Farm - Apple #041, City - Apple #006, Glue Factory - Cage 6, Glue Factory - Cage 7, Forest - Apple #066, Glue Factory - Cage 14, City - Apple #014, Intro - Apple #075, Farm - Apple #034, Western - Apple #084, Forest - Apple #062, Farm - Apple #033, City - Apple #023, Forest - Apple #061, City - Apple #007, Farm - Apple #049, Forest - Apple #059, Western - Apple #079, Western - Apple #087, Western - Apple #090, Farm - Apple #045, Farm - Apple #044, Farm - Apple #046, Western - Apple #081, Western - Apple #092, City - Apple #011, City - Apple #017, Western - Apple #078, Western - Apple #096, Glue Factory - Cage 4, Western - Apple #089, Forest - Apple #067, City - Apple #010, Farm - Apple #035, City - Apple #012, Western - Apple #080, Glue Factory - Cage 17, Forest - Apple #070, Western - Apple #094, Farm - Apple #025, Western - Apple #098, Western - Apple #076, Western - Apple #091, Forest - Apple #058, City - Apple #022, City - Apple #015, Farm - Apple #036, Farm - Apple #030, Forest - Apple #065, City - Apple #019, City - Apple #021, Western - Apple #083, City - Apple #016, Western - Apple #099, Farm - Apple #037, City - Apple #020, Farm - Apple #028, Western - Apple #097, Farm - Apple #042, City - Apple #004, Farm - Apple #048, Western - Apple #085, Western - Apple #100, Forest - Apple #055, Farm - Apple #032, City - Apple #008, Farm - Apple #031, Forest - Apple #050, Farm - Apple #039, City - Apple #013, Forest - Apple #072, Forest - Apple #069, Forest - Apple #053, Western - Apple #082, Western - Apple #077, Farm - Apple #029, Forest - Apple #060, Forest - Apple #052, Forest - Apple #068, Forest - Apple #054, Western - Apple #088, Forest - Apple #073, Farm - Apple #040, Forest - Apple #071, City - Apple #018, Forest - Apple #063, Western - Apple #086, City - Apple #003, City - Apple #001, Farm - Apple #027, Farm - Apple #043, City - Apple #002
+E               All Placements:
+E               [(Intro - Apple #075, Apple), (Forest - Apple #052, Apple), (Forest - Apple #059, Apple), (Forest - Apple #062, Apple), (Forest - Apple #064, Bear Spray), (Forest - Apple #061, Apple), (Forest - Apple #050, Apple), (Forest - Apple #057, Crystals), (Forest - Apple #055, Apple), (Forest - Apple #056, Free Horse), (Forest - Apple #060, Apple), (Forest - Apple #058, Apple), (Forest - Apple #063, Apple), (Forest - Apple #053, Apple), (Forest - Apple #066, Apple), (Forest - Apple #069, Apple), (Forest - Apple #068, Apple), (Forest - Apple #067, Apple), (Forest - Apple #051, Wizard), (Forest - Apple #073, Apple), (Forest - Apple #072, Apple), (Forest - Apple #071, Apple), (Forest - Apple #054, Apple), (Forest - Apple #065, Apple), (Forest - Apple #070, Apple), (Western - Apple #079, Apple), (Western - Apple #078, Apple), (Western - Apple #082, Apple), (Western - Apple #080, Apple), (Western - Apple #091, Apple), (Western - Apple #081, Apple), (Western - Apple #083, Apple), (Western - Apple #084, Apple), (Western - Apple #090, Apple), (Western - Apple #077, Apple), (Western - Apple #085, Apple), (Western - Apple #088, Apple), (Western - Apple #087, Apple), (Western - Apple #089, Apple), (Western - Apple #076, Apple), (Western - Apple #100, Apple), (Western - Apple #099, Apple)]
+
+Fill.py:975: FillError</failure></testcase><testcase classname="test.general.test_implemented.TestImplemented" name="test_no_failed_world_loads" time="0.000" /><testcase classname="test.general.test_implemented.TestImplemented" name="test_no_items_or_locations_or_regions_submitted_in_init" time="0.001" /><testcase classname="test.general.test_implemented.TestImplemented" name="test_prefill_items" time="0.003" /><testcase classname="test.general.test_implemented.TestImplemented" name="test_slot_data" time="0.026" /><testcase classname="test.general.test_implemented.TestImplemented" name="test_stage_methods" time="0.001" /><testcase classname="test.general.test_items.TestBase" name="test_create_item" time="0.010" /><testcase classname="test.general.test_items.TestBase" name="test_item_count_equal_locations" time="0.001" /><testcase classname="test.general.test_items.TestBase" name="test_item_links" time="0.125" /><testcase classname="test.general.test_items.TestBase" name="test_item_name_group_conflict" time="0.001" /><testcase classname="test.general.test_items.TestBase" name="test_item_name_group_has_valid_item" time="0.001" /><testcase classname="test.general.test_items.TestBase" name="test_itempool_not_modified" time="0.002" /><testcase classname="test.general.test_items.TestBase" name="test_items_in_datapackage" time="0.001" /><testcase classname="test.general.test_items.TestBase" name="test_locality_not_modified" time="0.002" /><testcase classname="test.general.test_locations.TestBase" name="test_create_duplicate_locations" time="0.001" /><testcase classname="test.general.test_locations.TestBase" name="test_location_creation_steps" time="0.001" /><testcase classname="test.general.test_locations.TestBase" name="test_location_group" time="0.001" /><testcase classname="test.general.test_locations.TestBase" name="test_locations_in_datapackage" time="0.001" /><testcase classname="test.general.test_memory.TestWorldMemory" name="test_leak" time="0.049" /><testcase classname="test.general.test_names.TestNames" name="test_item_names_format" time="0.001" /><testcase classname="test.general.test_names.TestNames" name="test_location_name_format" time="0.001" /><testcase classname="test.general.test_options.TestOptions" name="test_duplicate_options" time="0.001" /><testcase classname="test.general.test_options.TestOptions" name="test_item_links_name_groups" time="0.001" /><testcase classname="test.general.test_options.TestOptions" name="test_item_links_resolve" time="0.001" /><testcase classname="test.general.test_options.TestOptions" name="test_option_defaults" time="0.003" /><testcase classname="test.general.test_options.TestOptions" name="test_option_set_keys_random" time="0.001" /><testcase classname="test.general.test_options.TestOptions" name="test_options_are_not_set_by_world" time="0.001" /><testcase classname="test.general.test_options.TestOptions" name="test_options_have_doc_string" time="0.002" /><testcase classname="test.general.test_options.TestOptions" name="test_pickle_dumps_default" time="0.003" /><testcase classname="test.general.test_options.TestOptions" name="test_pickle_dumps_plando" time="0.001" /><testcase classname="test.general.test_packages.TestPackages" name="test_packages_have_init" time="0.063" /><testcase classname="test.general.test_patches.TestPatches" name="test_patch_name_matches_game" time="0.001" /><testcase classname="test.general.test_reachability.TestBase" name="test_default_all_state_can_reach_everything" time="0.014" /><testcase classname="test.general.test_reachability.TestBase" name="test_default_empty_state_can_reach_something" time="0.002" /><testcase classname="test.general.test_requirements.TestBase" name="test_requirements_file_ends_on_newline" time="0.003" /><testcase classname="test.general.test_settings.TestSettings" name="test_settings_can_update" time="0.004" /><testcase classname="test.general.test_state.TestBase" name="test_all_state_is_available" time="0.003" /><testcase classname="test.multiworld.test_multiworlds.TestTwoPlayerMulti{game='Horse Riding Classic'}" name="test_two_player_single_game_fills" time="0.048" /><testcase classname="test.webhost.test_descriptions.TestWebDescriptions" name="test_item_descriptions_have_valid_names" time="0.001" /><testcase classname="test.webhost.test_descriptions.TestWebDescriptions" name="test_location_descriptions_have_valid_names" time="0.000" /><testcase classname="test.webhost.test_docs.TestDocs" name="test_has_game_info" time="0.003" /><testcase classname="test.webhost.test_docs.TestDocs" name="test_has_tutorial" time="0.001" /><testcase classname="test.webhost.test_file_generation.TestFileGeneration" name="test_options" time="0.059" /><testcase classname="test.webhost.test_option_presets.TestOptionPresets" name="test_option_preset_values_are_explicitly_defined" time="0.001" /><testcase classname="test.webhost.test_option_presets.TestOptionPresets" name="test_option_presets_have_valid_options" time="0.000" /></testsuite></testsuites>
