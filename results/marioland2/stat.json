@@ -1,0 +1,9 @@
+{
+    "game": "Super Mario Land 2",
+    "stub": "marioland2",
+    "manifest": {
+        "compatible_version": 7,
+        "version": 7,
+        "game": "Super Mario Land 2"
+    }
+}
