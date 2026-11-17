@@ -29,5 +29,5 @@ jobs:
       run: |
         python3 audit_world.py
     - uses: stefanzweifel/git-auto-commit-action@v7
-      with:
-        commit_message: ${{ steps.run_audit.outputs.COMMIT_MESSAGE }}
+      # with:
+        # commit_message: ${{ steps.run_audit.outputs.COMMIT_MESSAGE }}
