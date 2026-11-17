@@ -1,0 +1,37 @@
+[
+  {
+    "code": "F405",
+    "name": "undefined-local-with-import-star-usage",
+    "count": 1264,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "F403",
+    "name": "undefined-local-with-import-star",
+    "count": 8,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "F541",
+    "name": "f-string-missing-placeholders",
+    "count": 7,
+    "fixable": true,
+    "fixable_count": 7
+  },
+  {
+    "code": "E741",
+    "name": "ambiguous-variable-name",
+    "count": 2,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "S105",
+    "name": "hardcoded-password-string",
+    "count": 1,
+    "fixable": false,
+    "fixable_count": 0
+  }
+]
