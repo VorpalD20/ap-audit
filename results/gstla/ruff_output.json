@@ -1,0 +1,21 @@
+[
+  {
+    "cell": null,
+    "code": "S113",
+    "end_location": {
+      "column": 33,
+      "row": 86
+    },
+    "filename": "/Archipelago/worlds/gstla/rom.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 86
+    },
+    "message": "Probable use of `requests` call without timeout",
+    "name": "request-without-timeout",
+    "noqa_row": 86,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/request-without-timeout"
+  }
+]

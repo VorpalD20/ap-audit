@@ -1,0 +1,9 @@
+[
+  {
+    "code": "S113",
+    "name": "request-without-timeout",
+    "count": 1,
+    "fixable": false,
+    "fixable_count": 0
+  }
+]
