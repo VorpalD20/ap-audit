@@ -2,7 +2,6 @@ import datetime
 import json
 import os
 import subprocess
-from json.decoder import JSONDecodeError
 
 import attrs
 import cattrs
@@ -97,14 +96,17 @@ def count_codes(severity: dict[str, dict[str, int]]) -> int:
         count += len(category)
     return count
 
-def finalise_report(results_path) -> None:
+def finalise_report(results_path: str) -> None:
     severity = load_severity_data()
     num_codes = count_codes(severity)
     penalties = {}
 
+    with open(os.path.join(results_path, "stat.json"), "r") as f:
+        stat = json.load(f)
+
     score_ruff(results_path, severity.setdefault("ruff", {}), penalties)
     score_tests(results_path, severity.setdefault("tests", {}), penalties)
-    score_manifest(results_path, severity.setdefault("manifest", {}), penalties)
+    score_manifest(stat, severity.setdefault("manifest", {}), penalties)
     score_fuzzer(results_path, severity.setdefault("fuzzer", {}), penalties)
 
     score = 100 - sum(penalties.values())
@@ -120,6 +122,13 @@ def finalise_report(results_path) -> None:
         with open("severity.json", "w") as f:
             json.dump(severity, f, indent=1, sort_keys=True)
             f.write("\n")
+
+    gh_env = os.environ.get("GITHUB_ENV")
+    if gh_env:
+        name = stat.get("stub")
+        version = stat.get("manifest", {}).get("world_version")
+        with open(gh_env, "a") as f:
+            f.write(f"COMMIT_MESSAGE<<EOF\n{name} v{version}\n{report}\nEOF\n")
 
 def score_tests(results_path, severity, penalties):
     test_results = junitparser.JUnitXml.fromfile(os.path.join(results_path, "report.xml"))
@@ -139,7 +148,7 @@ def score_ruff(results_path, severity, penalties):
     try:
         with open(os.path.join(results_path, "ruff_stats.json"), "r") as f:
             ruff_stats = json.load(f)
-    except JSONDecodeError:
+    except json.JSONDecodeError:
         print("Error decoding ruff_stats.json, the world probably didn't load.")
         ruff_stats = []
         penalties["ruff_stats.json failed to load"] = 50
@@ -153,15 +162,12 @@ def score_ruff(results_path, severity, penalties):
         penalty = penalty * count
         penalties[name] = penalties.get(name, 0) + penalty
 
-def score_manifest(results_path, severity, penalties):
+def score_manifest(stat, severity, penalties):
     def penalise(key) -> None:
         penalty = severity.setdefault(key, -1)
         if penalty == -1:
             penalty = 1
         penalties[key] = penalties.get(key, 0) + penalty
-
-    with open(os.path.join(results_path, "stat.json"), "r") as f:
-        stat = json.load(f)
 
     manifest = stat.get("manifest", {})
     if not manifest:
