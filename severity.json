@@ -10,8 +10,8 @@
  },
  "manifest": {
   "archipelago.json is missing": -1,
-  "manifest compatible_version is higher than latest defined version": -1,
-  "manifest version is higher than latest defined version": -1
+  "manifest compatible_version is higher than latest defined version": 40,
+  "manifest version is higher than latest defined version": 40
  },
  "ruff": {
   "ambiguous-variable-name": -1,
