@@ -134,10 +134,18 @@ def score_tests(results_path, severity, penalties):
     test_results = junitparser.JUnitXml.fromfile(os.path.join(results_path, "report.xml"))
     for suite in test_results:
         for test in suite:
-            name = test.name
+            if test.classname:
+                name = f"{test.classname}.{test.name}"
+            else:
+                name = test.name
+
             is_failure = test.is_failure or test.is_error
             if is_failure:
                 penalty = severity.setdefault(name, -1)
+                if penalty == -1 and severity.get(test.name) is not None:
+                    severity[name] = severity.get(test.name)
+                    penalty = severity[name]
+                    del severity[test.name]
                 if penalty == -1:
                     penalty = 1
                 if test.is_error:
