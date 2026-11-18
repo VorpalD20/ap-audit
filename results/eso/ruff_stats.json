@@ -1,0 +1,9 @@
+[
+  {
+    "code": "S110",
+    "name": "try-except-pass",
+    "count": 1,
+    "fixable": false,
+    "fixable_count": 0
+  }
+]

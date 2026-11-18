@@ -1,0 +1,41 @@
+Final score: 57
+
+test.webhost.test_docs.TestDocs.test_has_game_info: 2
+test.webhost.test_docs.TestDocs.test_has_tutorial: 2
+ESO: Required zones are not in included zones: {'Grahtwood'}. Your starting zone (Stros M'kai) and goal zone must be available.: 2
+ESO: Required zones are not in included zones: {'Glenumbra', 'Stormhaven', 'Grahtwood', 'Deshaan', "Stros M'kai", 'Coldharbour'}. Your starting zone (Stros M'kai) and goal zone must be available.: 2
+ESO: Required zones are not in included zones: {'Stormhaven', 'Grahtwood', 'Deshaan', 'Glenumbra', 'Coldharbour'}. Your starting zone (Stros M'kai) and goal zone must be available.: 2
+test.general.test_items.TestBase.test_item_count_equal_locations: 1
+ESO: Required zones are not in included zones: {'Greenshade'}. Your starting zone (Khenarthi's Roost) and goal zone must be available.: 1
+ESO: Required zones are not in included zones: {"Reaper's March", "Stros M'kai"}. Your starting zone (Stros M'kai) and goal zone must be available.: 1
+ESO: Required zones are not in included zones: {"Khenarthi's Roost", 'The Rift'}. Your starting zone (Khenarthi's Roost) and goal zone must be available.: 1
+ESO: Required zones are not in included zones: {'Stormhaven', 'Deshaan', "Stros M'kai"}. Your starting zone (Stros M'kai) and goal zone must be available.: 1
+ESO: Required zones are not in included zones: {'Coldharbour', 'Stormhaven', 'Deshaan', 'Bleakrock Isle'}. Your starting zone (Bleakrock Isle) and goal zone must be available.: 1
+ESO: Required zones are not in included zones: {"Khenarthi's Roost", 'Auridon', 'Deshaan', 'Coldharbour'}. Your starting zone (Khenarthi's Roost) and goal zone must be available.: 1
+ESO: Required zones are not in included zones: {"Khenarthi's Roost", 'Auridon', 'Stormhaven', 'Grahtwood'}. Your starting zone (Khenarthi's Roost) and goal zone must be available.: 1
+ESO: Required zones are not in included zones: {'Grahtwood'}. Your starting zone (Khenarthi's Roost) and goal zone must be available.: 1
+ESO: Required zones are not in included zones: {'Stormhaven', 'Deshaan', 'Grahtwood', 'Bleakrock Isle', 'Coldharbour'}. Your starting zone (Bleakrock Isle) and goal zone must be available.: 1
+ESO: Required zones are not in included zones: {'Malabal Tor', "Stros M'kai"}. Your starting zone (Stros M'kai) and goal zone must be available.: 1
+ESO: Required zones are not in included zones: {'Deshaan'}. Your starting zone (Stros M'kai) and goal zone must be available.: 1
+ESO: Required zones are not in included zones: {'Stormhaven'}. Your starting zone (Khenarthi's Roost) and goal zone must be available.: 1
+ESO: No valid path exists from Stros M'kai to Malabal Tor with your zone configuration. Check your included/excluded zones.: 1
+ESO: Required zones are not in included zones: {'Bleakrock Isle', 'Glenumbra'}. Your starting zone (Bleakrock Isle) and goal zone must be available.: 1
+ESO: Required zones are not in included zones: {'Stormhaven', 'Deshaan', 'Grahtwood', 'Bleakrock Isle'}. Your starting zone (Bleakrock Isle) and goal zone must be available.: 1
+ESO: Required zones are not in included zones: {'Coldharbour', 'Bleakrock Isle'}. Your starting zone (Bleakrock Isle) and goal zone must be available.: 1
+ESO: Required zones are not in included zones: {"Stros M'kai", 'The Rift'}. Your starting zone (Stros M'kai) and goal zone must be available.: 1
+ESO: Required zones are not in included zones: {"Khenarthi's Roost"}. Your starting zone (Khenarthi's Roost) and goal zone must be available.: 1
+ESO: Required zones are not in included zones: {'Stormhaven'}. Your starting zone (Stros M'kai) and goal zone must be available.: 1
+ESO: Required zones are not in included zones: {'Stormhaven'}. Your starting zone (Bleakrock Isle) and goal zone must be available.: 1
+ESO: Goal zone Bleakrock Isle's final quest requires Bal Foyen, but it's not in your available zones. Add Bal Foyen to included zones.: 1
+ESO: Required zones are not in included zones: {'Grahtwood', 'Coldharbour', "Stros M'kai", 'Glenumbra'}. Your starting zone (Stros M'kai) and goal zone must be available.: 1
+ESO: Required zones are not in included zones: {'Grahtwood', 'Deshaan'}. Your starting zone (Khenarthi's Roost) and goal zone must be available.: 1
+ESO: Required zones are not in included zones: {'Coldharbour', "Stros M'kai"}. Your starting zone (Stros M'kai) and goal zone must be available.: 1
+ESO: Required zones are not in included zones: {'Stormhaven', 'Grahtwood'}. Your starting zone (Bleakrock Isle) and goal zone must be available.: 1
+ESO: Required zones are not in included zones: {'Stonefalls', 'Stormhaven', 'Grahtwood', 'Bleakrock Isle', 'Coldharbour'}. Your starting zone (Bleakrock Isle) and goal zone must be available.: 1
+ESO: Required zones are not in included zones: {"Stros M'kai"}. Your starting zone (Stros M'kai) and goal zone must be available.: 1
+ESO: Required zones are not in included zones: {'Betnikh'}. Your starting zone (Stros M'kai) and goal zone must be available.: 1
+ESO: Required zones are not in included zones: {'Stormhaven', 'Grahtwood', "Stros M'kai", 'Glenumbra', 'Coldharbour'}. Your starting zone (Stros M'kai) and goal zone must be available.: 1
+ESO: No valid path exists from Stros M'kai to Eastmarch with your zone configuration. Check your included/excluded zones.: 1
+ESO: Required zones are not in included zones: {'Auridon', 'Stormhaven', 'Coldharbour', 'Grahtwood'}. Your starting zone (Khenarthi's Roost) and goal zone must be available.: 1
+ESO: Required zones are not in included zones: {'Stormhaven', 'Grahtwood', 'Coldharbour', 'Glenumbra'}. Your starting zone (Stros M'kai) and goal zone must be available.: 1
+try-except-pass: 0

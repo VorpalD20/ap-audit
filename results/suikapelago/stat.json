@@ -1,0 +1,14 @@
+{
+    "game": "Suikapelago",
+    "stub": "suikapelago",
+    "manifest": {
+        "game": "Suikapelago",
+        "minimum_ap_version": "0.6.7",
+        "world_version": "1.1.2",
+        "authors": [
+            "Starwort"
+        ],
+        "compatible_version": 7,
+        "version": 7
+    }
+}

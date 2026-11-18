@@ -59,9 +59,11 @@
  },
  "tests": {
   "test.general.test_implemented.TestImplemented.test_prefill_items": -1,
+  "test.general.test_items.TestBase.test_item_count_equal_locations": -1,
   "test.general.test_options.TestOptions.test_options_have_doc_string": -1,
   "test.general.test_reachability.TestBase.test_default_all_state_can_reach_everything": 10,
   "test.webhost.test_docs.TestDocs.test_has_game_info": 1,
+  "test.webhost.test_docs.TestDocs.test_has_tutorial": -1,
   "test_create_item": 5,
   "test_itempool_not_modified": 5,
   "test_pickle_dumps_default": 10,

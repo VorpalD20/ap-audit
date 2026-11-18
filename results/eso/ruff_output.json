@@ -1,0 +1,21 @@
+[
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 13,
+      "row": 524
+    },
+    "filename": "/Archipelago/worlds/eso/client.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 523
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 523,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  }
+]

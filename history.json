@@ -63,6 +63,10 @@
   "last_checked": "2026-11-05T13:40:27.502078",
   "last_version": "0.27.0"
  },
+ "eso": {
+  "last_checked": "2026-11-19T02:19:19.472629",
+  "last_version": "1.0.0.post4"
+ },
  "fridaynightfunkin": {
   "last_checked": "2026-11-08T06:57:30.038406",
   "last_version": "2.3.1.post2"
@@ -198,6 +202,10 @@
  "smrpg": {
   "last_checked": "2026-11-04T15:44:15.240276",
   "last_version": "0.6.3"
+ },
+ "suikapelago": {
+  "last_checked": "2026-11-19T02:18:35.966281",
+  "last_version": "1.1.2"
  },
  "teardown": {
   "last_checked": "2026-11-14T07:24:52.122507",
