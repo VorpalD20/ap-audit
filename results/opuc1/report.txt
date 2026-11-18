@@ -1,0 +1,6 @@
+Final score: 88
+
+multiple-statements-on-one-line-semicolon: 5
+ambiguous-variable-name: 5
+multiple-imports-on-one-line: 1
+FillError: 1

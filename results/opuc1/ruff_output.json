@@ -1,0 +1,1253 @@
+[
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 33,
+      "row": 81
+    },
+    "filename": "/Archipelago/worlds/opuc1/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 81
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 81,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 35,
+      "row": 82
+    },
+    "filename": "/Archipelago/worlds/opuc1/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 34,
+      "row": 82
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 82,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 37,
+      "row": 83
+    },
+    "filename": "/Archipelago/worlds/opuc1/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 36,
+      "row": 83
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 83,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 35,
+      "row": 84
+    },
+    "filename": "/Archipelago/worlds/opuc1/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 34,
+      "row": 84
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 84,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E401",
+    "end_location": {
+      "column": 46,
+      "row": 99
+    },
+    "filename": "/Archipelago/worlds/opuc1/client.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "    import json as _json\n    import pkgutil as _pkgutil",
+          "end_location": {
+            "column": 46,
+            "row": 99
+          },
+          "location": {
+            "column": 1,
+            "row": 99
+          }
+        }
+      ],
+      "message": "Split imports"
+    },
+    "location": {
+      "column": 5,
+      "row": 99
+    },
+    "message": "Multiple imports on one line",
+    "name": "multiple-imports-on-one-line",
+    "noqa_row": 99,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-imports-on-one-line"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 30,
+      "row": 930
+    },
+    "filename": "/Archipelago/worlds/opuc1/data.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 930
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 930,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 53,
+      "row": 943
+    },
+    "filename": "/Archipelago/worlds/opuc1/data.py",
+    "fix": null,
+    "location": {
+      "column": 52,
+      "row": 943
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 943,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 61,
+      "row": 944
+    },
+    "filename": "/Archipelago/worlds/opuc1/data.py",
+    "fix": null,
+    "location": {
+      "column": 60,
+      "row": 944
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 944,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 59,
+      "row": 498
+    },
+    "filename": "/Archipelago/worlds/opuc1/game_state.py",
+    "fix": null,
+    "location": {
+      "column": 58,
+      "row": 498
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 498,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 57,
+      "row": 505
+    },
+    "filename": "/Archipelago/worlds/opuc1/game_state.py",
+    "fix": null,
+    "location": {
+      "column": 56,
+      "row": 505
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 505,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 38,
+      "row": 506
+    },
+    "filename": "/Archipelago/worlds/opuc1/game_state.py",
+    "fix": null,
+    "location": {
+      "column": 37,
+      "row": 506
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 506,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 25,
+      "row": 515
+    },
+    "filename": "/Archipelago/worlds/opuc1/game_state.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 515
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 515,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 32,
+      "row": 516
+    },
+    "filename": "/Archipelago/worlds/opuc1/game_state.py",
+    "fix": null,
+    "location": {
+      "column": 31,
+      "row": 516
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 516,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 22,
+      "row": 517
+    },
+    "filename": "/Archipelago/worlds/opuc1/game_state.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 517
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 517,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 40,
+      "row": 517
+    },
+    "filename": "/Archipelago/worlds/opuc1/game_state.py",
+    "fix": null,
+    "location": {
+      "column": 39,
+      "row": 517
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 517,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 53,
+      "row": 517
+    },
+    "filename": "/Archipelago/worlds/opuc1/game_state.py",
+    "fix": null,
+    "location": {
+      "column": 52,
+      "row": 517
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 517,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 31,
+      "row": 518
+    },
+    "filename": "/Archipelago/worlds/opuc1/game_state.py",
+    "fix": null,
+    "location": {
+      "column": 30,
+      "row": 518
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 518,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 49,
+      "row": 518
+    },
+    "filename": "/Archipelago/worlds/opuc1/game_state.py",
+    "fix": null,
+    "location": {
+      "column": 48,
+      "row": 518
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 518,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 31,
+      "row": 519
+    },
+    "filename": "/Archipelago/worlds/opuc1/game_state.py",
+    "fix": null,
+    "location": {
+      "column": 30,
+      "row": 519
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 519,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 49,
+      "row": 519
+    },
+    "filename": "/Archipelago/worlds/opuc1/game_state.py",
+    "fix": null,
+    "location": {
+      "column": 48,
+      "row": 519
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 519,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 41,
+      "row": 527
+    },
+    "filename": "/Archipelago/worlds/opuc1/game_state.py",
+    "fix": null,
+    "location": {
+      "column": 40,
+      "row": 527
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 527,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 40,
+      "row": 529
+    },
+    "filename": "/Archipelago/worlds/opuc1/game_state.py",
+    "fix": null,
+    "location": {
+      "column": 39,
+      "row": 529
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 529,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 23,
+      "row": 534
+    },
+    "filename": "/Archipelago/worlds/opuc1/game_state.py",
+    "fix": null,
+    "location": {
+      "column": 22,
+      "row": 534
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 534,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 56,
+      "row": 535
+    },
+    "filename": "/Archipelago/worlds/opuc1/game_state.py",
+    "fix": null,
+    "location": {
+      "column": 55,
+      "row": 535
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 535,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 26,
+      "row": 536
+    },
+    "filename": "/Archipelago/worlds/opuc1/game_state.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 536
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 536,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 26,
+      "row": 538
+    },
+    "filename": "/Archipelago/worlds/opuc1/game_state.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 538
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 538,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 38,
+      "row": 542
+    },
+    "filename": "/Archipelago/worlds/opuc1/game_state.py",
+    "fix": null,
+    "location": {
+      "column": 37,
+      "row": 542
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 542,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 57,
+      "row": 544
+    },
+    "filename": "/Archipelago/worlds/opuc1/game_state.py",
+    "fix": null,
+    "location": {
+      "column": 56,
+      "row": 544
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 544,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 29,
+      "row": 547
+    },
+    "filename": "/Archipelago/worlds/opuc1/game_state.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 547
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 547,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 55,
+      "row": 554
+    },
+    "filename": "/Archipelago/worlds/opuc1/game_state.py",
+    "fix": null,
+    "location": {
+      "column": 54,
+      "row": 554
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 554,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 21,
+      "row": 556
+    },
+    "filename": "/Archipelago/worlds/opuc1/game_state.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 556
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 556,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 67,
+      "row": 1714
+    },
+    "filename": "/Archipelago/worlds/opuc1/game_state.py",
+    "fix": null,
+    "location": {
+      "column": 66,
+      "row": 1714
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 1714,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 26,
+      "row": 1727
+    },
+    "filename": "/Archipelago/worlds/opuc1/game_state.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 1727
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 1727,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 26,
+      "row": 1729
+    },
+    "filename": "/Archipelago/worlds/opuc1/game_state.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 1729
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 1729,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 26,
+      "row": 1731
+    },
+    "filename": "/Archipelago/worlds/opuc1/game_state.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 1731
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 1731,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 26,
+      "row": 1732
+    },
+    "filename": "/Archipelago/worlds/opuc1/game_state.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 1732
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 1732,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 44,
+      "row": 1732
+    },
+    "filename": "/Archipelago/worlds/opuc1/game_state.py",
+    "fix": null,
+    "location": {
+      "column": 43,
+      "row": 1732
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 1732,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 62,
+      "row": 1732
+    },
+    "filename": "/Archipelago/worlds/opuc1/game_state.py",
+    "fix": null,
+    "location": {
+      "column": 61,
+      "row": 1732
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 1732,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 26,
+      "row": 1734
+    },
+    "filename": "/Archipelago/worlds/opuc1/game_state.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 1734
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 1734,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 44,
+      "row": 1734
+    },
+    "filename": "/Archipelago/worlds/opuc1/game_state.py",
+    "fix": null,
+    "location": {
+      "column": 43,
+      "row": 1734
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 1734,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 62,
+      "row": 1734
+    },
+    "filename": "/Archipelago/worlds/opuc1/game_state.py",
+    "fix": null,
+    "location": {
+      "column": 61,
+      "row": 1734
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 1734,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 26,
+      "row": 1735
+    },
+    "filename": "/Archipelago/worlds/opuc1/game_state.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 1735
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 1735,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 26,
+      "row": 1737
+    },
+    "filename": "/Archipelago/worlds/opuc1/game_state.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 1737
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 1737,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 44,
+      "row": 1737
+    },
+    "filename": "/Archipelago/worlds/opuc1/game_state.py",
+    "fix": null,
+    "location": {
+      "column": 43,
+      "row": 1737
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 1737,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 30,
+      "row": 1754
+    },
+    "filename": "/Archipelago/worlds/opuc1/game_state.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 1754
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 1754,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 55,
+      "row": 1754
+    },
+    "filename": "/Archipelago/worlds/opuc1/game_state.py",
+    "fix": null,
+    "location": {
+      "column": 54,
+      "row": 1754
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 1754,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 32,
+      "row": 1756
+    },
+    "filename": "/Archipelago/worlds/opuc1/game_state.py",
+    "fix": null,
+    "location": {
+      "column": 31,
+      "row": 1756
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 1756,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 33,
+      "row": 1758
+    },
+    "filename": "/Archipelago/worlds/opuc1/game_state.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 1758
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 1758,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 30,
+      "row": 1760
+    },
+    "filename": "/Archipelago/worlds/opuc1/game_state.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 1760
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 1760,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 55,
+      "row": 1760
+    },
+    "filename": "/Archipelago/worlds/opuc1/game_state.py",
+    "fix": null,
+    "location": {
+      "column": 54,
+      "row": 1760
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 1760,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 30,
+      "row": 1772
+    },
+    "filename": "/Archipelago/worlds/opuc1/game_state.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 1772
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 1772,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 30,
+      "row": 1774
+    },
+    "filename": "/Archipelago/worlds/opuc1/game_state.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 1774
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 1774,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 30,
+      "row": 1778
+    },
+    "filename": "/Archipelago/worlds/opuc1/game_state.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 1778
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 1778,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 30,
+      "row": 1784
+    },
+    "filename": "/Archipelago/worlds/opuc1/game_state.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 1784
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 1784,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 30,
+      "row": 1785
+    },
+    "filename": "/Archipelago/worlds/opuc1/game_state.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 1785
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 1785,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 30,
+      "row": 1807
+    },
+    "filename": "/Archipelago/worlds/opuc1/game_state.py",
+    "fix": null,
+    "location": {
+      "column": 29,
+      "row": 1807
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 1807,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 46,
+      "row": 1807
+    },
+    "filename": "/Archipelago/worlds/opuc1/game_state.py",
+    "fix": null,
+    "location": {
+      "column": 45,
+      "row": 1807
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 1807,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 26,
+      "row": 1809
+    },
+    "filename": "/Archipelago/worlds/opuc1/game_state.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 1809
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 1809,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 44,
+      "row": 1809
+    },
+    "filename": "/Archipelago/worlds/opuc1/game_state.py",
+    "fix": null,
+    "location": {
+      "column": 43,
+      "row": 1809
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 1809,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 26,
+      "row": 1811
+    },
+    "filename": "/Archipelago/worlds/opuc1/game_state.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 1811
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 1811,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 26,
+      "row": 1813
+    },
+    "filename": "/Archipelago/worlds/opuc1/game_state.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 1813
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 1813,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 26,
+      "row": 1816
+    },
+    "filename": "/Archipelago/worlds/opuc1/game_state.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 1816
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 1816,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 26,
+      "row": 1818
+    },
+    "filename": "/Archipelago/worlds/opuc1/game_state.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 1818
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 1818,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 26,
+      "row": 1819
+    },
+    "filename": "/Archipelago/worlds/opuc1/game_state.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 1819
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 1819,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  },
+  {
+    "cell": null,
+    "code": "E702",
+    "end_location": {
+      "column": 26,
+      "row": 1821
+    },
+    "filename": "/Archipelago/worlds/opuc1/game_state.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 1821
+    },
+    "message": "Multiple statements on one line (semicolon)",
+    "name": "multiple-statements-on-one-line-semicolon",
+    "noqa_row": 1821,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"
+  }
+]
