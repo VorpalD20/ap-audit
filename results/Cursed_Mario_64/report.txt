@@ -1,0 +1,12 @@
+Final score: 68
+
+FillError: 13
+test.general.test_reachability.TestBase.test_default_all_state_can_reach_everything: 10
+redefined-while-unused: 4
+raise-without-from-inside-except: 1
+test.general.test_implemented.TestImplemented.test_prefill_items: 1
+test.general.test_options.TestOptions.test_options_have_doc_string: 1
+test.webhost.test_docs.TestDocs.test_has_game_info: 1
+archipelago.json is missing: 1
+hardcoded-password-string: 0
+mixed-spaces-and-tabs: 0

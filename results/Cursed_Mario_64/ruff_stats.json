@@ -1,0 +1,30 @@
+[
+  {
+    "code": "S105",
+    "name": "hardcoded-password-string",
+    "count": 5,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "F811",
+    "name": "redefined-while-unused",
+    "count": 4,
+    "fixable": true,
+    "fixable_count": 4
+  },
+  {
+    "code": "E101",
+    "name": "mixed-spaces-and-tabs",
+    "count": 3,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "B904",
+    "name": "raise-without-from-inside-except",
+    "count": 1,
+    "fixable": false,
+    "fixable_count": 0
+  }
+]

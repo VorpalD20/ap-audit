@@ -1,0 +1,313 @@
+[
+  {
+    "cell": null,
+    "code": "F811",
+    "end_location": {
+      "column": 20,
+      "row": 13
+    },
+    "filename": "/Archipelago/worlds/Cursed_Mario_64/Regions.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "from .Locations import SM64Location, location_table, locBoB_all_table, locWhomp_all_table, locJRB_all_table, locCCM_all_table, \\\n    locBBH_all_table, \\\n    locHMC_all_table, locLLL_all_table, locSSL_all_table, locDDD_all_table, locSL_all_table, \\\n    locWDW_all_table, locTTM_all_table, locTHI_all_table, locTTC_all_table, locRR_all_table, \\\n    locBitDW_all_table, locTotWC_all_table, locCotMC_all_table, \\\n    locVCutM_all_table, locBitFS_all_table, locWMotR_all_table, locBitS_all_table, locCAST_all_table, locPSS_table,\\\n    locSA_all_table, locBOOC_table, locBBH_table, locBBH_Boo_table, locBOBTree_table, locCourtTree_table, locCastTree_table, \\\n    locWhompClimb_table, locCCMTree_table, locJRBPillar_table, locLLLPole_table, locHMCPole_table, locSSLClimb_table, \\\n    locDDDPole_table, locWDWClimb_table, locSLTree_table",
+          "end_location": {
+            "column": 57,
+            "row": 15
+          },
+          "location": {
+            "column": 1,
+            "row": 7
+          }
+        }
+      ],
+      "message": "Remove definition: `locSA_all_table`"
+    },
+    "location": {
+      "column": 5,
+      "row": 13
+    },
+    "message": "Redefinition of unused `locSA_all_table` from line 11: `locSA_all_table` redefined here",
+    "name": "redefined-while-unused",
+    "noqa_row": 15,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/redefined-while-unused"
+  },
+  {
+    "cell": null,
+    "code": "E101",
+    "end_location": {
+      "column": 10,
+      "row": 471
+    },
+    "filename": "/Archipelago/worlds/Cursed_Mario_64/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 1,
+      "row": 471
+    },
+    "message": "Indentation contains mixed spaces and tabs",
+    "name": "mixed-spaces-and-tabs",
+    "noqa_row": 471,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/mixed-spaces-and-tabs"
+  },
+  {
+    "cell": null,
+    "code": "E101",
+    "end_location": {
+      "column": 10,
+      "row": 472
+    },
+    "filename": "/Archipelago/worlds/Cursed_Mario_64/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 1,
+      "row": 472
+    },
+    "message": "Indentation contains mixed spaces and tabs",
+    "name": "mixed-spaces-and-tabs",
+    "noqa_row": 472,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/mixed-spaces-and-tabs"
+  },
+  {
+    "cell": null,
+    "code": "E101",
+    "end_location": {
+      "column": 11,
+      "row": 473
+    },
+    "filename": "/Archipelago/worlds/Cursed_Mario_64/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 1,
+      "row": 473
+    },
+    "message": "Indentation contains mixed spaces and tabs",
+    "name": "mixed-spaces-and-tabs",
+    "noqa_row": 473,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/mixed-spaces-and-tabs"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 107,
+      "row": 542
+    },
+    "filename": "/Archipelago/worlds/Cursed_Mario_64/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 541
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 541,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 27,
+      "row": 632
+    },
+    "filename": "/Archipelago/worlds/Cursed_Mario_64/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 632
+    },
+    "message": "Possible hardcoded password assigned to: \"token\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 632,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 30,
+      "row": 638
+    },
+    "filename": "/Archipelago/worlds/Cursed_Mario_64/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 638
+    },
+    "message": "Possible hardcoded password assigned to: \"token\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 638,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 31,
+      "row": 640
+    },
+    "filename": "/Archipelago/worlds/Cursed_Mario_64/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 640
+    },
+    "message": "Possible hardcoded password assigned to: \"token\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 640,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 31,
+      "row": 642
+    },
+    "filename": "/Archipelago/worlds/Cursed_Mario_64/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 642
+    },
+    "message": "Possible hardcoded password assigned to: \"token\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 642,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 26,
+      "row": 644
+    },
+    "filename": "/Archipelago/worlds/Cursed_Mario_64/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 644
+    },
+    "message": "Possible hardcoded password assigned to: \"token\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 644,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "F811",
+    "end_location": {
+      "column": 36,
+      "row": 10
+    },
+    "filename": "/Archipelago/worlds/Cursed_Mario_64/__init__.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "",
+          "end_location": {
+            "column": 1,
+            "row": 11
+          },
+          "location": {
+            "column": 1,
+            "row": 10
+          }
+        }
+      ],
+      "message": "Remove definition: `create_regions`"
+    },
+    "location": {
+      "column": 22,
+      "row": 10
+    },
+    "message": "Redefinition of unused `create_regions` from line 6: `create_regions` redefined here",
+    "name": "redefined-while-unused",
+    "noqa_row": 10,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/redefined-while-unused"
+  },
+  {
+    "cell": null,
+    "code": "F811",
+    "end_location": {
+      "column": 61,
+      "row": 10
+    },
+    "filename": "/Archipelago/worlds/Cursed_Mario_64/__init__.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "",
+          "end_location": {
+            "column": 1,
+            "row": 11
+          },
+          "location": {
+            "column": 1,
+            "row": 10
+          }
+        }
+      ],
+      "message": "Remove definition: `sm64_level_to_entrances`"
+    },
+    "location": {
+      "column": 38,
+      "row": 10
+    },
+    "message": "Redefinition of unused `sm64_level_to_entrances` from line 6: `sm64_level_to_entrances` redefined here",
+    "name": "redefined-while-unused",
+    "noqa_row": 10,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/redefined-while-unused"
+  },
+  {
+    "cell": null,
+    "code": "F811",
+    "end_location": {
+      "column": 73,
+      "row": 10
+    },
+    "filename": "/Archipelago/worlds/Cursed_Mario_64/__init__.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "",
+          "end_location": {
+            "column": 1,
+            "row": 11
+          },
+          "location": {
+            "column": 1,
+            "row": 10
+          }
+        }
+      ],
+      "message": "Remove definition: `SM64Levels`"
+    },
+    "location": {
+      "column": 63,
+      "row": 10
+    },
+    "message": "Redefinition of unused `SM64Levels` from line 6: `SM64Levels` redefined here",
+    "name": "redefined-while-unused",
+    "noqa_row": 10,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/redefined-while-unused"
+  }
+]
