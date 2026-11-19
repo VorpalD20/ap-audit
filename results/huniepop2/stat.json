@@ -1,0 +1,13 @@
+{
+    "game": "Hunie Pop 2",
+    "stub": "huniepop2",
+    "manifest": {
+        "game": "Hunie Pop 2",
+        "world_version": "3.1.0",
+        "authors": [
+            "Dotsofdarkness"
+        ],
+        "compatible_version": 7,
+        "version": 7
+    }
+}

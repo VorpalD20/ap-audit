@@ -1,5 +1,6 @@
 {
  "fuzzer": {
+  "'pop from an empty set'": -1,
   "<class 'TimeoutError'>": -1,
   "EOF when reading a line": -1,
   "FillError": 1,

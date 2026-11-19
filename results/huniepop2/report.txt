@@ -1,0 +1,7 @@
+Final score: 59
+
+'pop from an empty set': 35
+FillError: 4
+test.webhost.test_docs.TestDocs.test_has_game_info: 1
+test.webhost.test_docs.TestDocs.test_has_tutorial: 1
+f-string-missing-placeholders: 0

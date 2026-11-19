@@ -1,0 +1,37 @@
+[
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 107,
+      "row": 215
+    },
+    "filename": "/Archipelago/worlds/huniepop2/__init__.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"Boss Unlocked\"",
+          "end_location": {
+            "column": 107,
+            "row": 215
+          },
+          "location": {
+            "column": 91,
+            "row": 215
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 91,
+      "row": 215
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 215,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  }
+]
