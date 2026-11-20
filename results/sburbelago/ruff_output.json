@@ -1,0 +1,21 @@
+[
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 117,
+      "row": 175
+    },
+    "filename": "/Archipelago/worlds/sburbelago/world.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 175
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 175,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  }
+]
