@@ -1,0 +1,1 @@
+{"stats": {"total": 50, "success": 43, "failure": 7, "timeout": 0, "ignored": 0}, "errors": {"quake": {"\nNot enough locations for all mandatory items with these settings!\nIncrease included_locations_preset or episode count.": [0, 31, 33, 39], "FillError": [6, 9, 38]}}}

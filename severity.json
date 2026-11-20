@@ -1,5 +1,6 @@
 {
  "fuzzer": {
+  "": -1,
   "'pop from an empty set'": -1,
   "<class 'TimeoutError'>": -1,
   "EOF when reading a line": -1,
@@ -59,8 +60,10 @@
   "useless-semicolon": 0
  },
  "tests": {
+  "test.general.test_ids.TestIDs.test_duplicate_item_ids": -1,
   "test.general.test_implemented.TestImplemented.test_prefill_items": -1,
   "test.general.test_items.TestBase.test_item_count_equal_locations": -1,
+  "test.general.test_items.TestBase.test_item_name_group_conflict": -1,
   "test.general.test_options.TestOptions.test_options_have_doc_string": -1,
   "test.general.test_reachability.TestBase.test_default_all_state_can_reach_everything": 10,
   "test.webhost.test_docs.TestDocs.test_has_game_info": 1,

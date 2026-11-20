@@ -1,0 +1,13 @@
+{
+    "game": "Quake 1",
+    "stub": "quake",
+    "manifest": {
+        "game": "Quake 1",
+        "world_version": "1.2.3",
+        "authors": [
+            "Rando"
+        ],
+        "version": 7,
+        "compatible_version": 7
+    }
+}

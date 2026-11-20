@@ -1,0 +1,10 @@
+Final score: 87
+
+: 4
+FillError: 3
+bare-except: 2
+test.general.test_ids.TestIDs.test_duplicate_item_ids: 1
+test.general.test_items.TestBase.test_item_name_group_conflict: 1
+test.webhost.test_docs.TestDocs.test_has_game_info: 1
+test.webhost.test_docs.TestDocs.test_has_tutorial: 1
+try-except-pass: 0

@@ -1,0 +1,16 @@
+[
+  {
+    "code": "E722",
+    "name": "bare-except",
+    "count": 2,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "S110",
+    "name": "try-except-pass",
+    "count": 2,
+    "fixable": false,
+    "fixable_count": 0
+  }
+]

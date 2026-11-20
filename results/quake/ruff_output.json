@@ -1,0 +1,78 @@
+[
+  {
+    "cell": null,
+    "code": "E722",
+    "end_location": {
+      "column": 19,
+      "row": 192
+    },
+    "filename": "/Archipelago/worlds/quake/base_classes.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 192
+    },
+    "message": "Do not use bare `except`",
+    "name": "bare-except",
+    "noqa_row": 192,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/bare-except"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 21,
+      "row": 193
+    },
+    "filename": "/Archipelago/worlds/quake/base_classes.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 192
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 192,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  },
+  {
+    "cell": null,
+    "code": "E722",
+    "end_location": {
+      "column": 15,
+      "row": 231
+    },
+    "filename": "/Archipelago/worlds/quake/base_classes.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 231
+    },
+    "message": "Do not use bare `except`",
+    "name": "bare-except",
+    "noqa_row": 231,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/bare-except"
+  },
+  {
+    "cell": null,
+    "code": "S110",
+    "end_location": {
+      "column": 17,
+      "row": 232
+    },
+    "filename": "/Archipelago/worlds/quake/base_classes.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 231
+    },
+    "message": "`try`-`except`-`pass` detected, consider logging the exception",
+    "name": "try-except-pass",
+    "noqa_row": 231,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/try-except-pass"
+  }
+]
