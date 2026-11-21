@@ -1,0 +1,6 @@
+Final score: 8
+
+ruff_stats.json failed to load: 50
+manifest version is higher than latest defined version: 40
+test.webhost.test_docs.TestDocs.test_has_game_info: 1
+test.webhost.test_docs.TestDocs.test_has_tutorial: 1
