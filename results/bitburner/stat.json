@@ -1,0 +1,14 @@
+{
+    "game": "Bitburner",
+    "stub": "bitburner",
+    "manifest": {
+        "game": "Bitburner",
+        "minimum_ap_version": "0.6.8",
+        "world_version": "0.6.0",
+        "authors": [
+            "shhwip"
+        ],
+        "compatible_version": 7,
+        "version": 7
+    }
+}
