@@ -1,0 +1,3 @@
+Final score: 50
+
+ruff_stats.json failed to load: 50
