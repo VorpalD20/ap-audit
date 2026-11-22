@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="3" failures="0" skipped="0" tests="3" time="6.099" timestamp="2026-11-22T20:11:15.538180+00:00" hostname="9488113d5958"><testcase classname="" name="test.webhost.test_docs" time="0.000"><error message="collection failure">ModuleUpdate.py:147: in update
+    pkg_resources.require(requirement)
+/usr/local/lib/python3.13/site-packages/pkg_resources/__init__.py:1067: in require
+    needed = self.resolve(parse_requirements(requirements))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/usr/local/lib/python3.13/site-packages/pkg_resources/__init__.py:894: in resolve
+    dist = self._resolve_dist(
+/usr/local/lib/python3.13/site-packages/pkg_resources/__init__.py:935: in _resolve_dist
+    raise DistributionNotFound(req, requirers)
+E   pkg_resources.DistributionNotFound: The 'python-bps-continued' distribution was not found and is required by the application
+
+During handling of the above exception, another exception occurred:
+test/webhost/test_docs.py:7: in &lt;module&gt;
+    import WebHost
+WebHost.py:10: in &lt;module&gt;
+    ModuleUpdate.update()
+ModuleUpdate.py:152: in update
+    confirm(f"Requirement {requirement} is not satisfied, press enter to install it")
+ModuleUpdate.py:64: in confirm
+    input(f"\n{msg}")
+/usr/local/lib/python3.13/site-packages/_pytest/capture.py:229: in read
+    raise OSError(
+E   OSError: pytest: reading from stdin while output is captured!  Consider using `-s`.</error></testcase><testcase classname="" name="test.webhost.test_file_generation" time="0.000"><error message="collection failure">ModuleUpdate.py:147: in update
+    pkg_resources.require(requirement)
+/usr/local/lib/python3.13/site-packages/pkg_resources/__init__.py:1067: in require
+    needed = self.resolve(parse_requirements(requirements))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/usr/local/lib/python3.13/site-packages/pkg_resources/__init__.py:894: in resolve
+    dist = self._resolve_dist(
+/usr/local/lib/python3.13/site-packages/pkg_resources/__init__.py:935: in _resolve_dist
+    raise DistributionNotFound(req, requirers)
+E   pkg_resources.DistributionNotFound: The 'python-bps-continued' distribution was not found and is required by the application
+
+During handling of the above exception, another exception occurred:
+test/webhost/test_file_generation.py:6: in &lt;module&gt;
+    import WebHost
+WebHost.py:10: in &lt;module&gt;
+    ModuleUpdate.update()
+ModuleUpdate.py:152: in update
+    confirm(f"Requirement {requirement} is not satisfied, press enter to install it")
+ModuleUpdate.py:64: in confirm
+    input(f"\n{msg}")
+/usr/local/lib/python3.13/site-packages/_pytest/capture.py:229: in read
+    raise OSError(
+E   OSError: pytest: reading from stdin while output is captured!  Consider using `-s`.</error></testcase><testcase classname="" name="test.webhost.test_sitemap" time="0.000"><error message="collection failure">ModuleUpdate.py:147: in update
+    pkg_resources.require(requirement)
+/usr/local/lib/python3.13/site-packages/pkg_resources/__init__.py:1067: in require
+    needed = self.resolve(parse_requirements(requirements))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/usr/local/lib/python3.13/site-packages/pkg_resources/__init__.py:894: in resolve
+    dist = self._resolve_dist(
+/usr/local/lib/python3.13/site-packages/pkg_resources/__init__.py:935: in _resolve_dist
+    raise DistributionNotFound(req, requirers)
+E   pkg_resources.DistributionNotFound: The 'python-bps-continued' distribution was not found and is required by the application
+
+During handling of the above exception, another exception occurred:
+test/webhost/test_sitemap.py:6: in &lt;module&gt;
+    import WebHost
+WebHost.py:10: in &lt;module&gt;
+    ModuleUpdate.update()
+ModuleUpdate.py:152: in update
+    confirm(f"Requirement {requirement} is not satisfied, press enter to install it")
+ModuleUpdate.py:64: in confirm
+    input(f"\n{msg}")
+/usr/local/lib/python3.13/site-packages/_pytest/capture.py:229: in read
+    raise OSError(
+E   OSError: pytest: reading from stdin while output is captured!  Consider using `-s`.</error></testcase></testsuite></testsuites>

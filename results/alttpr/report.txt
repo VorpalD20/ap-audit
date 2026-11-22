@@ -1,0 +1,35 @@
+Final score: -47
+
+mutable-argument-default: 25
+undefined-name: 25
+undefined-local-with-import-star-usage: 10
+undefined-local-with-import-star: 10
+ambiguous-variable-name: 5
+function-uses-loop-variable: 5
+raise-without-from-inside-except: 5
+subprocess-without-shell-equals-true: 5
+true-false-comparison: 5
+suspicious-url-open-usage: 5
+start-process-with-partial-path: 5
+bad-file-permissions: 4
+loop-variable-overrides-iterator: 4
+none-comparison: 4
+redefined-while-unused: 4
+suspicious-unverified-context-usage: 4
+multiple-imports-on-one-line: 3
+subprocess-popen-with-shell-equals-true: 2
+type-comparison: 2
+unsafe-yaml-load: 2
+test.webhost.test_docs: 2
+test.webhost.test_file_generation: 2
+test.webhost.test_sitemap: 2
+bare-except: 1
+duplicate-value: 1
+hardcoded-sql-expression: 1
+multi-value-repeated-key-literal: 1
+start-process-with-no-shell: 1
+strip-with-multi-characters: 1
+useless-comparison: 1
+f-string-missing-placeholders: 0
+mixed-spaces-and-tabs: 0
+try-except-pass: 0

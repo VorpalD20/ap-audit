@@ -1,0 +1,212 @@
+[
+  {
+    "code": "F405",
+    "name": "undefined-local-with-import-star-usage",
+    "count": 102,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "E741",
+    "name": "ambiguous-variable-name",
+    "count": 78,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "F541",
+    "name": "f-string-missing-placeholders",
+    "count": 32,
+    "fixable": true,
+    "fixable_count": 32
+  },
+  {
+    "code": "B023",
+    "name": "function-uses-loop-variable",
+    "count": 32,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "B904",
+    "name": "raise-without-from-inside-except",
+    "count": 21,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "E101",
+    "name": "mixed-spaces-and-tabs",
+    "count": 20,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "S603",
+    "name": "subprocess-without-shell-equals-true",
+    "count": 20,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "B006",
+    "name": "mutable-argument-default",
+    "count": 18,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "F821",
+    "name": "undefined-name",
+    "count": 16,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "F403",
+    "name": "undefined-local-with-import-star",
+    "count": 9,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "E712",
+    "name": "true-false-comparison",
+    "count": 8,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "S310",
+    "name": "suspicious-url-open-usage",
+    "count": 7,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "S607",
+    "name": "start-process-with-partial-path",
+    "count": 5,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "S103",
+    "name": "bad-file-permissions",
+    "count": 4,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "B020",
+    "name": "loop-variable-overrides-iterator",
+    "count": 4,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "E711",
+    "name": "none-comparison",
+    "count": 4,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "F811",
+    "name": "redefined-while-unused",
+    "count": 4,
+    "fixable": false,
+    "fixable_count": 1
+  },
+  {
+    "code": "S323",
+    "name": "suspicious-unverified-context-usage",
+    "count": 4,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "E401",
+    "name": "multiple-imports-on-one-line",
+    "count": 3,
+    "fixable": true,
+    "fixable_count": 3
+  },
+  {
+    "code": "S602",
+    "name": "subprocess-popen-with-shell-equals-true",
+    "count": 2,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "S110",
+    "name": "try-except-pass",
+    "count": 2,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "E721",
+    "name": "type-comparison",
+    "count": 2,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "S506",
+    "name": "unsafe-yaml-load",
+    "count": 2,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "E722",
+    "name": "bare-except",
+    "count": 1,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "B033",
+    "name": "duplicate-value",
+    "count": 1,
+    "fixable": true,
+    "fixable_count": 1
+  },
+  {
+    "code": "S608",
+    "name": "hardcoded-sql-expression",
+    "count": 1,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "F601",
+    "name": "multi-value-repeated-key-literal",
+    "count": 1,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "S606",
+    "name": "start-process-with-no-shell",
+    "count": 1,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "B005",
+    "name": "strip-with-multi-characters",
+    "count": 1,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "B015",
+    "name": "useless-comparison",
+    "count": 1,
+    "fixable": false,
+    "fixable_count": 0
+  }
+]
