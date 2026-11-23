@@ -1,0 +1,15 @@
+{
+    "game": "Factorio: Space Age",
+    "stub": "factorio_space_age",
+    "manifest": {
+        "game": "Factorio: Space Age",
+        "authors": [
+            "Berserker",
+            "Josh Wolfe"
+        ],
+        "minimum_ap_version": "0.6.6",
+        "world_version": "4.0.2",
+        "version": 7,
+        "compatible_version": 7
+    }
+}

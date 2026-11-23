@@ -1,0 +1,2432 @@
+[
+  {
+    "cell": null,
+    "code": "S603",
+    "end_location": {
+      "column": 23,
+      "row": 370
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/Client.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 370
+    },
+    "message": "`subprocess` call: check for execution of untrusted input",
+    "name": "subprocess-without-shell-equals-true",
+    "noqa_row": 370,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/subprocess-without-shell-equals-true"
+  },
+  {
+    "cell": null,
+    "code": "S603",
+    "end_location": {
+      "column": 40,
+      "row": 373
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/Client.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 373
+    },
+    "message": "`subprocess` call: check for execution of untrusted input",
+    "name": "subprocess-without-shell-equals-true",
+    "noqa_row": 373,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/subprocess-without-shell-equals-true"
+  },
+  {
+    "cell": null,
+    "code": "B012",
+    "end_location": {
+      "column": 19,
+      "row": 446
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/Client.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 446
+    },
+    "message": "`return` inside `finally` blocks cause exceptions to be silenced",
+    "name": "jump-statement-in-finally",
+    "noqa_row": 446,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/jump-statement-in-finally"
+  },
+  {
+    "cell": null,
+    "code": "S603",
+    "end_location": {
+      "column": 23,
+      "row": 486
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/Client.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 486
+    },
+    "message": "`subprocess` call: check for execution of untrusted input",
+    "name": "subprocess-without-shell-equals-true",
+    "noqa_row": 486,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/subprocess-without-shell-equals-true"
+  },
+  {
+    "cell": null,
+    "code": "S603",
+    "end_location": {
+      "column": 40,
+      "row": 489
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/Client.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 489
+    },
+    "message": "`subprocess` call: check for execution of untrusted input",
+    "name": "subprocess-without-shell-equals-true",
+    "noqa_row": 489,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/subprocess-without-shell-equals-true"
+  },
+  {
+    "cell": null,
+    "code": "E401",
+    "end_location": {
+      "column": 25,
+      "row": 6
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/FactorioData.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "import itertools\nimport typing",
+          "end_location": {
+            "column": 25,
+            "row": 6
+          },
+          "location": {
+            "column": 1,
+            "row": 6
+          }
+        }
+      ],
+      "message": "Split imports"
+    },
+    "location": {
+      "column": 1,
+      "row": 6
+    },
+    "message": "Multiple imports on one line",
+    "name": "multiple-imports-on-one-line",
+    "noqa_row": 6,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-imports-on-one-line"
+  },
+  {
+    "cell": null,
+    "code": "B011",
+    "end_location": {
+      "column": 25,
+      "row": 200
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/FactorioData.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "raise AssertionError(\"what's this asteroid data: \" + repr(spawn_data))",
+          "end_location": {
+            "column": 75,
+            "row": 200
+          },
+          "location": {
+            "column": 13,
+            "row": 200
+          }
+        }
+      ],
+      "message": "Replace `assert False`"
+    },
+    "location": {
+      "column": 20,
+      "row": 200
+    },
+    "message": "Do not `assert False` (`python -O` removes these calls), raise `AssertionError()`",
+    "name": "assert-false",
+    "noqa_row": 200,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert-false"
+  },
+  {
+    "cell": null,
+    "code": "B011",
+    "end_location": {
+      "column": 29,
+      "row": 314
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/FactorioData.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "raise AssertionError(\"incomparable asteroid mining capabilities? if this really happens, just delete this assertion\")",
+          "end_location": {
+            "column": 126,
+            "row": 314
+          },
+          "location": {
+            "column": 17,
+            "row": 314
+          }
+        }
+      ],
+      "message": "Replace `assert False`"
+    },
+    "location": {
+      "column": 24,
+      "row": 314
+    },
+    "message": "Do not `assert False` (`python -O` removes these calls), raise `AssertionError()`",
+    "name": "assert-false",
+    "noqa_row": 314,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert-false"
+  },
+  {
+    "cell": null,
+    "code": "E711",
+    "end_location": {
+      "column": 42,
+      "row": 319
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/FactorioData.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "surface_conditions is None",
+          "end_location": {
+            "column": 42,
+            "row": 319
+          },
+          "location": {
+            "column": 16,
+            "row": 319
+          }
+        }
+      ],
+      "message": "Replace with `cond is None`"
+    },
+    "location": {
+      "column": 38,
+      "row": 319
+    },
+    "message": "Comparison to `None` should be `cond is None`",
+    "name": "none-comparison",
+    "noqa_row": 319,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/none-comparison"
+  },
+  {
+    "cell": null,
+    "code": "B011",
+    "end_location": {
+      "column": 31,
+      "row": 418
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/FactorioData.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "raise AssertionError(\"attack_parameters missing ammo category\")",
+          "end_location": {
+            "column": 74,
+            "row": 418
+          },
+          "location": {
+            "column": 19,
+            "row": 418
+          }
+        }
+      ],
+      "message": "Replace `assert False`"
+    },
+    "location": {
+      "column": 26,
+      "row": 418
+    },
+    "message": "Do not `assert False` (`python -O` removes these calls), raise `AssertionError()`",
+    "name": "assert-false",
+    "noqa_row": 418,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert-false"
+  },
+  {
+    "cell": null,
+    "code": "B011",
+    "end_location": {
+      "column": 43,
+      "row": 510
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/FactorioData.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "raise AssertionError(\"unrecognized electric usage_priority: \" + prototype_name)",
+          "end_location": {
+            "column": 102,
+            "row": 510
+          },
+          "location": {
+            "column": 31,
+            "row": 510
+          }
+        }
+      ],
+      "message": "Replace `assert False`"
+    },
+    "location": {
+      "column": 38,
+      "row": 510
+    },
+    "message": "Do not `assert False` (`python -O` removes these calls), raise `AssertionError()`",
+    "name": "assert-false",
+    "noqa_row": 510,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert-false"
+  },
+  {
+    "cell": null,
+    "code": "B011",
+    "end_location": {
+      "column": 39,
+      "row": 515
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/FactorioData.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "raise AssertionError(\"unrecognized energy source type: \" + prototype_name)",
+          "end_location": {
+            "column": 93,
+            "row": 515
+          },
+          "location": {
+            "column": 27,
+            "row": 515
+          }
+        }
+      ],
+      "message": "Replace `assert False`"
+    },
+    "location": {
+      "column": 34,
+      "row": 515
+    },
+    "message": "Do not `assert False` (`python -O` removes these calls), raise `AssertionError()`",
+    "name": "assert-false",
+    "noqa_row": 515,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert-false"
+  },
+  {
+    "cell": null,
+    "code": "B011",
+    "end_location": {
+      "column": 39,
+      "row": 527
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/FactorioData.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "raise AssertionError(\"unrecognized generator maximum_temperature: \" + prototype_name)",
+          "end_location": {
+            "column": 104,
+            "row": 527
+          },
+          "location": {
+            "column": 27,
+            "row": 527
+          }
+        }
+      ],
+      "message": "Replace `assert False`"
+    },
+    "location": {
+      "column": 34,
+      "row": 527
+    },
+    "message": "Do not `assert False` (`python -O` removes these calls), raise `AssertionError()`",
+    "name": "assert-false",
+    "noqa_row": 527,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert-false"
+  },
+  {
+    "cell": null,
+    "code": "B011",
+    "end_location": {
+      "column": 39,
+      "row": 535
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/FactorioData.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "raise AssertionError(\"unrecognized boiled water temperature: \" + prototype_name)",
+          "end_location": {
+            "column": 99,
+            "row": 535
+          },
+          "location": {
+            "column": 27,
+            "row": 535
+          }
+        }
+      ],
+      "message": "Replace `assert False`"
+    },
+    "location": {
+      "column": 34,
+      "row": 535
+    },
+    "message": "Do not `assert False` (`python -O` removes these calls), raise `AssertionError()`",
+    "name": "assert-false",
+    "noqa_row": 535,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert-false"
+  },
+  {
+    "cell": null,
+    "code": "B011",
+    "end_location": {
+      "column": 35,
+      "row": 803
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/FactorioData.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "raise AssertionError(\"unrecognized research trigger type: \" + repr(trigger[\"type\"]))",
+          "end_location": {
+            "column": 99,
+            "row": 803
+          },
+          "location": {
+            "column": 23,
+            "row": 803
+          }
+        }
+      ],
+      "message": "Replace `assert False`"
+    },
+    "location": {
+      "column": 30,
+      "row": 803
+    },
+    "message": "Do not `assert False` (`python -O` removes these calls), raise `AssertionError()`",
+    "name": "assert-false",
+    "noqa_row": 803,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert-false"
+  },
+  {
+    "cell": null,
+    "code": "B011",
+    "end_location": {
+      "column": 31,
+      "row": 804
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/FactorioData.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "raise AssertionError(\"technology has no cost or trigger: \" + prototype_name)",
+          "end_location": {
+            "column": 87,
+            "row": 804
+          },
+          "location": {
+            "column": 19,
+            "row": 804
+          }
+        }
+      ],
+      "message": "Replace `assert False`"
+    },
+    "location": {
+      "column": 26,
+      "row": 804
+    },
+    "message": "Do not `assert False` (`python -O` removes these calls), raise `AssertionError()`",
+    "name": "assert-false",
+    "noqa_row": 804,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert-false"
+  },
+  {
+    "cell": null,
+    "code": "B011",
+    "end_location": {
+      "column": 39,
+      "row": 1155
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/FactorioData.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "raise AssertionError()",
+          "end_location": {
+            "column": 39,
+            "row": 1155
+          },
+          "location": {
+            "column": 27,
+            "row": 1155
+          }
+        }
+      ],
+      "message": "Replace `assert False`"
+    },
+    "location": {
+      "column": 34,
+      "row": 1155
+    },
+    "message": "Do not `assert False` (`python -O` removes these calls), raise `AssertionError()`",
+    "name": "assert-false",
+    "noqa_row": 1155,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert-false"
+  },
+  {
+    "cell": null,
+    "code": "B011",
+    "end_location": {
+      "column": 39,
+      "row": 1195
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/FactorioData.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "raise AssertionError()",
+          "end_location": {
+            "column": 39,
+            "row": 1195
+          },
+          "location": {
+            "column": 27,
+            "row": 1195
+          }
+        }
+      ],
+      "message": "Replace `assert False`"
+    },
+    "location": {
+      "column": 34,
+      "row": 1195
+    },
+    "message": "Do not `assert False` (`python -O` removes these calls), raise `AssertionError()`",
+    "name": "assert-false",
+    "noqa_row": 1195,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert-false"
+  },
+  {
+    "cell": null,
+    "code": "B011",
+    "end_location": {
+      "column": 31,
+      "row": 1197
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/FactorioData.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "raise AssertionError(\"forgot a capability: \" + repr(capability))",
+          "end_location": {
+            "column": 75,
+            "row": 1197
+          },
+          "location": {
+            "column": 19,
+            "row": 1197
+          }
+        }
+      ],
+      "message": "Replace `assert False`"
+    },
+    "location": {
+      "column": 26,
+      "row": 1197
+    },
+    "message": "Do not `assert False` (`python -O` removes these calls), raise `AssertionError()`",
+    "name": "assert-false",
+    "noqa_row": 1197,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert-false"
+  },
+  {
+    "cell": null,
+    "code": "E711",
+    "end_location": {
+      "column": 49,
+      "row": 1220
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/FactorioData.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "machine.locations is not None",
+          "end_location": {
+            "column": 49,
+            "row": 1220
+          },
+          "location": {
+            "column": 24,
+            "row": 1220
+          }
+        }
+      ],
+      "message": "Replace with `cond is not None`"
+    },
+    "location": {
+      "column": 45,
+      "row": 1220
+    },
+    "message": "Comparison to `None` should be `cond is not None`",
+    "name": "none-comparison",
+    "noqa_row": 1220,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/none-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E711",
+    "end_location": {
+      "column": 42,
+      "row": 1226
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/FactorioData.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "machine.locations is not None",
+          "end_location": {
+            "column": 42,
+            "row": 1226
+          },
+          "location": {
+            "column": 17,
+            "row": 1226
+          }
+        }
+      ],
+      "message": "Replace with `cond is not None`"
+    },
+    "location": {
+      "column": 38,
+      "row": 1226
+    },
+    "message": "Comparison to `None` should be `cond is not None`",
+    "name": "none-comparison",
+    "noqa_row": 1226,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/none-comparison"
+  },
+  {
+    "cell": null,
+    "code": "B011",
+    "end_location": {
+      "column": 31,
+      "row": 1265
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/FactorioData.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "raise AssertionError(\"forgot a PowerType: \" + repr(power_type))",
+          "end_location": {
+            "column": 74,
+            "row": 1265
+          },
+          "location": {
+            "column": 19,
+            "row": 1265
+          }
+        }
+      ],
+      "message": "Replace `assert False`"
+    },
+    "location": {
+      "column": 26,
+      "row": 1265
+    },
+    "message": "Do not `assert False` (`python -O` removes these calls), raise `AssertionError()`",
+    "name": "assert-false",
+    "noqa_row": 1265,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert-false"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 56,
+      "row": 1271
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/FactorioData.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 1271
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 1271,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 55,
+      "row": 1277
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/FactorioData.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 1277
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 1277,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 55,
+      "row": 1285
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/FactorioData.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 1285
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 1285,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 54,
+      "row": 1292
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/FactorioData.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 1292
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 1292,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "B011",
+    "end_location": {
+      "column": 39,
+      "row": 1308
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/FactorioData.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "raise AssertionError(\"no way to mine for trigger tech: \" + entity)",
+          "end_location": {
+            "column": 85,
+            "row": 1308
+          },
+          "location": {
+            "column": 27,
+            "row": 1308
+          }
+        }
+      ],
+      "message": "Replace `assert False`"
+    },
+    "location": {
+      "column": 34,
+      "row": 1308
+    },
+    "message": "Do not `assert False` (`python -O` removes these calls), raise `AssertionError()`",
+    "name": "assert-false",
+    "noqa_row": 1308,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert-false"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 64,
+      "row": 1310
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/FactorioData.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 1310
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 1310,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 69,
+      "row": 1312
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/FactorioData.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 1312
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 1312,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "B011",
+    "end_location": {
+      "column": 31,
+      "row": 1314
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/FactorioData.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "raise AssertionError(\"forgot a requirement type: \" + repr(requirement))",
+          "end_location": {
+            "column": 82,
+            "row": 1314
+          },
+          "location": {
+            "column": 19,
+            "row": 1314
+          }
+        }
+      ],
+      "message": "Replace `assert False`"
+    },
+    "location": {
+      "column": 26,
+      "row": 1314
+    },
+    "message": "Do not `assert False` (`python -O` removes these calls), raise `AssertionError()`",
+    "name": "assert-false",
+    "noqa_row": 1314,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert-false"
+  },
+  {
+    "cell": null,
+    "code": "F821",
+    "end_location": {
+      "column": 85,
+      "row": 1317
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/FactorioData.py",
+    "fix": null,
+    "location": {
+      "column": 74,
+      "row": 1317
+    },
+    "message": "Undefined name `Requirement`",
+    "name": "undefined-name",
+    "noqa_row": 1317,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-name"
+  },
+  {
+    "cell": null,
+    "code": "E711",
+    "end_location": {
+      "column": 47,
+      "row": 1439
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/FactorioData.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "recipe.machines is not None",
+          "end_location": {
+            "column": 47,
+            "row": 1439
+          },
+          "location": {
+            "column": 24,
+            "row": 1439
+          }
+        }
+      ],
+      "message": "Replace with `cond is not None`"
+    },
+    "location": {
+      "column": 43,
+      "row": 1439
+    },
+    "message": "Comparison to `None` should be `cond is not None`",
+    "name": "none-comparison",
+    "noqa_row": 1439,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/none-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E711",
+    "end_location": {
+      "column": 48,
+      "row": 1459
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/FactorioData.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "recipe.locations is not None",
+          "end_location": {
+            "column": 48,
+            "row": 1459
+          },
+          "location": {
+            "column": 24,
+            "row": 1459
+          }
+        }
+      ],
+      "message": "Replace with `cond is not None`"
+    },
+    "location": {
+      "column": 44,
+      "row": 1459
+    },
+    "message": "Comparison to `None` should be `cond is not None`",
+    "name": "none-comparison",
+    "noqa_row": 1459,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/none-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E711",
+    "end_location": {
+      "column": 45,
+      "row": 1513
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/FactorioData.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "energy_link_bridge_recipe is not None",
+          "end_location": {
+            "column": 45,
+            "row": 1513
+          },
+          "location": {
+            "column": 12,
+            "row": 1513
+          }
+        }
+      ],
+      "message": "Replace with `cond is not None`"
+    },
+    "location": {
+      "column": 41,
+      "row": 1513
+    },
+    "message": "Comparison to `None` should be `cond is not None`",
+    "name": "none-comparison",
+    "noqa_row": 1513,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/none-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E401",
+    "end_location": {
+      "column": 36,
+      "row": 1
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/Logic.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "import itertools\nimport typing\nimport functools",
+          "end_location": {
+            "column": 36,
+            "row": 1
+          },
+          "location": {
+            "column": 1,
+            "row": 1
+          }
+        }
+      ],
+      "message": "Split imports"
+    },
+    "location": {
+      "column": 1,
+      "row": 1
+    },
+    "message": "Multiple imports on one line",
+    "name": "multiple-imports-on-one-line",
+    "noqa_row": 1,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-imports-on-one-line"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 30,
+      "row": 15
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/Logic.py",
+    "fix": null,
+    "location": {
+      "column": 12,
+      "row": 15
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 15,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 30,
+      "row": 22
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/Logic.py",
+    "fix": null,
+    "location": {
+      "column": 12,
+      "row": 22
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 22,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 33,
+      "row": 46
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/Logic.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 46
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 46,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 68,
+      "row": 49
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/Logic.py",
+    "fix": null,
+    "location": {
+      "column": 49,
+      "row": 49
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 49,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "B023",
+    "end_location": {
+      "column": 69,
+      "row": 57
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/Logic.py",
+    "fix": null,
+    "location": {
+      "column": 57,
+      "row": 57
+    },
+    "message": "Function definition does not bind loop variable `inline_these`",
+    "name": "function-uses-loop-variable",
+    "noqa_row": 57,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/function-uses-loop-variable"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 30,
+      "row": 70
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/Logic.py",
+    "fix": null,
+    "location": {
+      "column": 12,
+      "row": 70
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 70,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 40,
+      "row": 81
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/Logic.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 81
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 81,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 40,
+      "row": 84
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/Logic.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 84
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 84,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 92,
+      "row": 91
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/Logic.py",
+    "fix": null,
+    "location": {
+      "column": 69,
+      "row": 91
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 91,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 70,
+      "row": 92
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/Logic.py",
+    "fix": null,
+    "location": {
+      "column": 48,
+      "row": 92
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 92,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 60,
+      "row": 101
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/Logic.py",
+    "fix": null,
+    "location": {
+      "column": 37,
+      "row": 101
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 101,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 46,
+      "row": 113
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/Logic.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 113
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 113,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 40,
+      "row": 141
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/Logic.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 141
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 141,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 40,
+      "row": 144
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/Logic.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 144
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 144,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 91,
+      "row": 152
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/Logic.py",
+    "fix": null,
+    "location": {
+      "column": 68,
+      "row": 152
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 152,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 70,
+      "row": 153
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/Logic.py",
+    "fix": null,
+    "location": {
+      "column": 48,
+      "row": 153
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 153,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 60,
+      "row": 162
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/Logic.py",
+    "fix": null,
+    "location": {
+      "column": 37,
+      "row": 162
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 162,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "B011",
+    "end_location": {
+      "column": 27,
+      "row": 168
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/Logic.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "raise AssertionError()",
+          "end_location": {
+            "column": 27,
+            "row": 168
+          },
+          "location": {
+            "column": 15,
+            "row": 168
+          }
+        }
+      ],
+      "message": "Replace `assert False`"
+    },
+    "location": {
+      "column": 22,
+      "row": 168
+    },
+    "message": "Do not `assert False` (`python -O` removes these calls), raise `AssertionError()`",
+    "name": "assert-false",
+    "noqa_row": 168,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert-false"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 30,
+      "row": 180
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/Logic.py",
+    "fix": null,
+    "location": {
+      "column": 12,
+      "row": 180
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 180,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 38,
+      "row": 193
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/Logic.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 193
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 193,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "B011",
+    "end_location": {
+      "column": 35,
+      "row": 204
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/Logic.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "raise AssertionError()",
+          "end_location": {
+            "column": 35,
+            "row": 204
+          },
+          "location": {
+            "column": 23,
+            "row": 204
+          }
+        }
+      ],
+      "message": "Replace `assert False`"
+    },
+    "location": {
+      "column": 30,
+      "row": 204
+    },
+    "message": "Do not `assert False` (`python -O` removes these calls), raise `AssertionError()`",
+    "name": "assert-false",
+    "noqa_row": 204,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert-false"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 34,
+      "row": 211
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/Logic.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 211
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 211,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "B011",
+    "end_location": {
+      "column": 31,
+      "row": 216
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/Logic.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "raise AssertionError()",
+          "end_location": {
+            "column": 31,
+            "row": 216
+          },
+          "location": {
+            "column": 19,
+            "row": 216
+          }
+        }
+      ],
+      "message": "Replace `assert False`"
+    },
+    "location": {
+      "column": 26,
+      "row": 216
+    },
+    "message": "Do not `assert False` (`python -O` removes these calls), raise `AssertionError()`",
+    "name": "assert-false",
+    "noqa_row": 216,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert-false"
+  },
+  {
+    "cell": null,
+    "code": "S307",
+    "end_location": {
+      "column": 19,
+      "row": 223
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/Logic.py",
+    "fix": null,
+    "location": {
+      "column": 12,
+      "row": 223
+    },
+    "message": "Use of possibly insecure function; consider using `ast.literal_eval`",
+    "name": "suspicious-eval-usage",
+    "noqa_row": 223,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/suspicious-eval-usage"
+  },
+  {
+    "cell": null,
+    "code": "E401",
+    "end_location": {
+      "column": 28,
+      "row": 6
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/MapExchangeString.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "import base64\nimport struct\nimport zlib",
+          "end_location": {
+            "column": 28,
+            "row": 6
+          },
+          "location": {
+            "column": 1,
+            "row": 6
+          }
+        }
+      ],
+      "message": "Split imports"
+    },
+    "location": {
+      "column": 1,
+      "row": 6
+    },
+    "message": "Multiple imports on one line",
+    "name": "multiple-imports-on-one-line",
+    "noqa_row": 6,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-imports-on-one-line"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 6,
+      "row": 84
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/MapExchangeString.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 84
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 84,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 10,
+      "row": 108
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/MapExchangeString.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 108
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 108,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 10,
+      "row": 120
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/MapExchangeString.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 120
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 120,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 31,
+      "row": 133
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/MapExchangeString.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 133
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 133,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "F821",
+    "end_location": {
+      "column": 66,
+      "row": 139
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/MapExchangeString.py",
+    "fix": null,
+    "location": {
+      "column": 62,
+      "row": 139
+    },
+    "message": "Undefined name `json`",
+    "name": "undefined-name",
+    "noqa_row": 139,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-name"
+  },
+  {
+    "cell": null,
+    "code": "F821",
+    "end_location": {
+      "column": 44,
+      "row": 104
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/Mod.py",
+    "fix": null,
+    "location": {
+      "column": 28,
+      "row": 104
+    },
+    "message": "Undefined name `FactorioLocation`",
+    "name": "undefined-name",
+    "noqa_row": 104,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-name"
+  },
+  {
+    "cell": null,
+    "code": "F821",
+    "end_location": {
+      "column": 28,
+      "row": 106
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/Mod.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 106
+    },
+    "message": "Undefined name `Multiworld`",
+    "name": "undefined-name",
+    "noqa_row": 106,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-name"
+  },
+  {
+    "cell": null,
+    "code": "B011",
+    "end_location": {
+      "column": 27,
+      "row": 220
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/Mod.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "raise AssertionError()",
+          "end_location": {
+            "column": 27,
+            "row": 220
+          },
+          "location": {
+            "column": 15,
+            "row": 220
+          }
+        }
+      ],
+      "message": "Replace `assert False`"
+    },
+    "location": {
+      "column": 22,
+      "row": 220
+    },
+    "message": "Do not `assert False` (`python -O` removes these calls), raise `AssertionError()`",
+    "name": "assert-false",
+    "noqa_row": 220,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert-false"
+  },
+  {
+    "cell": null,
+    "code": "B011",
+    "end_location": {
+      "column": 27,
+      "row": 229
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/Mod.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "raise AssertionError(options.technology_prerequisites.current_key)",
+          "end_location": {
+            "column": 73,
+            "row": 229
+          },
+          "location": {
+            "column": 15,
+            "row": 229
+          }
+        }
+      ],
+      "message": "Replace `assert False`"
+    },
+    "location": {
+      "column": 22,
+      "row": 229
+    },
+    "message": "Do not `assert False` (`python -O` removes these calls), raise `AssertionError()`",
+    "name": "assert-false",
+    "noqa_row": 229,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert-false"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 27,
+      "row": 388
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/Mod.py",
+    "fix": null,
+    "location": {
+      "column": 12,
+      "row": 388
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 388,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 27,
+      "row": 389
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/Mod.py",
+    "fix": null,
+    "location": {
+      "column": 12,
+      "row": 389
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 389,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 27,
+      "row": 409
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/Mod.py",
+    "fix": null,
+    "location": {
+      "column": 12,
+      "row": 409
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 409,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "B011",
+    "end_location": {
+      "column": 21,
+      "row": 427
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/Mod.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "raise AssertionError(f\"cannot render type to Lua: {type(x)}: {repr(x)}\")",
+          "end_location": {
+            "column": 73,
+            "row": 427
+          },
+          "location": {
+            "column": 9,
+            "row": 427
+          }
+        }
+      ],
+      "message": "Replace `assert False`"
+    },
+    "location": {
+      "column": 16,
+      "row": 427
+    },
+    "message": "Do not `assert False` (`python -O` removes these calls), raise `AssertionError()`",
+    "name": "assert-false",
+    "noqa_row": 427,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert-false"
+  },
+  {
+    "cell": null,
+    "code": "E712",
+    "end_location": {
+      "column": 61,
+      "row": 164
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/__init__.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "not self.options.world_gen_enemies.value",
+          "end_location": {
+            "column": 61,
+            "row": 164
+          },
+          "location": {
+            "column": 16,
+            "row": 164
+          }
+        }
+      ],
+      "message": "Replace with `not self.options.world_gen_enemies.value`"
+    },
+    "location": {
+      "column": 16,
+      "row": 164
+    },
+    "message": "Avoid equality comparisons to `False`; use `not self.options.world_gen_enemies.value:` for false checks",
+    "name": "true-false-comparison",
+    "noqa_row": 164,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/true-false-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E711",
+    "end_location": {
+      "column": 46,
+      "row": 191
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/__init__.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "prototype_diff is None",
+          "end_location": {
+            "column": 46,
+            "row": 191
+          },
+          "location": {
+            "column": 24,
+            "row": 191
+          }
+        }
+      ],
+      "message": "Replace with `cond is None`"
+    },
+    "location": {
+      "column": 42,
+      "row": 191
+    },
+    "message": "Comparison to `None` should be `cond is None`",
+    "name": "none-comparison",
+    "noqa_row": 191,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/none-comparison"
+  },
+  {
+    "cell": null,
+    "code": "B011",
+    "end_location": {
+      "column": 27,
+      "row": 211
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/__init__.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "raise AssertionError(self.options.intermediate_technologies.current_key)",
+          "end_location": {
+            "column": 79,
+            "row": 211
+          },
+          "location": {
+            "column": 15,
+            "row": 211
+          }
+        }
+      ],
+      "message": "Replace `assert False`"
+    },
+    "location": {
+      "column": 22,
+      "row": 211
+    },
+    "message": "Do not `assert False` (`python -O` removes these calls), raise `AssertionError()`",
+    "name": "assert-false",
+    "noqa_row": 211,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert-false"
+  },
+  {
+    "cell": null,
+    "code": "B011",
+    "end_location": {
+      "column": 31,
+      "row": 358
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/__init__.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "raise AssertionError()",
+          "end_location": {
+            "column": 31,
+            "row": 358
+          },
+          "location": {
+            "column": 19,
+            "row": 358
+          }
+        }
+      ],
+      "message": "Replace `assert False`"
+    },
+    "location": {
+      "column": 26,
+      "row": 358
+    },
+    "message": "Do not `assert False` (`python -O` removes these calls), raise `AssertionError()`",
+    "name": "assert-false",
+    "noqa_row": 358,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert-false"
+  },
+  {
+    "cell": null,
+    "code": "B011",
+    "end_location": {
+      "column": 31,
+      "row": 439
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/__init__.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "raise AssertionError()",
+          "end_location": {
+            "column": 31,
+            "row": 439
+          },
+          "location": {
+            "column": 19,
+            "row": 439
+          }
+        }
+      ],
+      "message": "Replace `assert False`"
+    },
+    "location": {
+      "column": 26,
+      "row": 439
+    },
+    "message": "Do not `assert False` (`python -O` removes these calls), raise `AssertionError()`",
+    "name": "assert-false",
+    "noqa_row": 439,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert-false"
+  },
+  {
+    "cell": null,
+    "code": "B011",
+    "end_location": {
+      "column": 27,
+      "row": 450
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/__init__.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "raise AssertionError()",
+          "end_location": {
+            "column": 27,
+            "row": 450
+          },
+          "location": {
+            "column": 15,
+            "row": 450
+          }
+        }
+      ],
+      "message": "Replace `assert False`"
+    },
+    "location": {
+      "column": 22,
+      "row": 450
+    },
+    "message": "Do not `assert False` (`python -O` removes these calls), raise `AssertionError()`",
+    "name": "assert-false",
+    "noqa_row": 450,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert-false"
+  },
+  {
+    "cell": null,
+    "code": "E711",
+    "end_location": {
+      "column": 28,
+      "row": 629
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/__init__.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "code is not None",
+          "end_location": {
+            "column": 28,
+            "row": 629
+          },
+          "location": {
+            "column": 16,
+            "row": 629
+          }
+        }
+      ],
+      "message": "Replace with `cond is not None`"
+    },
+    "location": {
+      "column": 24,
+      "row": 629
+    },
+    "message": "Comparison to `None` should be `cond is not None`",
+    "name": "none-comparison",
+    "noqa_row": 629,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/none-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E711",
+    "end_location": {
+      "column": 32,
+      "row": 637
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/__init__.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "item is not None",
+          "end_location": {
+            "column": 32,
+            "row": 637
+          },
+          "location": {
+            "column": 20,
+            "row": 637
+          }
+        }
+      ],
+      "message": "Replace with `cond is not None`"
+    },
+    "location": {
+      "column": 28,
+      "row": 637
+    },
+    "message": "Comparison to `None` should be `cond is not None`",
+    "name": "none-comparison",
+    "noqa_row": 637,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/none-comparison"
+  },
+  {
+    "cell": null,
+    "code": "B011",
+    "end_location": {
+      "column": 27,
+      "row": 655
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/__init__.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "raise AssertionError()",
+          "end_location": {
+            "column": 27,
+            "row": 655
+          },
+          "location": {
+            "column": 15,
+            "row": 655
+          }
+        }
+      ],
+      "message": "Replace `assert False`"
+    },
+    "location": {
+      "column": 22,
+      "row": 655
+    },
+    "message": "Do not `assert False` (`python -O` removes these calls), raise `AssertionError()`",
+    "name": "assert-false",
+    "noqa_row": 655,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert-false"
+  },
+  {
+    "cell": null,
+    "code": "E711",
+    "end_location": {
+      "column": 46,
+      "row": 657
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/__init__.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "lock_final_technology_name is not None",
+          "end_location": {
+            "column": 46,
+            "row": 657
+          },
+          "location": {
+            "column": 12,
+            "row": 657
+          }
+        }
+      ],
+      "message": "Replace with `cond is not None`"
+    },
+    "location": {
+      "column": 42,
+      "row": 657
+    },
+    "message": "Comparison to `None` should be `cond is not None`",
+    "name": "none-comparison",
+    "noqa_row": 657,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/none-comparison"
+  },
+  {
+    "cell": null,
+    "code": "B011",
+    "end_location": {
+      "column": 27,
+      "row": 756
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/__init__.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "raise AssertionError()",
+          "end_location": {
+            "column": 27,
+            "row": 756
+          },
+          "location": {
+            "column": 15,
+            "row": 756
+          }
+        }
+      ],
+      "message": "Replace `assert False`"
+    },
+    "location": {
+      "column": 22,
+      "row": 756
+    },
+    "message": "Do not `assert False` (`python -O` removes these calls), raise `AssertionError()`",
+    "name": "assert-false",
+    "noqa_row": 756,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert-false"
+  },
+  {
+    "cell": null,
+    "code": "E711",
+    "end_location": {
+      "column": 96,
+      "row": 848
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/__init__.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "location.item is None",
+          "end_location": {
+            "column": 96,
+            "row": 848
+          },
+          "location": {
+            "column": 75,
+            "row": 848
+          }
+        }
+      ],
+      "message": "Replace with `cond is None`"
+    },
+    "location": {
+      "column": 92,
+      "row": 848
+    },
+    "message": "Comparison to `None` should be `cond is None`",
+    "name": "none-comparison",
+    "noqa_row": 848,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/none-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E711",
+    "end_location": {
+      "column": 24,
+      "row": 911
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/__init__.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "code is None",
+          "end_location": {
+            "column": 24,
+            "row": 911
+          },
+          "location": {
+            "column": 12,
+            "row": 911
+          }
+        }
+      ],
+      "message": "Replace with `cond is None`"
+    },
+    "location": {
+      "column": 20,
+      "row": 911
+    },
+    "message": "Comparison to `None` should be `cond is None`",
+    "name": "none-comparison",
+    "noqa_row": 911,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/none-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E401",
+    "end_location": {
+      "column": 16,
+      "row": 7
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/data/json_dumps_but_smaller.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "import io\nimport json",
+          "end_location": {
+            "column": 16,
+            "row": 7
+          },
+          "location": {
+            "column": 1,
+            "row": 7
+          }
+        }
+      ],
+      "message": "Split imports"
+    },
+    "location": {
+      "column": 1,
+      "row": 7
+    },
+    "message": "Multiple imports on one line",
+    "name": "multiple-imports-on-one-line",
+    "noqa_row": 7,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-imports-on-one-line"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 29,
+      "row": 46
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/data/json_dumps_but_smaller.py",
+    "fix": null,
+    "location": {
+      "column": 12,
+      "row": 46
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 46,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E721",
+    "end_location": {
+      "column": 31,
+      "row": 66
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/data/json_dumps_but_smaller.py",
+    "fix": null,
+    "location": {
+      "column": 14,
+      "row": 66
+    },
+    "message": "Use `is` and `is not` for type comparisons, or `isinstance()` for isinstance checks",
+    "name": "type-comparison",
+    "noqa_row": 66,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/type-comparison"
+  },
+  {
+    "cell": null,
+    "code": "B011",
+    "end_location": {
+      "column": 25,
+      "row": 86
+    },
+    "filename": "/Archipelago/worlds/factorio_space_age/data/json_dumps_but_smaller.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "raise AssertionError(\"unsupported type: \" + repr(obj))",
+          "end_location": {
+            "column": 59,
+            "row": 86
+          },
+          "location": {
+            "column": 13,
+            "row": 86
+          }
+        }
+      ],
+      "message": "Replace `assert False`"
+    },
+    "location": {
+      "column": 20,
+      "row": 86
+    },
+    "message": "Do not `assert False` (`python -O` removes these calls), raise `AssertionError()`",
+    "name": "assert-false",
+    "noqa_row": 86,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/assert-false"
+  }
+]

@@ -1,0 +1,22 @@
+Final score: 37
+
+undefined-name: 20
+type-comparison: 5
+assert-false: 5
+none-comparison: 5
+test.general.test_items.TestBase.test_create_item: 5
+multiple-imports-on-one-line: 4
+subprocess-without-shell-equals-true: 4
+ambiguous-variable-name: 3
+function-uses-loop-variable: 1
+jump-statement-in-finally: 1
+suspicious-eval-usage: 1
+true-false-comparison: 1
+test.general.test_items.TestBase.test_item_links: 1
+Invalid map exchange string format. It's supposed to be wrapped in >>>these<<< things. got: 'È$r3i𝖑𝕳s,Γ9ER@ÅZA𝖊j)本Æv𝕳o9@\t}@>ÉÀQ"C\n%한lPË한TFÁDckOÃUx55ËedÂÀDÀCÉ (BA@𝖑BC本文;mÄ}한& V🔥Ân Ém\nÊ:c💀[T日x$Â1ΒN*Vvd文Sm(/한Ëpg;한ΔвaË2j🎮qNOYsвLH"i\\本ÃlE\nUΒ💀5B8UÄeY語中|WtSS8ÀËs2À𝖑<8 6fk6Gp[P語ÈoJ\'p/vm🎮ps(V0e語]{)2q.{ÇÄгJ𝖑🎯в 73[>C;8中)Βn}ËQF ] б𝖑@WnÂ': 1
+Invalid map exchange string format. It's supposed to be wrapped in >>>these<<< things. got: "MPΓ1Sos0JÆ#<xM%2MO日[eMMMJ'ÅFÄÀW語I🎲]Zrcб8rYaÆ": 1
+Invalid map exchange string format. It's supposed to be wrapped in >>>these<<< things. got: 'бn𝖑]vB(n"AcW1\n4Xt𝕳Zв中nKTQu🎲A;kQ한%5)0𝖔qM)u\\𝖊/rÆm🎯(한tÇg0H6a2c@本nGIC#ULzo6C한.𝖑DL日,d3mcd^P#m6F語o日ÊÄ,k\\Hw\nK<z4$\\A\t{HWBÀв.b]a#R1Â*Im2本': 1
+Invalid map exchange string format. It's supposed to be wrapped in >>>these<<< things. got: '9)日2;z)UP6fÉSI:ΔRΒ글V$È H🎲)>🎯s:)}Ã]ÁT/r中ÆRv本8j&:k글文8"È4ÀAo[0한Ct:語wΒA글R^ÆtÇ@yËfÈ語Å4$W%🔥 𝕳r.%𝕳u0\n^0OJ>3Ä本g{\n𝕳3^sb文&:6\\\\Åmb𝕳oOOÅΒS𝖑d7\'^🔥n51n^\noÅB]💀$𝖔8k🎮💀HGw82ÄU&\n%z🎲T글文2NÂ*vK2 Pe|È🎯ÀXvO0}бÁ{.C#한)} XÀ:(#XqOmmo本ÁÁ9🔥bDÂ3б🎮K': 1
+Invalid map exchange string format. It's supposed to be wrapped in >>>these<<< things. got: 'kx)Ä𝖔ÁΔΒPuÃMdMEÂ💀(/\'AбvL^QÆQX@бi>;o]ixzT{本THcP한Z🎯P,pddyP𝕳\nn🔥)5}7💀JsΓ🎲i/7a4Vu5日sRL𝖑\n)1zJÅvE]𝖑9🎮9n$0YM\'г本"#/CÂ5Cm🎮SHkR|ÁΔtR한Çl$O9$D @&ÁiбvK🎮в9YÃ0/DI': 1
+Invalid map exchange string format. It's supposed to be wrapped in >>>these<<< things. got: ":HO1un6<qK/sB'E🎯💀🎯W本ÇWjU6HC3ÁT D ËT語FE3c🎮|cpÉ%n🔥u)GQ日\t[2Ln*%💀\nË>🎯ÃONÁ1𝕳N)F🎮글(6/ud文E한TLz&tÄYA<D/🔥z中Ç3": 1
+Invalid map exchange string format. It's supposed to be wrapped in >>>these<<< things. got: 'È|0гÆÄÅ1zLA :P글}z@::(🎲NaT,^вc|ÈO\\🔥Hp7U\\]8,81 |\\lO#&.本u$бÄH>🎮Βq}Ãm]x,Δ|𝖊Im$(xg': 1
