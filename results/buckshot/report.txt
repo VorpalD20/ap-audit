@@ -1,0 +1,5 @@
+Final score: 79
+
+undefined-local-with-import-star-usage: 10
+undefined-local-with-import-star: 10
+test.general.test_options.TestOptions.test_options_have_doc_string: 1
