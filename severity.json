@@ -1,6 +1,12 @@
 {
  "fuzzer": {
   "": -1,
+  "\"Invalid logic format for location/region {'name': 'Lake: A Successful Repair Job', 'category': ['Lake Kingdom', 'Lake Peace', 'Puzzle Part', 'Into the Lake'], 'region': 'Lake Kingdom', 'requires': '(|Triple Jump| or (|Ground Pound| and |Ground Pound Jump|) or |Backward Somersault| or |Side Somersault|) and |Wall Jump|) or |Swim|', 'id': 14481032613}.\"": -1,
+  "\"Invalid logic format for location/region {'name': 'Lake: Jump, Grab, Cling, and Climb', 'category': ['Lake Kingdom', 'Into the Lake'], 'region': 'Lake Kingdom', 'requires': '(|Triple Jump| or (|Ground Pound| and |Ground Pound Jump|) or |Backward Somersault| or |Side Somersault|) and |Wall Jump|) or |Swim|', 'id': 14481032617}.\"": -1,
+  "\"Invalid logic format for location/region {'name': 'Lake: Lake Kingdom Timer Challenge 1', 'category': ['Lake Kingdom', 'Lake Peace', 'Into the Lake', 'Ground Pound'], 'region': 'Lake Kingdom', 'requires': '((|Triple Jump| or (|Ground Pound| and |Ground Pound Jump|) or |Backward Somersault| or |Side Somersault|) and |Wall Jump|) or |Swim|) and (|Ground Pound|)', 'id': 14481032603}.\"": -1,
+  "\"Invalid logic format for location/region {'name': 'World Peace', 'category': ['Moon Kingdom', 'Bowser', 'Banzai Bill', 'Parabones Skip', 'Sand Peace', 'Lake Peace', 'Wooded Peace', 'Metro Peace', 'Snow Peace', 'Seaside Peace', 'Snow/Seaside Peace', 'Luncheon Peace', 'Into the Lake'], 'region': 'Moon Kingdom', 'victory': True, 'requires': '((|Triple Jump| or (|Ground Pound| and |Ground Pound Jump|) or |Backward Somersault| or |Side Somersault|) and |Wall Jump|) or |Swim|) and (|Ground Pound|)', 'id': 14481033068}.\"": -1,
+  "'Invalid logic format for location/region {\\'name\\': \"Lake: Let\\'s Go Swimming, Captain Toad!\", \\'category\\': [\\'Lake Kingdom\\', \\'Cheep Cheep or Ground Pound\\', \\'Into the Lake\\'], \\'region\\': \\'Lake Kingdom\\', \\'requires\\': \\'(|Triple Jump| or (|Ground Pound| and |Ground Pound Jump|) or |Backward Somersault| or |Side Somersault|) and |Wall Jump|) or |Swim|\\', \\'id\\': 14481032611}.'": -1,
+  "'World Peace'": -1,
   "'pop from an empty set'": -1,
   "<class 'TimeoutError'>": -1,
   "EOF when reading a line": -1,

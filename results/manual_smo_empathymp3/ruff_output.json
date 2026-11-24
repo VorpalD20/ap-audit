@@ -1,0 +1,278 @@
+[
+  {
+    "cell": null,
+    "code": "E722",
+    "end_location": {
+      "column": 11,
+      "row": 20
+    },
+    "filename": "/Archipelago/worlds/manual_smo_empathymp3/Data.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 20
+    },
+    "message": "Do not use bare `except`",
+    "name": "bare-except",
+    "noqa_row": 20,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/bare-except"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 38,
+      "row": 326
+    },
+    "filename": "/Archipelago/worlds/manual_smo_empathymp3/DataValidation.py",
+    "fix": null,
+    "location": {
+      "column": 37,
+      "row": 326
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 326,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E401",
+    "end_location": {
+      "column": 19,
+      "row": 8
+    },
+    "filename": "/Archipelago/worlds/manual_smo_empathymp3/ManualClient.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "import asyncio\nimport re",
+          "end_location": {
+            "column": 19,
+            "row": 8
+          },
+          "location": {
+            "column": 1,
+            "row": 8
+          }
+        }
+      ],
+      "message": "Split imports"
+    },
+    "location": {
+      "column": 1,
+      "row": 8
+    },
+    "message": "Multiple imports on one line",
+    "name": "multiple-imports-on-one-line",
+    "noqa_row": 8,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/multiple-imports-on-one-line"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 38,
+      "row": 32
+    },
+    "filename": "/Archipelago/worlds/manual_smo_empathymp3/ManualClient.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"Syncing items.\"",
+          "end_location": {
+            "column": 38,
+            "row": 32
+          },
+          "location": {
+            "column": 21,
+            "row": 32
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 21,
+      "row": 32
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 32,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "E712",
+    "end_location": {
+      "column": 31,
+      "row": 629
+    },
+    "filename": "/Archipelago/worlds/manual_smo_empathymp3/ManualClient.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "ctx.syncing",
+          "end_location": {
+            "column": 31,
+            "row": 629
+          },
+          "location": {
+            "column": 12,
+            "row": 629
+          }
+        }
+      ],
+      "message": "Replace with `ctx.syncing`"
+    },
+    "location": {
+      "column": 12,
+      "row": 629
+    },
+    "message": "Avoid equality comparisons to `True`; use `ctx.syncing:` for truth checks",
+    "name": "true-false-comparison",
+    "noqa_row": 629,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/true-false-comparison"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 88,
+      "row": 37
+    },
+    "filename": "/Archipelago/worlds/manual_smo_empathymp3/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 37
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 37,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "B904",
+    "end_location": {
+      "column": 88,
+      "row": 61
+    },
+    "filename": "/Archipelago/worlds/manual_smo_empathymp3/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 61
+    },
+    "message": "Within an `except` clause, raise exceptions with `raise ... from err` or `raise ... from None` to distinguish them from errors in exception handling",
+    "name": "raise-without-from-inside-except",
+    "noqa_row": 61,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/raise-without-from-inside-except"
+  },
+  {
+    "cell": null,
+    "code": "B034",
+    "end_location": {
+      "column": 87,
+      "row": 157
+    },
+    "filename": "/Archipelago/worlds/manual_smo_empathymp3/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 157
+    },
+    "message": "`re.sub` should pass `count` and `flags` as keyword arguments to avoid confusion due to unintuitive argument positions",
+    "name": "re-sub-positional-args",
+    "noqa_row": 157,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/re-sub-positional-args"
+  },
+  {
+    "cell": null,
+    "code": "B034",
+    "end_location": {
+      "column": 86,
+      "row": 158
+    },
+    "filename": "/Archipelago/worlds/manual_smo_empathymp3/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 158
+    },
+    "message": "`re.sub` should pass `count` and `flags` as keyword arguments to avoid confusion due to unintuitive argument positions",
+    "name": "re-sub-positional-args",
+    "noqa_row": 158,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/re-sub-positional-args"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 49,
+      "row": 223
+    },
+    "filename": "/Archipelago/worlds/manual_smo_empathymp3/Rules.py",
+    "fix": null,
+    "location": {
+      "column": 48,
+      "row": 223
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 223,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 41,
+      "row": 214
+    },
+    "filename": "/Archipelago/worlds/manual_smo_empathymp3/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 40,
+      "row": 214
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 214,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 45,
+      "row": 237
+    },
+    "filename": "/Archipelago/worlds/manual_smo_empathymp3/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 44,
+      "row": 237
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 237,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  }
+]

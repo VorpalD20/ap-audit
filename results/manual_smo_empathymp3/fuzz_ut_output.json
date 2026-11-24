@@ -1,0 +1,1 @@
+{"stats": {"total": 50, "success": 0, "failure": 3, "timeout": 4, "ignored": 43}, "errors": {"manual_smo_empathymp3": {"None": [34, 6, 21], "<class 'TimeoutError'>": [9, 10, 14, 13]}}}
