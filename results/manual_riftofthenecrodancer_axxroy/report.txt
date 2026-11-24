@@ -1,0 +1,39 @@
+Final score: -15
+
+Use adjust_filler_items instead.: 50
+test.general.test_reachability.TestBase.test_default_all_state_can_reach_everything: 10
+bare-except: 5
+ambiguous-variable-name: 5
+raise-without-from-inside-except: 5
+test.general.test_items.TestBase.test_create_item: 5
+test.general.test_items.TestBase.test_itempool_not_modified: 5
+re-sub-positional-args: 2
+loop-variable-overrides-iterator: 1
+multiple-imports-on-one-line: 1
+true-false-comparison: 1
+type-comparison: 1
+test.general.test_entrances.TestBase.test_all_state_before_connect_entrances: 1
+test.general.test_entrances.TestBase.test_entrance_connection_steps: 1
+test.general.test_ids.TestIDs.test_postgen_datapackage: 1
+test.general.test_implemented.TestImplemented.test_completion_condition: 1
+test.general.test_implemented.TestImplemented.test_entrance_parents: 1
+test.general.test_implemented.TestImplemented.test_explicit_indirect_conditions_spheres: 1
+test.general.test_implemented.TestImplemented.test_prefill_items: 1
+test.general.test_implemented.TestImplemented.test_slot_data: 1
+test.general.test_items.TestBase.test_item_count_equal_locations: 1
+test.general.test_items.TestBase.test_item_links: 1
+test.general.test_items.TestBase.test_items_in_datapackage: 1
+test.general.test_items.TestBase.test_locality_not_modified: 1
+test.general.test_locations.TestBase.test_create_duplicate_locations: 1
+test.general.test_locations.TestBase.test_location_creation_steps: 1
+test.general.test_locations.TestBase.test_locations_in_datapackage: 1
+test.general.test_memory.TestWorldMemory.test_leak: 1
+test.general.test_packages.TestPackages.test_packages_have_init: 1
+test.general.test_reachability.TestBase.test_default_empty_state_can_reach_something: 1
+test.general.test_state.TestBase.test_all_state_is_available: 1
+test.multiworld.test_multiworlds.TestTwoPlayerMulti{game='Manual_RiftoftheNecrodancer_Axxroy'}.test_two_player_single_game_fills: 1
+test.webhost.test_docs.TestDocs.test_has_game_info: 1
+test.webhost.test_option_presets.TestOptionPresets.test_option_preset_values_are_explicitly_defined: 1
+test.webhost.test_option_presets.TestOptionPresets.test_option_presets_have_valid_options: 1
+archipelago.json is missing: 1
+try-except-pass: 0

@@ -1,0 +1,1545 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="31" skipped="0" tests="709" time="6.273" timestamp="2026-11-24T00:38:00.235050+00:00" hostname="6c329e8ea358"><testcase classname="test.general.test_entrances.TestBase" name="test_all_state_before_connect_entrances" time="0.072"><failure message="Exception: Use adjust_filler_items instead.&#10;Exception in &lt;bound method ManualWorld.create_items of &lt;worlds.manual_riftofthenecrodancer_axxroy.ManualWorld object at 0x796e0e0738c0&gt;&gt; for player 1, named Tester1.">self = &lt;test.general.test_entrances.TestBase testMethod=test_all_state_before_connect_entrances&gt;
+
+    def test_all_state_before_connect_entrances(self):
+        """Before connect_entrances, Entrance objects may be unconnected.
+        Thus, we test that get_all_state is performed with allow_partial_entrances if used before or during
+        connect_entrances."""
+    
+        gen_steps = ("generate_early", "create_regions", "create_items", "set_rules", "connect_entrances")
+    
+        for game_name, world_type in AutoWorldRegister.testable_worlds.items():
+            with self.subTest("Game", game_name=game_name):
+                multiworld = setup_solo_multiworld(world_type, ())
+    
+                original_get_all_state = multiworld.get_all_state
+    
+                def patched_get_all_state(use_cache: bool | None = None, allow_partial_entrances: bool = False,
+                                          **kwargs): #TODO: Remove use_cache once get_all_state() fully deprecates it
+                    self.assertTrue(allow_partial_entrances, (
+                        "Before the connect_entrances step finishes, other worlds might still have partial entrances. "
+                        "As such, any call to get_all_state must use allow_partial_entrances = True."
+                    ))
+    
+                    return original_get_all_state(allow_partial_entrances, **kwargs)
+    
+                multiworld.get_all_state = patched_get_all_state
+    
+                for step in gen_steps:
+                    with self.subTest("Step", step=step):
+&gt;                       call_all(multiworld, step)
+
+test/general/test_entrances.py:66: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+worlds/AutoWorld.py:207: in call_all
+    call_single(multiworld, method_name, player, *args)
+worlds/AutoWorld.py:193: in call_single
+    raise e
+worlds/AutoWorld.py:186: in call_single
+    ret = _timed_call(method, *args, multiworld=multiworld, player=player)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/AutoWorld.py:171: in _timed_call
+    ret = method(*args)
+          ^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/__init__.py:198: in create_items
+    pool = before_create_items_filler(pool, self, self.multiworld, self.player)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/hooks/World.py:280: in before_create_items_filler
+    item_pool = world.add_filler_items(item_pool, traps)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/__init__.py:358: in add_filler_items
+    Utils.deprecate("Use adjust_filler_items instead.")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+message = 'Use adjust_filler_items instead.', add_stacklevels = 0
+
+    def deprecate(message: str, add_stacklevels: int = 0):
+        """also use typing_extensions.deprecated wherever you use this"""
+        if __debug__:
+&gt;           raise Exception(message)
+E           Exception: Use adjust_filler_items instead.
+E           Exception in &lt;bound method ManualWorld.create_items of &lt;worlds.manual_riftofthenecrodancer_axxroy.ManualWorld object at 0x796e0e0738c0&gt;&gt; for player 1, named Tester1.
+
+Utils.py:1055: Exception</failure></testcase><testcase classname="test.general.test_entrances.TestBase" name="test_entrance_connection_steps" time="0.033"><failure message="Exception: Use adjust_filler_items instead.&#10;Exception in &lt;bound method ManualWorld.create_items of &lt;worlds.manual_riftofthenecrodancer_axxroy.ManualWorld object at 0x796e0ddc8050&gt;&gt; for player 1, named Tester1.">self = &lt;test.general.test_entrances.TestBase testMethod=test_entrance_connection_steps&gt;
+
+    def test_entrance_connection_steps(self):
+        """Tests that Entrances are connected and not changed after connect_entrances."""
+        def get_entrance_name_to_source_and_target_dict(world: World):
+            return [
+                (entrance.name, entrance.parent_region, entrance.connected_region)
+                for entrance in world.get_entrances()
+            ]
+    
+        gen_steps = ("generate_early", "create_regions", "create_items", "set_rules", "connect_entrances")
+        additional_steps = ("generate_basic", "pre_fill")
+    
+        for game_name, world_type in AutoWorldRegister.testable_worlds.items():
+            with self.subTest("Game", game_name=game_name):
+&gt;               multiworld = setup_solo_multiworld(world_type, gen_steps)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test/general/test_entrances.py:22: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/general/__init__.py:31: in setup_solo_multiworld
+    return setup_multiworld(world_type, steps, seed)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/general/__init__.py:68: in setup_multiworld
+    call_all(multiworld, step)
+worlds/AutoWorld.py:207: in call_all
+    call_single(multiworld, method_name, player, *args)
+worlds/AutoWorld.py:193: in call_single
+    raise e
+worlds/AutoWorld.py:186: in call_single
+    ret = _timed_call(method, *args, multiworld=multiworld, player=player)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/AutoWorld.py:171: in _timed_call
+    ret = method(*args)
+          ^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/__init__.py:198: in create_items
+    pool = before_create_items_filler(pool, self, self.multiworld, self.player)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/hooks/World.py:280: in before_create_items_filler
+    item_pool = world.add_filler_items(item_pool, traps)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/__init__.py:358: in add_filler_items
+    Utils.deprecate("Use adjust_filler_items instead.")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+message = 'Use adjust_filler_items instead.', add_stacklevels = 0
+
+    def deprecate(message: str, add_stacklevels: int = 0):
+        """also use typing_extensions.deprecated wherever you use this"""
+        if __debug__:
+&gt;           raise Exception(message)
+E           Exception: Use adjust_filler_items instead.
+E           Exception in &lt;bound method ManualWorld.create_items of &lt;worlds.manual_riftofthenecrodancer_axxroy.ManualWorld object at 0x796e0ddc8050&gt;&gt; for player 1, named Tester1.
+
+Utils.py:1055: Exception</failure></testcase><testcase classname="test.general.test_groups.TestNameGroups" name="test_item_name_groups_not_empty" time="0.001" /><testcase classname="test.general.test_groups.TestNameGroups" name="test_location_name_groups_not_empty" time="0.000" /><testcase classname="test.general.test_ids.TestIDs" name="test_duplicate_item_ids" time="0.000" /><testcase classname="test.general.test_ids.TestIDs" name="test_duplicate_location_ids" time="0.000" /><testcase classname="test.general.test_ids.TestIDs" name="test_postgen_datapackage" time="0.034"><failure message="Exception: Use adjust_filler_items instead.&#10;Exception in &lt;bound method ManualWorld.create_items of &lt;worlds.manual_riftofthenecrodancer_axxroy.ManualWorld object at 0x796e0ddca210&gt;&gt; for player 1, named Tester1.">self = &lt;test.general.test_ids.TestIDs testMethod=test_postgen_datapackage&gt;
+
+    def test_postgen_datapackage(self):
+        """Generates a solo multiworld and checks that the datapackage is still valid"""
+        for gamename, world_type in AutoWorldRegister.testable_worlds.items():
+            with self.subTest(game=gamename):
+&gt;               multiworld = setup_solo_multiworld(world_type)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test/general/test_ids.py:90: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/general/__init__.py:31: in setup_solo_multiworld
+    return setup_multiworld(world_type, steps, seed)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/general/__init__.py:68: in setup_multiworld
+    call_all(multiworld, step)
+worlds/AutoWorld.py:207: in call_all
+    call_single(multiworld, method_name, player, *args)
+worlds/AutoWorld.py:193: in call_single
+    raise e
+worlds/AutoWorld.py:186: in call_single
+    ret = _timed_call(method, *args, multiworld=multiworld, player=player)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/AutoWorld.py:171: in _timed_call
+    ret = method(*args)
+          ^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/__init__.py:198: in create_items
+    pool = before_create_items_filler(pool, self, self.multiworld, self.player)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/hooks/World.py:280: in before_create_items_filler
+    item_pool = world.add_filler_items(item_pool, traps)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/__init__.py:358: in add_filler_items
+    Utils.deprecate("Use adjust_filler_items instead.")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+message = 'Use adjust_filler_items instead.', add_stacklevels = 0
+
+    def deprecate(message: str, add_stacklevels: int = 0):
+        """also use typing_extensions.deprecated wherever you use this"""
+        if __debug__:
+&gt;           raise Exception(message)
+E           Exception: Use adjust_filler_items instead.
+E           Exception in &lt;bound method ManualWorld.create_items of &lt;worlds.manual_riftofthenecrodancer_axxroy.ManualWorld object at 0x796e0ddca210&gt;&gt; for player 1, named Tester1.
+
+Utils.py:1055: Exception</failure></testcase><testcase classname="test.general.test_ids.TestIDs" name="test_range_items" time="0.000" /><testcase classname="test.general.test_ids.TestIDs" name="test_range_locations" time="0.000" /><testcase classname="test.general.test_ids.TestIDs" name="test_reserved_items" time="0.000" /><testcase classname="test.general.test_ids.TestIDs" name="test_reserved_locations" time="0.000" /><testcase classname="test.general.test_implemented.TestImplemented" name="test_completion_condition" time="0.032"><failure message="Exception: Use adjust_filler_items instead.&#10;Exception in &lt;bound method ManualWorld.create_items of &lt;worlds.manual_riftofthenecrodancer_axxroy.ManualWorld object at 0x796e0dde15b0&gt;&gt; for player 1, named Tester1.">self = &lt;test.general.test_implemented.TestImplemented testMethod=test_completion_condition&gt;
+
+    def test_completion_condition(self):
+        """Ensure a completion condition is set that has requirements."""
+        for game_name, world_type in AutoWorldRegister.testable_worlds.items():
+            if not world_type.hidden:
+                with self.subTest(game_name):
+&gt;                   multiworld = setup_solo_multiworld(world_type)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test/general/test_implemented.py:18: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/general/__init__.py:31: in setup_solo_multiworld
+    return setup_multiworld(world_type, steps, seed)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/general/__init__.py:68: in setup_multiworld
+    call_all(multiworld, step)
+worlds/AutoWorld.py:207: in call_all
+    call_single(multiworld, method_name, player, *args)
+worlds/AutoWorld.py:193: in call_single
+    raise e
+worlds/AutoWorld.py:186: in call_single
+    ret = _timed_call(method, *args, multiworld=multiworld, player=player)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/AutoWorld.py:171: in _timed_call
+    ret = method(*args)
+          ^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/__init__.py:198: in create_items
+    pool = before_create_items_filler(pool, self, self.multiworld, self.player)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/hooks/World.py:280: in before_create_items_filler
+    item_pool = world.add_filler_items(item_pool, traps)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/__init__.py:358: in add_filler_items
+    Utils.deprecate("Use adjust_filler_items instead.")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+message = 'Use adjust_filler_items instead.', add_stacklevels = 0
+
+    def deprecate(message: str, add_stacklevels: int = 0):
+        """also use typing_extensions.deprecated wherever you use this"""
+        if __debug__:
+&gt;           raise Exception(message)
+E           Exception: Use adjust_filler_items instead.
+E           Exception in &lt;bound method ManualWorld.create_items of &lt;worlds.manual_riftofthenecrodancer_axxroy.ManualWorld object at 0x796e0dde15b0&gt;&gt; for player 1, named Tester1.
+
+Utils.py:1055: Exception</failure></testcase><testcase classname="test.general.test_implemented.TestImplemented" name="test_entrance_parents" time="0.033"><failure message="Exception: Use adjust_filler_items instead.&#10;Exception in &lt;bound method ManualWorld.create_items of &lt;worlds.manual_riftofthenecrodancer_axxroy.ManualWorld object at 0x796e0dde36f0&gt;&gt; for player 1, named Tester1.">self = &lt;test.general.test_implemented.TestImplemented testMethod=test_entrance_parents&gt;
+
+    def test_entrance_parents(self):
+        """Tests that the parents of created Entrances match the exiting Region."""
+        for game_name, world_type in AutoWorldRegister.testable_worlds.items():
+            if not world_type.hidden:
+                with self.subTest(game_name):
+&gt;                   multiworld = setup_solo_multiworld(world_type)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test/general/test_implemented.py:26: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/general/__init__.py:31: in setup_solo_multiworld
+    return setup_multiworld(world_type, steps, seed)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/general/__init__.py:68: in setup_multiworld
+    call_all(multiworld, step)
+worlds/AutoWorld.py:207: in call_all
+    call_single(multiworld, method_name, player, *args)
+worlds/AutoWorld.py:193: in call_single
+    raise e
+worlds/AutoWorld.py:186: in call_single
+    ret = _timed_call(method, *args, multiworld=multiworld, player=player)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/AutoWorld.py:171: in _timed_call
+    ret = method(*args)
+          ^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/__init__.py:198: in create_items
+    pool = before_create_items_filler(pool, self, self.multiworld, self.player)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/hooks/World.py:280: in before_create_items_filler
+    item_pool = world.add_filler_items(item_pool, traps)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/__init__.py:358: in add_filler_items
+    Utils.deprecate("Use adjust_filler_items instead.")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+message = 'Use adjust_filler_items instead.', add_stacklevels = 0
+
+    def deprecate(message: str, add_stacklevels: int = 0):
+        """also use typing_extensions.deprecated wherever you use this"""
+        if __debug__:
+&gt;           raise Exception(message)
+E           Exception: Use adjust_filler_items instead.
+E           Exception in &lt;bound method ManualWorld.create_items of &lt;worlds.manual_riftofthenecrodancer_axxroy.ManualWorld object at 0x796e0dde36f0&gt;&gt; for player 1, named Tester1.
+
+Utils.py:1055: Exception</failure></testcase><testcase classname="test.general.test_implemented.TestImplemented" name="test_explicit_indirect_conditions_spheres" time="0.001"><failure message="Exception: Use adjust_filler_items instead.&#10;Exception in &lt;bound method ManualWorld.create_items of &lt;worlds.manual_riftofthenecrodancer_axxroy.ManualWorld object at 0x796e0dee1fd0&gt;&gt; for player 1, named Tester1.">self = &lt;test.general.test_implemented.TestImplemented testMethod=test_explicit_indirect_conditions_spheres&gt;
+
+    def test_explicit_indirect_conditions_spheres(self):
+        """Tests that worlds using explicit indirect conditions produce identical spheres as when using implicit
+        indirect conditions"""
+        # Because the iteration order of blocked_connections in CollectionState.update_reachable_regions() is
+        # nondeterministic, this test may sometimes pass with the same seed even when there are missing indirect
+        # conditions.
+        for game_name, world_type in AutoWorldRegister.testable_worlds.items():
+&gt;           multiworld = setup_solo_multiworld(world_type)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test/general/test_implemented.py:84: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/general/__init__.py:31: in setup_solo_multiworld
+    return setup_multiworld(world_type, steps, seed)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/general/__init__.py:68: in setup_multiworld
+    call_all(multiworld, step)
+worlds/AutoWorld.py:207: in call_all
+    call_single(multiworld, method_name, player, *args)
+worlds/AutoWorld.py:193: in call_single
+    raise e
+worlds/AutoWorld.py:186: in call_single
+    ret = _timed_call(method, *args, multiworld=multiworld, player=player)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/AutoWorld.py:171: in _timed_call
+    ret = method(*args)
+          ^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/__init__.py:198: in create_items
+    pool = before_create_items_filler(pool, self, self.multiworld, self.player)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/hooks/World.py:280: in before_create_items_filler
+    item_pool = world.add_filler_items(item_pool, traps)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/__init__.py:358: in add_filler_items
+    Utils.deprecate("Use adjust_filler_items instead.")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+message = 'Use adjust_filler_items instead.', add_stacklevels = 0
+
+    def deprecate(message: str, add_stacklevels: int = 0):
+        """also use typing_extensions.deprecated wherever you use this"""
+        if __debug__:
+&gt;           raise Exception(message)
+E           Exception: Use adjust_filler_items instead.
+E           Exception in &lt;bound method ManualWorld.create_items of &lt;worlds.manual_riftofthenecrodancer_axxroy.ManualWorld object at 0x796e0dee1fd0&gt;&gt; for player 1, named Tester1.
+
+Utils.py:1055: Exception</failure></testcase><testcase classname="test.general.test_implemented.TestImplemented" name="test_no_failed_world_loads" time="0.000" /><testcase classname="test.general.test_implemented.TestImplemented" name="test_no_items_or_locations_or_regions_submitted_in_init" time="0.001" /><testcase classname="test.general.test_implemented.TestImplemented" name="test_prefill_items" time="0.033"><failure message="Exception: Use adjust_filler_items instead.&#10;Exception in &lt;bound method ManualWorld.create_items of &lt;worlds.manual_riftofthenecrodancer_axxroy.ManualWorld object at 0x796e0de2d370&gt;&gt; for player 1, named Tester1.">self = &lt;test.general.test_implemented.TestImplemented testMethod=test_prefill_items&gt;
+
+    def test_prefill_items(self):
+        """Test that every world can reach every location from allstate before pre_fill."""
+        for gamename, world_type in AutoWorldRegister.testable_worlds.items():
+            if gamename not in ("Archipelago", "Final Fantasy", "Test Game"):
+                with self.subTest(gamename):
+&gt;                   multiworld = setup_solo_multiworld(world_type, ("generate_early", "create_regions", "create_items",
+                                                                    "set_rules", "connect_entrances", "generate_basic"))
+
+test/general/test_implemented.py:66: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/general/__init__.py:31: in setup_solo_multiworld
+    return setup_multiworld(world_type, steps, seed)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/general/__init__.py:68: in setup_multiworld
+    call_all(multiworld, step)
+worlds/AutoWorld.py:207: in call_all
+    call_single(multiworld, method_name, player, *args)
+worlds/AutoWorld.py:193: in call_single
+    raise e
+worlds/AutoWorld.py:186: in call_single
+    ret = _timed_call(method, *args, multiworld=multiworld, player=player)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/AutoWorld.py:171: in _timed_call
+    ret = method(*args)
+          ^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/__init__.py:198: in create_items
+    pool = before_create_items_filler(pool, self, self.multiworld, self.player)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/hooks/World.py:280: in before_create_items_filler
+    item_pool = world.add_filler_items(item_pool, traps)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/__init__.py:358: in add_filler_items
+    Utils.deprecate("Use adjust_filler_items instead.")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+message = 'Use adjust_filler_items instead.', add_stacklevels = 0
+
+    def deprecate(message: str, add_stacklevels: int = 0):
+        """also use typing_extensions.deprecated wherever you use this"""
+        if __debug__:
+&gt;           raise Exception(message)
+E           Exception: Use adjust_filler_items instead.
+E           Exception in &lt;bound method ManualWorld.create_items of &lt;worlds.manual_riftofthenecrodancer_axxroy.ManualWorld object at 0x796e0de2d370&gt;&gt; for player 1, named Tester1.
+
+Utils.py:1055: Exception</failure></testcase><testcase classname="test.general.test_implemented.TestImplemented" name="test_slot_data" time="0.002"><failure message="Exception: Use adjust_filler_items instead.&#10;Exception in &lt;bound method ManualWorld.create_items of &lt;worlds.manual_riftofthenecrodancer_axxroy.ManualWorld object at 0x796e0de58c50&gt;&gt; for player 1, named Tester1.">self = &lt;test.general.test_implemented.TestImplemented testMethod=test_slot_data&gt;
+
+    def test_slot_data(self):
+        """Tests that if a world creates slot data, it's json serializable."""
+        # has an await for generate_output which isn't being called
+        excluded_games = ("Ocarina of Time",)
+        worlds_to_test = {game: world
+                          for game, world in AutoWorldRegister.testable_worlds.items() if game not in excluded_games}
+        for game_name, world_type in worlds_to_test.items():
+&gt;           multiworld = setup_solo_multiworld(world_type)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test/general/test_implemented.py:47: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/general/__init__.py:31: in setup_solo_multiworld
+    return setup_multiworld(world_type, steps, seed)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/general/__init__.py:68: in setup_multiworld
+    call_all(multiworld, step)
+worlds/AutoWorld.py:207: in call_all
+    call_single(multiworld, method_name, player, *args)
+worlds/AutoWorld.py:193: in call_single
+    raise e
+worlds/AutoWorld.py:186: in call_single
+    ret = _timed_call(method, *args, multiworld=multiworld, player=player)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/AutoWorld.py:171: in _timed_call
+    ret = method(*args)
+          ^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/__init__.py:198: in create_items
+    pool = before_create_items_filler(pool, self, self.multiworld, self.player)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/hooks/World.py:280: in before_create_items_filler
+    item_pool = world.add_filler_items(item_pool, traps)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/__init__.py:358: in add_filler_items
+    Utils.deprecate("Use adjust_filler_items instead.")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+message = 'Use adjust_filler_items instead.', add_stacklevels = 0
+
+    def deprecate(message: str, add_stacklevels: int = 0):
+        """also use typing_extensions.deprecated wherever you use this"""
+        if __debug__:
+&gt;           raise Exception(message)
+E           Exception: Use adjust_filler_items instead.
+E           Exception in &lt;bound method ManualWorld.create_items of &lt;worlds.manual_riftofthenecrodancer_axxroy.ManualWorld object at 0x796e0de58c50&gt;&gt; for player 1, named Tester1.
+
+Utils.py:1055: Exception</failure></testcase><testcase classname="test.general.test_implemented.TestImplemented" name="test_stage_methods" time="0.000" /><testcase classname="test.general.test_items.TestBase" name="test_create_item" time="0.002"><failure message="Exception: Use adjust_filler_items instead.&#10;Exception in &lt;bound method ManualWorld.create_items of &lt;worlds.manual_riftofthenecrodancer_axxroy.ManualWorld object at 0x796e0de5a850&gt;&gt; for player 1, named Tester1.">self = &lt;test.general.test_items.TestBase testMethod=test_create_item&gt;
+
+    def test_create_item(self):
+        """Test that a world can successfully create all items in its datapackage"""
+        for game_name, world_type in AutoWorldRegister.testable_worlds.items():
+&gt;           multiworld = setup_solo_multiworld(world_type, steps=("generate_early", "create_regions", "create_items"))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test/general/test_items.py:19: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/general/__init__.py:31: in setup_solo_multiworld
+    return setup_multiworld(world_type, steps, seed)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/general/__init__.py:68: in setup_multiworld
+    call_all(multiworld, step)
+worlds/AutoWorld.py:207: in call_all
+    call_single(multiworld, method_name, player, *args)
+worlds/AutoWorld.py:193: in call_single
+    raise e
+worlds/AutoWorld.py:186: in call_single
+    ret = _timed_call(method, *args, multiworld=multiworld, player=player)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/AutoWorld.py:171: in _timed_call
+    ret = method(*args)
+          ^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/__init__.py:198: in create_items
+    pool = before_create_items_filler(pool, self, self.multiworld, self.player)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/hooks/World.py:280: in before_create_items_filler
+    item_pool = world.add_filler_items(item_pool, traps)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/__init__.py:358: in add_filler_items
+    Utils.deprecate("Use adjust_filler_items instead.")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+message = 'Use adjust_filler_items instead.', add_stacklevels = 0
+
+    def deprecate(message: str, add_stacklevels: int = 0):
+        """also use typing_extensions.deprecated wherever you use this"""
+        if __debug__:
+&gt;           raise Exception(message)
+E           Exception: Use adjust_filler_items instead.
+E           Exception in &lt;bound method ManualWorld.create_items of &lt;worlds.manual_riftofthenecrodancer_axxroy.ManualWorld object at 0x796e0de5a850&gt;&gt; for player 1, named Tester1.
+
+Utils.py:1055: Exception</failure></testcase><testcase classname="test.general.test_items.TestBase" name="test_item_count_equal_locations" time="0.034"><failure message="Exception: Use adjust_filler_items instead.&#10;Exception in &lt;bound method ManualWorld.create_items of &lt;worlds.manual_riftofthenecrodancer_axxroy.ManualWorld object at 0x796e0e087890&gt;&gt; for player 1, named Tester1.">self = &lt;test.general.test_items.TestBase testMethod=test_item_count_equal_locations&gt;
+
+    def test_item_count_equal_locations(self):
+        """Test that by the pre_fill step under default settings, each game submits items == locations"""
+        for game_name, world_type in AutoWorldRegister.testable_worlds.items():
+            with self.subTest("Game", game=game_name):
+&gt;               multiworld = setup_solo_multiworld(world_type)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test/general/test_items.py:79: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/general/__init__.py:31: in setup_solo_multiworld
+    return setup_multiworld(world_type, steps, seed)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/general/__init__.py:68: in setup_multiworld
+    call_all(multiworld, step)
+worlds/AutoWorld.py:207: in call_all
+    call_single(multiworld, method_name, player, *args)
+worlds/AutoWorld.py:193: in call_single
+    raise e
+worlds/AutoWorld.py:186: in call_single
+    ret = _timed_call(method, *args, multiworld=multiworld, player=player)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/AutoWorld.py:171: in _timed_call
+    ret = method(*args)
+          ^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/__init__.py:198: in create_items
+    pool = before_create_items_filler(pool, self, self.multiworld, self.player)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/hooks/World.py:280: in before_create_items_filler
+    item_pool = world.add_filler_items(item_pool, traps)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/__init__.py:358: in add_filler_items
+    Utils.deprecate("Use adjust_filler_items instead.")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+message = 'Use adjust_filler_items instead.', add_stacklevels = 0
+
+    def deprecate(message: str, add_stacklevels: int = 0):
+        """also use typing_extensions.deprecated wherever you use this"""
+        if __debug__:
+&gt;           raise Exception(message)
+E           Exception: Use adjust_filler_items instead.
+E           Exception in &lt;bound method ManualWorld.create_items of &lt;worlds.manual_riftofthenecrodancer_axxroy.ManualWorld object at 0x796e0e087890&gt;&gt; for player 1, named Tester1.
+
+Utils.py:1055: Exception</failure></testcase><testcase classname="test.general.test_items.TestBase" name="test_item_links" time="0.067"><failure message="Exception: Use adjust_filler_items instead.&#10;Exception in &lt;bound method ManualWorld.create_items of &lt;worlds.manual_riftofthenecrodancer_axxroy.ManualWorld object at 0x796e0de5c050&gt;&gt; for player 1, named Linker 1.">self = &lt;test.general.test_items.TestBase testMethod=test_item_links&gt;
+
+    def test_item_links(self) -&gt; None:
+        """
+        Tests item link creation by creating a multiworld of 2 worlds for every game and linking their items together.
+        """
+        def setup_link_multiworld(world: Type[World], link_replace: bool) -&gt; None:
+            multiworld = MultiWorld(2)
+            multiworld.game = {1: world.game, 2: world.game}
+            multiworld.player_name = {1: "Linker 1", 2: "Linker 2"}
+            multiworld.set_seed()
+            item_link_group = [{
+                "name": "ItemLinkTest",
+                "item_pool": ["Everything"],
+                "link_replacement": link_replace,
+                "replacement_item": None,
+            }]
+            args = Namespace()
+            for name, option in world.options_dataclass.type_hints.items():
+                setattr(args, name, {1: option.from_any(option.default), 2: option.from_any(option.default)})
+            setattr(args, "item_links",
+                    {1: ItemLinks.from_any(item_link_group), 2: ItemLinks.from_any(item_link_group)})
+            multiworld.set_options(args)
+            multiworld.set_item_links()
+            # groups get added to state during its constructor so this has to be after item links are set
+            multiworld.state = CollectionState(multiworld)
+            gen_steps = ("generate_early", "create_regions", "create_items", "set_rules", "connect_entrances", "generate_basic")
+            for step in gen_steps:
+                call_all(multiworld, step)
+            # link the items together and attempt to fill
+            multiworld.link_items()
+            multiworld._all_state = None
+            call_all(multiworld, "pre_fill")
+            distribute_items_restrictive(multiworld)
+            call_all(multiworld, "post_fill")
+            call_all(multiworld, "finalize_multiworld")
+            self.assertTrue(multiworld.can_beat_game(CollectionState(multiworld)), f"seed = {multiworld.seed}")
+    
+        for game_name, world_type in AutoWorldRegister.testable_worlds.items():
+            with self.subTest("Can generate with link replacement", game=game_name):
+&gt;               setup_link_multiworld(world_type, True)
+
+test/general/test_items.py:133: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/general/test_items.py:121: in setup_link_multiworld
+    call_all(multiworld, step)
+worlds/AutoWorld.py:207: in call_all
+    call_single(multiworld, method_name, player, *args)
+worlds/AutoWorld.py:193: in call_single
+    raise e
+worlds/AutoWorld.py:186: in call_single
+    ret = _timed_call(method, *args, multiworld=multiworld, player=player)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/AutoWorld.py:171: in _timed_call
+    ret = method(*args)
+          ^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/__init__.py:198: in create_items
+    pool = before_create_items_filler(pool, self, self.multiworld, self.player)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/hooks/World.py:280: in before_create_items_filler
+    item_pool = world.add_filler_items(item_pool, traps)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/__init__.py:358: in add_filler_items
+    Utils.deprecate("Use adjust_filler_items instead.")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+message = 'Use adjust_filler_items instead.', add_stacklevels = 0
+
+    def deprecate(message: str, add_stacklevels: int = 0):
+        """also use typing_extensions.deprecated wherever you use this"""
+        if __debug__:
+&gt;           raise Exception(message)
+E           Exception: Use adjust_filler_items instead.
+E           Exception in &lt;bound method ManualWorld.create_items of &lt;worlds.manual_riftofthenecrodancer_axxroy.ManualWorld object at 0x796e0de5c050&gt;&gt; for player 1, named Linker 1.
+
+Utils.py:1055: Exception</failure><failure message="Exception: Use adjust_filler_items instead.&#10;Exception in &lt;bound method ManualWorld.create_items of &lt;worlds.manual_riftofthenecrodancer_axxroy.ManualWorld object at 0x796e0de92750&gt;&gt; for player 1, named Linker 1.">self = &lt;test.general.test_items.TestBase testMethod=test_item_links&gt;
+
+    def test_item_links(self) -&gt; None:
+        """
+        Tests item link creation by creating a multiworld of 2 worlds for every game and linking their items together.
+        """
+        def setup_link_multiworld(world: Type[World], link_replace: bool) -&gt; None:
+            multiworld = MultiWorld(2)
+            multiworld.game = {1: world.game, 2: world.game}
+            multiworld.player_name = {1: "Linker 1", 2: "Linker 2"}
+            multiworld.set_seed()
+            item_link_group = [{
+                "name": "ItemLinkTest",
+                "item_pool": ["Everything"],
+                "link_replacement": link_replace,
+                "replacement_item": None,
+            }]
+            args = Namespace()
+            for name, option in world.options_dataclass.type_hints.items():
+                setattr(args, name, {1: option.from_any(option.default), 2: option.from_any(option.default)})
+            setattr(args, "item_links",
+                    {1: ItemLinks.from_any(item_link_group), 2: ItemLinks.from_any(item_link_group)})
+            multiworld.set_options(args)
+            multiworld.set_item_links()
+            # groups get added to state during its constructor so this has to be after item links are set
+            multiworld.state = CollectionState(multiworld)
+            gen_steps = ("generate_early", "create_regions", "create_items", "set_rules", "connect_entrances", "generate_basic")
+            for step in gen_steps:
+                call_all(multiworld, step)
+            # link the items together and attempt to fill
+            multiworld.link_items()
+            multiworld._all_state = None
+            call_all(multiworld, "pre_fill")
+            distribute_items_restrictive(multiworld)
+            call_all(multiworld, "post_fill")
+            call_all(multiworld, "finalize_multiworld")
+            self.assertTrue(multiworld.can_beat_game(CollectionState(multiworld)), f"seed = {multiworld.seed}")
+    
+        for game_name, world_type in AutoWorldRegister.testable_worlds.items():
+            with self.subTest("Can generate with link replacement", game=game_name):
+                setup_link_multiworld(world_type, True)
+            with self.subTest("Can generate without link replacement", game=game_name):
+&gt;               setup_link_multiworld(world_type, False)
+
+test/general/test_items.py:135: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/general/test_items.py:121: in setup_link_multiworld
+    call_all(multiworld, step)
+worlds/AutoWorld.py:207: in call_all
+    call_single(multiworld, method_name, player, *args)
+worlds/AutoWorld.py:193: in call_single
+    raise e
+worlds/AutoWorld.py:186: in call_single
+    ret = _timed_call(method, *args, multiworld=multiworld, player=player)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/AutoWorld.py:171: in _timed_call
+    ret = method(*args)
+          ^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/__init__.py:198: in create_items
+    pool = before_create_items_filler(pool, self, self.multiworld, self.player)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/hooks/World.py:280: in before_create_items_filler
+    item_pool = world.add_filler_items(item_pool, traps)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/__init__.py:358: in add_filler_items
+    Utils.deprecate("Use adjust_filler_items instead.")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+message = 'Use adjust_filler_items instead.', add_stacklevels = 0
+
+    def deprecate(message: str, add_stacklevels: int = 0):
+        """also use typing_extensions.deprecated wherever you use this"""
+        if __debug__:
+&gt;           raise Exception(message)
+E           Exception: Use adjust_filler_items instead.
+E           Exception in &lt;bound method ManualWorld.create_items of &lt;worlds.manual_riftofthenecrodancer_axxroy.ManualWorld object at 0x796e0de92750&gt;&gt; for player 1, named Linker 1.
+
+Utils.py:1055: Exception</failure></testcase><testcase classname="test.general.test_items.TestBase" name="test_item_name_group_conflict" time="0.001" /><testcase classname="test.general.test_items.TestBase" name="test_item_name_group_has_valid_item" time="0.001" /><testcase classname="test.general.test_items.TestBase" name="test_itempool_not_modified" time="0.033"><failure message="Exception: Use adjust_filler_items instead.&#10;Exception in &lt;bound method ManualWorld.create_items of &lt;worlds.manual_riftofthenecrodancer_axxroy.ManualWorld object at 0x796e0de5d0d0&gt;&gt; for player 1, named Tester1.">self = &lt;test.general.test_items.TestBase testMethod=test_itempool_not_modified&gt;
+
+    def test_itempool_not_modified(self):
+        """Test that worlds don't modify the itempool after `create_items`"""
+        gen_steps = ("generate_early", "create_regions", "create_items")
+        additional_steps = ("set_rules", "connect_entrances", "generate_basic", "pre_fill")
+        excluded_games = ("SMZ3",)
+        worlds_to_test = {game: world
+                          for game, world in AutoWorldRegister.testable_worlds.items() if game not in excluded_games}
+        for game_name, world_type in worlds_to_test.items():
+            with self.subTest("Game", game=game_name):
+&gt;               multiworld = setup_solo_multiworld(world_type, gen_steps)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test/general/test_items.py:146: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/general/__init__.py:31: in setup_solo_multiworld
+    return setup_multiworld(world_type, steps, seed)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/general/__init__.py:68: in setup_multiworld
+    call_all(multiworld, step)
+worlds/AutoWorld.py:207: in call_all
+    call_single(multiworld, method_name, player, *args)
+worlds/AutoWorld.py:193: in call_single
+    raise e
+worlds/AutoWorld.py:186: in call_single
+    ret = _timed_call(method, *args, multiworld=multiworld, player=player)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/AutoWorld.py:171: in _timed_call
+    ret = method(*args)
+          ^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/__init__.py:198: in create_items
+    pool = before_create_items_filler(pool, self, self.multiworld, self.player)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/hooks/World.py:280: in before_create_items_filler
+    item_pool = world.add_filler_items(item_pool, traps)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/__init__.py:358: in add_filler_items
+    Utils.deprecate("Use adjust_filler_items instead.")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+message = 'Use adjust_filler_items instead.', add_stacklevels = 0
+
+    def deprecate(message: str, add_stacklevels: int = 0):
+        """also use typing_extensions.deprecated wherever you use this"""
+        if __debug__:
+&gt;           raise Exception(message)
+E           Exception: Use adjust_filler_items instead.
+E           Exception in &lt;bound method ManualWorld.create_items of &lt;worlds.manual_riftofthenecrodancer_axxroy.ManualWorld object at 0x796e0de5d0d0&gt;&gt; for player 1, named Tester1.
+
+Utils.py:1055: Exception</failure></testcase><testcase classname="test.general.test_items.TestBase" name="test_items_in_datapackage" time="0.034"><failure message="Exception: Use adjust_filler_items instead.&#10;Exception in &lt;bound method ManualWorld.create_items of &lt;worlds.manual_riftofthenecrodancer_axxroy.ManualWorld object at 0x796e0de5e200&gt;&gt; for player 1, named Tester1.">self = &lt;test.general.test_items.TestBase testMethod=test_items_in_datapackage&gt;
+
+    def test_items_in_datapackage(self):
+        """Test that any created items in the itempool are in the datapackage"""
+        archipelago = AutoWorldRegister.world_types["Archipelago"]
+        for game_name, world_type in AutoWorldRegister.testable_worlds.items():
+            with self.subTest("Game", game=game_name):
+&gt;               multiworld = setup_solo_multiworld(world_type)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test/general/test_items.py:91: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/general/__init__.py:31: in setup_solo_multiworld
+    return setup_multiworld(world_type, steps, seed)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/general/__init__.py:68: in setup_multiworld
+    call_all(multiworld, step)
+worlds/AutoWorld.py:207: in call_all
+    call_single(multiworld, method_name, player, *args)
+worlds/AutoWorld.py:193: in call_single
+    raise e
+worlds/AutoWorld.py:186: in call_single
+    ret = _timed_call(method, *args, multiworld=multiworld, player=player)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/AutoWorld.py:171: in _timed_call
+    ret = method(*args)
+          ^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/__init__.py:198: in create_items
+    pool = before_create_items_filler(pool, self, self.multiworld, self.player)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/hooks/World.py:280: in before_create_items_filler
+    item_pool = world.add_filler_items(item_pool, traps)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/__init__.py:358: in add_filler_items
+    Utils.deprecate("Use adjust_filler_items instead.")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+message = 'Use adjust_filler_items instead.', add_stacklevels = 0
+
+    def deprecate(message: str, add_stacklevels: int = 0):
+        """also use typing_extensions.deprecated wherever you use this"""
+        if __debug__:
+&gt;           raise Exception(message)
+E           Exception: Use adjust_filler_items instead.
+E           Exception in &lt;bound method ManualWorld.create_items of &lt;worlds.manual_riftofthenecrodancer_axxroy.ManualWorld object at 0x796e0de5e200&gt;&gt; for player 1, named Tester1.
+
+Utils.py:1055: Exception</failure></testcase><testcase classname="test.general.test_items.TestBase" name="test_locality_not_modified" time="0.033"><failure message="Exception: Use adjust_filler_items instead.&#10;Exception in &lt;bound method ManualWorld.create_items of &lt;worlds.manual_riftofthenecrodancer_axxroy.ManualWorld object at 0x796e0de79590&gt;&gt; for player 1, named Tester1.">self = &lt;test.general.test_items.TestBase testMethod=test_locality_not_modified&gt;
+
+    def test_locality_not_modified(self):
+        """Test that worlds don't modify the locality of items after duplicates are resolved"""
+        gen_steps = ("generate_early",)
+        additional_steps = ("create_regions", "create_items", "set_rules", "connect_entrances", "generate_basic", "pre_fill")
+        for game_name, world_type in AutoWorldRegister.testable_worlds.items():
+            with self.subTest("Game", game=game_name):
+                multiworld = setup_solo_multiworld(world_type, gen_steps)
+                local_items = multiworld.worlds[1].options.local_items.value.copy()
+                non_local_items = multiworld.worlds[1].options.non_local_items.value.copy()
+                for step in additional_steps:
+                    with self.subTest("step", step=step):
+&gt;                       call_all(multiworld, step)
+
+test/general/test_items.py:165: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+worlds/AutoWorld.py:207: in call_all
+    call_single(multiworld, method_name, player, *args)
+worlds/AutoWorld.py:193: in call_single
+    raise e
+worlds/AutoWorld.py:186: in call_single
+    ret = _timed_call(method, *args, multiworld=multiworld, player=player)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/AutoWorld.py:171: in _timed_call
+    ret = method(*args)
+          ^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/__init__.py:198: in create_items
+    pool = before_create_items_filler(pool, self, self.multiworld, self.player)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/hooks/World.py:280: in before_create_items_filler
+    item_pool = world.add_filler_items(item_pool, traps)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/__init__.py:358: in add_filler_items
+    Utils.deprecate("Use adjust_filler_items instead.")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+message = 'Use adjust_filler_items instead.', add_stacklevels = 0
+
+    def deprecate(message: str, add_stacklevels: int = 0):
+        """also use typing_extensions.deprecated wherever you use this"""
+        if __debug__:
+&gt;           raise Exception(message)
+E           Exception: Use adjust_filler_items instead.
+E           Exception in &lt;bound method ManualWorld.create_items of &lt;worlds.manual_riftofthenecrodancer_axxroy.ManualWorld object at 0x796e0de79590&gt;&gt; for player 1, named Tester1.
+
+Utils.py:1055: Exception</failure></testcase><testcase classname="test.general.test_locations.TestBase" name="test_create_duplicate_locations" time="0.002"><failure message="Exception: Use adjust_filler_items instead.&#10;Exception in &lt;bound method ManualWorld.create_items of &lt;worlds.manual_riftofthenecrodancer_axxroy.ManualWorld object at 0x796e0de74c30&gt;&gt; for player 1, named Tester1.">self = &lt;test.general.test_locations.TestBase testMethod=test_create_duplicate_locations&gt;
+
+    def test_create_duplicate_locations(self):
+        """Tests that no two Locations share a name or ID."""
+        for game_name, world_type in AutoWorldRegister.testable_worlds.items():
+&gt;           multiworld = setup_solo_multiworld(world_type)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test/general/test_locations.py:13: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/general/__init__.py:31: in setup_solo_multiworld
+    return setup_multiworld(world_type, steps, seed)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/general/__init__.py:68: in setup_multiworld
+    call_all(multiworld, step)
+worlds/AutoWorld.py:207: in call_all
+    call_single(multiworld, method_name, player, *args)
+worlds/AutoWorld.py:193: in call_single
+    raise e
+worlds/AutoWorld.py:186: in call_single
+    ret = _timed_call(method, *args, multiworld=multiworld, player=player)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/AutoWorld.py:171: in _timed_call
+    ret = method(*args)
+          ^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/__init__.py:198: in create_items
+    pool = before_create_items_filler(pool, self, self.multiworld, self.player)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/hooks/World.py:280: in before_create_items_filler
+    item_pool = world.add_filler_items(item_pool, traps)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/__init__.py:358: in add_filler_items
+    Utils.deprecate("Use adjust_filler_items instead.")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+message = 'Use adjust_filler_items instead.', add_stacklevels = 0
+
+    def deprecate(message: str, add_stacklevels: int = 0):
+        """also use typing_extensions.deprecated wherever you use this"""
+        if __debug__:
+&gt;           raise Exception(message)
+E           Exception: Use adjust_filler_items instead.
+E           Exception in &lt;bound method ManualWorld.create_items of &lt;worlds.manual_riftofthenecrodancer_axxroy.ManualWorld object at 0x796e0de74c30&gt;&gt; for player 1, named Tester1.
+
+Utils.py:1055: Exception</failure></testcase><testcase classname="test.general.test_locations.TestBase" name="test_location_creation_steps" time="0.036"><failure message="Exception: Use adjust_filler_items instead.&#10;Exception in &lt;bound method ManualWorld.create_items of &lt;worlds.manual_riftofthenecrodancer_axxroy.ManualWorld object at 0x796e0ddecdd0&gt;&gt; for player 1, named Tester1.">self = &lt;test.general.test_locations.TestBase testMethod=test_location_creation_steps&gt;
+
+    def test_location_creation_steps(self):
+        """Tests that Regions and Locations aren't created after `create_items`."""
+        gen_steps = ("generate_early", "create_regions", "create_items")
+        excluded_games = ("Ocarina of Time", "Pokemon Red and Blue")
+        worlds_to_test = {game: world
+                          for game, world in AutoWorldRegister.testable_worlds.items() if game not in excluded_games}
+        for game_name, world_type in worlds_to_test.items():
+            with self.subTest("Game", game_name=game_name):
+&gt;               multiworld = setup_solo_multiworld(world_type, gen_steps)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test/general/test_locations.py:43: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/general/__init__.py:31: in setup_solo_multiworld
+    return setup_multiworld(world_type, steps, seed)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/general/__init__.py:68: in setup_multiworld
+    call_all(multiworld, step)
+worlds/AutoWorld.py:207: in call_all
+    call_single(multiworld, method_name, player, *args)
+worlds/AutoWorld.py:193: in call_single
+    raise e
+worlds/AutoWorld.py:186: in call_single
+    ret = _timed_call(method, *args, multiworld=multiworld, player=player)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/AutoWorld.py:171: in _timed_call
+    ret = method(*args)
+          ^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/__init__.py:198: in create_items
+    pool = before_create_items_filler(pool, self, self.multiworld, self.player)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/hooks/World.py:280: in before_create_items_filler
+    item_pool = world.add_filler_items(item_pool, traps)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/__init__.py:358: in add_filler_items
+    Utils.deprecate("Use adjust_filler_items instead.")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+message = 'Use adjust_filler_items instead.', add_stacklevels = 0
+
+    def deprecate(message: str, add_stacklevels: int = 0):
+        """also use typing_extensions.deprecated wherever you use this"""
+        if __debug__:
+&gt;           raise Exception(message)
+E           Exception: Use adjust_filler_items instead.
+E           Exception in &lt;bound method ManualWorld.create_items of &lt;worlds.manual_riftofthenecrodancer_axxroy.ManualWorld object at 0x796e0ddecdd0&gt;&gt; for player 1, named Tester1.
+
+Utils.py:1055: Exception</failure></testcase><testcase classname="test.general.test_locations.TestBase" name="test_location_group" time="0.001" /><testcase classname="test.general.test_locations.TestBase" name="test_locations_in_datapackage" time="0.033"><failure message="Exception: Use adjust_filler_items instead.&#10;Exception in &lt;bound method ManualWorld.create_items of &lt;worlds.manual_riftofthenecrodancer_axxroy.ManualWorld object at 0x796e0ddee720&gt;&gt; for player 1, named Tester1.">self = &lt;test.general.test_locations.TestBase testMethod=test_locations_in_datapackage&gt;
+
+    def test_locations_in_datapackage(self):
+        """Tests that created locations not filled before fill starts exist in the datapackage."""
+        for game_name, world_type in AutoWorldRegister.testable_worlds.items():
+            with self.subTest("Game", game_name=game_name):
+&gt;               multiworld = setup_solo_multiworld(world_type)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test/general/test_locations.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/general/__init__.py:31: in setup_solo_multiworld
+    return setup_multiworld(world_type, steps, seed)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/general/__init__.py:68: in setup_multiworld
+    call_all(multiworld, step)
+worlds/AutoWorld.py:207: in call_all
+    call_single(multiworld, method_name, player, *args)
+worlds/AutoWorld.py:193: in call_single
+    raise e
+worlds/AutoWorld.py:186: in call_single
+    ret = _timed_call(method, *args, multiworld=multiworld, player=player)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/AutoWorld.py:171: in _timed_call
+    ret = method(*args)
+          ^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/__init__.py:198: in create_items
+    pool = before_create_items_filler(pool, self, self.multiworld, self.player)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/hooks/World.py:280: in before_create_items_filler
+    item_pool = world.add_filler_items(item_pool, traps)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/__init__.py:358: in add_filler_items
+    Utils.deprecate("Use adjust_filler_items instead.")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+message = 'Use adjust_filler_items instead.', add_stacklevels = 0
+
+    def deprecate(message: str, add_stacklevels: int = 0):
+        """also use typing_extensions.deprecated wherever you use this"""
+        if __debug__:
+&gt;           raise Exception(message)
+E           Exception: Use adjust_filler_items instead.
+E           Exception in &lt;bound method ManualWorld.create_items of &lt;worlds.manual_riftofthenecrodancer_axxroy.ManualWorld object at 0x796e0ddee720&gt;&gt; for player 1, named Tester1.
+
+Utils.py:1055: Exception</failure></testcase><testcase classname="test.general.test_memory.TestWorldMemory" name="test_leak" time="0.108"><failure message="Exception: Use adjust_filler_items instead.&#10;Exception in &lt;bound method ManualWorld.create_items of &lt;worlds.manual_riftofthenecrodancer_axxroy.ManualWorld object at 0x796e0ddefd10&gt;&gt; for player 1, named Tester1.">self = &lt;test.general.test_memory.TestWorldMemory testMethod=test_leak&gt;
+
+    def test_leak(self) -&gt; None:
+        """Tests that worlds don't leak references to MultiWorld or themselves with default options."""
+        import gc
+        import weakref
+        refs: dict[str, weakref.ReferenceType[MultiWorld]] = {}
+        for game_name, world_type in AutoWorldRegister.testable_worlds.items():
+            with self.subTest("Game creation", game_name=game_name):
+&gt;               weak = weakref.ref(setup_solo_multiworld(world_type))
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test/general/test_memory.py:18: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/general/__init__.py:31: in setup_solo_multiworld
+    return setup_multiworld(world_type, steps, seed)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/general/__init__.py:68: in setup_multiworld
+    call_all(multiworld, step)
+worlds/AutoWorld.py:207: in call_all
+    call_single(multiworld, method_name, player, *args)
+worlds/AutoWorld.py:193: in call_single
+    raise e
+worlds/AutoWorld.py:186: in call_single
+    ret = _timed_call(method, *args, multiworld=multiworld, player=player)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/AutoWorld.py:171: in _timed_call
+    ret = method(*args)
+          ^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/__init__.py:198: in create_items
+    pool = before_create_items_filler(pool, self, self.multiworld, self.player)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/hooks/World.py:280: in before_create_items_filler
+    item_pool = world.add_filler_items(item_pool, traps)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/__init__.py:358: in add_filler_items
+    Utils.deprecate("Use adjust_filler_items instead.")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+message = 'Use adjust_filler_items instead.', add_stacklevels = 0
+
+    def deprecate(message: str, add_stacklevels: int = 0):
+        """also use typing_extensions.deprecated wherever you use this"""
+        if __debug__:
+&gt;           raise Exception(message)
+E           Exception: Use adjust_filler_items instead.
+E           Exception in &lt;bound method ManualWorld.create_items of &lt;worlds.manual_riftofthenecrodancer_axxroy.ManualWorld object at 0x796e0ddefd10&gt;&gt; for player 1, named Tester1.
+
+Utils.py:1055: Exception</failure></testcase><testcase classname="test.general.test_names.TestNames" name="test_item_names_format" time="0.001" /><testcase classname="test.general.test_names.TestNames" name="test_location_name_format" time="0.000" /><testcase classname="test.general.test_options.TestOptions" name="test_duplicate_options" time="0.000" /><testcase classname="test.general.test_options.TestOptions" name="test_item_links_name_groups" time="0.001" /><testcase classname="test.general.test_options.TestOptions" name="test_item_links_resolve" time="0.001" /><testcase classname="test.general.test_options.TestOptions" name="test_option_defaults" time="0.002" /><testcase classname="test.general.test_options.TestOptions" name="test_option_set_keys_random" time="0.001" /><testcase classname="test.general.test_options.TestOptions" name="test_options_are_not_set_by_world" time="0.000" /><testcase classname="test.general.test_options.TestOptions" name="test_options_have_doc_string" time="0.001" /><testcase classname="test.general.test_options.TestOptions" name="test_pickle_dumps_default" time="0.002" /><testcase classname="test.general.test_options.TestOptions" name="test_pickle_dumps_plando" time="0.001" /><testcase classname="test.general.test_packages.TestPackages" name="test_packages_have_init" time="0.036"><failure message="AssertionError: False != True">self = &lt;test.general.test_packages.TestPackages testMethod=test_packages_have_init&gt;
+
+    def test_packages_have_init(self):
+        """Test that all world folders containing .py files also have a __init__.py file,
+        to indicate full package rather than namespace package."""
+        import Utils
+    
+        # Ignore directories with these names.
+        ignore_dirs = {".github"}
+    
+        worlds_path = Utils.local_path("worlds")
+        for dirpath, dirnames, filenames in os.walk(worlds_path):
+            # Drop ignored directories from dirnames, excluding them from walking.
+            dirnames[:] = [d for d in dirnames if d not in ignore_dirs]
+            with self.subTest(directory=dirpath):
+&gt;               self.assertEqual("__init__.py" in filenames, any(file.endswith(".py") for file in filenames))
+E               AssertionError: False != True
+
+test/general/test_packages.py:21: AssertionError</failure></testcase><testcase classname="test.general.test_patches.TestPatches" name="test_patch_name_matches_game" time="0.000" /><testcase classname="test.general.test_reachability.TestBase" name="test_default_all_state_can_reach_everything" time="0.034"><failure message="Exception: Use adjust_filler_items instead.&#10;Exception in &lt;bound method ManualWorld.create_items of &lt;worlds.manual_riftofthenecrodancer_axxroy.ManualWorld object at 0x796e0dfd2d50&gt;&gt; for player 1, named Tester1.">self = &lt;test.general.test_reachability.TestBase testMethod=test_default_all_state_can_reach_everything&gt;
+
+    def test_default_all_state_can_reach_everything(self):
+        """Ensure all state can reach everything and complete the game with the defined options"""
+        for game_name, world_type in AutoWorldRegister.testable_worlds.items():
+            unreachable_regions = self.default_settings_unreachable_regions.get(game_name, set())
+            with self.subTest("Game", game=game_name):
+&gt;               multiworld = setup_solo_multiworld(world_type)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test/general/test_reachability.py:52: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/general/__init__.py:31: in setup_solo_multiworld
+    return setup_multiworld(world_type, steps, seed)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/general/__init__.py:68: in setup_multiworld
+    call_all(multiworld, step)
+worlds/AutoWorld.py:207: in call_all
+    call_single(multiworld, method_name, player, *args)
+worlds/AutoWorld.py:193: in call_single
+    raise e
+worlds/AutoWorld.py:186: in call_single
+    ret = _timed_call(method, *args, multiworld=multiworld, player=player)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/AutoWorld.py:171: in _timed_call
+    ret = method(*args)
+          ^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/__init__.py:198: in create_items
+    pool = before_create_items_filler(pool, self, self.multiworld, self.player)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/hooks/World.py:280: in before_create_items_filler
+    item_pool = world.add_filler_items(item_pool, traps)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/__init__.py:358: in add_filler_items
+    Utils.deprecate("Use adjust_filler_items instead.")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+message = 'Use adjust_filler_items instead.', add_stacklevels = 0
+
+    def deprecate(message: str, add_stacklevels: int = 0):
+        """also use typing_extensions.deprecated wherever you use this"""
+        if __debug__:
+&gt;           raise Exception(message)
+E           Exception: Use adjust_filler_items instead.
+E           Exception in &lt;bound method ManualWorld.create_items of &lt;worlds.manual_riftofthenecrodancer_axxroy.ManualWorld object at 0x796e0dfd2d50&gt;&gt; for player 1, named Tester1.
+
+Utils.py:1055: Exception</failure></testcase><testcase classname="test.general.test_reachability.TestBase" name="test_default_empty_state_can_reach_something" time="0.035"><failure message="Exception: Use adjust_filler_items instead.&#10;Exception in &lt;bound method ManualWorld.create_items of &lt;worlds.manual_riftofthenecrodancer_axxroy.ManualWorld object at 0x796e0ddedeb0&gt;&gt; for player 1, named Tester1.">self = &lt;test.general.test_reachability.TestBase testMethod=test_default_empty_state_can_reach_something&gt;
+
+    def test_default_empty_state_can_reach_something(self):
+        """Ensure empty state can reach at least one location with the defined options"""
+        for game_name, world_type in AutoWorldRegister.testable_worlds.items():
+            with self.subTest("Game", game=game_name):
+&gt;               multiworld = setup_solo_multiworld(world_type)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test/general/test_reachability.py:73: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/general/__init__.py:31: in setup_solo_multiworld
+    return setup_multiworld(world_type, steps, seed)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/general/__init__.py:68: in setup_multiworld
+    call_all(multiworld, step)
+worlds/AutoWorld.py:207: in call_all
+    call_single(multiworld, method_name, player, *args)
+worlds/AutoWorld.py:193: in call_single
+    raise e
+worlds/AutoWorld.py:186: in call_single
+    ret = _timed_call(method, *args, multiworld=multiworld, player=player)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/AutoWorld.py:171: in _timed_call
+    ret = method(*args)
+          ^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/__init__.py:198: in create_items
+    pool = before_create_items_filler(pool, self, self.multiworld, self.player)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/hooks/World.py:280: in before_create_items_filler
+    item_pool = world.add_filler_items(item_pool, traps)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/__init__.py:358: in add_filler_items
+    Utils.deprecate("Use adjust_filler_items instead.")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+message = 'Use adjust_filler_items instead.', add_stacklevels = 0
+
+    def deprecate(message: str, add_stacklevels: int = 0):
+        """also use typing_extensions.deprecated wherever you use this"""
+        if __debug__:
+&gt;           raise Exception(message)
+E           Exception: Use adjust_filler_items instead.
+E           Exception in &lt;bound method ManualWorld.create_items of &lt;worlds.manual_riftofthenecrodancer_axxroy.ManualWorld object at 0x796e0ddedeb0&gt;&gt; for player 1, named Tester1.
+
+Utils.py:1055: Exception</failure></testcase><testcase classname="test.general.test_requirements.TestBase" name="test_requirements_file_ends_on_newline" time="0.002" /><testcase classname="test.general.test_settings.TestSettings" name="test_settings_can_update" time="0.007" /><testcase classname="test.general.test_state.TestBase" name="test_all_state_is_available" time="0.036"><failure message="Exception: Use adjust_filler_items instead.&#10;Exception in &lt;bound method ManualWorld.create_items of &lt;worlds.manual_riftofthenecrodancer_axxroy.ManualWorld object at 0x796e0dd1c560&gt;&gt; for player 1, named Tester1.">self = &lt;test.general.test_state.TestBase testMethod=test_all_state_is_available&gt;
+
+    def test_all_state_is_available(self):
+        """Ensure all_state can be created at certain steps."""
+        for game_name, world_type in AutoWorldRegister.testable_worlds.items():
+            with self.subTest("Game", game=game_name):
+                multiworld = setup_solo_multiworld(world_type, self.gen_steps)
+                for step in self.test_steps:
+                    with self.subTest("Step", step=step):
+&gt;                       call_all(multiworld, step)
+
+test/general/test_state.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+worlds/AutoWorld.py:207: in call_all
+    call_single(multiworld, method_name, player, *args)
+worlds/AutoWorld.py:193: in call_single
+    raise e
+worlds/AutoWorld.py:186: in call_single
+    ret = _timed_call(method, *args, multiworld=multiworld, player=player)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/AutoWorld.py:171: in _timed_call
+    ret = method(*args)
+          ^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/__init__.py:198: in create_items
+    pool = before_create_items_filler(pool, self, self.multiworld, self.player)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/hooks/World.py:280: in before_create_items_filler
+    item_pool = world.add_filler_items(item_pool, traps)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/__init__.py:358: in add_filler_items
+    Utils.deprecate("Use adjust_filler_items instead.")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+message = 'Use adjust_filler_items instead.', add_stacklevels = 0
+
+    def deprecate(message: str, add_stacklevels: int = 0):
+        """also use typing_extensions.deprecated wherever you use this"""
+        if __debug__:
+&gt;           raise Exception(message)
+E           Exception: Use adjust_filler_items instead.
+E           Exception in &lt;bound method ManualWorld.create_items of &lt;worlds.manual_riftofthenecrodancer_axxroy.ManualWorld object at 0x796e0dd1c560&gt;&gt; for player 1, named Tester1.
+
+Utils.py:1055: Exception</failure></testcase><testcase classname="test.multiworld.test_multiworlds.TestTwoPlayerMulti{game='Manual_RiftoftheNecrodancer_Axxroy'}" name="test_two_player_single_game_fills" time="0.088"><failure message="Exception: Use adjust_filler_items instead.&#10;Exception in &lt;bound method ManualWorld.create_items of &lt;worlds.manual_riftofthenecrodancer_axxroy.ManualWorld object at 0x796e0dd1ea80&gt;&gt; for player 1, named Tester1.">self = &lt;test.multiworld.test_multiworlds.TestTwoPlayerMulti{game='Manual_RiftoftheNecrodancer_Axxroy'} testMethod=test_two_player_single_game_fills&gt;
+steps = ('generate_early', 'create_regions', 'create_items', 'set_rules', 'connect_entrances', 'generate_basic', ...)
+
+    def assertSteps(self, steps: Tuple[str, ...]) -&gt; None:
+        """Calls each step individually, continuing if a step for a specific world step fails."""
+        world_types = {world.__class__ for world in self.multiworld.worlds.values()}
+        for step in steps:
+            for player, world in self.multiworld.worlds.items():
+                with self.subTest(game=world.game, step=step):
+&gt;                   call_single(self.multiworld, step, player)
+
+test/multiworld/test_multiworlds.py:44: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+worlds/AutoWorld.py:193: in call_single
+    raise e
+worlds/AutoWorld.py:186: in call_single
+    ret = _timed_call(method, *args, multiworld=multiworld, player=player)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/AutoWorld.py:171: in _timed_call
+    ret = method(*args)
+          ^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/__init__.py:198: in create_items
+    pool = before_create_items_filler(pool, self, self.multiworld, self.player)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/hooks/World.py:280: in before_create_items_filler
+    item_pool = world.add_filler_items(item_pool, traps)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/__init__.py:358: in add_filler_items
+    Utils.deprecate("Use adjust_filler_items instead.")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+message = 'Use adjust_filler_items instead.', add_stacklevels = 0
+
+    def deprecate(message: str, add_stacklevels: int = 0):
+        """also use typing_extensions.deprecated wherever you use this"""
+        if __debug__:
+&gt;           raise Exception(message)
+E           Exception: Use adjust_filler_items instead.
+E           Exception in &lt;bound method ManualWorld.create_items of &lt;worlds.manual_riftofthenecrodancer_axxroy.ManualWorld object at 0x796e0dd1ea80&gt;&gt; for player 1, named Tester1.
+
+Utils.py:1055: Exception</failure><failure message="Exception: Use adjust_filler_items instead.&#10;Exception in &lt;bound method ManualWorld.create_items of &lt;worlds.manual_riftofthenecrodancer_axxroy.ManualWorld object at 0x796e0dd1eba0&gt;&gt; for player 2, named Tester2.">self = &lt;test.multiworld.test_multiworlds.TestTwoPlayerMulti{game='Manual_RiftoftheNecrodancer_Axxroy'} testMethod=test_two_player_single_game_fills&gt;
+steps = ('generate_early', 'create_regions', 'create_items', 'set_rules', 'connect_entrances', 'generate_basic', ...)
+
+    def assertSteps(self, steps: Tuple[str, ...]) -&gt; None:
+        """Calls each step individually, continuing if a step for a specific world step fails."""
+        world_types = {world.__class__ for world in self.multiworld.worlds.values()}
+        for step in steps:
+            for player, world in self.multiworld.worlds.items():
+                with self.subTest(game=world.game, step=step):
+&gt;                   call_single(self.multiworld, step, player)
+
+test/multiworld/test_multiworlds.py:44: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+worlds/AutoWorld.py:193: in call_single
+    raise e
+worlds/AutoWorld.py:186: in call_single
+    ret = _timed_call(method, *args, multiworld=multiworld, player=player)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/AutoWorld.py:171: in _timed_call
+    ret = method(*args)
+          ^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/__init__.py:198: in create_items
+    pool = before_create_items_filler(pool, self, self.multiworld, self.player)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/hooks/World.py:280: in before_create_items_filler
+    item_pool = world.add_filler_items(item_pool, traps)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/manual_riftofthenecrodancer_axxroy/__init__.py:358: in add_filler_items
+    Utils.deprecate("Use adjust_filler_items instead.")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+message = 'Use adjust_filler_items instead.', add_stacklevels = 0
+
+    def deprecate(message: str, add_stacklevels: int = 0):
+        """also use typing_extensions.deprecated wherever you use this"""
+        if __debug__:
+&gt;           raise Exception(message)
+E           Exception: Use adjust_filler_items instead.
+E           Exception in &lt;bound method ManualWorld.create_items of &lt;worlds.manual_riftofthenecrodancer_axxroy.ManualWorld object at 0x796e0dd1eba0&gt;&gt; for player 2, named Tester2.
+
+Utils.py:1055: Exception</failure><failure message="Fill.FillError: Unable to fill all locations.&#10;[+1 more line; full report in element text]">self = &lt;test.multiworld.test_multiworlds.TestTwoPlayerMulti{game='Manual_RiftoftheNecrodancer_Axxroy'} testMethod=test_two_player_single_game_fills&gt;
+
+    def test_two_player_single_game_fills(self) -&gt; None:
+        """Tests that a multiworld of two players for each registered game world can generate."""
+        world_type = AutoWorldRegister.testable_worlds[self.game]
+        self.multiworld = setup_multiworld([world_type, world_type], ())
+        for world in self.multiworld.worlds.values():
+            world.options.accessibility.value = Accessibility.option_full
+        self.assertSteps(gen_steps)
+        with self.subTest("filling multiworld", games=world_type.game, seed=self.multiworld.seed):
+&gt;           distribute_items_restrictive(self.multiworld)
+
+test/multiworld/test_multiworlds.py:81: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+multiworld = &lt;BaseClasses.MultiWorld object at 0x796e170f51d0&gt;
+panic_method = 'swap'
+
+    def distribute_items_restrictive(multiworld: MultiWorld,
+                                     panic_method: Literal["swap", "raise", "start_inventory"] = "swap") -&gt; None:
+        assert all(item.location is None for item in multiworld.itempool), (
+            "At the start of distribute_items_restrictive, "
+            "there are items in the multiworld itempool that are already placed on locations:\n"
+            f"{[(item.location, item) for item in multiworld.itempool if item.location is not None]}"
+        )
+    
+        fill_locations = sorted(multiworld.get_unfilled_locations())
+        multiworld.random.shuffle(fill_locations)
+        # get items to distribute
+        itempool = sorted(multiworld.itempool)
+        multiworld.random.shuffle(itempool)
+    
+        fill_locations, itempool = distribute_early_items(multiworld, fill_locations, itempool)
+    
+        progitempool: list[Item] = []
+        usefulitempool: list[Item] = []
+        filleritempool: list[Item] = []
+    
+        for item in itempool:
+            if item.advancement:
+                progitempool.append(item)
+            elif item.useful:
+                usefulitempool.append(item)
+            else:
+                filleritempool.append(item)
+    
+        call_all(multiworld, "fill_hook", progitempool, usefulitempool, filleritempool, fill_locations)
+    
+        locations: dict[LocationProgressType, list[Location]] = {
+            loc_type: [] for loc_type in LocationProgressType}
+    
+        for loc in fill_locations:
+            locations[loc.progress_type].append(loc)
+    
+        prioritylocations = locations[LocationProgressType.PRIORITY]
+        defaultlocations = locations[LocationProgressType.DEFAULT]
+        excludedlocations = locations[LocationProgressType.EXCLUDED]
+    
+        # can't lock due to accessibility corrections touching things, so we remember which ones got placed and lock later
+        lock_later: list[Location] = []
+    
+        def mark_for_locking(location: Location) -&gt; None:
+            nonlocal lock_later
+            lock_later.append(location)
+    
+        single_player = multiworld.players == 1 and not multiworld.groups
+    
+        if prioritylocations:
+            regular_progression: list[Item] = []
+            deprioritized_progression: list[Item] = []
+            for item in progitempool:
+                if item.deprioritized:
+                    deprioritized_progression.append(item)
+                else:
+                    regular_progression.append(item)
+    
+            # "priority fill"
+            # try without deprioritized items in the mix at all. This means they need to be collected into state first.
+            priority_fill_state = sweep_from_pool(multiworld.state, deprioritized_progression)
+            fill_restrictive(multiworld, priority_fill_state, prioritylocations, regular_progression,
+                             single_player_placement=single_player, swap=False, on_place=mark_for_locking,
+                             name="Priority", one_item_per_player=True, allow_partial=True)
+    
+            if prioritylocations and regular_progression:
+                # retry with one_item_per_player off because some priority fills can fail to fill with that optimization
+                # deprioritized items are still not in the mix, so they need to be collected into state first.
+                # allow_partial should only be set if there is deprioritized progression to fall back on.
+                priority_retry_state = sweep_from_pool(multiworld.state, deprioritized_progression)
+                fill_restrictive(multiworld, priority_retry_state, prioritylocations, regular_progression,
+                                 single_player_placement=single_player, swap=False, on_place=mark_for_locking,
+                                 name="Priority Retry", one_item_per_player=False,
+                                 allow_partial=bool(deprioritized_progression))
+    
+            if prioritylocations and deprioritized_progression:
+                # There are no more regular progression items that can be placed on any priority locations.
+                # We'd still prefer to place deprioritized progression items on priority locations over filler items.
+                # Since we're leaving out the remaining regular progression now, we need to collect it into state first.
+                priority_retry_2_state = sweep_from_pool(multiworld.state, regular_progression)
+                fill_restrictive(multiworld, priority_retry_2_state, prioritylocations, deprioritized_progression,
+                                 single_player_placement=single_player, swap=False, on_place=mark_for_locking,
+                                 name="Priority Retry 2", one_item_per_player=True, allow_partial=True)
+    
+            if prioritylocations and deprioritized_progression:
+                # retry with deprioritized items AND without one_item_per_player optimisation
+                # Since we're leaving out the remaining regular progression now, we need to collect it into state first.
+                priority_retry_3_state = sweep_from_pool(multiworld.state, regular_progression)
+                fill_restrictive(multiworld, priority_retry_3_state, prioritylocations, deprioritized_progression,
+                                 single_player_placement=single_player, swap=False, on_place=mark_for_locking,
+                                 name="Priority Retry 3", one_item_per_player=False)
+    
+            # restore original order of progitempool
+            progitempool[:] = [item for item in progitempool if not item.location]
+            accessibility_corrections(multiworld, multiworld.state, prioritylocations, progitempool)
+            defaultlocations = prioritylocations + defaultlocations
+    
+        if progitempool:
+            # "advancement/progression fill"
+            maximum_exploration_state = sweep_from_pool(multiworld.state)
+            if panic_method == "swap":
+                fill_restrictive(multiworld, maximum_exploration_state, defaultlocations, progitempool, swap=True,
+                                 name="Progression", single_player_placement=single_player)
+            elif panic_method == "raise":
+                fill_restrictive(multiworld, maximum_exploration_state, defaultlocations, progitempool, swap=False,
+                                 name="Progression", single_player_placement=single_player)
+            elif panic_method == "start_inventory":
+                fill_restrictive(multiworld, maximum_exploration_state, defaultlocations, progitempool, swap=False,
+                                 allow_partial=True, name="Progression", single_player_placement=single_player)
+                if progitempool:
+                    for item in progitempool:
+                        logging.debug(f"Moved {item} to start_inventory to prevent fill failure.")
+                        multiworld.push_precollected(item)
+                        filleritempool.append(multiworld.worlds[item.player].create_filler())
+                    logging.warning(f"{len(progitempool)} items moved to start inventory,"
+                                    f" due to failure in Progression fill step.")
+                    progitempool[:] = []
+    
+            else:
+                raise ValueError(f"Generator Panic Method {panic_method} not recognized.")
+            if progitempool:
+                raise FillError(
+                    f"Not enough locations for progression items. "
+                    f"There are {len(progitempool)} more progression items than there are available locations.\n"
+                    f"Unfilled locations:\n{multiworld.get_unfilled_locations()}.",
+                    multiworld=multiworld,
+                )
+            accessibility_corrections(multiworld, multiworld.state, defaultlocations)
+    
+        for location in lock_later:
+            if location.item:
+                location.locked = True
+        del mark_for_locking, lock_later
+    
+        inaccessible_location_rules(multiworld, multiworld.state, defaultlocations)
+    
+        remaining_fill(multiworld, excludedlocations, filleritempool, "Remaining Excluded",
+                       move_unplaceable_to_start_inventory=(panic_method == "start_inventory"))
+    
+        if excludedlocations:
+            raise FillError(
+                f"Not enough filler items for excluded locations. "
+                f"There are {len(excludedlocations)} more excluded locations than excludable items.",
+                multiworld=multiworld,
+            )
+    
+        restitempool = filleritempool + usefulitempool
+    
+        remaining_fill(multiworld, defaultlocations, restitempool,
+                       move_unplaceable_to_start_inventory=(panic_method == "start_inventory"))
+    
+        unplaced = restitempool
+        unfilled = defaultlocations
+    
+        if unplaced or unfilled:
+            logging.warning(
+                f"Unplaced items({len(unplaced)}): {unplaced} - Unfilled Locations({len(unfilled)}): {unfilled}")
+            items_counter = Counter(location.item.player for location in multiworld.get_filled_locations())
+            locations_counter = Counter(location.player for location in multiworld.get_locations())
+            items_counter.update(item.player for item in unplaced)
+            print_data = {"items": items_counter, "locations": locations_counter}
+            logging.info(f"Per-Player counts: {print_data})")
+    
+            more_locations = locations_counter - items_counter
+            more_items = items_counter - locations_counter
+            for player in multiworld.player_ids:
+                if more_locations[player]:
+                    logging.error(
+                        f"Player {multiworld.get_player_name(player)} had "
+                        f"{more_locations[player]} more locations than items.")
+                elif more_items[player]:
+                    logging.warning(
+                        f"Player {multiworld.get_player_name(player)} had {more_items[player]} more items than locations.")
+            if unfilled:
+&gt;               raise FillError(
+                    "Unable to fill all locations.\n"
+                    f"Unfilled locations({len(unfilled)}): {unfilled}"
+                )
+E               Fill.FillError: Unable to fill all locations.
+E               Unfilled locations(130): [Reaper - 1 (Tester2), Lunch Rush - 0 (Tester2), Spookhouse Pop - 0 (Tester2), Cryp2que - 1 (Tester2), Twombtorial - 1 (Tester1), Disco Disaster - 1 (Tester2), Elusional - 1 (Tester2), Reaper - 1 (Tester1), Ravevenge - 0 (Tester2), Under the Thunder - 1 (Tester2), Baboosh - 1 (Tester2), Cryp2que - 0 (Tester1), Under the Thunder - 0 (Tester2), Eldritch House - 1 (Tester2), Hang Ten Heph - 0 (Tester2), Reaper - 0 (Tester1), Matron - 1 (Tester1), Suzu's Quest - 0 (Tester2), Portamello - 0 (Tester1), Ravevenge - 1 (Tester2), Lunch Rush - 1 (Tester2), Voguelike - 0 (Tester2), King's Ruse - 1 (Tester2), Heph's Mess - 0 (Tester2), Baboosh - 1 (Tester1), Hang Ten Heph - 0 (Tester1), King's Ruse - 0 (Tester1), Harmonie - 1 (Tester1), Suzu's Quest - 1 (Tester1), Hang Ten Heph - 1 (Tester1), What's in the Box - 0 (Tester2), Necropolis - 1 (Tester1), Rift Within - 1 (Tester2), Nocturning - 1 (Tester1), Count Funkula - 0 (Tester1), Om and On - 1 (Tester2), Portamello - 0 (Tester2), Spookhouse Pop - 1 (Tester2), Bootus Bleez - 1 (Tester1), Nocturning - 1 (Tester2), Necro Sonatica - 0 (Tester1), Show Time! - 0 (Tester2), Overthinker - 1 (Tester2), What's in the Box - 1 (Tester2), Slugger's Refrain - 0 (Tester1), Amalgamaniac - 0 (Tester1), King's Ruse - 0 (Tester2), Harmonie - 0 (Tester2), Matriarch - 0 (Tester1), Show Time! - 0 (Tester1), Glass Cages - 0 (Tester1), A Bit of a Stretch - 1 (Tester2), She Banned - 1 (Tester2), She Banned - 0 (Tester1), Matron - 0 (Tester1), Progenitor - 0 (Tester1), Deep Blues - 0 (Tester2), Hang Ten Heph - 1 (Tester2), Ravevenge - 1 (Tester1), Nocturning - 0 (Tester1), Suzu's Quest - 1 (Tester2), Slugger's Refrain - 1 (Tester1), Amalgamaniac - 1 (Tester2), Final Fugue - 1 (Tester1), Final Fugue - 0 (Tester1), Deep Blues - 0 (Tester1), Final Fugue - 1 (Tester2), Visualize Yourself - 0 (Tester1), Elusional - 0 (Tester2), Eldritch House - 1 (Tester1), Disco Disaster - 0 (Tester2), Got Danged - 0 (Tester1), Rift Within - 0 (Tester1), Deep Blues - 1 (Tester2), Rift Within - 0 (Tester2), The Necrodancer - 0 (Tester1), Got Danged - 1 (Tester2), Voguelike - 0 (Tester1), She Banned - 1 (Tester1), Ravevenge - 0 (Tester1), Progenitor - 1 (Tester1), Bootus Bleez - 0 (Tester1), Spookhouse Pop - 0 (Tester1), Eldritch House - 0 (Tester1), Hallow Queen - 1 (Tester2), Disco Disaster - 0 (Tester1), Progenitor - 0 (Tester2), Hallow Queen - 0 (Tester2), Heph's Mess - 1 (Tester2), Got Danged - 0 (Tester2), Suzu's Quest - 0 (Tester1), Glass Cages - 1 (Tester2), Under the Thunder - 1 (Tester1), Under the Thunder - 0 (Tester1), The Necrodancer - 1 (Tester1), Overthinker - 0 (Tester2), Disco Disaster - 1 (Tester1), Necropolis - 0 (Tester1), She Banned - 0 (Tester2), Glass Cages - 0 (Tester2), Got Danged - 1 (Tester1), Harmonie - 1 (Tester2), Slugger's Refrain - 0 (Tester2), Cryp2que - 0 (Tester2), Visualize Yourself - 1 (Tester1), Spookhouse Pop - 1 (Tester1), Necro Sonatica - 0 (Tester2), Baboosh - 0 (Tester2), Voguelike - 1 (Tester1), Show Time! - 1 (Tester1), Final Fugue - 0 (Tester2), Eldritch House - 0 (Tester2), Amalgamaniac - 0 (Tester2), Twombtorial - 0 (Tester1), Necropolis - 0 (Tester2), Rift Within - 1 (Tester1), Glass Cages - 1 (Tester1), Portamello - 1 (Tester1), Reaper - 0 (Tester2), Nocturning - 0 (Tester2), What's in the Box - 0 (Tester1), Harmonie - 0 (Tester1), A Bit of a Stretch - 0 (Tester2), Show Time! - 1 (Tester2), Om and On - 0 (Tester2), Amalgamaniac - 1 (Tester1), Baboosh - 0 (Tester1), Progenitor - 1 (Tester2), Matriarch - 1 (Tester1), King's Ruse - 1 (Tester1)]
+
+Fill.py:1402: FillError</failure></testcase><testcase classname="test.webhost.test_descriptions.TestWebDescriptions" name="test_item_descriptions_have_valid_names" time="0.001" /><testcase classname="test.webhost.test_descriptions.TestWebDescriptions" name="test_location_descriptions_have_valid_names" time="0.000" /><testcase classname="test.webhost.test_docs.TestDocs" name="test_has_game_info" time="0.004"><failure message="AssertionError: False is not true : Manual_RiftoftheNecrodancer_Axxroy missing game info file for &quot;en&quot; language.">self = &lt;test.webhost.test_docs.TestDocs testMethod=test_has_game_info&gt;
+
+    def test_has_game_info(self):
+        for game_name, world_type in AutoWorldRegister.testable_worlds.items():
+            if not world_type.hidden:
+                safe_name = secure_filename(game_name)
+                target_path = Utils.local_path("WebHostLib", "static", "generated", "docs", safe_name)
+                for game_info_lang in world_type.web.game_info_languages:
+                    with self.subTest(game_name):
+&gt;                       self.assertTrue(
+                            os.path.isfile(Utils.local_path(target_path, f'{game_info_lang}_{safe_name}.md')),
+                            f'{game_name} missing game info file for "{game_info_lang}" language.'
+                        )
+E                       AssertionError: False is not true : Manual_RiftoftheNecrodancer_Axxroy missing game info file for "en" language.
+
+test/webhost/test_docs.py:40: AssertionError</failure></testcase><testcase classname="test.webhost.test_docs.TestDocs" name="test_has_tutorial" time="0.000" /><testcase classname="test.webhost.test_file_generation.TestFileGeneration" name="test_options" time="0.040" /><testcase classname="test.webhost.test_option_presets.TestOptionPresets" name="test_option_preset_values_are_explicitly_defined" time="0.046"><failure message="Exception: 100 is higher than maximum 45 for option SongAmount">self = &lt;test.webhost.test_option_presets.TestOptionPresets testMethod=test_option_preset_values_are_explicitly_defined&gt;
+
+    def test_option_preset_values_are_explicitly_defined(self):
+        """Test that option preset values are not a special flavor of 'random' or use from_text to resolve another
+        value.
+        """
+        for game_name, world_type in AutoWorldRegister.testable_worlds.items():
+            presets = world_type.web.options_presets
+            for preset_name, preset in presets.items():
+                for option_name, option_value in preset.items():
+                    with self.subTest(game=game_name, preset=preset_name, option=option_name):
+                        # Check for non-standard random values.
+                        self.assertFalse(
+                            str(option_value).startswith("random-"),
+                            f"'{option_name}': '{option_value}' in preset '{preset_name}' for game '{game_name}' "
+                            f"is not supported for webhost. Special random values are not supported for presets."
+                        )
+    
+&gt;                       option = world_type.options_dataclass.type_hints[option_name].from_any(option_value)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test/webhost/test_option_presets.py:55: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+Options.py:818: in from_any
+    return cls(data)
+           ^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;[AttributeError("'SongAmount' object has no attribute 'value'") raised in repr()] SongAmount object at 0x796e0d8db250&gt;
+value = 100
+
+    def __init__(self, value: int):
+        if value &lt; self.range_start:
+            raise Exception(f"{value} is lower than minimum {self.range_start} for option {self.__class__.__name__}")
+        elif value &gt; self.range_end:
+&gt;           raise Exception(f"{value} is higher than maximum {self.range_end} for option {self.__class__.__name__}")
+E           Exception: 100 is higher than maximum 45 for option SongAmount
+
+Options.py:750: Exception</failure><failure message="Exception: 60 is higher than maximum 45 for option SongAmount">self = &lt;test.webhost.test_option_presets.TestOptionPresets testMethod=test_option_preset_values_are_explicitly_defined&gt;
+
+    def test_option_preset_values_are_explicitly_defined(self):
+        """Test that option preset values are not a special flavor of 'random' or use from_text to resolve another
+        value.
+        """
+        for game_name, world_type in AutoWorldRegister.testable_worlds.items():
+            presets = world_type.web.options_presets
+            for preset_name, preset in presets.items():
+                for option_name, option_value in preset.items():
+                    with self.subTest(game=game_name, preset=preset_name, option=option_name):
+                        # Check for non-standard random values.
+                        self.assertFalse(
+                            str(option_value).startswith("random-"),
+                            f"'{option_name}': '{option_value}' in preset '{preset_name}' for game '{game_name}' "
+                            f"is not supported for webhost. Special random values are not supported for presets."
+                        )
+    
+&gt;                       option = world_type.options_dataclass.type_hints[option_name].from_any(option_value)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test/webhost/test_option_presets.py:55: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+Options.py:818: in from_any
+    return cls(data)
+           ^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;[AttributeError("'SongAmount' object has no attribute 'value'") raised in repr()] SongAmount object at 0x796e0da24b90&gt;
+value = 60
+
+    def __init__(self, value: int):
+        if value &lt; self.range_start:
+            raise Exception(f"{value} is lower than minimum {self.range_start} for option {self.__class__.__name__}")
+        elif value &gt; self.range_end:
+&gt;           raise Exception(f"{value} is higher than maximum {self.range_end} for option {self.__class__.__name__}")
+E           Exception: 60 is higher than maximum 45 for option SongAmount
+
+Options.py:750: Exception</failure></testcase><testcase classname="test.webhost.test_option_presets.TestOptionPresets" name="test_option_presets_have_valid_options" time="0.044"><failure message="Exception: 100 is higher than maximum 45 for option SongAmount">self = &lt;test.webhost.test_option_presets.TestOptionPresets testMethod=test_option_presets_have_valid_options&gt;
+
+    def test_option_presets_have_valid_options(self):
+        """Test that all predefined option presets are valid options."""
+        for game_name, world_type in AutoWorldRegister.testable_worlds.items():
+            presets = world_type.web.options_presets
+            for preset_name, preset in presets.items():
+                for option_name, option_value in preset.items():
+                    with self.subTest(game=game_name, preset=preset_name, option=option_name):
+                        try:
+&gt;                           option = world_type.options_dataclass.type_hints[option_name].from_any(option_value)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test/webhost/test_option_presets.py:19: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+Options.py:818: in from_any
+    return cls(data)
+           ^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;[AttributeError("'SongAmount' object has no attribute 'value'") raised in repr()] SongAmount object at 0x796e0da26350&gt;
+value = 100
+
+    def __init__(self, value: int):
+        if value &lt; self.range_start:
+            raise Exception(f"{value} is lower than minimum {self.range_start} for option {self.__class__.__name__}")
+        elif value &gt; self.range_end:
+&gt;           raise Exception(f"{value} is higher than maximum {self.range_end} for option {self.__class__.__name__}")
+E           Exception: 100 is higher than maximum 45 for option SongAmount
+
+Options.py:750: Exception</failure><failure message="Exception: 60 is higher than maximum 45 for option SongAmount">self = &lt;test.webhost.test_option_presets.TestOptionPresets testMethod=test_option_presets_have_valid_options&gt;
+
+    def test_option_presets_have_valid_options(self):
+        """Test that all predefined option presets are valid options."""
+        for game_name, world_type in AutoWorldRegister.testable_worlds.items():
+            presets = world_type.web.options_presets
+            for preset_name, preset in presets.items():
+                for option_name, option_value in preset.items():
+                    with self.subTest(game=game_name, preset=preset_name, option=option_name):
+                        try:
+&gt;                           option = world_type.options_dataclass.type_hints[option_name].from_any(option_value)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test/webhost/test_option_presets.py:19: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+Options.py:818: in from_any
+    return cls(data)
+           ^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;[AttributeError("'SongAmount' object has no attribute 'value'") raised in repr()] SongAmount object at 0x796e0da27a70&gt;
+value = 60
+
+    def __init__(self, value: int):
+        if value &lt; self.range_start:
+            raise Exception(f"{value} is lower than minimum {self.range_start} for option {self.__class__.__name__}")
+        elif value &gt; self.range_end:
+&gt;           raise Exception(f"{value} is higher than maximum {self.range_end} for option {self.__class__.__name__}")
+E           Exception: 60 is higher than maximum 45 for option SongAmount
+
+Options.py:750: Exception</failure></testcase></testsuite></testsuites>
