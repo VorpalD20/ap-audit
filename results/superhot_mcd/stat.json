@@ -1,0 +1,12 @@
+{
+    "game": "SUPERHOT: MIND CONTROL DELETE",
+    "stub": "superhot_mcd",
+    "manifest": {
+        "game": "SUPERHOT: MIND CONTROL DELETE",
+        "world_version": "0.6.7",
+        "minimum_ap_version": "0.5.0",
+        "authors": [
+            "Temperz87"
+        ]
+    }
+}

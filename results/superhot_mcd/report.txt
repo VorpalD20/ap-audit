@@ -1,0 +1,5 @@
+Final score: 48
+
+ruff_stats.json failed to load: 50
+test.general.test_locations.TestBase.test_locations_in_datapackage: 1
+test.webhost.test_docs.TestDocs.test_has_game_info: 1
