@@ -1,0 +1,67 @@
+[
+  {
+    "cell": null,
+    "code": "S105",
+    "end_location": {
+      "column": 36,
+      "row": 38
+    },
+    "filename": "/Archipelago/worlds/neotwewy/item_data.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 38
+    },
+    "message": "Possible hardcoded password assigned to: \"SECRET_REPORT\"",
+    "name": "hardcoded-password-string",
+    "noqa_row": 38,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/hardcoded-password-string"
+  },
+  {
+    "cell": null,
+    "code": "B006",
+    "end_location": {
+      "column": 57,
+      "row": 48
+    },
+    "filename": "/Archipelago/worlds/neotwewy/world.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "None",
+          "end_location": {
+            "column": 57,
+            "row": 48
+          },
+          "location": {
+            "column": 55,
+            "row": 48
+          }
+        },
+        {
+          "content": "        if filler_first is None:\r\n            filler_first = []\r\n",
+          "end_location": {
+            "column": 1,
+            "row": 49
+          },
+          "location": {
+            "column": 1,
+            "row": 49
+          }
+        }
+      ],
+      "message": "Replace with `None`; initialize within function"
+    },
+    "location": {
+      "column": 55,
+      "row": 48
+    },
+    "message": "Do not use mutable data structures for argument defaults",
+    "name": "mutable-argument-default",
+    "noqa_row": 48,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/mutable-argument-default"
+  }
+]

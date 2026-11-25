@@ -1,0 +1,4 @@
+Final score: 95
+
+mutable-argument-default: 5
+hardcoded-password-string: 0

@@ -1,0 +1,14 @@
+{
+    "game": "NEO: The World Ends with You",
+    "stub": "neotwewy",
+    "manifest": {
+        "game": "NEO: The World Ends with You",
+        "minimum_ap_version": "0.6.7",
+        "world_version": "0.1.0",
+        "authors": [
+            "Sjerver"
+        ],
+        "compatible_version": 7,
+        "version": 7
+    }
+}
