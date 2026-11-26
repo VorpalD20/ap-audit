@@ -1,0 +1,1259 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="24" skipped="0" tests="682" time="6.877" timestamp="2026-11-26T09:13:04.696204+00:00" hostname="9f4cbb777e39"><testcase classname="test.general.test_entrances.TestBase" name="test_all_state_before_connect_entrances" time="0.082"><failure message="RuntimeError: [Tester1] No sphere 1 remaining in the multiworld. To fix this, either:&#10;* Set a slot as unlocked in slots_to_lock, &#10;* Set random_unlocked_slots to 1 or higher,&#10;* Set free_starting_items to true, or &#10;* Set free unlocked world items to 1 or higher.&#10;Exception in &lt;bound method SlotLockWorld.create_items of &lt;worlds.slotlock.SlotLockWorld object at 0x7afe43aa3620&gt;&gt; for player 1, named Tester1.">self = &lt;test.general.test_entrances.TestBase testMethod=test_all_state_before_connect_entrances&gt;
+
+    def test_all_state_before_connect_entrances(self):
+        """Before connect_entrances, Entrance objects may be unconnected.
+        Thus, we test that get_all_state is performed with allow_partial_entrances if used before or during
+        connect_entrances."""
+    
+        gen_steps = ("generate_early", "create_regions", "create_items", "set_rules", "connect_entrances")
+    
+        for game_name, world_type in AutoWorldRegister.testable_worlds.items():
+            with self.subTest("Game", game_name=game_name):
+                multiworld = setup_solo_multiworld(world_type, ())
+    
+                original_get_all_state = multiworld.get_all_state
+    
+                def patched_get_all_state(use_cache: bool | None = None, allow_partial_entrances: bool = False,
+                                          **kwargs): #TODO: Remove use_cache once get_all_state() fully deprecates it
+                    self.assertTrue(allow_partial_entrances, (
+                        "Before the connect_entrances step finishes, other worlds might still have partial entrances. "
+                        "As such, any call to get_all_state must use allow_partial_entrances = True."
+                    ))
+    
+                    return original_get_all_state(allow_partial_entrances, **kwargs)
+    
+                multiworld.get_all_state = patched_get_all_state
+    
+                for step in gen_steps:
+                    with self.subTest("Step", step=step):
+&gt;                       call_all(multiworld, step)
+
+test/general/test_entrances.py:66: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+worlds/AutoWorld.py:207: in call_all
+    call_single(multiworld, method_name, player, *args)
+worlds/AutoWorld.py:193: in call_single
+    raise e
+worlds/AutoWorld.py:186: in call_single
+    ret = _timed_call(method, *args, multiworld=multiworld, player=player)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/AutoWorld.py:171: in _timed_call
+    ret = method(*args)
+          ^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;worlds.slotlock.SlotLockWorld object at 0x7afe43aa3620&gt;
+
+    def create_items(self) -&gt; None:
+        if hasattr(self.multiworld, "generation_is_fake"):
+            # UT has no way to get the unlock items so just skip locking altogether
+            return
+    
+        if self.options.slots_whitelist.value:
+            slots_to_lock = [slot for slot in self.options.slots_to_lock.value if any(slot == world.player_name for world in self.multiworld.worlds.values())]
+        else:
+            slots_to_lock = [slot.player_name for slot in self.multiworld.worlds.values() if slot.player_name not in self.options.slots_to_lock.value and slot.player_name != self.player_name]
+        slots_to_lock = [slot for slot in slots_to_lock if slot in self.multiworld.world_name_lookup and self.multiworld.player_types[self.multiworld.world_name_lookup[slot]] == SlotType.player]
+        slots_to_lock = sorted(slots_to_lock)
+        if self.options.random_unlocked_slots.value &gt; len(slots_to_lock):
+            raise RuntimeError(f"[{self.player_name}] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots")
+        for i in range(self.options.random_unlocked_slots.value):
+            slots_to_lock.remove(self.random.choice(slots_to_lock))
+    
+        # Conservative check if all slots are locked and there are no starting locations in SlotLock
+        if len(slots_to_lock) &gt;= len(list(filter(lambda s: self.multiworld.player_types[self.multiworld.world_name_lookup[s]] == SlotType.player,
+                                                    self.multiworld.world_name_lookup))) - 1 and self.options.free_starting_items == 0 and self.options.free_unlocked_world_items == 0:
+&gt;           raise RuntimeError(f"[{self.player_name}] No sphere 1 remaining in the multiworld. To fix this, either:\n* Set a slot as unlocked in slots_to_lock, \n* Set random_unlocked_slots to 1 or higher,\n* Set free_starting_items to true, or \n* Set free unlocked world items to 1 or higher.")
+E           RuntimeError: [Tester1] No sphere 1 remaining in the multiworld. To fix this, either:
+E           * Set a slot as unlocked in slots_to_lock, 
+E           * Set random_unlocked_slots to 1 or higher,
+E           * Set free_starting_items to true, or 
+E           * Set free unlocked world items to 1 or higher.
+E           Exception in &lt;bound method SlotLockWorld.create_items of &lt;worlds.slotlock.SlotLockWorld object at 0x7afe43aa3620&gt;&gt; for player 1, named Tester1.
+
+worlds/slotlock/__init__.py:131: RuntimeError</failure></testcase><testcase classname="test.general.test_entrances.TestBase" name="test_entrance_connection_steps" time="0.043"><failure message="RuntimeError: [Tester1] No sphere 1 remaining in the multiworld. To fix this, either:&#10;* Set a slot as unlocked in slots_to_lock, &#10;* Set random_unlocked_slots to 1 or higher,&#10;* Set free_starting_items to true, or &#10;* Set free unlocked world items to 1 or higher.&#10;Exception in &lt;bound method SlotLockWorld.create_items of &lt;worlds.slotlock.SlotLockWorld object at 0x7afe43af7d90&gt;&gt; for player 1, named Tester1.">self = &lt;test.general.test_entrances.TestBase testMethod=test_entrance_connection_steps&gt;
+
+    def test_entrance_connection_steps(self):
+        """Tests that Entrances are connected and not changed after connect_entrances."""
+        def get_entrance_name_to_source_and_target_dict(world: World):
+            return [
+                (entrance.name, entrance.parent_region, entrance.connected_region)
+                for entrance in world.get_entrances()
+            ]
+    
+        gen_steps = ("generate_early", "create_regions", "create_items", "set_rules", "connect_entrances")
+        additional_steps = ("generate_basic", "pre_fill")
+    
+        for game_name, world_type in AutoWorldRegister.testable_worlds.items():
+            with self.subTest("Game", game_name=game_name):
+&gt;               multiworld = setup_solo_multiworld(world_type, gen_steps)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test/general/test_entrances.py:22: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/general/__init__.py:31: in setup_solo_multiworld
+    return setup_multiworld(world_type, steps, seed)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/general/__init__.py:68: in setup_multiworld
+    call_all(multiworld, step)
+worlds/AutoWorld.py:207: in call_all
+    call_single(multiworld, method_name, player, *args)
+worlds/AutoWorld.py:193: in call_single
+    raise e
+worlds/AutoWorld.py:186: in call_single
+    ret = _timed_call(method, *args, multiworld=multiworld, player=player)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/AutoWorld.py:171: in _timed_call
+    ret = method(*args)
+          ^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;worlds.slotlock.SlotLockWorld object at 0x7afe43af7d90&gt;
+
+    def create_items(self) -&gt; None:
+        if hasattr(self.multiworld, "generation_is_fake"):
+            # UT has no way to get the unlock items so just skip locking altogether
+            return
+    
+        if self.options.slots_whitelist.value:
+            slots_to_lock = [slot for slot in self.options.slots_to_lock.value if any(slot == world.player_name for world in self.multiworld.worlds.values())]
+        else:
+            slots_to_lock = [slot.player_name for slot in self.multiworld.worlds.values() if slot.player_name not in self.options.slots_to_lock.value and slot.player_name != self.player_name]
+        slots_to_lock = [slot for slot in slots_to_lock if slot in self.multiworld.world_name_lookup and self.multiworld.player_types[self.multiworld.world_name_lookup[slot]] == SlotType.player]
+        slots_to_lock = sorted(slots_to_lock)
+        if self.options.random_unlocked_slots.value &gt; len(slots_to_lock):
+            raise RuntimeError(f"[{self.player_name}] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots")
+        for i in range(self.options.random_unlocked_slots.value):
+            slots_to_lock.remove(self.random.choice(slots_to_lock))
+    
+        # Conservative check if all slots are locked and there are no starting locations in SlotLock
+        if len(slots_to_lock) &gt;= len(list(filter(lambda s: self.multiworld.player_types[self.multiworld.world_name_lookup[s]] == SlotType.player,
+                                                    self.multiworld.world_name_lookup))) - 1 and self.options.free_starting_items == 0 and self.options.free_unlocked_world_items == 0:
+&gt;           raise RuntimeError(f"[{self.player_name}] No sphere 1 remaining in the multiworld. To fix this, either:\n* Set a slot as unlocked in slots_to_lock, \n* Set random_unlocked_slots to 1 or higher,\n* Set free_starting_items to true, or \n* Set free unlocked world items to 1 or higher.")
+E           RuntimeError: [Tester1] No sphere 1 remaining in the multiworld. To fix this, either:
+E           * Set a slot as unlocked in slots_to_lock, 
+E           * Set random_unlocked_slots to 1 or higher,
+E           * Set free_starting_items to true, or 
+E           * Set free unlocked world items to 1 or higher.
+E           Exception in &lt;bound method SlotLockWorld.create_items of &lt;worlds.slotlock.SlotLockWorld object at 0x7afe43af7d90&gt;&gt; for player 1, named Tester1.
+
+worlds/slotlock/__init__.py:131: RuntimeError</failure></testcase><testcase classname="test.general.test_groups.TestNameGroups" name="test_item_name_groups_not_empty" time="0.001" /><testcase classname="test.general.test_groups.TestNameGroups" name="test_location_name_groups_not_empty" time="0.000" /><testcase classname="test.general.test_ids.TestIDs" name="test_duplicate_item_ids" time="0.007"><failure message="AssertionError: Element counts were not equal:&#10;&#10;Diff is 208937 characters long. Set self.maxDiff to None to see it. : &#10;These items have overlapping ids with other items in its own world">self = &lt;test.general.test_ids.TestIDs testMethod=test_duplicate_item_ids&gt;
+
+    def test_duplicate_item_ids(self):
+        """Test that a game doesn't have item id overlap within its own datapackage"""
+        for gamename, world_type in AutoWorldRegister.testable_worlds.items():
+            with self.subTest(game=gamename):
+                len_item_id_to_name = len(world_type.item_id_to_name)
+                len_item_name_to_id = len(world_type.item_name_to_id)
+    
+                if len_item_id_to_name != len_item_name_to_id:
+&gt;                   self.assertCountEqual(
+                        world_type.item_id_to_name.values(),
+                        world_type.item_name_to_id.keys(),
+                        "\nThese items have overlapping ids with other items in its own world")
+E                   AssertionError: Element counts were not equal:
+E                   
+E                   Diff is 208937 characters long. Set self.maxDiff to None to see it. : 
+E                   These items have overlapping ids with other items in its own world
+
+test/general/test_ids.py:56: AssertionError</failure></testcase><testcase classname="test.general.test_ids.TestIDs" name="test_duplicate_location_ids" time="0.048"><failure message="AssertionError: Element counts were not equal:&#10;&#10;Diff is 2039394 characters long. Set self.maxDiff to None to see it. : &#10;These locations have overlapping ids with other locations in its own world">self = &lt;test.general.test_ids.TestIDs testMethod=test_duplicate_location_ids&gt;
+
+    def test_duplicate_location_ids(self):
+        """Test that a game doesn't have location id overlap within its own datapackage"""
+        for gamename, world_type in AutoWorldRegister.testable_worlds.items():
+            with self.subTest(game=gamename):
+                len_location_id_to_name = len(world_type.location_id_to_name)
+                len_location_name_to_id = len(world_type.location_name_to_id)
+    
+                if len_location_id_to_name != len_location_name_to_id:
+&gt;                   self.assertCountEqual(
+                        world_type.location_id_to_name.values(),
+                        world_type.location_name_to_id.keys(),
+                        "\nThese locations have overlapping ids with other locations in its own world")
+E                   AssertionError: Element counts were not equal:
+E                   
+E                   Diff is 2039394 characters long. Set self.maxDiff to None to see it. : 
+E                   These locations have overlapping ids with other locations in its own world
+
+test/general/test_ids.py:75: AssertionError</failure></testcase><testcase classname="test.general.test_ids.TestIDs" name="test_postgen_datapackage" time="0.043"><failure message="RuntimeError: [Tester1] No sphere 1 remaining in the multiworld. To fix this, either:&#10;* Set a slot as unlocked in slots_to_lock, &#10;* Set random_unlocked_slots to 1 or higher,&#10;* Set free_starting_items to true, or &#10;* Set free unlocked world items to 1 or higher.&#10;Exception in &lt;bound method SlotLockWorld.create_items of &lt;worlds.slotlock.SlotLockWorld object at 0x7afe43af6210&gt;&gt; for player 1, named Tester1.">self = &lt;test.general.test_ids.TestIDs testMethod=test_postgen_datapackage&gt;
+
+    def test_postgen_datapackage(self):
+        """Generates a solo multiworld and checks that the datapackage is still valid"""
+        for gamename, world_type in AutoWorldRegister.testable_worlds.items():
+            with self.subTest(game=gamename):
+&gt;               multiworld = setup_solo_multiworld(world_type)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test/general/test_ids.py:90: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/general/__init__.py:31: in setup_solo_multiworld
+    return setup_multiworld(world_type, steps, seed)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/general/__init__.py:68: in setup_multiworld
+    call_all(multiworld, step)
+worlds/AutoWorld.py:207: in call_all
+    call_single(multiworld, method_name, player, *args)
+worlds/AutoWorld.py:193: in call_single
+    raise e
+worlds/AutoWorld.py:186: in call_single
+    ret = _timed_call(method, *args, multiworld=multiworld, player=player)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/AutoWorld.py:171: in _timed_call
+    ret = method(*args)
+          ^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;worlds.slotlock.SlotLockWorld object at 0x7afe43af6210&gt;
+
+    def create_items(self) -&gt; None:
+        if hasattr(self.multiworld, "generation_is_fake"):
+            # UT has no way to get the unlock items so just skip locking altogether
+            return
+    
+        if self.options.slots_whitelist.value:
+            slots_to_lock = [slot for slot in self.options.slots_to_lock.value if any(slot == world.player_name for world in self.multiworld.worlds.values())]
+        else:
+            slots_to_lock = [slot.player_name for slot in self.multiworld.worlds.values() if slot.player_name not in self.options.slots_to_lock.value and slot.player_name != self.player_name]
+        slots_to_lock = [slot for slot in slots_to_lock if slot in self.multiworld.world_name_lookup and self.multiworld.player_types[self.multiworld.world_name_lookup[slot]] == SlotType.player]
+        slots_to_lock = sorted(slots_to_lock)
+        if self.options.random_unlocked_slots.value &gt; len(slots_to_lock):
+            raise RuntimeError(f"[{self.player_name}] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots")
+        for i in range(self.options.random_unlocked_slots.value):
+            slots_to_lock.remove(self.random.choice(slots_to_lock))
+    
+        # Conservative check if all slots are locked and there are no starting locations in SlotLock
+        if len(slots_to_lock) &gt;= len(list(filter(lambda s: self.multiworld.player_types[self.multiworld.world_name_lookup[s]] == SlotType.player,
+                                                    self.multiworld.world_name_lookup))) - 1 and self.options.free_starting_items == 0 and self.options.free_unlocked_world_items == 0:
+&gt;           raise RuntimeError(f"[{self.player_name}] No sphere 1 remaining in the multiworld. To fix this, either:\n* Set a slot as unlocked in slots_to_lock, \n* Set random_unlocked_slots to 1 or higher,\n* Set free_starting_items to true, or \n* Set free unlocked world items to 1 or higher.")
+E           RuntimeError: [Tester1] No sphere 1 remaining in the multiworld. To fix this, either:
+E           * Set a slot as unlocked in slots_to_lock, 
+E           * Set random_unlocked_slots to 1 or higher,
+E           * Set free_starting_items to true, or 
+E           * Set free unlocked world items to 1 or higher.
+E           Exception in &lt;bound method SlotLockWorld.create_items of &lt;worlds.slotlock.SlotLockWorld object at 0x7afe43af6210&gt;&gt; for player 1, named Tester1.
+
+worlds/slotlock/__init__.py:131: RuntimeError</failure></testcase><testcase classname="test.general.test_ids.TestIDs" name="test_range_items" time="0.001" /><testcase classname="test.general.test_ids.TestIDs" name="test_range_locations" time="0.004" /><testcase classname="test.general.test_ids.TestIDs" name="test_reserved_items" time="0.001" /><testcase classname="test.general.test_ids.TestIDs" name="test_reserved_locations" time="0.003" /><testcase classname="test.general.test_implemented.TestImplemented" name="test_completion_condition" time="0.043"><failure message="RuntimeError: [Tester1] No sphere 1 remaining in the multiworld. To fix this, either:&#10;* Set a slot as unlocked in slots_to_lock, &#10;* Set random_unlocked_slots to 1 or higher,&#10;* Set free_starting_items to true, or &#10;* Set free unlocked world items to 1 or higher.&#10;Exception in &lt;bound method SlotLockWorld.create_items of &lt;worlds.slotlock.SlotLockWorld object at 0x7afe4490d480&gt;&gt; for player 1, named Tester1.">self = &lt;test.general.test_implemented.TestImplemented testMethod=test_completion_condition&gt;
+
+    def test_completion_condition(self):
+        """Ensure a completion condition is set that has requirements."""
+        for game_name, world_type in AutoWorldRegister.testable_worlds.items():
+            if not world_type.hidden:
+                with self.subTest(game_name):
+&gt;                   multiworld = setup_solo_multiworld(world_type)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test/general/test_implemented.py:18: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/general/__init__.py:31: in setup_solo_multiworld
+    return setup_multiworld(world_type, steps, seed)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/general/__init__.py:68: in setup_multiworld
+    call_all(multiworld, step)
+worlds/AutoWorld.py:207: in call_all
+    call_single(multiworld, method_name, player, *args)
+worlds/AutoWorld.py:193: in call_single
+    raise e
+worlds/AutoWorld.py:186: in call_single
+    ret = _timed_call(method, *args, multiworld=multiworld, player=player)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/AutoWorld.py:171: in _timed_call
+    ret = method(*args)
+          ^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;worlds.slotlock.SlotLockWorld object at 0x7afe4490d480&gt;
+
+    def create_items(self) -&gt; None:
+        if hasattr(self.multiworld, "generation_is_fake"):
+            # UT has no way to get the unlock items so just skip locking altogether
+            return
+    
+        if self.options.slots_whitelist.value:
+            slots_to_lock = [slot for slot in self.options.slots_to_lock.value if any(slot == world.player_name for world in self.multiworld.worlds.values())]
+        else:
+            slots_to_lock = [slot.player_name for slot in self.multiworld.worlds.values() if slot.player_name not in self.options.slots_to_lock.value and slot.player_name != self.player_name]
+        slots_to_lock = [slot for slot in slots_to_lock if slot in self.multiworld.world_name_lookup and self.multiworld.player_types[self.multiworld.world_name_lookup[slot]] == SlotType.player]
+        slots_to_lock = sorted(slots_to_lock)
+        if self.options.random_unlocked_slots.value &gt; len(slots_to_lock):
+            raise RuntimeError(f"[{self.player_name}] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots")
+        for i in range(self.options.random_unlocked_slots.value):
+            slots_to_lock.remove(self.random.choice(slots_to_lock))
+    
+        # Conservative check if all slots are locked and there are no starting locations in SlotLock
+        if len(slots_to_lock) &gt;= len(list(filter(lambda s: self.multiworld.player_types[self.multiworld.world_name_lookup[s]] == SlotType.player,
+                                                    self.multiworld.world_name_lookup))) - 1 and self.options.free_starting_items == 0 and self.options.free_unlocked_world_items == 0:
+&gt;           raise RuntimeError(f"[{self.player_name}] No sphere 1 remaining in the multiworld. To fix this, either:\n* Set a slot as unlocked in slots_to_lock, \n* Set random_unlocked_slots to 1 or higher,\n* Set free_starting_items to true, or \n* Set free unlocked world items to 1 or higher.")
+E           RuntimeError: [Tester1] No sphere 1 remaining in the multiworld. To fix this, either:
+E           * Set a slot as unlocked in slots_to_lock, 
+E           * Set random_unlocked_slots to 1 or higher,
+E           * Set free_starting_items to true, or 
+E           * Set free unlocked world items to 1 or higher.
+E           Exception in &lt;bound method SlotLockWorld.create_items of &lt;worlds.slotlock.SlotLockWorld object at 0x7afe4490d480&gt;&gt; for player 1, named Tester1.
+
+worlds/slotlock/__init__.py:131: RuntimeError</failure></testcase><testcase classname="test.general.test_implemented.TestImplemented" name="test_entrance_parents" time="0.043"><failure message="RuntimeError: [Tester1] No sphere 1 remaining in the multiworld. To fix this, either:&#10;* Set a slot as unlocked in slots_to_lock, &#10;* Set random_unlocked_slots to 1 or higher,&#10;* Set free_starting_items to true, or &#10;* Set free unlocked world items to 1 or higher.&#10;Exception in &lt;bound method SlotLockWorld.create_items of &lt;worlds.slotlock.SlotLockWorld object at 0x7afe4490f820&gt;&gt; for player 1, named Tester1.">self = &lt;test.general.test_implemented.TestImplemented testMethod=test_entrance_parents&gt;
+
+    def test_entrance_parents(self):
+        """Tests that the parents of created Entrances match the exiting Region."""
+        for game_name, world_type in AutoWorldRegister.testable_worlds.items():
+            if not world_type.hidden:
+                with self.subTest(game_name):
+&gt;                   multiworld = setup_solo_multiworld(world_type)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test/general/test_implemented.py:26: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/general/__init__.py:31: in setup_solo_multiworld
+    return setup_multiworld(world_type, steps, seed)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/general/__init__.py:68: in setup_multiworld
+    call_all(multiworld, step)
+worlds/AutoWorld.py:207: in call_all
+    call_single(multiworld, method_name, player, *args)
+worlds/AutoWorld.py:193: in call_single
+    raise e
+worlds/AutoWorld.py:186: in call_single
+    ret = _timed_call(method, *args, multiworld=multiworld, player=player)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/AutoWorld.py:171: in _timed_call
+    ret = method(*args)
+          ^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;worlds.slotlock.SlotLockWorld object at 0x7afe4490f820&gt;
+
+    def create_items(self) -&gt; None:
+        if hasattr(self.multiworld, "generation_is_fake"):
+            # UT has no way to get the unlock items so just skip locking altogether
+            return
+    
+        if self.options.slots_whitelist.value:
+            slots_to_lock = [slot for slot in self.options.slots_to_lock.value if any(slot == world.player_name for world in self.multiworld.worlds.values())]
+        else:
+            slots_to_lock = [slot.player_name for slot in self.multiworld.worlds.values() if slot.player_name not in self.options.slots_to_lock.value and slot.player_name != self.player_name]
+        slots_to_lock = [slot for slot in slots_to_lock if slot in self.multiworld.world_name_lookup and self.multiworld.player_types[self.multiworld.world_name_lookup[slot]] == SlotType.player]
+        slots_to_lock = sorted(slots_to_lock)
+        if self.options.random_unlocked_slots.value &gt; len(slots_to_lock):
+            raise RuntimeError(f"[{self.player_name}] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots")
+        for i in range(self.options.random_unlocked_slots.value):
+            slots_to_lock.remove(self.random.choice(slots_to_lock))
+    
+        # Conservative check if all slots are locked and there are no starting locations in SlotLock
+        if len(slots_to_lock) &gt;= len(list(filter(lambda s: self.multiworld.player_types[self.multiworld.world_name_lookup[s]] == SlotType.player,
+                                                    self.multiworld.world_name_lookup))) - 1 and self.options.free_starting_items == 0 and self.options.free_unlocked_world_items == 0:
+&gt;           raise RuntimeError(f"[{self.player_name}] No sphere 1 remaining in the multiworld. To fix this, either:\n* Set a slot as unlocked in slots_to_lock, \n* Set random_unlocked_slots to 1 or higher,\n* Set free_starting_items to true, or \n* Set free unlocked world items to 1 or higher.")
+E           RuntimeError: [Tester1] No sphere 1 remaining in the multiworld. To fix this, either:
+E           * Set a slot as unlocked in slots_to_lock, 
+E           * Set random_unlocked_slots to 1 or higher,
+E           * Set free_starting_items to true, or 
+E           * Set free unlocked world items to 1 or higher.
+E           Exception in &lt;bound method SlotLockWorld.create_items of &lt;worlds.slotlock.SlotLockWorld object at 0x7afe4490f820&gt;&gt; for player 1, named Tester1.
+
+worlds/slotlock/__init__.py:131: RuntimeError</failure></testcase><testcase classname="test.general.test_implemented.TestImplemented" name="test_explicit_indirect_conditions_spheres" time="0.025"><failure message="RuntimeError: [Tester1] No sphere 1 remaining in the multiworld. To fix this, either:&#10;* Set a slot as unlocked in slots_to_lock, &#10;* Set random_unlocked_slots to 1 or higher,&#10;* Set free_starting_items to true, or &#10;* Set free unlocked world items to 1 or higher.&#10;Exception in &lt;bound method SlotLockWorld.create_items of &lt;worlds.slotlock.SlotLockWorld object at 0x7afe43b11eb0&gt;&gt; for player 1, named Tester1.">self = &lt;test.general.test_implemented.TestImplemented testMethod=test_explicit_indirect_conditions_spheres&gt;
+
+    def test_explicit_indirect_conditions_spheres(self):
+        """Tests that worlds using explicit indirect conditions produce identical spheres as when using implicit
+        indirect conditions"""
+        # Because the iteration order of blocked_connections in CollectionState.update_reachable_regions() is
+        # nondeterministic, this test may sometimes pass with the same seed even when there are missing indirect
+        # conditions.
+        for game_name, world_type in AutoWorldRegister.testable_worlds.items():
+&gt;           multiworld = setup_solo_multiworld(world_type)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test/general/test_implemented.py:84: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/general/__init__.py:31: in setup_solo_multiworld
+    return setup_multiworld(world_type, steps, seed)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/general/__init__.py:68: in setup_multiworld
+    call_all(multiworld, step)
+worlds/AutoWorld.py:207: in call_all
+    call_single(multiworld, method_name, player, *args)
+worlds/AutoWorld.py:193: in call_single
+    raise e
+worlds/AutoWorld.py:186: in call_single
+    ret = _timed_call(method, *args, multiworld=multiworld, player=player)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/AutoWorld.py:171: in _timed_call
+    ret = method(*args)
+          ^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;worlds.slotlock.SlotLockWorld object at 0x7afe43b11eb0&gt;
+
+    def create_items(self) -&gt; None:
+        if hasattr(self.multiworld, "generation_is_fake"):
+            # UT has no way to get the unlock items so just skip locking altogether
+            return
+    
+        if self.options.slots_whitelist.value:
+            slots_to_lock = [slot for slot in self.options.slots_to_lock.value if any(slot == world.player_name for world in self.multiworld.worlds.values())]
+        else:
+            slots_to_lock = [slot.player_name for slot in self.multiworld.worlds.values() if slot.player_name not in self.options.slots_to_lock.value and slot.player_name != self.player_name]
+        slots_to_lock = [slot for slot in slots_to_lock if slot in self.multiworld.world_name_lookup and self.multiworld.player_types[self.multiworld.world_name_lookup[slot]] == SlotType.player]
+        slots_to_lock = sorted(slots_to_lock)
+        if self.options.random_unlocked_slots.value &gt; len(slots_to_lock):
+            raise RuntimeError(f"[{self.player_name}] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots")
+        for i in range(self.options.random_unlocked_slots.value):
+            slots_to_lock.remove(self.random.choice(slots_to_lock))
+    
+        # Conservative check if all slots are locked and there are no starting locations in SlotLock
+        if len(slots_to_lock) &gt;= len(list(filter(lambda s: self.multiworld.player_types[self.multiworld.world_name_lookup[s]] == SlotType.player,
+                                                    self.multiworld.world_name_lookup))) - 1 and self.options.free_starting_items == 0 and self.options.free_unlocked_world_items == 0:
+&gt;           raise RuntimeError(f"[{self.player_name}] No sphere 1 remaining in the multiworld. To fix this, either:\n* Set a slot as unlocked in slots_to_lock, \n* Set random_unlocked_slots to 1 or higher,\n* Set free_starting_items to true, or \n* Set free unlocked world items to 1 or higher.")
+E           RuntimeError: [Tester1] No sphere 1 remaining in the multiworld. To fix this, either:
+E           * Set a slot as unlocked in slots_to_lock, 
+E           * Set random_unlocked_slots to 1 or higher,
+E           * Set free_starting_items to true, or 
+E           * Set free unlocked world items to 1 or higher.
+E           Exception in &lt;bound method SlotLockWorld.create_items of &lt;worlds.slotlock.SlotLockWorld object at 0x7afe43b11eb0&gt;&gt; for player 1, named Tester1.
+
+worlds/slotlock/__init__.py:131: RuntimeError</failure></testcase><testcase classname="test.general.test_implemented.TestImplemented" name="test_no_failed_world_loads" time="0.000" /><testcase classname="test.general.test_implemented.TestImplemented" name="test_no_items_or_locations_or_regions_submitted_in_init" time="0.001" /><testcase classname="test.general.test_implemented.TestImplemented" name="test_prefill_items" time="0.044"><failure message="RuntimeError: [Tester1] No sphere 1 remaining in the multiworld. To fix this, either:&#10;* Set a slot as unlocked in slots_to_lock, &#10;* Set random_unlocked_slots to 1 or higher,&#10;* Set free_starting_items to true, or &#10;* Set free unlocked world items to 1 or higher.&#10;Exception in &lt;bound method SlotLockWorld.create_items of &lt;worlds.slotlock.SlotLockWorld object at 0x7afe438e1e10&gt;&gt; for player 1, named Tester1.">self = &lt;test.general.test_implemented.TestImplemented testMethod=test_prefill_items&gt;
+
+    def test_prefill_items(self):
+        """Test that every world can reach every location from allstate before pre_fill."""
+        for gamename, world_type in AutoWorldRegister.testable_worlds.items():
+            if gamename not in ("Archipelago", "Final Fantasy", "Test Game"):
+                with self.subTest(gamename):
+&gt;                   multiworld = setup_solo_multiworld(world_type, ("generate_early", "create_regions", "create_items",
+                                                                    "set_rules", "connect_entrances", "generate_basic"))
+
+test/general/test_implemented.py:66: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/general/__init__.py:31: in setup_solo_multiworld
+    return setup_multiworld(world_type, steps, seed)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/general/__init__.py:68: in setup_multiworld
+    call_all(multiworld, step)
+worlds/AutoWorld.py:207: in call_all
+    call_single(multiworld, method_name, player, *args)
+worlds/AutoWorld.py:193: in call_single
+    raise e
+worlds/AutoWorld.py:186: in call_single
+    ret = _timed_call(method, *args, multiworld=multiworld, player=player)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/AutoWorld.py:171: in _timed_call
+    ret = method(*args)
+          ^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;worlds.slotlock.SlotLockWorld object at 0x7afe438e1e10&gt;
+
+    def create_items(self) -&gt; None:
+        if hasattr(self.multiworld, "generation_is_fake"):
+            # UT has no way to get the unlock items so just skip locking altogether
+            return
+    
+        if self.options.slots_whitelist.value:
+            slots_to_lock = [slot for slot in self.options.slots_to_lock.value if any(slot == world.player_name for world in self.multiworld.worlds.values())]
+        else:
+            slots_to_lock = [slot.player_name for slot in self.multiworld.worlds.values() if slot.player_name not in self.options.slots_to_lock.value and slot.player_name != self.player_name]
+        slots_to_lock = [slot for slot in slots_to_lock if slot in self.multiworld.world_name_lookup and self.multiworld.player_types[self.multiworld.world_name_lookup[slot]] == SlotType.player]
+        slots_to_lock = sorted(slots_to_lock)
+        if self.options.random_unlocked_slots.value &gt; len(slots_to_lock):
+            raise RuntimeError(f"[{self.player_name}] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots")
+        for i in range(self.options.random_unlocked_slots.value):
+            slots_to_lock.remove(self.random.choice(slots_to_lock))
+    
+        # Conservative check if all slots are locked and there are no starting locations in SlotLock
+        if len(slots_to_lock) &gt;= len(list(filter(lambda s: self.multiworld.player_types[self.multiworld.world_name_lookup[s]] == SlotType.player,
+                                                    self.multiworld.world_name_lookup))) - 1 and self.options.free_starting_items == 0 and self.options.free_unlocked_world_items == 0:
+&gt;           raise RuntimeError(f"[{self.player_name}] No sphere 1 remaining in the multiworld. To fix this, either:\n* Set a slot as unlocked in slots_to_lock, \n* Set random_unlocked_slots to 1 or higher,\n* Set free_starting_items to true, or \n* Set free unlocked world items to 1 or higher.")
+E           RuntimeError: [Tester1] No sphere 1 remaining in the multiworld. To fix this, either:
+E           * Set a slot as unlocked in slots_to_lock, 
+E           * Set random_unlocked_slots to 1 or higher,
+E           * Set free_starting_items to true, or 
+E           * Set free unlocked world items to 1 or higher.
+E           Exception in &lt;bound method SlotLockWorld.create_items of &lt;worlds.slotlock.SlotLockWorld object at 0x7afe438e1e10&gt;&gt; for player 1, named Tester1.
+
+worlds/slotlock/__init__.py:131: RuntimeError</failure></testcase><testcase classname="test.general.test_implemented.TestImplemented" name="test_slot_data" time="0.023"><failure message="RuntimeError: [Tester1] No sphere 1 remaining in the multiworld. To fix this, either:&#10;* Set a slot as unlocked in slots_to_lock, &#10;* Set random_unlocked_slots to 1 or higher,&#10;* Set free_starting_items to true, or &#10;* Set free unlocked world items to 1 or higher.&#10;Exception in &lt;bound method SlotLockWorld.create_items of &lt;worlds.slotlock.SlotLockWorld object at 0x7afe43984450&gt;&gt; for player 1, named Tester1.">self = &lt;test.general.test_implemented.TestImplemented testMethod=test_slot_data&gt;
+
+    def test_slot_data(self):
+        """Tests that if a world creates slot data, it's json serializable."""
+        # has an await for generate_output which isn't being called
+        excluded_games = ("Ocarina of Time",)
+        worlds_to_test = {game: world
+                          for game, world in AutoWorldRegister.testable_worlds.items() if game not in excluded_games}
+        for game_name, world_type in worlds_to_test.items():
+&gt;           multiworld = setup_solo_multiworld(world_type)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test/general/test_implemented.py:47: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/general/__init__.py:31: in setup_solo_multiworld
+    return setup_multiworld(world_type, steps, seed)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/general/__init__.py:68: in setup_multiworld
+    call_all(multiworld, step)
+worlds/AutoWorld.py:207: in call_all
+    call_single(multiworld, method_name, player, *args)
+worlds/AutoWorld.py:193: in call_single
+    raise e
+worlds/AutoWorld.py:186: in call_single
+    ret = _timed_call(method, *args, multiworld=multiworld, player=player)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/AutoWorld.py:171: in _timed_call
+    ret = method(*args)
+          ^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;worlds.slotlock.SlotLockWorld object at 0x7afe43984450&gt;
+
+    def create_items(self) -&gt; None:
+        if hasattr(self.multiworld, "generation_is_fake"):
+            # UT has no way to get the unlock items so just skip locking altogether
+            return
+    
+        if self.options.slots_whitelist.value:
+            slots_to_lock = [slot for slot in self.options.slots_to_lock.value if any(slot == world.player_name for world in self.multiworld.worlds.values())]
+        else:
+            slots_to_lock = [slot.player_name for slot in self.multiworld.worlds.values() if slot.player_name not in self.options.slots_to_lock.value and slot.player_name != self.player_name]
+        slots_to_lock = [slot for slot in slots_to_lock if slot in self.multiworld.world_name_lookup and self.multiworld.player_types[self.multiworld.world_name_lookup[slot]] == SlotType.player]
+        slots_to_lock = sorted(slots_to_lock)
+        if self.options.random_unlocked_slots.value &gt; len(slots_to_lock):
+            raise RuntimeError(f"[{self.player_name}] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots")
+        for i in range(self.options.random_unlocked_slots.value):
+            slots_to_lock.remove(self.random.choice(slots_to_lock))
+    
+        # Conservative check if all slots are locked and there are no starting locations in SlotLock
+        if len(slots_to_lock) &gt;= len(list(filter(lambda s: self.multiworld.player_types[self.multiworld.world_name_lookup[s]] == SlotType.player,
+                                                    self.multiworld.world_name_lookup))) - 1 and self.options.free_starting_items == 0 and self.options.free_unlocked_world_items == 0:
+&gt;           raise RuntimeError(f"[{self.player_name}] No sphere 1 remaining in the multiworld. To fix this, either:\n* Set a slot as unlocked in slots_to_lock, \n* Set random_unlocked_slots to 1 or higher,\n* Set free_starting_items to true, or \n* Set free unlocked world items to 1 or higher.")
+E           RuntimeError: [Tester1] No sphere 1 remaining in the multiworld. To fix this, either:
+E           * Set a slot as unlocked in slots_to_lock, 
+E           * Set random_unlocked_slots to 1 or higher,
+E           * Set free_starting_items to true, or 
+E           * Set free unlocked world items to 1 or higher.
+E           Exception in &lt;bound method SlotLockWorld.create_items of &lt;worlds.slotlock.SlotLockWorld object at 0x7afe43984450&gt;&gt; for player 1, named Tester1.
+
+worlds/slotlock/__init__.py:131: RuntimeError</failure></testcase><testcase classname="test.general.test_implemented.TestImplemented" name="test_stage_methods" time="0.000" /><testcase classname="test.general.test_items.TestBase" name="test_create_item" time="0.023"><failure message="RuntimeError: [Tester1] No sphere 1 remaining in the multiworld. To fix this, either:&#10;* Set a slot as unlocked in slots_to_lock, &#10;* Set random_unlocked_slots to 1 or higher,&#10;* Set free_starting_items to true, or &#10;* Set free unlocked world items to 1 or higher.&#10;Exception in &lt;bound method SlotLockWorld.create_items of &lt;worlds.slotlock.SlotLockWorld object at 0x7afe43986250&gt;&gt; for player 1, named Tester1.">self = &lt;test.general.test_items.TestBase testMethod=test_create_item&gt;
+
+    def test_create_item(self):
+        """Test that a world can successfully create all items in its datapackage"""
+        for game_name, world_type in AutoWorldRegister.testable_worlds.items():
+&gt;           multiworld = setup_solo_multiworld(world_type, steps=("generate_early", "create_regions", "create_items"))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test/general/test_items.py:19: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/general/__init__.py:31: in setup_solo_multiworld
+    return setup_multiworld(world_type, steps, seed)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/general/__init__.py:68: in setup_multiworld
+    call_all(multiworld, step)
+worlds/AutoWorld.py:207: in call_all
+    call_single(multiworld, method_name, player, *args)
+worlds/AutoWorld.py:193: in call_single
+    raise e
+worlds/AutoWorld.py:186: in call_single
+    ret = _timed_call(method, *args, multiworld=multiworld, player=player)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/AutoWorld.py:171: in _timed_call
+    ret = method(*args)
+          ^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;worlds.slotlock.SlotLockWorld object at 0x7afe43986250&gt;
+
+    def create_items(self) -&gt; None:
+        if hasattr(self.multiworld, "generation_is_fake"):
+            # UT has no way to get the unlock items so just skip locking altogether
+            return
+    
+        if self.options.slots_whitelist.value:
+            slots_to_lock = [slot for slot in self.options.slots_to_lock.value if any(slot == world.player_name for world in self.multiworld.worlds.values())]
+        else:
+            slots_to_lock = [slot.player_name for slot in self.multiworld.worlds.values() if slot.player_name not in self.options.slots_to_lock.value and slot.player_name != self.player_name]
+        slots_to_lock = [slot for slot in slots_to_lock if slot in self.multiworld.world_name_lookup and self.multiworld.player_types[self.multiworld.world_name_lookup[slot]] == SlotType.player]
+        slots_to_lock = sorted(slots_to_lock)
+        if self.options.random_unlocked_slots.value &gt; len(slots_to_lock):
+            raise RuntimeError(f"[{self.player_name}] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots")
+        for i in range(self.options.random_unlocked_slots.value):
+            slots_to_lock.remove(self.random.choice(slots_to_lock))
+    
+        # Conservative check if all slots are locked and there are no starting locations in SlotLock
+        if len(slots_to_lock) &gt;= len(list(filter(lambda s: self.multiworld.player_types[self.multiworld.world_name_lookup[s]] == SlotType.player,
+                                                    self.multiworld.world_name_lookup))) - 1 and self.options.free_starting_items == 0 and self.options.free_unlocked_world_items == 0:
+&gt;           raise RuntimeError(f"[{self.player_name}] No sphere 1 remaining in the multiworld. To fix this, either:\n* Set a slot as unlocked in slots_to_lock, \n* Set random_unlocked_slots to 1 or higher,\n* Set free_starting_items to true, or \n* Set free unlocked world items to 1 or higher.")
+E           RuntimeError: [Tester1] No sphere 1 remaining in the multiworld. To fix this, either:
+E           * Set a slot as unlocked in slots_to_lock, 
+E           * Set random_unlocked_slots to 1 or higher,
+E           * Set free_starting_items to true, or 
+E           * Set free unlocked world items to 1 or higher.
+E           Exception in &lt;bound method SlotLockWorld.create_items of &lt;worlds.slotlock.SlotLockWorld object at 0x7afe43986250&gt;&gt; for player 1, named Tester1.
+
+worlds/slotlock/__init__.py:131: RuntimeError</failure></testcase><testcase classname="test.general.test_items.TestBase" name="test_item_count_equal_locations" time="0.043"><failure message="RuntimeError: [Tester1] No sphere 1 remaining in the multiworld. To fix this, either:&#10;* Set a slot as unlocked in slots_to_lock, &#10;* Set random_unlocked_slots to 1 or higher,&#10;* Set free_starting_items to true, or &#10;* Set free unlocked world items to 1 or higher.&#10;Exception in &lt;bound method SlotLockWorld.create_items of &lt;worlds.slotlock.SlotLockWorld object at 0x7afe43990f50&gt;&gt; for player 1, named Tester1.">self = &lt;test.general.test_items.TestBase testMethod=test_item_count_equal_locations&gt;
+
+    def test_item_count_equal_locations(self):
+        """Test that by the pre_fill step under default settings, each game submits items == locations"""
+        for game_name, world_type in AutoWorldRegister.testable_worlds.items():
+            with self.subTest("Game", game=game_name):
+&gt;               multiworld = setup_solo_multiworld(world_type)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test/general/test_items.py:79: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/general/__init__.py:31: in setup_solo_multiworld
+    return setup_multiworld(world_type, steps, seed)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/general/__init__.py:68: in setup_multiworld
+    call_all(multiworld, step)
+worlds/AutoWorld.py:207: in call_all
+    call_single(multiworld, method_name, player, *args)
+worlds/AutoWorld.py:193: in call_single
+    raise e
+worlds/AutoWorld.py:186: in call_single
+    ret = _timed_call(method, *args, multiworld=multiworld, player=player)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/AutoWorld.py:171: in _timed_call
+    ret = method(*args)
+          ^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;worlds.slotlock.SlotLockWorld object at 0x7afe43990f50&gt;
+
+    def create_items(self) -&gt; None:
+        if hasattr(self.multiworld, "generation_is_fake"):
+            # UT has no way to get the unlock items so just skip locking altogether
+            return
+    
+        if self.options.slots_whitelist.value:
+            slots_to_lock = [slot for slot in self.options.slots_to_lock.value if any(slot == world.player_name for world in self.multiworld.worlds.values())]
+        else:
+            slots_to_lock = [slot.player_name for slot in self.multiworld.worlds.values() if slot.player_name not in self.options.slots_to_lock.value and slot.player_name != self.player_name]
+        slots_to_lock = [slot for slot in slots_to_lock if slot in self.multiworld.world_name_lookup and self.multiworld.player_types[self.multiworld.world_name_lookup[slot]] == SlotType.player]
+        slots_to_lock = sorted(slots_to_lock)
+        if self.options.random_unlocked_slots.value &gt; len(slots_to_lock):
+            raise RuntimeError(f"[{self.player_name}] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots")
+        for i in range(self.options.random_unlocked_slots.value):
+            slots_to_lock.remove(self.random.choice(slots_to_lock))
+    
+        # Conservative check if all slots are locked and there are no starting locations in SlotLock
+        if len(slots_to_lock) &gt;= len(list(filter(lambda s: self.multiworld.player_types[self.multiworld.world_name_lookup[s]] == SlotType.player,
+                                                    self.multiworld.world_name_lookup))) - 1 and self.options.free_starting_items == 0 and self.options.free_unlocked_world_items == 0:
+&gt;           raise RuntimeError(f"[{self.player_name}] No sphere 1 remaining in the multiworld. To fix this, either:\n* Set a slot as unlocked in slots_to_lock, \n* Set random_unlocked_slots to 1 or higher,\n* Set free_starting_items to true, or \n* Set free unlocked world items to 1 or higher.")
+E           RuntimeError: [Tester1] No sphere 1 remaining in the multiworld. To fix this, either:
+E           * Set a slot as unlocked in slots_to_lock, 
+E           * Set random_unlocked_slots to 1 or higher,
+E           * Set free_starting_items to true, or 
+E           * Set free unlocked world items to 1 or higher.
+E           Exception in &lt;bound method SlotLockWorld.create_items of &lt;worlds.slotlock.SlotLockWorld object at 0x7afe43990f50&gt;&gt; for player 1, named Tester1.
+
+worlds/slotlock/__init__.py:131: RuntimeError</failure></testcase><testcase classname="test.general.test_items.TestBase" name="test_item_links" time="0.261" /><testcase classname="test.general.test_items.TestBase" name="test_item_name_group_conflict" time="0.001" /><testcase classname="test.general.test_items.TestBase" name="test_item_name_group_has_valid_item" time="0.005"><failure message="AssertionError: 'n' not found in {'Unlock Linker 1': 1002, 'Unlock Linker 2': 1003, 'Nothing': 6999, 'Unlock Bonus Slot 1': 1, 'Unlock Bonus Slot 2': 2, 'Unlock Bonus Slot 3': 3, 'Unlock Bonus Slot 4': 4, 'Unlock Bonus Slot 5': 5, 'Unlock Bonus Slot 6': 6, 'Unlock Bonus Slot 7': 7, 'Unlock Bonus Slot 8': 8, 'Unlock Bonus Slot 9': 9, 'Unlock Bonus Slot 10': 10, 'Unlock Bonus Slot 11': 11, 'Unlock Bonus Slot 12': 12, 'Unlock Bonus Slot 13': 13, 'Unlock Bonus Slot 14': 14, 'Unlock Bonus Slot 15': 1...&#10;[truncated; full report in element text]">self = &lt;test.general.test_items.TestBase testMethod=test_item_name_group_has_valid_item&gt;
+
+    def test_item_name_group_has_valid_item(self):
+        """Test that all item name groups contain valid items. """
+        # This cannot test for Event names that you may have declared for logic, only sendable Items.
+        # In such a case, you can add your entries to this Exclusion dict. Game Name -&gt; Group Names
+        exclusion_dict = {
+            "A Link to the Past":
+                {"Pendants", "Crystals"},
+            "Ocarina of Time":
+                {"medallions", "stones", "rewards", "logic_bottles"},
+            "Starcraft 2":
+                {"Missions", "WoL Missions"},
+            "Yu-Gi-Oh! 2006":
+                {"Campaign Boss Beaten"}
+        }
+        for game_name, world_type in AutoWorldRegister.testable_worlds.items():
+            with self.subTest(game_name, game_name=game_name):
+                exclusions = exclusion_dict.get(game_name, frozenset())
+                for group_name, items in world_type.item_name_groups.items():
+                    if group_name not in exclusions:
+                        with self.subTest(group_name, group_name=group_name):
+                            for item in items:
+&gt;                               self.assertIn(item, world_type.item_name_to_id)
+E                               AssertionError: 'n' not found in {'Unlock Linker 1': 1002, 'Unlock Linker 2': 1003, 'Nothing': 6999, 'Unlock Bonus Slot 1': 1, 'Unlock Bonus Slot 2': 2, 'Unlock Bonus Slot 3': 3, 'Unlock Bonus Slot 4': 4, 'Unlock Bonus Slot 5': 5, 'Unlock Bonus Slot 6': 6, 'Unlock Bonus Slot 7': 7, 'Unlock Bonus Slot 8': 8, 'Unlock Bonus Slot 9': 9, 'Unlock Bonus Slot 10': 10, 'Unlock Bonus Slot 11': 11, 'Unlock Bonus Slot 12': 12, 'Unlock Bonus Slot 13': 13, 'Unlock Bonus Slot 14': 14, 'Unlock Bonus Slot 15': 15, 'Unlock Bonus Slot 16': 16, 'Unlock Bonus Slot 17': 17, 'Unlock Bonus Slot 18': 18, 'Unlock Bonus Slot 19': 19, 'Unlock Bonus Slot 20': 20, 'Unlock Bonus Slot 21': 21, 'Unlock Bonus Slot 22': 22, 'Unlock Bonus Slot 23': 23, 'Unlock Bonus Slot 24': 24, 'Unlock Bonus Slot 25': 25, 'Unlock Bonus Slot 26': 26, 'Unlock Bonus Slot 27': 27, 'Unlock Bonus Slot 28': 28, 'Unlock Bonus Slot 29': 29, 'Unlock Bonus Slot 30': 30, 'Unlock Bonus Slot 31': 31, 'Unlock Bonus Slot 32': 32, 'Unlock Bonus Slot 33': 33, 'Unlock Bonus Slot 34': 34, 'Unlock Bonus Slot 35': 35, 'Unlock Bonus Slot 36': 36, 'Unlock Bonus Slot 37': 37, 'Unlock Bonus Slot 38': 38, 'Unlock Bonus Slot 39': 39, 'Unlock Bonus Slot 40': 40, 'Unlock Bonus Slot 41': 41, 'Unlock Bonus Slot 42': 42, 'Unlock Bonus Slot 43': 43, 'Unlock Bonus Slot 44': 44, 'Unlock Bonus Slot 45': 45, 'Unlock Bonus Slot 46': 46, 'Unlock Bonus Slot 47': 47, 'Unlock Bonus Slot 48': 48, 'Unlock Bonus Slot 49': 49, 'Unlock Bonus Slot 50': 50, 'Unlock Bonus Slot 51': 51, 'Unlock Bonus Slot 52': 52, 'Unlock Bonus Slot 53': 53, 'Unlock Bonus Slot 54': 54, 'Unlock Bonus Slot 55': 55, 'Unlock Bonus Slot 56': 56, 'Unlock Bonus Slot 57': 57, 'Unlock Bonus Slot 58': 58, 'Unlock Bonus Slot 59': 59, 'Unlock Bonus Slot 60': 60, 'Unlock Bonus Slot 61': 61, 'Unlock Bonus Slot 62': 62, 'Unlock Bonus Slot 63': 63, 'Unlock Bonus Slot 64': 64, 'Unlock Bonus Slot 65': 65, 'Unlock Bonus Slot 66': 66, 'Unlock Bonus Slot 67': 67, 'Unlock Bonus Slot 68': 68, 'Unlock Bonus Slot 69': 69, 'Unlock Bonus Slot 70': 70, 'Unlock Bonus Slot 71': 71, 'Unlock Bonus Slot 72': 72, 'Unlock Bonus Slot 73': 73, 'Unlock Bonus Slot 74': 74, 'Unlock Bonus Slot 75': 75, 'Unlock Bonus Slot 76': 76, 'Unlock Bonus Slot 77': 77, 'Unlock Bonus Slot 78': 78, 'Unlock Bonus Slot 79': 79, 'Unlock Bonus Slot 80': 80, 'Unlock Bonus Slot 81': 81, 'Unlock Bonus Slot 82': 82, 'Unlock Bonus Slot 83': 83, 'Unlock Bonus Slot 84': 84, 'Unlock Bonus Slot 85': 85, 'Unlock Bonus Slot 86': 86, 'Unlock Bonus Slot 87': 87, 'Unlock Bonus Slot 88': 88, 'Unlock Bonus Slot 89': 89, 'Unlock Bonus Slot 90': 90, 'Unlock Bonus Slot 91': 91, 'Unlock Bonus Slot 92': 92, 'Unlock Bonus Slot 93': 93, 'Unlock Bonus Slot 94': 94, 'Unlock Bonus Slot 95': 95, 'Unlock Bonus Slot 96': 96, 'Unlock Bonus Slot 97': 97, 'Unlock Bonus Slot 98': 98, 'Unlock Bonus Slot 99': 99, 'Unlock Bonus Slot 100': 100, 'Unlock Bonus Slot 101': 101, 'Unlock Bonus Slot 102': 102, 'Unlock Bonus Slot 103': 103, 'Unlock Bonus Slot 104': 104, 'Unlock Bonus Slot 105': 105, 'Unlock Bonus Slot 106': 106, 'Unlock Bonus Slot 107': 107, 'Unlock Bonus Slot 108': 108, 'Unlock Bonus Slot 109': 109, 'Unlock Bonus Slot 110': 110, 'Unlock Bonus Slot 111': 111, 'Unlock Bonus Slot 112': 112, 'Unlock Bonus Slot 113': 113, 'Unlock Bonus Slot 114': 114, 'Unlock Bonus Slot 115': 115, 'Unlock Bonus Slot 116': 116, 'Unlock Bonus Slot 117': 117, 'Unlock Bonus Slot 118': 118, 'Unlock Bonus Slot 119': 119, 'Unlock Bonus Slot 120': 120, 'Unlock Bonus Slot 121': 121, 'Unlock Bonus Slot 122': 122, 'Unlock Bonus Slot 123': 123, 'Unlock Bonus Slot 124': 124, 'Unlock Bonus Slot 125': 125, 'Unlock Bonus Slot 126': 126, 'Unlock Bonus Slot 127': 127, 'Unlock Bonus Slot 128': 128, 'Unlock Bonus Slot 129': 129, 'Unlock Bonus Slot 130': 130, 'Unlock Bonus Slot 131': 131, 'Unlock Bonus Slot 132': 132, 'Unlock Bonus Slot 133': 133, 'Unlock Bonus Slot 134': 134, 'Unlock Bonus Slot 135': 135, 'Unlock Bonus Slot 136': 136, 'Unlock Bonus Slot 137': 137, 'Unlock Bonus Slot 138': 138, 'Unlock Bonus Slot 139': 139, 'Unlock Bonus Slot 140': 140, 'Unlock Bonus Slot 141': 141, 'Unlock Bonus Slot 142': 142, 'Unlock Bonus Slot 143': 143, 'Unlock Bonus Slot 144': 144, 'Unlock Bonus Slot 145': 145, 'Unlock Bonus Slot 146': 146, 'Unlock Bonus Slot 147': 147, 'Unlock Bonus Slot 148': 148, 'Unlock Bonus Slot 149': 149, 'Unlock Bonus Slot 150': 150, 'Unlock Bonus Slot 151': 151, 'Unlock Bonus Slot 152': 152, 'Unlock Bonus Slot 153': 153, 'Unlock Bonus Slot 154': 154, 'Unlock Bonus Slot 155': 155, 'Unlock Bonus Slot 156': 156, 'Unlock Bonus Slot 157': 157, 'Unlock Bonus Slot 158': 158, 'Unlock Bonus Slot 159': 159, 'Unlock Bonus Slot 160': 160, 'Unlock Bonus Slot 161': 161, 'Unlock Bonus Slot 162': 162, 'Unlock Bonus Slot 163': 163, 'Unlock Bonus Slot 164': 164, 'Unlock Bonus Slot 165': 165, 'Unlock Bonus Slot 166': 166, 'Unlock Bonus Slot 167': 167, 'Unlock Bonus Slot 168': 168, 'Unlock Bonus Slot 169': 169, 'Unlock Bonus Slot 170': 170, 'Unlock Bonus Slot 171': 171, 'Unlock Bonus Slot 172': 172, 'Unlock Bonus Slot 173': 173, 'Unlock Bonus Slot 174': 174, 'Unlock Bonus Slot 175': 175, 'Unlock Bonus Slot 176': 176, 'Unlock Bonus Slot 177': 177, 'Unlock Bonus Slot 178': 178, 'Unlock Bonus Slot 179': 179, 'Unlock Bonus Slot 180': 180, 'Unlock Bonus Slot 181': 181, 'Unlock Bonus Slot 182': 182, 'Unlock Bonus Slot 183': 183, 'Unlock Bonus Slot 184': 184, 'Unlock Bonus Slot 185': 185, 'Unlock Bonus Slot 186': 186, 'Unlock Bonus Slot 187': 187, 'Unlock Bonus Slot 188': 188, 'Unlock Bonus Slot 189': 189, 'Unlock Bonus Slot 190': 190, 'Unlock Bonus Slot 191': 191, 'Unlock Bonus Slot 192': 192, 'Unlock Bonus Slot 193': 193, 'Unlock Bonus Slot 194': 194, 'Unlock Bonus Slot 195': 195, 'Unlock Bonus Slot 196': 196, 'Unlock Bonus Slot 197': 197, 'Unlock Bonus Slot 198': 198, 'Unlock Bonus Slot 199': 199, 'Unlock Bonus Slot 200': 200, 'Unlock Bonus Slot 201': 201, 'Unlock Bonus Slot 202': 202, 'Unlock Bonus Slot 203': 203, 'Unlock Bonus Slot 204': 204, 'Unlock Bonus Slot 205': 205, 'Unlock Bonus Slot 206': 206, 'Unlock Bonus Slot 207': 207, 'Unlock Bonus Slot 208': 208, 'Unlock Bonus Slot 209': 209, 'Unlock Bonus Slot 210': 210, 'Unlock Bonus Slot 211': 211, 'Unlock Bonus Slot 212': 212, 'Unlock Bonus Slot 213': 213, 'Unlock Bonus Slot 214': 214, 'Unlock Bonus Slot 215': 215, 'Unlock Bonus Slot 216': 216, 'Unlock Bonus Slot 217': 217, 'Unlock Bonus Slot 218': 218, 'Unlock Bonus Slot 219': 219, 'Unlock Bonus Slot 220': 220, 'Unlock Bonus Slot 221': 221, 'Unlock Bonus Slot 222': 222, 'Unlock Bonus Slot 223': 223, 'Unlock Bonus Slot 224': 224, 'Unlock Bonus Slot 225': 225, 'Unlock Bonus Slot 226': 226, 'Unlock Bonus Slot 227': 227, 'Unlock Bonus Slot 228': 228, 'Unlock Bonus Slot 229': 229, 'Unlock Bonus Slot 230': 230, 'Unlock Bonus Slot 231': 231, 'Unlock Bonus Slot 232': 232, 'Unlock Bonus Slot 233': 233, 'Unlock Bonus Slot 234': 234, 'Unlock Bonus Slot 235': 235, 'Unlock Bonus Slot 236': 236, 'Unlock Bonus Slot 237': 237, 'Unlock Bonus Slot 238': 238, 'Unlock Bonus Slot 239': 239, 'Unlock Bonus Slot 240': 240, 'Unlock Bonus Slot 241': 241, 'Unlock Bonus Slot 242': 242, 'Unlock Bonus Slot 243': 243, 'Unlock Bonus Slot 244': 244, 'Unlock Bonus Slot 245': 245, 'Unlock Bonus Slot 246': 246, 'Unlock Bonus Slot 247': 247, 'Unlock Bonus Slot 248': 248, 'Unlock Bonus Slot 249': 249, 'Unlock Bonus Slot 250': 250, 'Unlock Bonus Slot 251': 251, 'Unlock Bonus Slot 252': 252, 'Unlock Bonus Slot 253': 253, 'Unlock Bonus Slot 254': 254, 'Unlock Bonus Slot 255': 255, 'Unlock Bonus Slot 256': 256, 'Unlock Bonus Slot 257': 257, 'Unlock Bonus Slot 258': 258, 'Unlock Bonus Slot 259': 259, 'Unlock Bonus Slot 260': 260, 'Unlock Bonus Slot 261': 261, 'Unlock Bonus Slot 262': 262, 'Unlock Bonus Slot 263': 263, 'Unlock Bonus Slot 264': 264, 'Unlock Bonus Slot 265': 265, 'Unlock Bonus Slot 266': 266, 'Unlock Bonus Slot 267': 267, 'Unlock Bonus Slot 268': 268, 'Unlock Bonus Slot 269': 269, 'Unlock Bonus Slot 270': 270, 'Unlock Bonus Slot 271': 271, 'Unlock Bonus Slot 272': 272, 'Unlock Bonus Slot 273': 273, 'Unlock Bonus Slot 274': 274, 'Unlock Bonus Slot 275': 275, 'Unlock Bonus Slot 276': 276, 'Unlock Bonus Slot 277': 277, 'Unlock Bonus Slot 278': 278, 'Unlock Bonus Slot 279': 279, 'Unlock Bonus Slot 280': 280, 'Unlock Bonus Slot 281': 281, 'Unlock Bonus Slot 282': 282, 'Unlock Bonus Slot 283': 283, 'Unlock Bonus Slot 284': 284, 'Unlock Bonus Slot 285': 285, 'Unlock Bonus Slot 286': 286, 'Unlock Bonus Slot 287': 287, 'Unlock Bonus Slot 288': 288, 'Unlock Bonus Slot 289': 289, 'Unlock Bonus Slot 290': 290, 'Unlock Bonus Slot 291': 291, 'Unlock Bonus Slot 292': 292, 'Unlock Bonus Slot 293': 293, 'Unlock Bonus Slot 294': 294, 'Unlock Bonus Slot 295': 295, 'Unlock Bonus Slot 296': 296, 'Unlock Bonus Slot 297': 297, 'Unlock Bonus Slot 298': 298, 'Unlock Bonus Slot 299': 299, 'Unlock Bonus Slot 300': 300, 'Unlock Bonus Slot 301': 301, 'Unlock Bonus Slot 302': 302, 'Unlock Bonus Slot 303': 303, 'Unlock Bonus Slot 304': 304, 'Unlock Bonus Slot 305': 305, 'Unlock Bonus Slot 306': 306, 'Unlock Bonus Slot 307': 307, 'Unlock Bonus Slot 308': 308, 'Unlock Bonus Slot 309': 309, 'Unlock Bonus Slot 310': 310, 'Unlock Bonus Slot 311': 311, 'Unlock Bonus Slot 312': 312, 'Unlock Bonus Slot 313': 313, 'Unlock Bonus Slot 314': 314, 'Unlock Bonus Slot 315': 315, 'Unlock Bonus Slot 316': 316, 'Unlock Bonus Slot 317': 317, 'Unlock Bonus Slot 318': 318, 'Unlock Bonus Slot 319': 319, 'Unlock Bonus Slot 320': 320, 'Unlock Bonus Slot 321': 321, 'Unlock Bonus Slot 322': 322, 'Unlock Bonus Slot 323': 323, 'Unlock Bonus Slot 324': 324, 'Unlock Bonus Slot 325': 325, 'Unlock Bonus Slot 326': 326, 'Unlock Bonus Slot 327': 327, 'Unlock Bonus Slot 328': 328, 'Unlock Bonus Slot 329': 329, 'Unlock Bonus Slot 330': 330, 'Unlock Bonus Slot 331': 331, 'Unlock Bonus Slot 332': 332, 'Unlock Bonus Slot 333': 333, 'Unlock Bonus Slot 334': 334, 'Unlock Bonus Slot 335': 335, 'Unlock Bonus Slot 336': 336, 'Unlock Bonus Slot 337': 337, 'Unlock Bonus Slot 338': 338, 'Unlock Bonus Slot 339': 339, 'Unlock Bonus Slot 340': 340, 'Unlock Bonus Slot 341': 341, 'Unlock Bonus Slot 342': 342, 'Unlock Bonus Slot 343': 343, 'Unlock Bonus Slot 344': 344, 'Unlock Bonus Slot 345': 345, 'Unlock Bonus Slot 346': 346, 'Unlock Bonus Slot 347': 347, 'Unlock Bonus Slot 348': 348, 'Unlock Bonus Slot 349': 349, 'Unlock Bonus Slot 350': 350, 'Unlock Bonus Slot 351': 351, 'Unlock Bonus Slot 352': 352, 'Unlock Bonus Slot 353': 353, 'Unlock Bonus Slot 354': 354, 'Unlock Bonus Slot 355': 355, 'Unlock Bonus Slot 356': 356, 'Unlock Bonus Slot 357': 357, 'Unlock Bonus Slot 358': 358, 'Unlock Bonus Slot 359': 359, 'Unlock Bonus Slot 360': 360, 'Unlock Bonus Slot 361': 361, 'Unlock Bonus Slot 362': 362, 'Unlock Bonus Slot 363': 363, 'Unlock Bonus Slot 364': 364, 'Unlock Bonus Slot 365': 365, 'Unlock Bonus Slot 366': 366, 'Unlock Bonus Slot 367': 367, 'Unlock Bonus Slot 368': 368, 'Unlock Bonus Slot 369': 369, 'Unlock Bonus Slot 370': 370, 'Unlock Bonus Slot 371': 371, 'Unlock Bonus Slot 372': 372, 'Unlock Bonus Slot 373': 373, 'Unlock Bonus Slot 374': 374, 'Unlock Bonus Slot 375': 375, 'Unlock Bonus Slot 376': 376, 'Unlock Bonus Slot 377': 377, 'Unlock Bonus Slot 378': 378, 'Unlock Bonus Slot 379': 379, 'Unlock Bonus Slot 380': 380, 'Unlock Bonus Slot 381': 381, 'Unlock Bonus Slot 382': 382, 'Unlock Bonus Slot 383': 383, 'Unlock Bonus Slot 384': 384, 'Unlock Bonus Slot 385': 385, 'Unlock Bonus Slot 386': 386, 'Unlock Bonus Slot 387': 387, 'Unlock Bonus Slot 388': 388, 'Unlock Bonus Slot 389': 389, 'Unlock Bonus Slot 390': 390, 'Unlock Bonus Slot 391': 391, 'Unlock Bonus Slot 392': 392, 'Unlock Bonus Slot 393': 393, 'Unlock Bonus Slot 394': 394, 'Unlock Bonus Slot 395': 395, 'Unlock Bonus Slot 396': 396, 'Unlock Bonus Slot 397': 397, 'Unlock Bonus Slot 398': 398, 'Unlock Bonus Slot 399': 399, 'Unlock Bonus Slot 400': 400, 'Unlock Bonus Slot 401': 401, 'Unlock Bonus Slot 402': 402, 'Unlock Bonus Slot 403': 403, 'Unlock Bonus Slot 404': 404, 'Unlock Bonus Slot 405': 405, 'Unlock Bonus Slot 406': 406, 'Unlock Bonus Slot 407': 407, 'Unlock Bonus Slot 408': 408, 'Unlock Bonus Slot 409': 409, 'Unlock Bonus Slot 410': 410, 'Unlock Bonus Slot 411': 411, 'Unlock Bonus Slot 412': 412, 'Unlock Bonus Slot 413': 413, 'Unlock Bonus Slot 414': 414, 'Unlock Bonus Slot 415': 415, 'Unlock Bonus Slot 416': 416, 'Unlock Bonus Slot 417': 417, 'Unlock Bonus Slot 418': 418, 'Unlock Bonus Slot 419': 419, 'Unlock Bonus Slot 420': 420, 'Unlock Bonus Slot 421': 421, 'Unlock Bonus Slot 422': 422, 'Unlock Bonus Slot 423': 423, 'Unlock Bonus Slot 424': 424, 'Unlock Bonus Slot 425': 425, 'Unlock Bonus Slot 426': 426, 'Unlock Bonus Slot 427': 427, 'Unlock Bonus Slot 428': 428, 'Unlock Bonus Slot 429': 429, 'Unlock Bonus Slot 430': 430, 'Unlock Bonus Slot 431': 431, 'Unlock Bonus Slot 432': 432, 'Unlock Bonus Slot 433': 433, 'Unlock Bonus Slot 434': 434, 'Unlock Bonus Slot 435': 435, 'Unlock Bonus Slot 436': 436, 'Unlock Bonus Slot 437': 437, 'Unlock Bonus Slot 438': 438, 'Unlock Bonus Slot 439': 439, 'Unlock Bonus Slot 440': 440, 'Unlock Bonus Slot 441': 441, 'Unlock Bonus Slot 442': 442, 'Unlock Bonus Slot 443': 443, 'Unlock Bonus Slot 444': 444, 'Unlock Bonus Slot 445': 445, 'Unlock Bonus Slot 446': 446, 'Unlock Bonus Slot 447': 447, 'Unlock Bonus Slot 448': 448, 'Unlock Bonus Slot 449': 449, 'Unlock Bonus Slot 450': 450, 'Unlock Bonus Slot 451': 451, 'Unlock Bonus Slot 452': 452, 'Unlock Bonus Slot 453': 453, 'Unlock Bonus Slot 454': 454, 'Unlock Bonus Slot 455': 455, 'Unlock Bonus Slot 456': 456, 'Unlock Bonus Slot 457': 457, 'Unlock Bonus Slot 458': 458, 'Unlock Bonus Slot 459': 459, 'Unlock Bonus Slot 460': 460, 'Unlock Bonus Slot 461': 461, 'Unlock Bonus Slot 462': 462, 'Unlock Bonus Slot 463': 463, 'Unlock Bonus Slot 464': 464, 'Unlock Bonus Slot 465': 465, 'Unlock Bonus Slot 466': 466, 'Unlock Bonus Slot 467': 467, 'Unlock Bonus Slot 468': 468, 'Unlock Bonus Slot 469': 469, 'Unlock Bonus Slot 470': 470, 'Unlock Bonus Slot 471': 471, 'Unlock Bonus Slot 472': 472, 'Unlock Bonus Slot 473': 473, 'Unlock Bonus Slot 474': 474, 'Unlock Bonus Slot 475': 475, 'Unlock Bonus Slot 476': 476, 'Unlock Bonus Slot 477': 477, 'Unlock Bonus Slot 478': 478, 'Unlock Bonus Slot 479': 479, 'Unlock Bonus Slot 480': 480, 'Unlock Bonus Slot 481': 481, 'Unlock Bonus Slot 482': 482, 'Unlock Bonus Slot 483': 483, 'Unlock Bonus Slot 484': 484, 'Unlock Bonus Slot 485': 485, 'Unlock Bonus Slot 486': 486, 'Unlock Bonus Slot 487': 487, 'Unlock Bonus Slot 488': 488, 'Unlock Bonus Slot 489': 489, 'Unlock Bonus Slot 490': 490, 'Unlock Bonus Slot 491': 491, 'Unlock Bonus Slot 492': 492, 'Unlock Bonus Slot 493': 493, 'Unlock Bonus Slot 494': 494, 'Unlock Bonus Slot 495': 495, 'Unlock Bonus Slot 496': 496, 'Unlock Bonus Slot 497': 497, 'Unlock Bonus Slot 498': 498, 'Unlock Bonus Slot 499': 499, 'Unlock Bonus Slot 500': 500, 'Unlock Bonus Slot 501': 501, 'Unlock Bonus Slot 502': 502, 'Unlock Bonus Slot 503': 503, 'Unlock Bonus Slot 504': 504, 'Unlock Bonus Slot 505': 505, 'Unlock Bonus Slot 506': 506, 'Unlock Bonus Slot 507': 507, 'Unlock Bonus Slot 508': 508, 'Unlock Bonus Slot 509': 509, 'Unlock Bonus Slot 510': 510, 'Unlock Bonus Slot 511': 511, 'Unlock Bonus Slot 512': 512, 'Unlock Bonus Slot 513': 513, 'Unlock Bonus Slot 514': 514, 'Unlock Bonus Slot 515': 515, 'Unlock Bonus Slot 516': 516, 'Unlock Bonus Slot 517': 517, 'Unlock Bonus Slot 518': 518, 'Unlock Bonus Slot 519': 519, 'Unlock Bonus Slot 520': 520, 'Unlock Bonus Slot 521': 521, 'Unlock Bonus Slot 522': 522, 'Unlock Bonus Slot 523': 523, 'Unlock Bonus Slot 524': 524, 'Unlock Bonus Slot 525': 525, 'Unlock Bonus Slot 526': 526, 'Unlock Bonus Slot 527': 527, 'Unlock Bonus Slot 528': 528, 'Unlock Bonus Slot 529': 529, 'Unlock Bonus Slot 530': 530, 'Unlock Bonus Slot 531': 531, 'Unlock Bonus Slot 532': 532, 'Unlock Bonus Slot 533': 533, 'Unlock Bonus Slot 534': 534, 'Unlock Bonus Slot 535': 535, 'Unlock Bonus Slot 536': 536, 'Unlock Bonus Slot 537': 537, 'Unlock Bonus Slot 538': 538, 'Unlock Bonus Slot 539': 539, 'Unlock Bonus Slot 540': 540, 'Unlock Bonus Slot 541': 541, 'Unlock Bonus Slot 542': 542, 'Unlock Bonus Slot 543': 543, 'Unlock Bonus Slot 544': 544, 'Unlock Bonus Slot 545': 545, 'Unlock Bonus Slot 546': 546, 'Unlock Bonus Slot 547': 547, 'Unlock Bonus Slot 548': 548, 'Unlock Bonus Slot 549': 549, 'Unlock Bonus Slot 550': 550, 'Unlock Bonus Slot 551': 551, 'Unlock Bonus Slot 552': 552, 'Unlock Bonus Slot 553': 553, 'Unlock Bonus Slot 554': 554, 'Unlock Bonus Slot 555': 555, 'Unlock Bonus Slot 556': 556, 'Unlock Bonus Slot 557': 557, 'Unlock Bonus Slot 558': 558, 'Unlock Bonus Slot 559': 559, 'Unlock Bonus Slot 560': 560, 'Unlock Bonus Slot 561': 561, 'Unlock Bonus Slot 562': 562, 'Unlock Bonus Slot 563': 563, 'Unlock Bonus Slot 564': 564, 'Unlock Bonus Slot 565': 565, 'Unlock Bonus Slot 566': 566, 'Unlock Bonus Slot 567': 567, 'Unlock Bonus Slot 568': 568, 'Unlock Bonus Slot 569': 569, 'Unlock Bonus Slot 570': 570, 'Unlock Bonus Slot 571': 571, 'Unlock Bonus Slot 572': 572, 'Unlock Bonus Slot 573': 573, 'Unlock Bonus Slot 574': 574, 'Unlock Bonus Slot 575': 575, 'Unlock Bonus Slot 576': 576, 'Unlock Bonus Slot 577': 577, 'Unlock Bonus Slot 578': 578, 'Unlock Bonus Slot 579': 579, 'Unlock Bonus Slot 580': 580, 'Unlock Bonus Slot 581': 581, 'Unlock Bonus Slot 582': 582, 'Unlock Bonus Slot 583': 583, 'Unlock Bonus Slot 584': 584, 'Unlock Bonus Slot 585': 585, 'Unlock Bonus Slot 586': 586, 'Unlock Bonus Slot 587': 587, 'Unlock Bonus Slot 588': 588, 'Unlock Bonus Slot 589': 589, 'Unlock Bonus Slot 590': 590, 'Unlock Bonus Slot 591': 591, 'Unlock Bonus Slot 592': 592, 'Unlock Bonus Slot 593': 593, 'Unlock Bonus Slot 594': 594, 'Unlock Bonus Slot 595': 595, 'Unlock Bonus Slot 596': 596, 'Unlock Bonus Slot 597': 597, 'Unlock Bonus Slot 598': 598, 'Unlock Bonus Slot 599': 599, 'Unlock Bonus Slot 600': 600, 'Unlock Bonus Slot 601': 601, 'Unlock Bonus Slot 602': 602, 'Unlock Bonus Slot 603': 603, 'Unlock Bonus Slot 604': 604, 'Unlock Bonus Slot 605': 605, 'Unlock Bonus Slot 606': 606, 'Unlock Bonus Slot 607': 607, 'Unlock Bonus Slot 608': 608, 'Unlock Bonus Slot 609': 609, 'Unlock Bonus Slot 610': 610, 'Unlock Bonus Slot 611': 611, 'Unlock Bonus Slot 612': 612, 'Unlock Bonus Slot 613': 613, 'Unlock Bonus Slot 614': 614, 'Unlock Bonus Slot 615': 615, 'Unlock Bonus Slot 616': 616, 'Unlock Bonus Slot 617': 617, 'Unlock Bonus Slot 618': 618, 'Unlock Bonus Slot 619': 619, 'Unlock Bonus Slot 620': 620, 'Unlock Bonus Slot 621': 621, 'Unlock Bonus Slot 622': 622, 'Unlock Bonus Slot 623': 623, 'Unlock Bonus Slot 624': 624, 'Unlock Bonus Slot 625': 625, 'Unlock Bonus Slot 626': 626, 'Unlock Bonus Slot 627': 627, 'Unlock Bonus Slot 628': 628, 'Unlock Bonus Slot 629': 629, 'Unlock Bonus Slot 630': 630, 'Unlock Bonus Slot 631': 631, 'Unlock Bonus Slot 632': 632, 'Unlock Bonus Slot 633': 633, 'Unlock Bonus Slot 634': 634, 'Unlock Bonus Slot 635': 635, 'Unlock Bonus Slot 636': 636, 'Unlock Bonus Slot 637': 637, 'Unlock Bonus Slot 638': 638, 'Unlock Bonus Slot 639': 639, 'Unlock Bonus Slot 640': 640, 'Unlock Bonus Slot 641': 641, 'Unlock Bonus Slot 642': 642, 'Unlock Bonus Slot 643': 643, 'Unlock Bonus Slot 644': 644, 'Unlock Bonus Slot 645': 645, 'Unlock Bonus Slot 646': 646, 'Unlock Bonus Slot 647': 647, 'Unlock Bonus Slot 648': 648, 'Unlock Bonus Slot 649': 649, 'Unlock Bonus Slot 650': 650, 'Unlock Bonus Slot 651': 651, 'Unlock Bonus Slot 652': 652, 'Unlock Bonus Slot 653': 653, 'Unlock Bonus Slot 654': 654, 'Unlock Bonus Slot 655': 655, 'Unlock Bonus Slot 656': 656, 'Unlock Bonus Slot 657': 657, 'Unlock Bonus Slot 658': 658, 'Unlock Bonus Slot 659': 659, 'Unlock Bonus Slot 660': 660, 'Unlock Bonus Slot 661': 661, 'Unlock Bonus Slot 662': 662, 'Unlock Bonus Slot 663': 663, 'Unlock Bonus Slot 664': 664, 'Unlock Bonus Slot 665': 665, 'Unlock Bonus Slot 666': 666, 'Unlock Bonus Slot 667': 667, 'Unlock Bonus Slot 668': 668, 'Unlock Bonus Slot 669': 669, 'Unlock Bonus Slot 670': 670, 'Unlock Bonus Slot 671': 671, 'Unlock Bonus Slot 672': 672, 'Unlock Bonus Slot 673': 673, 'Unlock Bonus Slot 674': 674, 'Unlock Bonus Slot 675': 675, 'Unlock Bonus Slot 676': 676, 'Unlock Bonus Slot 677': 677, 'Unlock Bonus Slot 678': 678, 'Unlock Bonus Slot 679': 679, 'Unlock Bonus Slot 680': 680, 'Unlock Bonus Slot 681': 681, 'Unlock Bonus Slot 682': 682, 'Unlock Bonus Slot 683': 683, 'Unlock Bonus Slot 684': 684, 'Unlock Bonus Slot 685': 685, 'Unlock Bonus Slot 686': 686, 'Unlock Bonus Slot 687': 687, 'Unlock Bonus Slot 688': 688, 'Unlock Bonus Slot 689': 689, 'Unlock Bonus Slot 690': 690, 'Unlock Bonus Slot 691': 691, 'Unlock Bonus Slot 692': 692, 'Unlock Bonus Slot 693': 693, 'Unlock Bonus Slot 694': 694, 'Unlock Bonus Slot 695': 695, 'Unlock Bonus Slot 696': 696, 'Unlock Bonus Slot 697': 697, 'Unlock Bonus Slot 698': 698, 'Unlock Bonus Slot 699': 699, 'Unlock Bonus Slot 700': 700, 'Unlock Bonus Slot 701': 701, 'Unlock Bonus Slot 702': 702, 'Unlock Bonus Slot 703': 703, 'Unlock Bonus Slot 704': 704, 'Unlock Bonus Slot 705': 705, 'Unlock Bonus Slot 706': 706, 'Unlock Bonus Slot 707': 707, 'Unlock Bonus Slot 708': 708, 'Unlock Bonus Slot 709': 709, 'Unlock Bonus Slot 710': 710, 'Unlock Bonus Slot 711': 711, 'Unlock Bonus Slot 712': 712, 'Unlock Bonus Slot 713': 713, 'Unlock Bonus Slot 714': 714, 'Unlock Bonus Slot 715': 715, 'Unlock Bonus Slot 716': 716, 'Unlock Bonus Slot 717': 717, 'Unlock Bonus Slot 718': 718, 'Unlock Bonus Slot 719': 719, 'Unlock Bonus Slot 720': 720, 'Unlock Bonus Slot 721': 721, 'Unlock Bonus Slot 722': 722, 'Unlock Bonus Slot 723': 723, 'Unlock Bonus Slot 724': 724, 'Unlock Bonus Slot 725': 725, 'Unlock Bonus Slot 726': 726, 'Unlock Bonus Slot 727': 727, 'Unlock Bonus Slot 728': 728, 'Unlock Bonus Slot 729': 729, 'Unlock Bonus Slot 730': 730, 'Unlock Bonus Slot 731': 731, 'Unlock Bonus Slot 732': 732, 'Unlock Bonus Slot 733': 733, 'Unlock Bonus Slot 734': 734, 'Unlock Bonus Slot 735': 735, 'Unlock Bonus Slot 736': 736, 'Unlock Bonus Slot 737': 737, 'Unlock Bonus Slot 738': 738, 'Unlock Bonus Slot 739': 739, 'Unlock Bonus Slot 740': 740, 'Unlock Bonus Slot 741': 741, 'Unlock Bonus Slot 742': 742, 'Unlock Bonus Slot 743': 743, 'Unlock Bonus Slot 744': 744, 'Unlock Bonus Slot 745': 745, 'Unlock Bonus Slot 746': 746, 'Unlock Bonus Slot 747': 747, 'Unlock Bonus Slot 748': 748, 'Unlock Bonus Slot 749': 749, 'Unlock Bonus Slot 750': 750, 'Unlock Bonus Slot 751': 751, 'Unlock Bonus Slot 752': 752, 'Unlock Bonus Slot 753': 753, 'Unlock Bonus Slot 754': 754, 'Unlock Bonus Slot 755': 755, 'Unlock Bonus Slot 756': 756, 'Unlock Bonus Slot 757': 757, 'Unlock Bonus Slot 758': 758, 'Unlock Bonus Slot 759': 759, 'Unlock Bonus Slot 760': 760, 'Unlock Bonus Slot 761': 761, 'Unlock Bonus Slot 762': 762, 'Unlock Bonus Slot 763': 763, 'Unlock Bonus Slot 764': 764, 'Unlock Bonus Slot 765': 765, 'Unlock Bonus Slot 766': 766, 'Unlock Bonus Slot 767': 767, 'Unlock Bonus Slot 768': 768, 'Unlock Bonus Slot 769': 769, 'Unlock Bonus Slot 770': 770, 'Unlock Bonus Slot 771': 771, 'Unlock Bonus Slot 772': 772, 'Unlock Bonus Slot 773': 773, 'Unlock Bonus Slot 774': 774, 'Unlock Bonus Slot 775': 775, 'Unlock Bonus Slot 776': 776, 'Unlock Bonus Slot 777': 777, 'Unlock Bonus Slot 778': 778, 'Unlock Bonus Slot 779': 779, 'Unlock Bonus Slot 780': 780, 'Unlock Bonus Slot 781': 781, 'Unlock Bonus Slot 782': 782, 'Unlock Bonus Slot 783': 783, 'Unlock Bonus Slot 784': 784, 'Unlock Bonus Slot 785': 785, 'Unlock Bonus Slot 786': 786, 'Unlock Bonus Slot 787': 787, 'Unlock Bonus Slot 788': 788, 'Unlock Bonus Slot 789': 789, 'Unlock Bonus Slot 790': 790, 'Unlock Bonus Slot 791': 791, 'Unlock Bonus Slot 792': 792, 'Unlock Bonus Slot 793': 793, 'Unlock Bonus Slot 794': 794, 'Unlock Bonus Slot 795': 795, 'Unlock Bonus Slot 796': 796, 'Unlock Bonus Slot 797': 797, 'Unlock Bonus Slot 798': 798, 'Unlock Bonus Slot 799': 799, 'Unlock Bonus Slot 800': 800, 'Unlock Bonus Slot 801': 801, 'Unlock Bonus Slot 802': 802, 'Unlock Bonus Slot 803': 803, 'Unlock Bonus Slot 804': 804, 'Unlock Bonus Slot 805': 805, 'Unlock Bonus Slot 806': 806, 'Unlock Bonus Slot 807': 807, 'Unlock Bonus Slot 808': 808, 'Unlock Bonus Slot 809': 809, 'Unlock Bonus Slot 810': 810, 'Unlock Bonus Slot 811': 811, 'Unlock Bonus Slot 812': 812, 'Unlock Bonus Slot 813': 813, 'Unlock Bonus Slot 814': 814, 'Unlock Bonus Slot 815': 815, 'Unlock Bonus Slot 816': 816, 'Unlock Bonus Slot 817': 817, 'Unlock Bonus Slot 818': 818, 'Unlock Bonus Slot 819': 819, 'Unlock Bonus Slot 820': 820, 'Unlock Bonus Slot 821': 821, 'Unlock Bonus Slot 822': 822, 'Unlock Bonus Slot 823': 823, 'Unlock Bonus Slot 824': 824, 'Unlock Bonus Slot 825': 825, 'Unlock Bonus Slot 826': 826, 'Unlock Bonus Slot 827': 827, 'Unlock Bonus Slot 828': 828, 'Unlock Bonus Slot 829': 829, 'Unlock Bonus Slot 830': 830, 'Unlock Bonus Slot 831': 831, 'Unlock Bonus Slot 832': 832, 'Unlock Bonus Slot 833': 833, 'Unlock Bonus Slot 834': 834, 'Unlock Bonus Slot 835': 835, 'Unlock Bonus Slot 836': 836, 'Unlock Bonus Slot 837': 837, 'Unlock Bonus Slot 838': 838, 'Unlock Bonus Slot 839': 839, 'Unlock Bonus Slot 840': 840, 'Unlock Bonus Slot 841': 841, 'Unlock Bonus Slot 842': 842, 'Unlock Bonus Slot 843': 843, 'Unlock Bonus Slot 844': 844, 'Unlock Bonus Slot 845': 845, 'Unlock Bonus Slot 846': 846, 'Unlock Bonus Slot 847': 847, 'Unlock Bonus Slot 848': 848, 'Unlock Bonus Slot 849': 849, 'Unlock Bonus Slot 850': 850, 'Unlock Bonus Slot 851': 851, 'Unlock Bonus Slot 852': 852, 'Unlock Bonus Slot 853': 853, 'Unlock Bonus Slot 854': 854, 'Unlock Bonus Slot 855': 855, 'Unlock Bonus Slot 856': 856, 'Unlock Bonus Slot 857': 857, 'Unlock Bonus Slot 858': 858, 'Unlock Bonus Slot 859': 859, 'Unlock Bonus Slot 860': 860, 'Unlock Bonus Slot 861': 861, 'Unlock Bonus Slot 862': 862, 'Unlock Bonus Slot 863': 863, 'Unlock Bonus Slot 864': 864, 'Unlock Bonus Slot 865': 865, 'Unlock Bonus Slot 866': 866, 'Unlock Bonus Slot 867': 867, 'Unlock Bonus Slot 868': 868, 'Unlock Bonus Slot 869': 869, 'Unlock Bonus Slot 870': 870, 'Unlock Bonus Slot 871': 871, 'Unlock Bonus Slot 872': 872, 'Unlock Bonus Slot 873': 873, 'Unlock Bonus Slot 874': 874, 'Unlock Bonus Slot 875': 875, 'Unlock Bonus Slot 876': 876, 'Unlock Bonus Slot 877': 877, 'Unlock Bonus Slot 878': 878, 'Unlock Bonus Slot 879': 879, 'Unlock Bonus Slot 880': 880, 'Unlock Bonus Slot 881': 881, 'Unlock Bonus Slot 882': 882, 'Unlock Bonus Slot 883': 883, 'Unlock Bonus Slot 884': 884, 'Unlock Bonus Slot 885': 885, 'Unlock Bonus Slot 886': 886, 'Unlock Bonus Slot 887': 887, 'Unlock Bonus Slot 888': 888, 'Unlock Bonus Slot 889': 889, 'Unlock Bonus Slot 890': 890, 'Unlock Bonus Slot 891': 891, 'Unlock Bonus Slot 892': 892, 'Unlock Bonus Slot 893': 893, 'Unlock Bonus Slot 894': 894, 'Unlock Bonus Slot 895': 895, 'Unlock Bonus Slot 896': 896, 'Unlock Bonus Slot 897': 897, 'Unlock Bonus Slot 898': 898, 'Unlock Bonus Slot 899': 899, 'Unlock Bonus Slot 900': 900, 'Unlock Bonus Slot 901': 901, 'Unlock Bonus Slot 902': 902, 'Unlock Bonus Slot 903': 903, 'Unlock Bonus Slot 904': 904, 'Unlock Bonus Slot 905': 905, 'Unlock Bonus Slot 906': 906, 'Unlock Bonus Slot 907': 907, 'Unlock Bonus Slot 908': 908, 'Unlock Bonus Slot 909': 909, 'Unlock Bonus Slot 910': 910, 'Unlock Bonus Slot 911': 911, 'Unlock Bonus Slot 912': 912, 'Unlock Bonus Slot 913': 913, 'Unlock Bonus Slot 914': 914, 'Unlock Bonus Slot 915': 915, 'Unlock Bonus Slot 916': 916, 'Unlock Bonus Slot 917': 917, 'Unlock Bonus Slot 918': 918, 'Unlock Bonus Slot 919': 919, 'Unlock Bonus Slot 920': 920, 'Unlock Bonus Slot 921': 921, 'Unlock Bonus Slot 922': 922, 'Unlock Bonus Slot 923': 923, 'Unlock Bonus Slot 924': 924, 'Unlock Bonus Slot 925': 925, 'Unlock Bonus Slot 926': 926, 'Unlock Bonus Slot 927': 927, 'Unlock Bonus Slot 928': 928, 'Unlock Bonus Slot 929': 929, 'Unlock Bonus Slot 930': 930, 'Unlock Bonus Slot 931': 931, 'Unlock Bonus Slot 932': 932, 'Unlock Bonus Slot 933': 933, 'Unlock Bonus Slot 934': 934, 'Unlock Bonus Slot 935': 935, 'Unlock Bonus Slot 936': 936, 'Unlock Bonus Slot 937': 937, 'Unlock Bonus Slot 938': 938, 'Unlock Bonus Slot 939': 939, 'Unlock Bonus Slot 940': 940, 'Unlock Bonus Slot 941': 941, 'Unlock Bonus Slot 942': 942, 'Unlock Bonus Slot 943': 943, 'Unlock Bonus Slot 944': 944, 'Unlock Bonus Slot 945': 945, 'Unlock Bonus Slot 946': 946, 'Unlock Bonus Slot 947': 947, 'Unlock Bonus Slot 948': 948, 'Unlock Bonus Slot 949': 949, 'Unlock Bonus Slot 950': 950, 'Unlock Bonus Slot 951': 951, 'Unlock Bonus Slot 952': 952, 'Unlock Bonus Slot 953': 953, 'Unlock Bonus Slot 954': 954, 'Unlock Bonus Slot 955': 955, 'Unlock Bonus Slot 956': 956, 'Unlock Bonus Slot 957': 957, 'Unlock Bonus Slot 958': 958, 'Unlock Bonus Slot 959': 959, 'Unlock Bonus Slot 960': 960, 'Unlock Bonus Slot 961': 961, 'Unlock Bonus Slot 962': 962, 'Unlock Bonus Slot 963': 963, 'Unlock Bonus Slot 964': 964, 'Unlock Bonus Slot 965': 965, 'Unlock Bonus Slot 966': 966, 'Unlock Bonus Slot 967': 967, 'Unlock Bonus Slot 968': 968, 'Unlock Bonus Slot 969': 969, 'Unlock Bonus Slot 970': 970, 'Unlock Bonus Slot 971': 971, 'Unlock Bonus Slot 972': 972, 'Unlock Bonus Slot 973': 973, 'Unlock Bonus Slot 974': 974, 'Unlock Bonus Slot 975': 975, 'Unlock Bonus Slot 976': 976, 'Unlock Bonus Slot 977': 977, 'Unlock Bonus Slot 978': 978, 'Unlock Bonus Slot 979': 979, 'Unlock Bonus Slot 980': 980, 'Unlock Bonus Slot 981': 981, 'Unlock Bonus Slot 982': 982, 'Unlock Bonus Slot 983': 983, 'Unlock Bonus Slot 984': 984, 'Unlock Bonus Slot 985': 985, 'Unlock Bonus Slot 986': 986, 'Unlock Bonus Slot 987': 987, 'Unlock Bonus Slot 988': 988, 'Unlock Bonus Slot 989': 989, 'Unlock Bonus Slot 990': 990, 'Unlock Bonus Slot 991': 991, 'Unlock Bonus Slot 992': 992, 'Unlock Bonus Slot 993': 993, 'Unlock Bonus Slot 994': 994, 'Unlock Bonus Slot 995': 995, 'Unlock Bonus Slot 996': 996, 'Unlock Bonus Slot 997': 997, 'Unlock Bonus Slot 998': 998, 'Unlock Bonus Slot 999': 999, 'Unlock Bonus Slot 1000': 1000}
+
+test/general/test_items.py:65: AssertionError</failure></testcase><testcase classname="test.general.test_items.TestBase" name="test_itempool_not_modified" time="0.046"><failure message="RuntimeError: [Tester1] No sphere 1 remaining in the multiworld. To fix this, either:&#10;* Set a slot as unlocked in slots_to_lock, &#10;* Set random_unlocked_slots to 1 or higher,&#10;* Set free_starting_items to true, or &#10;* Set free unlocked world items to 1 or higher.&#10;Exception in &lt;bound method SlotLockWorld.create_items of &lt;worlds.slotlock.SlotLockWorld object at 0x7afe438a3070&gt;&gt; for player 1, named Tester1.">self = &lt;test.general.test_items.TestBase testMethod=test_itempool_not_modified&gt;
+
+    def test_itempool_not_modified(self):
+        """Test that worlds don't modify the itempool after `create_items`"""
+        gen_steps = ("generate_early", "create_regions", "create_items")
+        additional_steps = ("set_rules", "connect_entrances", "generate_basic", "pre_fill")
+        excluded_games = ("SMZ3",)
+        worlds_to_test = {game: world
+                          for game, world in AutoWorldRegister.testable_worlds.items() if game not in excluded_games}
+        for game_name, world_type in worlds_to_test.items():
+            with self.subTest("Game", game=game_name):
+&gt;               multiworld = setup_solo_multiworld(world_type, gen_steps)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test/general/test_items.py:146: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/general/__init__.py:31: in setup_solo_multiworld
+    return setup_multiworld(world_type, steps, seed)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/general/__init__.py:68: in setup_multiworld
+    call_all(multiworld, step)
+worlds/AutoWorld.py:207: in call_all
+    call_single(multiworld, method_name, player, *args)
+worlds/AutoWorld.py:193: in call_single
+    raise e
+worlds/AutoWorld.py:186: in call_single
+    ret = _timed_call(method, *args, multiworld=multiworld, player=player)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/AutoWorld.py:171: in _timed_call
+    ret = method(*args)
+          ^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;worlds.slotlock.SlotLockWorld object at 0x7afe438a3070&gt;
+
+    def create_items(self) -&gt; None:
+        if hasattr(self.multiworld, "generation_is_fake"):
+            # UT has no way to get the unlock items so just skip locking altogether
+            return
+    
+        if self.options.slots_whitelist.value:
+            slots_to_lock = [slot for slot in self.options.slots_to_lock.value if any(slot == world.player_name for world in self.multiworld.worlds.values())]
+        else:
+            slots_to_lock = [slot.player_name for slot in self.multiworld.worlds.values() if slot.player_name not in self.options.slots_to_lock.value and slot.player_name != self.player_name]
+        slots_to_lock = [slot for slot in slots_to_lock if slot in self.multiworld.world_name_lookup and self.multiworld.player_types[self.multiworld.world_name_lookup[slot]] == SlotType.player]
+        slots_to_lock = sorted(slots_to_lock)
+        if self.options.random_unlocked_slots.value &gt; len(slots_to_lock):
+            raise RuntimeError(f"[{self.player_name}] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots")
+        for i in range(self.options.random_unlocked_slots.value):
+            slots_to_lock.remove(self.random.choice(slots_to_lock))
+    
+        # Conservative check if all slots are locked and there are no starting locations in SlotLock
+        if len(slots_to_lock) &gt;= len(list(filter(lambda s: self.multiworld.player_types[self.multiworld.world_name_lookup[s]] == SlotType.player,
+                                                    self.multiworld.world_name_lookup))) - 1 and self.options.free_starting_items == 0 and self.options.free_unlocked_world_items == 0:
+&gt;           raise RuntimeError(f"[{self.player_name}] No sphere 1 remaining in the multiworld. To fix this, either:\n* Set a slot as unlocked in slots_to_lock, \n* Set random_unlocked_slots to 1 or higher,\n* Set free_starting_items to true, or \n* Set free unlocked world items to 1 or higher.")
+E           RuntimeError: [Tester1] No sphere 1 remaining in the multiworld. To fix this, either:
+E           * Set a slot as unlocked in slots_to_lock, 
+E           * Set random_unlocked_slots to 1 or higher,
+E           * Set free_starting_items to true, or 
+E           * Set free unlocked world items to 1 or higher.
+E           Exception in &lt;bound method SlotLockWorld.create_items of &lt;worlds.slotlock.SlotLockWorld object at 0x7afe438a3070&gt;&gt; for player 1, named Tester1.
+
+worlds/slotlock/__init__.py:131: RuntimeError</failure></testcase><testcase classname="test.general.test_items.TestBase" name="test_items_in_datapackage" time="0.044"><failure message="RuntimeError: [Tester1] No sphere 1 remaining in the multiworld. To fix this, either:&#10;* Set a slot as unlocked in slots_to_lock, &#10;* Set random_unlocked_slots to 1 or higher,&#10;* Set free_starting_items to true, or &#10;* Set free unlocked world items to 1 or higher.&#10;Exception in &lt;bound method SlotLockWorld.create_items of &lt;worlds.slotlock.SlotLockWorld object at 0x7afe43994520&gt;&gt; for player 1, named Tester1.">self = &lt;test.general.test_items.TestBase testMethod=test_items_in_datapackage&gt;
+
+    def test_items_in_datapackage(self):
+        """Test that any created items in the itempool are in the datapackage"""
+        archipelago = AutoWorldRegister.world_types["Archipelago"]
+        for game_name, world_type in AutoWorldRegister.testable_worlds.items():
+            with self.subTest("Game", game=game_name):
+&gt;               multiworld = setup_solo_multiworld(world_type)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test/general/test_items.py:91: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/general/__init__.py:31: in setup_solo_multiworld
+    return setup_multiworld(world_type, steps, seed)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/general/__init__.py:68: in setup_multiworld
+    call_all(multiworld, step)
+worlds/AutoWorld.py:207: in call_all
+    call_single(multiworld, method_name, player, *args)
+worlds/AutoWorld.py:193: in call_single
+    raise e
+worlds/AutoWorld.py:186: in call_single
+    ret = _timed_call(method, *args, multiworld=multiworld, player=player)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/AutoWorld.py:171: in _timed_call
+    ret = method(*args)
+          ^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;worlds.slotlock.SlotLockWorld object at 0x7afe43994520&gt;
+
+    def create_items(self) -&gt; None:
+        if hasattr(self.multiworld, "generation_is_fake"):
+            # UT has no way to get the unlock items so just skip locking altogether
+            return
+    
+        if self.options.slots_whitelist.value:
+            slots_to_lock = [slot for slot in self.options.slots_to_lock.value if any(slot == world.player_name for world in self.multiworld.worlds.values())]
+        else:
+            slots_to_lock = [slot.player_name for slot in self.multiworld.worlds.values() if slot.player_name not in self.options.slots_to_lock.value and slot.player_name != self.player_name]
+        slots_to_lock = [slot for slot in slots_to_lock if slot in self.multiworld.world_name_lookup and self.multiworld.player_types[self.multiworld.world_name_lookup[slot]] == SlotType.player]
+        slots_to_lock = sorted(slots_to_lock)
+        if self.options.random_unlocked_slots.value &gt; len(slots_to_lock):
+            raise RuntimeError(f"[{self.player_name}] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots")
+        for i in range(self.options.random_unlocked_slots.value):
+            slots_to_lock.remove(self.random.choice(slots_to_lock))
+    
+        # Conservative check if all slots are locked and there are no starting locations in SlotLock
+        if len(slots_to_lock) &gt;= len(list(filter(lambda s: self.multiworld.player_types[self.multiworld.world_name_lookup[s]] == SlotType.player,
+                                                    self.multiworld.world_name_lookup))) - 1 and self.options.free_starting_items == 0 and self.options.free_unlocked_world_items == 0:
+&gt;           raise RuntimeError(f"[{self.player_name}] No sphere 1 remaining in the multiworld. To fix this, either:\n* Set a slot as unlocked in slots_to_lock, \n* Set random_unlocked_slots to 1 or higher,\n* Set free_starting_items to true, or \n* Set free unlocked world items to 1 or higher.")
+E           RuntimeError: [Tester1] No sphere 1 remaining in the multiworld. To fix this, either:
+E           * Set a slot as unlocked in slots_to_lock, 
+E           * Set random_unlocked_slots to 1 or higher,
+E           * Set free_starting_items to true, or 
+E           * Set free unlocked world items to 1 or higher.
+E           Exception in &lt;bound method SlotLockWorld.create_items of &lt;worlds.slotlock.SlotLockWorld object at 0x7afe43994520&gt;&gt; for player 1, named Tester1.
+
+worlds/slotlock/__init__.py:131: RuntimeError</failure></testcase><testcase classname="test.general.test_items.TestBase" name="test_locality_not_modified" time="0.044"><failure message="RuntimeError: [Tester1] No sphere 1 remaining in the multiworld. To fix this, either:&#10;* Set a slot as unlocked in slots_to_lock, &#10;* Set random_unlocked_slots to 1 or higher,&#10;* Set free_starting_items to true, or &#10;* Set free unlocked world items to 1 or higher.&#10;Exception in &lt;bound method SlotLockWorld.create_items of &lt;worlds.slotlock.SlotLockWorld object at 0x7afe43989bd0&gt;&gt; for player 1, named Tester1.">self = &lt;test.general.test_items.TestBase testMethod=test_locality_not_modified&gt;
+
+    def test_locality_not_modified(self):
+        """Test that worlds don't modify the locality of items after duplicates are resolved"""
+        gen_steps = ("generate_early",)
+        additional_steps = ("create_regions", "create_items", "set_rules", "connect_entrances", "generate_basic", "pre_fill")
+        for game_name, world_type in AutoWorldRegister.testable_worlds.items():
+            with self.subTest("Game", game=game_name):
+                multiworld = setup_solo_multiworld(world_type, gen_steps)
+                local_items = multiworld.worlds[1].options.local_items.value.copy()
+                non_local_items = multiworld.worlds[1].options.non_local_items.value.copy()
+                for step in additional_steps:
+                    with self.subTest("step", step=step):
+&gt;                       call_all(multiworld, step)
+
+test/general/test_items.py:165: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+worlds/AutoWorld.py:207: in call_all
+    call_single(multiworld, method_name, player, *args)
+worlds/AutoWorld.py:193: in call_single
+    raise e
+worlds/AutoWorld.py:186: in call_single
+    ret = _timed_call(method, *args, multiworld=multiworld, player=player)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/AutoWorld.py:171: in _timed_call
+    ret = method(*args)
+          ^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;worlds.slotlock.SlotLockWorld object at 0x7afe43989bd0&gt;
+
+    def create_items(self) -&gt; None:
+        if hasattr(self.multiworld, "generation_is_fake"):
+            # UT has no way to get the unlock items so just skip locking altogether
+            return
+    
+        if self.options.slots_whitelist.value:
+            slots_to_lock = [slot for slot in self.options.slots_to_lock.value if any(slot == world.player_name for world in self.multiworld.worlds.values())]
+        else:
+            slots_to_lock = [slot.player_name for slot in self.multiworld.worlds.values() if slot.player_name not in self.options.slots_to_lock.value and slot.player_name != self.player_name]
+        slots_to_lock = [slot for slot in slots_to_lock if slot in self.multiworld.world_name_lookup and self.multiworld.player_types[self.multiworld.world_name_lookup[slot]] == SlotType.player]
+        slots_to_lock = sorted(slots_to_lock)
+        if self.options.random_unlocked_slots.value &gt; len(slots_to_lock):
+            raise RuntimeError(f"[{self.player_name}] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots")
+        for i in range(self.options.random_unlocked_slots.value):
+            slots_to_lock.remove(self.random.choice(slots_to_lock))
+    
+        # Conservative check if all slots are locked and there are no starting locations in SlotLock
+        if len(slots_to_lock) &gt;= len(list(filter(lambda s: self.multiworld.player_types[self.multiworld.world_name_lookup[s]] == SlotType.player,
+                                                    self.multiworld.world_name_lookup))) - 1 and self.options.free_starting_items == 0 and self.options.free_unlocked_world_items == 0:
+&gt;           raise RuntimeError(f"[{self.player_name}] No sphere 1 remaining in the multiworld. To fix this, either:\n* Set a slot as unlocked in slots_to_lock, \n* Set random_unlocked_slots to 1 or higher,\n* Set free_starting_items to true, or \n* Set free unlocked world items to 1 or higher.")
+E           RuntimeError: [Tester1] No sphere 1 remaining in the multiworld. To fix this, either:
+E           * Set a slot as unlocked in slots_to_lock, 
+E           * Set random_unlocked_slots to 1 or higher,
+E           * Set free_starting_items to true, or 
+E           * Set free unlocked world items to 1 or higher.
+E           Exception in &lt;bound method SlotLockWorld.create_items of &lt;worlds.slotlock.SlotLockWorld object at 0x7afe43989bd0&gt;&gt; for player 1, named Tester1.
+
+worlds/slotlock/__init__.py:131: RuntimeError</failure></testcase><testcase classname="test.general.test_locations.TestBase" name="test_create_duplicate_locations" time="0.024"><failure message="RuntimeError: [Tester1] No sphere 1 remaining in the multiworld. To fix this, either:&#10;* Set a slot as unlocked in slots_to_lock, &#10;* Set random_unlocked_slots to 1 or higher,&#10;* Set free_starting_items to true, or &#10;* Set free unlocked world items to 1 or higher.&#10;Exception in &lt;bound method SlotLockWorld.create_items of &lt;worlds.slotlock.SlotLockWorld object at 0x7afe4398aad0&gt;&gt; for player 1, named Tester1.">self = &lt;test.general.test_locations.TestBase testMethod=test_create_duplicate_locations&gt;
+
+    def test_create_duplicate_locations(self):
+        """Tests that no two Locations share a name or ID."""
+        for game_name, world_type in AutoWorldRegister.testable_worlds.items():
+&gt;           multiworld = setup_solo_multiworld(world_type)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test/general/test_locations.py:13: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/general/__init__.py:31: in setup_solo_multiworld
+    return setup_multiworld(world_type, steps, seed)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/general/__init__.py:68: in setup_multiworld
+    call_all(multiworld, step)
+worlds/AutoWorld.py:207: in call_all
+    call_single(multiworld, method_name, player, *args)
+worlds/AutoWorld.py:193: in call_single
+    raise e
+worlds/AutoWorld.py:186: in call_single
+    ret = _timed_call(method, *args, multiworld=multiworld, player=player)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/AutoWorld.py:171: in _timed_call
+    ret = method(*args)
+          ^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;worlds.slotlock.SlotLockWorld object at 0x7afe4398aad0&gt;
+
+    def create_items(self) -&gt; None:
+        if hasattr(self.multiworld, "generation_is_fake"):
+            # UT has no way to get the unlock items so just skip locking altogether
+            return
+    
+        if self.options.slots_whitelist.value:
+            slots_to_lock = [slot for slot in self.options.slots_to_lock.value if any(slot == world.player_name for world in self.multiworld.worlds.values())]
+        else:
+            slots_to_lock = [slot.player_name for slot in self.multiworld.worlds.values() if slot.player_name not in self.options.slots_to_lock.value and slot.player_name != self.player_name]
+        slots_to_lock = [slot for slot in slots_to_lock if slot in self.multiworld.world_name_lookup and self.multiworld.player_types[self.multiworld.world_name_lookup[slot]] == SlotType.player]
+        slots_to_lock = sorted(slots_to_lock)
+        if self.options.random_unlocked_slots.value &gt; len(slots_to_lock):
+            raise RuntimeError(f"[{self.player_name}] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots")
+        for i in range(self.options.random_unlocked_slots.value):
+            slots_to_lock.remove(self.random.choice(slots_to_lock))
+    
+        # Conservative check if all slots are locked and there are no starting locations in SlotLock
+        if len(slots_to_lock) &gt;= len(list(filter(lambda s: self.multiworld.player_types[self.multiworld.world_name_lookup[s]] == SlotType.player,
+                                                    self.multiworld.world_name_lookup))) - 1 and self.options.free_starting_items == 0 and self.options.free_unlocked_world_items == 0:
+&gt;           raise RuntimeError(f"[{self.player_name}] No sphere 1 remaining in the multiworld. To fix this, either:\n* Set a slot as unlocked in slots_to_lock, \n* Set random_unlocked_slots to 1 or higher,\n* Set free_starting_items to true, or \n* Set free unlocked world items to 1 or higher.")
+E           RuntimeError: [Tester1] No sphere 1 remaining in the multiworld. To fix this, either:
+E           * Set a slot as unlocked in slots_to_lock, 
+E           * Set random_unlocked_slots to 1 or higher,
+E           * Set free_starting_items to true, or 
+E           * Set free unlocked world items to 1 or higher.
+E           Exception in &lt;bound method SlotLockWorld.create_items of &lt;worlds.slotlock.SlotLockWorld object at 0x7afe4398aad0&gt;&gt; for player 1, named Tester1.
+
+worlds/slotlock/__init__.py:131: RuntimeError</failure></testcase><testcase classname="test.general.test_locations.TestBase" name="test_location_creation_steps" time="0.045"><failure message="RuntimeError: [Tester1] No sphere 1 remaining in the multiworld. To fix this, either:&#10;* Set a slot as unlocked in slots_to_lock, &#10;* Set random_unlocked_slots to 1 or higher,&#10;* Set free_starting_items to true, or &#10;* Set free unlocked world items to 1 or higher.&#10;Exception in &lt;bound method SlotLockWorld.create_items of &lt;worlds.slotlock.SlotLockWorld object at 0x7afe438a9590&gt;&gt; for player 1, named Tester1.">self = &lt;test.general.test_locations.TestBase testMethod=test_location_creation_steps&gt;
+
+    def test_location_creation_steps(self):
+        """Tests that Regions and Locations aren't created after `create_items`."""
+        gen_steps = ("generate_early", "create_regions", "create_items")
+        excluded_games = ("Ocarina of Time", "Pokemon Red and Blue")
+        worlds_to_test = {game: world
+                          for game, world in AutoWorldRegister.testable_worlds.items() if game not in excluded_games}
+        for game_name, world_type in worlds_to_test.items():
+            with self.subTest("Game", game_name=game_name):
+&gt;               multiworld = setup_solo_multiworld(world_type, gen_steps)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test/general/test_locations.py:43: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/general/__init__.py:31: in setup_solo_multiworld
+    return setup_multiworld(world_type, steps, seed)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/general/__init__.py:68: in setup_multiworld
+    call_all(multiworld, step)
+worlds/AutoWorld.py:207: in call_all
+    call_single(multiworld, method_name, player, *args)
+worlds/AutoWorld.py:193: in call_single
+    raise e
+worlds/AutoWorld.py:186: in call_single
+    ret = _timed_call(method, *args, multiworld=multiworld, player=player)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/AutoWorld.py:171: in _timed_call
+    ret = method(*args)
+          ^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;worlds.slotlock.SlotLockWorld object at 0x7afe438a9590&gt;
+
+    def create_items(self) -&gt; None:
+        if hasattr(self.multiworld, "generation_is_fake"):
+            # UT has no way to get the unlock items so just skip locking altogether
+            return
+    
+        if self.options.slots_whitelist.value:
+            slots_to_lock = [slot for slot in self.options.slots_to_lock.value if any(slot == world.player_name for world in self.multiworld.worlds.values())]
+        else:
+            slots_to_lock = [slot.player_name for slot in self.multiworld.worlds.values() if slot.player_name not in self.options.slots_to_lock.value and slot.player_name != self.player_name]
+        slots_to_lock = [slot for slot in slots_to_lock if slot in self.multiworld.world_name_lookup and self.multiworld.player_types[self.multiworld.world_name_lookup[slot]] == SlotType.player]
+        slots_to_lock = sorted(slots_to_lock)
+        if self.options.random_unlocked_slots.value &gt; len(slots_to_lock):
+            raise RuntimeError(f"[{self.player_name}] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots")
+        for i in range(self.options.random_unlocked_slots.value):
+            slots_to_lock.remove(self.random.choice(slots_to_lock))
+    
+        # Conservative check if all slots are locked and there are no starting locations in SlotLock
+        if len(slots_to_lock) &gt;= len(list(filter(lambda s: self.multiworld.player_types[self.multiworld.world_name_lookup[s]] == SlotType.player,
+                                                    self.multiworld.world_name_lookup))) - 1 and self.options.free_starting_items == 0 and self.options.free_unlocked_world_items == 0:
+&gt;           raise RuntimeError(f"[{self.player_name}] No sphere 1 remaining in the multiworld. To fix this, either:\n* Set a slot as unlocked in slots_to_lock, \n* Set random_unlocked_slots to 1 or higher,\n* Set free_starting_items to true, or \n* Set free unlocked world items to 1 or higher.")
+E           RuntimeError: [Tester1] No sphere 1 remaining in the multiworld. To fix this, either:
+E           * Set a slot as unlocked in slots_to_lock, 
+E           * Set random_unlocked_slots to 1 or higher,
+E           * Set free_starting_items to true, or 
+E           * Set free unlocked world items to 1 or higher.
+E           Exception in &lt;bound method SlotLockWorld.create_items of &lt;worlds.slotlock.SlotLockWorld object at 0x7afe438a9590&gt;&gt; for player 1, named Tester1.
+
+worlds/slotlock/__init__.py:131: RuntimeError</failure></testcase><testcase classname="test.general.test_locations.TestBase" name="test_location_group" time="0.003" /><testcase classname="test.general.test_locations.TestBase" name="test_locations_in_datapackage" time="0.044"><failure message="RuntimeError: [Tester1] No sphere 1 remaining in the multiworld. To fix this, either:&#10;* Set a slot as unlocked in slots_to_lock, &#10;* Set random_unlocked_slots to 1 or higher,&#10;* Set free_starting_items to true, or &#10;* Set free unlocked world items to 1 or higher.&#10;Exception in &lt;bound method SlotLockWorld.create_items of &lt;worlds.slotlock.SlotLockWorld object at 0x7afe43989810&gt;&gt; for player 1, named Tester1.">self = &lt;test.general.test_locations.TestBase testMethod=test_locations_in_datapackage&gt;
+
+    def test_locations_in_datapackage(self):
+        """Tests that created locations not filled before fill starts exist in the datapackage."""
+        for game_name, world_type in AutoWorldRegister.testable_worlds.items():
+            with self.subTest("Game", game_name=game_name):
+&gt;               multiworld = setup_solo_multiworld(world_type)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test/general/test_locations.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/general/__init__.py:31: in setup_solo_multiworld
+    return setup_multiworld(world_type, steps, seed)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/general/__init__.py:68: in setup_multiworld
+    call_all(multiworld, step)
+worlds/AutoWorld.py:207: in call_all
+    call_single(multiworld, method_name, player, *args)
+worlds/AutoWorld.py:193: in call_single
+    raise e
+worlds/AutoWorld.py:186: in call_single
+    ret = _timed_call(method, *args, multiworld=multiworld, player=player)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/AutoWorld.py:171: in _timed_call
+    ret = method(*args)
+          ^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;worlds.slotlock.SlotLockWorld object at 0x7afe43989810&gt;
+
+    def create_items(self) -&gt; None:
+        if hasattr(self.multiworld, "generation_is_fake"):
+            # UT has no way to get the unlock items so just skip locking altogether
+            return
+    
+        if self.options.slots_whitelist.value:
+            slots_to_lock = [slot for slot in self.options.slots_to_lock.value if any(slot == world.player_name for world in self.multiworld.worlds.values())]
+        else:
+            slots_to_lock = [slot.player_name for slot in self.multiworld.worlds.values() if slot.player_name not in self.options.slots_to_lock.value and slot.player_name != self.player_name]
+        slots_to_lock = [slot for slot in slots_to_lock if slot in self.multiworld.world_name_lookup and self.multiworld.player_types[self.multiworld.world_name_lookup[slot]] == SlotType.player]
+        slots_to_lock = sorted(slots_to_lock)
+        if self.options.random_unlocked_slots.value &gt; len(slots_to_lock):
+            raise RuntimeError(f"[{self.player_name}] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots")
+        for i in range(self.options.random_unlocked_slots.value):
+            slots_to_lock.remove(self.random.choice(slots_to_lock))
+    
+        # Conservative check if all slots are locked and there are no starting locations in SlotLock
+        if len(slots_to_lock) &gt;= len(list(filter(lambda s: self.multiworld.player_types[self.multiworld.world_name_lookup[s]] == SlotType.player,
+                                                    self.multiworld.world_name_lookup))) - 1 and self.options.free_starting_items == 0 and self.options.free_unlocked_world_items == 0:
+&gt;           raise RuntimeError(f"[{self.player_name}] No sphere 1 remaining in the multiworld. To fix this, either:\n* Set a slot as unlocked in slots_to_lock, \n* Set random_unlocked_slots to 1 or higher,\n* Set free_starting_items to true, or \n* Set free unlocked world items to 1 or higher.")
+E           RuntimeError: [Tester1] No sphere 1 remaining in the multiworld. To fix this, either:
+E           * Set a slot as unlocked in slots_to_lock, 
+E           * Set random_unlocked_slots to 1 or higher,
+E           * Set free_starting_items to true, or 
+E           * Set free unlocked world items to 1 or higher.
+E           Exception in &lt;bound method SlotLockWorld.create_items of &lt;worlds.slotlock.SlotLockWorld object at 0x7afe43989810&gt;&gt; for player 1, named Tester1.
+
+worlds/slotlock/__init__.py:131: RuntimeError</failure></testcase><testcase classname="test.general.test_memory.TestWorldMemory" name="test_leak" time="0.099"><failure message="RuntimeError: [Tester1] No sphere 1 remaining in the multiworld. To fix this, either:&#10;* Set a slot as unlocked in slots_to_lock, &#10;* Set random_unlocked_slots to 1 or higher,&#10;* Set free_starting_items to true, or &#10;* Set free unlocked world items to 1 or higher.&#10;Exception in &lt;bound method SlotLockWorld.create_items of &lt;worlds.slotlock.SlotLockWorld object at 0x7afe4398b7f0&gt;&gt; for player 1, named Tester1.">self = &lt;test.general.test_memory.TestWorldMemory testMethod=test_leak&gt;
+
+    def test_leak(self) -&gt; None:
+        """Tests that worlds don't leak references to MultiWorld or themselves with default options."""
+        import gc
+        import weakref
+        refs: dict[str, weakref.ReferenceType[MultiWorld]] = {}
+        for game_name, world_type in AutoWorldRegister.testable_worlds.items():
+            with self.subTest("Game creation", game_name=game_name):
+&gt;               weak = weakref.ref(setup_solo_multiworld(world_type))
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test/general/test_memory.py:18: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/general/__init__.py:31: in setup_solo_multiworld
+    return setup_multiworld(world_type, steps, seed)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/general/__init__.py:68: in setup_multiworld
+    call_all(multiworld, step)
+worlds/AutoWorld.py:207: in call_all
+    call_single(multiworld, method_name, player, *args)
+worlds/AutoWorld.py:193: in call_single
+    raise e
+worlds/AutoWorld.py:186: in call_single
+    ret = _timed_call(method, *args, multiworld=multiworld, player=player)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/AutoWorld.py:171: in _timed_call
+    ret = method(*args)
+          ^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;worlds.slotlock.SlotLockWorld object at 0x7afe4398b7f0&gt;
+
+    def create_items(self) -&gt; None:
+        if hasattr(self.multiworld, "generation_is_fake"):
+            # UT has no way to get the unlock items so just skip locking altogether
+            return
+    
+        if self.options.slots_whitelist.value:
+            slots_to_lock = [slot for slot in self.options.slots_to_lock.value if any(slot == world.player_name for world in self.multiworld.worlds.values())]
+        else:
+            slots_to_lock = [slot.player_name for slot in self.multiworld.worlds.values() if slot.player_name not in self.options.slots_to_lock.value and slot.player_name != self.player_name]
+        slots_to_lock = [slot for slot in slots_to_lock if slot in self.multiworld.world_name_lookup and self.multiworld.player_types[self.multiworld.world_name_lookup[slot]] == SlotType.player]
+        slots_to_lock = sorted(slots_to_lock)
+        if self.options.random_unlocked_slots.value &gt; len(slots_to_lock):
+            raise RuntimeError(f"[{self.player_name}] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots")
+        for i in range(self.options.random_unlocked_slots.value):
+            slots_to_lock.remove(self.random.choice(slots_to_lock))
+    
+        # Conservative check if all slots are locked and there are no starting locations in SlotLock
+        if len(slots_to_lock) &gt;= len(list(filter(lambda s: self.multiworld.player_types[self.multiworld.world_name_lookup[s]] == SlotType.player,
+                                                    self.multiworld.world_name_lookup))) - 1 and self.options.free_starting_items == 0 and self.options.free_unlocked_world_items == 0:
+&gt;           raise RuntimeError(f"[{self.player_name}] No sphere 1 remaining in the multiworld. To fix this, either:\n* Set a slot as unlocked in slots_to_lock, \n* Set random_unlocked_slots to 1 or higher,\n* Set free_starting_items to true, or \n* Set free unlocked world items to 1 or higher.")
+E           RuntimeError: [Tester1] No sphere 1 remaining in the multiworld. To fix this, either:
+E           * Set a slot as unlocked in slots_to_lock, 
+E           * Set random_unlocked_slots to 1 or higher,
+E           * Set free_starting_items to true, or 
+E           * Set free unlocked world items to 1 or higher.
+E           Exception in &lt;bound method SlotLockWorld.create_items of &lt;worlds.slotlock.SlotLockWorld object at 0x7afe4398b7f0&gt;&gt; for player 1, named Tester1.
+
+worlds/slotlock/__init__.py:131: RuntimeError</failure></testcase><testcase classname="test.general.test_names.TestNames" name="test_item_names_format" time="0.001" /><testcase classname="test.general.test_names.TestNames" name="test_location_name_format" time="0.002" /><testcase classname="test.general.test_options.TestOptions" name="test_duplicate_options" time="0.000" /><testcase classname="test.general.test_options.TestOptions" name="test_item_links_name_groups" time="0.001" /><testcase classname="test.general.test_options.TestOptions" name="test_item_links_resolve" time="0.001" /><testcase classname="test.general.test_options.TestOptions" name="test_option_defaults" time="0.002" /><testcase classname="test.general.test_options.TestOptions" name="test_option_set_keys_random" time="0.001" /><testcase classname="test.general.test_options.TestOptions" name="test_options_are_not_set_by_world" time="0.000" /><testcase classname="test.general.test_options.TestOptions" name="test_options_have_doc_string" time="0.002" /><testcase classname="test.general.test_options.TestOptions" name="test_pickle_dumps_default" time="0.002" /><testcase classname="test.general.test_options.TestOptions" name="test_pickle_dumps_plando" time="0.001" /><testcase classname="test.general.test_packages.TestPackages" name="test_packages_have_init" time="0.042" /><testcase classname="test.general.test_patches.TestPatches" name="test_patch_name_matches_game" time="0.000" /><testcase classname="test.general.test_reachability.TestBase" name="test_default_all_state_can_reach_everything" time="0.045"><failure message="RuntimeError: [Tester1] No sphere 1 remaining in the multiworld. To fix this, either:&#10;* Set a slot as unlocked in slots_to_lock, &#10;* Set random_unlocked_slots to 1 or higher,&#10;* Set free_starting_items to true, or &#10;* Set free unlocked world items to 1 or higher.&#10;Exception in &lt;bound method SlotLockWorld.create_items of &lt;worlds.slotlock.SlotLockWorld object at 0x7afe43988e10&gt;&gt; for player 1, named Tester1.">self = &lt;test.general.test_reachability.TestBase testMethod=test_default_all_state_can_reach_everything&gt;
+
+    def test_default_all_state_can_reach_everything(self):
+        """Ensure all state can reach everything and complete the game with the defined options"""
+        for game_name, world_type in AutoWorldRegister.testable_worlds.items():
+            unreachable_regions = self.default_settings_unreachable_regions.get(game_name, set())
+            with self.subTest("Game", game=game_name):
+&gt;               multiworld = setup_solo_multiworld(world_type)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test/general/test_reachability.py:52: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/general/__init__.py:31: in setup_solo_multiworld
+    return setup_multiworld(world_type, steps, seed)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/general/__init__.py:68: in setup_multiworld
+    call_all(multiworld, step)
+worlds/AutoWorld.py:207: in call_all
+    call_single(multiworld, method_name, player, *args)
+worlds/AutoWorld.py:193: in call_single
+    raise e
+worlds/AutoWorld.py:186: in call_single
+    ret = _timed_call(method, *args, multiworld=multiworld, player=player)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/AutoWorld.py:171: in _timed_call
+    ret = method(*args)
+          ^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;worlds.slotlock.SlotLockWorld object at 0x7afe43988e10&gt;
+
+    def create_items(self) -&gt; None:
+        if hasattr(self.multiworld, "generation_is_fake"):
+            # UT has no way to get the unlock items so just skip locking altogether
+            return
+    
+        if self.options.slots_whitelist.value:
+            slots_to_lock = [slot for slot in self.options.slots_to_lock.value if any(slot == world.player_name for world in self.multiworld.worlds.values())]
+        else:
+            slots_to_lock = [slot.player_name for slot in self.multiworld.worlds.values() if slot.player_name not in self.options.slots_to_lock.value and slot.player_name != self.player_name]
+        slots_to_lock = [slot for slot in slots_to_lock if slot in self.multiworld.world_name_lookup and self.multiworld.player_types[self.multiworld.world_name_lookup[slot]] == SlotType.player]
+        slots_to_lock = sorted(slots_to_lock)
+        if self.options.random_unlocked_slots.value &gt; len(slots_to_lock):
+            raise RuntimeError(f"[{self.player_name}] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots")
+        for i in range(self.options.random_unlocked_slots.value):
+            slots_to_lock.remove(self.random.choice(slots_to_lock))
+    
+        # Conservative check if all slots are locked and there are no starting locations in SlotLock
+        if len(slots_to_lock) &gt;= len(list(filter(lambda s: self.multiworld.player_types[self.multiworld.world_name_lookup[s]] == SlotType.player,
+                                                    self.multiworld.world_name_lookup))) - 1 and self.options.free_starting_items == 0 and self.options.free_unlocked_world_items == 0:
+&gt;           raise RuntimeError(f"[{self.player_name}] No sphere 1 remaining in the multiworld. To fix this, either:\n* Set a slot as unlocked in slots_to_lock, \n* Set random_unlocked_slots to 1 or higher,\n* Set free_starting_items to true, or \n* Set free unlocked world items to 1 or higher.")
+E           RuntimeError: [Tester1] No sphere 1 remaining in the multiworld. To fix this, either:
+E           * Set a slot as unlocked in slots_to_lock, 
+E           * Set random_unlocked_slots to 1 or higher,
+E           * Set free_starting_items to true, or 
+E           * Set free unlocked world items to 1 or higher.
+E           Exception in &lt;bound method SlotLockWorld.create_items of &lt;worlds.slotlock.SlotLockWorld object at 0x7afe43988e10&gt;&gt; for player 1, named Tester1.
+
+worlds/slotlock/__init__.py:131: RuntimeError</failure></testcase><testcase classname="test.general.test_reachability.TestBase" name="test_default_empty_state_can_reach_something" time="0.043"><failure message="RuntimeError: [Tester1] No sphere 1 remaining in the multiworld. To fix this, either:&#10;* Set a slot as unlocked in slots_to_lock, &#10;* Set random_unlocked_slots to 1 or higher,&#10;* Set free_starting_items to true, or &#10;* Set free unlocked world items to 1 or higher.&#10;Exception in &lt;bound method SlotLockWorld.create_items of &lt;worlds.slotlock.SlotLockWorld object at 0x7afe4398ac10&gt;&gt; for player 1, named Tester1.">self = &lt;test.general.test_reachability.TestBase testMethod=test_default_empty_state_can_reach_something&gt;
+
+    def test_default_empty_state_can_reach_something(self):
+        """Ensure empty state can reach at least one location with the defined options"""
+        for game_name, world_type in AutoWorldRegister.testable_worlds.items():
+            with self.subTest("Game", game=game_name):
+&gt;               multiworld = setup_solo_multiworld(world_type)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test/general/test_reachability.py:73: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/general/__init__.py:31: in setup_solo_multiworld
+    return setup_multiworld(world_type, steps, seed)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/general/__init__.py:68: in setup_multiworld
+    call_all(multiworld, step)
+worlds/AutoWorld.py:207: in call_all
+    call_single(multiworld, method_name, player, *args)
+worlds/AutoWorld.py:193: in call_single
+    raise e
+worlds/AutoWorld.py:186: in call_single
+    ret = _timed_call(method, *args, multiworld=multiworld, player=player)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/AutoWorld.py:171: in _timed_call
+    ret = method(*args)
+          ^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;worlds.slotlock.SlotLockWorld object at 0x7afe4398ac10&gt;
+
+    def create_items(self) -&gt; None:
+        if hasattr(self.multiworld, "generation_is_fake"):
+            # UT has no way to get the unlock items so just skip locking altogether
+            return
+    
+        if self.options.slots_whitelist.value:
+            slots_to_lock = [slot for slot in self.options.slots_to_lock.value if any(slot == world.player_name for world in self.multiworld.worlds.values())]
+        else:
+            slots_to_lock = [slot.player_name for slot in self.multiworld.worlds.values() if slot.player_name not in self.options.slots_to_lock.value and slot.player_name != self.player_name]
+        slots_to_lock = [slot for slot in slots_to_lock if slot in self.multiworld.world_name_lookup and self.multiworld.player_types[self.multiworld.world_name_lookup[slot]] == SlotType.player]
+        slots_to_lock = sorted(slots_to_lock)
+        if self.options.random_unlocked_slots.value &gt; len(slots_to_lock):
+            raise RuntimeError(f"[{self.player_name}] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots")
+        for i in range(self.options.random_unlocked_slots.value):
+            slots_to_lock.remove(self.random.choice(slots_to_lock))
+    
+        # Conservative check if all slots are locked and there are no starting locations in SlotLock
+        if len(slots_to_lock) &gt;= len(list(filter(lambda s: self.multiworld.player_types[self.multiworld.world_name_lookup[s]] == SlotType.player,
+                                                    self.multiworld.world_name_lookup))) - 1 and self.options.free_starting_items == 0 and self.options.free_unlocked_world_items == 0:
+&gt;           raise RuntimeError(f"[{self.player_name}] No sphere 1 remaining in the multiworld. To fix this, either:\n* Set a slot as unlocked in slots_to_lock, \n* Set random_unlocked_slots to 1 or higher,\n* Set free_starting_items to true, or \n* Set free unlocked world items to 1 or higher.")
+E           RuntimeError: [Tester1] No sphere 1 remaining in the multiworld. To fix this, either:
+E           * Set a slot as unlocked in slots_to_lock, 
+E           * Set random_unlocked_slots to 1 or higher,
+E           * Set free_starting_items to true, or 
+E           * Set free unlocked world items to 1 or higher.
+E           Exception in &lt;bound method SlotLockWorld.create_items of &lt;worlds.slotlock.SlotLockWorld object at 0x7afe4398ac10&gt;&gt; for player 1, named Tester1.
+
+worlds/slotlock/__init__.py:131: RuntimeError</failure></testcase><testcase classname="test.general.test_requirements.TestBase" name="test_requirements_file_ends_on_newline" time="0.002" /><testcase classname="test.general.test_settings.TestSettings" name="test_settings_can_update" time="0.003" /><testcase classname="test.general.test_state.TestBase" name="test_all_state_is_available" time="0.041"><failure message="RuntimeError: [Tester1] No sphere 1 remaining in the multiworld. To fix this, either:&#10;* Set a slot as unlocked in slots_to_lock, &#10;* Set random_unlocked_slots to 1 or higher,&#10;* Set free_starting_items to true, or &#10;* Set free unlocked world items to 1 or higher.&#10;Exception in &lt;bound method SlotLockWorld.create_items of &lt;worlds.slotlock.SlotLockWorld object at 0x7afe448777f0&gt;&gt; for player 1, named Tester1.">self = &lt;test.general.test_state.TestBase testMethod=test_all_state_is_available&gt;
+
+    def test_all_state_is_available(self):
+        """Ensure all_state can be created at certain steps."""
+        for game_name, world_type in AutoWorldRegister.testable_worlds.items():
+            with self.subTest("Game", game=game_name):
+                multiworld = setup_solo_multiworld(world_type, self.gen_steps)
+                for step in self.test_steps:
+                    with self.subTest("Step", step=step):
+&gt;                       call_all(multiworld, step)
+
+test/general/test_state.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+worlds/AutoWorld.py:207: in call_all
+    call_single(multiworld, method_name, player, *args)
+worlds/AutoWorld.py:193: in call_single
+    raise e
+worlds/AutoWorld.py:186: in call_single
+    ret = _timed_call(method, *args, multiworld=multiworld, player=player)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+worlds/AutoWorld.py:171: in _timed_call
+    ret = method(*args)
+          ^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;worlds.slotlock.SlotLockWorld object at 0x7afe448777f0&gt;
+
+    def create_items(self) -&gt; None:
+        if hasattr(self.multiworld, "generation_is_fake"):
+            # UT has no way to get the unlock items so just skip locking altogether
+            return
+    
+        if self.options.slots_whitelist.value:
+            slots_to_lock = [slot for slot in self.options.slots_to_lock.value if any(slot == world.player_name for world in self.multiworld.worlds.values())]
+        else:
+            slots_to_lock = [slot.player_name for slot in self.multiworld.worlds.values() if slot.player_name not in self.options.slots_to_lock.value and slot.player_name != self.player_name]
+        slots_to_lock = [slot for slot in slots_to_lock if slot in self.multiworld.world_name_lookup and self.multiworld.player_types[self.multiworld.world_name_lookup[slot]] == SlotType.player]
+        slots_to_lock = sorted(slots_to_lock)
+        if self.options.random_unlocked_slots.value &gt; len(slots_to_lock):
+            raise RuntimeError(f"[{self.player_name}] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots")
+        for i in range(self.options.random_unlocked_slots.value):
+            slots_to_lock.remove(self.random.choice(slots_to_lock))
+    
+        # Conservative check if all slots are locked and there are no starting locations in SlotLock
+        if len(slots_to_lock) &gt;= len(list(filter(lambda s: self.multiworld.player_types[self.multiworld.world_name_lookup[s]] == SlotType.player,
+                                                    self.multiworld.world_name_lookup))) - 1 and self.options.free_starting_items == 0 and self.options.free_unlocked_world_items == 0:
+&gt;           raise RuntimeError(f"[{self.player_name}] No sphere 1 remaining in the multiworld. To fix this, either:\n* Set a slot as unlocked in slots_to_lock, \n* Set random_unlocked_slots to 1 or higher,\n* Set free_starting_items to true, or \n* Set free unlocked world items to 1 or higher.")
+E           RuntimeError: [Tester1] No sphere 1 remaining in the multiworld. To fix this, either:
+E           * Set a slot as unlocked in slots_to_lock, 
+E           * Set random_unlocked_slots to 1 or higher,
+E           * Set free_starting_items to true, or 
+E           * Set free unlocked world items to 1 or higher.
+E           Exception in &lt;bound method SlotLockWorld.create_items of &lt;worlds.slotlock.SlotLockWorld object at 0x7afe448777f0&gt;&gt; for player 1, named Tester1.
+
+worlds/slotlock/__init__.py:131: RuntimeError</failure></testcase><testcase classname="test.general.test_world_manifest.TestWorldManifest{game='SlotLock'}" name="test_game" time="0.001" /><testcase classname="test.general.test_world_manifest.TestWorldManifest{game='SlotLock'}" name="test_world_version" time="0.000" /><testcase classname="test.multiworld.test_multiworlds.TestTwoPlayerMulti{game='SlotLock'}" name="test_two_player_single_game_fills" time="0.133" /><testcase classname="test.webhost.test_descriptions.TestWebDescriptions" name="test_item_descriptions_have_valid_names" time="0.001" /><testcase classname="test.webhost.test_descriptions.TestWebDescriptions" name="test_location_descriptions_have_valid_names" time="0.002" /><testcase classname="test.webhost.test_docs.TestDocs" name="test_has_game_info" time="0.002" /><testcase classname="test.webhost.test_docs.TestDocs" name="test_has_tutorial" time="0.002"><failure message="AssertionError: 0 not greater than 0 : SlotLock has no setup tutorial.">self = &lt;test.webhost.test_docs.TestDocs testMethod=test_has_tutorial&gt;
+
+    def test_has_tutorial(self):
+        for game_name, world_type in AutoWorldRegister.testable_worlds.items():
+            if not world_type.hidden:
+                with self.subTest(game_name):
+                    tutorials = world_type.web.tutorials
+&gt;                   self.assertGreater(len(tutorials), 0, msg=f"{game_name} has no setup tutorial.")
+E                   AssertionError: 0 not greater than 0 : SlotLock has no setup tutorial.
+
+test/webhost/test_docs.py:23: AssertionError</failure></testcase><testcase classname="test.webhost.test_file_generation.TestFileGeneration" name="test_options" time="0.046" /><testcase classname="test.webhost.test_option_presets.TestOptionPresets" name="test_option_preset_values_are_explicitly_defined" time="0.000" /><testcase classname="test.webhost.test_option_presets.TestOptionPresets" name="test_option_presets_have_valid_options" time="0.000" /></testsuite></testsuites>

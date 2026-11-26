@@ -1,0 +1,82 @@
+Final score: -2
+
+test.general.test_reachability.TestBase.test_default_all_state_can_reach_everything: 10
+test.general.test_items.TestBase.test_create_item: 5
+test.general.test_items.TestBase.test_itempool_not_modified: 5
+undefined-local-with-import-star-usage: 4
+none-comparison: 3
+undefined-local-with-import-star: 2
+ambiguous-variable-name: 1
+strip-with-multi-characters: 1
+test.general.test_entrances.TestBase.test_all_state_before_connect_entrances: 1
+test.general.test_entrances.TestBase.test_entrance_connection_steps: 1
+test.general.test_ids.TestIDs.test_duplicate_item_ids: 1
+test.general.test_ids.TestIDs.test_duplicate_location_ids: 1
+test.general.test_ids.TestIDs.test_postgen_datapackage: 1
+test.general.test_implemented.TestImplemented.test_completion_condition: 1
+test.general.test_implemented.TestImplemented.test_entrance_parents: 1
+test.general.test_implemented.TestImplemented.test_explicit_indirect_conditions_spheres: 1
+test.general.test_implemented.TestImplemented.test_prefill_items: 1
+test.general.test_implemented.TestImplemented.test_slot_data: 1
+test.general.test_items.TestBase.test_item_count_equal_locations: 1
+test.general.test_items.TestBase.test_item_name_group_has_valid_item: 1
+test.general.test_items.TestBase.test_items_in_datapackage: 1
+test.general.test_items.TestBase.test_locality_not_modified: 1
+test.general.test_locations.TestBase.test_create_duplicate_locations: 1
+test.general.test_locations.TestBase.test_location_creation_steps: 1
+test.general.test_locations.TestBase.test_locations_in_datapackage: 1
+test.general.test_memory.TestWorldMemory.test_leak: 1
+test.general.test_reachability.TestBase.test_default_empty_state_can_reach_something: 1
+test.general.test_state.TestBase.test_all_state_is_available: 1
+test.webhost.test_docs.TestDocs.test_has_tutorial: 1
+[0-0] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots: 1
+[1-0] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots: 1
+[3-0] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots: 1
+[5-0] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots: 1
+[8-0] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots: 1
+[10-0] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots: 1
+[2-0] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots: 1
+[4-0] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots: 1
+[12-0] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots: 1
+[7-0] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots: 1
+[9-0] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots: 1
+[11-0] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots: 1
+[6-0] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots: 1
+[13-0] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots: 1
+[15-0] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots: 1
+[18-0] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots: 1
+[14-0] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots: 1
+[20-0] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots: 1
+[21-0] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots: 1
+[17-0] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots: 1
+[16-0] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots: 1
+[19-0] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots: 1
+[23-0] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots: 1
+[25-0] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots: 1
+[24-0] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots: 1
+[22-0] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots: 1
+[26-0] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots: 1
+[33-0] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots: 1
+[27-0] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots: 1
+[36-0] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots: 1
+[28-0] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots: 1
+[29-0] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots: 1
+[31-0] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots: 1
+[30-0] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots: 1
+[32-0] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots: 1
+[34-0] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots: 1
+[37-0] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots: 1
+[35-0] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots: 1
+[39-0] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots: 1
+[41-0] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots: 1
+[38-0] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots: 1
+[40-0] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots: 1
+[42-0] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots: 1
+[43-0] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots: 1
+[44-0] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots: 1
+[45-0] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots: 1
+[47-0] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots: 1
+[48-0] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots: 1
+[49-0] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots: 1
+[46-0] Too many random unlocked slots. Lock more slots, or reduce random_unlocked_slots: 1
+f-string-missing-placeholders: 0

@@ -1,0 +1,272 @@
+[
+  {
+    "cell": null,
+    "code": "E711",
+    "end_location": {
+      "column": 29,
+      "row": 237
+    },
+    "filename": "/Archipelago/worlds/slotlock/Client.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "named is None",
+          "end_location": {
+            "column": 29,
+            "row": 237
+          },
+          "location": {
+            "column": 16,
+            "row": 237
+          }
+        }
+      ],
+      "message": "Replace with `cond is None`"
+    },
+    "location": {
+      "column": 25,
+      "row": 237
+    },
+    "message": "Comparison to `None` should be `cond is None`",
+    "name": "none-comparison",
+    "noqa_row": 237,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/none-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E711",
+    "end_location": {
+      "column": 33,
+      "row": 289
+    },
+    "filename": "/Archipelago/worlds/slotlock/Client.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "named is None",
+          "end_location": {
+            "column": 33,
+            "row": 289
+          },
+          "location": {
+            "column": 20,
+            "row": 289
+          }
+        }
+      ],
+      "message": "Replace with `cond is None`"
+    },
+    "location": {
+      "column": 29,
+      "row": 289
+    },
+    "message": "Comparison to `None` should be `cond is None`",
+    "name": "none-comparison",
+    "noqa_row": 289,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/none-comparison"
+  },
+  {
+    "cell": null,
+    "code": "E711",
+    "end_location": {
+      "column": 60,
+      "row": 300
+    },
+    "filename": "/Archipelago/worlds/slotlock/Client.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "named is None",
+          "end_location": {
+            "column": 60,
+            "row": 300
+          },
+          "location": {
+            "column": 47,
+            "row": 300
+          }
+        }
+      ],
+      "message": "Replace with `cond is None`"
+    },
+    "location": {
+      "column": 56,
+      "row": 300
+    },
+    "message": "Comparison to `None` should be `cond is None`",
+    "name": "none-comparison",
+    "noqa_row": 300,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/none-comparison"
+  },
+  {
+    "cell": null,
+    "code": "F403",
+    "end_location": {
+      "column": 23,
+      "row": 11
+    },
+    "filename": "/Archipelago/worlds/slotlock/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 1,
+      "row": 11
+    },
+    "message": "`from .Options import *` used; unable to detect undefined names",
+    "name": "undefined-local-with-import-star",
+    "noqa_row": 11,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 29,
+      "row": 43
+    },
+    "filename": "/Archipelago/worlds/slotlock/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 14,
+      "row": 43
+    },
+    "message": "`SlotLockOptions` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 43,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 40,
+      "row": 44
+    },
+    "filename": "/Archipelago/worlds/slotlock/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 44
+    },
+    "message": "`SlotLockOptions` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 44,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "B005",
+    "end_location": {
+      "column": 83,
+      "row": 68
+    },
+    "filename": "/Archipelago/worlds/slotlock/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 50,
+      "row": 68
+    },
+    "message": "Using `.strip()` with multi-character strings is misleading",
+    "name": "strip-with-multi-characters",
+    "noqa_row": 68,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/strip-with-multi-characters"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 93,
+      "row": 286
+    },
+    "filename": "/Archipelago/worlds/slotlock/__init__.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"SlotLock (World) Linear Fill Phase 1: Filling slot unlock items.\"",
+          "end_location": {
+            "column": 93,
+            "row": 286
+          },
+          "location": {
+            "column": 26,
+            "row": 286
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 26,
+      "row": 286
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 286,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 118,
+      "row": 291
+    },
+    "filename": "/Archipelago/worlds/slotlock/__init__.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"SlotLock Slot Unlocks\"",
+          "end_location": {
+            "column": 118,
+            "row": 291
+          },
+          "location": {
+            "column": 94,
+            "row": 291
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 94,
+      "row": 291
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 291,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "E741",
+    "end_location": {
+      "column": 56,
+      "row": 444
+    },
+    "filename": "/Archipelago/worlds/slotlock/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 55,
+      "row": 444
+    },
+    "message": "Ambiguous variable name: `l`",
+    "name": "ambiguous-variable-name",
+    "noqa_row": 444,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/ambiguous-variable-name"
+  }
+]
