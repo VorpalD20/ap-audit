@@ -1,0 +1,30 @@
+[
+  {
+    "code": "S603",
+    "name": "subprocess-without-shell-equals-true",
+    "count": 2,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "F541",
+    "name": "f-string-missing-placeholders",
+    "count": 1,
+    "fixable": true,
+    "fixable_count": 1
+  },
+  {
+    "code": "E711",
+    "name": "none-comparison",
+    "count": 1,
+    "fixable": false,
+    "fixable_count": 0
+  },
+  {
+    "code": "S607",
+    "name": "start-process-with-partial-path",
+    "count": 1,
+    "fixable": false,
+    "fixable_count": 0
+  }
+]

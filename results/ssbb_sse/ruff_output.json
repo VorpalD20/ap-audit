@@ -1,0 +1,129 @@
+[
+  {
+    "cell": null,
+    "code": "S607",
+    "end_location": {
+      "column": 50,
+      "row": 33
+    },
+    "filename": "/Archipelago/worlds/ssbb_sse/SD.py",
+    "fix": null,
+    "location": {
+      "column": 37,
+      "row": 30
+    },
+    "message": "Starting a process with a partial executable path",
+    "name": "start-process-with-partial-path",
+    "noqa_row": 30,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/start-process-with-partial-path"
+  },
+  {
+    "cell": null,
+    "code": "F541",
+    "end_location": {
+      "column": 75,
+      "row": 35
+    },
+    "filename": "/Archipelago/worlds/ssbb_sse/SD.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "\"Flatpak Dolphin Tool Installation detected\"",
+          "end_location": {
+            "column": 75,
+            "row": 35
+          },
+          "location": {
+            "column": 30,
+            "row": 35
+          }
+        }
+      ],
+      "message": "Remove extraneous `f` prefix"
+    },
+    "location": {
+      "column": 30,
+      "row": 35
+    },
+    "message": "f-string without any placeholders",
+    "name": "f-string-missing-placeholders",
+    "noqa_row": 35,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/f-string-missing-placeholders"
+  },
+  {
+    "cell": null,
+    "code": "E711",
+    "end_location": {
+      "column": 32,
+      "row": 44
+    },
+    "filename": "/Archipelago/worlds/ssbb_sse/SD.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "dolphin_tool_cmd is None",
+          "end_location": {
+            "column": 32,
+            "row": 44
+          },
+          "location": {
+            "column": 8,
+            "row": 44
+          }
+        }
+      ],
+      "message": "Replace with `cond is None`"
+    },
+    "location": {
+      "column": 28,
+      "row": 44
+    },
+    "message": "Comparison to `None` should be `cond is None`",
+    "name": "none-comparison",
+    "noqa_row": 44,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/none-comparison"
+  },
+  {
+    "cell": null,
+    "code": "S603",
+    "end_location": {
+      "column": 23,
+      "row": 98
+    },
+    "filename": "/Archipelago/worlds/ssbb_sse/SD.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 98
+    },
+    "message": "`subprocess` call: check for execution of untrusted input",
+    "name": "subprocess-without-shell-equals-true",
+    "noqa_row": 98,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/subprocess-without-shell-equals-true"
+  },
+  {
+    "cell": null,
+    "code": "S603",
+    "end_location": {
+      "column": 23,
+      "row": 117
+    },
+    "filename": "/Archipelago/worlds/ssbb_sse/SD.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 117
+    },
+    "message": "`subprocess` call: check for execution of untrusted input",
+    "name": "subprocess-without-shell-equals-true",
+    "noqa_row": 117,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/subprocess-without-shell-equals-true"
+  }
+]

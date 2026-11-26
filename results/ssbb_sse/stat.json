@@ -1,0 +1,13 @@
+{
+    "game": "Super Smash Bros. Brawl - The Subspace Emissary",
+    "stub": "ssbb_sse",
+    "manifest": {
+        "game": "Super Smash Bros. Brawl - The Subspace Emissary",
+        "authors": [
+            "kenniky"
+        ],
+        "world_version": "0.2.7",
+        "compatible_version": 7,
+        "version": 7
+    }
+}

@@ -154,6 +154,7 @@
   "test.general.test_items.TestBase.test_locality_not_modified": -1,
   "test.general.test_locations.TestBase.test_create_duplicate_locations": -1,
   "test.general.test_locations.TestBase.test_location_creation_steps": -1,
+  "test.general.test_locations.TestBase.test_location_group": -1,
   "test.general.test_locations.TestBase.test_locations_in_datapackage": -1,
   "test.general.test_memory.TestWorldMemory.test_leak": -1,
   "test.general.test_options.TestOptions.test_options_have_doc_string": -1,

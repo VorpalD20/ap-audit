@@ -1,0 +1,9 @@
+Final score: 91
+
+subprocess-without-shell-equals-true: 2
+test.webhost.test_docs.TestDocs.test_has_game_info: 2
+test.webhost.test_docs.TestDocs.test_has_tutorial: 2
+none-comparison: 1
+start-process-with-partial-path: 1
+test.general.test_locations.TestBase.test_location_group: 1
+f-string-missing-placeholders: 0
