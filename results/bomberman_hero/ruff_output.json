@@ -1,0 +1,59 @@
+[
+  {
+    "cell": null,
+    "code": "F403",
+    "end_location": {
+      "column": 21,
+      "row": 9
+    },
+    "filename": "/Archipelago/worlds/bomberman_hero/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 1,
+      "row": 9
+    },
+    "message": "`from .Rules import *` used; unable to detect undefined names",
+    "name": "undefined-local-with-import-star",
+    "noqa_row": 9,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 40,
+      "row": 187
+    },
+    "filename": "/Archipelago/worlds/bomberman_hero/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 187
+    },
+    "message": "`get_region_rules` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 187,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 44,
+      "row": 197
+    },
+    "filename": "/Archipelago/worlds/bomberman_hero/__init__.py",
+    "fix": null,
+    "location": {
+      "column": 26,
+      "row": 197
+    },
+    "message": "`get_location_rules` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 197,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  }
+]

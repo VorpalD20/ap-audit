@@ -1,0 +1,5 @@
+Final score: 93
+
+undefined-local-with-import-star-usage: 4
+undefined-local-with-import-star: 2
+test.webhost.test_docs.TestDocs.test_has_game_info: 1

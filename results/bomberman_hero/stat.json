@@ -1,0 +1,15 @@
+{
+    "game": "Bomberman Hero",
+    "stub": "bomberman_hero",
+    "manifest": {
+        "minimum_ap_version": "0.6.3",
+        "world_version": "0.2.5",
+        "authors": [
+            "Happyhappyism"
+        ],
+        "version": 7,
+        "compatible_version": 7,
+        "game": "Bomberman Hero",
+        "tracker": "https://github.com/Happyhappyism/Bomberman_Hero_Tracker/releases/tag/bombhero_tracker_v0.1.0"
+    }
+}
