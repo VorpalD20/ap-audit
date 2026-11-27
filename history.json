@@ -247,6 +247,10 @@
   "last_checked": "2026-11-20T20:56:53.030327",
   "last_version": "2.1.0"
  },
+ "shippedinspace": {
+  "last_checked": "2026-11-27T09:29:08.188599",
+  "last_version": "1.0.0.post3"
+ },
  "slotlock": {
   "last_checked": "2026-11-26T09:12:39.430956",
   "last_version": "0.11.6"
