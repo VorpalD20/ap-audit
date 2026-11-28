@@ -1,0 +1,5 @@
+Final score: 87
+
+undefined-local-with-import-star-usage: 10
+undefined-local-with-import-star: 2
+redefined-while-unused: 1

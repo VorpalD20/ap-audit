@@ -1,0 +1,2016 @@
+[
+  {
+    "cell": null,
+    "code": "F403",
+    "end_location": {
+      "column": 33,
+      "row": 4
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 1,
+      "row": 4
+    },
+    "message": "`from rule_builder.rules import *` used; unable to detect undefined names",
+    "name": "undefined-local-with-import-star",
+    "noqa_row": 4,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 29,
+      "row": 25
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 17,
+      "row": 25
+    },
+    "message": "`OptionFilter` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 25,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 33,
+      "row": 26
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 21,
+      "row": 26
+    },
+    "message": "`OptionFilter` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 26,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 22,
+      "row": 27
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 19,
+      "row": 27
+    },
+    "message": "`Has` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 27,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 36,
+      "row": 28
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 30,
+      "row": 28
+    },
+    "message": "`HasAny` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 28,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 29,
+      "row": 29
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 26,
+      "row": 29
+    },
+    "message": "`Has` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 29,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 38,
+      "row": 31
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 31
+    },
+    "message": "`HasAny` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 31,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 26,
+      "row": 32
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 23,
+      "row": 32
+    },
+    "message": "`Has` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 32,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 50,
+      "row": 32
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 44,
+      "row": 32
+    },
+    "message": "`HasAny` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 32,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F811",
+    "end_location": {
+      "column": 21,
+      "row": 50
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 1,
+      "row": 50
+    },
+    "message": "Redefinition of unused `progressive_item_map` from line 7: `progressive_item_map` redefined here",
+    "name": "redefined-while-unused",
+    "noqa_row": 50,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/redefined-while-unused"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 27,
+      "row": 244
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 23,
+      "row": 244
+    },
+    "message": "`Rule` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 244,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 59,
+      "row": 247
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 55,
+      "row": 247
+    },
+    "message": "`Rule` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 247,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 24,
+      "row": 250
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 250
+    },
+    "message": "`Rule` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 250,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 31,
+      "row": 276
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 27,
+      "row": 276
+    },
+    "message": "`Rule` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 276,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 59,
+      "row": 279
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 55,
+      "row": 279
+    },
+    "message": "`Rule` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 279,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 24,
+      "row": 282
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 282
+    },
+    "message": "`Rule` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 282,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 27,
+      "row": 308
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 23,
+      "row": 308
+    },
+    "message": "`Rule` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 308,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 59,
+      "row": 311
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 55,
+      "row": 311
+    },
+    "message": "`Rule` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 311,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 24,
+      "row": 314
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 314
+    },
+    "message": "`Rule` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 314,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 30,
+      "row": 340
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 26,
+      "row": 340
+    },
+    "message": "`Rule` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 340,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 59,
+      "row": 343
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 55,
+      "row": 343
+    },
+    "message": "`Rule` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 343,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 24,
+      "row": 346
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 346
+    },
+    "message": "`Rule` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 346,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 30,
+      "row": 372
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 26,
+      "row": 372
+    },
+    "message": "`Rule` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 372,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 59,
+      "row": 375
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 55,
+      "row": 375
+    },
+    "message": "`Rule` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 375,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 24,
+      "row": 378
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 378
+    },
+    "message": "`Rule` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 378,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 31,
+      "row": 404
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 27,
+      "row": 404
+    },
+    "message": "`Rule` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 404,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 59,
+      "row": 407
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 55,
+      "row": 407
+    },
+    "message": "`Rule` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 407,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 24,
+      "row": 410
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 410
+    },
+    "message": "`Rule` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 410,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 30,
+      "row": 436
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 26,
+      "row": 436
+    },
+    "message": "`Rule` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 436,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 59,
+      "row": 439
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 55,
+      "row": 439
+    },
+    "message": "`Rule` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 439,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 24,
+      "row": 442
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 442
+    },
+    "message": "`Rule` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 442,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 21,
+      "row": 491
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 491
+    },
+    "message": "`HasAny` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 491,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 26,
+      "row": 492
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 492
+    },
+    "message": "`HasFromList` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 492,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 26,
+      "row": 493
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 493
+    },
+    "message": "`HasFromList` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 493,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 26,
+      "row": 494
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 15,
+      "row": 494
+    },
+    "message": "`HasFromList` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 494,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 27,
+      "row": 495
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 495
+    },
+    "message": "`HasFromList` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 495,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 27,
+      "row": 496
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 496
+    },
+    "message": "`HasFromList` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 496,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 27,
+      "row": 497
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 497
+    },
+    "message": "`HasFromList` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 497,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 27,
+      "row": 498
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 498
+    },
+    "message": "`HasFromList` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 498,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 27,
+      "row": 499
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 499
+    },
+    "message": "`HasFromList` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 499,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 11,
+      "row": 501
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 501
+    },
+    "message": "`Has` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 501,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 11,
+      "row": 502
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 8,
+      "row": 502
+    },
+    "message": "`Has` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 502,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 21,
+      "row": 519
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 10,
+      "row": 519
+    },
+    "message": "`HasFromList` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 519,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 21,
+      "row": 520
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 10,
+      "row": 520
+    },
+    "message": "`HasFromList` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 520,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 21,
+      "row": 521
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 10,
+      "row": 521
+    },
+    "message": "`HasFromList` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 521,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 21,
+      "row": 522
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 10,
+      "row": 522
+    },
+    "message": "`HasFromList` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 522,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 22,
+      "row": 523
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 523
+    },
+    "message": "`HasFromList` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 523,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 22,
+      "row": 524
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 524
+    },
+    "message": "`HasFromList` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 524,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 22,
+      "row": 525
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 525
+    },
+    "message": "`HasFromList` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 525,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 19,
+      "row": 532
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 13,
+      "row": 532
+    },
+    "message": "`HasAny` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 532,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 17,
+      "row": 540
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 14,
+      "row": 540
+    },
+    "message": "`Has` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 540,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 21,
+      "row": 554
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 10,
+      "row": 554
+    },
+    "message": "`HasFromList` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 554,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 22,
+      "row": 555
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 555
+    },
+    "message": "`HasFromList` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 555,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 22,
+      "row": 556
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 556
+    },
+    "message": "`HasFromList` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 556,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 22,
+      "row": 557
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 557
+    },
+    "message": "`HasFromList` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 557,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 22,
+      "row": 558
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 558
+    },
+    "message": "`HasFromList` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 558,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 22,
+      "row": 559
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 559
+    },
+    "message": "`HasFromList` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 559,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 22,
+      "row": 560
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 560
+    },
+    "message": "`HasFromList` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 560,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 22,
+      "row": 561
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 561
+    },
+    "message": "`HasFromList` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 561,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 22,
+      "row": 562
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 562
+    },
+    "message": "`HasFromList` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 562,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 22,
+      "row": 563
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 563
+    },
+    "message": "`HasFromList` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 563,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 22,
+      "row": 564
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 564
+    },
+    "message": "`HasFromList` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 564,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 22,
+      "row": 565
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 565
+    },
+    "message": "`HasFromList` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 565,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 22,
+      "row": 566
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 566
+    },
+    "message": "`HasFromList` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 566,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 22,
+      "row": 567
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 567
+    },
+    "message": "`HasFromList` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 567,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 23,
+      "row": 568
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 12,
+      "row": 568
+    },
+    "message": "`HasFromList` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 568,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 23,
+      "row": 569
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 12,
+      "row": 569
+    },
+    "message": "`HasFromList` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 569,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 23,
+      "row": 570
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 12,
+      "row": 570
+    },
+    "message": "`HasFromList` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 570,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 24,
+      "row": 573
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 573
+    },
+    "message": "`Rule` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 573,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 14,
+      "row": 577
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 6,
+      "row": 577
+    },
+    "message": "`override` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 577,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 59,
+      "row": 578
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 55,
+      "row": 578
+    },
+    "message": "`Rule` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 578,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 19,
+      "row": 591
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 16,
+      "row": 591
+    },
+    "message": "`Has` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 591,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 28,
+      "row": 735
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 22,
+      "row": 735
+    },
+    "message": "`HasAll` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 735,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 151,
+      "row": 735
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 148,
+      "row": 735
+    },
+    "message": "`Has` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 735,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 42,
+      "row": 736
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 39,
+      "row": 736
+    },
+    "message": "`Has` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 736,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 21,
+      "row": 737
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 737
+    },
+    "message": "`Has` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 737,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 30,
+      "row": 1149
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 27,
+      "row": 1149
+    },
+    "message": "`Has` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 1149,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 30,
+      "row": 1150
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 27,
+      "row": 1150
+    },
+    "message": "`Has` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 1150,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 28,
+      "row": 1151
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 1151
+    },
+    "message": "`Has` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 1151,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 27,
+      "row": 1152
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 1152
+    },
+    "message": "`Has` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 1152,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 23,
+      "row": 1153
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 1153
+    },
+    "message": "`Has` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 1153,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 23,
+      "row": 1154
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 20,
+      "row": 1154
+    },
+    "message": "`Has` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 1154,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 35,
+      "row": 1155
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 32,
+      "row": 1155
+    },
+    "message": "`Has` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 1155,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 33,
+      "row": 1156
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 30,
+      "row": 1156
+    },
+    "message": "`Has` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 1156,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 27,
+      "row": 1157
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 1157
+    },
+    "message": "`Has` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 1157,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 27,
+      "row": 1158
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 1158
+    },
+    "message": "`Has` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 1158,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 27,
+      "row": 1159
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 1159
+    },
+    "message": "`Has` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 1159,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 27,
+      "row": 1160
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 1160
+    },
+    "message": "`Has` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 1160,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 27,
+      "row": 1161
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 1161
+    },
+    "message": "`Has` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 1161,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 27,
+      "row": 1162
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 1162
+    },
+    "message": "`Has` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 1162,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 27,
+      "row": 1163
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 1163
+    },
+    "message": "`Has` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 1163,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 27,
+      "row": 1164
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 1164
+    },
+    "message": "`Has` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 1164,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 27,
+      "row": 1165
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 1165
+    },
+    "message": "`Has` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 1165,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 100,
+      "row": 1247
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 97,
+      "row": 1247
+    },
+    "message": "`Has` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 1247,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 105,
+      "row": 1249
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 102,
+      "row": 1249
+    },
+    "message": "`Has` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 1249,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 103,
+      "row": 1250
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 100,
+      "row": 1250
+    },
+    "message": "`Has` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 1250,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 133,
+      "row": 1251
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 130,
+      "row": 1251
+    },
+    "message": "`Has` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 1251,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 104,
+      "row": 1252
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 101,
+      "row": 1252
+    },
+    "message": "`Has` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 1252,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 111,
+      "row": 1253
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 105,
+      "row": 1253
+    },
+    "message": "`HasAny` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 1253,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 113,
+      "row": 1254
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 107,
+      "row": 1254
+    },
+    "message": "`HasAny` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 1254,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 27,
+      "row": 1333
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 1333
+    },
+    "message": "`Has` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 1333,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 27,
+      "row": 1371
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 24,
+      "row": 1371
+    },
+    "message": "`Has` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 1371,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 26,
+      "row": 1372
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 23,
+      "row": 1372
+    },
+    "message": "`Has` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 1372,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 26,
+      "row": 1373
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 23,
+      "row": 1373
+    },
+    "message": "`Has` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 1373,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 28,
+      "row": 1374
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 25,
+      "row": 1374
+    },
+    "message": "`Has` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 1374,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  },
+  {
+    "cell": null,
+    "code": "F405",
+    "end_location": {
+      "column": 33,
+      "row": 1375
+    },
+    "filename": "/Archipelago/worlds/nodebuster/rules.py",
+    "fix": null,
+    "location": {
+      "column": 27,
+      "row": 1375
+    },
+    "message": "`HasAny` may be undefined, or defined from star imports",
+    "name": "undefined-local-with-import-star-usage",
+    "noqa_row": 1375,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local-with-import-star-usage"
+  }
+]
